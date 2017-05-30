@@ -1,0 +1,86 @@
+---
+name: dcim_get_devices
+pack: netbox
+runner_type: "python-script"
+description: Get device(s) from netbox
+enabled: true
+entry_point: base_get_action.py
+parameters:
+  endpoint_uri:
+    immutable: true
+    default: /api/dcim/devices/
+  name:
+    type: string
+    description: Name of the device
+  serial:
+    type: string
+    description: Serial number of the device
+  asset_tag:
+    type: string
+    description: Asset Tag of the device
+  q:
+    type: string
+    description: Device query
+  mac_address:
+    type: string
+    description: Mac Address of the device
+  site_id:
+    type: integer
+    description: ID of the Site for devices
+  site:
+    type: string
+    description: Site slug for devices
+  rack_group_id:
+    type: integer
+    description: ID of the Rack Group for devices
+  rack_id:
+    type: integer
+    description: ID of the Rack for devices
+  role_id:
+    type: integer
+    description: ID of the Role for devices
+  rack:
+    type: string
+    description: Rack of devices
+  tenant_id:
+    type: integer
+    description: ID of the Tenant for devices
+  tenant:
+    type: string
+    description: Tenant of devices
+  device_type_id:
+    type: integer
+    description: ID of the Device Type for devices
+  manufacturer_id:
+    type: integer
+    description: ID of the Manufacturer for devices
+  manufacturer:
+    type: string
+    description: Manufacturer of devices
+  model:
+    type: string
+    description: Model of devices
+  platform_id:
+    type: integer
+    description: ID of the Platform for devices
+  platform:
+    type: string
+    description: Platform of devices
+  is_console_server:
+    type: boolean
+    description: Device is a Console Server (T/F)
+  is_pdu:
+    type: boolean
+    description: Device is a PDU (T/F)
+  is_network_device:
+    type: boolean
+    description: Device is a Network Device (T/F)
+  has_primary_ip:
+    type: boolean
+    description: Device has a Primary IP assigned (T/F)
+  status:
+    type: string
+    description: Status of devices
+  id__in:
+    type: array
+    description: List of Device IDs

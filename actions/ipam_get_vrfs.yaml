@@ -1,0 +1,29 @@
+---
+name: ipam_get_vrfs
+pack: netbox
+runner_type: "python-script"
+description: Get VRF(s) from netbox
+enabled: true
+entry_point: base_get_action.py
+parameters:
+  endpoint_uri:
+    immutable: true
+    default: /api/ipam/vrfs/
+  name:
+    type: string
+    description: Name of the VRF
+  rd:
+    type: string
+    description: Route Distinguisher of the VRF
+  id__in:
+    type: array
+    description: List of VRF IDs
+  q:
+    type: string
+    description: VRF query
+  tenant:
+    type: string
+    description: Name of the Tenant
+  tenant_id:
+    type: integer
+    description: ID of the Tenant
