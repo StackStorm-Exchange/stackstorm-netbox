@@ -48,3 +48,11 @@ parameters:
   status:
     type: string
     description: Status of the VLAN
+  limit:
+    type: integer
+    default: 50
+    description: Max limit of objects to return from the request.
+  offset:
+    type: integer
+    default: 0
+    description: Offset result set by X objects. Used for pagination.

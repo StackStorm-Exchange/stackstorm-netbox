@@ -27,3 +27,11 @@ parameters:
   tenant_id:
     type: integer
     description: ID of the Tenant
+  limit:
+    type: integer
+    default: 50
+    description: Max limit of objects to return from the request.
+  offset:
+    type: integer
+    default: 0
+    description: Offset result set by X objects. Used for pagination.
