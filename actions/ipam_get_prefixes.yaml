@@ -1,0 +1,59 @@
+---
+name: ipam_get_prefixes
+pack: netbox
+runner_type: "python-script"
+description: Get prefixes from netbox
+enabled: true
+entry_point: base_get_action.py
+parameters:
+  endpoint_uri:
+    immutable: true
+    default: /api/ipam/prefixes/
+  family:
+    type: string
+    description: Prefix family
+  q:
+    type: string
+    description: Prefix query
+  parent:
+    type: string
+    description: Parent prefix
+  mask_length:
+    type: integer
+    description: Subnet mask length (CIRD bits)
+  vrf_id:
+    type: integer
+    description: ID of the VRF
+  vrf:
+    type: string
+    description: Name of the VRF
+  tenant_id:
+    type: integer
+    description: ID of the Tenant
+  tenant:
+    type: string
+    description: Name of the Tenant
+  site_id:
+    type: integer
+    description: ID of the SIte
+  site:
+    type: string
+    description: Name of the Site
+  vlan_id:
+    type: integer
+    description: ID of the VLAN
+  vlan_vid:
+    type: integer
+    description: VLAN ID number (VID)
+  role_id:
+    type: integer
+    description: ID of the Role
+  role:
+    type: string
+    description: Name of the Role
+  status:
+    type: string
+    description: Status of the IP Address
+  id__in:
+    type: array
+    description: List of IP Address IDs

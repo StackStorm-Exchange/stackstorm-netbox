@@ -1,0 +1,38 @@
+---
+name: dcim_get_sites
+pack: netbox
+runner_type: "python-script"
+description: Get site(s) from netbox
+enabled: true
+entry_point: base_get_action.py
+parameters:
+  endpoint_uri:
+    immutable: true
+    default: /api/dcim/sites/
+  name:
+    type: string
+    description: Name of the site
+  q:
+    type: string
+    description: Site query
+  facility:
+    type: string
+    description: Facility for the Site
+  asn:
+    type: integer
+    description: ASN assigned to the Site
+  tenant_id:
+    type: integer
+    description: ID of the Tenant for Sites
+  tenant:
+    type: string
+    description: Tenant of Sites
+  region_id:
+    type: integer
+    description: ID of the Region
+  region:
+    type: string
+    description: Region of devices
+  id__in:
+    type: array
+    description: List of Site IDs

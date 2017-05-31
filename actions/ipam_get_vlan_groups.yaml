@@ -1,0 +1,20 @@
+---
+name: ipam_get_vlan_groups
+pack: netbox
+runner_type: "python-script"
+description: Get VLAN Group(s) from netbox
+enabled: true
+entry_point: base_get_action.py
+parameters:
+  endpoint_uri:
+    immutable: true
+    default: /api/ipam/vlan-groups/
+  name:
+    type: string
+    description: Name of the VLAN Group(s)
+  site:
+    type: string
+    description: Name of the site
+  site_id:
+    type: integer
+    description: ID of the site

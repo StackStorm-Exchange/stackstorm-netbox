@@ -1,0 +1,5 @@
+---
+hostname: "netbox.corp.lan"
+api_token: "aaabbbccc111222333"
+use_https: true
+ssl_verify: true

@@ -1,0 +1,50 @@
+---
+name: ipam_get_vlans
+pack: netbox
+runner_type: "python-script"
+description: Get VLAN(s) from netbox
+enabled: true
+entry_point: base_get_action.py
+parameters:
+  endpoint_uri:
+    immutable: true
+    default: /api/ipam/vlans/
+  name:
+    type: string
+    description: Name of the VLAN(s)
+  vid:
+    type: integer
+    description: VLAN ID of the VLAN
+  id__in:
+    type: array
+    description: List of VLAN IDs
+  q:
+    type: string
+    description: VLAN query
+  site:
+    type: string
+    description: Name of the site
+  site_id:
+    type: integer
+    description: ID of the site
+  group:
+    type: string
+    description: Name of the VLAN Group
+  group_id:
+    type: integer
+    description: ID of the VLAN Group
+  tenant:
+    type: string
+    description: Name of the Tenant
+  tenant_id:
+    type: integer
+    description: ID of the Tenant
+  role:
+    type: string
+    description: Name of the VLAN Role
+  role_id:
+    type: integer
+    description: ID of the VLAN Role
+  status:
+    type: string
+    description: Status of the VLAN
