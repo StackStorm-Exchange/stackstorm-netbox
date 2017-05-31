@@ -2,7 +2,7 @@
 name: ipam_get_vrfs
 pack: netbox
 runner_type: "python-script"
-description: Get VRF(s) from netbox
+description: Get VRF(s) from NetBox
 enabled: true
 entry_point: base_get_action.py
 parameters:

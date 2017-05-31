@@ -1,6 +1,6 @@
 ---
 hostname:
-  description: "Hostname for the netbox server"
+  description: "Hostname for the NetBox server"
   type: "string"
   required: true
 

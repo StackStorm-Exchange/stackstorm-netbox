@@ -2,7 +2,7 @@
 name: dcim_get_devices
 pack: netbox
 runner_type: "python-script"
-description: Get device(s) from netbox
+description: Get device(s) from NetBox
 enabled: true
 entry_point: base_get_action.py
 parameters:

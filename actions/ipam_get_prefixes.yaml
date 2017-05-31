@@ -2,7 +2,7 @@
 name: ipam_get_prefixes
 pack: netbox
 runner_type: "python-script"
-description: Get prefixes from netbox
+description: Get prefixes from NetBox
 enabled: true
 entry_point: base_get_action.py
 parameters:
@@ -20,7 +20,7 @@ parameters:
     description: Parent prefix
   mask_length:
     type: integer
-    description: Subnet mask length (CIRD bits)
+    description: Subnet mask length (CIDR bits)
   vrf_id:
     type: integer
     description: ID of the VRF
