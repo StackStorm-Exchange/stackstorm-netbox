@@ -2,7 +2,7 @@
 name: ipam_get_vlan_groups
 pack: netbox
 runner_type: "python-script"
-description: Get VLAN Group(s) from netbox
+description: Get VLAN Group(s) from NetBox
 enabled: true
 entry_point: base_get_action.py
 parameters:

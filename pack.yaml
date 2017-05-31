@@ -1,9 +1,11 @@
 ---
 name: netbox
-description: A StackStorm pack for integrating with netbox
+description: A StackStorm pack for integrating with NetBox
 keywords:
     - netbox
     - networking
+    - ipam
+    - dcim
 version: 0.1.0
 author: John Anderson
 email: lampwins@gmail.com
