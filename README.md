@@ -34,3 +34,4 @@ is loaded.
 - **ipam\_get\_vlans**: Get VLAN(s) via optional parameters
 - **ipam\_get\_vrfs**: Get VRF(s) via optional parameters
 - **ipam\_get\_prefixes**: Get Prefix(es) via optional parameters
+- **ipam\_get\_available_ips**: Get available IP Address(es) within a prefix
