@@ -35,3 +35,4 @@ is loaded.
 - **ipam\_get\_vrfs**: Get VRF(s) via optional parameters
 - **ipam\_get\_prefixes**: Get Prefix(es) via optional parameters
 - **ipam\_get\_available_ips**: Get available IP Address(es) within a prefix
+- **ipam\_post\_available_ips**: Get available IP Address(es) within a prefix via optional parameters
