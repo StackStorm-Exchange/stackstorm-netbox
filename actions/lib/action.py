@@ -52,7 +52,7 @@ class NetboxBaseAction(Action):
         """
         
         return self._make_request(endpoint_uri, "GET", **kwargs)
-        
+
         
     def post(self, endpoint_uri, **kwargs):
         """Make a post request to the API URI passed in
