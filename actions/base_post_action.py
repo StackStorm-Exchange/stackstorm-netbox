@@ -10,3 +10,4 @@ class NetboxBasePostAction(NetboxBaseAction):
         endpoint_uri is pased from metadata file
         """
         return self.post(endpoint_uri, **kwargs)
+        

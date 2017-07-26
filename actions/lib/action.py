@@ -16,6 +16,8 @@ class NetboxBaseAction(Action):
         super(NetboxBaseAction, self).__init__(config)
         
     def _make_request(self, endpoint_uri, http_action, **kwargs):
+        """Logic to make all types of requests
+        """
         
         if self.config['use_https']:
             url = 'https://'
