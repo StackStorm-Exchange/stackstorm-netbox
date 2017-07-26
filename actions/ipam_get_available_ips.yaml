@@ -1,0 +1,23 @@
+---
+name: ipam_get_available_ips
+pack: netbox
+runner_type: "python-script"
+description: Get available IP addresses within a prefix from NetBox
+enabled: true
+entry_point: base_get_action.py
+parameters:
+  id:
+    type: integer
+    description: ID of the prefix to get.
+  endpoint_uri:
+    immutable: true
+    default: "/api/ipam/prefixes/{{ id }}/available-ips/"
+  limit:
+    type: integer
+    default: 50
+    description: Max limit of objects to return from the request.
+  offset:
+    type: integer
+    default: 0
+    description: Offset result set by X objects. Used for pagination.
+

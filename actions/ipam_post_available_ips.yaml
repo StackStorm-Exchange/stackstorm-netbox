@@ -1,0 +1,50 @@
+---
+name: ipam_post_available_ips
+pack: netbox
+runner_type: "python-script"
+description: Creates new object with first available IP address in the given prefix
+enabled: true
+entry_point: base_post_action.py
+parameters:
+  id:
+    type: integer
+    description: ID of the prefix to get.
+  endpoint_uri:
+    immutable: true
+    default: "/api/ipam/prefixes/{{ id }}/available-ips/"
+  limit:
+    type: integer
+    default: 50
+    description: Max limit of objects to return from the request.
+  offset:
+    type: integer
+    default: 0
+    description: Offset result set by X objects. Used for pagination.
+  status:
+    type: string
+    description: Status of the newly assigned IP address
+  description: 
+    type: string
+    description: Description of the newly assigned IP address
+  is_pool: 
+    type: boolean
+    description: IP address is a pool
+  vlan:
+    type: integer
+    description: VLAN that this IP address belongs to
+  site:
+    type: integer
+    description: Site that this IP address belongs to
+  prefix:  
+    type: string
+    description: Prefix that this IP address belongs to
+  role:
+    type: integer 
+    description: IP address role
+  vrf:
+    type: integer 
+    description: VRF the IP address is a member of
+  tenant:
+    type: integer
+    description: Tenant the IP address belongs to
+    
