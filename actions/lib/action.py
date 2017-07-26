@@ -40,7 +40,7 @@ class NetboxBaseAction(Action):
             self.logger.debug("Calling base get with kwargs: {}".format(kwargs))
             r = requests.get(url, verify=self.config['ssl_verify'], headers=headers, params=kwargs)
 
-        elif http_action == "POST": 
+        elif http_action == "POST":
             self.logger.debug("Calling base post with kwargs: {}".format(kwargs))
             r = requests.post(url, verify=self.config['ssl_verify'], headers=headers, data=kwargs)
 
