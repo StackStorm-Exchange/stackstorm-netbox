@@ -59,4 +59,3 @@ class NetboxBaseAction(Action):
         """
         
         return self._make_request(endpoint_uri, "POST", **kwargs)
-        

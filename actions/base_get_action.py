@@ -10,4 +10,3 @@ class NetboxBaseGetAction(NetboxBaseAction):
         endpoint_uri is pased from metadata file
         """
         return self.get(endpoint_uri, **kwargs)
-
