@@ -36,6 +36,9 @@ parameters:
   rack_id:
     type: integer
     description: ID of the Rack for devices
+  role:
+    type: string
+    description: Role of the devices
   role_id:
     type: integer
     description: ID of the Role for devices
