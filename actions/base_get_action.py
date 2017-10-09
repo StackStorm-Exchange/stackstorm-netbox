@@ -23,8 +23,8 @@ class NetboxBaseGetAction(NetboxBaseAction):
             # save the result in the st2 keystore
             client = Client(base_url='http://localhost')
             key_name = kwargs['save_in_key_store_key_name']
-            client.keys.update(KeyValuePair(name=key_name, value=json.dumps(result)),
-                               ttl=kwargs['save_in_key_store_ttl'])
+            client.keys.update(KeyValuePair(name=key_name, value=json.dumps(result),
+                                            ttl=kwargs['save_in_key_store_ttl']))
 
             return (True, "Result stored in st2 key {}".format(key_name))
 
