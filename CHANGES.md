@@ -1,4 +1,6 @@
 # Change Log
+## 0.3.2
+- Added new action for getting device interface connections.
 ## 0.3.0
 - Added ability to save results into st2 key/value store. Useful when the result from Netbox is very large and will be piped to another action.
 ## 0.2.1
