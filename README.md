@@ -26,6 +26,7 @@ is loaded.
 ### DCIM
 - **dcim\_get\_devices**: Get device(s) via optional parameters
 - **dcim\_get\_interfaces**: Get interface(s) via optional parameters
+- **dcim\_get\_interface_connections**: Get interface connection(s) via optional parameters
 - **dcim\_get\_sites**: Get site(s) via optional parameters
 
 ### IPAM
