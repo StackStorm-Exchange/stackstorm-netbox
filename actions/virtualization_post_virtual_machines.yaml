@@ -25,7 +25,7 @@ parameters:
     type: integer
     description: ID of the Platform
   status:
-    type: string
+    type: integer
     description: Status of the Virtual Machine
   disk:
     type: integer
