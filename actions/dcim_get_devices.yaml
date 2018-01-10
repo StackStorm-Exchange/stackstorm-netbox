@@ -9,6 +9,9 @@ parameters:
   endpoint_uri:
     immutable: true
     default: /api/dcim/devices/
+  id:
+    type: integer
+    description: "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored."
   name:
     type: string
     description: Name of the device

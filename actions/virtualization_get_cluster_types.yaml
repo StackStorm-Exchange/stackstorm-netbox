@@ -1,44 +1,17 @@
 ---
-name: dcim_get_sites
+name: virtualization_get_cluster_types
 pack: netbox
 runner_type: "python-script"
-description: Get site(s) from NetBox
+description: Get cluster type(s) from NetBox
 enabled: true
 entry_point: base_get_action.py
 parameters:
   endpoint_uri:
     immutable: true
-    default: /api/dcim/sites/
+    default: /api/virtualization/cluster-types/
   id:
     type: integer
     description: "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored."
-  name:
-    type: string
-    description: Name of the site
-  q:
-    type: string
-    description: Site query
-  facility:
-    type: string
-    description: Facility for the Site
-  asn:
-    type: integer
-    description: ASN assigned to the Site
-  tenant_id:
-    type: integer
-    description: ID of the Tenant for Sites
-  tenant:
-    type: string
-    description: Tenant of Sites
-  region_id:
-    type: integer
-    description: ID of the Region
-  region:
-    type: string
-    description: Region of devices
-  id__in:
-    type: array
-    description: List of Site IDs
   limit:
     type: integer
     default: 50
