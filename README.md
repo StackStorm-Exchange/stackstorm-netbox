@@ -36,3 +36,13 @@ is loaded.
 - **ipam\_get\_prefixes**: Get Prefix(es) via optional parameters
 - **ipam\_get\_available_ips**: Get available IP Address(es) within a prefix
 - **ipam\_post\_available_ips**: POST request to create an object assigned to the first available IP address within a given prefix
+
+### Virtualization
+- **virtualization\_get\_cluster\_groups**: Get Cluster Group(s) via optional parameters
+- **virtualization\_get\_cluster\_types**: Get Cluster Type(s) via optional parameters
+- **virtualization\_get\_clusters**: Get Cluster(s) via optional parameters
+- **virtualization\_get\_interfaces**: Get Virtual Machine Interface(s) via optional parameters
+- **virtualization\_get\_virtual_machines**: Get Virtual Machine(s) via optional parameters
+- **virtualization\_post\_virtual_machines**: POST request to create a new Virtual Machine
+- **virtualization\_put\_virtual_machines**: PUT request to replace a Virtual Machine
+- **virtualization\_patch\_virtual_machines**: PATCH request to update a Virtual Machine
