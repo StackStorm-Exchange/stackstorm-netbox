@@ -42,3 +42,9 @@ parameters:
   custom_fields:
     type: object
     description: Custom field(s) object for the Virtual Machine
+  primary_ip4:
+    type: integer
+    description: ID of the ipv4 address to use as the pirmary IP for the Virtual Machine
+  primary_ip6:
+    type: integer
+    description: ID of the ipv6 address to use as the pirmary IP for the Virtual Machine
