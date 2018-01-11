@@ -24,13 +24,6 @@ class NetboxBaseAction(Action):
         else:
             url = 'http://'
 
-        if kwargs.get('id', False):
-            # modify the `endpoint_uri` to use the detail route
-            endpoint_uri = '{}{}/'.format(endpoint_uri, str(kwargs.pop('id')))
-            self.logger.debug(
-                'endpoint_uri transformed to {} because id was passed'.format(endpoint_uri)
-            )
-
         url = url + self.config['hostname'] + endpoint_uri
 
         headers = {
