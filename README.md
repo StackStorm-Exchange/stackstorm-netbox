@@ -26,6 +26,7 @@ is loaded.
 ### DCIM
 - **dcim\_get\_devices**: Get device(s) via optional parameters
 - **dcim\_get\_interfaces**: Get interface(s) via optional parameters
+- **dcim\_get\_interface_connections**: Get interface connection(s) via optional parameters
 - **dcim\_get\_sites**: Get site(s) via optional parameters
 
 ### IPAM
@@ -36,3 +37,16 @@ is loaded.
 - **ipam\_get\_prefixes**: Get Prefix(es) via optional parameters
 - **ipam\_get\_available_ips**: Get available IP Address(es) within a prefix
 - **ipam\_post\_available_ips**: POST request to create an object assigned to the first available IP address within a given prefix
+
+### Virtualization
+- **virtualization\_get\_cluster\_groups**: Get Cluster Group(s) via optional parameters
+- **virtualization\_get\_cluster\_types**: Get Cluster Type(s) via optional parameters
+- **virtualization\_get\_clusters**: Get Cluster(s) via optional parameters
+- **virtualization\_get\_interfaces**: Get Virtual Machine Interface(s) via optional parameters
+- **virtualization\_post\_interfaces**: POST request to create a new Virtual Machine Inteface
+- **virtualization\_put\_interfaces**: PUT request to replace a Virtual Machine Interface
+- **virtualization\_patch\_interfaces**: PATCH request to update a Virtual Machine Interface
+- **virtualization\_get\_virtual_machines**: Get Virtual Machine(s) via optional parameters
+- **virtualization\_post\_virtual_machines**: POST request to create a new Virtual Machine
+- **virtualization\_put\_virtual_machines**: PUT request to replace a Virtual Machine
+- **virtualization\_patch\_virtual_machines**: PATCH request to update a Virtual Machine

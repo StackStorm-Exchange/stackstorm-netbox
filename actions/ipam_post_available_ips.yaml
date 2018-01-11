@@ -8,7 +8,7 @@ entry_point: base_post_action.py
 parameters:
   id:
     type: integer
-    description: ID of the prefix to get.
+    description: ID of the prefix.
   endpoint_uri:
     immutable: true
     default: "/api/ipam/prefixes/{{ id }}/available-ips/"
@@ -47,4 +47,3 @@ parameters:
   tenant:
     type: integer
     description: Tenant the IP address belongs to
-    

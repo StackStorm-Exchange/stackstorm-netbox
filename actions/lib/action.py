@@ -1,7 +1,7 @@
-
 from st2common.runners.base_action import Action
 
 import requests
+
 
 __all__ = [
     'NetboxBaseAction'
@@ -24,6 +24,13 @@ class NetboxBaseAction(Action):
         else:
             url = 'http://'
 
+        if kwargs.get('id', False):
+            # modify the `endpoint_uri` to use the detail route
+            endpoint_uri = '{}{}/'.format(endpoint_uri, str(kwargs.pop('id')))
+            self.logger.debug(
+                'endpoint_uri transformed to {} because id was passed'.format(endpoint_uri)
+            )
+
         url = url + self.config['hostname'] + endpoint_uri
 
         headers = {
@@ -44,6 +51,14 @@ class NetboxBaseAction(Action):
             self.logger.debug("Calling base post with kwargs: {}".format(kwargs))
             r = requests.post(url, verify=self.config['ssl_verify'], headers=headers, data=kwargs)
 
+        elif http_action == "PUT":
+            self.logger.debug("Calling base put with kwargs: {}".format(kwargs))
+            r = requests.put(url, verify=self.config['ssl_verify'], headers=headers, data=kwargs)
+
+        elif http_action == "PATCH":
+            self.logger.debug("Calling base patch with kwargs: {}".format(kwargs))
+            r = requests.patch(url, verify=self.config['ssl_verify'], headers=headers, data=kwargs)
+
         return {'raw': r.json()}
 
     def get(self, endpoint_uri, **kwargs):
@@ -57,3 +72,15 @@ class NetboxBaseAction(Action):
         """
 
         return self._make_request(endpoint_uri, "POST", **kwargs)
+
+    def put(self, endpoint_uri, **kwargs):
+        """Make a put request to the API URI passed in
+        """
+
+        return self._make_request(endpoint_uri, "PUT", **kwargs)
+
+    def patch(self, endpoint_uri, **kwargs):
+        """Make a patch request to the API URI passed in
+        """
+
+        return self._make_request(endpoint_uri, "PATCH", **kwargs)

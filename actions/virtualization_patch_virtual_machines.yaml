@@ -1,0 +1,47 @@
+---
+name: virtualization_patch_virtual_machines
+pack: netbox
+runner_type: "python-script"
+description: PATCH virtual machine to NetBox
+enabled: true
+entry_point: base_patch_action.py
+parameters:
+  endpoint_uri:
+    immutable: true
+    default: /api/virtualization/virtual-machines/{{ id }}/
+  id:
+    type: integer
+    description: ID of the Virtual Machine
+  name:
+    type: string
+    description: Name of the inteface
+  cluster:
+    type: integer
+    description: ID of the Cluster
+  role:
+    type: integer
+    description: ID of the Role
+  tenant:
+    type: integer
+    description: ID of the Tenant
+  platform:
+    type: integer
+    description: ID of the Platform
+  status:
+    type: integer
+    description: Status of the Virtual Machine
+  disk:
+    type: integer
+    description: Disk size of the Virtual Machine
+  vcpus:
+    type: integer
+    description: vCPU count of the Virtual Machine
+  memory:
+    type: integer
+    description: Memory of the Virtual Machine
+  comments:
+    type: string
+    description: Comments for the Virtual Machine
+  custom_fields:
+    type: object
+    description: Custom field(s) object for the Virtual Machine
