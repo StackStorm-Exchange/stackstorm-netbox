@@ -21,29 +21,32 @@ parameters:
     default: 0
     description: Offset result set by X objects. Used for pagination.
   status:
-    type: string
-    description: Status of the newly assigned IP address
+    type: integer
+    description: ID of the Status of the newly assigned IP address
   description: 
     type: string
     description: Description of the newly assigned IP address
-  is_pool: 
-    type: boolean
-    description: IP address is a pool
-  vlan:
+  nat_inside: 
     type: integer
-    description: VLAN that this IP address belongs to
-  site:
+    description: ID of the NAT IP Address
+  custom_fields:
+    type: object
+    description: IP Address custom fields object
+  role:
     type: integer
-    description: Site that this IP address belongs to
-  prefix:  
+    description: ID of the role
+  address:  
     type: string
-    description: Prefix that this IP address belongs to
+    description: The address value for this IP
   role:
     type: integer 
-    description: IP address role
+    description: ID of the IP address role
   vrf:
     type: integer 
-    description: VRF the IP address is a member of
+    description: ID of the VRF the IP address is a member of
   tenant:
     type: integer
-    description: Tenant the IP address belongs to
+    description: ID of the Tenant the IP address belongs to
+  interface:
+    type: integer
+    description: ID of the interface to assign this IP to

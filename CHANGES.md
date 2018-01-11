@@ -1,4 +1,6 @@
 # Change Log
+## 0.4.1
+- Fixed `ipam_post_available_ips` to use correct parameters
 ## 0.4.0
 - Added support for virtualization enpoints
   - GET: clusters, cluster groups, cluster types, virtual machine interfaces, virtual machines
