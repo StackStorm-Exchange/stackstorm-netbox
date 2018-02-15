@@ -1,4 +1,6 @@
 # Change Log
+## 0.4.2
+- Changed the `id` parameter on `ipam_post_available_ips` to `prefix_id` so it does not auto convert to a detail route
 ## 0.4.1
 - Fixed `ipam_post_available_ips` to use correct parameters
 ## 0.4.0

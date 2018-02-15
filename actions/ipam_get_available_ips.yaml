@@ -6,12 +6,12 @@ description: Get available IP addresses within a prefix from NetBox
 enabled: true
 entry_point: base_get_action.py
 parameters:
-  id:
+  prefix_id:
     type: integer
     description: ID of the prefix to get.
   endpoint_uri:
     immutable: true
-    default: "/api/ipam/prefixes/{{ id }}/available-ips/"
+    default: "/api/ipam/prefixes/{{ prefix_id }}/available-ips/"
   limit:
     type: integer
     default: 50
