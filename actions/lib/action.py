@@ -43,15 +43,15 @@ class NetboxBaseAction(Action):
 
         elif http_action == "POST":
             self.logger.debug("Calling base post with kwargs: {}".format(kwargs))
-            r = requests.post(url, verify=self.config['ssl_verify'], headers=headers, data=kwargs)
+            r = requests.post(url, verify=self.config['ssl_verify'], headers=headers, json=kwargs)
 
         elif http_action == "PUT":
             self.logger.debug("Calling base put with kwargs: {}".format(kwargs))
-            r = requests.put(url, verify=self.config['ssl_verify'], headers=headers, data=kwargs)
+            r = requests.put(url, verify=self.config['ssl_verify'], headers=headers, json=kwargs)
 
         elif http_action == "PATCH":
             self.logger.debug("Calling base patch with kwargs: {}".format(kwargs))
-            r = requests.patch(url, verify=self.config['ssl_verify'], headers=headers, data=kwargs)
+            r = requests.patch(url, verify=self.config['ssl_verify'], headers=headers, json=kwargs)
 
         return {'raw': r.json()}
 
