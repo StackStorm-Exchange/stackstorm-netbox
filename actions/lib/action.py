@@ -28,7 +28,8 @@ class NetboxBaseAction(Action):
 
         headers = {
             'Authorization': 'Token ' + self.config['api_token'],
-            'Accept': 'application/json'
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
         }
 
         # transform `in__id` if present
