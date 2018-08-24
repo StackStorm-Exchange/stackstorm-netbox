@@ -37,6 +37,10 @@ class NetboxBaseAction(Action):
             kwargs['id__in'] = ','.join(kwargs['id__in'])
             self.logger.debug('id__in transformed to {}'.format(kwargs['id__in']))
 
+        # strip values which have a None value if we are making a write request
+        if http_action != "GET":
+            kwargs = {key: value for key, value in kwargs.items() if value is not None}
+
         if http_action == "GET":
             self.logger.debug("Calling base get with kwargs: {}".format(kwargs))
             r = requests.get(url, verify=self.config['ssl_verify'], headers=headers, params=kwargs)
