@@ -1,4 +1,6 @@
 # Change Log
+## 0.5.0
+- Added proper application/json Content-Type header to all requests
 ## 0.4.2
 - Changed the `id` parameter on `ipam_post_available_ips` to `prefix_id` so it does not auto convert to a detail route
 ## 0.4.1

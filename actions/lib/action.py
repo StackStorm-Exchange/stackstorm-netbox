@@ -28,7 +28,8 @@ class NetboxBaseAction(Action):
 
         headers = {
             'Authorization': 'Token ' + self.config['api_token'],
-            'Accept': 'application/json'
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
         }
 
         # transform `in__id` if present
@@ -36,21 +37,25 @@ class NetboxBaseAction(Action):
             kwargs['id__in'] = ','.join(kwargs['id__in'])
             self.logger.debug('id__in transformed to {}'.format(kwargs['id__in']))
 
+        # strip values which have a None value if we are making a write request
+        if http_action != "GET":
+            kwargs = {key: value for key, value in kwargs.items() if value is not None}
+
         if http_action == "GET":
             self.logger.debug("Calling base get with kwargs: {}".format(kwargs))
             r = requests.get(url, verify=self.config['ssl_verify'], headers=headers, params=kwargs)
 
         elif http_action == "POST":
             self.logger.debug("Calling base post with kwargs: {}".format(kwargs))
-            r = requests.post(url, verify=self.config['ssl_verify'], headers=headers, data=kwargs)
+            r = requests.post(url, verify=self.config['ssl_verify'], headers=headers, json=kwargs)
 
         elif http_action == "PUT":
             self.logger.debug("Calling base put with kwargs: {}".format(kwargs))
-            r = requests.put(url, verify=self.config['ssl_verify'], headers=headers, data=kwargs)
+            r = requests.put(url, verify=self.config['ssl_verify'], headers=headers, json=kwargs)
 
         elif http_action == "PATCH":
             self.logger.debug("Calling base patch with kwargs: {}".format(kwargs))
-            r = requests.patch(url, verify=self.config['ssl_verify'], headers=headers, data=kwargs)
+            r = requests.patch(url, verify=self.config['ssl_verify'], headers=headers, json=kwargs)
 
         return {'raw': r.json()}
 
