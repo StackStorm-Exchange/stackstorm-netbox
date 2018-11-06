@@ -23,30 +23,18 @@ is loaded.
 
 ## Actions
 
-### DCIM
-- **dcim\_get\_devices**: Get device(s) via optional parameters
-- **dcim\_get\_interfaces**: Get interface(s) via optional parameters
-- **dcim\_get\_interface_connections**: Get interface connection(s) via optional parameters
-- **dcim\_get\_sites**: Get site(s) via optional parameters
+There are more than 290 actions in this pack. Each maps to a particular NetBox API endpoint.
 
-### IPAM
-- **ipam\_get\_ip\_addresses**: Get IP Address(es) via optional parameters
-- **ipam\_get\_vlan\_groups**: Get VLAN Group(s) via optional parameters
-- **ipam\_get\_vlans**: Get VLAN(s) via optional parameters
-- **ipam\_get\_vrfs**: Get VRF(s) via optional parameters
-- **ipam\_get\_prefixes**: Get Prefix(es) via optional parameters
-- **ipam\_get\_available_ips**: Get available IP Address(es) within a prefix
-- **ipam\_post\_available_ips**: POST request to create an object assigned to the first available IP address within a given prefix
+The action naming convention is easy to understand as it follows this basic pattern:
+```
+<http_verb>.<netbox_app>.<netbox_model>
+```
 
-### Virtualization
-- **virtualization\_get\_cluster\_groups**: Get Cluster Group(s) via optional parameters
-- **virtualization\_get\_cluster\_types**: Get Cluster Type(s) via optional parameters
-- **virtualization\_get\_clusters**: Get Cluster(s) via optional parameters
-- **virtualization\_get\_interfaces**: Get Virtual Machine Interface(s) via optional parameters
-- **virtualization\_post\_interfaces**: POST request to create a new Virtual Machine Inteface
-- **virtualization\_put\_interfaces**: PUT request to replace a Virtual Machine Interface
-- **virtualization\_patch\_interfaces**: PATCH request to update a Virtual Machine Interface
-- **virtualization\_get\_virtual_machines**: Get Virtual Machine(s) via optional parameters
-- **virtualization\_post\_virtual_machines**: POST request to create a new Virtual Machine
-- **virtualization\_put\_virtual_machines**: PUT request to replace a Virtual Machine
-- **virtualization\_patch\_virtual_machines**: PATCH request to update a Virtual Machine
+Example for the action to make a GET request for Sites:
+```
+get.dcim.sites
+```
+
+Each action has been auto generated based on the NetBox OpenAPI (Swagger) spec file. The actions are periodically updated in accordance with new NetBox releases. Check the [change log](CHANGES.md) for details.
+
+All GET actions have the ability to store the NetBox API response directly into the ST2 Key Store rather than provide it as standard action output. This is useful in cases where that reponse is extremely large and thus passing it between actions is impractical. This is controlled with the `save_in_key_store`, `save_in_key_store_key_name`, and `save_in_key_store_ttl` action parameters. Look at any `get.*` action meta file for more details.

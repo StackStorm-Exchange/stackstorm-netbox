@@ -1,4 +1,10 @@
 # Change Log
+## 1.0.0
+- Added script in `/bin` to auto generate all action meta definitions based on the NetBox OpenAPI (Swagger) spec.
+- All actions rewritten (auto generated) based on the new mechanism. Note existing actions have been renamed (see Breaking changes)
+- New actions generated to cover all routes available in the NetBox 2.4 API.
+### Breaking changes
+- All pre-existing actions have been renamed to conform a new, consistent naming scheme. That scheme is `<http_verb>.<app>.<route>`
 ## 0.5.0
 - Added proper application/json Content-Type header to all requests
 ## 0.4.2
