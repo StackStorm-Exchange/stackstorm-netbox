@@ -1,0 +1,44 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: {{ version }}
+# Date: {{ generation_date }}
+description: "{{ description }}"
+enabled: true
+entry_point: run.py
+name: {{ action_name }}
+parameters:
+  endpoint_uri:
+    default: {{ endpoint_uri }}
+    immutable: true
+    type: string
+  http_verb:
+    default: {{ verb }}
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: {{ get_detail_route_eligible }}
+    immutable: true
+    type: boolean
+  {%- for parameter in parameters %}
+  {{ parameter.name }}:
+    required: {{ parameter.required }}
+    {%- if parameter.default %}
+    default: "{{ parameter.default }}"
+    {%- endif %}
+    type: "{{ parameter.type }}"
+    description: "{{ parameter.description }}"
+  {%- endfor %}
+  {%- if verb == 'get' %}
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+  {%- endif %}
+runner_type: python-script
+
