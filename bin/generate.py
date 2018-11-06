@@ -153,6 +153,19 @@ def run(spec):
                 action['description'] = 'This endpoint can be used to generate a new RSA key pair.'
                 actions[action_name] = action
 
+            elif verb == 'post' and action_name == 'post.secrets.get_session_key':
+                # the spec does not account for private_key
+                action['parameters'].append({
+                    'name': 'private_key',
+                    'required': True,
+                    'description': "User's private key.",
+                    'type': 'string'
+                })
+                action['get_detail_route_eligible'] = False
+                action['description'] = ('Retrieve a temporary session key to use for encrypting '
+                                        'and decrypting secrets via the API.')
+                actions[action_name] = action
+
             #
             # End special endpoint handling
             #

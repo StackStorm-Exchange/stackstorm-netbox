@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:19:36.373378
+# Date: 2018-11-06 00:29:48.054134
 description: "PATCH Cluster Groups"
 enabled: true
 entry_point: run.py

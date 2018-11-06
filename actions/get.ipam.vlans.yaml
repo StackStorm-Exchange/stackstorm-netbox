@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:19:36.387758
+# Date: 2018-11-06 00:29:48.069397
 description: "GET Vlans"
 enabled: true
 entry_point: run.py
