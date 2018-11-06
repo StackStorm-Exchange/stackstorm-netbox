@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:29:48.061199
+# Date: 2018-11-06 00:59:19.912467
 description: "GET Interfaces"
 enabled: true
 entry_point: run.py
@@ -59,6 +59,14 @@ parameters:
     type: "string"
     description: ""
   tag:
+    required: False
+    type: "string"
+    description: ""
+  vlan_id:
+    required: False
+    type: "integer"
+    description: ""
+  vlan:
     required: False
     type: "string"
     description: ""

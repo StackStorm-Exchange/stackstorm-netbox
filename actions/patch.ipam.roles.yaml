@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:29:48.060098
+# Date: 2018-11-06 00:59:19.911400
 description: "PATCH Roles"
 enabled: true
 entry_point: run.py

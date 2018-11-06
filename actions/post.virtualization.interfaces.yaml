@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:29:48.022471
+# Date: 2018-11-06 00:59:19.875157
 description: "POST Interfaces"
 enabled: true
 entry_point: run.py
@@ -37,7 +37,7 @@ parameters:
   lag:
     required: False
     type: "integer"
-    description: "Lag"
+    description: "Interface"
   enabled:
     required: False
     type: "boolean"

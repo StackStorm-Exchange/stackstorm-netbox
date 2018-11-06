@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:29:48.068282
+# Date: 2018-11-06 00:59:19.919670
 description: "PATCH Interface Connections"
 enabled: true
 entry_point: run.py
@@ -25,11 +25,11 @@ parameters:
   interface_a:
     required: True
     type: "integer"
-    description: "Lag"
+    description: "Interface"
   interface_b:
     required: True
     type: "integer"
-    description: "Lag"
+    description: "Interface"
   id:
     required: True
     type: "integer"
