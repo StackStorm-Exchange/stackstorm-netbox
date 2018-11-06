@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-05 23:38:06.304010
+# Date: 2018-11-06 00:19:36.346161
 description: "PUT Racks"
 enabled: true
 entry_point: run.py

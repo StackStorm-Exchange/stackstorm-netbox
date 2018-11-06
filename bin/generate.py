@@ -104,42 +104,11 @@ def run(spec):
                     schema['properties'], schema['required'], spec
                 )
 
-            if verb == 'get' and verb_data['operationId'].endswith('_list'):
-                action['parameters'] = sanitize_parameters(verb_data['parameters'])
-                actions[action_name] = action
-
-            elif verb == 'get' and path.endswith("/{{ id }}/"):
-                # defer these until we have processed everything else to ensure the list
-                # endoints are present for lookup
-                deferred_detail_gets.append(action_name)
-
-            elif verb == 'get' and "{{ id }}" in path and not path.endswith("{{ id }}"):
-                action['parameters'].append({
-                    'name': 'id',
-                    'required': True,
-                    'description': "ID of the object.",
-                    'type': 'integer'
-                })
-                action['get_detail_route_eligible'] = False
-                actions[action_name] = action
-
-            elif verb in ['delete', 'put', 'patch']:
-                action['parameters'].append({
-                    'name': 'id',
-                    'required': True,
-                    'description': "ID of the object to {}.".format(verb),
-                    'type': 'integer'
-                })
-                actions[action_name] = action
-
-            elif verb == 'post' and "{{ id }}" not in path:
-                actions[action_name] = action
-
             #
-            # special endpoint processing
+            # Begin special endpoint processing
             #
 
-            elif verb == 'post' and action_name == 'post.ipam.prefixes.available_ips':
+            if verb == 'post' and action_name == 'post.ipam.prefixes.available_ips':
                 # the spec defines the schema ref as Refix when it should really be IPAddress with
                 # all parameters optional (since prefix and address are handled by the route)
                 schema = spec['definitions']['IPAddress']
@@ -177,6 +146,46 @@ def run(spec):
                 })
                 action['get_detail_route_eligible'] = False
                 action['description'] = "Create the next available Prefix in a given Prefix."
+                actions[action_name] = action
+
+            elif verb == 'get' and action_name == 'get.secrets.generate_rsa_key_pair':
+                # description is not safe
+                action['description'] = 'This endpoint can be used to generate a new RSA key pair.'
+                actions[action_name] = action
+
+            #
+            # End special endpoint handling
+            #
+
+            elif verb == 'get' and verb_data['operationId'].endswith('_list'):
+                action['parameters'] = sanitize_parameters(verb_data['parameters'])
+                actions[action_name] = action
+
+            elif verb == 'get' and path.endswith("/{{ id }}/"):
+                # defer these until we have processed everything else to ensure the list
+                # endoints are present for lookup
+                deferred_detail_gets.append(action_name)
+
+            elif verb == 'get' and "{{ id }}" in path and not path.endswith("{{ id }}"):
+                action['parameters'].append({
+                    'name': 'id',
+                    'required': True,
+                    'description': "ID of the object.",
+                    'type': 'integer'
+                })
+                action['get_detail_route_eligible'] = False
+                actions[action_name] = action
+
+            elif verb in ['delete', 'put', 'patch']:
+                action['parameters'].append({
+                    'name': 'id',
+                    'required': True,
+                    'description': "ID of the object to {}.".format(verb),
+                    'type': 'integer'
+                })
+                actions[action_name] = action
+
+            elif verb == 'post' and "{{ id }}" not in path:
                 actions[action_name] = action
 
             else:

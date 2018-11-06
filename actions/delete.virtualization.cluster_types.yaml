@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-05 23:38:06.360206
+# Date: 2018-11-06 00:19:36.402099
 description: "DELETE Cluster Types"
 enabled: true
 entry_point: run.py
