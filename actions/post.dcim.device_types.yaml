@@ -1,0 +1,77 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-05 23:38:06.327757
+description: "POST Device Types"
+enabled: true
+entry_point: run.py
+name: post.dcim.device_types
+parameters:
+  endpoint_uri:
+    default: /dcim/device-types/
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  u_height:
+    required: False
+    type: "integer"
+    description: "Height (U)"
+  is_pdu:
+    required: False
+    type: "boolean"
+    description: "Is a PDU"
+  is_full_depth:
+    required: False
+    type: "boolean"
+    description: "Is full depth"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  subdevice_role:
+    required: False
+    type: "object"
+    description: "Subdevice role"
+  is_console_server:
+    required: False
+    type: "boolean"
+    description: "Is a console server"
+  comments:
+    required: False
+    type: "string"
+    description: "Comments"
+  slug:
+    required: True
+    type: "string"
+    description: "Slug"
+  is_network_device:
+    required: False
+    type: "boolean"
+    description: "Is a network device"
+  part_number:
+    required: False
+    type: "string"
+    description: "Part number"
+  interface_ordering:
+    required: False
+    type: "object"
+    description: "Interface ordering"
+  model:
+    required: True
+    type: "string"
+    description: "Model"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+  manufacturer:
+    required: True
+    type: "integer"
+    description: "Manufacturer"
+runner_type: python-script

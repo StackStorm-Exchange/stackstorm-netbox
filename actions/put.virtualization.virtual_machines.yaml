@@ -1,0 +1,93 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-05 23:38:06.343650
+description: "PUT Virtual Machines"
+enabled: true
+entry_point: run.py
+name: put.virtualization.virtual_machines
+parameters:
+  endpoint_uri:
+    default: /virtualization/virtual-machines/{{ id }}/
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  status:
+    required: False
+    type: "object"
+    description: "Status"
+  primary_ip:
+    required: False
+    type: "integer"
+    description: "Primary ip"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  platform:
+    required: False
+    type: "integer"
+    description: "Platform"
+  local_context_data:
+    required: False
+    type: "string"
+    description: "Local context data"
+  memory:
+    required: False
+    type: "integer"
+    description: "Memory (MB)"
+  site:
+    required: False
+    type: "integer"
+    description: "Site"
+  comments:
+    required: False
+    type: "string"
+    description: "Comments"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+  cluster:
+    required: False
+    type: "integer"
+    description: "Cluster"
+  vcpus:
+    required: False
+    type: "integer"
+    description: "VCPUs"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  role:
+    required: False
+    type: "integer"
+    description: "Device role"
+  primary_ip4:
+    required: False
+    type: "integer"
+    description: "Primary ip"
+  primary_ip6:
+    required: False
+    type: "integer"
+    description: "Primary ip"
+  disk:
+    required: False
+    type: "integer"
+    description: "Disk (GB)"
+  tenant:
+    required: False
+    type: "integer"
+    description: "Tenant"
+  id:
+    required: True
+    type: "integer"
+    description: "ID of the object to put."
+runner_type: python-script

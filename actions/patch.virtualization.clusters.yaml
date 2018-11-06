@@ -1,0 +1,53 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-05 23:38:06.322101
+description: "PATCH Clusters"
+enabled: true
+entry_point: run.py
+name: patch.virtualization.clusters
+parameters:
+  endpoint_uri:
+    default: /virtualization/clusters/{{ id }}/
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  group:
+    required: False
+    type: "integer"
+    description: "Group"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  site:
+    required: False
+    type: "integer"
+    description: "Site"
+  comments:
+    required: False
+    type: "string"
+    description: "Comments"
+  type:
+    required: True
+    type: "integer"
+    description: "Type"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+  id:
+    required: True
+    type: "integer"
+    description: "ID of the object to patch."
+runner_type: python-script

@@ -1,0 +1,45 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-05 23:38:06.354633
+description: "PUT Image Attachments"
+enabled: true
+entry_point: run.py
+name: put.extras.image_attachments
+parameters:
+  endpoint_uri:
+    default: /extras/image-attachments/{{ id }}/
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  name:
+    required: False
+    type: "string"
+    description: "Name"
+  image_width:
+    required: True
+    type: "integer"
+    description: "Image width"
+  object_id:
+    required: True
+    type: "integer"
+    description: "Object id"
+  image_height:
+    required: True
+    type: "integer"
+    description: "Image height"
+  content_type:
+    required: True
+    type: "string"
+    description: "Content type"
+  id:
+    required: True
+    type: "integer"
+    description: "ID of the object to put."
+runner_type: python-script

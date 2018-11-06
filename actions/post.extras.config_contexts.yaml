@@ -1,0 +1,65 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-05 23:38:06.370017
+description: "POST Config Contexts"
+enabled: true
+entry_point: run.py
+name: post.extras.config_contexts
+parameters:
+  endpoint_uri:
+    default: /extras/config-contexts/
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  tenant_groups:
+    required: False
+    type: "array"
+    description: "Tenant groups"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  weight:
+    required: False
+    type: "integer"
+    description: "Weight"
+  data:
+    required: True
+    type: "string"
+    description: "Data"
+  is_active:
+    required: False
+    type: "boolean"
+    description: "Is active"
+  sites:
+    required: False
+    type: "array"
+    description: "Sites"
+  regions:
+    required: False
+    type: "array"
+    description: "Regions"
+  platforms:
+    required: False
+    type: "array"
+    description: "Platforms"
+  roles:
+    required: False
+    type: "array"
+    description: "Roles"
+  tenants:
+    required: False
+    type: "array"
+    description: "Tenants"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+runner_type: python-script

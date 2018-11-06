@@ -1,0 +1,61 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-05 23:38:06.336818
+description: "POST Providers"
+enabled: true
+entry_point: run.py
+name: post.circuits.providers
+parameters:
+  endpoint_uri:
+    default: /circuits/providers/
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  account:
+    required: False
+    type: "string"
+    description: "Account number"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  noc_contact:
+    required: False
+    type: "string"
+    description: "NOC contact"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  portal_url:
+    required: False
+    type: "string"
+    description: "Portal"
+  slug:
+    required: True
+    type: "string"
+    description: "Slug"
+  admin_contact:
+    required: False
+    type: "string"
+    description: "Admin contact"
+  comments:
+    required: False
+    type: "string"
+    description: "Comments"
+  asn:
+    required: False
+    type: "integer"
+    description: "ASN"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+runner_type: python-script

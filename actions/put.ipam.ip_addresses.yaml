@@ -1,0 +1,69 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-05 23:38:06.296795
+description: "PUT Ip Addresses"
+enabled: true
+entry_point: run.py
+name: put.ipam.ip_addresses
+parameters:
+  endpoint_uri:
+    default: /ipam/ip-addresses/{{ id }}/
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  status:
+    required: False
+    type: "object"
+    description: "Status"
+  nat_inside:
+    required: False
+    type: "integer"
+    description: "Nat inside"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  nat_outside:
+    required: False
+    type: "integer"
+    description: "Nat inside"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+  role:
+    required: False
+    type: "object"
+    description: "Role"
+  vrf:
+    required: False
+    type: "integer"
+    description: "Vrf"
+  address:
+    required: True
+    type: "string"
+    description: "Address"
+  interface:
+    required: False
+    type: "integer"
+    description: "Interface"
+  tenant:
+    required: False
+    type: "integer"
+    description: "Tenant"
+  id:
+    required: True
+    type: "integer"
+    description: "ID of the object to put."
+runner_type: python-script

@@ -1,0 +1,53 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-05 23:38:06.311656
+description: "PUT Vrfs"
+enabled: true
+entry_point: run.py
+name: put.ipam.vrfs
+parameters:
+  endpoint_uri:
+    default: /ipam/vrfs/{{ id }}/
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  rd:
+    required: True
+    type: "string"
+    description: "Route distinguisher"
+  tenant:
+    required: False
+    type: "integer"
+    description: "Tenant"
+  enforce_unique:
+    required: False
+    type: "boolean"
+    description: "Enforce unique space"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  id:
+    required: True
+    type: "integer"
+    description: "ID of the object to put."
+runner_type: python-script

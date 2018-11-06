@@ -1,0 +1,37 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-05 23:38:06.327318
+description: "PUT Virtual Chassis"
+enabled: true
+entry_point: run.py
+name: put.dcim.virtual_chassis
+parameters:
+  endpoint_uri:
+    default: /dcim/virtual-chassis/{{ id }}/
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  domain:
+    required: False
+    type: "string"
+    description: "Domain"
+  master:
+    required: True
+    type: "integer"
+    description: "Device"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  id:
+    required: True
+    type: "integer"
+    description: "ID of the object to put."
+runner_type: python-script

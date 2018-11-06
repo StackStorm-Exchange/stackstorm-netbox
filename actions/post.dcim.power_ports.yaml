@@ -1,0 +1,41 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-05 23:38:06.358431
+description: "POST Power Ports"
+enabled: true
+entry_point: run.py
+name: post.dcim.power_ports
+parameters:
+  endpoint_uri:
+    default: /dcim/power-ports/
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  connection_status:
+    required: False
+    type: "boolean"
+    description: "Connection status"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  power_outlet:
+    required: False
+    type: "integer"
+    description: "Power outlet"
+  device:
+    required: True
+    type: "integer"
+    description: "Device"
+runner_type: python-script

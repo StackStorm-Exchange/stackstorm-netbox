@@ -1,0 +1,33 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-05 23:38:06.288738
+description: "POST Roles"
+enabled: true
+entry_point: run.py
+name: post.ipam.roles
+parameters:
+  endpoint_uri:
+    default: /ipam/roles/
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  slug:
+    required: True
+    type: "string"
+    description: "Slug"
+  weight:
+    required: False
+    type: "integer"
+    description: "Weight"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+runner_type: python-script
