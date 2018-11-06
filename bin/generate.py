@@ -3,7 +3,6 @@ import datetime
 import jinja2
 import json
 import os
-import urllib
 import urllib2
 
 
@@ -14,7 +13,7 @@ def get_spec(host, https, port):
     print("Getting API spec from NetBox instance...")
     try:
         response = urllib2.urlopen(request)
-    except Exception as e:
+    except Exception:
         print("Failed to get the API spec!")
     return json.loads(response.read())
 
@@ -61,7 +60,10 @@ def parse_properties(properties, required, spec, ignore=None):
             parameter['description'] = spec['definitions'][data['$ref'].split('/')[-1]]['title']
         else:
             parameter['type'] = data['type']
-            parameter['description'] = data['title'] if data.get('title', False) else name.replace("_", " ").capitalize()
+            if data.get('title', False):
+                parameter['description'] = data['title']
+            else:
+                parameter['description'] = name.replace("_", " ").capitalize()
 
         if name in required:
             parameter['required'] = True
@@ -86,7 +88,9 @@ def run(spec):
             if "{id}" in path:
                 path = path.replace("{id}", "{{ id }}")
             action = {
-                'description': verb_data['description'].replace("\n", "") or "{} {}".format(verb.upper(), path_parts[-1].replace("_", " ").title()),
+                'description': verb_data['description'].replace("\n", "") or "{} {}".format(
+                    verb.upper(), path_parts[-1].replace("_", " ").title()
+                ),
                 'parameters': [],
                 'endpoint_uri': path,
                 'verb': verb,
@@ -94,15 +98,19 @@ def run(spec):
             }
 
             if verb_data['parameters'] and verb_data['parameters'][0].get('schema', False):
-                schema = spec['definitions'][verb_data['parameters'][0]['schema']['$ref'].split('/')[-1]]
-                action['parameters'] = parse_properties(schema['properties'], schema['required'], spec)
+                ref_name = verb_data['parameters'][0]['schema']['$ref'].split('/')[-1]
+                schema = spec['definitions'][ref_name]
+                action['parameters'] = parse_properties(
+                    schema['properties'], schema['required'], spec
+                )
 
             if verb == 'get' and verb_data['operationId'].endswith('_list'):
                 action['parameters'] = sanitize_parameters(verb_data['parameters'])
                 actions[action_name] = action
 
             elif verb == 'get' and path.endswith("/{{ id }}/"):
-                # defer these until we have processed everything else to ensure the list endoints are present for lookup
+                # defer these until we have processed everything else to ensure the list
+                # endoints are present for lookup
                 deferred_detail_gets.append(action_name)
 
             elif verb == 'get' and "{{ id }}" in path and not path.endswith("{{ id }}"):
@@ -135,7 +143,9 @@ def run(spec):
                 # the spec defines the schema ref as Refix when it should really be IPAddress with
                 # all parameters optional (since prefix and address are handled by the route)
                 schema = spec['definitions']['IPAddress']
-                action['parameters'] = parse_properties(schema['properties'], schema['required'], spec, ['address'])
+                action['parameters'] = parse_properties(
+                    schema['properties'], schema['required'], spec, ['address']
+                )
                 action['parameters'].append({
                     'name': 'id',
                     'required': True,
@@ -150,7 +160,9 @@ def run(spec):
                 # the spec does not account for the required `prefix_length` field
                 # also prefix is already accounted for in the route
                 schema = spec['definitions']['Prefix']
-                action['parameters'] = parse_properties(schema['properties'], schema['required'], spec, ['prefix'])
+                action['parameters'] = parse_properties(
+                    schema['properties'], schema['required'], spec, ['prefix']
+                )
                 action['parameters'].append({
                     'name': 'id',
                     'required': True,
@@ -177,13 +189,14 @@ def run(spec):
             list_action['parameters'].append({
                 'name': 'id',
                 'required': False,
-                'description': 'If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, '
-                               'meaning a max of one entity will be returned and all other entity query '
-                               'parameters will be ignored.',
+                'description': 'If provided, will convert to using the detail route. '
+                               'I.e., <endpoint_uri>/<id>/, '
+                               'meaning a max of one entity will be returned and all '
+                               'other entity query parameters will be ignored.',
                 'type': 'integer'
             })
         else:
-            print("Unable to find corresponding GET list action for deferred GET endpoint {}".format(detailed_get))
+            print("Unable to find list action for deferred GET endpoint {}".format(detailed_get))
 
     # delete all current ".yaml" action files
     running_dir_name = os.path.dirname(__file__)
@@ -216,7 +229,9 @@ def run(spec):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Generate action meta yaml files from a NetBox API Swagger spec.')
+    parser = argparse.ArgumentParser(
+        description='Generate action meta yaml files from a NetBox API Swagger spec.'
+    )
     parser.add_argument(
         'host',
         type=str,
