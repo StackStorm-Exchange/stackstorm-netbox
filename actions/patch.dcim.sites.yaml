@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:59:19.916915
+# Date: 2018-11-06 11:13:33.515930
 description: "PATCH Sites"
 enabled: true
 entry_point: run.py
@@ -35,7 +35,7 @@ parameters:
     type: "string"
     description: "Comments"
   slug:
-    required: True
+    required: False
     type: "string"
     description: "Slug"
   latitude:
@@ -75,7 +75,7 @@ parameters:
     type: "integer"
     description: "Tenant"
   name:
-    required: True
+    required: False
     type: "string"
     description: "Name"
   region:

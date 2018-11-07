@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:59:19.865489
+# Date: 2018-11-06 11:13:33.461446
 description: "PATCH Tenants"
 enabled: true
 entry_point: run.py
@@ -35,7 +35,7 @@ parameters:
     type: "string"
     description: "Comments"
   slug:
-    required: True
+    required: False
     type: "string"
     description: "Slug"
   custom_fields:
@@ -43,7 +43,7 @@ parameters:
     type: "object"
     description: "Custom fields"
   name:
-    required: True
+    required: False
     type: "string"
     description: "Name"
   id:

@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:59:19.929927
+# Date: 2018-11-06 11:13:33.528687
 description: "PATCH Rack Reservations"
 enabled: true
 entry_point: run.py
@@ -19,19 +19,19 @@ parameters:
     immutable: true
     type: boolean
   description:
-    required: True
+    required: False
     type: "string"
     description: "Description"
   rack:
-    required: True
+    required: False
     type: "integer"
     description: "Rack"
   user:
-    required: True
+    required: False
     type: "integer"
     description: "User"
   units:
-    required: True
+    required: False
     type: "array"
     description: "Units"
   tenant:

@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:59:19.854892
+# Date: 2018-11-06 11:13:33.451041
 description: "GET Devices"
 enabled: true
 entry_point: run.py

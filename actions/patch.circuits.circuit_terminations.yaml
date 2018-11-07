@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:59:19.895913
+# Date: 2018-11-06 11:13:33.495596
 description: "PATCH Circuit Terminations"
 enabled: true
 entry_point: run.py
@@ -27,11 +27,11 @@ parameters:
     type: "integer"
     description: "Upstream speed (Kbps)"
   site:
-    required: True
+    required: False
     type: "integer"
     description: "Site"
   term_side:
-    required: True
+    required: False
     type: "string"
     description: "Termination"
   xconnect_id:
@@ -39,11 +39,11 @@ parameters:
     type: "integer"
     description: "Cross-connect ID"
   circuit:
-    required: True
+    required: False
     type: "integer"
     description: "Circuit"
   port_speed:
-    required: True
+    required: False
     type: "integer"
     description: "Port speed (Kbps)"
   interface:

@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:59:19.911818
+# Date: 2018-11-06 11:13:33.510714
 description: "PATCH Inventory Items"
 enabled: true
 entry_point: run.py
@@ -23,7 +23,7 @@ parameters:
     type: "boolean"
     description: "Discovered"
   name:
-    required: True
+    required: False
     type: "string"
     description: "Name"
   parent:
@@ -47,7 +47,7 @@ parameters:
     type: "integer"
     description: "Part ID"
   device:
-    required: True
+    required: False
     type: "integer"
     description: "Device"
   serial:

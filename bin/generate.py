@@ -100,9 +100,12 @@ def run(spec):
             if verb_data['parameters'] and verb_data['parameters'][0].get('schema', False):
                 ref_name = verb_data['parameters'][0]['schema']['$ref'].split('/')[-1]
                 schema = spec['definitions'][ref_name]
-                action['parameters'] = parse_properties(
-                    schema['properties'], schema['required'], spec
-                )
+                if verb == 'patch':
+                    # patch needs to remove the required attribute from all parameters
+                    required = []
+                else:
+                    required = schema['required']
+                action['parameters'] = parse_properties(schema['properties'], required, spec)
 
             #
             # Begin special endpoint processing

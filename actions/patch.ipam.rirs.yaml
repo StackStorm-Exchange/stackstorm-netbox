@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:59:19.897156
+# Date: 2018-11-06 11:13:33.497065
 description: "PATCH Rirs"
 enabled: true
 entry_point: run.py
@@ -19,7 +19,7 @@ parameters:
     immutable: true
     type: boolean
   slug:
-    required: True
+    required: False
     type: "string"
     description: "Slug"
   is_private:
@@ -27,7 +27,7 @@ parameters:
     type: "boolean"
     description: "Private"
   name:
-    required: True
+    required: False
     type: "string"
     description: "Name"
   id:

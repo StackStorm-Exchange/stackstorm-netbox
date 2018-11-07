@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:59:19.916324
+# Date: 2018-11-06 11:13:33.515455
 description: "PATCH Power Ports"
 enabled: true
 entry_point: run.py
@@ -23,7 +23,7 @@ parameters:
     type: "boolean"
     description: "Connection status"
   name:
-    required: True
+    required: False
     type: "string"
     description: "Name"
   tags:
@@ -35,7 +35,7 @@ parameters:
     type: "integer"
     description: "Power outlet"
   device:
-    required: True
+    required: False
     type: "integer"
     description: "Device"
   id:

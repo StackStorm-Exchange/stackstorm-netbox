@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 00:59:19.927674
+# Date: 2018-11-06 11:13:33.526375
 description: "PATCH Device Roles"
 enabled: true
 entry_point: run.py
@@ -19,7 +19,7 @@ parameters:
     immutable: true
     type: boolean
   color:
-    required: True
+    required: False
     type: "string"
     description: "Color"
   vm_role:
@@ -27,11 +27,11 @@ parameters:
     type: "boolean"
     description: "VM Role"
   slug:
-    required: True
+    required: False
     type: "string"
     description: "Slug"
   name:
-    required: True
+    required: False
     type: "string"
     description: "Name"
   id:
