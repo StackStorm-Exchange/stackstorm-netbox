@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-07 23:33:02.804597
+# Date: 2018-11-08 00:21:23.106781
 description: "GET Tenant Groups"
 enabled: true
 entry_point: run.py

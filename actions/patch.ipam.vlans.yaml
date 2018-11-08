@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-07 23:33:02.823903
+# Date: 2018-11-08 00:21:23.127829
 description: "PATCH Vlans"
 enabled: true
 entry_point: run.py
@@ -20,7 +20,7 @@ parameters:
     type: boolean
   status:
     required: False
-    type: "object"
+    type: "integer"
     description: "Status"
   group:
     required: False

@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-07 23:33:02.809049
+# Date: 2018-11-08 00:21:23.111464
 description: "PUT Console Port Templates"
 enabled: true
 entry_point: run.py

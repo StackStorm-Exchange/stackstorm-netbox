@@ -58,10 +58,18 @@ def parse_properties(properties, required, spec, ignore=None):
             'name': name,
         }
 
+        data_properties = data.get('properties', {})
+
         if data.get('$ref', False):
+            # forien key reliationships should be integers
             parameter['type'] = "integer"
             parameter['description'] = spec['definitions'][data['$ref'].split('/')[-1]]['title']
+        elif data_properties.get('label', False) and data_properties.get('value', False):
+            # choice fields should be converted to integer types
+            parameter['type'] = "integer"
+            parameter['description'] = name.replace("_", " ").capitalize()
         else:
+            # everything else is just copied over
             parameter['type'] = data['type']
             if data.get('title', False):
                 parameter['description'] = data['title']

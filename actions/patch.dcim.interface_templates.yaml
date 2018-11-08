@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-07 23:33:02.861507
+# Date: 2018-11-08 00:21:23.165629
 description: "PATCH Interface Templates"
 enabled: true
 entry_point: run.py
@@ -24,7 +24,7 @@ parameters:
     description: "Management only"
   form_factor:
     required: False
-    type: "object"
+    type: "integer"
     description: "Form factor"
   device_type:
     required: False

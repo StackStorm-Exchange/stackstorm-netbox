@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-07 23:33:02.775973
+# Date: 2018-11-08 00:21:23.079123
 description: "POST Interfaces"
 enabled: true
 entry_point: run.py
@@ -56,11 +56,11 @@ parameters:
     description: "MAC Address"
   mode:
     required: False
-    type: "object"
+    type: "integer"
     description: "Mode"
   form_factor:
     required: False
-    type: "object"
+    type: "integer"
     description: "Form factor"
   device:
     required: True

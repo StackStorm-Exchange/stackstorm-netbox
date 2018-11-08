@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-07 23:33:02.835863
+# Date: 2018-11-08 00:21:23.140147
 description: "PATCH Graphs"
 enabled: true
 entry_point: run.py
@@ -36,7 +36,7 @@ parameters:
     description: "Link URL"
   type:
     required: False
-    type: "object"
+    type: "integer"
     description: "Type"
   id:
     required: True

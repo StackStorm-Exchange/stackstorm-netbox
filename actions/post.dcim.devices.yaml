@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-07 23:33:02.785247
+# Date: 2018-11-08 00:21:23.087845
 description: "POST Devices"
 enabled: true
 entry_point: run.py
@@ -56,7 +56,7 @@ parameters:
     description: "Platform"
   status:
     required: False
-    type: "object"
+    type: "integer"
     description: "Status"
   device_role:
     required: True
@@ -96,7 +96,7 @@ parameters:
     description: "Name"
   face:
     required: False
-    type: "object"
+    type: "integer"
     description: "Face"
   vc_position:
     required: False

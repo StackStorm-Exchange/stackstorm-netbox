@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-07 23:33:02.835464
+# Date: 2018-11-08 00:21:23.139688
 description: "PUT Device Types"
 enabled: true
 entry_point: run.py
@@ -36,7 +36,7 @@ parameters:
     description: "Array of tag strings"
   subdevice_role:
     required: False
-    type: "object"
+    type: "integer"
     description: "Subdevice role"
   is_console_server:
     required: False
@@ -60,7 +60,7 @@ parameters:
     description: "Part number"
   interface_ordering:
     required: False
-    type: "object"
+    type: "integer"
     description: "Interface ordering"
   model:
     required: True
