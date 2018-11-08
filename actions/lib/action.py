@@ -63,7 +63,10 @@ class NetboxBaseAction(Action):
 
         elif http_action == "delete":
             r = requests.delete(url, verify=verify, headers=headers)
-            self.logger.info("Delete of ID {} returned status code {}".format(kwargs['id'], r.status_code))
+            self.logger.info("Delete of ID {} returned status code {}".format(
+                kwargs['id'],
+                r.status_code)
+            )
             return r.status_code == 204
 
         return {'raw': r.json()}
