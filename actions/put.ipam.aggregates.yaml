@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.547313
+# Date: 2018-11-07 23:33:02.865743
 description: "PUT Aggregates"
 enabled: true
 entry_point: run.py
 name: put.ipam.aggregates
 parameters:
   endpoint_uri:
-    default: /ipam/aggregates/{{ id }}/
+    default: "/ipam/aggregates/{{ id }}/"
     immutable: true
     type: string
   http_verb:

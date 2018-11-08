@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.458612
+# Date: 2018-11-07 23:33:02.775102
 description: "DELETE Roles"
 enabled: true
 entry_point: run.py
 name: delete.ipam.roles
 parameters:
   endpoint_uri:
-    default: /ipam/roles/{{ id }}/
+    default: "/ipam/roles/{{ id }}/"
     immutable: true
     type: string
   http_verb:

@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.504374
+# Date: 2018-11-07 23:33:02.822035
 description: "List rack units (by rack)"
 enabled: true
 entry_point: run.py
 name: get.dcim.racks.units
 parameters:
   endpoint_uri:
-    default: /dcim/racks/{{ id }}/units/
+    default: "/dcim/racks/{{ id }}/units/"
     immutable: true
     type: string
   http_verb:

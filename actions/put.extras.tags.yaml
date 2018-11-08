@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.469018
+# Date: 2018-11-07 23:33:02.786206
 description: "PUT Tags"
 enabled: true
 entry_point: run.py
 name: put.extras.tags
 parameters:
   endpoint_uri:
-    default: /extras/tags/{{ id }}/
+    default: "/extras/tags/{{ id }}/"
     immutable: true
     type: string
   http_verb:

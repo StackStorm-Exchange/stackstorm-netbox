@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.543460
+# Date: 2018-11-07 23:33:02.862043
 description: "PUT Interface Templates"
 enabled: true
 entry_point: run.py
 name: put.dcim.interface_templates
 parameters:
   endpoint_uri:
-    default: /dcim/interface-templates/{{ id }}/
+    default: "/dcim/interface-templates/{{ id }}/"
     immutable: true
     type: string
   http_verb:

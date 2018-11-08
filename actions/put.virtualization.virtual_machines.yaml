@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.516410
+# Date: 2018-11-07 23:33:02.834189
 description: "PUT Virtual Machines"
 enabled: true
 entry_point: run.py
 name: put.virtualization.virtual_machines
 parameters:
   endpoint_uri:
-    default: /virtualization/virtual-machines/{{ id }}/
+    default: "/virtualization/virtual-machines/{{ id }}/"
     immutable: true
     type: string
   http_verb:

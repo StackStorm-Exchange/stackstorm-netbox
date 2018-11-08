@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.515455
+# Date: 2018-11-07 23:33:02.833105
 description: "PATCH Power Ports"
 enabled: true
 entry_point: run.py
 name: patch.dcim.power_ports
 parameters:
   endpoint_uri:
-    default: /dcim/power-ports/{{ id }}/
+    default: "/dcim/power-ports/{{ id }}/"
     immutable: true
     type: string
   http_verb:

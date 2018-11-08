@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.467058
+# Date: 2018-11-07 23:33:02.783984
 description: "POST Device Bay Templates"
 enabled: true
 entry_point: run.py
 name: post.dcim.device_bay_templates
 parameters:
   endpoint_uri:
-    default: /dcim/device-bay-templates/
+    default: "/dcim/device-bay-templates/"
     immutable: true
     type: string
   http_verb:

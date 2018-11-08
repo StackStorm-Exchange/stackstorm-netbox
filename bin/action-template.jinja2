@@ -7,7 +7,7 @@ entry_point: run.py
 name: {{ action_name }}
 parameters:
   endpoint_uri:
-    default: {{ endpoint_uri }}
+    default: "{{ endpoint_uri }}"
     immutable: true
     type: string
   http_verb:

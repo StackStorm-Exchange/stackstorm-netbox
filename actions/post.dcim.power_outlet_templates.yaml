@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.490506
+# Date: 2018-11-07 23:33:02.809302
 description: "POST Power Outlet Templates"
 enabled: true
 entry_point: run.py
 name: post.dcim.power_outlet_templates
 parameters:
   endpoint_uri:
-    default: /dcim/power-outlet-templates/
+    default: "/dcim/power-outlet-templates/"
     immutable: true
     type: string
   http_verb:

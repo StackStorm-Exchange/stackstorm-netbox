@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.537739
+# Date: 2018-11-07 23:33:02.856532
 description: "GET Manufacturers"
 enabled: true
 entry_point: run.py
 name: get.dcim.manufacturers
 parameters:
   endpoint_uri:
-    default: /dcim/manufacturers/
+    default: "/dcim/manufacturers/"
     immutable: true
     type: string
   http_verb:

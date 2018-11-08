@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.546001
+# Date: 2018-11-07 23:33:02.864620
 description: "PUT Regions"
 enabled: true
 entry_point: run.py
 name: put.dcim.regions
 parameters:
   endpoint_uri:
-    default: /dcim/regions/{{ id }}/
+    default: "/dcim/regions/{{ id }}/"
     immutable: true
     type: string
   http_verb:

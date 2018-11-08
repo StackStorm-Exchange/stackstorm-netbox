@@ -46,24 +46,24 @@ class NetboxBaseAction(Action):
         if http_action != "get":
             kwargs = {key: value for key, value in kwargs.items() if value is not None}
 
+        self.logger.debug("Calling base {} with kwargs: {}".format(http_action, kwargs))
+        verify = self.config['ssl_verify']
+
         if http_action == "get":
-            self.logger.debug("Calling base get with kwargs: {}".format(kwargs))
-            r = requests.get(url, verify=self.config['ssl_verify'], headers=headers, params=kwargs)
+            r = requests.get(url, verify=verify, headers=headers, params=kwargs)
 
         elif http_action == "post":
-            self.logger.debug("Calling base post with kwargs: {}".format(kwargs))
-            r = requests.post(url, verify=self.config['ssl_verify'], headers=headers, json=kwargs)
+            r = requests.post(url, verify=verify, headers=headers, json=kwargs)
 
         elif http_action == "put":
-            self.logger.debug("Calling base put with kwargs: {}".format(kwargs))
-            r = requests.put(url, verify=self.config['ssl_verify'], headers=headers, json=kwargs)
+            r = requests.put(url, verify=verify, headers=headers, json=kwargs)
 
         elif http_action == "patch":
-            self.logger.debug("Calling base patch with kwargs: {}".format(kwargs))
-            r = requests.patch(url, verify=self.config['ssl_verify'], headers=headers, json=kwargs)
+            r = requests.patch(url, verify=verify, headers=headers, json=kwargs)
 
         elif http_action == "delete":
-            self.logger.debug("Calling base delete with kwargs: {}".format(kwargs))
-            r = requests.delete(url, verify=self.config['ssl_verify'], headers=headers)
+            r = requests.delete(url, verify=verify, headers=headers)
+            self.logger.info("Delete of ID {} returned status code {}".format(kwargs['id'], r.status_code))
+            return r.status_code == 204
 
         return {'raw': r.json()}

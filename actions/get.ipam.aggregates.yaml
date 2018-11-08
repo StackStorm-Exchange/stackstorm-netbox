@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.459150
+# Date: 2018-11-07 23:33:02.775599
 description: "GET Aggregates"
 enabled: true
 entry_point: run.py
 name: get.ipam.aggregates
 parameters:
   endpoint_uri:
-    default: /ipam/aggregates/
+    default: "/ipam/aggregates/"
     immutable: true
     type: string
   http_verb:

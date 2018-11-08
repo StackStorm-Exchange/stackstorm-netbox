@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.464371
+# Date: 2018-11-07 23:33:02.781555
 description: "DELETE Export Templates"
 enabled: true
 entry_point: run.py
 name: delete.extras.export_templates
 parameters:
   endpoint_uri:
-    default: /extras/export-templates/{{ id }}/
+    default: "/extras/export-templates/{{ id }}/"
     immutable: true
     type: string
   http_verb:

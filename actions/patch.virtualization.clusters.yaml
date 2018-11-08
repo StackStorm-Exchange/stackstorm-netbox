@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.493537
+# Date: 2018-11-07 23:33:02.812313
 description: "PATCH Clusters"
 enabled: true
 entry_point: run.py
 name: patch.virtualization.clusters
 parameters:
   endpoint_uri:
-    default: /virtualization/clusters/{{ id }}/
+    default: "/virtualization/clusters/{{ id }}/"
     immutable: true
     type: string
   http_verb:

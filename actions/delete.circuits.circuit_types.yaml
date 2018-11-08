@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.494765
+# Date: 2018-11-07 23:33:02.813544
 description: "DELETE Circuit Types"
 enabled: true
 entry_point: run.py
 name: delete.circuits.circuit_types
 parameters:
   endpoint_uri:
-    default: /circuits/circuit-types/{{ id }}/
+    default: "/circuits/circuit-types/{{ id }}/"
     immutable: true
     type: string
   http_verb:

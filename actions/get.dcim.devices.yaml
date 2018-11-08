@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.451041
+# Date: 2018-11-07 23:33:02.768440
 description: "GET Devices"
 enabled: true
 entry_point: run.py
 name: get.dcim.devices
 parameters:
   endpoint_uri:
-    default: /dcim/devices/
+    default: "/dcim/devices/"
     immutable: true
     type: string
   http_verb:
@@ -24,7 +24,7 @@ parameters:
     description: ""
   position:
     required: False
-    type: "number"
+    type: "integer"
     description: ""
   id__in:
     required: False

@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.537216
+# Date: 2018-11-07 23:33:02.855904
 description: "GET Circuits"
 enabled: true
 entry_point: run.py
 name: get.circuits.circuits
 parameters:
   endpoint_uri:
-    default: /circuits/circuits/
+    default: "/circuits/circuits/"
     immutable: true
     type: string
   http_verb:
@@ -28,7 +28,7 @@ parameters:
     description: ""
   commit_rate:
     required: False
-    type: "number"
+    type: "integer"
     description: ""
   id__in:
     required: False

@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.457471
+# Date: 2018-11-07 23:33:02.774175
 description: "DELETE Cluster Groups"
 enabled: true
 entry_point: run.py
 name: delete.virtualization.cluster_groups
 parameters:
   endpoint_uri:
-    default: /virtualization/cluster-groups/{{ id }}/
+    default: "/virtualization/cluster-groups/{{ id }}/"
     immutable: true
     type: string
   http_verb:

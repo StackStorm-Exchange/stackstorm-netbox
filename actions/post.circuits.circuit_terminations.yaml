@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.453099
+# Date: 2018-11-07 23:33:02.770565
 description: "POST Circuit Terminations"
 enabled: true
 entry_point: run.py
 name: post.circuits.circuit_terminations
 parameters:
   endpoint_uri:
-    default: /circuits/circuit-terminations/
+    default: "/circuits/circuit-terminations/"
     immutable: true
     type: string
   http_verb:

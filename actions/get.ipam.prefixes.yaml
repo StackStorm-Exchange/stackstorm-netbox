@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.523934
+# Date: 2018-11-07 23:33:02.841877
 description: "GET Prefixes"
 enabled: true
 entry_point: run.py
 name: get.ipam.prefixes
 parameters:
   endpoint_uri:
-    default: /ipam/prefixes/
+    default: "/ipam/prefixes/"
     immutable: true
     type: string
   http_verb:
@@ -48,7 +48,7 @@ parameters:
     description: ""
   mask_length:
     required: False
-    type: "number"
+    type: "integer"
     description: ""
   vrf_id:
     required: False
@@ -80,7 +80,7 @@ parameters:
     description: ""
   vlan_vid:
     required: False
-    type: "number"
+    type: "integer"
     description: ""
   role_id:
     required: False

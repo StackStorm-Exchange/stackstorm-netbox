@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.512710
+# Date: 2018-11-07 23:33:02.830449
 description: "A convenience method for returning available IP addresses within a prefix. By default, the number of IPsreturned will be equivalent to PAGINATE_COUNT. An arbitrary limit (up to MAX_PAGE_SIZE, if set) may be passed,however results will not be paginated."
 enabled: true
 entry_point: run.py
 name: get.ipam.prefixes.available_ips
 parameters:
   endpoint_uri:
-    default: /ipam/prefixes/{{ id }}/available-ips/
+    default: "/ipam/prefixes/{{ id }}/available-ips/"
     immutable: true
     type: string
   http_verb:

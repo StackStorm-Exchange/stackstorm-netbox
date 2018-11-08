@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.476724
+# Date: 2018-11-07 23:33:02.794552
 description: "GET Ip Addresses"
 enabled: true
 entry_point: run.py
 name: get.ipam.ip_addresses
 parameters:
   endpoint_uri:
-    default: /ipam/ip-addresses/
+    default: "/ipam/ip-addresses/"
     immutable: true
     type: string
   http_verb:
@@ -40,7 +40,7 @@ parameters:
     description: ""
   mask_length:
     required: False
-    type: "number"
+    type: "integer"
     description: ""
   vrf_id:
     required: False

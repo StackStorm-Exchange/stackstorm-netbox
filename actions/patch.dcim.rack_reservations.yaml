@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.528687
+# Date: 2018-11-07 23:33:02.846882
 description: "PATCH Rack Reservations"
 enabled: true
 entry_point: run.py
 name: patch.dcim.rack_reservations
 parameters:
   endpoint_uri:
-    default: /dcim/rack-reservations/{{ id }}/
+    default: "/dcim/rack-reservations/{{ id }}/"
     immutable: true
     type: string
   http_verb:

@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.529576
+# Date: 2018-11-07 23:33:02.847928
 description: "GET Tags"
 enabled: true
 entry_point: run.py
 name: get.extras.tags
 parameters:
   endpoint_uri:
-    default: /extras/tags/
+    default: "/extras/tags/"
     immutable: true
     type: string
   http_verb:

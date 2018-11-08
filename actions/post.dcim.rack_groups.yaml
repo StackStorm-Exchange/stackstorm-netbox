@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.527963
+# Date: 2018-11-07 23:33:02.846118
 description: "POST Rack Groups"
 enabled: true
 entry_point: run.py
 name: post.dcim.rack_groups
 parameters:
   endpoint_uri:
-    default: /dcim/rack-groups/
+    default: "/dcim/rack-groups/"
     immutable: true
     type: string
   http_verb:

@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.503634
+# Date: 2018-11-07 23:33:02.821302
 description: "PATCH Console Server Port Templates"
 enabled: true
 entry_point: run.py
 name: patch.dcim.console_server_port_templates
 parameters:
   endpoint_uri:
-    default: /dcim/console-server-port-templates/{{ id }}/
+    default: "/dcim/console-server-port-templates/{{ id }}/"
     immutable: true
     type: string
   http_verb:

@@ -28,6 +28,9 @@ def sanitize_parameters(parameters):
         elif parameter['name'] == 'tags':
             parameter['type'] = "array"
             parameter['description'] = "Array of tag strings"
+
+        if parameter['type'] == 'number':
+            parameter['type'] = 'integer'
     return parameters
 
 

@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.458826
+# Date: 2018-11-07 23:33:02.775282
 description: "GET Cluster Types"
 enabled: true
 entry_point: run.py
 name: get.virtualization.cluster_types
 parameters:
   endpoint_uri:
-    default: /virtualization/cluster-types/
+    default: "/virtualization/cluster-types/"
     immutable: true
     type: string
   http_verb:

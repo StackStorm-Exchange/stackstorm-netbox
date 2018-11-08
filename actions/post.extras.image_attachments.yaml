@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.485493
+# Date: 2018-11-07 23:33:02.803482
 description: "POST Image Attachments"
 enabled: true
 entry_point: run.py
 name: post.extras.image_attachments
 parameters:
   endpoint_uri:
-    default: /extras/image-attachments/
+    default: "/extras/image-attachments/"
     immutable: true
     type: string
   http_verb:

@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.525337
+# Date: 2018-11-07 23:33:02.843401
 description: "POST Interface Connections"
 enabled: true
 entry_point: run.py
 name: post.dcim.interface_connections
 parameters:
   endpoint_uri:
-    default: /dcim/interface-connections/
+    default: "/dcim/interface-connections/"
     immutable: true
     type: string
   http_verb:

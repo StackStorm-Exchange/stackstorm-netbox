@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.475445
+# Date: 2018-11-07 23:33:02.793515
 description: "PUT Racks"
 enabled: true
 entry_point: run.py
 name: put.dcim.racks
 parameters:
   endpoint_uri:
-    default: /dcim/racks/{{ id }}/
+    default: "/dcim/racks/{{ id }}/"
     immutable: true
     type: string
   http_verb:

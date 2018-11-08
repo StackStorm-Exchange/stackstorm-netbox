@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.497846
+# Date: 2018-11-07 23:33:02.816080
 description: "DELETE Aggregates"
 enabled: true
 entry_point: run.py
 name: delete.ipam.aggregates
 parameters:
   endpoint_uri:
-    default: /ipam/aggregates/{{ id }}/
+    default: "/ipam/aggregates/{{ id }}/"
     immutable: true
     type: string
   http_verb:

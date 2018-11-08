@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.511417
+# Date: 2018-11-07 23:33:02.829316
 description: "GET Interfaces"
 enabled: true
 entry_point: run.py
 name: get.dcim.interfaces
 parameters:
   endpoint_uri:
-    default: /dcim/interfaces/
+    default: "/dcim/interfaces/"
     immutable: true
     type: string
   http_verb:
@@ -32,7 +32,7 @@ parameters:
     description: ""
   mtu:
     required: False
-    type: "number"
+    type: "integer"
     description: ""
   mgmt_only:
     required: False

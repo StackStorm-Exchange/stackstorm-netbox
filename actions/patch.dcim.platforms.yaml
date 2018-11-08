@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.453410
+# Date: 2018-11-07 23:33:02.770898
 description: "PATCH Platforms"
 enabled: true
 entry_point: run.py
 name: patch.dcim.platforms
 parameters:
   endpoint_uri:
-    default: /dcim/platforms/{{ id }}/
+    default: "/dcim/platforms/{{ id }}/"
     immutable: true
     type: string
   http_verb:

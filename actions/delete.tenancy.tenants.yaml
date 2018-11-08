@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.531117
+# Date: 2018-11-07 23:33:02.850155
 description: "DELETE Tenants"
 enabled: true
 entry_point: run.py
 name: delete.tenancy.tenants
 parameters:
   endpoint_uri:
-    default: /tenancy/tenants/{{ id }}/
+    default: "/tenancy/tenants/{{ id }}/"
     immutable: true
     type: string
   http_verb:

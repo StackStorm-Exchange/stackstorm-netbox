@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.539930
+# Date: 2018-11-07 23:33:02.858641
 description: "PUT Power Outlets"
 enabled: true
 entry_point: run.py
 name: put.dcim.power_outlets
 parameters:
   endpoint_uri:
-    default: /dcim/power-outlets/{{ id }}/
+    default: "/dcim/power-outlets/{{ id }}/"
     immutable: true
     type: string
   http_verb:

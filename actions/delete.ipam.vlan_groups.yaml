@@ -1,13 +1,13 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 2.4
-# Date: 2018-11-06 11:13:33.543262
+# Date: 2018-11-07 23:33:02.861816
 description: "DELETE Vlan Groups"
 enabled: true
 entry_point: run.py
 name: delete.ipam.vlan_groups
 parameters:
   endpoint_uri:
-    default: /ipam/vlan-groups/{{ id }}/
+    default: "/ipam/vlan-groups/{{ id }}/"
     immutable: true
     type: string
   http_verb:
