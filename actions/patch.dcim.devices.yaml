@@ -1,0 +1,117 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-08 00:21:23.135125
+description: "PATCH Devices"
+enabled: true
+entry_point: run.py
+name: patch.dcim.devices
+parameters:
+  endpoint_uri:
+    default: "/dcim/devices/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  site:
+    required: False
+    type: "integer"
+    description: "Site"
+  asset_tag:
+    required: False
+    type: "string"
+    description: "Asset tag"
+  cluster:
+    required: False
+    type: "integer"
+    description: "Cluster"
+  device_type:
+    required: False
+    type: "integer"
+    description: "Device type"
+  serial:
+    required: False
+    type: "string"
+    description: "Serial number"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+  local_context_data:
+    required: False
+    type: "string"
+    description: "Local context data"
+  comments:
+    required: False
+    type: "string"
+    description: "Comments"
+  platform:
+    required: False
+    type: "integer"
+    description: "Platform"
+  status:
+    required: False
+    type: "integer"
+    description: "Status"
+  device_role:
+    required: False
+    type: "integer"
+    description: "Device role"
+  primary_ip:
+    required: False
+    type: "integer"
+    description: "Primary ip"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  vc_priority:
+    required: False
+    type: "integer"
+    description: "Vc priority"
+  primary_ip4:
+    required: False
+    type: "integer"
+    description: "Primary ip"
+  primary_ip6:
+    required: False
+    type: "integer"
+    description: "Primary ip"
+  tenant:
+    required: False
+    type: "integer"
+    description: "Tenant"
+  virtual_chassis:
+    required: False
+    type: "integer"
+    description: "Virtual chassis"
+  name:
+    required: False
+    type: "string"
+    description: "Name"
+  face:
+    required: False
+    type: "integer"
+    description: "Face"
+  vc_position:
+    required: False
+    type: "integer"
+    description: "Vc position"
+  position:
+    required: False
+    type: "integer"
+    description: "Position (U)"
+  rack:
+    required: False
+    type: "integer"
+    description: "Rack"
+  id:
+    required: True
+    type: "integer"
+    description: "ID of the object to patch."
+runner_type: python-script

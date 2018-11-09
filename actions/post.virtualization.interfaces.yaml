@@ -1,0 +1,77 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-08 00:21:23.092572
+description: "POST Interfaces"
+enabled: true
+entry_point: run.py
+name: post.virtualization.interfaces
+parameters:
+  endpoint_uri:
+    default: "/virtualization/interfaces/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  tagged_vlans:
+    required: False
+    type: "array"
+    description: "Tagged vlans"
+  untagged_vlan:
+    required: False
+    type: "integer"
+    description: "Untagged vlan"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  lag:
+    required: False
+    type: "integer"
+    description: "Interface"
+  enabled:
+    required: False
+    type: "boolean"
+    description: "Enabled"
+  circuit_termination:
+    required: False
+    type: "integer"
+    description: "Circuit termination"
+  mtu:
+    required: False
+    type: "integer"
+    description: "MTU"
+  mac_address:
+    required: False
+    type: "string"
+    description: "MAC Address"
+  mode:
+    required: False
+    type: "integer"
+    description: "Mode"
+  form_factor:
+    required: False
+    type: "integer"
+    description: "Form factor"
+  device:
+    required: True
+    type: "integer"
+    description: "Device"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  mgmt_only:
+    required: False
+    type: "boolean"
+    description: "OOB Management"
+runner_type: python-script

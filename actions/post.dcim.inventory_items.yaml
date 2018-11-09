@@ -1,0 +1,61 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-08 00:21:23.101296
+description: "POST Inventory Items"
+enabled: true
+entry_point: run.py
+name: post.dcim.inventory_items
+parameters:
+  endpoint_uri:
+    default: "/dcim/inventory-items/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  discovered:
+    required: False
+    type: "boolean"
+    description: "Discovered"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  parent:
+    required: False
+    type: "integer"
+    description: "Parent"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  asset_tag:
+    required: False
+    type: "string"
+    description: "Asset tag"
+  part_id:
+    required: False
+    type: "integer"
+    description: "Part ID"
+  device:
+    required: True
+    type: "integer"
+    description: "Device"
+  serial:
+    required: False
+    type: "string"
+    description: "Serial number"
+  manufacturer:
+    required: False
+    type: "integer"
+    description: "Manufacturer"
+runner_type: python-script

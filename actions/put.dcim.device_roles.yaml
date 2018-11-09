@@ -1,0 +1,41 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-08 00:21:23.145140
+description: "PUT Device Roles"
+enabled: true
+entry_point: run.py
+name: put.dcim.device_roles
+parameters:
+  endpoint_uri:
+    default: "/dcim/device-roles/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  color:
+    required: True
+    type: "string"
+    description: "Color"
+  vm_role:
+    required: False
+    type: "boolean"
+    description: "VM Role"
+  slug:
+    required: True
+    type: "string"
+    description: "Slug"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  id:
+    required: True
+    type: "integer"
+    description: "ID of the object to put."
+runner_type: python-script

@@ -1,0 +1,57 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-08 00:21:23.116654
+description: "PATCH Circuit Terminations"
+enabled: true
+entry_point: run.py
+name: patch.circuits.circuit_terminations
+parameters:
+  endpoint_uri:
+    default: "/circuits/circuit-terminations/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  pp_info:
+    required: False
+    type: "string"
+    description: "Patch panel/port(s)"
+  upstream_speed:
+    required: False
+    type: "integer"
+    description: "Upstream speed (Kbps)"
+  site:
+    required: False
+    type: "integer"
+    description: "Site"
+  term_side:
+    required: False
+    type: "string"
+    description: "Termination"
+  xconnect_id:
+    required: False
+    type: "integer"
+    description: "Cross-connect ID"
+  circuit:
+    required: False
+    type: "integer"
+    description: "Circuit"
+  port_speed:
+    required: False
+    type: "integer"
+    description: "Port speed (Kbps)"
+  interface:
+    required: False
+    type: "integer"
+    description: "Interface"
+  id:
+    required: True
+    type: "integer"
+    description: "ID of the object to patch."
+runner_type: python-script

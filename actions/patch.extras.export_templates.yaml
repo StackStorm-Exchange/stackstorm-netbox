@@ -1,0 +1,49 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-08 00:21:23.170065
+description: "PATCH Export Templates"
+enabled: true
+entry_point: run.py
+name: patch.extras.export_templates
+parameters:
+  endpoint_uri:
+    default: "/extras/export-templates/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  template_code:
+    required: False
+    type: "string"
+    description: "Template code"
+  file_extension:
+    required: False
+    type: "string"
+    description: "File extension"
+  content_type:
+    required: False
+    type: "integer"
+    description: "Content type"
+  mime_type:
+    required: False
+    type: "string"
+    description: "Mime type"
+  name:
+    required: False
+    type: "string"
+    description: "Name"
+  id:
+    required: True
+    type: "integer"
+    description: "ID of the object to patch."
+runner_type: python-script

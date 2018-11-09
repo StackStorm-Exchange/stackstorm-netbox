@@ -1,0 +1,97 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-08 00:21:23.130352
+description: "POST Sites"
+enabled: true
+entry_point: run.py
+name: post.dcim.sites
+parameters:
+  endpoint_uri:
+    default: "/dcim/sites/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  facility:
+    required: False
+    type: "string"
+    description: "Facility"
+  contact_name:
+    required: False
+    type: "string"
+    description: "Contact name"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+  comments:
+    required: False
+    type: "string"
+    description: "Comments"
+  slug:
+    required: True
+    type: "string"
+    description: "Slug"
+  latitude:
+    required: False
+    type: "string"
+    description: "Latitude"
+  contact_phone:
+    required: False
+    type: "string"
+    description: "Contact phone"
+  status:
+    required: False
+    type: "integer"
+    description: "Status"
+  physical_address:
+    required: False
+    type: "string"
+    description: "Physical address"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  contact_email:
+    required: False
+    type: "string"
+    description: "Contact E-mail"
+  asn:
+    required: False
+    type: "integer"
+    description: "ASN"
+  tenant:
+    required: False
+    type: "integer"
+    description: "Tenant"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  region:
+    required: False
+    type: "integer"
+    description: "Parent"
+  time_zone:
+    required: False
+    type: "string"
+    description: "Time zone"
+  longitude:
+    required: False
+    type: "string"
+    description: "Longitude"
+  shipping_address:
+    required: False
+    type: "string"
+    description: "Shipping address"
+runner_type: python-script

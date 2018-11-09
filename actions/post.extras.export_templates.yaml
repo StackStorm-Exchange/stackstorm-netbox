@@ -1,0 +1,45 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-08 00:21:23.113834
+description: "POST Export Templates"
+enabled: true
+entry_point: run.py
+name: post.extras.export_templates
+parameters:
+  endpoint_uri:
+    default: "/extras/export-templates/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  template_code:
+    required: True
+    type: "string"
+    description: "Template code"
+  file_extension:
+    required: False
+    type: "string"
+    description: "File extension"
+  content_type:
+    required: True
+    type: "integer"
+    description: "Content type"
+  mime_type:
+    required: False
+    type: "string"
+    description: "Mime type"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+runner_type: python-script

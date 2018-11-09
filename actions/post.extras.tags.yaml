@@ -1,0 +1,29 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 2.4
+# Date: 2018-11-08 00:21:23.143613
+description: "POST Tags"
+enabled: true
+entry_point: run.py
+name: post.extras.tags
+parameters:
+  endpoint_uri:
+    default: "/extras/tags/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  slug:
+    required: True
+    type: "string"
+    description: "Slug"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+runner_type: python-script
