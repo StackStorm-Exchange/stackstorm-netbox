@@ -1,3 +1,6 @@
+import hashlib
+import hmac
+
 from flask import request, Flask
 
 from st2reactor.sensor.base import Sensor
