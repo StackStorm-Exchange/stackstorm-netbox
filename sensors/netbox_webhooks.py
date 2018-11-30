@@ -27,11 +27,11 @@ class NetBoxWebhooksSensor(Sensor):
 
             event = payload.get('event', None)
             if event == 'created':
-                trigger = "netbox.object_created"
+                trigger = "netbox.webhook.object_created"
             elif event == 'updated':
-                trigger = "netbox.object_updated"
+                trigger = "netbox.webhook.object_updated"
             elif event == 'deleted':
-                trigger = "netbox.object_deleted"
+                trigger = "netbox.webhook.object_deleted"
             else:
                 self._log.warning("Unknown event request received, refusing to process.")
                 return False
