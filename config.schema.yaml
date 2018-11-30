@@ -18,3 +18,13 @@ ssl_verify:
   description: "Verify ssl/tls protocol certs when contacting the API."
   type: "boolean"
   required: true
+
+sensor_address:
+  description: "Host address to run the Webhook sensor on."
+  type: "string"
+  default: "0.0.0.0"
+
+sensor_port:
+  description: "Port to run the Webhook sensor on."
+  type: "integer"
+  default: 6000

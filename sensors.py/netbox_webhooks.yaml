@@ -1,0 +1,29 @@
+---
+  class_name: "NetBoxWebhooksSensor"
+  entry_point: "netbox_webhooks.py"
+  description: "Passive sensor listening for inbound webhooks from NetBox."
+  trigger_types:
+    -
+      name: "webhook.object_created"
+      description: "Object created"
+      payload_schema:
+        type: "object"
+        properties:
+          payload:
+            type: "object"
+    -
+      name: "webhook.object_updated"
+      description: "Object updated"
+      payload_schema:
+        type: "object"
+        properties:
+          payload:
+            type: "object"
+    -
+      name: "webhook.object_deleted"
+      description: "Object deleted"
+      payload_schema:
+        type: "object"
+        properties:
+          payload:
+            type: "object"
