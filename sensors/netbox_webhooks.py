@@ -34,10 +34,10 @@ class NetBoxWebhooksSensor(Sensor):
                 trigger = "netbox.webhook.object_deleted"
             else:
                 self._log.warning("Unknown event request received, refusing to process.")
-                return False
+                return "Nope", 400
 
             self._sensor_service.dispatch(trigger=trigger, payload=payload)
-            return True
+            return "Done", 200
 
         self._log.info('Listening for payload on http://{}:{}{}'.format(
             self._host, self._port, self._path))
