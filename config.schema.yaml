@@ -28,3 +28,8 @@ sensor_port:
   description: "Port to run the Webhook sensor on."
   type: "integer"
   default: 6000
+
+sensor_secret:
+  description: "When provided, will force request signature verification using the provided secret value."
+  type: "string"
+  default: ""

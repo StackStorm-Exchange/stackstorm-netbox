@@ -13,6 +13,7 @@ class NetBoxWebhooksSensor(Sensor):
         self._host = config.get('sensor_address', '0.0.0.0')
         self._port = config.get('sensor_port', 6000)
         self._path = '/netbox/webhooks/'
+        self._secret = config.get('sensor_secret', "")
 
         self._log = self._sensor_service.get_logger(__name__)
         self._app = Flask(__name__)
@@ -23,6 +24,17 @@ class NetBoxWebhooksSensor(Sensor):
     def run(self):
         @self._app.route(self._path, methods=['POST'])
         def event():
+
+            if self._secret:
+                hmac_prep = hmac.new(
+                    key=self._secret.encode('utf8'),
+                    msg=request.get_data().encode('utf8'),
+                    digestmod=hashlib.sha512
+                )
+                if request.headers.get('X-Hook-Signature') != hmac_prep.hexdigest():
+                    self._log.warning("Failed to verify request signature.")
+                    return "Nope", 400
+
             payload = request.get_json(force=True)
 
             event = payload.get('event', None)
