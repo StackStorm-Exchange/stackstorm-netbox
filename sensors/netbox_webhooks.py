@@ -37,6 +37,8 @@ class NetBoxWebhooksSensor(Sensor):
                 if request.headers.get('X-Hook-Signature') != hmac_prep.hexdigest():
                     self._log.warning("Failed to verify request signature.")
                     return "Nope", 400
+                else:
+                    self._log.info("Request passed signature verification.")
 
             payload = request.get_json(force=True)
 
