@@ -54,7 +54,7 @@ The sensor exposes three optional pack config parameters to control its operatio
 ```
 sensor_address: 192.168.1.100  # defaults 0.0.0.0, making the sensor reachable on all host addresses
 sensor_port: 6000  # defaults to 6000
-sensor_secret: "<webhook secret>"  # defaults to empty string, which dissables signature verirification
+sensor_secret: "<webhook secret>"  # defaults to empty string, which disables signature verification
 ```
 Based on your desired settings, the URL for the webhook's configuration inside of NetBox will be:
 ```
