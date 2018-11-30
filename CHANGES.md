@@ -1,4 +1,7 @@
 # Change Log
+## 1.1.0
+- Added the `netbox_webhooks` sensor which listens for inbound webhooks from NetBox and fires triggers into StackStorm.
+
 ## 1.0.0
 - Added script in `/bin` to auto generate all action meta definitions based on the NetBox OpenAPI (Swagger) spec.
 - All actions rewritten (auto generated) based on the new mechanism. Note existing actions have been renamed (see Breaking changes)
