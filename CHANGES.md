@@ -1,4 +1,8 @@
 # Change Log
+
+## 1.1.1
+- Version bump to fix tagging issue, no code changes.
+
 ## 1.1.0
 - Added the `netbox_webhooks` sensor which listens for inbound webhooks from NetBox and fires triggers into StackStorm.
 
