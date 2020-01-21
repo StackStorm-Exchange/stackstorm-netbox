@@ -58,6 +58,10 @@ parameters:
     required: False
     type: "integer"
     description: "Interface"
+  dns_name:
+    required: False
+    type: "string"
+    description: "DNS FQDN"
   tenant:
     required: False
     type: "integer"
