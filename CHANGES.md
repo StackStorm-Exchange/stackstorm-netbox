@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.0
+
+* Drop Python 2.7 support
+
 ## 1.1.1
 - Version bump to fix tagging issue, no code changes.
 

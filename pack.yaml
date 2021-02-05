@@ -6,9 +6,8 @@ keywords:
   - networking
   - ipam
   - dcim
-version: 1.1.1
+version: 2.0.0
 author: John Anderson, Jefferson White
 email: lampwins@gmail.com
 python_versions:
-  - "2"
   - "3"
