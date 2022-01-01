@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 19:08:46.740747
+# Date: 2022-01-01 21:21:54.781177
 description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
@@ -8,7 +8,7 @@ name: get.ipam.vlans
 parameters:
   endpoint_uri:
     default: "/ipam/vlans/"
-    immutable: true
+    immutable: false
     type: string
   http_verb:
     default: get

@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 19:08:46.723445
+# Date: 2022-01-01 21:21:54.762655
 description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
@@ -8,7 +8,7 @@ name: get.dcim.rear_ports
 parameters:
   endpoint_uri:
     default: "/dcim/rear-ports/"
-    immutable: true
+    immutable: false
     type: string
   http_verb:
     default: get

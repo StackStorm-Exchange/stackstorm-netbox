@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 19:08:46.731631
+# Date: 2022-01-01 21:21:54.771091
 description: "Compile all reports and their related results (if any). Result data is deferred in the list view."
 enabled: true
 entry_point: run.py
@@ -8,7 +8,7 @@ name: get.extras.reports
 parameters:
   endpoint_uri:
     default: "/extras/reports/"
-    immutable: true
+    immutable: false
     type: string
   http_verb:
     default: get

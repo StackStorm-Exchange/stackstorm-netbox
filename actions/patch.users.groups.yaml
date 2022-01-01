@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 19:08:46.746153
+# Date: 2022-01-01 21:21:54.787108
 description: "PATCH Groups"
 enabled: true
 entry_point: run.py
@@ -8,7 +8,7 @@ name: patch.users.groups
 parameters:
   endpoint_uri:
     default: "/users/groups/{{ id }}/"
-    immutable: true
+    immutable: false
     type: string
   http_verb:
     default: patch

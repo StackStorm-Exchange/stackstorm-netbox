@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 19:08:46.727223
+# Date: 2022-01-01 21:21:54.766602
 description: "PUT Virtual Chassis"
 enabled: true
 entry_point: run.py
@@ -8,7 +8,7 @@ name: put.dcim.virtual_chassis
 parameters:
   endpoint_uri:
     default: "/dcim/virtual-chassis/{{ id }}/"
-    immutable: true
+    immutable: false
     type: string
   http_verb:
     default: put

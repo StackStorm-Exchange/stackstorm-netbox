@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 19:08:46.743039
+# Date: 2022-01-01 21:21:54.783503
 description: "POST Contact Groups"
 enabled: true
 entry_point: run.py
@@ -8,7 +8,7 @@ name: post.tenancy.contact_groups
 parameters:
   endpoint_uri:
     default: "/tenancy/contact-groups/"
-    immutable: true
+    immutable: false
     type: string
   http_verb:
     default: post

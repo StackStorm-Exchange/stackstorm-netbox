@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 19:08:46.744490
+# Date: 2022-01-01 21:21:54.785345
 description: "PATCH Contacts"
 enabled: true
 entry_point: run.py
@@ -8,7 +8,7 @@ name: patch.tenancy.contacts
 parameters:
   endpoint_uri:
     default: "/tenancy/contacts/{{ id }}/"
-    immutable: true
+    immutable: false
     type: string
   http_verb:
     default: patch
