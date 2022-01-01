@@ -1,0 +1,41 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.739110
+description: "POST Route Targets"
+enabled: true
+entry_point: run.py
+name: post.ipam.route_targets
+parameters:
+  endpoint_uri:
+    default: "/ipam/route-targets/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  tenant:
+    required: False
+    type: "integer"
+    description: "Tenant"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+runner_type: python-script

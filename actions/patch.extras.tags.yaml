@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.112579
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.732172
 description: "PATCH Tags"
 enabled: true
 entry_point: run.py
@@ -18,16 +18,24 @@ parameters:
     default: True
     immutable: true
     type: boolean
-  slug:
-    required: False
-    type: "string"
-    description: "Slug"
   name:
-    required: False
+    required: True
     type: "string"
     description: "Name"
+  slug:
+    required: True
+    type: "string"
+    description: "Slug"
+  color:
+    required: False
+    type: "string"
+    description: "Color"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to patch."
 runner_type: python-script

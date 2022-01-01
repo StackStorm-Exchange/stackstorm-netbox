@@ -1,0 +1,25 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.752172
+description: "DELETE Wireless Lan Groups"
+enabled: true
+entry_point: run.py
+name: delete.wireless.wireless_lan_groups
+parameters:
+  endpoint_uri:
+    default: "/wireless/wireless-lan-groups/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: delete
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  id:
+    required: True
+    type: "string"
+    description: "ID of the object to delete."
+runner_type: python-script

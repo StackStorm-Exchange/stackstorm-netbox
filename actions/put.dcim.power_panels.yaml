@@ -1,0 +1,45 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.718783
+description: "PUT Power Panels"
+enabled: true
+entry_point: run.py
+name: put.dcim.power_panels
+parameters:
+  endpoint_uri:
+    default: "/dcim/power-panels/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  site:
+    required: True
+    type: "integer"
+    description: "Site"
+  location:
+    required: False
+    type: "integer"
+    description: "Location"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+  id:
+    required: True
+    type: "string"
+    description: "ID of the object to put."
+runner_type: python-script

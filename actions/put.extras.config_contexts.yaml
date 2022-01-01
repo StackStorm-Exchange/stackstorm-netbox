@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.104616
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.727939
 description: "PUT Config Contexts"
 enabled: true
 entry_point: run.py
@@ -18,52 +18,72 @@ parameters:
     default: True
     immutable: true
     type: boolean
-  tenant_groups:
-    required: False
-    type: "array"
-    description: "Tenant groups"
-  description:
-    required: False
-    type: "string"
-    description: "Description"
-  weight:
-    required: False
-    type: "integer"
-    description: "Weight"
-  data:
-    required: True
-    type: "string"
-    description: "Data"
-  is_active:
-    required: False
-    type: "boolean"
-    description: "Is active"
-  sites:
-    required: False
-    type: "array"
-    description: "Sites"
-  regions:
-    required: False
-    type: "array"
-    description: "Regions"
-  platforms:
-    required: False
-    type: "array"
-    description: "Platforms"
-  roles:
-    required: False
-    type: "array"
-    description: "Roles"
-  tenants:
-    required: False
-    type: "array"
-    description: "Tenants"
   name:
     required: True
     type: "string"
     description: "Name"
+  weight:
+    required: False
+    type: "integer"
+    description: "Weight"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  is_active:
+    required: False
+    type: "boolean"
+    description: "Is active"
+  regions:
+    required: False
+    type: "array"
+    description: "Regions"
+  site_groups:
+    required: False
+    type: "array"
+    description: "Site groups"
+  sites:
+    required: False
+    type: "array"
+    description: "Sites"
+  device_types:
+    required: False
+    type: "array"
+    description: "Device types"
+  roles:
+    required: False
+    type: "array"
+    description: "Roles"
+  platforms:
+    required: False
+    type: "array"
+    description: "Platforms"
+  cluster_groups:
+    required: False
+    type: "array"
+    description: "Cluster groups"
+  clusters:
+    required: False
+    type: "array"
+    description: "Clusters"
+  tenant_groups:
+    required: False
+    type: "array"
+    description: "Tenant groups"
+  tenants:
+    required: False
+    type: "array"
+    description: "Tenants"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  data:
+    required: True
+    type: "string"
+    description: "Data"
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to put."
 runner_type: python-script

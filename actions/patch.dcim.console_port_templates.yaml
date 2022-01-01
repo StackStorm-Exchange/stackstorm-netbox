@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.091934
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.703520
 description: "PATCH Console Port Templates"
 enabled: true
 entry_point: run.py
@@ -19,15 +19,27 @@ parameters:
     immutable: true
     type: boolean
   device_type:
-    required: False
+    required: True
     type: "integer"
     description: "Device type"
   name:
-    required: False
+    required: True
     type: "string"
     description: "Name"
+  label:
+    required: False
+    type: "string"
+    description: "Label"
+  type:
+    required: False
+    type: "string"
+    description: "Type"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to patch."
 runner_type: python-script

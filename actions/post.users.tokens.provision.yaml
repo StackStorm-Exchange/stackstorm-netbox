@@ -1,0 +1,21 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.747323
+description: "Non-authenticated REST API endpoint via which a user may create a Token."
+enabled: true
+entry_point: run.py
+name: post.users.tokens.provision
+parameters:
+  endpoint_uri:
+    default: "/users/tokens/provision/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+runner_type: python-script

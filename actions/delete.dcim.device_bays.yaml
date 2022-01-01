@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.149569
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.706975
 description: "DELETE Device Bays"
 enabled: true
 entry_point: run.py
@@ -20,6 +20,6 @@ parameters:
     type: boolean
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to delete."
 runner_type: python-script

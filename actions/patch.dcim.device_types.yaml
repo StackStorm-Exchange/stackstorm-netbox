@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.129555
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.708236
 description: "PATCH Device Types"
 enabled: true
 entry_point: run.py
@@ -18,64 +18,52 @@ parameters:
     default: True
     immutable: true
     type: boolean
-  u_height:
-    required: False
+  manufacturer:
+    required: True
     type: "integer"
-    description: "Height (U)"
-  is_pdu:
-    required: False
-    type: "boolean"
-    description: "Is a PDU"
-  is_full_depth:
-    required: False
-    type: "boolean"
-    description: "Is full depth"
-  tags:
-    required: False
-    type: "array"
-    description: "Array of tag strings"
-  subdevice_role:
-    required: False
-    type: "integer"
-    description: "Subdevice role"
-  is_console_server:
-    required: False
-    type: "boolean"
-    description: "Is a console server"
-  comments:
-    required: False
+    description: "Manufacturer"
+  model:
+    required: True
     type: "string"
-    description: "Comments"
+    description: "Model"
   slug:
-    required: False
+    required: True
     type: "string"
     description: "Slug"
-  is_network_device:
-    required: False
-    type: "boolean"
-    description: "Is a network device"
   part_number:
     required: False
     type: "string"
     description: "Part number"
-  interface_ordering:
+  u_height:
     required: False
     type: "integer"
-    description: "Interface ordering"
-  model:
+    description: "Height (U)"
+  is_full_depth:
+    required: False
+    type: "boolean"
+    description: "Is full depth"
+  subdevice_role:
     required: False
     type: "string"
-    description: "Model"
+    description: "Parent/child status"
+  airflow:
+    required: False
+    type: "string"
+    description: "Airflow"
+  comments:
+    required: False
+    type: "string"
+    description: "Comments"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
   custom_fields:
     required: False
     type: "object"
     description: "Custom fields"
-  manufacturer:
-    required: False
-    type: "integer"
-    description: "Manufacturer"
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to patch."
 runner_type: python-script

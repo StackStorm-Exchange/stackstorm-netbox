@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.119939
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.749653
 description: "PUT Clusters"
 enabled: true
 entry_point: run.py
@@ -18,36 +18,40 @@ parameters:
     default: True
     immutable: true
     type: boolean
-  group:
-    required: False
-    type: "integer"
-    description: "Group"
   name:
     required: True
     type: "string"
     description: "Name"
-  tags:
+  type:
+    required: True
+    type: "integer"
+    description: "Type"
+  group:
+    required: True
+    type: "integer"
+    description: "Group"
+  tenant:
     required: False
-    type: "array"
-    description: "Array of tag strings"
+    type: "integer"
+    description: "Tenant"
   site:
-    required: False
+    required: True
     type: "integer"
     description: "Site"
   comments:
     required: False
     type: "string"
     description: "Comments"
-  type:
-    required: True
-    type: "integer"
-    description: "Type"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
   custom_fields:
     required: False
     type: "object"
     description: "Custom fields"
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to put."
 runner_type: python-script

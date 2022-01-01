@@ -1,7 +1,7 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.090851
-description: "GET Circuit Terminations"
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.698698
+description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
 name: get.circuits.circuit_terminations
@@ -18,21 +18,53 @@ parameters:
     default: True
     immutable: true
     type: boolean
+  id:
+    required: False
+    type: "string"
+    description: ""
   term_side:
     required: False
     type: "string"
     description: ""
   port_speed:
     required: False
-    type: "integer"
+    type: "string"
     description: ""
   upstream_speed:
     required: False
-    type: "integer"
+    type: "string"
     description: ""
   xconnect_id:
     required: False
-    type: "integer"
+    type: "string"
+    description: ""
+  created:
+    required: False
+    type: "string"
+    description: ""
+  created__gte:
+    required: False
+    type: "string"
+    description: ""
+  created__lte:
+    required: False
+    type: "string"
+    description: ""
+  last_updated:
+    required: False
+    type: "string"
+    description: ""
+  last_updated__gte:
+    required: False
+    type: "string"
+    description: ""
+  last_updated__lte:
+    required: False
+    type: "string"
+    description: ""
+  cabled:
+    required: False
+    type: "string"
     description: ""
   q:
     required: False
@@ -40,13 +72,137 @@ parameters:
     description: ""
   circuit_id:
     required: False
-    type: "integer"
+    type: "string"
     description: ""
   site_id:
     required: False
-    type: "integer"
+    type: "string"
     description: ""
   site:
+    required: False
+    type: "string"
+    description: ""
+  provider_network_id:
+    required: False
+    type: "string"
+    description: ""
+  id__n:
+    required: False
+    type: "string"
+    description: ""
+  id__lte:
+    required: False
+    type: "string"
+    description: ""
+  id__lt:
+    required: False
+    type: "string"
+    description: ""
+  id__gte:
+    required: False
+    type: "string"
+    description: ""
+  id__gt:
+    required: False
+    type: "string"
+    description: ""
+  term_side__n:
+    required: False
+    type: "string"
+    description: ""
+  port_speed__n:
+    required: False
+    type: "string"
+    description: ""
+  port_speed__lte:
+    required: False
+    type: "string"
+    description: ""
+  port_speed__lt:
+    required: False
+    type: "string"
+    description: ""
+  port_speed__gte:
+    required: False
+    type: "string"
+    description: ""
+  port_speed__gt:
+    required: False
+    type: "string"
+    description: ""
+  upstream_speed__n:
+    required: False
+    type: "string"
+    description: ""
+  upstream_speed__lte:
+    required: False
+    type: "string"
+    description: ""
+  upstream_speed__lt:
+    required: False
+    type: "string"
+    description: ""
+  upstream_speed__gte:
+    required: False
+    type: "string"
+    description: ""
+  upstream_speed__gt:
+    required: False
+    type: "string"
+    description: ""
+  xconnect_id__n:
+    required: False
+    type: "string"
+    description: ""
+  xconnect_id__ic:
+    required: False
+    type: "string"
+    description: ""
+  xconnect_id__nic:
+    required: False
+    type: "string"
+    description: ""
+  xconnect_id__iew:
+    required: False
+    type: "string"
+    description: ""
+  xconnect_id__niew:
+    required: False
+    type: "string"
+    description: ""
+  xconnect_id__isw:
+    required: False
+    type: "string"
+    description: ""
+  xconnect_id__nisw:
+    required: False
+    type: "string"
+    description: ""
+  xconnect_id__ie:
+    required: False
+    type: "string"
+    description: ""
+  xconnect_id__nie:
+    required: False
+    type: "string"
+    description: ""
+  xconnect_id__empty:
+    required: False
+    type: "string"
+    description: ""
+  circuit_id__n:
+    required: False
+    type: "string"
+    description: ""
+  site_id__n:
+    required: False
+    type: "string"
+    description: ""
+  site__n:
+    required: False
+    type: "string"
+    description: ""
+  provider_network_id__n:
     required: False
     type: "string"
     description: ""
@@ -58,10 +214,6 @@ parameters:
     required: False
     type: "integer"
     description: "The initial index from which to return the results."
-  id:
-    required: False
-    type: "integer"
-    description: "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored."
   save_in_key_store:
     type: boolean
     default: false

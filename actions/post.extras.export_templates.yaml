@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.113834
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.729812
 description: "POST Export Templates"
 enabled: true
 entry_point: run.py
@@ -18,6 +18,14 @@ parameters:
     default: True
     immutable: true
     type: boolean
+  content_type:
+    required: True
+    type: "string"
+    description: "Content type"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
   description:
     required: False
     type: "string"
@@ -26,20 +34,16 @@ parameters:
     required: True
     type: "string"
     description: "Template code"
+  mime_type:
+    required: False
+    type: "string"
+    description: "MIME type"
   file_extension:
     required: False
     type: "string"
     description: "File extension"
-  content_type:
-    required: True
-    type: "integer"
-    description: "Content type"
-  mime_type:
+  as_attachment:
     required: False
-    type: "string"
-    description: "Mime type"
-  name:
-    required: True
-    type: "string"
-    description: "Name"
+    type: "boolean"
+    description: "As attachment"
 runner_type: python-script

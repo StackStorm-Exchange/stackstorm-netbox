@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.100302
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.717315
 description: "PUT Power Outlet Templates"
 enabled: true
 entry_point: run.py
@@ -26,8 +26,28 @@ parameters:
     required: True
     type: "string"
     description: "Name"
+  label:
+    required: False
+    type: "string"
+    description: "Label"
+  type:
+    required: False
+    type: "string"
+    description: "Type"
+  power_port:
+    required: False
+    type: "integer"
+    description: "Power port"
+  feed_leg:
+    required: False
+    type: "string"
+    description: "Feed leg"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to put."
 runner_type: python-script

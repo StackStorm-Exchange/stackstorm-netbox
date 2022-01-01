@@ -1,0 +1,85 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.1
+# Date: 2022-01-01 19:08:46.733000
+description: "PATCH Webhooks"
+enabled: true
+entry_point: run.py
+name: patch.extras.webhooks
+parameters:
+  endpoint_uri:
+    default: "/extras/webhooks/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: True
+    immutable: true
+    type: boolean
+  content_types:
+    required: True
+    type: "array"
+    description: "Content types"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  type_create:
+    required: False
+    type: "boolean"
+    description: "Type create"
+  type_update:
+    required: False
+    type: "boolean"
+    description: "Type update"
+  type_delete:
+    required: False
+    type: "boolean"
+    description: "Type delete"
+  payload_url:
+    required: True
+    type: "string"
+    description: "URL"
+  enabled:
+    required: False
+    type: "boolean"
+    description: "Enabled"
+  http_method:
+    required: False
+    type: "string"
+    description: "HTTP method"
+  http_content_type:
+    required: False
+    type: "string"
+    description: "HTTP content type"
+  additional_headers:
+    required: False
+    type: "string"
+    description: "Additional headers"
+  body_template:
+    required: False
+    type: "string"
+    description: "Body template"
+  secret:
+    required: False
+    type: "string"
+    description: "Secret"
+  conditions:
+    required: False
+    type: "string"
+    description: "Conditions"
+  ssl_verification:
+    required: False
+    type: "boolean"
+    description: "SSL verification"
+  ca_file_path:
+    required: False
+    type: "string"
+    description: "CA File Path"
+  id:
+    required: True
+    type: "string"
+    description: "ID of the object to patch."
+runner_type: python-script
