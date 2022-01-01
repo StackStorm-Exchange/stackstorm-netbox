@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:21:54.743374
+# Date: 2022-01-01 21:28:49.010944
 description: "PATCH Console Server Ports"
 enabled: true
 entry_point: run.py
@@ -8,14 +8,14 @@ name: patch.dcim.console_server_ports
 parameters:
   endpoint_uri:
     default: "/dcim/console-server-ports/{{ id }}/"
-    immutable: false
+    immutable: true
     type: string
   http_verb:
     default: patch
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
   device:

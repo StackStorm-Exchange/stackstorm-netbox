@@ -99,6 +99,7 @@ def run(spec):
                 ),
                 'parameters': [],
                 'endpoint_uri': path,
+                'immutable': True,
                 'verb': verb,
                 'get_detail_route_eligible': True,
             }
@@ -144,6 +145,17 @@ def run(spec):
                 if "{{ id }}" not in path:
                     actions[action_name] = action
 
+            #
+            # Begin special endpoint processing
+            #
+            if action_name == 'get.dcim.devices.napalm':
+                action.update({'immutable': False})
+                actions[action_name] = action
+
+            #
+            # End special endpoint handling
+            #
+
     # process deferred detail get endpoints
     for detailed_get in deferred_detail_gets:
         list_action = actions.get(detailed_get)
@@ -169,6 +181,7 @@ def run(spec):
             'parameters': action['parameters'],
             'description': action['description'],
             'endpoint_uri': action['endpoint_uri'],
+            'immutable': action['immutable'],
             'verb': action['verb'],
             'get_detail_route_eligible': action['get_detail_route_eligible'],
         }

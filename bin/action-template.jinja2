@@ -8,14 +8,14 @@ name: {{ action_name }}
 parameters:
   endpoint_uri:
     default: "{{ endpoint_uri }}"
-    immutable: false
+    immutable: {{ immutable | lower }}
     type: string
   http_verb:
     default: {{ verb }}
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: {{ get_detail_route_eligible }}
+    default: {{ get_detail_route_eligible | lower }}
     immutable: true
     type: boolean
   {%- for parameter in parameters %}

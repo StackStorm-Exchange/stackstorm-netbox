@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:21:54.738898
+# Date: 2022-01-01 21:28:49.006703
 description: "DELETE Provider Networks"
 enabled: true
 entry_point: run.py
@@ -8,14 +8,14 @@ name: delete.circuits.provider_networks
 parameters:
   endpoint_uri:
     default: "/circuits/provider-networks/{{ id }}/"
-    immutable: false
+    immutable: true
     type: string
   http_verb:
     default: delete
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
   id:

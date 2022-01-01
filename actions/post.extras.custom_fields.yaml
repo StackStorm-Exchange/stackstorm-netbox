@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:21:54.767973
+# Date: 2022-01-01 21:28:49.034459
 description: "POST Custom Fields"
 enabled: true
 entry_point: run.py
@@ -8,14 +8,14 @@ name: post.extras.custom_fields
 parameters:
   endpoint_uri:
     default: "/extras/custom-fields/"
-    immutable: false
+    immutable: true
     type: string
   http_verb:
     default: post
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
   content_types:
