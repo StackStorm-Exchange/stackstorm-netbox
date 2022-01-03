@@ -1,0 +1,65 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.061795
+description: "PUT Wireless Links"
+enabled: true
+entry_point: run.py
+name: put.wireless.wireless_links
+parameters:
+  endpoint_uri:
+    default: "/wireless/wireless-links/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  interface_a:
+    required: True
+    type: "integer"
+    description: "Interface a"
+  interface_b:
+    required: True
+    type: "integer"
+    description: "Interface b"
+  ssid:
+    required: False
+    type: "string"
+    description: "SSID"
+  status:
+    required: False
+    type: "string"
+    description: "Status"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  auth_type:
+    required: False
+    type: "string"
+    description: "Auth type"
+  auth_cipher:
+    required: False
+    type: "string"
+    description: "Auth cipher"
+  auth_psk:
+    required: False
+    type: "string"
+    description: "Pre-shared key"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+  id:
+    required: True
+    type: "string"
+    description: "ID of the object to put."
+runner_type: python-script

@@ -1,0 +1,85 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.022366
+description: "PUT Power Feeds"
+enabled: true
+entry_point: run.py
+name: put.dcim.power_feeds
+parameters:
+  endpoint_uri:
+    default: "/dcim/power-feeds/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  power_panel:
+    required: True
+    type: "integer"
+    description: "Power panel"
+  rack:
+    required: False
+    type: "integer"
+    description: "Rack"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  status:
+    required: False
+    type: "string"
+    description: "Status"
+  type:
+    required: False
+    type: "string"
+    description: "Type"
+  supply:
+    required: False
+    type: "string"
+    description: "Supply"
+  phase:
+    required: False
+    type: "string"
+    description: "Phase"
+  voltage:
+    required: False
+    type: "integer"
+    description: "Voltage"
+  amperage:
+    required: False
+    type: "integer"
+    description: "Amperage"
+  max_utilization:
+    required: False
+    type: "integer"
+    description: "Max utilization"
+  comments:
+    required: False
+    type: "string"
+    description: "Comments"
+  mark_connected:
+    required: False
+    type: "boolean"
+    description: "Mark connected"
+  cable:
+    required: False
+    type: "integer"
+    description: "Id of cable"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+  id:
+    required: True
+    type: "string"
+    description: "ID of the object to put."
+runner_type: python-script

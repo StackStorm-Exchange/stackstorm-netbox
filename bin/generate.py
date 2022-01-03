@@ -1,32 +1,26 @@
 import argparse
 import datetime
-import jinja2
-import json
 import os
-import urllib2
+
+import jinja2
+import requests
 
 
-def get_spec(host, https, port):
+def get_spec(host, https, port, ssl_verify):
     protocol = 'https://' if https else 'http://'
     url = "{}{}:{}/api/swagger.json".format(protocol, host, port)
-    request = urllib2.Request(url)
-    print("Getting API spec from NetBox instance...")
+    print(f"Getting API spec from NetBox instance at {host}")
     try:
-        response = urllib2.urlopen(request)
-    except Exception:
-        print("Failed to get the API spec!")
-    return json.loads(response.read())
+        response = requests.get(url, verify=ssl_verify)
+        return response.json()
+    except Exception as e:
+        print(f"Failed to get the API spec!: {e}")
+        exit(1)
 
 
 def sanitize_parameters(parameters):
     for parameter in parameters:
-        if parameter['name'].endswith('_id'):
-            parameter['type'] = "integer"
-        elif parameter['name'] == 'id__in':
-            parameter['type'] = "array"
-            parameter['description'] = "Array of IDs"
-        elif parameter['name'] == 'tags':
-            parameter['type'] = "array"
+        if parameter['name'] == 'tags':
             parameter['description'] = "Array of tag strings"
 
         if parameter['type'] == 'number':
@@ -43,11 +37,11 @@ def parse_properties(properties, required, spec, ignore=None):
     Input:
         properties(dict): properties for the definition
         required(list): list of required element names
-        spec(dict): the overall spec object for linking outsite elements
+        spec(dict): the overall spec object for linking outside elements
         ignore(list): optional list of elements to explicitly ignore
     """
     parameters = []
-    for name, data in properties.items():
+    for name, data in list(properties.items()):
         if data.get('readOnly', False):
             continue
 
@@ -61,9 +55,10 @@ def parse_properties(properties, required, spec, ignore=None):
         data_properties = data.get('properties', {})
 
         if data.get('$ref', False):
-            # forien key reliationships should be integers
-            parameter['type'] = "integer"
-            parameter['description'] = spec['definitions'][data['$ref'].split('/')[-1]]['title']
+            # foreign key relationships should be integers
+            props = spec['definitions'][data['$ref'].split('/')[-1]]['properties']
+            parameter['type'] = props['id']['type']
+            parameter['description'] = f"{props['id']['title']} of {name}"
         elif data_properties.get('label', False) and data_properties.get('value', False):
             # choice fields should be converted to integer types
             parameter['type'] = "integer"
@@ -89,10 +84,10 @@ def parse_properties(properties, required, spec, ignore=None):
 def run(spec):
     actions = {}
     deferred_detail_gets = []
-    for path, verbs in spec['paths'].items():
+    for path, verbs in list(spec['paths'].items()):
         path_parts = [x.replace("-", "_") for x in path.replace("/{id}", "").strip("/").split("/")]
         for verb, verb_data in verbs.items():
-            if verb == 'parameters':
+            if verb == "parameters":
                 continue
 
             action_name = "{}.{}".format(verb, ".".join(path_parts))
@@ -104,134 +99,67 @@ def run(spec):
                 ),
                 'parameters': [],
                 'endpoint_uri': path,
+                'immutable': True,
                 'verb': verb,
                 'get_detail_route_eligible': True,
             }
+            print(f"Processing {action_name}...")
 
             if verb_data['parameters'] and verb_data['parameters'][0].get('schema', False):
                 ref_name = verb_data['parameters'][0]['schema']['$ref'].split('/')[-1]
                 schema = spec['definitions'][ref_name]
-                if verb == 'patch':
-                    # patch needs to remove the required attribute from all parameters
-                    required = []
-                else:
+                try:
                     required = schema['required']
+                except KeyError:
+                    required = []
                 action['parameters'] = parse_properties(schema['properties'], required, spec)
+
+            if verb == 'get':
+                if verb_data['operationId'].endswith('_list'):
+                    action['parameters'] = sanitize_parameters(verb_data['parameters'])
+                    actions[action_name] = action
+                elif path.endswith("/{{ id }}/"):
+                    # defer these until we have processed everything else to ensure the list
+                    # endpoints are present for lookup
+                    deferred_detail_gets.append(action_name)
+                elif "{{ id }}" in path and not path.endswith("{{ id }}"):
+                    action['parameters'].append({
+                        'name': 'id',
+                        'required': True,
+                        'description': "ID of the object.",
+                        'type': 'string'
+                    })
+                    action['get_detail_route_eligible'] = False
+                    actions[action_name] = action
+
+            if verb in ['delete', 'put', 'patch']:
+                action['parameters'].append({
+                    'name': 'id',
+                    'required': True,
+                    'description': "ID of the object to {}.".format(verb),
+                    'type': 'string'
+                })
+                actions[action_name] = action
+
+            if verb == 'post':
+                if "{{ id }}" not in path:
+                    actions[action_name] = action
 
             #
             # Begin special endpoint processing
             #
-
-            if verb == 'post' and action_name == 'post.ipam.prefixes.available_ips':
-                # the spec defines the schema ref as Refix when it should really be IPAddress with
-                # all parameters optional (since prefix and address are handled by the route)
-                schema = spec['definitions']['IPAddress']
-                action['parameters'] = parse_properties(
-                    schema['properties'], schema['required'], spec, ['address']
-                )
-                action['parameters'].append({
-                    'name': 'id',
-                    'required': True,
-                    'description': "ID of the Prefix.",
-                    'type': 'integer'
-                })
-                action['get_detail_route_eligible'] = False
-                action['description'] = "Create the next available IP Address in a given Prefix."
-                actions[action_name] = action
-
-            elif verb == 'post' and action_name == 'post.ipam.prefixes.available_prefixes':
-                # the spec does not account for the required `prefix_length` field
-                # also prefix is already accounted for in the route
-                schema = spec['definitions']['Prefix']
-                action['parameters'] = parse_properties(
-                    schema['properties'], schema['required'], spec, ['prefix']
-                )
-                action['parameters'].append({
-                    'name': 'id',
-                    'required': True,
-                    'description': "ID of the Prefix.",
-                    'type': 'integer'
-                })
-                action['parameters'].append({
-                    'name': 'prefix_length',
-                    'required': True,
-                    'description': "Prefix CIDR length to create.",
-                    'type': 'integer'
-                })
-                action['get_detail_route_eligible'] = False
-                action['description'] = "Create the next available Prefix in a given Prefix."
-                actions[action_name] = action
-
-            elif verb == 'get' and action_name == 'get.secrets.generate_rsa_key_pair':
-                # description is not safe
-                action['description'] = 'This endpoint can be used to generate a new RSA key pair.'
-                actions[action_name] = action
-
-            elif verb == 'post' and action_name == 'post.secrets.get_session_key':
-                # the spec does not account for private_key
-                action['parameters'].append({
-                    'name': 'private_key',
-                    'required': True,
-                    'description': "User's private key.",
-                    'type': 'string'
-                })
-                action['get_detail_route_eligible'] = False
-                action['description'] = ('Retrieve a temporary session key to use for encrypting '
-                                        'and decrypting secrets via the API.')
+            if action_name == 'get.dcim.devices.napalm':
+                action.update({'immutable': False})
                 actions[action_name] = action
 
             #
             # End special endpoint handling
             #
 
-            elif verb == 'get' and verb_data['operationId'].endswith('_list'):
-                action['parameters'] = sanitize_parameters(verb_data['parameters'])
-                actions[action_name] = action
-
-            elif verb == 'get' and path.endswith("/{{ id }}/"):
-                # defer these until we have processed everything else to ensure the list
-                # endoints are present for lookup
-                deferred_detail_gets.append(action_name)
-
-            elif verb == 'get' and "{{ id }}" in path and not path.endswith("{{ id }}"):
-                action['parameters'].append({
-                    'name': 'id',
-                    'required': True,
-                    'description': "ID of the object.",
-                    'type': 'integer'
-                })
-                action['get_detail_route_eligible'] = False
-                actions[action_name] = action
-
-            elif verb in ['delete', 'put', 'patch']:
-                action['parameters'].append({
-                    'name': 'id',
-                    'required': True,
-                    'description': "ID of the object to {}.".format(verb),
-                    'type': 'integer'
-                })
-                actions[action_name] = action
-
-            elif verb == 'post' and "{{ id }}" not in path:
-                actions[action_name] = action
-
-            else:
-                print("Unable to process endpoint {}, no defined logic".format(action_name))
-
-    # process defered detail get endpoints
+    # process deferred detail get endpoints
     for detailed_get in deferred_detail_gets:
         list_action = actions.get(detailed_get)
-        if list_action is not None:
-            list_action['parameters'].append({
-                'name': 'id',
-                'required': False,
-                'description': 'If provided, will convert to using the detail route. '
-                               'I.e., <endpoint_uri>/<id>/, '
-                               'meaning a max of one entity will be returned and all '
-                               'other entity query parameters will be ignored.',
-                'type': 'integer'
-            })
-        else:
+        if list_action is None:
             print("Unable to find list action for deferred GET endpoint {}".format(detailed_get))
 
     # delete all current ".yaml" action files
@@ -244,8 +172,8 @@ def run(spec):
 
     # render the new actions and write them to file
     with open('action-template.jinja2') as f:
-        template = jinja2.Template(f.read())
-    for name, action in actions.items():
+        template = jinja2.Template(f.read(), autoescape=True)
+    for name, action in list(actions.items()):
         template_vars = {
             'generation_date': datetime.datetime.now(),
             'version': spec['info']['version'],
@@ -253,6 +181,7 @@ def run(spec):
             'parameters': action['parameters'],
             'description': action['description'],
             'endpoint_uri': action['endpoint_uri'],
+            'immutable': action['immutable'],
             'verb': action['verb'],
             'get_detail_route_eligible': action['get_detail_route_eligible'],
         }
@@ -272,6 +201,7 @@ if __name__ == "__main__":
         'host',
         type=str,
         help='NetBox instance to pull API spec from',
+        default='demo.netbox.dev'
     )
     parser.add_argument(
         '--https',
@@ -284,9 +214,15 @@ if __name__ == "__main__":
         help='Port NetBox is run on',
         default=8000,
     )
+    parser.add_argument(
+        '--skip-ssl',
+        action='store_false',
+        help='Skips SSL certificate verification',
+        default=True
+    )
     args = parser.parse_args()
 
-    spec = get_spec(args.host, args.https, args.port)
-    total_actions = run(spec)
+    specification = get_spec(args.host, args.https, args.port, args.skip_ssl)
+    total_actions = run(specification)
     print("Wrote {} actions to file.".format(total_actions))
     print("Done!")

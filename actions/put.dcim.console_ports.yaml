@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.090379
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.009447
 description: "PUT Console Ports"
 enabled: true
 entry_point: run.py
@@ -15,31 +15,51 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
-  connection_status:
-    required: False
-    type: "boolean"
-    description: "Connection status"
-  name:
-    required: True
-    type: "string"
-    description: "Name"
-  tags:
-    required: False
-    type: "array"
-    description: "Array of tag strings"
-  cs_port:
-    required: False
-    type: "integer"
-    description: "Cs port"
   device:
     required: True
     type: "integer"
     description: "Device"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  label:
+    required: False
+    type: "string"
+    description: "Label"
+  type:
+    required: False
+    type: "string"
+    description: "Type"
+  speed:
+    required: False
+    type: "integer"
+    description: "Speed"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  mark_connected:
+    required: False
+    type: "boolean"
+    description: "Mark connected"
+  cable:
+    required: False
+    type: "integer"
+    description: "Id of cable"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to put."
 runner_type: python-script

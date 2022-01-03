@@ -1,0 +1,57 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.060977
+description: "POST Wireless Lans"
+enabled: true
+entry_point: run.py
+name: post.wireless.wireless_lans
+parameters:
+  endpoint_uri:
+    default: "/wireless/wireless-lans/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  ssid:
+    required: True
+    type: "string"
+    description: "SSID"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  group:
+    required: False
+    type: "integer"
+    description: "Group"
+  vlan:
+    required: False
+    type: "integer"
+    description: "VLAN"
+  auth_type:
+    required: False
+    type: "string"
+    description: "Auth type"
+  auth_cipher:
+    required: False
+    type: "string"
+    description: "Auth cipher"
+  auth_psk:
+    required: False
+    type: "string"
+    description: "Pre-shared key"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+runner_type: python-script

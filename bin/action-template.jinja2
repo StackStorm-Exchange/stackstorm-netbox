@@ -8,14 +8,14 @@ name: {{ action_name }}
 parameters:
   endpoint_uri:
     default: "{{ endpoint_uri }}"
-    immutable: true
+    immutable: {{ immutable | lower }}
     type: string
   http_verb:
     default: {{ verb }}
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: {{ get_detail_route_eligible }}
+    default: {{ get_detail_route_eligible | lower }}
     immutable: true
     type: boolean
   {%- for parameter in parameters %}
@@ -41,4 +41,3 @@ parameters:
     description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
   {%- endif %}
 runner_type: python-script
-

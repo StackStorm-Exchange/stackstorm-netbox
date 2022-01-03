@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.124430
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.049897
 description: "PATCH Vrfs"
 enabled: true
 entry_point: run.py
@@ -15,21 +15,13 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
-  custom_fields:
-    required: False
-    type: "object"
-    description: "Custom fields"
-  description:
-    required: False
+  name:
+    required: True
     type: "string"
-    description: "Description"
-  tags:
-    required: False
-    type: "array"
-    description: "Array of tag strings"
+    description: "Name"
   rd:
     required: False
     type: "string"
@@ -42,12 +34,28 @@ parameters:
     required: False
     type: "boolean"
     description: "Enforce unique space"
-  name:
+  description:
     required: False
     type: "string"
-    description: "Name"
+    description: "Description"
+  import_targets:
+    required: False
+    type: "array"
+    description: "Import targets"
+  export_targets:
+    required: False
+    type: "array"
+    description: "Export targets"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to patch."
 runner_type: python-script

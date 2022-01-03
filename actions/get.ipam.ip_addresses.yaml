@@ -1,7 +1,7 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.096552
-description: "GET Ip Addresses"
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.041534
+description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
 name: get.ipam.ip_addresses
@@ -15,20 +15,68 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
-  family:
+  id:
     required: False
     type: "string"
     description: ""
-  id__in:
+  dns_name:
     required: False
-    type: "array"
-    description: "Array of IDs"
+    type: "string"
+    description: ""
+  description:
+    required: False
+    type: "string"
+    description: ""
+  created:
+    required: False
+    type: "string"
+    description: ""
+  created__gte:
+    required: False
+    type: "string"
+    description: ""
+  created__lte:
+    required: False
+    type: "string"
+    description: ""
+  last_updated:
+    required: False
+    type: "string"
+    description: ""
+  last_updated__gte:
+    required: False
+    type: "string"
+    description: ""
+  last_updated__lte:
+    required: False
+    type: "string"
+    description: ""
+  tenant_group_id:
+    required: False
+    type: "string"
+    description: ""
+  tenant_group:
+    required: False
+    type: "string"
+    description: ""
+  tenant_id:
+    required: False
+    type: "string"
+    description: ""
+  tenant:
+    required: False
+    type: "string"
+    description: ""
   q:
     required: False
     type: "string"
+    description: ""
+  family:
+    required: False
+    type: "integer"
     description: ""
   parent:
     required: False
@@ -44,17 +92,17 @@ parameters:
     description: ""
   vrf_id:
     required: False
-    type: "integer"
+    type: "string"
     description: ""
   vrf:
     required: False
     type: "string"
     description: ""
-  tenant_id:
+  present_in_vrf_id:
     required: False
-    type: "integer"
+    type: "string"
     description: ""
-  tenant:
+  present_in_vrf:
     required: False
     type: "string"
     description: ""
@@ -64,19 +112,35 @@ parameters:
     description: ""
   device_id:
     required: False
-    type: "integer"
-    description: ""
-  virtual_machine_id:
-    required: False
-    type: "integer"
+    type: "string"
     description: ""
   virtual_machine:
     required: False
     type: "string"
     description: ""
+  virtual_machine_id:
+    required: False
+    type: "string"
+    description: ""
+  interface:
+    required: False
+    type: "string"
+    description: ""
   interface_id:
     required: False
-    type: "integer"
+    type: "string"
+    description: ""
+  vminterface:
+    required: False
+    type: "string"
+    description: ""
+  vminterface_id:
+    required: False
+    type: "string"
+    description: ""
+  assigned_to_interface:
+    required: False
+    type: "string"
     description: ""
   status:
     required: False
@@ -90,6 +154,158 @@ parameters:
     required: False
     type: "string"
     description: ""
+  id__n:
+    required: False
+    type: "string"
+    description: ""
+  id__lte:
+    required: False
+    type: "string"
+    description: ""
+  id__lt:
+    required: False
+    type: "string"
+    description: ""
+  id__gte:
+    required: False
+    type: "string"
+    description: ""
+  id__gt:
+    required: False
+    type: "string"
+    description: ""
+  dns_name__n:
+    required: False
+    type: "string"
+    description: ""
+  dns_name__ic:
+    required: False
+    type: "string"
+    description: ""
+  dns_name__nic:
+    required: False
+    type: "string"
+    description: ""
+  dns_name__iew:
+    required: False
+    type: "string"
+    description: ""
+  dns_name__niew:
+    required: False
+    type: "string"
+    description: ""
+  dns_name__isw:
+    required: False
+    type: "string"
+    description: ""
+  dns_name__nisw:
+    required: False
+    type: "string"
+    description: ""
+  dns_name__ie:
+    required: False
+    type: "string"
+    description: ""
+  dns_name__nie:
+    required: False
+    type: "string"
+    description: ""
+  dns_name__empty:
+    required: False
+    type: "string"
+    description: ""
+  description__n:
+    required: False
+    type: "string"
+    description: ""
+  description__ic:
+    required: False
+    type: "string"
+    description: ""
+  description__nic:
+    required: False
+    type: "string"
+    description: ""
+  description__iew:
+    required: False
+    type: "string"
+    description: ""
+  description__niew:
+    required: False
+    type: "string"
+    description: ""
+  description__isw:
+    required: False
+    type: "string"
+    description: ""
+  description__nisw:
+    required: False
+    type: "string"
+    description: ""
+  description__ie:
+    required: False
+    type: "string"
+    description: ""
+  description__nie:
+    required: False
+    type: "string"
+    description: ""
+  description__empty:
+    required: False
+    type: "string"
+    description: ""
+  tenant_group_id__n:
+    required: False
+    type: "string"
+    description: ""
+  tenant_group__n:
+    required: False
+    type: "string"
+    description: ""
+  tenant_id__n:
+    required: False
+    type: "string"
+    description: ""
+  tenant__n:
+    required: False
+    type: "string"
+    description: ""
+  vrf_id__n:
+    required: False
+    type: "string"
+    description: ""
+  vrf__n:
+    required: False
+    type: "string"
+    description: ""
+  interface__n:
+    required: False
+    type: "string"
+    description: ""
+  interface_id__n:
+    required: False
+    type: "string"
+    description: ""
+  vminterface__n:
+    required: False
+    type: "string"
+    description: ""
+  vminterface_id__n:
+    required: False
+    type: "string"
+    description: ""
+  status__n:
+    required: False
+    type: "string"
+    description: ""
+  role__n:
+    required: False
+    type: "string"
+    description: ""
+  tag__n:
+    required: False
+    type: "string"
+    description: ""
   limit:
     required: False
     type: "integer"
@@ -98,10 +314,6 @@ parameters:
     required: False
     type: "integer"
     description: "The initial index from which to return the results."
-  id:
-    required: False
-    type: "integer"
-    description: "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored."
   save_in_key_store:
     type: boolean
     default: false

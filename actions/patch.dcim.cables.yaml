@@ -1,0 +1,77 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.008175
+description: "PATCH Cables"
+enabled: true
+entry_point: run.py
+name: patch.dcim.cables
+parameters:
+  endpoint_uri:
+    default: "/dcim/cables/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  termination_a_type:
+    required: True
+    type: "string"
+    description: "Termination a type"
+  termination_a_id:
+    required: True
+    type: "integer"
+    description: "Termination a id"
+  termination_b_type:
+    required: True
+    type: "string"
+    description: "Termination b type"
+  termination_b_id:
+    required: True
+    type: "integer"
+    description: "Termination b id"
+  type:
+    required: False
+    type: "string"
+    description: "Type"
+  status:
+    required: False
+    type: "string"
+    description: "Status"
+  tenant:
+    required: False
+    type: "integer"
+    description: "Tenant"
+  label:
+    required: False
+    type: "string"
+    description: "Label"
+  color:
+    required: False
+    type: "string"
+    description: "Color"
+  length:
+    required: False
+    type: "integer"
+    description: "Length"
+  length_unit:
+    required: False
+    type: "string"
+    description: "Length unit"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
+  id:
+    required: True
+    type: "string"
+    description: "ID of the object to patch."
+runner_type: python-script

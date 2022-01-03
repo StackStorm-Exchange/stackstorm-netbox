@@ -1,6 +1,5 @@
-from st2common.runners.base_action import Action
-
 import requests
+from st2common.runners.base_action import Action
 
 
 __all__ = [
@@ -32,7 +31,7 @@ class NetboxBaseAction(Action):
             'Content-Type': 'application/json',
         }
 
-        # transform `in__id` if present
+        # transform `id__in` if present
         if kwargs.get('id__in'):
             kwargs['id__in'] = ','.join(kwargs['id__in'])
             self.logger.debug('id__in transformed to {}'.format(kwargs['id__in']))
@@ -48,6 +47,8 @@ class NetboxBaseAction(Action):
 
         self.logger.debug("Calling base {} with kwargs: {}".format(http_action, kwargs))
         verify = self.config['ssl_verify']
+
+        r = None
 
         if http_action == "get":
             r = requests.get(url, verify=verify, headers=headers, params=kwargs)
@@ -69,4 +70,6 @@ class NetboxBaseAction(Action):
             )
             return r.status_code == 204
 
-        return {'raw': r.json()}
+        if r:
+            return {'raw': r.json()}
+        return {'raw': {}}

@@ -1,7 +1,7 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.113383
-description: "GET Device Types"
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.013029
+description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
 name: get.dcim.device_types
@@ -15,9 +15,13 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
+  id:
+    required: False
+    type: "string"
+    description: ""
   model:
     required: False
     type: "string"
@@ -32,21 +36,9 @@ parameters:
     description: ""
   u_height:
     required: False
-    type: "integer"
+    type: "string"
     description: ""
   is_full_depth:
-    required: False
-    type: "string"
-    description: ""
-  is_console_server:
-    required: False
-    type: "string"
-    description: ""
-  is_pdu:
-    required: False
-    type: "string"
-    description: ""
-  is_network_device:
     required: False
     type: "string"
     description: ""
@@ -54,23 +46,255 @@ parameters:
     required: False
     type: "string"
     description: ""
-  id__in:
+  airflow:
     required: False
-    type: "array"
-    description: "Array of IDs"
+    type: "string"
+    description: ""
+  created:
+    required: False
+    type: "string"
+    description: ""
+  created__gte:
+    required: False
+    type: "string"
+    description: ""
+  created__lte:
+    required: False
+    type: "string"
+    description: ""
+  last_updated:
+    required: False
+    type: "string"
+    description: ""
+  last_updated__gte:
+    required: False
+    type: "string"
+    description: ""
+  last_updated__lte:
+    required: False
+    type: "string"
+    description: ""
   q:
     required: False
     type: "string"
     description: ""
   manufacturer_id:
     required: False
-    type: "integer"
+    type: "string"
     description: ""
   manufacturer:
     required: False
     type: "string"
     description: ""
+  console_ports:
+    required: False
+    type: "string"
+    description: ""
+  console_server_ports:
+    required: False
+    type: "string"
+    description: ""
+  power_ports:
+    required: False
+    type: "string"
+    description: ""
+  power_outlets:
+    required: False
+    type: "string"
+    description: ""
+  interfaces:
+    required: False
+    type: "string"
+    description: ""
+  pass_through_ports:
+    required: False
+    type: "string"
+    description: ""
+  device_bays:
+    required: False
+    type: "string"
+    description: ""
   tag:
+    required: False
+    type: "string"
+    description: ""
+  id__n:
+    required: False
+    type: "string"
+    description: ""
+  id__lte:
+    required: False
+    type: "string"
+    description: ""
+  id__lt:
+    required: False
+    type: "string"
+    description: ""
+  id__gte:
+    required: False
+    type: "string"
+    description: ""
+  id__gt:
+    required: False
+    type: "string"
+    description: ""
+  model__n:
+    required: False
+    type: "string"
+    description: ""
+  model__ic:
+    required: False
+    type: "string"
+    description: ""
+  model__nic:
+    required: False
+    type: "string"
+    description: ""
+  model__iew:
+    required: False
+    type: "string"
+    description: ""
+  model__niew:
+    required: False
+    type: "string"
+    description: ""
+  model__isw:
+    required: False
+    type: "string"
+    description: ""
+  model__nisw:
+    required: False
+    type: "string"
+    description: ""
+  model__ie:
+    required: False
+    type: "string"
+    description: ""
+  model__nie:
+    required: False
+    type: "string"
+    description: ""
+  model__empty:
+    required: False
+    type: "string"
+    description: ""
+  slug__n:
+    required: False
+    type: "string"
+    description: ""
+  slug__ic:
+    required: False
+    type: "string"
+    description: ""
+  slug__nic:
+    required: False
+    type: "string"
+    description: ""
+  slug__iew:
+    required: False
+    type: "string"
+    description: ""
+  slug__niew:
+    required: False
+    type: "string"
+    description: ""
+  slug__isw:
+    required: False
+    type: "string"
+    description: ""
+  slug__nisw:
+    required: False
+    type: "string"
+    description: ""
+  slug__ie:
+    required: False
+    type: "string"
+    description: ""
+  slug__nie:
+    required: False
+    type: "string"
+    description: ""
+  slug__empty:
+    required: False
+    type: "string"
+    description: ""
+  part_number__n:
+    required: False
+    type: "string"
+    description: ""
+  part_number__ic:
+    required: False
+    type: "string"
+    description: ""
+  part_number__nic:
+    required: False
+    type: "string"
+    description: ""
+  part_number__iew:
+    required: False
+    type: "string"
+    description: ""
+  part_number__niew:
+    required: False
+    type: "string"
+    description: ""
+  part_number__isw:
+    required: False
+    type: "string"
+    description: ""
+  part_number__nisw:
+    required: False
+    type: "string"
+    description: ""
+  part_number__ie:
+    required: False
+    type: "string"
+    description: ""
+  part_number__nie:
+    required: False
+    type: "string"
+    description: ""
+  part_number__empty:
+    required: False
+    type: "string"
+    description: ""
+  u_height__n:
+    required: False
+    type: "string"
+    description: ""
+  u_height__lte:
+    required: False
+    type: "string"
+    description: ""
+  u_height__lt:
+    required: False
+    type: "string"
+    description: ""
+  u_height__gte:
+    required: False
+    type: "string"
+    description: ""
+  u_height__gt:
+    required: False
+    type: "string"
+    description: ""
+  subdevice_role__n:
+    required: False
+    type: "string"
+    description: ""
+  airflow__n:
+    required: False
+    type: "string"
+    description: ""
+  manufacturer_id__n:
+    required: False
+    type: "string"
+    description: ""
+  manufacturer__n:
+    required: False
+    type: "string"
+    description: ""
+  tag__n:
     required: False
     type: "string"
     description: ""
@@ -82,10 +306,6 @@ parameters:
     required: False
     type: "integer"
     description: "The initial index from which to return the results."
-  id:
-    required: False
-    type: "integer"
-    description: "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored."
   save_in_key_store:
     type: boolean
     default: false

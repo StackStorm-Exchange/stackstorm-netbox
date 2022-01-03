@@ -1,7 +1,7 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.144845
-description: "GET Vlan Groups"
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.047852
+description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
 name: get.ipam.vlan_groups
@@ -15,9 +15,13 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
+  id:
+    required: False
+    type: "string"
+    description: ""
   name:
     required: False
     type: "string"
@@ -26,11 +30,243 @@ parameters:
     required: False
     type: "string"
     description: ""
-  site_id:
+  description:
+    required: False
+    type: "string"
+    description: ""
+  scope_id:
+    required: False
+    type: "string"
+    description: ""
+  created:
+    required: False
+    type: "string"
+    description: ""
+  created__gte:
+    required: False
+    type: "string"
+    description: ""
+  created__lte:
+    required: False
+    type: "string"
+    description: ""
+  last_updated:
+    required: False
+    type: "string"
+    description: ""
+  last_updated__gte:
+    required: False
+    type: "string"
+    description: ""
+  last_updated__lte:
+    required: False
+    type: "string"
+    description: ""
+  q:
+    required: False
+    type: "string"
+    description: ""
+  scope_type:
+    required: False
+    type: "string"
+    description: ""
+  region:
+    required: False
+    type: "integer"
+    description: ""
+  sitegroup:
     required: False
     type: "integer"
     description: ""
   site:
+    required: False
+    type: "integer"
+    description: ""
+  location:
+    required: False
+    type: "integer"
+    description: ""
+  rack:
+    required: False
+    type: "integer"
+    description: ""
+  clustergroup:
+    required: False
+    type: "integer"
+    description: ""
+  cluster:
+    required: False
+    type: "integer"
+    description: ""
+  tag:
+    required: False
+    type: "string"
+    description: ""
+  id__n:
+    required: False
+    type: "string"
+    description: ""
+  id__lte:
+    required: False
+    type: "string"
+    description: ""
+  id__lt:
+    required: False
+    type: "string"
+    description: ""
+  id__gte:
+    required: False
+    type: "string"
+    description: ""
+  id__gt:
+    required: False
+    type: "string"
+    description: ""
+  name__n:
+    required: False
+    type: "string"
+    description: ""
+  name__ic:
+    required: False
+    type: "string"
+    description: ""
+  name__nic:
+    required: False
+    type: "string"
+    description: ""
+  name__iew:
+    required: False
+    type: "string"
+    description: ""
+  name__niew:
+    required: False
+    type: "string"
+    description: ""
+  name__isw:
+    required: False
+    type: "string"
+    description: ""
+  name__nisw:
+    required: False
+    type: "string"
+    description: ""
+  name__ie:
+    required: False
+    type: "string"
+    description: ""
+  name__nie:
+    required: False
+    type: "string"
+    description: ""
+  name__empty:
+    required: False
+    type: "string"
+    description: ""
+  slug__n:
+    required: False
+    type: "string"
+    description: ""
+  slug__ic:
+    required: False
+    type: "string"
+    description: ""
+  slug__nic:
+    required: False
+    type: "string"
+    description: ""
+  slug__iew:
+    required: False
+    type: "string"
+    description: ""
+  slug__niew:
+    required: False
+    type: "string"
+    description: ""
+  slug__isw:
+    required: False
+    type: "string"
+    description: ""
+  slug__nisw:
+    required: False
+    type: "string"
+    description: ""
+  slug__ie:
+    required: False
+    type: "string"
+    description: ""
+  slug__nie:
+    required: False
+    type: "string"
+    description: ""
+  slug__empty:
+    required: False
+    type: "string"
+    description: ""
+  description__n:
+    required: False
+    type: "string"
+    description: ""
+  description__ic:
+    required: False
+    type: "string"
+    description: ""
+  description__nic:
+    required: False
+    type: "string"
+    description: ""
+  description__iew:
+    required: False
+    type: "string"
+    description: ""
+  description__niew:
+    required: False
+    type: "string"
+    description: ""
+  description__isw:
+    required: False
+    type: "string"
+    description: ""
+  description__nisw:
+    required: False
+    type: "string"
+    description: ""
+  description__ie:
+    required: False
+    type: "string"
+    description: ""
+  description__nie:
+    required: False
+    type: "string"
+    description: ""
+  description__empty:
+    required: False
+    type: "string"
+    description: ""
+  scope_id__n:
+    required: False
+    type: "string"
+    description: ""
+  scope_id__lte:
+    required: False
+    type: "string"
+    description: ""
+  scope_id__lt:
+    required: False
+    type: "string"
+    description: ""
+  scope_id__gte:
+    required: False
+    type: "string"
+    description: ""
+  scope_id__gt:
+    required: False
+    type: "string"
+    description: ""
+  scope_type__n:
+    required: False
+    type: "string"
+    description: ""
+  tag__n:
     required: False
     type: "string"
     description: ""
@@ -42,10 +278,6 @@ parameters:
     required: False
     type: "integer"
     description: "The initial index from which to return the results."
-  id:
-    required: False
-    type: "integer"
-    description: "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored."
   save_in_key_store:
     type: boolean
     default: false

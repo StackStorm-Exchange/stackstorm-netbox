@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.158217
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.028081
 description: "POST Racks"
 enabled: true
 entry_point: run.py
@@ -15,63 +15,83 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
-  u_height:
-    required: False
-    type: "integer"
-    description: "Height (U)"
-  group:
-    required: False
-    type: "integer"
-    description: "Group"
   name:
     required: True
     type: "string"
     description: "Name"
-  tags:
+  facility_id:
     required: False
-    type: "array"
-    description: "Array of tag strings"
+    type: "string"
+    description: "Facility ID"
   site:
     required: True
     type: "integer"
     description: "Site"
-  comments:
-    required: False
-    type: "string"
-    description: "Comments"
-  custom_fields:
-    required: False
-    type: "object"
-    description: "Custom fields"
-  width:
-    required: False
+  location:
+    required: True
     type: "integer"
-    description: "Width"
-  facility_id:
-    required: False
-    type: "integer"
-    description: "Facility ID"
-  role:
-    required: False
-    type: "integer"
-    description: "Role"
-  desc_units:
-    required: False
-    type: "boolean"
-    description: "Descending units"
-  serial:
-    required: False
-    type: "string"
-    description: "Serial number"
-  type:
-    required: False
-    type: "integer"
-    description: "Type"
+    description: "Location"
   tenant:
     required: False
     type: "integer"
     description: "Tenant"
+  status:
+    required: False
+    type: "string"
+    description: "Status"
+  role:
+    required: False
+    type: "integer"
+    description: "Role"
+  serial:
+    required: False
+    type: "string"
+    description: "Serial number"
+  asset_tag:
+    required: False
+    type: "string"
+    description: "Asset tag"
+  type:
+    required: False
+    type: "string"
+    description: "Type"
+  width:
+    required: False
+    type: "integer"
+    description: "Width"
+  u_height:
+    required: False
+    type: "integer"
+    description: "Height (U)"
+  desc_units:
+    required: False
+    type: "boolean"
+    description: "Descending units"
+  outer_width:
+    required: False
+    type: "integer"
+    description: "Outer width"
+  outer_depth:
+    required: False
+    type: "integer"
+    description: "Outer depth"
+  outer_unit:
+    required: False
+    type: "string"
+    description: "Outer unit"
+  comments:
+    required: False
+    type: "string"
+    description: "Comments"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
 runner_type: python-script

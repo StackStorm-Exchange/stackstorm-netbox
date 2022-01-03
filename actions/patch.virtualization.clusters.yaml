@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.114744
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.058138
 description: "PATCH Clusters"
 enabled: true
 entry_point: run.py
@@ -15,39 +15,43 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
-  group:
-    required: False
-    type: "integer"
-    description: "Group"
   name:
-    required: False
+    required: True
     type: "string"
     description: "Name"
-  tags:
+  type:
+    required: True
+    type: "integer"
+    description: "Type"
+  group:
+    required: True
+    type: "integer"
+    description: "Group"
+  tenant:
     required: False
-    type: "array"
-    description: "Array of tag strings"
+    type: "integer"
+    description: "Tenant"
   site:
-    required: False
+    required: True
     type: "integer"
     description: "Site"
   comments:
     required: False
     type: "string"
     description: "Comments"
-  type:
+  tags:
     required: False
-    type: "integer"
-    description: "Type"
+    type: "array"
+    description: "Array of tag strings"
   custom_fields:
     required: False
     type: "object"
     description: "Custom fields"
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to patch."
 runner_type: python-script

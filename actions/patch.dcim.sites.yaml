@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.137800
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.032436
 description: "PATCH Sites"
 enabled: true
 entry_point: run.py
@@ -15,87 +15,95 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
-  facility:
-    required: False
+  name:
+    required: True
     type: "string"
-    description: "Facility"
-  contact_name:
-    required: False
-    type: "string"
-    description: "Contact name"
-  custom_fields:
-    required: False
-    type: "object"
-    description: "Custom fields"
-  comments:
-    required: False
-    type: "string"
-    description: "Comments"
+    description: "Name"
   slug:
-    required: False
+    required: True
     type: "string"
     description: "Slug"
-  latitude:
-    required: False
-    type: "string"
-    description: "Latitude"
-  contact_phone:
-    required: False
-    type: "string"
-    description: "Contact phone"
   status:
     required: False
-    type: "integer"
+    type: "string"
     description: "Status"
-  physical_address:
-    required: False
-    type: "string"
-    description: "Physical address"
-  description:
-    required: False
-    type: "string"
-    description: "Description"
-  tags:
-    required: False
-    type: "array"
-    description: "Array of tag strings"
-  contact_email:
-    required: False
-    type: "string"
-    description: "Contact E-mail"
-  asn:
+  region:
     required: False
     type: "integer"
-    description: "ASN"
+    description: "Region"
+  group:
+    required: False
+    type: "integer"
+    description: "Group"
   tenant:
     required: False
     type: "integer"
     description: "Tenant"
-  name:
+  facility:
     required: False
     type: "string"
-    description: "Name"
-  region:
+    description: "Facility"
+  asn:
     required: False
     type: "integer"
-    description: "Parent"
+    description: "ASN"
+  asns:
+    required: False
+    type: "array"
+    description: "Asns"
   time_zone:
     required: False
     type: "string"
     description: "Time zone"
-  longitude:
+  description:
     required: False
     type: "string"
-    description: "Longitude"
+    description: "Description"
+  physical_address:
+    required: False
+    type: "string"
+    description: "Physical address"
   shipping_address:
     required: False
     type: "string"
     description: "Shipping address"
+  latitude:
+    required: False
+    type: "integer"
+    description: "Latitude"
+  longitude:
+    required: False
+    type: "integer"
+    description: "Longitude"
+  contact_name:
+    required: False
+    type: "string"
+    description: "Contact name"
+  contact_phone:
+    required: False
+    type: "string"
+    description: "Contact phone"
+  contact_email:
+    required: False
+    type: "string"
+    description: "Contact E-mail"
+  comments:
+    required: False
+    type: "string"
+    description: "Comments"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to patch."
 runner_type: python-script

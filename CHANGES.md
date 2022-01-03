@@ -1,8 +1,12 @@
 # Change Log
 
-## 1.0.0
+## 3.0.0
 
-* Drop Python 2.7 support
+- Updated actions generated to cover all routes available in the NetBox 3.1 API.
+
+## 2.0.0
+
+- Drop Python 2.7 support
 
 ## 1.1.1
 - Version bump to fix tagging issue, no code changes.
@@ -11,9 +15,11 @@
 - Added the `netbox_webhooks` sensor which listens for inbound webhooks from NetBox and fires triggers into StackStorm.
 
 ## 1.0.0
+
 - Added script in `/bin` to auto generate all action meta definitions based on the NetBox OpenAPI (Swagger) spec.
 - All actions rewritten (auto generated) based on the new mechanism. Note existing actions have been renamed (see Breaking changes)
 - New actions generated to cover all routes available in the NetBox 2.4 API.
+
 ### Breaking changes
 - All pre-existing actions have been renamed to conform to a new, consistent naming scheme. That scheme is `<http_verb>.<app>.<route>`
 

@@ -1,7 +1,7 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.155572
-description: "GET Image Attachments"
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.036214
+description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
 name: get.extras.image_attachments
@@ -15,9 +15,125 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
+  id:
+    required: False
+    type: "string"
+    description: ""
+  content_type_id:
+    required: False
+    type: "string"
+    description: ""
+  object_id:
+    required: False
+    type: "string"
+    description: ""
+  name:
+    required: False
+    type: "string"
+    description: ""
+  q:
+    required: False
+    type: "string"
+    description: ""
+  created:
+    required: False
+    type: "string"
+    description: ""
+  content_type:
+    required: False
+    type: "string"
+    description: ""
+  id__n:
+    required: False
+    type: "string"
+    description: ""
+  id__lte:
+    required: False
+    type: "string"
+    description: ""
+  id__lt:
+    required: False
+    type: "string"
+    description: ""
+  id__gte:
+    required: False
+    type: "string"
+    description: ""
+  id__gt:
+    required: False
+    type: "string"
+    description: ""
+  content_type_id__n:
+    required: False
+    type: "string"
+    description: ""
+  object_id__n:
+    required: False
+    type: "string"
+    description: ""
+  object_id__lte:
+    required: False
+    type: "string"
+    description: ""
+  object_id__lt:
+    required: False
+    type: "string"
+    description: ""
+  object_id__gte:
+    required: False
+    type: "string"
+    description: ""
+  object_id__gt:
+    required: False
+    type: "string"
+    description: ""
+  name__n:
+    required: False
+    type: "string"
+    description: ""
+  name__ic:
+    required: False
+    type: "string"
+    description: ""
+  name__nic:
+    required: False
+    type: "string"
+    description: ""
+  name__iew:
+    required: False
+    type: "string"
+    description: ""
+  name__niew:
+    required: False
+    type: "string"
+    description: ""
+  name__isw:
+    required: False
+    type: "string"
+    description: ""
+  name__nisw:
+    required: False
+    type: "string"
+    description: ""
+  name__ie:
+    required: False
+    type: "string"
+    description: ""
+  name__nie:
+    required: False
+    type: "string"
+    description: ""
+  name__empty:
+    required: False
+    type: "string"
+    description: ""
+  content_type__n:
+    required: False
+    type: "string"
+    description: ""
   limit:
     required: False
     type: "integer"
@@ -26,10 +142,6 @@ parameters:
     required: False
     type: "integer"
     description: "The initial index from which to return the results."
-  id:
-    required: False
-    type: "integer"
-    description: "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored."
   save_in_key_store:
     type: boolean
     default: false

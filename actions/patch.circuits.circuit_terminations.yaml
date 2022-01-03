@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.116654
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.004514
 description: "PATCH Circuit Terminations"
 enabled: true
 entry_point: run.py
@@ -15,43 +15,55 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
-  pp_info:
-    required: False
-    type: "string"
-    description: "Patch panel/port(s)"
-  upstream_speed:
-    required: False
+  circuit:
+    required: True
     type: "integer"
-    description: "Upstream speed (Kbps)"
+    description: "Circuit"
+  term_side:
+    required: True
+    type: "string"
+    description: "Termination"
   site:
     required: False
     type: "integer"
     description: "Site"
-  term_side:
-    required: False
-    type: "string"
-    description: "Termination"
-  xconnect_id:
+  provider_network:
     required: False
     type: "integer"
-    description: "Cross-connect ID"
-  circuit:
-    required: False
-    type: "integer"
-    description: "Circuit"
+    description: "Provider network"
   port_speed:
     required: False
     type: "integer"
     description: "Port speed (Kbps)"
-  interface:
+  upstream_speed:
     required: False
     type: "integer"
-    description: "Interface"
+    description: "Upstream speed (Kbps)"
+  xconnect_id:
+    required: False
+    type: "string"
+    description: "Cross-connect ID"
+  pp_info:
+    required: False
+    type: "string"
+    description: "Patch panel/port(s)"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  mark_connected:
+    required: False
+    type: "boolean"
+    description: "Mark connected"
+  cable:
+    required: False
+    type: "integer"
+    description: "Id of cable"
   id:
     required: True
-    type: "integer"
+    type: "string"
     description: "ID of the object to patch."
 runner_type: python-script

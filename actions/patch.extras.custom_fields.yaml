@@ -1,0 +1,77 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.034801
+description: "PATCH Custom Fields"
+enabled: true
+entry_point: run.py
+name: patch.extras.custom_fields
+parameters:
+  endpoint_uri:
+    default: "/extras/custom-fields/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  content_types:
+    required: True
+    type: "array"
+    description: "Content types"
+  type:
+    required: False
+    type: "string"
+    description: "Type"
+  name:
+    required: True
+    type: "string"
+    description: "Name"
+  label:
+    required: False
+    type: "string"
+    description: "Label"
+  description:
+    required: False
+    type: "string"
+    description: "Description"
+  required:
+    required: False
+    type: "boolean"
+    description: "Required"
+  filter_logic:
+    required: False
+    type: "string"
+    description: "Filter logic"
+  default:
+    required: False
+    type: "string"
+    description: "Default"
+  weight:
+    required: False
+    type: "integer"
+    description: "Weight"
+  validation_minimum:
+    required: False
+    type: "integer"
+    description: "Minimum value"
+  validation_maximum:
+    required: False
+    type: "integer"
+    description: "Maximum value"
+  validation_regex:
+    required: False
+    type: "string"
+    description: "Validation regex"
+  choices:
+    required: False
+    type: "array"
+    description: "Choices"
+  id:
+    required: True
+    type: "string"
+    description: "ID of the object to patch."
+runner_type: python-script

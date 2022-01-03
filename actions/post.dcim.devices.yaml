@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 2.4
-# Date: 2018-11-08 00:21:23.087845
+# NetBox API version: 3.1
+# Date: 2022-01-01 21:28:49.014533
 description: "POST Devices"
 enabled: true
 entry_point: run.py
@@ -15,99 +15,103 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: True
+    default: true
     immutable: true
     type: boolean
-  site:
+  name:
     required: True
-    type: "integer"
-    description: "Site"
-  asset_tag:
-    required: False
     type: "string"
-    description: "Asset tag"
-  cluster:
-    required: False
-    type: "integer"
-    description: "Cluster"
+    description: "Name"
   device_type:
     required: True
     type: "integer"
     description: "Device type"
-  serial:
-    required: False
-    type: "string"
-    description: "Serial number"
-  custom_fields:
-    required: False
-    type: "object"
-    description: "Custom fields"
-  local_context_data:
-    required: False
-    type: "string"
-    description: "Local context data"
-  comments:
-    required: False
-    type: "string"
-    description: "Comments"
-  platform:
-    required: False
-    type: "integer"
-    description: "Platform"
-  status:
-    required: False
-    type: "integer"
-    description: "Status"
   device_role:
     required: True
     type: "integer"
     description: "Device role"
-  primary_ip:
-    required: False
-    type: "integer"
-    description: "Primary ip"
-  tags:
-    required: False
-    type: "array"
-    description: "Array of tag strings"
-  vc_priority:
-    required: False
-    type: "integer"
-    description: "Vc priority"
-  primary_ip4:
-    required: False
-    type: "integer"
-    description: "Primary ip"
-  primary_ip6:
-    required: False
-    type: "integer"
-    description: "Primary ip"
   tenant:
-    required: False
+    required: True
     type: "integer"
     description: "Tenant"
-  virtual_chassis:
+  platform:
     required: False
     type: "integer"
-    description: "Virtual chassis"
-  name:
+    description: "Platform"
+  serial:
     required: False
     type: "string"
-    description: "Name"
-  face:
+    description: "Serial number"
+  asset_tag:
+    required: False
+    type: "string"
+    description: "Asset tag"
+  site:
+    required: True
+    type: "integer"
+    description: "Site"
+  location:
     required: False
     type: "integer"
-    description: "Face"
-  vc_position:
-    required: False
+    description: "Location"
+  rack:
+    required: True
     type: "integer"
-    description: "Vc position"
+    description: "Rack"
   position:
     required: False
     type: "integer"
     description: "Position (U)"
-  rack:
+  face:
+    required: True
+    type: "string"
+    description: "Rack face"
+  parent_device:
     required: False
     type: "integer"
-    description: "Rack"
+    description: "Id of parent_device"
+  status:
+    required: False
+    type: "string"
+    description: "Status"
+  primary_ip4:
+    required: False
+    type: "integer"
+    description: "Primary IPv4"
+  primary_ip6:
+    required: False
+    type: "integer"
+    description: "Primary IPv6"
+  cluster:
+    required: False
+    type: "integer"
+    description: "Cluster"
+  virtual_chassis:
+    required: True
+    type: "integer"
+    description: "Virtual chassis"
+  vc_position:
+    required: False
+    type: "integer"
+    description: "Vc position"
+  vc_priority:
+    required: False
+    type: "integer"
+    description: "Vc priority"
+  comments:
+    required: False
+    type: "string"
+    description: "Comments"
+  local_context_data:
+    required: False
+    type: "string"
+    description: "Local context data"
+  tags:
+    required: False
+    type: "array"
+    description: "Array of tag strings"
+  custom_fields:
+    required: False
+    type: "object"
+    description: "Custom fields"
 runner_type: python-script
