@@ -3,7 +3,7 @@ from st2common.runners.base_action import Action
 
 
 __all__ = [
-    'NetboxBaseAction'
+    "NetboxBaseAction"
 ]
 
 
@@ -18,35 +18,35 @@ class NetboxBaseAction(Action):
         """Logic to make all types of requests
         """
 
-        if self.config['use_https']:
-            url = 'https://'
+        if self.config["use_https"]:
+            url = "https://"
         else:
-            url = 'http://'
+            url = "http://"
 
-        url = url + self.config['hostname'] + "/api" + endpoint_uri
+        url = url + self.config["hostname"] + "/api" + endpoint_uri
 
         headers = {
-            'Authorization': 'Token ' + self.config['api_token'],
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
+            "Authorization": "Token " + self.config["api_token"],
+            "Accept": "application/json",
+            "Content-Type": "application/json",
         }
 
         # transform `id__in` if present
-        if kwargs.get('id__in'):
-            kwargs['id__in'] = ','.join(kwargs['id__in'])
-            self.logger.debug('id__in transformed to {}'.format(kwargs['id__in']))
+        if kwargs.get("id__in"):
+            kwargs["id__in"] = ",".join(kwargs["id__in"])
+            self.logger.debug("id__in transformed to {}".format(kwargs["id__in"]))
 
         # transform `tags` if present
-        if kwargs.get('tags'):
-            kwargs['tags'] = ','.join(kwargs['tags'])
-            self.logger.debug('tags transformed to {}'.format(kwargs['tags']))
+        if kwargs.get("tags"):
+            kwargs["tags"] = ",".join(kwargs["tags"])
+            self.logger.debug("tags transformed to {}".format(kwargs["tags"]))
 
         # strip values which have a None value if we are making a write request
         if http_action != "get":
             kwargs = {key: value for key, value in kwargs.items() if value is not None}
 
         self.logger.debug("Calling base {} with kwargs: {}".format(http_action, kwargs))
-        verify = self.config['ssl_verify']
+        verify = self.config["ssl_verify"]
 
         r = None
 
@@ -65,11 +65,10 @@ class NetboxBaseAction(Action):
         elif http_action == "delete":
             r = requests.delete(url, verify=verify, headers=headers)
             self.logger.info("Delete of ID {} returned status code {}".format(
-                kwargs['id'],
+                kwargs["id"],
                 r.status_code)
             )
-            return r.status_code == 204
 
         if r:
-            return {'raw': r.json()}
-        return {'raw': {}}
+            return {"raw": r.json(), "status": r.status_code}
+        return {"raw": {}, "status": 404}
