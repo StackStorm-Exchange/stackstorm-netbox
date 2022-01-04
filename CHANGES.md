@@ -1,5 +1,9 @@
 # Change Log
 
+## 3.0.1
+
+- Added status code to the response
+
 ## 3.0.0
 
 - Updated actions generated to cover all routes available in the NetBox 3.1 API.
