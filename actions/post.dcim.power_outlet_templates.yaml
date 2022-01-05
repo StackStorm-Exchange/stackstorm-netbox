@@ -18,31 +18,31 @@ parameters:
     immutable: true
     type: boolean
   device_type:
-    required: True
+    required: true
     type: integer
     description: "Device type"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   label:
-    required: False
+    required: false
     type: string
     description: "Label"
   type:
-    required: False
+    required: false
     type: string
     description: "Type"
   power_port:
-    required: False
+    required: false
     type: integer
     description: "Power port"
   feed_leg:
-    required: False
+    required: false
     type: string
     description: "Feed leg"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
 runner_type: python-script

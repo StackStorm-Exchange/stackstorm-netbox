@@ -18,31 +18,31 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   slug:
-    required: True
+    required: true
     type: string
     description: "Slug"
   parent:
-    required: False
+    required: false
     type: integer
     description: "Parent"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

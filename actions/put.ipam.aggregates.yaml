@@ -18,35 +18,35 @@ parameters:
     immutable: true
     type: boolean
   prefix:
-    required: True
+    required: true
     type: string
     description: "Prefix"
   rir:
-    required: True
+    required: true
     type: integer
     description: "RIR"
   tenant:
-    required: False
+    required: false
     type: integer
     description: "Tenant"
   date_added:
-    required: False
+    required: false
     type: string
     description: "Date added"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

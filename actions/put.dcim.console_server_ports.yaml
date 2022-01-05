@@ -18,47 +18,47 @@ parameters:
     immutable: true
     type: boolean
   device:
-    required: True
+    required: true
     type: integer
     description: "Device"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   label:
-    required: False
+    required: false
     type: string
     description: "Label"
   type:
-    required: False
+    required: false
     type: string
     description: "Type"
   speed:
-    required: False
+    required: false
     type: integer
     description: "Speed"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   mark_connected:
-    required: False
+    required: false
     type: boolean
     description: "Mark connected"
   cable:
-    required: False
+    required: false
     type: integer
     description: "Id of cable"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

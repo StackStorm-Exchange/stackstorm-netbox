@@ -18,51 +18,51 @@ parameters:
     immutable: true
     type: boolean
   manufacturer:
-    required: True
+    required: true
     type: integer
     description: "Manufacturer"
   model:
-    required: True
+    required: true
     type: string
     description: "Model"
   slug:
-    required: True
+    required: true
     type: string
     description: "Slug"
   part_number:
-    required: False
+    required: false
     type: string
     description: "Part number"
   u_height:
-    required: False
+    required: false
     type: integer
     description: "Height (U)"
   is_full_depth:
-    required: False
+    required: false
     type: boolean
     description: "Is full depth"
   subdevice_role:
-    required: False
+    required: false
     type: string
     description: "Parent/child status"
   airflow:
-    required: False
+    required: false
     type: string
     description: "Airflow"
   comments:
-    required: False
+    required: false
     type: string
     description: "Comments"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

@@ -18,83 +18,83 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   facility_id:
-    required: False
+    required: false
     type: string
     description: "Facility ID"
   site:
-    required: True
+    required: true
     type: integer
     description: "Site"
   location:
-    required: True
+    required: true
     type: integer
     description: "Location"
   tenant:
-    required: False
+    required: false
     type: integer
     description: "Tenant"
   status:
-    required: False
+    required: false
     type: string
     description: "Status"
   role:
-    required: False
+    required: false
     type: integer
     description: "Role"
   serial:
-    required: False
+    required: false
     type: string
     description: "Serial number"
   asset_tag:
-    required: False
+    required: false
     type: string
     description: "Asset tag"
   type:
-    required: False
+    required: false
     type: string
     description: "Type"
   width:
-    required: False
+    required: false
     type: integer
     description: "Width"
   u_height:
-    required: False
+    required: false
     type: integer
     description: "Height (U)"
   desc_units:
-    required: False
+    required: false
     type: boolean
     description: "Descending units"
   outer_width:
-    required: False
+    required: false
     type: integer
     description: "Outer width"
   outer_depth:
-    required: False
+    required: false
     type: integer
     description: "Outer depth"
   outer_unit:
-    required: False
+    required: false
     type: string
     description: "Outer unit"
   comments:
-    required: False
+    required: false
     type: string
     description: "Comments"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
 runner_type: python-script

@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to delete."
 runner_type: python-script

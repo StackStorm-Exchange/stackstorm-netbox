@@ -18,23 +18,23 @@ parameters:
     immutable: true
     type: boolean
   content_type:
-    required: True
+    required: true
     type: string
     description: "Content type"
   object_id:
-    required: True
+    required: true
     type: integer
     description: "Object id"
   contact:
-    required: True
+    required: true
     type: integer
     description: "Contact"
   role:
-    required: True
+    required: true
     type: integer
     description: "Role"
   priority:
-    required: True
+    required: true
     type: string
     description: "Priority"
 runner_type: python-script

@@ -18,231 +18,231 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
+    required: false
     type: string
     description: ""
   name:
-    required: False
+    required: false
     type: string
     description: ""
   enabled:
-    required: False
+    required: false
     type: string
     description: ""
   mtu:
-    required: False
+    required: false
     type: string
     description: ""
   created:
-    required: False
+    required: false
     type: string
     description: ""
   created__gte:
-    required: False
+    required: false
     type: string
     description: ""
   created__lte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__gte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__lte:
-    required: False
+    required: false
     type: string
     description: ""
   q:
-    required: False
+    required: false
     type: string
     description: ""
   cluster_id:
-    required: False
+    required: false
     type: string
     description: ""
   cluster:
-    required: False
+    required: false
     type: string
     description: ""
   virtual_machine_id:
-    required: False
+    required: false
     type: string
     description: ""
   virtual_machine:
-    required: False
+    required: false
     type: string
     description: ""
   parent_id:
-    required: False
+    required: false
     type: string
     description: ""
   bridge_id:
-    required: False
+    required: false
     type: string
     description: ""
   mac_address:
-    required: False
+    required: false
     type: string
     description: ""
   tag:
-    required: False
+    required: false
     type: string
     description: ""
   id__n:
-    required: False
+    required: false
     type: string
     description: ""
   id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   name__n:
-    required: False
+    required: false
     type: string
     description: ""
   name__ic:
-    required: False
+    required: false
     type: string
     description: ""
   name__nic:
-    required: False
+    required: false
     type: string
     description: ""
   name__iew:
-    required: False
+    required: false
     type: string
     description: ""
   name__niew:
-    required: False
+    required: false
     type: string
     description: ""
   name__isw:
-    required: False
+    required: false
     type: string
     description: ""
   name__nisw:
-    required: False
+    required: false
     type: string
     description: ""
   name__ie:
-    required: False
+    required: false
     type: string
     description: ""
   name__nie:
-    required: False
+    required: false
     type: string
     description: ""
   name__empty:
-    required: False
+    required: false
     type: string
     description: ""
   mtu__n:
-    required: False
+    required: false
     type: string
     description: ""
   mtu__lte:
-    required: False
+    required: false
     type: string
     description: ""
   mtu__lt:
-    required: False
+    required: false
     type: string
     description: ""
   mtu__gte:
-    required: False
+    required: false
     type: string
     description: ""
   mtu__gt:
-    required: False
+    required: false
     type: string
     description: ""
   cluster_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   cluster__n:
-    required: False
+    required: false
     type: string
     description: ""
   virtual_machine_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   virtual_machine__n:
-    required: False
+    required: false
     type: string
     description: ""
   parent_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   bridge_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   mac_address__n:
-    required: False
+    required: false
     type: string
     description: ""
   mac_address__ic:
-    required: False
+    required: false
     type: string
     description: ""
   mac_address__nic:
-    required: False
+    required: false
     type: string
     description: ""
   mac_address__iew:
-    required: False
+    required: false
     type: string
     description: ""
   mac_address__niew:
-    required: False
+    required: false
     type: string
     description: ""
   mac_address__isw:
-    required: False
+    required: false
     type: string
     description: ""
   mac_address__nisw:
-    required: False
+    required: false
     type: string
     description: ""
   mac_address__ie:
-    required: False
+    required: false
     type: string
     description: ""
   mac_address__nie:
-    required: False
+    required: false
     type: string
     description: ""
   tag__n:
-    required: False
+    required: false
     type: string
     description: ""
   limit:
-    required: False
+    required: false
     type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
+    required: false
     type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:

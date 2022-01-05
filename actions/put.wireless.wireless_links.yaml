@@ -18,47 +18,47 @@ parameters:
     immutable: true
     type: boolean
   interface_a:
-    required: True
+    required: true
     type: integer
     description: "Interface a"
   interface_b:
-    required: True
+    required: true
     type: integer
     description: "Interface b"
   ssid:
-    required: False
+    required: false
     type: string
     description: "SSID"
   status:
-    required: False
+    required: false
     type: string
     description: "Status"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   auth_type:
-    required: False
+    required: false
     type: string
     description: "Auth type"
   auth_cipher:
-    required: False
+    required: false
     type: string
     description: "Auth cipher"
   auth_psk:
-    required: False
+    required: false
     type: string
     description: "Pre-shared key"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

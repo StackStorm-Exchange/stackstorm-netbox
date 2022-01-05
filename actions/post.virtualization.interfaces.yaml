@@ -18,55 +18,55 @@ parameters:
     immutable: true
     type: boolean
   virtual_machine:
-    required: True
+    required: true
     type: integer
     description: "Virtual machine"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   enabled:
-    required: False
+    required: false
     type: boolean
     description: "Enabled"
   parent:
-    required: False
+    required: false
     type: integer
     description: "Parent interface"
   bridge:
-    required: False
+    required: false
     type: integer
     description: "Bridge interface"
   mtu:
-    required: False
+    required: false
     type: integer
     description: "MTU"
   mac_address:
-    required: False
+    required: false
     type: string
     description: "MAC Address"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   mode:
-    required: False
+    required: false
     type: string
     description: "Mode"
   untagged_vlan:
-    required: False
+    required: false
     type: integer
     description: "Untagged VLAN"
   tagged_vlans:
-    required: False
+    required: false
     type: array
     description: "Tagged vlans"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
 runner_type: python-script

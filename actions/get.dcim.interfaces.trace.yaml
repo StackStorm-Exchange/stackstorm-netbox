@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object."
   save_in_key_store:

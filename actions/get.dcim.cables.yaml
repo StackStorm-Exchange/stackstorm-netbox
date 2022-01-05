@@ -18,291 +18,291 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
+    required: false
     type: string
     description: ""
   label:
-    required: False
+    required: false
     type: string
     description: ""
   length:
-    required: False
+    required: false
     type: string
     description: ""
   length_unit:
-    required: False
+    required: false
     type: string
     description: ""
   termination_a_id:
-    required: False
+    required: false
     type: string
     description: ""
   termination_b_id:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group_id:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_id:
-    required: False
+    required: false
     type: string
     description: ""
   tenant:
-    required: False
+    required: false
     type: string
     description: ""
   created:
-    required: False
+    required: false
     type: string
     description: ""
   created__gte:
-    required: False
+    required: false
     type: string
     description: ""
   created__lte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__gte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__lte:
-    required: False
+    required: false
     type: string
     description: ""
   q:
-    required: False
+    required: false
     type: string
     description: ""
   termination_a_type:
-    required: False
+    required: false
     type: string
     description: ""
   termination_b_type:
-    required: False
+    required: false
     type: string
     description: ""
   type:
-    required: False
+    required: false
     type: string
     description: ""
   status:
-    required: False
+    required: false
     type: string
     description: ""
   color:
-    required: False
+    required: false
     type: string
     description: ""
   device_id:
-    required: False
+    required: false
     type: string
     description: ""
   device:
-    required: False
+    required: false
     type: string
     description: ""
   rack_id:
-    required: False
+    required: false
     type: string
     description: ""
   rack:
-    required: False
+    required: false
     type: string
     description: ""
   site_id:
-    required: False
+    required: false
     type: string
     description: ""
   site:
-    required: False
+    required: false
     type: string
     description: ""
   tag:
-    required: False
+    required: false
     type: string
     description: ""
   id__n:
-    required: False
+    required: false
     type: string
     description: ""
   id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   label__n:
-    required: False
+    required: false
     type: string
     description: ""
   label__ic:
-    required: False
+    required: false
     type: string
     description: ""
   label__nic:
-    required: False
+    required: false
     type: string
     description: ""
   label__iew:
-    required: False
+    required: false
     type: string
     description: ""
   label__niew:
-    required: False
+    required: false
     type: string
     description: ""
   label__isw:
-    required: False
+    required: false
     type: string
     description: ""
   label__nisw:
-    required: False
+    required: false
     type: string
     description: ""
   label__ie:
-    required: False
+    required: false
     type: string
     description: ""
   label__nie:
-    required: False
+    required: false
     type: string
     description: ""
   label__empty:
-    required: False
+    required: false
     type: string
     description: ""
   length__n:
-    required: False
+    required: false
     type: string
     description: ""
   length__lte:
-    required: False
+    required: false
     type: string
     description: ""
   length__lt:
-    required: False
+    required: false
     type: string
     description: ""
   length__gte:
-    required: False
+    required: false
     type: string
     description: ""
   length__gt:
-    required: False
+    required: false
     type: string
     description: ""
   length_unit__n:
-    required: False
+    required: false
     type: string
     description: ""
   termination_a_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   termination_a_id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   termination_a_id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   termination_a_id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   termination_a_id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   termination_b_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   termination_b_id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   termination_b_id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   termination_b_id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   termination_b_id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant__n:
-    required: False
+    required: false
     type: string
     description: ""
   termination_a_type__n:
-    required: False
+    required: false
     type: string
     description: ""
   termination_b_type__n:
-    required: False
+    required: false
     type: string
     description: ""
   type__n:
-    required: False
+    required: false
     type: string
     description: ""
   status__n:
-    required: False
+    required: false
     type: string
     description: ""
   color__n:
-    required: False
+    required: false
     type: string
     description: ""
   tag__n:
-    required: False
+    required: false
     type: string
     description: ""
   limit:
-    required: False
+    required: false
     type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
+    required: false
     type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:

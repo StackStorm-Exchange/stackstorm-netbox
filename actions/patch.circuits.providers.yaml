@@ -18,47 +18,47 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   slug:
-    required: True
+    required: true
     type: string
     description: "Slug"
   asn:
-    required: False
+    required: false
     type: integer
     description: "ASN"
   account:
-    required: False
+    required: false
     type: string
     description: "Account number"
   portal_url:
-    required: False
+    required: false
     type: string
     description: "Portal URL"
   noc_contact:
-    required: False
+    required: false
     type: string
     description: "NOC contact"
   admin_contact:
-    required: False
+    required: false
     type: string
     description: "Admin contact"
   comments:
-    required: False
+    required: false
     type: string
     description: "Comments"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

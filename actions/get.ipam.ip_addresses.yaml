@@ -18,299 +18,299 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
+    required: false
     type: string
     description: ""
   dns_name:
-    required: False
+    required: false
     type: string
     description: ""
   description:
-    required: False
+    required: false
     type: string
     description: ""
   created:
-    required: False
+    required: false
     type: string
     description: ""
   created__gte:
-    required: False
+    required: false
     type: string
     description: ""
   created__lte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__gte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__lte:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group_id:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_id:
-    required: False
+    required: false
     type: string
     description: ""
   tenant:
-    required: False
+    required: false
     type: string
     description: ""
   q:
-    required: False
+    required: false
     type: string
     description: ""
   family:
-    required: False
+    required: false
     type: integer
     description: ""
   parent:
-    required: False
+    required: false
     type: string
     description: ""
   address:
-    required: False
+    required: false
     type: string
     description: ""
   mask_length:
-    required: False
+    required: false
     type: integer
     description: ""
   vrf_id:
-    required: False
+    required: false
     type: string
     description: ""
   vrf:
-    required: False
+    required: false
     type: string
     description: ""
   present_in_vrf_id:
-    required: False
+    required: false
     type: string
     description: ""
   present_in_vrf:
-    required: False
+    required: false
     type: string
     description: ""
   device:
-    required: False
+    required: false
     type: string
     description: ""
   device_id:
-    required: False
+    required: false
     type: string
     description: ""
   virtual_machine:
-    required: False
+    required: false
     type: string
     description: ""
   virtual_machine_id:
-    required: False
+    required: false
     type: string
     description: ""
   interface:
-    required: False
+    required: false
     type: string
     description: ""
   interface_id:
-    required: False
+    required: false
     type: string
     description: ""
   vminterface:
-    required: False
+    required: false
     type: string
     description: ""
   vminterface_id:
-    required: False
+    required: false
     type: string
     description: ""
   assigned_to_interface:
-    required: False
+    required: false
     type: string
     description: ""
   status:
-    required: False
+    required: false
     type: string
     description: ""
   role:
-    required: False
+    required: false
     type: string
     description: ""
   tag:
-    required: False
+    required: false
     type: string
     description: ""
   id__n:
-    required: False
+    required: false
     type: string
     description: ""
   id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   dns_name__n:
-    required: False
+    required: false
     type: string
     description: ""
   dns_name__ic:
-    required: False
+    required: false
     type: string
     description: ""
   dns_name__nic:
-    required: False
+    required: false
     type: string
     description: ""
   dns_name__iew:
-    required: False
+    required: false
     type: string
     description: ""
   dns_name__niew:
-    required: False
+    required: false
     type: string
     description: ""
   dns_name__isw:
-    required: False
+    required: false
     type: string
     description: ""
   dns_name__nisw:
-    required: False
+    required: false
     type: string
     description: ""
   dns_name__ie:
-    required: False
+    required: false
     type: string
     description: ""
   dns_name__nie:
-    required: False
+    required: false
     type: string
     description: ""
   dns_name__empty:
-    required: False
+    required: false
     type: string
     description: ""
   description__n:
-    required: False
+    required: false
     type: string
     description: ""
   description__ic:
-    required: False
+    required: false
     type: string
     description: ""
   description__nic:
-    required: False
+    required: false
     type: string
     description: ""
   description__iew:
-    required: False
+    required: false
     type: string
     description: ""
   description__niew:
-    required: False
+    required: false
     type: string
     description: ""
   description__isw:
-    required: False
+    required: false
     type: string
     description: ""
   description__nisw:
-    required: False
+    required: false
     type: string
     description: ""
   description__ie:
-    required: False
+    required: false
     type: string
     description: ""
   description__nie:
-    required: False
+    required: false
     type: string
     description: ""
   description__empty:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant__n:
-    required: False
+    required: false
     type: string
     description: ""
   vrf_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   vrf__n:
-    required: False
+    required: false
     type: string
     description: ""
   interface__n:
-    required: False
+    required: false
     type: string
     description: ""
   interface_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   vminterface__n:
-    required: False
+    required: false
     type: string
     description: ""
   vminterface_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   status__n:
-    required: False
+    required: false
     type: string
     description: ""
   role__n:
-    required: False
+    required: false
     type: string
     description: ""
   tag__n:
-    required: False
+    required: false
     type: string
     description: ""
   limit:
-    required: False
+    required: false
     type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
+    required: false
     type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:

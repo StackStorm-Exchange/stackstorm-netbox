@@ -18,199 +18,199 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
+    required: false
     type: string
     description: ""
   term_side:
-    required: False
+    required: false
     type: string
     description: ""
   port_speed:
-    required: False
+    required: false
     type: string
     description: ""
   upstream_speed:
-    required: False
+    required: false
     type: string
     description: ""
   xconnect_id:
-    required: False
+    required: false
     type: string
     description: ""
   created:
-    required: False
+    required: false
     type: string
     description: ""
   created__gte:
-    required: False
+    required: false
     type: string
     description: ""
   created__lte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__gte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__lte:
-    required: False
+    required: false
     type: string
     description: ""
   cabled:
-    required: False
+    required: false
     type: string
     description: ""
   q:
-    required: False
+    required: false
     type: string
     description: ""
   circuit_id:
-    required: False
+    required: false
     type: string
     description: ""
   site_id:
-    required: False
+    required: false
     type: string
     description: ""
   site:
-    required: False
+    required: false
     type: string
     description: ""
   provider_network_id:
-    required: False
+    required: false
     type: string
     description: ""
   id__n:
-    required: False
+    required: false
     type: string
     description: ""
   id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   term_side__n:
-    required: False
+    required: false
     type: string
     description: ""
   port_speed__n:
-    required: False
+    required: false
     type: string
     description: ""
   port_speed__lte:
-    required: False
+    required: false
     type: string
     description: ""
   port_speed__lt:
-    required: False
+    required: false
     type: string
     description: ""
   port_speed__gte:
-    required: False
+    required: false
     type: string
     description: ""
   port_speed__gt:
-    required: False
+    required: false
     type: string
     description: ""
   upstream_speed__n:
-    required: False
+    required: false
     type: string
     description: ""
   upstream_speed__lte:
-    required: False
+    required: false
     type: string
     description: ""
   upstream_speed__lt:
-    required: False
+    required: false
     type: string
     description: ""
   upstream_speed__gte:
-    required: False
+    required: false
     type: string
     description: ""
   upstream_speed__gt:
-    required: False
+    required: false
     type: string
     description: ""
   xconnect_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   xconnect_id__ic:
-    required: False
+    required: false
     type: string
     description: ""
   xconnect_id__nic:
-    required: False
+    required: false
     type: string
     description: ""
   xconnect_id__iew:
-    required: False
+    required: false
     type: string
     description: ""
   xconnect_id__niew:
-    required: False
+    required: false
     type: string
     description: ""
   xconnect_id__isw:
-    required: False
+    required: false
     type: string
     description: ""
   xconnect_id__nisw:
-    required: False
+    required: false
     type: string
     description: ""
   xconnect_id__ie:
-    required: False
+    required: false
     type: string
     description: ""
   xconnect_id__nie:
-    required: False
+    required: false
     type: string
     description: ""
   xconnect_id__empty:
-    required: False
+    required: false
     type: string
     description: ""
   circuit_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   site_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   site__n:
-    required: False
+    required: false
     type: string
     description: ""
   provider_network_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   limit:
-    required: False
+    required: false
     type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
+    required: false
     type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:

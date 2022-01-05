@@ -18,23 +18,23 @@ parameters:
     immutable: true
     type: boolean
   assigned_object_type:
-    required: True
+    required: true
     type: string
     description: "Assigned object type"
   assigned_object_id:
-    required: True
+    required: true
     type: integer
     description: "Assigned object id"
   created_by:
-    required: False
+    required: false
     type: integer
     description: "Created by"
   kind:
-    required: False
+    required: false
     type: string
     description: "Kind"
   comments:
-    required: True
+    required: true
     type: string
     description: "Comments"
 runner_type: python-script

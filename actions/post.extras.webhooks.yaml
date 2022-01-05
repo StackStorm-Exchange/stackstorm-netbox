@@ -18,63 +18,63 @@ parameters:
     immutable: true
     type: boolean
   content_types:
-    required: True
+    required: true
     type: array
     description: "Content types"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   type_create:
-    required: False
+    required: false
     type: boolean
     description: "Type create"
   type_update:
-    required: False
+    required: false
     type: boolean
     description: "Type update"
   type_delete:
-    required: False
+    required: false
     type: boolean
     description: "Type delete"
   payload_url:
-    required: True
+    required: true
     type: string
     description: "URL"
   enabled:
-    required: False
+    required: false
     type: boolean
     description: "Enabled"
   http_method:
-    required: False
+    required: false
     type: string
     description: "HTTP method"
   http_content_type:
-    required: False
+    required: false
     type: string
     description: "HTTP content type"
   additional_headers:
-    required: False
+    required: false
     type: string
     description: "Additional headers"
   body_template:
-    required: False
+    required: false
     type: string
     description: "Body template"
   secret:
-    required: False
+    required: false
     type: string
     description: "Secret"
   conditions:
-    required: False
+    required: false
     type: string
     description: "Conditions"
   ssl_verification:
-    required: False
+    required: false
     type: boolean
     description: "SSL verification"
   ca_file_path:
-    required: False
+    required: false
     type: string
     description: "CA File Path"
 runner_type: python-script

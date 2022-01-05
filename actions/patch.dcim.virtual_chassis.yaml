@@ -18,27 +18,27 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   domain:
-    required: False
+    required: false
     type: string
     description: "Domain"
   master:
-    required: False
+    required: false
     type: integer
     description: "Master"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

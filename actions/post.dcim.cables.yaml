@@ -18,55 +18,55 @@ parameters:
     immutable: true
     type: boolean
   termination_a_type:
-    required: True
+    required: true
     type: string
     description: "Termination a type"
   termination_a_id:
-    required: True
+    required: true
     type: integer
     description: "Termination a id"
   termination_b_type:
-    required: True
+    required: true
     type: string
     description: "Termination b type"
   termination_b_id:
-    required: True
+    required: true
     type: integer
     description: "Termination b id"
   type:
-    required: False
+    required: false
     type: string
     description: "Type"
   status:
-    required: False
+    required: false
     type: string
     description: "Status"
   tenant:
-    required: False
+    required: false
     type: integer
     description: "Tenant"
   label:
-    required: False
+    required: false
     type: string
     description: "Label"
   color:
-    required: False
+    required: false
     type: string
     description: "Color"
   length:
-    required: False
+    required: false
     type: integer
     description: "Length"
   length_unit:
-    required: False
+    required: false
     type: string
     description: "Length unit"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
 runner_type: python-script

@@ -18,31 +18,31 @@ parameters:
     immutable: true
     type: boolean
   device_type:
-    required: True
+    required: true
     type: integer
     description: "Device type"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   label:
-    required: False
+    required: false
     type: string
     description: "Label"
   type:
-    required: True
+    required: true
     type: string
     description: "Type"
   mgmt_only:
-    required: False
+    required: false
     type: boolean
     description: "Management only"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

@@ -18,51 +18,51 @@ parameters:
     immutable: true
     type: boolean
   prefix:
-    required: True
+    required: true
     type: string
     description: "Prefix"
   site:
-    required: False
+    required: false
     type: integer
     description: "Site"
   vrf:
-    required: False
+    required: false
     type: integer
     description: "VRF"
   tenant:
-    required: False
+    required: false
     type: integer
     description: "Tenant"
   vlan:
-    required: False
+    required: false
     type: integer
     description: "VLAN"
   status:
-    required: False
+    required: false
     type: string
     description: "Status"
   role:
-    required: False
+    required: false
     type: integer
     description: "Role"
   is_pool:
-    required: False
+    required: false
     type: boolean
     description: "Is a pool"
   mark_utilized:
-    required: False
+    required: false
     type: boolean
     description: "Mark utilized"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
 runner_type: python-script

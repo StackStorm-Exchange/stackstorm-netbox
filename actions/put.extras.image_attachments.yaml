@@ -18,27 +18,27 @@ parameters:
     immutable: true
     type: boolean
   content_type:
-    required: True
+    required: true
     type: string
     description: "Content type"
   object_id:
-    required: True
+    required: true
     type: integer
     description: "Object id"
   name:
-    required: False
+    required: false
     type: string
     description: "Name"
   image_height:
-    required: True
+    required: true
     type: integer
     description: "Image height"
   image_width:
-    required: True
+    required: true
     type: integer
     description: "Image width"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

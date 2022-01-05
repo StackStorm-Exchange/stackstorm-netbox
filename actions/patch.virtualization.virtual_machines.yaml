@@ -18,67 +18,67 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   status:
-    required: False
+    required: false
     type: string
     description: "Status"
   cluster:
-    required: True
+    required: true
     type: integer
     description: "Cluster"
   role:
-    required: False
+    required: false
     type: integer
     description: "Role"
   tenant:
-    required: False
+    required: false
     type: integer
     description: "Tenant"
   platform:
-    required: False
+    required: false
     type: integer
     description: "Platform"
   primary_ip4:
-    required: False
+    required: false
     type: integer
     description: "Primary IPv4"
   primary_ip6:
-    required: False
+    required: false
     type: integer
     description: "Primary IPv6"
   vcpus:
-    required: False
+    required: false
     type: integer
     description: "VCPUs"
   memory:
-    required: False
+    required: false
     type: integer
     description: "Memory (MB)"
   disk:
-    required: False
+    required: false
     type: integer
     description: "Disk (GB)"
   comments:
-    required: False
+    required: false
     type: string
     description: "Comments"
   local_context_data:
-    required: False
+    required: false
     type: string
     description: "Local context data"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

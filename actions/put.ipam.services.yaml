@@ -18,43 +18,43 @@ parameters:
     immutable: true
     type: boolean
   device:
-    required: False
+    required: false
     type: integer
     description: "Device"
   virtual_machine:
-    required: False
+    required: false
     type: integer
     description: "Virtual machine"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   ports:
-    required: True
+    required: true
     type: array
     description: "Ports"
   protocol:
-    required: True
+    required: true
     type: string
     description: "Protocol"
   ipaddresses:
-    required: False
+    required: false
     type: array
     description: "Ipaddresses"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

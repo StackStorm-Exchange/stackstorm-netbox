@@ -18,35 +18,35 @@ parameters:
     immutable: true
     type: boolean
   device_type:
-    required: True
+    required: true
     type: integer
     description: "Device type"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   label:
-    required: False
+    required: false
     type: string
     description: "Label"
   type:
-    required: True
+    required: true
     type: string
     description: "Type"
   color:
-    required: False
+    required: false
     type: string
     description: "Color"
   rear_port:
-    required: True
+    required: true
     type: integer
     description: "Rear port"
   rear_port_position:
-    required: False
+    required: false
     type: integer
     description: "Rear port position"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
 runner_type: python-script

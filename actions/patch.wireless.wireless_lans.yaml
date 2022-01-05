@@ -18,43 +18,43 @@ parameters:
     immutable: true
     type: boolean
   ssid:
-    required: True
+    required: true
     type: string
     description: "SSID"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   group:
-    required: False
+    required: false
     type: integer
     description: "Group"
   vlan:
-    required: False
+    required: false
     type: integer
     description: "VLAN"
   auth_type:
-    required: False
+    required: false
     type: string
     description: "Auth type"
   auth_cipher:
-    required: False
+    required: false
     type: string
     description: "Auth cipher"
   auth_psk:
-    required: False
+    required: false
     type: string
     description: "Pre-shared key"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

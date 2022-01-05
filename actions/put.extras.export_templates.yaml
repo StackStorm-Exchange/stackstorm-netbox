@@ -18,35 +18,35 @@ parameters:
     immutable: true
     type: boolean
   content_type:
-    required: True
+    required: true
     type: string
     description: "Content type"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   template_code:
-    required: True
+    required: true
     type: string
     description: "Template code"
   mime_type:
-    required: False
+    required: false
     type: string
     description: "MIME type"
   file_extension:
-    required: False
+    required: false
     type: string
     description: "File extension"
   as_attachment:
-    required: False
+    required: false
     type: boolean
     description: "As attachment"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

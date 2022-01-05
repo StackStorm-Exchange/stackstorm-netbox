@@ -18,123 +18,123 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
+    required: false
     type: string
     description: ""
   group_id:
-    required: False
+    required: false
     type: string
     description: ""
   interface_type:
-    required: False
+    required: false
     type: string
     description: ""
   interface_id:
-    required: False
+    required: false
     type: string
     description: ""
   priority:
-    required: False
+    required: false
     type: string
     description: ""
   created:
-    required: False
+    required: false
     type: string
     description: ""
   created__gte:
-    required: False
+    required: false
     type: string
     description: ""
   created__lte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__gte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__lte:
-    required: False
+    required: false
     type: string
     description: ""
   id__n:
-    required: False
+    required: false
     type: string
     description: ""
   id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   group_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   interface_type__n:
-    required: False
+    required: false
     type: string
     description: ""
   interface_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   interface_id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   interface_id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   interface_id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   interface_id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   priority__n:
-    required: False
+    required: false
     type: string
     description: ""
   priority__lte:
-    required: False
+    required: false
     type: string
     description: ""
   priority__lt:
-    required: False
+    required: false
     type: string
     description: ""
   priority__gte:
-    required: False
+    required: false
     type: string
     description: ""
   priority__gt:
-    required: False
+    required: false
     type: string
     description: ""
   limit:
-    required: False
+    required: false
     type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
+    required: false
     type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:

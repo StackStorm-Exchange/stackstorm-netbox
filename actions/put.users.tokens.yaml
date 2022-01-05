@@ -18,27 +18,27 @@ parameters:
     immutable: true
     type: boolean
   user:
-    required: True
+    required: true
     type: integer
     description: "User"
   expires:
-    required: False
+    required: false
     type: string
     description: "Expires"
   key:
-    required: False
+    required: false
     type: string
     description: "Key"
   write_enabled:
-    required: False
+    required: false
     type: boolean
     description: "Write enabled"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

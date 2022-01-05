@@ -18,27 +18,27 @@ parameters:
     immutable: true
     type: boolean
   site:
-    required: True
+    required: true
     type: integer
     description: "Site"
   location:
-    required: False
+    required: false
     type: integer
     description: "Location"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

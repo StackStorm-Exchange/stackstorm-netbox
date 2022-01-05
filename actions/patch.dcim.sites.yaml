@@ -18,91 +18,91 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   slug:
-    required: True
+    required: true
     type: string
     description: "Slug"
   status:
-    required: False
+    required: false
     type: string
     description: "Status"
   region:
-    required: False
+    required: false
     type: integer
     description: "Region"
   group:
-    required: False
+    required: false
     type: integer
     description: "Group"
   tenant:
-    required: False
+    required: false
     type: integer
     description: "Tenant"
   facility:
-    required: False
+    required: false
     type: string
     description: "Facility"
   asn:
-    required: False
+    required: false
     type: integer
     description: "ASN"
   asns:
-    required: False
+    required: false
     type: array
     description: "Asns"
   time_zone:
-    required: False
+    required: false
     type: string
     description: "Time zone"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   physical_address:
-    required: False
+    required: false
     type: string
     description: "Physical address"
   shipping_address:
-    required: False
+    required: false
     type: string
     description: "Shipping address"
   latitude:
-    required: False
+    required: false
     type: integer
     description: "Latitude"
   longitude:
-    required: False
+    required: false
     type: integer
     description: "Longitude"
   contact_name:
-    required: False
+    required: false
     type: string
     description: "Contact name"
   contact_phone:
-    required: False
+    required: false
     type: string
     description: "Contact phone"
   contact_email:
-    required: False
+    required: false
     type: string
     description: "Contact E-mail"
   comments:
-    required: False
+    required: false
     type: string
     description: "Comments"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

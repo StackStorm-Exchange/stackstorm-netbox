@@ -18,59 +18,59 @@ parameters:
     immutable: true
     type: boolean
   content_types:
-    required: True
+    required: true
     type: array
     description: "Content types"
   type:
-    required: False
+    required: false
     type: string
     description: "Type"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   label:
-    required: False
+    required: false
     type: string
     description: "Label"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   required:
-    required: False
+    required: false
     type: boolean
     description: "Required"
   filter_logic:
-    required: False
+    required: false
     type: string
     description: "Filter logic"
   default:
-    required: False
+    required: false
     type: string
     description: "Default"
   weight:
-    required: False
+    required: false
     type: integer
     description: "Weight"
   validation_minimum:
-    required: False
+    required: false
     type: integer
     description: "Minimum value"
   validation_maximum:
-    required: False
+    required: false
     type: integer
     description: "Maximum value"
   validation_regex:
-    required: False
+    required: false
     type: string
     description: "Validation regex"
   choices:
-    required: False
+    required: false
     type: array
     description: "Choices"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

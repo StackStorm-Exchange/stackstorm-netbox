@@ -18,55 +18,55 @@ parameters:
     immutable: true
     type: boolean
   device:
-    required: True
+    required: true
     type: integer
     description: "Device"
   parent:
-    required: False
+    required: false
     type: integer
     description: "Parent"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   label:
-    required: False
+    required: false
     type: string
     description: "Label"
   manufacturer:
-    required: False
+    required: false
     type: integer
     description: "Manufacturer"
   part_id:
-    required: False
+    required: false
     type: string
     description: "Part ID"
   serial:
-    required: False
+    required: false
     type: string
     description: "Serial number"
   asset_tag:
-    required: False
+    required: false
     type: string
     description: "Asset tag"
   discovered:
-    required: False
+    required: false
     type: boolean
     description: "Discovered"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

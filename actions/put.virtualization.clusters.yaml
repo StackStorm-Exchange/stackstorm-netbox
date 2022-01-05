@@ -18,39 +18,39 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   type:
-    required: True
+    required: true
     type: integer
     description: "Type"
   group:
-    required: True
+    required: true
     type: integer
     description: "Group"
   tenant:
-    required: False
+    required: false
     type: integer
     description: "Tenant"
   site:
-    required: True
+    required: true
     type: integer
     description: "Site"
   comments:
-    required: False
+    required: false
     type: string
     description: "Comments"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

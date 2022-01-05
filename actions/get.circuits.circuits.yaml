@@ -18,291 +18,291 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
+    required: false
     type: string
     description: ""
   cid:
-    required: False
+    required: false
     type: string
     description: ""
   install_date:
-    required: False
+    required: false
     type: string
     description: ""
   commit_rate:
-    required: False
+    required: false
     type: string
     description: ""
   created:
-    required: False
+    required: false
     type: string
     description: ""
   created__gte:
-    required: False
+    required: false
     type: string
     description: ""
   created__lte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__gte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__lte:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group_id:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_id:
-    required: False
+    required: false
     type: string
     description: ""
   tenant:
-    required: False
+    required: false
     type: string
     description: ""
   q:
-    required: False
+    required: false
     type: string
     description: ""
   provider_id:
-    required: False
+    required: false
     type: string
     description: ""
   provider:
-    required: False
+    required: false
     type: string
     description: ""
   provider_network_id:
-    required: False
+    required: false
     type: string
     description: ""
   type_id:
-    required: False
+    required: false
     type: string
     description: ""
   type:
-    required: False
+    required: false
     type: string
     description: ""
   status:
-    required: False
+    required: false
     type: string
     description: ""
   region_id:
-    required: False
+    required: false
     type: string
     description: ""
   region:
-    required: False
+    required: false
     type: string
     description: ""
   site_group_id:
-    required: False
+    required: false
     type: string
     description: ""
   site_group:
-    required: False
+    required: false
     type: string
     description: ""
   site_id:
-    required: False
+    required: false
     type: string
     description: ""
   site:
-    required: False
+    required: false
     type: string
     description: ""
   tag:
-    required: False
+    required: false
     type: string
     description: ""
   id__n:
-    required: False
+    required: false
     type: string
     description: ""
   id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   cid__n:
-    required: False
+    required: false
     type: string
     description: ""
   cid__ic:
-    required: False
+    required: false
     type: string
     description: ""
   cid__nic:
-    required: False
+    required: false
     type: string
     description: ""
   cid__iew:
-    required: False
+    required: false
     type: string
     description: ""
   cid__niew:
-    required: False
+    required: false
     type: string
     description: ""
   cid__isw:
-    required: False
+    required: false
     type: string
     description: ""
   cid__nisw:
-    required: False
+    required: false
     type: string
     description: ""
   cid__ie:
-    required: False
+    required: false
     type: string
     description: ""
   cid__nie:
-    required: False
+    required: false
     type: string
     description: ""
   cid__empty:
-    required: False
+    required: false
     type: string
     description: ""
   install_date__n:
-    required: False
+    required: false
     type: string
     description: ""
   install_date__lte:
-    required: False
+    required: false
     type: string
     description: ""
   install_date__lt:
-    required: False
+    required: false
     type: string
     description: ""
   install_date__gte:
-    required: False
+    required: false
     type: string
     description: ""
   install_date__gt:
-    required: False
+    required: false
     type: string
     description: ""
   commit_rate__n:
-    required: False
+    required: false
     type: string
     description: ""
   commit_rate__lte:
-    required: False
+    required: false
     type: string
     description: ""
   commit_rate__lt:
-    required: False
+    required: false
     type: string
     description: ""
   commit_rate__gte:
-    required: False
+    required: false
     type: string
     description: ""
   commit_rate__gt:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant__n:
-    required: False
+    required: false
     type: string
     description: ""
   provider_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   provider__n:
-    required: False
+    required: false
     type: string
     description: ""
   provider_network_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   type_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   type__n:
-    required: False
+    required: false
     type: string
     description: ""
   status__n:
-    required: False
+    required: false
     type: string
     description: ""
   region_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   region__n:
-    required: False
+    required: false
     type: string
     description: ""
   site_group_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   site_group__n:
-    required: False
+    required: false
     type: string
     description: ""
   site_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   site__n:
-    required: False
+    required: false
     type: string
     description: ""
   tag__n:
-    required: False
+    required: false
     type: string
     description: ""
   limit:
-    required: False
+    required: false
     type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
+    required: false
     type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:

@@ -18,67 +18,67 @@ parameters:
     immutable: true
     type: boolean
   power_panel:
-    required: True
+    required: true
     type: integer
     description: "Power panel"
   rack:
-    required: False
+    required: false
     type: integer
     description: "Rack"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   status:
-    required: False
+    required: false
     type: string
     description: "Status"
   type:
-    required: False
+    required: false
     type: string
     description: "Type"
   supply:
-    required: False
+    required: false
     type: string
     description: "Supply"
   phase:
-    required: False
+    required: false
     type: string
     description: "Phase"
   voltage:
-    required: False
+    required: false
     type: integer
     description: "Voltage"
   amperage:
-    required: False
+    required: false
     type: integer
     description: "Amperage"
   max_utilization:
-    required: False
+    required: false
     type: integer
     description: "Max utilization"
   comments:
-    required: False
+    required: false
     type: string
     description: "Comments"
   mark_connected:
-    required: False
+    required: false
     type: boolean
     description: "Mark connected"
   cable:
-    required: False
+    required: false
     type: integer
     description: "Id of cable"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

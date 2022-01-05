@@ -18,43 +18,43 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   rd:
-    required: False
+    required: false
     type: string
     description: "Route distinguisher"
   tenant:
-    required: False
+    required: false
     type: integer
     description: "Tenant"
   enforce_unique:
-    required: False
+    required: false
     type: boolean
     description: "Enforce unique space"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   import_targets:
-    required: False
+    required: false
     type: array
     description: "Import targets"
   export_targets:
-    required: False
+    required: false
     type: array
     description: "Export targets"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

@@ -18,51 +18,51 @@ parameters:
     immutable: true
     type: boolean
   circuit:
-    required: True
+    required: true
     type: integer
     description: "Circuit"
   term_side:
-    required: True
+    required: true
     type: string
     description: "Termination"
   site:
-    required: False
+    required: false
     type: integer
     description: "Site"
   provider_network:
-    required: False
+    required: false
     type: integer
     description: "Provider network"
   port_speed:
-    required: False
+    required: false
     type: integer
     description: "Port speed (Kbps)"
   upstream_speed:
-    required: False
+    required: false
     type: integer
     description: "Upstream speed (Kbps)"
   xconnect_id:
-    required: False
+    required: false
     type: string
     description: "Cross-connect ID"
   pp_info:
-    required: False
+    required: false
     type: string
     description: "Patch panel/port(s)"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   mark_connected:
-    required: False
+    required: false
     type: boolean
     description: "Mark connected"
   cable:
-    required: False
+    required: false
     type: integer
     description: "Id of cable"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

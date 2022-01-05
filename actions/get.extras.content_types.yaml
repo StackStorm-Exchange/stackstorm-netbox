@@ -18,27 +18,27 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
+    required: false
     type: integer
     description: ""
   app_label:
-    required: False
+    required: false
     type: string
     description: ""
   model:
-    required: False
+    required: false
     type: string
     description: ""
   q:
-    required: False
+    required: false
     type: string
     description: ""
   limit:
-    required: False
+    required: false
     type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
+    required: false
     type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:

@@ -18,23 +18,23 @@ parameters:
     immutable: true
     type: boolean
   group:
-    required: True
+    required: true
     type: integer
     description: "Group"
   interface_type:
-    required: True
+    required: true
     type: string
     description: "Interface type"
   interface_id:
-    required: True
+    required: true
     type: integer
     description: "Interface id"
   priority:
-    required: True
+    required: true
     type: integer
     description: "Priority"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

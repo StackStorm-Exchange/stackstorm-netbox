@@ -18,55 +18,55 @@ parameters:
     immutable: true
     type: boolean
   address:
-    required: True
+    required: true
     type: string
     description: "Address"
   vrf:
-    required: False
+    required: false
     type: integer
     description: "VRF"
   tenant:
-    required: False
+    required: false
     type: integer
     description: "Tenant"
   status:
-    required: False
+    required: false
     type: string
     description: "Status"
   role:
-    required: False
+    required: false
     type: string
     description: "Role"
   assigned_object_type:
-    required: False
+    required: false
     type: string
     description: "Assigned object type"
   assigned_object_id:
-    required: False
+    required: false
     type: integer
     description: "Assigned object id"
   nat_inside:
-    required: False
+    required: false
     type: integer
     description: "NAT (Inside)"
   dns_name:
-    required: False
+    required: false
     type: string
     description: "DNS Name"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

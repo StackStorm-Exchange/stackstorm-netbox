@@ -18,43 +18,43 @@ parameters:
     immutable: true
     type: boolean
   group:
-    required: True
+    required: true
     type: integer
     description: "Group"
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   title:
-    required: False
+    required: false
     type: string
     description: "Title"
   phone:
-    required: False
+    required: false
     type: string
     description: "Phone"
   email:
-    required: False
+    required: false
     type: string
     description: "Email"
   address:
-    required: False
+    required: false
     type: string
     description: "Address"
   comments:
-    required: False
+    required: false
     type: string
     description: "Comments"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

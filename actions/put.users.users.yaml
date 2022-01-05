@@ -18,43 +18,43 @@ parameters:
     immutable: true
     type: boolean
   username:
-    required: True
+    required: true
     type: string
     description: "Username"
   password:
-    required: True
+    required: true
     type: string
     description: "Password"
   first_name:
-    required: False
+    required: false
     type: string
     description: "First name"
   last_name:
-    required: False
+    required: false
     type: string
     description: "Last name"
   email:
-    required: False
+    required: false
     type: string
     description: "Email address"
   is_staff:
-    required: False
+    required: false
     type: boolean
     description: "Staff status"
   is_active:
-    required: False
+    required: false
     type: boolean
     description: "Active"
   date_joined:
-    required: False
+    required: false
     type: string
     description: "Date joined"
   groups:
-    required: False
+    required: false
     type: array
     description: "Groups"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

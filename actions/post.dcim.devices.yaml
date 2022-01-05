@@ -18,99 +18,99 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   device_type:
-    required: True
+    required: true
     type: integer
     description: "Device type"
   device_role:
-    required: True
+    required: true
     type: integer
     description: "Device role"
   tenant:
-    required: True
+    required: true
     type: integer
     description: "Tenant"
   platform:
-    required: False
+    required: false
     type: integer
     description: "Platform"
   serial:
-    required: False
+    required: false
     type: string
     description: "Serial number"
   asset_tag:
-    required: False
+    required: false
     type: string
     description: "Asset tag"
   site:
-    required: True
+    required: true
     type: integer
     description: "Site"
   location:
-    required: False
+    required: false
     type: integer
     description: "Location"
   rack:
-    required: True
+    required: true
     type: integer
     description: "Rack"
   position:
-    required: False
+    required: false
     type: integer
     description: "Position (U)"
   face:
-    required: True
+    required: true
     type: string
     description: "Rack face"
   parent_device:
-    required: False
+    required: false
     type: integer
     description: "Id of parent_device"
   status:
-    required: False
+    required: false
     type: string
     description: "Status"
   primary_ip4:
-    required: False
+    required: false
     type: integer
     description: "Primary IPv4"
   primary_ip6:
-    required: False
+    required: false
     type: integer
     description: "Primary IPv6"
   cluster:
-    required: False
+    required: false
     type: integer
     description: "Cluster"
   virtual_chassis:
-    required: True
+    required: true
     type: integer
     description: "Virtual chassis"
   vc_position:
-    required: False
+    required: false
     type: integer
     description: "Vc position"
   vc_priority:
-    required: False
+    required: false
     type: integer
     description: "Vc priority"
   comments:
-    required: False
+    required: false
     type: string
     description: "Comments"
   local_context_data:
-    required: False
+    required: false
     type: string
     description: "Local context data"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
 runner_type: python-script

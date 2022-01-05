@@ -18,115 +18,115 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
+    required: false
     type: string
     description: ""
   created:
-    required: False
+    required: false
     type: string
     description: ""
   completed:
-    required: False
+    required: false
     type: string
     description: ""
   status:
-    required: False
+    required: false
     type: string
     description: ""
   user:
-    required: False
+    required: false
     type: string
     description: ""
   obj_type:
-    required: False
+    required: false
     type: string
     description: ""
   name:
-    required: False
+    required: false
     type: string
     description: ""
   q:
-    required: False
+    required: false
     type: string
     description: ""
   id__n:
-    required: False
+    required: false
     type: string
     description: ""
   id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   status__n:
-    required: False
+    required: false
     type: string
     description: ""
   user__n:
-    required: False
+    required: false
     type: string
     description: ""
   obj_type__n:
-    required: False
+    required: false
     type: string
     description: ""
   name__n:
-    required: False
+    required: false
     type: string
     description: ""
   name__ic:
-    required: False
+    required: false
     type: string
     description: ""
   name__nic:
-    required: False
+    required: false
     type: string
     description: ""
   name__iew:
-    required: False
+    required: false
     type: string
     description: ""
   name__niew:
-    required: False
+    required: false
     type: string
     description: ""
   name__isw:
-    required: False
+    required: false
     type: string
     description: ""
   name__nisw:
-    required: False
+    required: false
     type: string
     description: ""
   name__ie:
-    required: False
+    required: false
     type: string
     description: ""
   name__nie:
-    required: False
+    required: false
     type: string
     description: ""
   name__empty:
-    required: False
+    required: false
     type: string
     description: ""
   limit:
-    required: False
+    required: false
     type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
+    required: false
     type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:

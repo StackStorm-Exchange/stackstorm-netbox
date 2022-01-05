@@ -18,39 +18,39 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   slug:
-    required: True
+    required: true
     type: string
     description: "Slug"
   manufacturer:
-    required: False
+    required: false
     type: integer
     description: "Manufacturer"
   napalm_driver:
-    required: False
+    required: false
     type: string
     description: "NAPALM driver"
   napalm_args:
-    required: False
+    required: false
     type: string
     description: "NAPALM arguments"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

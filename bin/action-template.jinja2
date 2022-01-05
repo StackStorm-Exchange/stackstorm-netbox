@@ -19,7 +19,7 @@ parameters:
     type: boolean
   {%- for parameter in parameters %}
   {{ parameter.name }}:
-    required: {{ parameter.required }}
+    required: {{ parameter.required | lower }}
     {%- if parameter.default %}
     default: "{{ parameter.default }}"
     {%- endif %}

@@ -18,207 +18,207 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
+    required: false
     type: string
     description: ""
   name:
-    required: False
+    required: false
     type: string
     description: ""
   slug:
-    required: False
+    required: false
     type: string
     description: ""
   color:
-    required: False
+    required: false
     type: string
     description: ""
   vm_role:
-    required: False
+    required: false
     type: string
     description: ""
   created:
-    required: False
+    required: false
     type: string
     description: ""
   created__gte:
-    required: False
+    required: false
     type: string
     description: ""
   created__lte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__gte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__lte:
-    required: False
+    required: false
     type: string
     description: ""
   q:
-    required: False
+    required: false
     type: string
     description: ""
   tag:
-    required: False
+    required: false
     type: string
     description: ""
   id__n:
-    required: False
+    required: false
     type: string
     description: ""
   id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   name__n:
-    required: False
+    required: false
     type: string
     description: ""
   name__ic:
-    required: False
+    required: false
     type: string
     description: ""
   name__nic:
-    required: False
+    required: false
     type: string
     description: ""
   name__iew:
-    required: False
+    required: false
     type: string
     description: ""
   name__niew:
-    required: False
+    required: false
     type: string
     description: ""
   name__isw:
-    required: False
+    required: false
     type: string
     description: ""
   name__nisw:
-    required: False
+    required: false
     type: string
     description: ""
   name__ie:
-    required: False
+    required: false
     type: string
     description: ""
   name__nie:
-    required: False
+    required: false
     type: string
     description: ""
   name__empty:
-    required: False
+    required: false
     type: string
     description: ""
   slug__n:
-    required: False
+    required: false
     type: string
     description: ""
   slug__ic:
-    required: False
+    required: false
     type: string
     description: ""
   slug__nic:
-    required: False
+    required: false
     type: string
     description: ""
   slug__iew:
-    required: False
+    required: false
     type: string
     description: ""
   slug__niew:
-    required: False
+    required: false
     type: string
     description: ""
   slug__isw:
-    required: False
+    required: false
     type: string
     description: ""
   slug__nisw:
-    required: False
+    required: false
     type: string
     description: ""
   slug__ie:
-    required: False
+    required: false
     type: string
     description: ""
   slug__nie:
-    required: False
+    required: false
     type: string
     description: ""
   slug__empty:
-    required: False
+    required: false
     type: string
     description: ""
   color__n:
-    required: False
+    required: false
     type: string
     description: ""
   color__ic:
-    required: False
+    required: false
     type: string
     description: ""
   color__nic:
-    required: False
+    required: false
     type: string
     description: ""
   color__iew:
-    required: False
+    required: false
     type: string
     description: ""
   color__niew:
-    required: False
+    required: false
     type: string
     description: ""
   color__isw:
-    required: False
+    required: false
     type: string
     description: ""
   color__nisw:
-    required: False
+    required: false
     type: string
     description: ""
   color__ie:
-    required: False
+    required: false
     type: string
     description: ""
   color__nie:
-    required: False
+    required: false
     type: string
     description: ""
   color__empty:
-    required: False
+    required: false
     type: string
     description: ""
   tag__n:
-    required: False
+    required: false
     type: string
     description: ""
   limit:
-    required: False
+    required: false
     type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
+    required: false
     type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:

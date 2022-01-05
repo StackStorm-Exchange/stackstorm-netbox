@@ -18,151 +18,151 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
+    required: false
     type: string
     description: ""
   asn:
-    required: False
+    required: false
     type: string
     description: ""
   created:
-    required: False
+    required: false
     type: string
     description: ""
   created__gte:
-    required: False
+    required: false
     type: string
     description: ""
   created__lte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__gte:
-    required: False
+    required: false
     type: string
     description: ""
   last_updated__lte:
-    required: False
+    required: false
     type: string
     description: ""
   q:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group_id:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_id:
-    required: False
+    required: false
     type: string
     description: ""
   tenant:
-    required: False
+    required: false
     type: string
     description: ""
   rir_id:
-    required: False
+    required: false
     type: string
     description: ""
   rir:
-    required: False
+    required: false
     type: string
     description: ""
   site_id:
-    required: False
+    required: false
     type: string
     description: ""
   site:
-    required: False
+    required: false
     type: string
     description: ""
   id__n:
-    required: False
+    required: false
     type: string
     description: ""
   id__lte:
-    required: False
+    required: false
     type: string
     description: ""
   id__lt:
-    required: False
+    required: false
     type: string
     description: ""
   id__gte:
-    required: False
+    required: false
     type: string
     description: ""
   id__gt:
-    required: False
+    required: false
     type: string
     description: ""
   asn__n:
-    required: False
+    required: false
     type: string
     description: ""
   asn__lte:
-    required: False
+    required: false
     type: string
     description: ""
   asn__lt:
-    required: False
+    required: false
     type: string
     description: ""
   asn__gte:
-    required: False
+    required: false
     type: string
     description: ""
   asn__gt:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_group__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   tenant__n:
-    required: False
+    required: false
     type: string
     description: ""
   rir_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   rir__n:
-    required: False
+    required: false
     type: string
     description: ""
   site_id__n:
-    required: False
+    required: false
     type: string
     description: ""
   site__n:
-    required: False
+    required: false
     type: string
     description: ""
   limit:
-    required: False
+    required: false
     type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
+    required: false
     type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:

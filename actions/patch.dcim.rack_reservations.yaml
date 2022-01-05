@@ -18,35 +18,35 @@ parameters:
     immutable: true
     type: boolean
   rack:
-    required: True
+    required: true
     type: integer
     description: "Rack"
   units:
-    required: True
+    required: true
     type: array
     description: "Units"
   user:
-    required: True
+    required: true
     type: integer
     description: "User"
   tenant:
-    required: False
+    required: false
     type: integer
     description: "Tenant"
   description:
-    required: True
+    required: true
     type: string
     description: "Description"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script

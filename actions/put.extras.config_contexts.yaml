@@ -18,71 +18,71 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
+    required: true
     type: string
     description: "Name"
   weight:
-    required: False
+    required: false
     type: integer
     description: "Weight"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   is_active:
-    required: False
+    required: false
     type: boolean
     description: "Is active"
   regions:
-    required: False
+    required: false
     type: array
     description: "Regions"
   site_groups:
-    required: False
+    required: false
     type: array
     description: "Site groups"
   sites:
-    required: False
+    required: false
     type: array
     description: "Sites"
   device_types:
-    required: False
+    required: false
     type: array
     description: "Device types"
   roles:
-    required: False
+    required: false
     type: array
     description: "Roles"
   platforms:
-    required: False
+    required: false
     type: array
     description: "Platforms"
   cluster_groups:
-    required: False
+    required: false
     type: array
     description: "Cluster groups"
   clusters:
-    required: False
+    required: false
     type: array
     description: "Clusters"
   tenant_groups:
-    required: False
+    required: false
     type: array
     description: "Tenant groups"
   tenants:
-    required: False
+    required: false
     type: array
     description: "Tenants"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   data:
-    required: True
+    required: true
     type: string
     description: "Data"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to put."
 runner_type: python-script

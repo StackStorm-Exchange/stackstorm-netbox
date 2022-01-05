@@ -18,43 +18,43 @@ parameters:
     immutable: true
     type: boolean
   start_address:
-    required: True
+    required: true
     type: string
     description: "Start address"
   end_address:
-    required: True
+    required: true
     type: string
     description: "End address"
   vrf:
-    required: False
+    required: false
     type: integer
     description: "VRF"
   tenant:
-    required: False
+    required: false
     type: integer
     description: "Tenant"
   status:
-    required: False
+    required: false
     type: string
     description: "Status"
   role:
-    required: False
+    required: false
     type: integer
     description: "Role"
   description:
-    required: False
+    required: false
     type: string
     description: "Description"
   tags:
-    required: False
+    required: false
     type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
+    required: false
     type: object
     description: "Custom fields"
   id:
-    required: True
+    required: true
     type: string
     description: "ID of the object to patch."
 runner_type: python-script
