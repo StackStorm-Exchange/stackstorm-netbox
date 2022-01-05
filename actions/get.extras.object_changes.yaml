@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:28:49.037407
 description: "Retrieve a list of recent changes."
 enabled: true
 entry_point: run.py
@@ -19,200 +18,200 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_name:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   request_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   action:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   changed_object_type_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   changed_object_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   object_repr:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   q:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   time:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   changed_object_type:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__lte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__lt:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__gte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__gt:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_name__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_name__ic:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_name__nic:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_name__iew:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_name__niew:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_name__isw:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_name__nisw:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_name__ie:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_name__nie:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_name__empty:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   action__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   changed_object_type_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   changed_object_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   changed_object_id__lte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   changed_object_id__lt:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   changed_object_id__gte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   changed_object_id__gt:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   object_repr__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   object_repr__ic:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   object_repr__nic:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   object_repr__iew:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   object_repr__niew:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   object_repr__isw:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   object_repr__nisw:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   object_repr__ie:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   object_repr__nie:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   object_repr__empty:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   changed_object_type__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   limit:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean

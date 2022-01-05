@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:28:49.054277
 description: "POST Groups"
 enabled: true
 entry_point: run.py
@@ -19,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "Name"
 runner_type: python-script

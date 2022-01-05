@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:28:49.049331
 description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
@@ -19,228 +18,228 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   name:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   rd:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   enforce_unique:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   created:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   created__gte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   created__lte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   last_updated:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   last_updated__gte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   last_updated__lte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_group_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_group:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   q:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   import_target_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   import_target:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   export_target_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   export_target:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tag:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__lte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__lt:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__gte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__gt:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   name__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   name__ic:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   name__nic:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   name__iew:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   name__niew:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   name__isw:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   name__nisw:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   name__ie:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   name__nie:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   name__empty:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   rd__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   rd__ic:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   rd__nic:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   rd__iew:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   rd__niew:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   rd__isw:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   rd__nisw:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   rd__ie:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   rd__nie:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   rd__empty:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_group_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_group__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   import_target_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   import_target__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   export_target_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   export_target__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tag__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   limit:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean

@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:28:49.055114
 description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
@@ -19,128 +18,128 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   key:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   write_enabled:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   q:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   created:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   created__gte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   created__lte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   expires:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   expires__gte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   expires__lte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__lte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__lt:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__gte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__gt:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   key__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   key__ic:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   key__nic:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   key__iew:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   key__niew:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   key__isw:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   key__nisw:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   key__ie:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   key__nie:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   key__empty:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   user__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   limit:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean

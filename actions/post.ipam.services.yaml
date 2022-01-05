@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:28:49.047470
 description: "POST Services"
 enabled: true
 entry_point: run.py
@@ -19,39 +18,39 @@ parameters:
     immutable: true
     type: boolean
   device:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Device"
   virtual_machine:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Virtual machine"
   name:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "Name"
   ports:
-    required: True
-    type: "array"
+    required: true
+    type: array
     description: "Ports"
   protocol:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "Protocol"
   ipaddresses:
-    required: False
-    type: "array"
+    required: false
+    type: array
     description: "Ipaddresses"
   description:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Description"
   tags:
-    required: False
-    type: "array"
+    required: false
+    type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
-    type: "object"
+    required: false
+    type: object
     description: "Custom fields"
 runner_type: python-script

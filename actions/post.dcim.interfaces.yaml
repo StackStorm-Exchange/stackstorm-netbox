@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:28:49.018067
 description: "POST Interfaces"
 enabled: true
 entry_point: run.py
@@ -19,111 +18,111 @@ parameters:
     immutable: true
     type: boolean
   device:
-    required: True
-    type: "integer"
+    required: true
+    type: integer
     description: "Device"
   name:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "Name"
   label:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Label"
   type:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "Type"
   enabled:
-    required: False
-    type: "boolean"
+    required: false
+    type: boolean
     description: "Enabled"
   parent:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Parent interface"
   bridge:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Bridge interface"
   lag:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Parent LAG"
   mtu:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "MTU"
   mac_address:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "MAC Address"
   wwn:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "WWN"
   mgmt_only:
-    required: False
-    type: "boolean"
+    required: false
+    type: boolean
     description: "Management only"
   description:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Description"
   mode:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Mode"
   rf_role:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Wireless role"
   rf_channel:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Wireless channel"
   rf_channel_frequency:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Channel frequency (MHz)"
   rf_channel_width:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Channel width (MHz)"
   tx_power:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Transmit power (dBm)"
   untagged_vlan:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Untagged VLAN"
   tagged_vlans:
-    required: False
-    type: "array"
+    required: false
+    type: array
     description: "Tagged vlans"
   mark_connected:
-    required: False
-    type: "boolean"
+    required: false
+    type: boolean
     description: "Mark connected"
   cable:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Id of cable"
   wireless_link:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Wireless link"
   wireless_lans:
-    required: False
-    type: "array"
+    required: false
+    type: array
     description: "Wireless lans"
   tags:
-    required: False
-    type: "array"
+    required: false
+    type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
-    type: "object"
+    required: false
+    type: object
     description: "Custom fields"
 runner_type: python-script

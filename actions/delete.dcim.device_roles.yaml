@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:28:49.012975
 description: "DELETE Device Roles"
 enabled: true
 entry_point: run.py
@@ -19,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "ID of the object to delete."
 runner_type: python-script

@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:28:49.014533
 description: "POST Devices"
 enabled: true
 entry_point: run.py
@@ -19,99 +18,99 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "Name"
   device_type:
-    required: True
-    type: "integer"
+    required: true
+    type: integer
     description: "Device type"
   device_role:
-    required: True
-    type: "integer"
+    required: true
+    type: integer
     description: "Device role"
   tenant:
-    required: True
-    type: "integer"
+    required: true
+    type: integer
     description: "Tenant"
   platform:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Platform"
   serial:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Serial number"
   asset_tag:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Asset tag"
   site:
-    required: True
-    type: "integer"
+    required: true
+    type: integer
     description: "Site"
   location:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Location"
   rack:
-    required: True
-    type: "integer"
+    required: true
+    type: integer
     description: "Rack"
   position:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Position (U)"
   face:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "Rack face"
   parent_device:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Id of parent_device"
   status:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Status"
   primary_ip4:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Primary IPv4"
   primary_ip6:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Primary IPv6"
   cluster:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Cluster"
   virtual_chassis:
-    required: True
-    type: "integer"
+    required: true
+    type: integer
     description: "Virtual chassis"
   vc_position:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Vc position"
   vc_priority:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Vc priority"
   comments:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Comments"
   local_context_data:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Local context data"
   tags:
-    required: False
-    type: "array"
+    required: false
+    type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
-    type: "object"
+    required: false
+    type: object
     description: "Custom fields"
 runner_type: python-script

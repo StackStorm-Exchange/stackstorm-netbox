@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:28:49.013539
 description: "PUT Device Types"
 enabled: true
 entry_point: run.py
@@ -19,51 +18,51 @@ parameters:
     immutable: true
     type: boolean
   manufacturer:
-    required: True
-    type: "integer"
+    required: true
+    type: integer
     description: "Manufacturer"
   model:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "Model"
   slug:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "Slug"
   part_number:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Part number"
   u_height:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Height (U)"
   is_full_depth:
-    required: False
-    type: "boolean"
+    required: false
+    type: boolean
     description: "Is full depth"
   subdevice_role:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Parent/child status"
   airflow:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Airflow"
   comments:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Comments"
   tags:
-    required: False
-    type: "array"
+    required: false
+    type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
-    type: "object"
+    required: false
+    type: object
     description: "Custom fields"
   id:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

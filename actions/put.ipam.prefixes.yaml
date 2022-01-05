@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:28:49.043651
 description: "PUT Prefixes"
 enabled: true
 entry_point: run.py
@@ -19,55 +18,55 @@ parameters:
     immutable: true
     type: boolean
   prefix:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "Prefix"
   site:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Site"
   vrf:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "VRF"
   tenant:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Tenant"
   vlan:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "VLAN"
   status:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Status"
   role:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Role"
   is_pool:
-    required: False
-    type: "boolean"
+    required: false
+    type: boolean
     description: "Is a pool"
   mark_utilized:
-    required: False
-    type: "boolean"
+    required: false
+    type: boolean
     description: "Mark utilized"
   description:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: "Description"
   tags:
-    required: False
-    type: "array"
+    required: false
+    type: array
     description: "Array of tag strings"
   custom_fields:
-    required: False
-    type: "object"
+    required: false
+    type: object
     description: "Custom fields"
   id:
-    required: True
-    type: "string"
+    required: true
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

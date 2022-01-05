@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.1
-# Date: 2022-01-01 21:28:49.042361
 description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
@@ -19,152 +18,152 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_group_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_group:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   created:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   created__gte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   created__lte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   last_updated:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   last_updated__gte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   last_updated__lte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   q:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   family:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: ""
   contains:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   vrf_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   vrf:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   role_id:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   role:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   status:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tag:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__lte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__lt:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__gte:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   id__gt:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_group_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_group__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tenant__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   vrf_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   vrf__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   role_id__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   role__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   status__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   tag__n:
-    required: False
-    type: "string"
+    required: false
+    type: string
     description: ""
   limit:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "Number of results to return per page."
   offset:
-    required: False
-    type: "integer"
+    required: false
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean
