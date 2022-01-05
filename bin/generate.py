@@ -175,7 +175,6 @@ def run(spec):
         template = jinja2.Template(f.read(), autoescape=True)
     for name, action in list(actions.items()):
         template_vars = {
-            'generation_date': datetime.datetime.now(),
             'version': spec['info']['version'],
             'action_name': name,
             'parameters': action['parameters'],

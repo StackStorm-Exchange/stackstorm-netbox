@@ -1,6 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: {{ version }}
-# Date: {{ generation_date }}
 description: "{{ description }}"
 enabled: true
 entry_point: run.py
@@ -24,7 +23,7 @@ parameters:
     {%- if parameter.default %}
     default: "{{ parameter.default }}"
     {%- endif %}
-    type: "{{ parameter.type }}"
+    type: "{{ parameter.type | lower }}"
     description: "{{ parameter.description }}"
   {%- endfor %}
   {%- if verb == 'get' %}
