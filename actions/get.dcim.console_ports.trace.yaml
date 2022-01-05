@@ -19,7 +19,7 @@ parameters:
     type: boolean
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object."
   save_in_key_store:
     type: boolean

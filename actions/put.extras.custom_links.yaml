@@ -19,38 +19,38 @@ parameters:
     type: boolean
   content_type:
     required: True
-    type: "string"
+    type: string
     description: "Content type"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   link_text:
     required: True
-    type: "string"
+    type: string
     description: "Link text"
   link_url:
     required: True
-    type: "string"
+    type: string
     description: "Link URL"
   weight:
     required: False
-    type: "integer"
+    type: integer
     description: "Weight"
   group_name:
     required: False
-    type: "string"
+    type: string
     description: "Group name"
   button_class:
     required: False
-    type: "string"
+    type: string
     description: "Button class"
   new_window:
     required: False
-    type: "boolean"
+    type: boolean
     description: "New window"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

@@ -19,42 +19,42 @@ parameters:
     type: boolean
   username:
     required: True
-    type: "string"
+    type: string
     description: "Username"
   password:
     required: True
-    type: "string"
+    type: string
     description: "Password"
   first_name:
     required: False
-    type: "string"
+    type: string
     description: "First name"
   last_name:
     required: False
-    type: "string"
+    type: string
     description: "Last name"
   email:
     required: False
-    type: "string"
+    type: string
     description: "Email address"
   is_staff:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Staff status"
   is_active:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Active"
   date_joined:
     required: False
-    type: "string"
+    type: string
     description: "Date joined"
   groups:
     required: False
-    type: "array"
+    type: array
     description: "Groups"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to patch."
 runner_type: python-script

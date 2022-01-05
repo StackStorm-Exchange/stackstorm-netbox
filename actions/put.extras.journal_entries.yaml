@@ -19,26 +19,26 @@ parameters:
     type: boolean
   assigned_object_type:
     required: True
-    type: "string"
+    type: string
     description: "Assigned object type"
   assigned_object_id:
     required: True
-    type: "integer"
+    type: integer
     description: "Assigned object id"
   created_by:
     required: False
-    type: "integer"
+    type: integer
     description: "Created by"
   kind:
     required: False
-    type: "string"
+    type: string
     description: "Kind"
   comments:
     required: True
-    type: "string"
+    type: string
     description: "Comments"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

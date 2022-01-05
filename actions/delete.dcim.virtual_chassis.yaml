@@ -19,6 +19,6 @@ parameters:
     type: boolean
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to delete."
 runner_type: python-script

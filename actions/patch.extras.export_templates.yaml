@@ -19,34 +19,34 @@ parameters:
     type: boolean
   content_type:
     required: True
-    type: "string"
+    type: string
     description: "Content type"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   template_code:
     required: True
-    type: "string"
+    type: string
     description: "Template code"
   mime_type:
     required: False
-    type: "string"
+    type: string
     description: "MIME type"
   file_extension:
     required: False
-    type: "string"
+    type: string
     description: "File extension"
   as_attachment:
     required: False
-    type: "boolean"
+    type: boolean
     description: "As attachment"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to patch."
 runner_type: python-script

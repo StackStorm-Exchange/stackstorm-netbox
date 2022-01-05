@@ -19,10 +19,10 @@ parameters:
     type: boolean
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

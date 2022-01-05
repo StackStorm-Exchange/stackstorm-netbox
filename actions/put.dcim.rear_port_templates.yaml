@@ -19,34 +19,34 @@ parameters:
     type: boolean
   device_type:
     required: True
-    type: "integer"
+    type: integer
     description: "Device type"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   label:
     required: False
-    type: "string"
+    type: string
     description: "Label"
   type:
     required: True
-    type: "string"
+    type: string
     description: "Type"
   color:
     required: False
-    type: "string"
+    type: string
     description: "Color"
   positions:
     required: False
-    type: "integer"
+    type: integer
     description: "Positions"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

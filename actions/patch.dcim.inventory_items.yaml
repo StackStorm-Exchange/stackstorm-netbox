@@ -19,54 +19,54 @@ parameters:
     type: boolean
   device:
     required: True
-    type: "integer"
+    type: integer
     description: "Device"
   parent:
     required: False
-    type: "integer"
+    type: integer
     description: "Parent"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   label:
     required: False
-    type: "string"
+    type: string
     description: "Label"
   manufacturer:
     required: False
-    type: "integer"
+    type: integer
     description: "Manufacturer"
   part_id:
     required: False
-    type: "string"
+    type: string
     description: "Part ID"
   serial:
     required: False
-    type: "string"
+    type: string
     description: "Serial number"
   asset_tag:
     required: False
-    type: "string"
+    type: string
     description: "Asset tag"
   discovered:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Discovered"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to patch."
 runner_type: python-script

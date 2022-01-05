@@ -19,70 +19,70 @@ parameters:
     type: boolean
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   weight:
     required: False
-    type: "integer"
+    type: integer
     description: "Weight"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   is_active:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Is active"
   regions:
     required: False
-    type: "array"
+    type: array
     description: "Regions"
   site_groups:
     required: False
-    type: "array"
+    type: array
     description: "Site groups"
   sites:
     required: False
-    type: "array"
+    type: array
     description: "Sites"
   device_types:
     required: False
-    type: "array"
+    type: array
     description: "Device types"
   roles:
     required: False
-    type: "array"
+    type: array
     description: "Roles"
   platforms:
     required: False
-    type: "array"
+    type: array
     description: "Platforms"
   cluster_groups:
     required: False
-    type: "array"
+    type: array
     description: "Cluster groups"
   clusters:
     required: False
-    type: "array"
+    type: array
     description: "Clusters"
   tenant_groups:
     required: False
-    type: "array"
+    type: array
     description: "Tenant groups"
   tenants:
     required: False
-    type: "array"
+    type: array
     description: "Tenants"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   data:
     required: True
-    type: "string"
+    type: string
     description: "Data"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to patch."
 runner_type: python-script

@@ -19,46 +19,46 @@ parameters:
     type: boolean
   site:
     required: False
-    type: "integer"
+    type: integer
     description: "Site"
   group:
     required: True
-    type: "integer"
+    type: integer
     description: "Group"
   vid:
     required: True
-    type: "integer"
+    type: integer
     description: "ID"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   tenant:
     required: False
-    type: "integer"
+    type: integer
     description: "Tenant"
   status:
     required: False
-    type: "string"
+    type: string
     description: "Status"
   role:
     required: False
-    type: "integer"
+    type: integer
     description: "Role"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

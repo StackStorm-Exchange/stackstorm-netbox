@@ -19,102 +19,102 @@ parameters:
     type: boolean
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   device_type:
     required: True
-    type: "integer"
+    type: integer
     description: "Device type"
   device_role:
     required: True
-    type: "integer"
+    type: integer
     description: "Device role"
   tenant:
     required: True
-    type: "integer"
+    type: integer
     description: "Tenant"
   platform:
     required: False
-    type: "integer"
+    type: integer
     description: "Platform"
   serial:
     required: False
-    type: "string"
+    type: string
     description: "Serial number"
   asset_tag:
     required: False
-    type: "string"
+    type: string
     description: "Asset tag"
   site:
     required: True
-    type: "integer"
+    type: integer
     description: "Site"
   location:
     required: False
-    type: "integer"
+    type: integer
     description: "Location"
   rack:
     required: True
-    type: "integer"
+    type: integer
     description: "Rack"
   position:
     required: False
-    type: "integer"
+    type: integer
     description: "Position (U)"
   face:
     required: True
-    type: "string"
+    type: string
     description: "Rack face"
   parent_device:
     required: False
-    type: "integer"
+    type: integer
     description: "Id of parent_device"
   status:
     required: False
-    type: "string"
+    type: string
     description: "Status"
   primary_ip4:
     required: False
-    type: "integer"
+    type: integer
     description: "Primary IPv4"
   primary_ip6:
     required: False
-    type: "integer"
+    type: integer
     description: "Primary IPv6"
   cluster:
     required: False
-    type: "integer"
+    type: integer
     description: "Cluster"
   virtual_chassis:
     required: True
-    type: "integer"
+    type: integer
     description: "Virtual chassis"
   vc_position:
     required: False
-    type: "integer"
+    type: integer
     description: "Vc position"
   vc_priority:
     required: False
-    type: "integer"
+    type: integer
     description: "Vc priority"
   comments:
     required: False
-    type: "string"
+    type: string
     description: "Comments"
   local_context_data:
     required: False
-    type: "string"
+    type: string
     description: "Local context data"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

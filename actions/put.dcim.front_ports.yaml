@@ -19,54 +19,54 @@ parameters:
     type: boolean
   device:
     required: True
-    type: "integer"
+    type: integer
     description: "Device"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   label:
     required: False
-    type: "string"
+    type: string
     description: "Label"
   type:
     required: True
-    type: "string"
+    type: string
     description: "Type"
   color:
     required: False
-    type: "string"
+    type: string
     description: "Color"
   rear_port:
     required: True
-    type: "integer"
+    type: integer
     description: "Rear port"
   rear_port_position:
     required: False
-    type: "integer"
+    type: integer
     description: "Rear port position"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   mark_connected:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Mark connected"
   cable:
     required: False
-    type: "integer"
+    type: integer
     description: "Id of cable"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

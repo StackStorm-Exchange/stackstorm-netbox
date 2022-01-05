@@ -19,18 +19,18 @@ parameters:
     type: boolean
   device_type:
     required: True
-    type: "integer"
+    type: integer
     description: "Device type"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   label:
     required: False
-    type: "string"
+    type: string
     description: "Label"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
 runner_type: python-script

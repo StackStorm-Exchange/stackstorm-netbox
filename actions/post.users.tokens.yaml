@@ -19,22 +19,22 @@ parameters:
     type: boolean
   user:
     required: True
-    type: "integer"
+    type: integer
     description: "User"
   expires:
     required: False
-    type: "string"
+    type: string
     description: "Expires"
   key:
     required: False
-    type: "string"
+    type: string
     description: "Key"
   write_enabled:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Write enabled"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
 runner_type: python-script

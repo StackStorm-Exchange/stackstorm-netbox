@@ -19,38 +19,38 @@ parameters:
     type: boolean
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   slug:
     required: True
-    type: "string"
+    type: string
     description: "Slug"
   site:
     required: True
-    type: "integer"
+    type: integer
     description: "Site"
   parent:
     required: False
-    type: "integer"
+    type: integer
     description: "Parent"
   tenant:
     required: False
-    type: "integer"
+    type: integer
     description: "Tenant"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

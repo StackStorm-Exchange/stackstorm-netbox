@@ -19,54 +19,54 @@ parameters:
     type: boolean
   address:
     required: True
-    type: "string"
+    type: string
     description: "Address"
   vrf:
     required: False
-    type: "integer"
+    type: integer
     description: "VRF"
   tenant:
     required: False
-    type: "integer"
+    type: integer
     description: "Tenant"
   status:
     required: False
-    type: "string"
+    type: string
     description: "Status"
   role:
     required: False
-    type: "string"
+    type: string
     description: "Role"
   assigned_object_type:
     required: False
-    type: "string"
+    type: string
     description: "Assigned object type"
   assigned_object_id:
     required: False
-    type: "integer"
+    type: integer
     description: "Assigned object id"
   nat_inside:
     required: False
-    type: "integer"
+    type: integer
     description: "NAT (Inside)"
   dns_name:
     required: False
-    type: "string"
+    type: string
     description: "DNS Name"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

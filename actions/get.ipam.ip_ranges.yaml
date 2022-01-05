@@ -19,151 +19,151 @@ parameters:
     type: boolean
   id:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_group_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_group:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant:
     required: False
-    type: "string"
+    type: string
     description: ""
   created:
     required: False
-    type: "string"
+    type: string
     description: ""
   created__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   created__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   q:
     required: False
-    type: "string"
+    type: string
     description: ""
   family:
     required: False
-    type: "integer"
+    type: integer
     description: ""
   contains:
     required: False
-    type: "string"
+    type: string
     description: ""
   vrf_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   vrf:
     required: False
-    type: "string"
+    type: string
     description: ""
   role_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   role:
     required: False
-    type: "string"
+    type: string
     description: ""
   status:
     required: False
-    type: "string"
+    type: string
     description: ""
   tag:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lt:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gt:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_group_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_group__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   vrf_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   vrf__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   role_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   role__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   status__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   tag__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   limit:
     required: False
-    type: "integer"
+    type: integer
     description: "Number of results to return per page."
   offset:
     required: False
-    type: "integer"
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean

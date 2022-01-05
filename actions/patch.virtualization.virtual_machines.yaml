@@ -19,66 +19,66 @@ parameters:
     type: boolean
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   status:
     required: False
-    type: "string"
+    type: string
     description: "Status"
   cluster:
     required: True
-    type: "integer"
+    type: integer
     description: "Cluster"
   role:
     required: False
-    type: "integer"
+    type: integer
     description: "Role"
   tenant:
     required: False
-    type: "integer"
+    type: integer
     description: "Tenant"
   platform:
     required: False
-    type: "integer"
+    type: integer
     description: "Platform"
   primary_ip4:
     required: False
-    type: "integer"
+    type: integer
     description: "Primary IPv4"
   primary_ip6:
     required: False
-    type: "integer"
+    type: integer
     description: "Primary IPv6"
   vcpus:
     required: False
-    type: "integer"
+    type: integer
     description: "VCPUs"
   memory:
     required: False
-    type: "integer"
+    type: integer
     description: "Memory (MB)"
   disk:
     required: False
-    type: "integer"
+    type: integer
     description: "Disk (GB)"
   comments:
     required: False
-    type: "string"
+    type: string
     description: "Comments"
   local_context_data:
     required: False
-    type: "string"
+    type: string
     description: "Local context data"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to patch."
 runner_type: python-script

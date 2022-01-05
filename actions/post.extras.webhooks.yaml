@@ -19,62 +19,62 @@ parameters:
     type: boolean
   content_types:
     required: True
-    type: "array"
+    type: array
     description: "Content types"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   type_create:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Type create"
   type_update:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Type update"
   type_delete:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Type delete"
   payload_url:
     required: True
-    type: "string"
+    type: string
     description: "URL"
   enabled:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Enabled"
   http_method:
     required: False
-    type: "string"
+    type: string
     description: "HTTP method"
   http_content_type:
     required: False
-    type: "string"
+    type: string
     description: "HTTP content type"
   additional_headers:
     required: False
-    type: "string"
+    type: string
     description: "Additional headers"
   body_template:
     required: False
-    type: "string"
+    type: string
     description: "Body template"
   secret:
     required: False
-    type: "string"
+    type: string
     description: "Secret"
   conditions:
     required: False
-    type: "string"
+    type: string
     description: "Conditions"
   ssl_verification:
     required: False
-    type: "boolean"
+    type: boolean
     description: "SSL verification"
   ca_file_path:
     required: False
-    type: "string"
+    type: string
     description: "CA File Path"
 runner_type: python-script

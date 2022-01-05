@@ -19,42 +19,42 @@ parameters:
     type: boolean
   group:
     required: True
-    type: "integer"
+    type: integer
     description: "Group"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   title:
     required: False
-    type: "string"
+    type: string
     description: "Title"
   phone:
     required: False
-    type: "string"
+    type: string
     description: "Phone"
   email:
     required: False
-    type: "string"
+    type: string
     description: "Email"
   address:
     required: False
-    type: "string"
+    type: string
     description: "Address"
   comments:
     required: False
-    type: "string"
+    type: string
     description: "Comments"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

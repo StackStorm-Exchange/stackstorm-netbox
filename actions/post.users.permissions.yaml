@@ -19,34 +19,34 @@ parameters:
     type: boolean
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   enabled:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Enabled"
   object_types:
     required: True
-    type: "array"
+    type: array
     description: "Object types"
   groups:
     required: False
-    type: "array"
+    type: array
     description: "Groups"
   users:
     required: False
-    type: "array"
+    type: array
     description: "Users"
   actions:
     required: True
-    type: "array"
+    type: array
     description: "Actions"
   constraints:
     required: False
-    type: "string"
+    type: string
     description: "Constraints"
 runner_type: python-script

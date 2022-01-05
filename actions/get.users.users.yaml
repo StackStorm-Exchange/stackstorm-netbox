@@ -19,239 +19,239 @@ parameters:
     type: boolean
   id:
     required: False
-    type: "string"
+    type: string
     description: ""
   username:
     required: False
-    type: "string"
+    type: string
     description: ""
   first_name:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_name:
     required: False
-    type: "string"
+    type: string
     description: ""
   email:
     required: False
-    type: "string"
+    type: string
     description: ""
   is_staff:
     required: False
-    type: "string"
+    type: string
     description: ""
   is_active:
     required: False
-    type: "string"
+    type: string
     description: ""
   q:
     required: False
-    type: "string"
+    type: string
     description: ""
   group_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   group:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lt:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gt:
     required: False
-    type: "string"
+    type: string
     description: ""
   username__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   username__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   username__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   username__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   username__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   username__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   username__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   username__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   username__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   username__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   first_name__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   first_name__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   first_name__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   first_name__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   first_name__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   first_name__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   first_name__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   first_name__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   first_name__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   first_name__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_name__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_name__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_name__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_name__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_name__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_name__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_name__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_name__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_name__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_name__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   group_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   group__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   limit:
     required: False
-    type: "integer"
+    type: integer
     description: "Number of results to return per page."
   offset:
     required: False
-    type: "integer"
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean

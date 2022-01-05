@@ -19,22 +19,22 @@ parameters:
     type: boolean
   content_type:
     required: True
-    type: "string"
+    type: string
     description: "Content type"
   object_id:
     required: True
-    type: "integer"
+    type: integer
     description: "Object id"
   name:
     required: False
-    type: "string"
+    type: string
     description: "Name"
   image_height:
     required: True
-    type: "integer"
+    type: integer
     description: "Image height"
   image_width:
     required: True
-    type: "integer"
+    type: integer
     description: "Image width"
 runner_type: python-script

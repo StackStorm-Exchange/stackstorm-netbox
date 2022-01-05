@@ -19,114 +19,114 @@ parameters:
     type: boolean
   device:
     required: True
-    type: "integer"
+    type: integer
     description: "Device"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   label:
     required: False
-    type: "string"
+    type: string
     description: "Label"
   type:
     required: True
-    type: "string"
+    type: string
     description: "Type"
   enabled:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Enabled"
   parent:
     required: False
-    type: "integer"
+    type: integer
     description: "Parent interface"
   bridge:
     required: False
-    type: "integer"
+    type: integer
     description: "Bridge interface"
   lag:
     required: False
-    type: "integer"
+    type: integer
     description: "Parent LAG"
   mtu:
     required: False
-    type: "integer"
+    type: integer
     description: "MTU"
   mac_address:
     required: False
-    type: "string"
+    type: string
     description: "MAC Address"
   wwn:
     required: False
-    type: "string"
+    type: string
     description: "WWN"
   mgmt_only:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Management only"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   mode:
     required: False
-    type: "string"
+    type: string
     description: "Mode"
   rf_role:
     required: False
-    type: "string"
+    type: string
     description: "Wireless role"
   rf_channel:
     required: False
-    type: "string"
+    type: string
     description: "Wireless channel"
   rf_channel_frequency:
     required: False
-    type: "integer"
+    type: integer
     description: "Channel frequency (MHz)"
   rf_channel_width:
     required: False
-    type: "integer"
+    type: integer
     description: "Channel width (MHz)"
   tx_power:
     required: False
-    type: "integer"
+    type: integer
     description: "Transmit power (dBm)"
   untagged_vlan:
     required: False
-    type: "integer"
+    type: integer
     description: "Untagged VLAN"
   tagged_vlans:
     required: False
-    type: "array"
+    type: array
     description: "Tagged vlans"
   mark_connected:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Mark connected"
   cable:
     required: False
-    type: "integer"
+    type: integer
     description: "Id of cable"
   wireless_link:
     required: False
-    type: "integer"
+    type: integer
     description: "Wireless link"
   wireless_lans:
     required: False
-    type: "array"
+    type: array
     description: "Wireless lans"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to patch."
 runner_type: python-script

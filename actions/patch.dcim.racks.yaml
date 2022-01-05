@@ -19,82 +19,82 @@ parameters:
     type: boolean
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   facility_id:
     required: False
-    type: "string"
+    type: string
     description: "Facility ID"
   site:
     required: True
-    type: "integer"
+    type: integer
     description: "Site"
   location:
     required: True
-    type: "integer"
+    type: integer
     description: "Location"
   tenant:
     required: False
-    type: "integer"
+    type: integer
     description: "Tenant"
   status:
     required: False
-    type: "string"
+    type: string
     description: "Status"
   role:
     required: False
-    type: "integer"
+    type: integer
     description: "Role"
   serial:
     required: False
-    type: "string"
+    type: string
     description: "Serial number"
   asset_tag:
     required: False
-    type: "string"
+    type: string
     description: "Asset tag"
   type:
     required: False
-    type: "string"
+    type: string
     description: "Type"
   width:
     required: False
-    type: "integer"
+    type: integer
     description: "Width"
   u_height:
     required: False
-    type: "integer"
+    type: integer
     description: "Height (U)"
   desc_units:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Descending units"
   outer_width:
     required: False
-    type: "integer"
+    type: integer
     description: "Outer width"
   outer_depth:
     required: False
-    type: "integer"
+    type: integer
     description: "Outer depth"
   outer_unit:
     required: False
-    type: "string"
+    type: string
     description: "Outer unit"
   comments:
     required: False
-    type: "string"
+    type: string
     description: "Comments"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to patch."
 runner_type: python-script

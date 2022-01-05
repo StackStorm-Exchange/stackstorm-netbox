@@ -19,26 +19,26 @@ parameters:
     type: boolean
   site:
     required: True
-    type: "integer"
+    type: integer
     description: "Site"
   location:
     required: False
-    type: "integer"
+    type: integer
     description: "Location"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to patch."
 runner_type: python-script

@@ -19,22 +19,22 @@ parameters:
     type: boolean
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   domain:
     required: False
-    type: "string"
+    type: string
     description: "Domain"
   master:
     required: False
-    type: "integer"
+    type: integer
     description: "Master"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
 runner_type: python-script

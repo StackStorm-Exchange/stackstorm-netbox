@@ -19,26 +19,26 @@ parameters:
     type: boolean
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   slug:
     required: True
-    type: "string"
+    type: string
     description: "Slug"
   is_private:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Private"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
 runner_type: python-script

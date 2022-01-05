@@ -19,299 +19,299 @@ parameters:
     type: boolean
   id:
     required: False
-    type: "string"
+    type: string
     description: ""
   dns_name:
     required: False
-    type: "string"
+    type: string
     description: ""
   description:
     required: False
-    type: "string"
+    type: string
     description: ""
   created:
     required: False
-    type: "string"
+    type: string
     description: ""
   created__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   created__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_group_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_group:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant:
     required: False
-    type: "string"
+    type: string
     description: ""
   q:
     required: False
-    type: "string"
+    type: string
     description: ""
   family:
     required: False
-    type: "integer"
+    type: integer
     description: ""
   parent:
     required: False
-    type: "string"
+    type: string
     description: ""
   address:
     required: False
-    type: "string"
+    type: string
     description: ""
   mask_length:
     required: False
-    type: "integer"
+    type: integer
     description: ""
   vrf_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   vrf:
     required: False
-    type: "string"
+    type: string
     description: ""
   present_in_vrf_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   present_in_vrf:
     required: False
-    type: "string"
+    type: string
     description: ""
   device:
     required: False
-    type: "string"
+    type: string
     description: ""
   device_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   virtual_machine:
     required: False
-    type: "string"
+    type: string
     description: ""
   virtual_machine_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   vminterface:
     required: False
-    type: "string"
+    type: string
     description: ""
   vminterface_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   assigned_to_interface:
     required: False
-    type: "string"
+    type: string
     description: ""
   status:
     required: False
-    type: "string"
+    type: string
     description: ""
   role:
     required: False
-    type: "string"
+    type: string
     description: ""
   tag:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lt:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gt:
     required: False
-    type: "string"
+    type: string
     description: ""
   dns_name__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   dns_name__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   dns_name__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   dns_name__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   dns_name__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   dns_name__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   dns_name__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   dns_name__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   dns_name__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   dns_name__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   description__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   description__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   description__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   description__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   description__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   description__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   description__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   description__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   description__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   description__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_group_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_group__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   tenant__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   vrf_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   vrf__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   vminterface__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   vminterface_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   status__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   role__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   tag__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   limit:
     required: False
-    type: "integer"
+    type: integer
     description: "Number of results to return per page."
   offset:
     required: False
-    type: "integer"
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean

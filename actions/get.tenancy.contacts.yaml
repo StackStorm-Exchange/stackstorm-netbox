@@ -19,307 +19,307 @@ parameters:
     type: boolean
   id:
     required: False
-    type: "string"
+    type: string
     description: ""
   name:
     required: False
-    type: "string"
+    type: string
     description: ""
   title:
     required: False
-    type: "string"
+    type: string
     description: ""
   phone:
     required: False
-    type: "string"
+    type: string
     description: ""
   email:
     required: False
-    type: "string"
+    type: string
     description: ""
   address:
     required: False
-    type: "string"
+    type: string
     description: ""
   created:
     required: False
-    type: "string"
+    type: string
     description: ""
   created__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   created__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   q:
     required: False
-    type: "string"
+    type: string
     description: ""
   group_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   group:
     required: False
-    type: "string"
+    type: string
     description: ""
   tag:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lt:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gt:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   title__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   title__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   title__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   title__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   title__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   title__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   title__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   title__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   title__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   title__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   phone__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   phone__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   phone__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   phone__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   phone__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   phone__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   phone__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   phone__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   phone__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   phone__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   email__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   address__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   address__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   address__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   address__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   address__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   address__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   address__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   address__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   address__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   address__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   group_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   group__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   tag__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   limit:
     required: False
-    type: "integer"
+    type: integer
     description: "Number of results to return per page."
   offset:
     required: False
-    type: "integer"
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean

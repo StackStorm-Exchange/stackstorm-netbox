@@ -19,38 +19,38 @@ parameters:
     type: boolean
   start_address:
     required: True
-    type: "string"
+    type: string
     description: "Start address"
   end_address:
     required: True
-    type: "string"
+    type: string
     description: "End address"
   vrf:
     required: False
-    type: "integer"
+    type: integer
     description: "VRF"
   tenant:
     required: False
-    type: "integer"
+    type: integer
     description: "Tenant"
   status:
     required: False
-    type: "string"
+    type: string
     description: "Status"
   role:
     required: False
-    type: "integer"
+    type: integer
     description: "Role"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
 runner_type: python-script

@@ -19,127 +19,127 @@ parameters:
     type: boolean
   id:
     required: False
-    type: "string"
+    type: string
     description: ""
   key:
     required: False
-    type: "string"
+    type: string
     description: ""
   write_enabled:
     required: False
-    type: "string"
+    type: string
     description: ""
   q:
     required: False
-    type: "string"
+    type: string
     description: ""
   user_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   user:
     required: False
-    type: "string"
+    type: string
     description: ""
   created:
     required: False
-    type: "string"
+    type: string
     description: ""
   created__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   created__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   expires:
     required: False
-    type: "string"
+    type: string
     description: ""
   expires__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   expires__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lt:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gt:
     required: False
-    type: "string"
+    type: string
     description: ""
   key__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   key__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   key__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   key__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   key__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   key__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   key__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   key__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   key__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   key__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   user_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   user__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   limit:
     required: False
-    type: "integer"
+    type: integer
     description: "Number of results to return per page."
   offset:
     required: False
-    type: "integer"
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean

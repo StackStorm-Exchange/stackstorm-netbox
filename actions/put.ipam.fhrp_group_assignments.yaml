@@ -19,22 +19,22 @@ parameters:
     type: boolean
   group:
     required: True
-    type: "integer"
+    type: integer
     description: "Group"
   interface_type:
     required: True
-    type: "string"
+    type: string
     description: "Interface type"
   interface_id:
     required: True
-    type: "integer"
+    type: integer
     description: "Interface id"
   priority:
     required: True
-    type: "integer"
+    type: integer
     description: "Priority"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

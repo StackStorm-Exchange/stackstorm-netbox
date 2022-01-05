@@ -23,7 +23,7 @@ parameters:
     {%- if parameter.default %}
     default: "{{ parameter.default }}"
     {%- endif %}
-    type: "{{ parameter.type | lower }}"
+    type: {{ parameter.type | lower }}
     description: "{{ parameter.description }}"
   {%- endfor %}
   {%- if verb == 'get' %}

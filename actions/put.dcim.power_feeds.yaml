@@ -19,66 +19,66 @@ parameters:
     type: boolean
   power_panel:
     required: True
-    type: "integer"
+    type: integer
     description: "Power panel"
   rack:
     required: False
-    type: "integer"
+    type: integer
     description: "Rack"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   status:
     required: False
-    type: "string"
+    type: string
     description: "Status"
   type:
     required: False
-    type: "string"
+    type: string
     description: "Type"
   supply:
     required: False
-    type: "string"
+    type: string
     description: "Supply"
   phase:
     required: False
-    type: "string"
+    type: string
     description: "Phase"
   voltage:
     required: False
-    type: "integer"
+    type: integer
     description: "Voltage"
   amperage:
     required: False
-    type: "integer"
+    type: integer
     description: "Amperage"
   max_utilization:
     required: False
-    type: "integer"
+    type: integer
     description: "Max utilization"
   comments:
     required: False
-    type: "string"
+    type: string
     description: "Comments"
   mark_connected:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Mark connected"
   cable:
     required: False
-    type: "integer"
+    type: integer
     description: "Id of cable"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

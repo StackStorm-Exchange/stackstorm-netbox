@@ -19,58 +19,58 @@ parameters:
     type: boolean
   content_types:
     required: True
-    type: "array"
+    type: array
     description: "Content types"
   type:
     required: False
-    type: "string"
+    type: string
     description: "Type"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   label:
     required: False
-    type: "string"
+    type: string
     description: "Label"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   required:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Required"
   filter_logic:
     required: False
-    type: "string"
+    type: string
     description: "Filter logic"
   default:
     required: False
-    type: "string"
+    type: string
     description: "Default"
   weight:
     required: False
-    type: "integer"
+    type: integer
     description: "Weight"
   validation_minimum:
     required: False
-    type: "integer"
+    type: integer
     description: "Minimum value"
   validation_maximum:
     required: False
-    type: "integer"
+    type: integer
     description: "Maximum value"
   validation_regex:
     required: False
-    type: "string"
+    type: string
     description: "Validation regex"
   choices:
     required: False
-    type: "array"
+    type: array
     description: "Choices"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

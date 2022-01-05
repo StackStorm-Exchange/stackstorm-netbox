@@ -19,327 +19,327 @@ parameters:
     type: boolean
   id:
     required: False
-    type: "string"
+    type: string
     description: ""
   content_types:
     required: False
-    type: "string"
+    type: string
     description: ""
   name:
     required: False
-    type: "string"
+    type: string
     description: ""
   type_create:
     required: False
-    type: "string"
+    type: string
     description: ""
   type_update:
     required: False
-    type: "string"
+    type: string
     description: ""
   type_delete:
     required: False
-    type: "string"
+    type: string
     description: ""
   payload_url:
     required: False
-    type: "string"
+    type: string
     description: ""
   enabled:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_method:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_content_type:
     required: False
-    type: "string"
+    type: string
     description: ""
   secret:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssl_verification:
     required: False
-    type: "string"
+    type: string
     description: ""
   ca_file_path:
     required: False
-    type: "string"
+    type: string
     description: ""
   q:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lt:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gt:
     required: False
-    type: "string"
+    type: string
     description: ""
   content_types__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   content_types__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   content_types__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   content_types__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   content_types__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   content_types__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   content_types__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   content_types__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   content_types__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   name__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   payload_url__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   payload_url__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   payload_url__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   payload_url__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   payload_url__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   payload_url__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   payload_url__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   payload_url__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   payload_url__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   payload_url__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_method__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_content_type__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_content_type__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_content_type__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_content_type__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_content_type__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_content_type__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_content_type__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_content_type__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_content_type__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   http_content_type__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   secret__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   secret__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   secret__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   secret__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   secret__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   secret__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   secret__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   secret__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   secret__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   secret__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   ca_file_path__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   ca_file_path__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   ca_file_path__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   ca_file_path__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   ca_file_path__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   ca_file_path__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   ca_file_path__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   ca_file_path__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   ca_file_path__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   ca_file_path__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   limit:
     required: False
-    type: "integer"
+    type: integer
     description: "Number of results to return per page."
   offset:
     required: False
-    type: "integer"
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean

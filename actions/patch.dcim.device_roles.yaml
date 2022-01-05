@@ -19,34 +19,34 @@ parameters:
     type: boolean
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   slug:
     required: True
-    type: "string"
+    type: string
     description: "Slug"
   color:
     required: False
-    type: "string"
+    type: string
     description: "Color"
   vm_role:
     required: False
-    type: "boolean"
+    type: boolean
     description: "VM Role"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to patch."
 runner_type: python-script

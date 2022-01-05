@@ -19,42 +19,42 @@ parameters:
     type: boolean
   device:
     required: False
-    type: "integer"
+    type: integer
     description: "Device"
   virtual_machine:
     required: False
-    type: "integer"
+    type: integer
     description: "Virtual machine"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   ports:
     required: True
-    type: "array"
+    type: array
     description: "Ports"
   protocol:
     required: True
-    type: "string"
+    type: string
     description: "Protocol"
   ipaddresses:
     required: False
-    type: "array"
+    type: array
     description: "Ipaddresses"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

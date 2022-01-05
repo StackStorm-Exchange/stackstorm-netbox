@@ -19,231 +19,231 @@ parameters:
     type: boolean
   id:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssid:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_psk:
     required: False
-    type: "string"
+    type: string
     description: ""
   created:
     required: False
-    type: "string"
+    type: string
     description: ""
   created__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   created__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   last_updated__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   q:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_a_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_b_id:
     required: False
-    type: "string"
+    type: string
     description: ""
   status:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_type:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_cipher:
     required: False
-    type: "string"
+    type: string
     description: ""
   tag:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__lt:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   id__gt:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssid__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssid__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssid__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssid__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssid__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssid__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssid__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssid__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssid__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   ssid__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_psk__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_psk__ic:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_psk__nic:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_psk__iew:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_psk__niew:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_psk__isw:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_psk__nisw:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_psk__ie:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_psk__nie:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_psk__empty:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_a_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_a_id__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_a_id__lt:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_a_id__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_a_id__gt:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_b_id__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_b_id__lte:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_b_id__lt:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_b_id__gte:
     required: False
-    type: "string"
+    type: string
     description: ""
   interface_b_id__gt:
     required: False
-    type: "string"
+    type: string
     description: ""
   status__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_type__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   auth_cipher__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   tag__n:
     required: False
-    type: "string"
+    type: string
     description: ""
   limit:
     required: False
-    type: "integer"
+    type: integer
     description: "Number of results to return per page."
   offset:
     required: False
-    type: "integer"
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean

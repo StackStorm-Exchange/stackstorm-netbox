@@ -19,50 +19,50 @@ parameters:
     type: boolean
   prefix:
     required: True
-    type: "string"
+    type: string
     description: "Prefix"
   site:
     required: False
-    type: "integer"
+    type: integer
     description: "Site"
   vrf:
     required: False
-    type: "integer"
+    type: integer
     description: "VRF"
   tenant:
     required: False
-    type: "integer"
+    type: integer
     description: "Tenant"
   vlan:
     required: False
-    type: "integer"
+    type: integer
     description: "VLAN"
   status:
     required: False
-    type: "string"
+    type: string
     description: "Status"
   role:
     required: False
-    type: "integer"
+    type: integer
     description: "Role"
   is_pool:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Is a pool"
   mark_utilized:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Mark utilized"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
 runner_type: python-script

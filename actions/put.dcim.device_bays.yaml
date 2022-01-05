@@ -19,34 +19,34 @@ parameters:
     type: boolean
   device:
     required: True
-    type: "integer"
+    type: integer
     description: "Device"
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   label:
     required: False
-    type: "string"
+    type: string
     description: "Label"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   installed_device:
     required: False
-    type: "integer"
+    type: integer
     description: "Installed device"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script

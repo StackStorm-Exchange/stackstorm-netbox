@@ -19,38 +19,38 @@ parameters:
     type: boolean
   ssid:
     required: True
-    type: "string"
+    type: string
     description: "SSID"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   group:
     required: False
-    type: "integer"
+    type: integer
     description: "Group"
   vlan:
     required: False
-    type: "integer"
+    type: integer
     description: "VLAN"
   auth_type:
     required: False
-    type: "string"
+    type: string
     description: "Auth type"
   auth_cipher:
     required: False
-    type: "string"
+    type: string
     description: "Auth cipher"
   auth_psk:
     required: False
-    type: "string"
+    type: string
     description: "Pre-shared key"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
 runner_type: python-script

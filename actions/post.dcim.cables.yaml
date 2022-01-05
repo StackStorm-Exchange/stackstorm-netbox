@@ -19,54 +19,54 @@ parameters:
     type: boolean
   termination_a_type:
     required: True
-    type: "string"
+    type: string
     description: "Termination a type"
   termination_a_id:
     required: True
-    type: "integer"
+    type: integer
     description: "Termination a id"
   termination_b_type:
     required: True
-    type: "string"
+    type: string
     description: "Termination b type"
   termination_b_id:
     required: True
-    type: "integer"
+    type: integer
     description: "Termination b id"
   type:
     required: False
-    type: "string"
+    type: string
     description: "Type"
   status:
     required: False
-    type: "string"
+    type: string
     description: "Status"
   tenant:
     required: False
-    type: "integer"
+    type: integer
     description: "Tenant"
   label:
     required: False
-    type: "string"
+    type: string
     description: "Label"
   color:
     required: False
-    type: "string"
+    type: string
     description: "Color"
   length:
     required: False
-    type: "integer"
+    type: integer
     description: "Length"
   length_unit:
     required: False
-    type: "string"
+    type: string
     description: "Length unit"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
 runner_type: python-script

@@ -19,46 +19,46 @@ parameters:
     type: boolean
   cid:
     required: True
-    type: "string"
+    type: string
     description: "Circuit ID"
   provider:
     required: True
-    type: "integer"
+    type: integer
     description: "Provider"
   type:
     required: True
-    type: "integer"
+    type: integer
     description: "Type"
   status:
     required: False
-    type: "string"
+    type: string
     description: "Status"
   tenant:
     required: False
-    type: "integer"
+    type: integer
     description: "Tenant"
   install_date:
     required: False
-    type: "string"
+    type: string
     description: "Date installed"
   commit_rate:
     required: False
-    type: "integer"
+    type: integer
     description: "Commit rate (Kbps)"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   comments:
     required: False
-    type: "string"
+    type: string
     description: "Comments"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
 runner_type: python-script

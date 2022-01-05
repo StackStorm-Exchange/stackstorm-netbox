@@ -19,27 +19,27 @@ parameters:
     type: boolean
   id:
     required: False
-    type: "integer"
+    type: integer
     description: ""
   app_label:
     required: False
-    type: "string"
+    type: string
     description: ""
   model:
     required: False
-    type: "string"
+    type: string
     description: ""
   q:
     required: False
-    type: "string"
+    type: string
     description: ""
   limit:
     required: False
-    type: "integer"
+    type: integer
     description: "Number of results to return per page."
   offset:
     required: False
-    type: "integer"
+    type: integer
     description: "The initial index from which to return the results."
   save_in_key_store:
     type: boolean

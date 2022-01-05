@@ -19,86 +19,86 @@ parameters:
     type: boolean
   name:
     required: True
-    type: "string"
+    type: string
     description: "Name"
   slug:
     required: True
-    type: "string"
+    type: string
     description: "Slug"
   status:
     required: False
-    type: "string"
+    type: string
     description: "Status"
   region:
     required: False
-    type: "integer"
+    type: integer
     description: "Region"
   group:
     required: False
-    type: "integer"
+    type: integer
     description: "Group"
   tenant:
     required: False
-    type: "integer"
+    type: integer
     description: "Tenant"
   facility:
     required: False
-    type: "string"
+    type: string
     description: "Facility"
   asn:
     required: False
-    type: "integer"
+    type: integer
     description: "ASN"
   asns:
     required: False
-    type: "array"
+    type: array
     description: "Asns"
   time_zone:
     required: False
-    type: "string"
+    type: string
     description: "Time zone"
   description:
     required: False
-    type: "string"
+    type: string
     description: "Description"
   physical_address:
     required: False
-    type: "string"
+    type: string
     description: "Physical address"
   shipping_address:
     required: False
-    type: "string"
+    type: string
     description: "Shipping address"
   latitude:
     required: False
-    type: "integer"
+    type: integer
     description: "Latitude"
   longitude:
     required: False
-    type: "integer"
+    type: integer
     description: "Longitude"
   contact_name:
     required: False
-    type: "string"
+    type: string
     description: "Contact name"
   contact_phone:
     required: False
-    type: "string"
+    type: string
     description: "Contact phone"
   contact_email:
     required: False
-    type: "string"
+    type: string
     description: "Contact E-mail"
   comments:
     required: False
-    type: "string"
+    type: string
     description: "Comments"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
 runner_type: python-script

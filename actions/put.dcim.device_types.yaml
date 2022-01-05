@@ -19,50 +19,50 @@ parameters:
     type: boolean
   manufacturer:
     required: True
-    type: "integer"
+    type: integer
     description: "Manufacturer"
   model:
     required: True
-    type: "string"
+    type: string
     description: "Model"
   slug:
     required: True
-    type: "string"
+    type: string
     description: "Slug"
   part_number:
     required: False
-    type: "string"
+    type: string
     description: "Part number"
   u_height:
     required: False
-    type: "integer"
+    type: integer
     description: "Height (U)"
   is_full_depth:
     required: False
-    type: "boolean"
+    type: boolean
     description: "Is full depth"
   subdevice_role:
     required: False
-    type: "string"
+    type: string
     description: "Parent/child status"
   airflow:
     required: False
-    type: "string"
+    type: string
     description: "Airflow"
   comments:
     required: False
-    type: "string"
+    type: string
     description: "Comments"
   tags:
     required: False
-    type: "array"
+    type: array
     description: "Array of tag strings"
   custom_fields:
     required: False
-    type: "object"
+    type: object
     description: "Custom fields"
   id:
     required: True
-    type: "string"
+    type: string
     description: "ID of the object to put."
 runner_type: python-script
