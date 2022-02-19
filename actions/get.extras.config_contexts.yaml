@@ -129,6 +129,10 @@ parameters:
     required: false
     type: string
     description: ""
+  tag_id:
+    required: false
+    type: string
+    description: ""
   tag:
     required: false
     type: string
@@ -262,6 +266,10 @@ parameters:
     type: string
     description: ""
   tenant__n:
+    required: false
+    type: string
+    description: ""
+  tag_id__n:
     required: false
     type: string
     description: ""

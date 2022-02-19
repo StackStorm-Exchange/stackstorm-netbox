@@ -1,5 +1,9 @@
 # Change Log
 
+## 3.0.3
+
+- Updated spec as per v3.1.7
+
 ## 3.0.2
 
 - Updated templates to remove date
