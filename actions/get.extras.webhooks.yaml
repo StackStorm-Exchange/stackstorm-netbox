@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.2
 description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
@@ -165,10 +165,6 @@ parameters:
     required: false
     type: string
     description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
   payload_url__n:
     required: false
     type: string
@@ -202,10 +198,6 @@ parameters:
     type: string
     description: ""
   payload_url__nie:
-    required: false
-    type: string
-    description: ""
-  payload_url__empty:
     required: false
     type: string
     description: ""
@@ -249,10 +241,6 @@ parameters:
     required: false
     type: string
     description: ""
-  http_content_type__empty:
-    required: false
-    type: string
-    description: ""
   secret__n:
     required: false
     type: string
@@ -289,10 +277,6 @@ parameters:
     required: false
     type: string
     description: ""
-  secret__empty:
-    required: false
-    type: string
-    description: ""
   ca_file_path__n:
     required: false
     type: string
@@ -326,10 +310,6 @@ parameters:
     type: string
     description: ""
   ca_file_path__nie:
-    required: false
-    type: string
-    description: ""
-  ca_file_path__empty:
     required: false
     type: string
     description: ""

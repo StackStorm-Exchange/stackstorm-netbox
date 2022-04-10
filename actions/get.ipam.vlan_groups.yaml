@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.2
 description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
@@ -26,6 +26,14 @@ parameters:
     type: string
     description: ""
   slug:
+    required: false
+    type: string
+    description: ""
+  min_vid:
+    required: false
+    type: string
+    description: ""
+  max_vid:
     required: false
     type: string
     description: ""
@@ -65,6 +73,10 @@ parameters:
     required: false
     type: string
     description: ""
+  tag:
+    required: false
+    type: string
+    description: ""
   scope_type:
     required: false
     type: string
@@ -96,10 +108,6 @@ parameters:
   cluster:
     required: false
     type: integer
-    description: ""
-  tag:
-    required: false
-    type: string
     description: ""
   id__n:
     required: false
@@ -157,10 +165,6 @@ parameters:
     required: false
     type: string
     description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
   slug__n:
     required: false
     type: string
@@ -197,7 +201,43 @@ parameters:
     required: false
     type: string
     description: ""
-  slug__empty:
+  min_vid__n:
+    required: false
+    type: string
+    description: ""
+  min_vid__lte:
+    required: false
+    type: string
+    description: ""
+  min_vid__lt:
+    required: false
+    type: string
+    description: ""
+  min_vid__gte:
+    required: false
+    type: string
+    description: ""
+  min_vid__gt:
+    required: false
+    type: string
+    description: ""
+  max_vid__n:
+    required: false
+    type: string
+    description: ""
+  max_vid__lte:
+    required: false
+    type: string
+    description: ""
+  max_vid__lt:
+    required: false
+    type: string
+    description: ""
+  max_vid__gte:
+    required: false
+    type: string
+    description: ""
+  max_vid__gt:
     required: false
     type: string
     description: ""
@@ -237,10 +277,6 @@ parameters:
     required: false
     type: string
     description: ""
-  description__empty:
-    required: false
-    type: string
-    description: ""
   scope_id__n:
     required: false
     type: string
@@ -261,11 +297,11 @@ parameters:
     required: false
     type: string
     description: ""
-  scope_type__n:
+  tag__n:
     required: false
     type: string
     description: ""
-  tag__n:
+  scope_type__n:
     required: false
     type: string
     description: ""
