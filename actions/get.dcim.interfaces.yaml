@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.2
 description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
@@ -101,6 +101,10 @@ parameters:
     required: false
     type: string
     description: ""
+  tag:
+    required: false
+    type: string
+    description: ""
   region_id:
     required: false
     type: string
@@ -149,7 +153,7 @@ parameters:
     required: false
     type: string
     description: ""
-  tag:
+  module_id:
     required: false
     type: string
     description: ""
@@ -177,6 +181,14 @@ parameters:
     required: false
     type: string
     description: ""
+  speed:
+    required: false
+    type: string
+    description: ""
+  duplex:
+    required: false
+    type: string
+    description: ""
   mac_address:
     required: false
     type: string
@@ -190,6 +202,14 @@ parameters:
     type: string
     description: ""
   vlan:
+    required: false
+    type: string
+    description: ""
+  vrf_id:
+    required: false
+    type: string
+    description: ""
+  vrf:
     required: false
     type: string
     description: ""
@@ -249,10 +269,6 @@ parameters:
     required: false
     type: string
     description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
   label__n:
     required: false
     type: string
@@ -286,10 +302,6 @@ parameters:
     type: string
     description: ""
   label__nie:
-    required: false
-    type: string
-    description: ""
-  label__empty:
     required: false
     type: string
     description: ""
@@ -425,7 +437,7 @@ parameters:
     required: false
     type: string
     description: ""
-  description__empty:
+  tag__n:
     required: false
     type: string
     description: ""
@@ -469,7 +481,7 @@ parameters:
     required: false
     type: string
     description: ""
-  tag__n:
+  module_id__n:
     required: false
     type: string
     description: ""
@@ -482,6 +494,30 @@ parameters:
     type: string
     description: ""
   lag_id__n:
+    required: false
+    type: string
+    description: ""
+  speed__n:
+    required: false
+    type: string
+    description: ""
+  speed__lte:
+    required: false
+    type: string
+    description: ""
+  speed__lt:
+    required: false
+    type: string
+    description: ""
+  speed__gte:
+    required: false
+    type: string
+    description: ""
+  speed__gt:
+    required: false
+    type: string
+    description: ""
+  duplex__n:
     required: false
     type: string
     description: ""
@@ -554,6 +590,14 @@ parameters:
     type: string
     description: ""
   wwn__nie:
+    required: false
+    type: string
+    description: ""
+  vrf_id__n:
+    required: false
+    type: string
+    description: ""
+  vrf__n:
     required: false
     type: string
     description: ""

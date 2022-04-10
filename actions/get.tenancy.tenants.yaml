@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.2
 description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
@@ -26,6 +26,10 @@ parameters:
     type: string
     description: ""
   slug:
+    required: false
+    type: string
+    description: ""
+  description:
     required: false
     type: string
     description: ""
@@ -57,15 +61,23 @@ parameters:
     required: false
     type: string
     description: ""
+  tag:
+    required: false
+    type: string
+    description: ""
+  contact:
+    required: false
+    type: string
+    description: ""
+  contact_role:
+    required: false
+    type: string
+    description: ""
   group_id:
     required: false
     type: string
     description: ""
   group:
-    required: false
-    type: string
-    description: ""
-  tag:
     required: false
     type: string
     description: ""
@@ -125,10 +137,6 @@ parameters:
     required: false
     type: string
     description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
   slug__n:
     required: false
     type: string
@@ -165,7 +173,51 @@ parameters:
     required: false
     type: string
     description: ""
-  slug__empty:
+  description__n:
+    required: false
+    type: string
+    description: ""
+  description__ic:
+    required: false
+    type: string
+    description: ""
+  description__nic:
+    required: false
+    type: string
+    description: ""
+  description__iew:
+    required: false
+    type: string
+    description: ""
+  description__niew:
+    required: false
+    type: string
+    description: ""
+  description__isw:
+    required: false
+    type: string
+    description: ""
+  description__nisw:
+    required: false
+    type: string
+    description: ""
+  description__ie:
+    required: false
+    type: string
+    description: ""
+  description__nie:
+    required: false
+    type: string
+    description: ""
+  tag__n:
+    required: false
+    type: string
+    description: ""
+  contact__n:
+    required: false
+    type: string
+    description: ""
+  contact_role__n:
     required: false
     type: string
     description: ""
@@ -174,10 +226,6 @@ parameters:
     type: string
     description: ""
   group__n:
-    required: false
-    type: string
-    description: ""
-  tag__n:
     required: false
     type: string
     description: ""
