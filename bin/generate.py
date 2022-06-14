@@ -108,7 +108,7 @@ def run(spec):
                 ref_name = verb_data['parameters'][0]['schema']['$ref'].split('/')[-1]
                 schema = spec['definitions'][ref_name]
                 try:
-                    required = schema['required']
+                    required = ['id'] if verb == 'patch' else schema['required']
                 except KeyError:
                     required = []
                 action['parameters'] = parse_properties(schema['properties'], required, spec)
