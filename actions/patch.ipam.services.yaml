@@ -26,15 +26,15 @@ parameters:
     type: integer
     description: "Virtual machine"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   ports:
-    required: true
+    required: false
     type: array
     description: "Ports"
   protocol:
-    required: true
+    required: false
     type: string
     description: "Protocol"
   ipaddresses:

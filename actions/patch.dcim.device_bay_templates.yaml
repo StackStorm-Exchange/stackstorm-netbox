@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   device_type:
-    required: true
+    required: false
     type: integer
     description: "Device type"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   label:

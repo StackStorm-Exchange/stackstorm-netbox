@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   prefix:
-    required: true
+    required: false
     type: string
     description: "Prefix"
   rir:
-    required: true
+    required: false
     type: integer
     description: "RIR"
   tenant:

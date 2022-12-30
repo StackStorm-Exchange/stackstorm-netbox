@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   site:
-    required: true
+    required: false
     type: integer
     description: "Site"
   location:
@@ -26,7 +26,7 @@ parameters:
     type: integer
     description: "Location"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   description:

@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   description:
@@ -30,7 +30,7 @@ parameters:
     type: boolean
     description: "Enabled"
   object_types:
-    required: true
+    required: false
     type: array
     description: "Object types"
   groups:
@@ -42,7 +42,7 @@ parameters:
     type: array
     description: "Users"
   actions:
-    required: true
+    required: false
     type: array
     description: "Actions"
   constraints:

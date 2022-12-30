@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   content_types:
-    required: true
+    required: false
     type: array
     description: "Content types"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   type_create:
@@ -38,7 +38,7 @@ parameters:
     type: boolean
     description: "Type delete"
   payload_url:
-    required: true
+    required: false
     type: string
     description: "URL"
   enabled:

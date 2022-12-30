@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   power_panel:
-    required: true
+    required: false
     type: integer
     description: "Power panel"
   rack:
@@ -26,7 +26,7 @@ parameters:
     type: integer
     description: "Rack"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   status:

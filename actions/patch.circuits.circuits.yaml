@@ -18,15 +18,15 @@ parameters:
     immutable: true
     type: boolean
   cid:
-    required: true
+    required: false
     type: string
     description: "Circuit ID"
   provider:
-    required: true
+    required: false
     type: integer
     description: "Provider"
   type:
-    required: true
+    required: false
     type: integer
     description: "Type"
   status:

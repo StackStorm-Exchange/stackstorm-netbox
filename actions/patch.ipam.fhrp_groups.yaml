@@ -22,11 +22,11 @@ parameters:
     type: string
     description: "Name"
   protocol:
-    required: true
+    required: false
     type: string
     description: "Protocol"
   group_id:
-    required: true
+    required: false
     type: integer
     description: "Group ID"
   auth_type:

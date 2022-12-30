@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   asn:
-    required: true
+    required: false
     type: integer
     description: "ASN"
   rir:
-    required: true
+    required: false
     type: integer
     description: "RIR"
   tenant:

@@ -26,7 +26,7 @@ parameters:
     type: integer
     description: "Module type"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   label:
@@ -34,7 +34,7 @@ parameters:
     type: string
     description: "Label"
   type:
-    required: true
+    required: false
     type: string
     description: "Type"
   color:
@@ -42,7 +42,7 @@ parameters:
     type: string
     description: "Color"
   rear_port:
-    required: true
+    required: false
     type: integer
     description: "Rear port"
   rear_port_position:

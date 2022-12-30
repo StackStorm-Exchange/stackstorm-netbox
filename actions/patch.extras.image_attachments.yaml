@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   content_type:
-    required: true
+    required: false
     type: string
     description: "Content type"
   object_id:
-    required: true
+    required: false
     type: integer
     description: "Object id"
   name:
@@ -30,11 +30,11 @@ parameters:
     type: string
     description: "Name"
   image_height:
-    required: true
+    required: false
     type: integer
     description: "Image height"
   image_width:
-    required: true
+    required: false
     type: integer
     description: "Image width"
   id:

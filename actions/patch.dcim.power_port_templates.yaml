@@ -26,7 +26,7 @@ parameters:
     type: integer
     description: "Module type"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   label:

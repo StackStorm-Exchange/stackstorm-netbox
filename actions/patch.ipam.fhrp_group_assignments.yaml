@@ -18,19 +18,19 @@ parameters:
     immutable: true
     type: boolean
   group:
-    required: true
+    required: false
     type: integer
     description: "Group"
   interface_type:
-    required: true
+    required: false
     type: string
     description: "Interface type"
   interface_id:
-    required: true
+    required: false
     type: integer
     description: "Interface id"
   priority:
-    required: true
+    required: false
     type: integer
     description: "Priority"
   id:

@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   interface_a:
-    required: true
+    required: false
     type: integer
     description: "Interface A"
   interface_b:
-    required: true
+    required: false
     type: integer
     description: "Interface B"
   ssid:

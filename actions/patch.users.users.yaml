@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   username:
-    required: true
+    required: false
     type: string
     description: "Username"
   password:
-    required: true
+    required: false
     type: string
     description: "Password"
   first_name:

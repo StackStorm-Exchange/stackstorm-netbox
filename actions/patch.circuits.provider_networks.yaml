@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   provider:
-    required: true
+    required: false
     type: integer
     description: "Provider"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   service_id:

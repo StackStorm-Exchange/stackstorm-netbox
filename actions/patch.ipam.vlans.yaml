@@ -26,11 +26,11 @@ parameters:
     type: integer
     description: "Group"
   vid:
-    required: true
+    required: false
     type: integer
     description: "ID"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   tenant:

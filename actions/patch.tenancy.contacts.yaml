@@ -22,7 +22,7 @@ parameters:
     type: integer
     description: "Group"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   title:

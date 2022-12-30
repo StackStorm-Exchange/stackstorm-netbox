@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   device:
-    required: true
+    required: false
     type: integer
     description: "Device"
   module:
@@ -26,7 +26,7 @@ parameters:
     type: integer
     description: "Module"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   label:
@@ -34,7 +34,7 @@ parameters:
     type: string
     description: "Label"
   type:
-    required: true
+    required: false
     type: string
     description: "Type"
   color:
