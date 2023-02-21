@@ -38,7 +38,7 @@ class NetboxBaseAction(Action):
 
         # transform `tags` if present
         if kwargs.get("tags"):
-            if http_action in ['post','put','patch']:
+            if http_action in ['post', 'put', 'patch']:
                 kwargs["tags"] = [{"slug": x} for x in kwargs["tags"]]
             else:
                 kwargs["tags"] = ",".join(kwargs["tags"])
