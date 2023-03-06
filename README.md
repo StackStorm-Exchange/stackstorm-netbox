@@ -1,7 +1,7 @@
 # stackstorm-netbox
 
-[NetBox](https://github.com/digitalocean/netbox) is an Open Source IPAM and DCIM tool
-maintained by Digital Ocean.
+[NetBox](https://github.com/netbox-community/netbox) is an Open Source IPAM and
+DCIM tool originally created by [DigitalOcean](https://www.digitalocean.com/).
 
 ## Configuration
 

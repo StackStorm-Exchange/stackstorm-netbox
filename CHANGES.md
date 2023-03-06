@@ -1,5 +1,11 @@
 # Change Log
 
+
+## 3.0.5
+
+- Bug fix: Tags fields need additional translation when modifying 
+
+
 ## 3.0.4
 
 - Bug fix: PATCH requests don't need all the fields to be required 
