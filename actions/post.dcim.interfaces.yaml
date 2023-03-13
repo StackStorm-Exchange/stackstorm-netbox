@@ -22,7 +22,7 @@ parameters:
     type: integer
     description: "Device"
   vdcs:
-    required: true
+    required: false
     type: array
     description: "Vdcs"
   module:
