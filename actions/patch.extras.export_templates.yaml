@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PATCH Export Templates"
 enabled: true
 entry_point: run.py
@@ -17,12 +17,12 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  content_type:
-    required: true
-    type: string
-    description: "Content type"
+  content_types:
+    required: false
+    type: array
+    description: "Content types"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   description:
@@ -30,7 +30,7 @@ parameters:
     type: string
     description: "Description"
   template_code:
-    required: true
+    required: false
     type: string
     description: "Template code"
   mime_type:
@@ -45,6 +45,14 @@ parameters:
     required: false
     type: boolean
     description: "As attachment"
+  data_source:
+    required: false
+    type: integer
+    description: "Data source"
+  data_file:
+    required: false
+    type: integer
+    description: "Data file"
   id:
     required: true
     type: string

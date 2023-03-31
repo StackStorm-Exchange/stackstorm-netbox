@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PATCH Interfaces"
 enabled: true
 entry_point: run.py
@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   virtual_machine:
-    required: true
+    required: false
     type: integer
     description: "Virtual machine"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   enabled:
@@ -61,6 +61,10 @@ parameters:
     required: false
     type: array
     description: "Tagged vlans"
+  vrf:
+    required: false
+    type: integer
+    description: "VRF"
   tags:
     required: false
     type: array

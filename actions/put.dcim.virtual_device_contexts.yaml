@@ -1,0 +1,68 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.5
+description: "PUT Virtual Device Contexts"
+enabled: true
+entry_point: run.py
+name: put.dcim.virtual_device_contexts
+parameters:
+  endpoint_uri:
+    default: "/dcim/virtual-device-contexts/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  name:
+    required: true
+    type: string
+    description: "Name"
+  device:
+    required: false
+    type: integer
+    description: "Device"
+  identifier:
+    required: false
+    type: integer
+    description: "Identifier"
+  tenant:
+    required: false
+    type: integer
+    description: "Tenant"
+  primary_ip4:
+    required: false
+    type: integer
+    description: "Primary IPv4"
+  primary_ip6:
+    required: false
+    type: integer
+    description: "Primary IPv6"
+  status:
+    required: true
+    type: string
+    description: "Status"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  id:
+    required: true
+    type: string
+    description: "ID of the object to put."
+runner_type: python-script

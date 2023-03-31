@@ -1,0 +1,52 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.5
+description: "PUT Provider Accounts"
+enabled: true
+entry_point: run.py
+name: put.circuits.provider_accounts
+parameters:
+  endpoint_uri:
+    default: "/circuits/provider-accounts/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  provider:
+    required: true
+    type: integer
+    description: "Provider"
+  name:
+    required: false
+    type: string
+    description: "Name"
+  account:
+    required: true
+    type: string
+    description: "Account ID"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  id:
+    required: true
+    type: string
+    description: "ID of the object to put."
+runner_type: python-script

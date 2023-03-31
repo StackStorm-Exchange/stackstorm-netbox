@@ -1,0 +1,60 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.5
+description: "PATCH Asn Ranges"
+enabled: true
+entry_point: run.py
+name: patch.ipam.asn_ranges
+parameters:
+  endpoint_uri:
+    default: "/ipam/asn-ranges/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  name:
+    required: false
+    type: string
+    description: "Name"
+  slug:
+    required: false
+    type: string
+    description: "Slug"
+  rir:
+    required: false
+    type: integer
+    description: "RIR"
+  start:
+    required: false
+    type: integer
+    description: "Start"
+  end:
+    required: false
+    type: integer
+    description: "End"
+  tenant:
+    required: false
+    type: integer
+    description: "Tenant"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  id:
+    required: true
+    type: string
+    description: "ID of the object to patch."
+runner_type: python-script

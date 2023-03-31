@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "POST Racks"
 enabled: true
 entry_point: run.py
@@ -30,7 +30,7 @@ parameters:
     type: integer
     description: "Site"
   location:
-    required: true
+    required: false
     type: integer
     description: "Location"
   tenant:
@@ -65,6 +65,18 @@ parameters:
     required: false
     type: integer
     description: "Height (U)"
+  weight:
+    required: false
+    type: integer
+    description: "Weight"
+  max_weight:
+    required: false
+    type: integer
+    description: "Max weight"
+  weight_unit:
+    required: false
+    type: string
+    description: "Weight unit"
   desc_units:
     required: false
     type: boolean
@@ -81,6 +93,14 @@ parameters:
     required: false
     type: string
     description: "Outer unit"
+  mounting_depth:
+    required: false
+    type: integer
+    description: "Mounting depth"
+  description:
+    required: false
+    type: string
+    description: "Description"
   comments:
     required: false
     type: string

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PUT Cables"
 enabled: true
 entry_point: run.py
@@ -17,26 +17,18 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  termination_a_type:
-    required: true
-    type: string
-    description: "Termination a type"
-  termination_a_id:
-    required: true
-    type: integer
-    description: "Termination a id"
-  termination_b_type:
-    required: true
-    type: string
-    description: "Termination b type"
-  termination_b_id:
-    required: true
-    type: integer
-    description: "Termination b id"
   type:
     required: false
     type: string
     description: "Type"
+  a_terminations:
+    required: false
+    type: array
+    description: "A terminations"
+  b_terminations:
+    required: false
+    type: array
+    description: "B terminations"
   status:
     required: false
     type: string
@@ -61,6 +53,14 @@ parameters:
     required: false
     type: string
     description: "Length unit"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
   tags:
     required: false
     type: array

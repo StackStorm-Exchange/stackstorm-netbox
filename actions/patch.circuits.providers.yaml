@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PATCH Providers"
 enabled: true
 entry_point: run.py
@@ -18,37 +18,29 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   slug:
-    required: true
+    required: false
     type: string
     description: "Slug"
-  asn:
+  accounts:
     required: false
-    type: integer
-    description: "ASN"
-  account:
-    required: false
-    type: string
-    description: "Account number"
-  portal_url:
+    type: array
+    description: "Accounts"
+  description:
     required: false
     type: string
-    description: "Portal URL"
-  noc_contact:
-    required: false
-    type: string
-    description: "NOC contact"
-  admin_contact:
-    required: false
-    type: string
-    description: "Admin contact"
+    description: "Description"
   comments:
     required: false
     type: string
     description: "Comments"
+  asns:
+    required: false
+    type: array
+    description: "Asns"
   tags:
     required: false
     type: array

@@ -1,5 +1,9 @@
 # Change Log
 
+## 3.1.0
+
+- Updated spec as per v3.5.0
+
 ## 3.0.5
 
 - Bug fix: Tags fields need additional translation when modifying 

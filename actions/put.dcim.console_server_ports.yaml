@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PUT Console Server Ports"
 enabled: true
 entry_point: run.py
@@ -21,6 +21,10 @@ parameters:
     required: true
     type: integer
     description: "Device"
+  module:
+    required: false
+    type: integer
+    description: "Module"
   name:
     required: true
     type: string
@@ -48,7 +52,7 @@ parameters:
   cable:
     required: false
     type: integer
-    description: "Id of cable"
+    description: "ID of cable"
   tags:
     required: false
     type: array

@@ -1,0 +1,40 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.5
+description: "POST Module Bay Templates"
+enabled: true
+entry_point: run.py
+name: post.dcim.module_bay_templates
+parameters:
+  endpoint_uri:
+    default: "/dcim/module-bay-templates/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  device_type:
+    required: true
+    type: integer
+    description: "Device type"
+  name:
+    required: true
+    type: string
+    description: "Name"
+  label:
+    required: false
+    type: string
+    description: "Label"
+  position:
+    required: false
+    type: string
+    description: "Position"
+  description:
+    required: false
+    type: string
+    description: "Description"
+runner_type: python-script

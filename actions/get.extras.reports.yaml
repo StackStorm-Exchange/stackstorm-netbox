@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "Compile all reports and their related results (if any). Result data is deferred in the list view."
 enabled: true
 entry_point: run.py

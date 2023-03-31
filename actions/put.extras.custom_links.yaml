@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PUT Custom Links"
 enabled: true
 entry_point: run.py
@@ -17,14 +17,18 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  content_type:
+  content_types:
     required: true
-    type: string
-    description: "Content type"
+    type: array
+    description: "Content types"
   name:
     required: true
     type: string
     description: "Name"
+  enabled:
+    required: false
+    type: boolean
+    description: "Enabled"
   link_text:
     required: true
     type: string

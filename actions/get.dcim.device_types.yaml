@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
-description: "Overrides ListModelMixin to allow processing ExportTemplates."
+# NetBox API version: 3.5
+description: "GET Device Types"
 enabled: true
 entry_point: run.py
 name: get.dcim.device_types
@@ -49,15 +49,15 @@ parameters:
     required: false
     type: string
     description: ""
+  weight:
+    required: false
+    type: string
+    description: ""
+  weight_unit:
+    required: false
+    type: string
+    description: ""
   created:
-    required: false
-    type: string
-    description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__lte:
     required: false
     type: string
     description: ""
@@ -65,15 +65,19 @@ parameters:
     required: false
     type: string
     description: ""
-  last_updated__gte:
+  created_by_request:
     required: false
     type: string
     description: ""
-  last_updated__lte:
+  updated_by_request:
     required: false
     type: string
     description: ""
   q:
+    required: false
+    type: string
+    description: ""
+  tag:
     required: false
     type: string
     description: ""
@@ -82,6 +86,22 @@ parameters:
     type: string
     description: ""
   manufacturer:
+    required: false
+    type: string
+    description: ""
+  default_platform_id:
+    required: false
+    type: string
+    description: ""
+  default_platform:
+    required: false
+    type: string
+    description: ""
+  has_front_image:
+    required: false
+    type: string
+    description: ""
+  has_rear_image:
     required: false
     type: string
     description: ""
@@ -109,11 +129,15 @@ parameters:
     required: false
     type: string
     description: ""
+  module_bays:
+    required: false
+    type: string
+    description: ""
   device_bays:
     required: false
     type: string
     description: ""
-  tag:
+  inventory_items:
     required: false
     type: string
     description: ""
@@ -285,6 +309,74 @@ parameters:
     required: false
     type: string
     description: ""
+  weight__n:
+    required: false
+    type: string
+    description: ""
+  weight__lte:
+    required: false
+    type: string
+    description: ""
+  weight__lt:
+    required: false
+    type: string
+    description: ""
+  weight__gte:
+    required: false
+    type: string
+    description: ""
+  weight__gt:
+    required: false
+    type: string
+    description: ""
+  weight_unit__n:
+    required: false
+    type: string
+    description: ""
+  created__n:
+    required: false
+    type: string
+    description: ""
+  created__lte:
+    required: false
+    type: string
+    description: ""
+  created__lt:
+    required: false
+    type: string
+    description: ""
+  created__gte:
+    required: false
+    type: string
+    description: ""
+  created__gt:
+    required: false
+    type: string
+    description: ""
+  last_updated__n:
+    required: false
+    type: string
+    description: ""
+  last_updated__lte:
+    required: false
+    type: string
+    description: ""
+  last_updated__lt:
+    required: false
+    type: string
+    description: ""
+  last_updated__gte:
+    required: false
+    type: string
+    description: ""
+  last_updated__gt:
+    required: false
+    type: string
+    description: ""
+  tag__n:
+    required: false
+    type: string
+    description: ""
   manufacturer_id__n:
     required: false
     type: string
@@ -293,10 +385,18 @@ parameters:
     required: false
     type: string
     description: ""
-  tag__n:
+  default_platform_id__n:
     required: false
     type: string
     description: ""
+  default_platform__n:
+    required: false
+    type: string
+    description: ""
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
   limit:
     required: false
     type: integer

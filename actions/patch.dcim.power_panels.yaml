@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PATCH Power Panels"
 enabled: true
 entry_point: run.py
@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   site:
-    required: true
+    required: false
     type: integer
     description: "Site"
   location:
@@ -26,9 +26,17 @@ parameters:
     type: integer
     description: "Location"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
   tags:
     required: false
     type: array

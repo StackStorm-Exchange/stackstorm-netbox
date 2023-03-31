@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
-description: "Overrides ListModelMixin to allow processing ExportTemplates."
+# NetBox API version: 3.5
+description: "GET Sites"
 enabled: true
 entry_point: run.py
 name: get.dcim.sites
@@ -33,10 +33,6 @@ parameters:
     required: false
     type: string
     description: ""
-  asn:
-    required: false
-    type: string
-    description: ""
   latitude:
     required: false
     type: string
@@ -45,15 +41,7 @@ parameters:
     required: false
     type: string
     description: ""
-  contact_name:
-    required: false
-    type: string
-    description: ""
-  contact_phone:
-    required: false
-    type: string
-    description: ""
-  contact_email:
+  description:
     required: false
     type: string
     description: ""
@@ -61,23 +49,23 @@ parameters:
     required: false
     type: string
     description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__lte:
-    required: false
-    type: string
-    description: ""
   last_updated:
     required: false
     type: string
     description: ""
-  last_updated__gte:
+  created_by_request:
     required: false
     type: string
     description: ""
-  last_updated__lte:
+  updated_by_request:
+    required: false
+    type: string
+    description: ""
+  q:
+    required: false
+    type: string
+    description: ""
+  tag:
     required: false
     type: string
     description: ""
@@ -97,7 +85,15 @@ parameters:
     required: false
     type: string
     description: ""
-  q:
+  contact:
+    required: false
+    type: string
+    description: ""
+  contact_role:
+    required: false
+    type: string
+    description: ""
+  contact_group:
     required: false
     type: string
     description: ""
@@ -121,11 +117,11 @@ parameters:
     required: false
     type: string
     description: ""
-  asn_id:
+  asn:
     required: false
     type: string
     description: ""
-  tag:
+  asn_id:
     required: false
     type: string
     description: ""
@@ -269,26 +265,6 @@ parameters:
     required: false
     type: string
     description: ""
-  asn__n:
-    required: false
-    type: string
-    description: ""
-  asn__lte:
-    required: false
-    type: string
-    description: ""
-  asn__lt:
-    required: false
-    type: string
-    description: ""
-  asn__gte:
-    required: false
-    type: string
-    description: ""
-  asn__gt:
-    required: false
-    type: string
-    description: ""
   latitude__n:
     required: false
     type: string
@@ -329,123 +305,87 @@ parameters:
     required: false
     type: string
     description: ""
-  contact_name__n:
+  description__n:
     required: false
     type: string
     description: ""
-  contact_name__ic:
+  description__ic:
     required: false
     type: string
     description: ""
-  contact_name__nic:
+  description__nic:
     required: false
     type: string
     description: ""
-  contact_name__iew:
+  description__iew:
     required: false
     type: string
     description: ""
-  contact_name__niew:
+  description__niew:
     required: false
     type: string
     description: ""
-  contact_name__isw:
+  description__isw:
     required: false
     type: string
     description: ""
-  contact_name__nisw:
+  description__nisw:
     required: false
     type: string
     description: ""
-  contact_name__ie:
+  description__ie:
     required: false
     type: string
     description: ""
-  contact_name__nie:
+  description__nie:
     required: false
     type: string
     description: ""
-  contact_name__empty:
+  description__empty:
     required: false
     type: string
     description: ""
-  contact_phone__n:
+  created__n:
     required: false
     type: string
     description: ""
-  contact_phone__ic:
+  created__lte:
     required: false
     type: string
     description: ""
-  contact_phone__nic:
+  created__lt:
     required: false
     type: string
     description: ""
-  contact_phone__iew:
+  created__gte:
     required: false
     type: string
     description: ""
-  contact_phone__niew:
+  created__gt:
     required: false
     type: string
     description: ""
-  contact_phone__isw:
+  last_updated__n:
     required: false
     type: string
     description: ""
-  contact_phone__nisw:
+  last_updated__lte:
     required: false
     type: string
     description: ""
-  contact_phone__ie:
+  last_updated__lt:
     required: false
     type: string
     description: ""
-  contact_phone__nie:
+  last_updated__gte:
     required: false
     type: string
     description: ""
-  contact_phone__empty:
+  last_updated__gt:
     required: false
     type: string
     description: ""
-  contact_email__n:
-    required: false
-    type: string
-    description: ""
-  contact_email__ic:
-    required: false
-    type: string
-    description: ""
-  contact_email__nic:
-    required: false
-    type: string
-    description: ""
-  contact_email__iew:
-    required: false
-    type: string
-    description: ""
-  contact_email__niew:
-    required: false
-    type: string
-    description: ""
-  contact_email__isw:
-    required: false
-    type: string
-    description: ""
-  contact_email__nisw:
-    required: false
-    type: string
-    description: ""
-  contact_email__ie:
-    required: false
-    type: string
-    description: ""
-  contact_email__nie:
-    required: false
-    type: string
-    description: ""
-  contact_email__empty:
+  tag__n:
     required: false
     type: string
     description: ""
@@ -462,6 +402,18 @@ parameters:
     type: string
     description: ""
   tenant__n:
+    required: false
+    type: string
+    description: ""
+  contact__n:
+    required: false
+    type: string
+    description: ""
+  contact_role__n:
+    required: false
+    type: string
+    description: ""
+  contact_group__n:
     required: false
     type: string
     description: ""
@@ -485,14 +437,18 @@ parameters:
     required: false
     type: string
     description: ""
+  asn__n:
+    required: false
+    type: string
+    description: ""
   asn_id__n:
     required: false
     type: string
     description: ""
-  tag__n:
+  ordering:
     required: false
     type: string
-    description: ""
+    description: "Which field to use when ordering the results."
   limit:
     required: false
     type: integer

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PUT Interfaces"
 enabled: true
 entry_point: run.py
@@ -21,6 +21,14 @@ parameters:
     required: true
     type: integer
     description: "Device"
+  vdcs:
+    required: true
+    type: array
+    description: "Vdcs"
+  module:
+    required: false
+    type: integer
+    description: "Module"
   name:
     required: true
     type: string
@@ -57,6 +65,14 @@ parameters:
     required: false
     type: string
     description: "MAC Address"
+  speed:
+    required: false
+    type: integer
+    description: "Speed (Kbps)"
+  duplex:
+    required: false
+    type: string
+    description: "Duplex"
   wwn:
     required: false
     type: string
@@ -81,6 +97,14 @@ parameters:
     required: false
     type: string
     description: "Wireless channel"
+  poe_mode:
+    required: false
+    type: string
+    description: "PoE mode"
+  poe_type:
+    required: false
+    type: string
+    description: "PoE type"
   rf_channel_frequency:
     required: false
     type: integer
@@ -108,7 +132,7 @@ parameters:
   cable:
     required: false
     type: integer
-    description: "Id of cable"
+    description: "ID of cable"
   wireless_link:
     required: false
     type: integer
@@ -117,6 +141,10 @@ parameters:
     required: false
     type: array
     description: "Wireless lans"
+  vrf:
+    required: false
+    type: integer
+    description: "VRF"
   tags:
     required: false
     type: array

@@ -1,0 +1,56 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.5
+description: "PUT Data Sources"
+enabled: true
+entry_point: run.py
+name: put.core.data_sources
+parameters:
+  endpoint_uri:
+    default: "/core/data-sources/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  name:
+    required: true
+    type: string
+    description: "Name"
+  type:
+    required: false
+    type: string
+    description: "Type"
+  source_url:
+    required: true
+    type: string
+    description: "URL"
+  enabled:
+    required: false
+    type: boolean
+    description: "Enabled"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  parameters:
+    required: false
+    type: object
+    description: "Parameters"
+  ignore_rules:
+    required: false
+    type: string
+    description: "Ignore rules"
+  id:
+    required: true
+    type: string
+    description: "ID of the object to put."
+runner_type: python-script

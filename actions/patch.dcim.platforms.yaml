@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PATCH Platforms"
 enabled: true
 entry_point: run.py
@@ -18,24 +18,28 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   slug:
-    required: true
+    required: false
     type: string
     description: "Slug"
   manufacturer:
     required: false
     type: integer
     description: "Manufacturer"
+  config_template:
+    required: false
+    type: integer
+    description: "Config template"
   napalm_driver:
     required: false
     type: string
     description: "NAPALM driver"
   napalm_args:
     required: false
-    type: string
+    type: object
     description: "NAPALM arguments"
   description:
     required: false

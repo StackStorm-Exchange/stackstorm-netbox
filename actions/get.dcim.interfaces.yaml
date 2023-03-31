@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
-description: "Overrides ListModelMixin to allow processing ExportTemplates."
+# NetBox API version: 3.5
+description: "GET Interfaces"
 enabled: true
 entry_point: run.py
 name: get.dcim.interfaces
@@ -45,6 +45,14 @@ parameters:
     required: false
     type: string
     description: ""
+  poe_mode:
+    required: false
+    type: string
+    description: ""
+  poe_type:
+    required: false
+    type: string
+    description: ""
   mode:
     required: false
     type: string
@@ -73,27 +81,7 @@ parameters:
     required: false
     type: string
     description: ""
-  created:
-    required: false
-    type: string
-    description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__lte:
-    required: false
-    type: string
-    description: ""
-  last_updated:
-    required: false
-    type: string
-    description: ""
-  last_updated__gte:
-    required: false
-    type: string
-    description: ""
-  last_updated__lte:
+  cable_end:
     required: false
     type: string
     description: ""
@@ -133,6 +121,14 @@ parameters:
     required: false
     type: string
     description: ""
+  rack_id:
+    required: false
+    type: string
+    description: ""
+  rack:
+    required: false
+    type: string
+    description: ""
   device_id:
     required: false
     type: string
@@ -149,11 +145,35 @@ parameters:
     required: false
     type: string
     description: ""
+  module_id:
+    required: false
+    type: string
+    description: ""
+  created:
+    required: false
+    type: string
+    description: ""
+  last_updated:
+    required: false
+    type: string
+    description: ""
+  created_by_request:
+    required: false
+    type: string
+    description: ""
+  updated_by_request:
+    required: false
+    type: string
+    description: ""
   tag:
     required: false
     type: string
     description: ""
   cabled:
+    required: false
+    type: string
+    description: ""
+  occupied:
     required: false
     type: string
     description: ""
@@ -177,6 +197,14 @@ parameters:
     required: false
     type: string
     description: ""
+  speed:
+    required: false
+    type: string
+    description: ""
+  duplex:
+    required: false
+    type: string
+    description: ""
   mac_address:
     required: false
     type: string
@@ -190,6 +218,34 @@ parameters:
     type: string
     description: ""
   vlan:
+    required: false
+    type: string
+    description: ""
+  vrf_id:
+    required: false
+    type: string
+    description: ""
+  vrf:
+    required: false
+    type: string
+    description: ""
+  vdc_id:
+    required: false
+    type: string
+    description: ""
+  vdc_identifier:
+    required: false
+    type: string
+    description: ""
+  vdc:
+    required: false
+    type: string
+    description: ""
+  l2vpn_id:
+    required: false
+    type: string
+    description: ""
+  l2vpn:
     required: false
     type: string
     description: ""
@@ -317,6 +373,14 @@ parameters:
     required: false
     type: string
     description: ""
+  poe_mode__n:
+    required: false
+    type: string
+    description: ""
+  poe_type__n:
+    required: false
+    type: string
+    description: ""
   mode__n:
     required: false
     type: string
@@ -429,6 +493,10 @@ parameters:
     required: false
     type: string
     description: ""
+  cable_end__n:
+    required: false
+    type: string
+    description: ""
   region_id__n:
     required: false
     type: string
@@ -461,11 +529,63 @@ parameters:
     required: false
     type: string
     description: ""
+  rack_id__n:
+    required: false
+    type: string
+    description: ""
+  rack__n:
+    required: false
+    type: string
+    description: ""
   virtual_chassis_id__n:
     required: false
     type: string
     description: ""
   virtual_chassis__n:
+    required: false
+    type: string
+    description: ""
+  module_id__n:
+    required: false
+    type: string
+    description: ""
+  created__n:
+    required: false
+    type: string
+    description: ""
+  created__lte:
+    required: false
+    type: string
+    description: ""
+  created__lt:
+    required: false
+    type: string
+    description: ""
+  created__gte:
+    required: false
+    type: string
+    description: ""
+  created__gt:
+    required: false
+    type: string
+    description: ""
+  last_updated__n:
+    required: false
+    type: string
+    description: ""
+  last_updated__lte:
+    required: false
+    type: string
+    description: ""
+  last_updated__lt:
+    required: false
+    type: string
+    description: ""
+  last_updated__gte:
+    required: false
+    type: string
+    description: ""
+  last_updated__gt:
     required: false
     type: string
     description: ""
@@ -482,6 +602,30 @@ parameters:
     type: string
     description: ""
   lag_id__n:
+    required: false
+    type: string
+    description: ""
+  speed__n:
+    required: false
+    type: string
+    description: ""
+  speed__lte:
+    required: false
+    type: string
+    description: ""
+  speed__lt:
+    required: false
+    type: string
+    description: ""
+  speed__gte:
+    required: false
+    type: string
+    description: ""
+  speed__gt:
+    required: false
+    type: string
+    description: ""
+  duplex__n:
     required: false
     type: string
     description: ""
@@ -557,6 +701,38 @@ parameters:
     required: false
     type: string
     description: ""
+  vrf_id__n:
+    required: false
+    type: string
+    description: ""
+  vrf__n:
+    required: false
+    type: string
+    description: ""
+  vdc_id__n:
+    required: false
+    type: string
+    description: ""
+  vdc_identifier__n:
+    required: false
+    type: string
+    description: ""
+  vdc__n:
+    required: false
+    type: string
+    description: ""
+  l2vpn_id__n:
+    required: false
+    type: string
+    description: ""
+  l2vpn__n:
+    required: false
+    type: string
+    description: ""
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
   limit:
     required: false
     type: integer

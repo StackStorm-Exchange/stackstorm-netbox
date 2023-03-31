@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PATCH Ip Ranges"
 enabled: true
 entry_point: run.py
@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   start_address:
-    required: true
+    required: false
     type: string
     description: "Start address"
   end_address:
-    required: true
+    required: false
     type: string
     description: "End address"
   vrf:
@@ -41,10 +41,18 @@ parameters:
     required: false
     type: integer
     description: "Role"
+  mark_utilized:
+    required: false
+    type: boolean
+    description: "Mark utilized"
   description:
     required: false
     type: string
     description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
   tags:
     required: false
     type: array

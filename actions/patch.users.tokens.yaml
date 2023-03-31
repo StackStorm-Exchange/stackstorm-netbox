@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PATCH Tokens"
 enabled: true
 entry_point: run.py
@@ -18,13 +18,17 @@ parameters:
     immutable: true
     type: boolean
   user:
-    required: true
+    required: false
     type: integer
     description: "User"
   expires:
     required: false
     type: string
     description: "Expires"
+  last_used:
+    required: false
+    type: string
+    description: "Last used"
   key:
     required: false
     type: string
@@ -37,6 +41,10 @@ parameters:
     required: false
     type: string
     description: "Description"
+  allowed_ips:
+    required: false
+    type: array
+    description: "Allowed ips"
   id:
     required: true
     type: string

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "POST Console Server Port Templates"
 enabled: true
 entry_point: run.py
@@ -18,9 +18,13 @@ parameters:
     immutable: true
     type: boolean
   device_type:
-    required: true
+    required: false
     type: integer
     description: "Device type"
+  module_type:
+    required: false
+    type: integer
+    description: "Module type"
   name:
     required: true
     type: string

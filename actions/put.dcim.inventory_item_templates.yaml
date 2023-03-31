@@ -1,0 +1,64 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.5
+description: "PUT Inventory Item Templates"
+enabled: true
+entry_point: run.py
+name: put.dcim.inventory_item_templates
+parameters:
+  endpoint_uri:
+    default: "/dcim/inventory-item-templates/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  device_type:
+    required: true
+    type: integer
+    description: "Device type"
+  parent:
+    required: false
+    type: integer
+    description: "Parent"
+  name:
+    required: true
+    type: string
+    description: "Name"
+  label:
+    required: false
+    type: string
+    description: "Label"
+  role:
+    required: false
+    type: integer
+    description: "Role"
+  manufacturer:
+    required: false
+    type: integer
+    description: "Manufacturer"
+  part_id:
+    required: false
+    type: string
+    description: "Part ID"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  component_type:
+    required: false
+    type: string
+    description: "Component type"
+  component_id:
+    required: false
+    type: integer
+    description: "Component id"
+  id:
+    required: true
+    type: string
+    description: "ID of the object to put."
+runner_type: python-script

@@ -1,0 +1,339 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.5
+description: "GET Inventory Item Templates"
+enabled: true
+entry_point: run.py
+name: get.dcim.inventory_item_templates
+parameters:
+  endpoint_uri:
+    default: "/dcim/inventory-item-templates/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  id:
+    required: false
+    type: string
+    description: ""
+  name:
+    required: false
+    type: string
+    description: ""
+  label:
+    required: false
+    type: string
+    description: ""
+  part_id:
+    required: false
+    type: string
+    description: ""
+  created:
+    required: false
+    type: string
+    description: ""
+  last_updated:
+    required: false
+    type: string
+    description: ""
+  created_by_request:
+    required: false
+    type: string
+    description: ""
+  updated_by_request:
+    required: false
+    type: string
+    description: ""
+  q:
+    required: false
+    type: string
+    description: ""
+  devicetype_id:
+    required: false
+    type: string
+    description: ""
+  parent_id:
+    required: false
+    type: string
+    description: ""
+  manufacturer_id:
+    required: false
+    type: string
+    description: ""
+  manufacturer:
+    required: false
+    type: string
+    description: ""
+  role_id:
+    required: false
+    type: string
+    description: ""
+  role:
+    required: false
+    type: string
+    description: ""
+  component_type:
+    required: false
+    type: string
+    description: ""
+  component_id:
+    required: false
+    type: string
+    description: ""
+  id__n:
+    required: false
+    type: string
+    description: ""
+  id__lte:
+    required: false
+    type: string
+    description: ""
+  id__lt:
+    required: false
+    type: string
+    description: ""
+  id__gte:
+    required: false
+    type: string
+    description: ""
+  id__gt:
+    required: false
+    type: string
+    description: ""
+  name__n:
+    required: false
+    type: string
+    description: ""
+  name__ic:
+    required: false
+    type: string
+    description: ""
+  name__nic:
+    required: false
+    type: string
+    description: ""
+  name__iew:
+    required: false
+    type: string
+    description: ""
+  name__niew:
+    required: false
+    type: string
+    description: ""
+  name__isw:
+    required: false
+    type: string
+    description: ""
+  name__nisw:
+    required: false
+    type: string
+    description: ""
+  name__ie:
+    required: false
+    type: string
+    description: ""
+  name__nie:
+    required: false
+    type: string
+    description: ""
+  name__empty:
+    required: false
+    type: string
+    description: ""
+  label__n:
+    required: false
+    type: string
+    description: ""
+  label__ic:
+    required: false
+    type: string
+    description: ""
+  label__nic:
+    required: false
+    type: string
+    description: ""
+  label__iew:
+    required: false
+    type: string
+    description: ""
+  label__niew:
+    required: false
+    type: string
+    description: ""
+  label__isw:
+    required: false
+    type: string
+    description: ""
+  label__nisw:
+    required: false
+    type: string
+    description: ""
+  label__ie:
+    required: false
+    type: string
+    description: ""
+  label__nie:
+    required: false
+    type: string
+    description: ""
+  label__empty:
+    required: false
+    type: string
+    description: ""
+  part_id__n:
+    required: false
+    type: string
+    description: ""
+  part_id__ic:
+    required: false
+    type: string
+    description: ""
+  part_id__nic:
+    required: false
+    type: string
+    description: ""
+  part_id__iew:
+    required: false
+    type: string
+    description: ""
+  part_id__niew:
+    required: false
+    type: string
+    description: ""
+  part_id__isw:
+    required: false
+    type: string
+    description: ""
+  part_id__nisw:
+    required: false
+    type: string
+    description: ""
+  part_id__ie:
+    required: false
+    type: string
+    description: ""
+  part_id__nie:
+    required: false
+    type: string
+    description: ""
+  part_id__empty:
+    required: false
+    type: string
+    description: ""
+  created__n:
+    required: false
+    type: string
+    description: ""
+  created__lte:
+    required: false
+    type: string
+    description: ""
+  created__lt:
+    required: false
+    type: string
+    description: ""
+  created__gte:
+    required: false
+    type: string
+    description: ""
+  created__gt:
+    required: false
+    type: string
+    description: ""
+  last_updated__n:
+    required: false
+    type: string
+    description: ""
+  last_updated__lte:
+    required: false
+    type: string
+    description: ""
+  last_updated__lt:
+    required: false
+    type: string
+    description: ""
+  last_updated__gte:
+    required: false
+    type: string
+    description: ""
+  last_updated__gt:
+    required: false
+    type: string
+    description: ""
+  devicetype_id__n:
+    required: false
+    type: string
+    description: ""
+  parent_id__n:
+    required: false
+    type: string
+    description: ""
+  manufacturer_id__n:
+    required: false
+    type: string
+    description: ""
+  manufacturer__n:
+    required: false
+    type: string
+    description: ""
+  role_id__n:
+    required: false
+    type: string
+    description: ""
+  role__n:
+    required: false
+    type: string
+    description: ""
+  component_type__n:
+    required: false
+    type: string
+    description: ""
+  component_id__n:
+    required: false
+    type: string
+    description: ""
+  component_id__lte:
+    required: false
+    type: string
+    description: ""
+  component_id__lt:
+    required: false
+    type: string
+    description: ""
+  component_id__gte:
+    required: false
+    type: string
+    description: ""
+  component_id__gt:
+    required: false
+    type: string
+    description: ""
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script

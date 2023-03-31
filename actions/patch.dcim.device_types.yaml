@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
+# NetBox API version: 3.5
 description: "PATCH Device Types"
 enabled: true
 entry_point: run.py
@@ -18,15 +18,19 @@ parameters:
     immutable: true
     type: boolean
   manufacturer:
-    required: true
+    required: false
     type: integer
     description: "Manufacturer"
+  default_platform:
+    required: false
+    type: integer
+    description: "Default platform"
   model:
-    required: true
+    required: false
     type: string
     description: "Model"
   slug:
-    required: true
+    required: false
     type: string
     description: "Slug"
   part_number:
@@ -36,7 +40,7 @@ parameters:
   u_height:
     required: false
     type: integer
-    description: "Height (U)"
+    description: "Position (U)"
   is_full_depth:
     required: false
     type: boolean
@@ -49,6 +53,18 @@ parameters:
     required: false
     type: string
     description: "Airflow"
+  weight:
+    required: false
+    type: integer
+    description: "Weight"
+  weight_unit:
+    required: false
+    type: string
+    description: "Weight unit"
+  description:
+    required: false
+    type: string
+    description: "Description"
   comments:
     required: false
     type: string

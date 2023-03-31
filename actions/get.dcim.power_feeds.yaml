@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
-description: "Overrides ListModelMixin to allow processing ExportTemplates."
+# NetBox API version: 3.5
+description: "GET Power Feeds"
 enabled: true
 entry_point: run.py
 name: get.dcim.power_feeds
@@ -53,15 +53,11 @@ parameters:
     required: false
     type: string
     description: ""
+  cable_end:
+    required: false
+    type: string
+    description: ""
   created:
-    required: false
-    type: string
-    description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__lte:
     required: false
     type: string
     description: ""
@@ -69,11 +65,19 @@ parameters:
     required: false
     type: string
     description: ""
-  last_updated__gte:
+  created_by_request:
     required: false
     type: string
     description: ""
-  last_updated__lte:
+  updated_by_request:
+    required: false
+    type: string
+    description: ""
+  q:
+    required: false
+    type: string
+    description: ""
+  tag:
     required: false
     type: string
     description: ""
@@ -81,11 +85,11 @@ parameters:
     required: false
     type: string
     description: ""
-  connected:
+  occupied:
     required: false
     type: string
     description: ""
-  q:
+  connected:
     required: false
     type: string
     description: ""
@@ -118,10 +122,6 @@ parameters:
     type: string
     description: ""
   rack_id:
-    required: false
-    type: string
-    description: ""
-  tag:
     required: false
     type: string
     description: ""
@@ -261,6 +261,54 @@ parameters:
     required: false
     type: string
     description: ""
+  cable_end__n:
+    required: false
+    type: string
+    description: ""
+  created__n:
+    required: false
+    type: string
+    description: ""
+  created__lte:
+    required: false
+    type: string
+    description: ""
+  created__lt:
+    required: false
+    type: string
+    description: ""
+  created__gte:
+    required: false
+    type: string
+    description: ""
+  created__gt:
+    required: false
+    type: string
+    description: ""
+  last_updated__n:
+    required: false
+    type: string
+    description: ""
+  last_updated__lte:
+    required: false
+    type: string
+    description: ""
+  last_updated__lt:
+    required: false
+    type: string
+    description: ""
+  last_updated__gte:
+    required: false
+    type: string
+    description: ""
+  last_updated__gt:
+    required: false
+    type: string
+    description: ""
+  tag__n:
+    required: false
+    type: string
+    description: ""
   region_id__n:
     required: false
     type: string
@@ -293,10 +341,10 @@ parameters:
     required: false
     type: string
     description: ""
-  tag__n:
+  ordering:
     required: false
     type: string
-    description: ""
+    description: "Which field to use when ordering the results."
   limit:
     required: false
     type: integer

@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.1
-description: "Overrides ListModelMixin to allow processing ExportTemplates."
+# NetBox API version: 3.5
+description: "GET Circuits"
 enabled: true
 entry_point: run.py
 name: get.circuits.circuits
@@ -25,7 +25,15 @@ parameters:
     required: false
     type: string
     description: ""
+  description:
+    required: false
+    type: string
+    description: ""
   install_date:
+    required: false
+    type: string
+    description: ""
+  termination_date:
     required: false
     type: string
     description: ""
@@ -37,23 +45,23 @@ parameters:
     required: false
     type: string
     description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__lte:
-    required: false
-    type: string
-    description: ""
   last_updated:
     required: false
     type: string
     description: ""
-  last_updated__gte:
+  created_by_request:
     required: false
     type: string
     description: ""
-  last_updated__lte:
+  updated_by_request:
+    required: false
+    type: string
+    description: ""
+  q:
+    required: false
+    type: string
+    description: ""
+  tag:
     required: false
     type: string
     description: ""
@@ -73,7 +81,15 @@ parameters:
     required: false
     type: string
     description: ""
-  q:
+  contact:
+    required: false
+    type: string
+    description: ""
+  contact_role:
+    required: false
+    type: string
+    description: ""
+  contact_group:
     required: false
     type: string
     description: ""
@@ -82,6 +98,10 @@ parameters:
     type: string
     description: ""
   provider:
+    required: false
+    type: string
+    description: ""
+  provider_account_id:
     required: false
     type: string
     description: ""
@@ -122,10 +142,6 @@ parameters:
     type: string
     description: ""
   site:
-    required: false
-    type: string
-    description: ""
-  tag:
     required: false
     type: string
     description: ""
@@ -189,6 +205,46 @@ parameters:
     required: false
     type: string
     description: ""
+  description__n:
+    required: false
+    type: string
+    description: ""
+  description__ic:
+    required: false
+    type: string
+    description: ""
+  description__nic:
+    required: false
+    type: string
+    description: ""
+  description__iew:
+    required: false
+    type: string
+    description: ""
+  description__niew:
+    required: false
+    type: string
+    description: ""
+  description__isw:
+    required: false
+    type: string
+    description: ""
+  description__nisw:
+    required: false
+    type: string
+    description: ""
+  description__ie:
+    required: false
+    type: string
+    description: ""
+  description__nie:
+    required: false
+    type: string
+    description: ""
+  description__empty:
+    required: false
+    type: string
+    description: ""
   install_date__n:
     required: false
     type: string
@@ -206,6 +262,26 @@ parameters:
     type: string
     description: ""
   install_date__gt:
+    required: false
+    type: string
+    description: ""
+  termination_date__n:
+    required: false
+    type: string
+    description: ""
+  termination_date__lte:
+    required: false
+    type: string
+    description: ""
+  termination_date__lt:
+    required: false
+    type: string
+    description: ""
+  termination_date__gte:
+    required: false
+    type: string
+    description: ""
+  termination_date__gt:
     required: false
     type: string
     description: ""
@@ -229,6 +305,50 @@ parameters:
     required: false
     type: string
     description: ""
+  created__n:
+    required: false
+    type: string
+    description: ""
+  created__lte:
+    required: false
+    type: string
+    description: ""
+  created__lt:
+    required: false
+    type: string
+    description: ""
+  created__gte:
+    required: false
+    type: string
+    description: ""
+  created__gt:
+    required: false
+    type: string
+    description: ""
+  last_updated__n:
+    required: false
+    type: string
+    description: ""
+  last_updated__lte:
+    required: false
+    type: string
+    description: ""
+  last_updated__lt:
+    required: false
+    type: string
+    description: ""
+  last_updated__gte:
+    required: false
+    type: string
+    description: ""
+  last_updated__gt:
+    required: false
+    type: string
+    description: ""
+  tag__n:
+    required: false
+    type: string
+    description: ""
   tenant_group_id__n:
     required: false
     type: string
@@ -245,11 +365,27 @@ parameters:
     required: false
     type: string
     description: ""
+  contact__n:
+    required: false
+    type: string
+    description: ""
+  contact_role__n:
+    required: false
+    type: string
+    description: ""
+  contact_group__n:
+    required: false
+    type: string
+    description: ""
   provider_id__n:
     required: false
     type: string
     description: ""
   provider__n:
+    required: false
+    type: string
+    description: ""
+  provider_account_id__n:
     required: false
     type: string
     description: ""
@@ -293,10 +429,10 @@ parameters:
     required: false
     type: string
     description: ""
-  tag__n:
+  ordering:
     required: false
     type: string
-    description: ""
+    description: "Which field to use when ordering the results."
   limit:
     required: false
     type: integer
