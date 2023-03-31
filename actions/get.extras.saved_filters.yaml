@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.4
-description: "GET Ip Ranges"
+description: "GET Saved Filters"
 enabled: true
 entry_point: run.py
-name: get.ipam.ip_ranges
+name: get.extras.saved_filters
 parameters:
   endpoint_uri:
-    default: "/ipam/ip-ranges/"
+    default: "/extras/saved-filters/"
     immutable: true
     type: string
   http_verb:
@@ -21,31 +21,31 @@ parameters:
     required: false
     type: string
     description: ""
+  content_types:
+    required: false
+    type: string
+    description: ""
+  name:
+    required: false
+    type: string
+    description: ""
+  slug:
+    required: false
+    type: string
+    description: ""
   description:
     required: false
     type: string
     description: ""
-  tenant_group_id:
+  enabled:
     required: false
     type: string
     description: ""
-  tenant_group:
+  shared:
     required: false
     type: string
     description: ""
-  tenant_id:
-    required: false
-    type: string
-    description: ""
-  tenant:
-    required: false
-    type: string
-    description: ""
-  created:
-    required: false
-    type: string
-    description: ""
-  last_updated:
+  weight:
     required: false
     type: string
     description: ""
@@ -53,43 +53,19 @@ parameters:
     required: false
     type: string
     description: ""
-  tag:
+  content_type_id:
     required: false
     type: string
     description: ""
-  family:
-    required: false
-    type: integer
-    description: ""
-  start_address:
+  user_id:
     required: false
     type: string
     description: ""
-  end_address:
+  user:
     required: false
     type: string
     description: ""
-  contains:
-    required: false
-    type: string
-    description: ""
-  vrf_id:
-    required: false
-    type: string
-    description: ""
-  vrf:
-    required: false
-    type: string
-    description: ""
-  role_id:
-    required: false
-    type: string
-    description: ""
-  role:
-    required: false
-    type: string
-    description: ""
-  status:
+  usable:
     required: false
     type: string
     description: ""
@@ -110,6 +86,122 @@ parameters:
     type: string
     description: ""
   id__gt:
+    required: false
+    type: string
+    description: ""
+  content_types__n:
+    required: false
+    type: string
+    description: ""
+  content_types__ic:
+    required: false
+    type: string
+    description: ""
+  content_types__nic:
+    required: false
+    type: string
+    description: ""
+  content_types__iew:
+    required: false
+    type: string
+    description: ""
+  content_types__niew:
+    required: false
+    type: string
+    description: ""
+  content_types__isw:
+    required: false
+    type: string
+    description: ""
+  content_types__nisw:
+    required: false
+    type: string
+    description: ""
+  content_types__ie:
+    required: false
+    type: string
+    description: ""
+  content_types__nie:
+    required: false
+    type: string
+    description: ""
+  name__n:
+    required: false
+    type: string
+    description: ""
+  name__ic:
+    required: false
+    type: string
+    description: ""
+  name__nic:
+    required: false
+    type: string
+    description: ""
+  name__iew:
+    required: false
+    type: string
+    description: ""
+  name__niew:
+    required: false
+    type: string
+    description: ""
+  name__isw:
+    required: false
+    type: string
+    description: ""
+  name__nisw:
+    required: false
+    type: string
+    description: ""
+  name__ie:
+    required: false
+    type: string
+    description: ""
+  name__nie:
+    required: false
+    type: string
+    description: ""
+  name__empty:
+    required: false
+    type: string
+    description: ""
+  slug__n:
+    required: false
+    type: string
+    description: ""
+  slug__ic:
+    required: false
+    type: string
+    description: ""
+  slug__nic:
+    required: false
+    type: string
+    description: ""
+  slug__iew:
+    required: false
+    type: string
+    description: ""
+  slug__niew:
+    required: false
+    type: string
+    description: ""
+  slug__isw:
+    required: false
+    type: string
+    description: ""
+  slug__nisw:
+    required: false
+    type: string
+    description: ""
+  slug__ie:
+    required: false
+    type: string
+    description: ""
+  slug__nie:
+    required: false
+    type: string
+    description: ""
+  slug__empty:
     required: false
     type: string
     description: ""
@@ -153,83 +245,51 @@ parameters:
     required: false
     type: string
     description: ""
-  tenant_group_id__n:
+  weight__n:
     required: false
     type: string
     description: ""
-  tenant_group__n:
+  weight__lte:
     required: false
     type: string
     description: ""
-  tenant_id__n:
+  weight__lt:
     required: false
     type: string
     description: ""
-  tenant__n:
+  weight__gte:
     required: false
     type: string
     description: ""
-  created__n:
+  weight__gt:
     required: false
     type: string
     description: ""
-  created__lte:
+  content_type_id__n:
     required: false
     type: string
     description: ""
-  created__lt:
+  content_type_id__lte:
     required: false
     type: string
     description: ""
-  created__gte:
+  content_type_id__lt:
     required: false
     type: string
     description: ""
-  created__gt:
+  content_type_id__gte:
     required: false
     type: string
     description: ""
-  last_updated__n:
+  content_type_id__gt:
     required: false
     type: string
     description: ""
-  last_updated__lte:
+  user_id__n:
     required: false
     type: string
     description: ""
-  last_updated__lt:
-    required: false
-    type: string
-    description: ""
-  last_updated__gte:
-    required: false
-    type: string
-    description: ""
-  last_updated__gt:
-    required: false
-    type: string
-    description: ""
-  tag__n:
-    required: false
-    type: string
-    description: ""
-  vrf_id__n:
-    required: false
-    type: string
-    description: ""
-  vrf__n:
-    required: false
-    type: string
-    description: ""
-  role_id__n:
-    required: false
-    type: string
-    description: ""
-  role__n:
-    required: false
-    type: string
-    description: ""
-  status__n:
+  user__n:
     required: false
     type: string
     description: ""

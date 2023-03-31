@@ -233,6 +233,14 @@ parameters:
     required: false
     type: string
     description: ""
+  primary_ip4_id:
+    required: false
+    type: string
+    description: ""
+  primary_ip6_id:
+    required: false
+    type: string
+    description: ""
   id__n:
     required: false
     type: string
@@ -630,6 +638,14 @@ parameters:
     type: string
     description: ""
   virtual_chassis_id__n:
+    required: false
+    type: string
+    description: ""
+  primary_ip4_id__n:
+    required: false
+    type: string
+    description: ""
+  primary_ip6_id__n:
     required: false
     type: string
     description: ""

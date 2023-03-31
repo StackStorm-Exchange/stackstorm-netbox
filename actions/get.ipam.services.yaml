@@ -65,6 +65,14 @@ parameters:
     required: false
     type: string
     description: ""
+  ipaddress_id:
+    required: false
+    type: string
+    description: ""
+  ipaddress:
+    required: false
+    type: string
+    description: ""
   port:
     required: false
     type: integer
@@ -230,6 +238,14 @@ parameters:
     type: string
     description: ""
   virtual_machine__n:
+    required: false
+    type: string
+    description: ""
+  ipaddress_id__n:
+    required: false
+    type: string
+    description: ""
+  ipaddress__n:
     required: false
     type: string
     description: ""

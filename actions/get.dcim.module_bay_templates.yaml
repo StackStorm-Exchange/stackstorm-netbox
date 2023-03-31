@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.4
-description: "GET Ip Ranges"
+description: "GET Module Bay Templates"
 enabled: true
 entry_point: run.py
-name: get.ipam.ip_ranges
+name: get.dcim.module_bay_templates
 parameters:
   endpoint_uri:
-    default: "/ipam/ip-ranges/"
+    default: "/dcim/module-bay-templates/"
     immutable: true
     type: string
   http_verb:
@@ -21,23 +21,7 @@ parameters:
     required: false
     type: string
     description: ""
-  description:
-    required: false
-    type: string
-    description: ""
-  tenant_group_id:
-    required: false
-    type: string
-    description: ""
-  tenant_group:
-    required: false
-    type: string
-    description: ""
-  tenant_id:
-    required: false
-    type: string
-    description: ""
-  tenant:
+  name:
     required: false
     type: string
     description: ""
@@ -53,43 +37,7 @@ parameters:
     required: false
     type: string
     description: ""
-  tag:
-    required: false
-    type: string
-    description: ""
-  family:
-    required: false
-    type: integer
-    description: ""
-  start_address:
-    required: false
-    type: string
-    description: ""
-  end_address:
-    required: false
-    type: string
-    description: ""
-  contains:
-    required: false
-    type: string
-    description: ""
-  vrf_id:
-    required: false
-    type: string
-    description: ""
-  vrf:
-    required: false
-    type: string
-    description: ""
-  role_id:
-    required: false
-    type: string
-    description: ""
-  role:
-    required: false
-    type: string
-    description: ""
-  status:
+  devicetype_id:
     required: false
     type: string
     description: ""
@@ -113,59 +61,43 @@ parameters:
     required: false
     type: string
     description: ""
-  description__n:
+  name__n:
     required: false
     type: string
     description: ""
-  description__ic:
+  name__ic:
     required: false
     type: string
     description: ""
-  description__nic:
+  name__nic:
     required: false
     type: string
     description: ""
-  description__iew:
+  name__iew:
     required: false
     type: string
     description: ""
-  description__niew:
+  name__niew:
     required: false
     type: string
     description: ""
-  description__isw:
+  name__isw:
     required: false
     type: string
     description: ""
-  description__nisw:
+  name__nisw:
     required: false
     type: string
     description: ""
-  description__ie:
+  name__ie:
     required: false
     type: string
     description: ""
-  description__nie:
+  name__nie:
     required: false
     type: string
     description: ""
-  description__empty:
-    required: false
-    type: string
-    description: ""
-  tenant_group_id__n:
-    required: false
-    type: string
-    description: ""
-  tenant_group__n:
-    required: false
-    type: string
-    description: ""
-  tenant_id__n:
-    required: false
-    type: string
-    description: ""
-  tenant__n:
+  name__empty:
     required: false
     type: string
     description: ""
@@ -209,27 +141,7 @@ parameters:
     required: false
     type: string
     description: ""
-  tag__n:
-    required: false
-    type: string
-    description: ""
-  vrf_id__n:
-    required: false
-    type: string
-    description: ""
-  vrf__n:
-    required: false
-    type: string
-    description: ""
-  role_id__n:
-    required: false
-    type: string
-    description: ""
-  role__n:
-    required: false
-    type: string
-    description: ""
-  status__n:
+  devicetype_id__n:
     required: false
     type: string
     description: ""

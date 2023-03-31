@@ -89,6 +89,14 @@ parameters:
     required: false
     type: string
     description: ""
+  l2vpn_id:
+    required: false
+    type: string
+    description: ""
+  l2vpn:
+    required: false
+    type: string
+    description: ""
   id__n:
     required: false
     type: string
@@ -318,6 +326,14 @@ parameters:
     type: string
     description: ""
   vrf__n:
+    required: false
+    type: string
+    description: ""
+  l2vpn_id__n:
+    required: false
+    type: string
+    description: ""
+  l2vpn__n:
     required: false
     type: string
     description: ""
