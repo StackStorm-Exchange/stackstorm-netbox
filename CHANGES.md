@@ -2,7 +2,7 @@
 
 ## 3.1.0
 
-- Updated spec as per v3.4.1
+- Updated spec as per v3.4.7
 
 ## 3.0.5
 
