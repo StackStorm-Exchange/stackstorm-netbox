@@ -73,5 +73,8 @@ class NetboxBaseAction(Action):
             )
 
         if r:
-            return {"raw": r.json(), "status": r.status_code}
+            if http_action == "delete":
+                return {"status": r.status_code}
+            else:
+                return {"raw": r.json(), "status": r.status_code}
         return {"raw": {}, "status": 404}
