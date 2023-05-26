@@ -73,7 +73,7 @@ class NetboxBaseAction(Action):
             )
 
         if r:
-            if http_action == "delete":
+            if r.status_code == 204:
                 return {"status": r.status_code}
             else:
                 return {"raw": r.json(), "status": r.status_code}
