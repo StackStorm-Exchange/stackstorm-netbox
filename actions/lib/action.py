@@ -1,5 +1,6 @@
 import requests
 from st2common.runners.base_action import Action
+from requests.exceptions import JSONDecodeError
 
 
 __all__ = [
@@ -72,6 +73,10 @@ class NetboxBaseAction(Action):
                 r.status_code)
             )
 
-        if r:
-            return {"raw": r.json(), "status": r.status_code}
-        return {"raw": {}, "status": 404}
+        try:
+            if r.status_code == 204:
+                return {"status": r.status_code}
+            else:
+                return {"raw": r.json(), "status": r.status_code}
+        except JSONDecodeError:
+            return {"error": "Invalid JSON response", "status": r.status_code}
