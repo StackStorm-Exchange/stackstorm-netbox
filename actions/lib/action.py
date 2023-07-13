@@ -71,6 +71,13 @@ class NetboxBaseAction(Action):
                 kwargs["id"],
                 r.status_code)
             )
+        try:
+            json_response = r.json()
+        except ValueError:
+            json_response = None
+            self.logger.debug("API did not return any JSON data")
+
+        return {"raw": json_response, "status": r.status_code}
 
         if r:
             return {"raw": r.json(), "status": r.status_code}
