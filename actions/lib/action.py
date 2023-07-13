@@ -71,6 +71,7 @@ class NetboxBaseAction(Action):
                 kwargs["id"],
                 r.status_code)
             )
+
         try:
             json_response = r.json()
         except ValueError:
