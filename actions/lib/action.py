@@ -79,7 +79,3 @@ class NetboxBaseAction(Action):
             self.logger.debug("API did not return any JSON data")
 
         return {"raw": json_response, "status": r.status_code}
-
-        if r:
-            return {"raw": r.json(), "status": r.status_code}
-        return {"raw": {}, "status": 404}
