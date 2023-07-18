@@ -1,5 +1,6 @@
 # Change Log
-
+## 3.0.6
+- Fixed a bug in the action.py file that causes a failure when it does not receive a response from the netbox api, as in cases of deleting interfaces
 ## 3.0.5
 
 - Bug fix: Tags fields need additional translation when modifying 
