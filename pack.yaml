@@ -7,7 +7,7 @@ keywords:
   - ipam
   - dcim
 version: 3.0.5
-author: John Anderson, Jefferson White
-email: lampwins@gmail.com
+author: Lucas Fontini  
+email: lucasfacsul@hotmail.com
 python_versions:
   - "3"
