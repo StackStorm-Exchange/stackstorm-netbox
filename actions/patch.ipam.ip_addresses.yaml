@@ -57,6 +57,10 @@ parameters:
     required: false
     type: string
     description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "comments"
   tags:
     required: false
     type: array
