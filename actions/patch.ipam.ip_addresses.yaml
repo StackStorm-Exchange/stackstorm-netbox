@@ -53,6 +53,10 @@ parameters:
     required: false
     type: string
     description: "DNS Name"
+  comments:
+    required: false
+    type: string
+    description: "comments"
   description:
     required: false
     type: string
