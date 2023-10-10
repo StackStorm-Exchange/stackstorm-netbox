@@ -1,4 +1,7 @@
 # Change Log
+## 3.0.8
+
+- change tags for string   patch.ipam.ip_addresses.yaml
 ## 3.0.7
 
 - include comments as a parameter   patch.ipam.ip_addresses.yaml
