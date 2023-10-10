@@ -63,8 +63,8 @@ parameters:
     description: "Description"
   tags:
     required: false
-    type: string
-    description: "string"
+    type: array
+    description: "array"
   custom_fields:
     required: false
     type: object
