@@ -154,7 +154,7 @@ def write_actions(version, actions):
         }
         rendered = template.render(template_vars)
         f = open(os.path.join(ACTIONS_DIR, f'{name}.yaml'), 'w')
-        f.write(rendered)
+        f.write(rendered + '\n')
         f.close()
 
     print(f'Wrote {len(actions)} actions to {ACTIONS_DIR}')
