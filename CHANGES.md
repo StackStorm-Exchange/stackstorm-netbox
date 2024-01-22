@@ -2,7 +2,11 @@
 
 ## 3.1.0
 
-- Updated spec as per v3.5.0
+- Updated spec as per v3.5.9
+
+## 3.0.6
+
+- Add exceptions on action.py
 
 ## 3.0.5
 
