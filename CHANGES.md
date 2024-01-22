@@ -4,6 +4,10 @@
 
 - Updated spec as per v3.4.7
 
+## 3.0.6
+
+- Add exceptions on action.py
+
 ## 3.0.5
 
 - Bug fix: Tags fields need additional translation when modifying 
