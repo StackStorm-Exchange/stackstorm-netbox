@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "DELETE Ip Ranges"
+# NetBox API version: 3.6.9
+description: "Delete a IP range object."
 enabled: true
 entry_point: run.py
 name: delete.ipam.ip_ranges
@@ -19,6 +19,6 @@ parameters:
     type: boolean
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to delete."
 runner_type: python-script

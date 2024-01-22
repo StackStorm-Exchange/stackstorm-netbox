@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PUT Export Templates"
+# NetBox API version: 3.6.9
+description: "Put a export template object."
 enabled: true
 entry_point: run.py
 name: put.extras.export_templates
@@ -32,29 +32,25 @@ parameters:
   template_code:
     required: true
     type: string
-    description: "Template code"
+    description: "Jinja2 template code. The list of objects being exported is passed as a context variable named &lt;code&gt;queryset&lt;/code&gt;."
   mime_type:
     required: false
     type: string
-    description: "MIME type"
+    description: "Defaults to &lt;code&gt;text/plain; charset=utf-8&lt;/code&gt;"
   file_extension:
     required: false
     type: string
-    description: "File extension"
+    description: "Extension to append to the rendered filename"
   as_attachment:
     required: false
     type: boolean
-    description: "As attachment"
+    description: "Download file as attachment"
   data_source:
     required: false
     type: integer
-    description: "Data source"
-  data_file:
-    required: false
-    type: integer
-    description: "Data file"
+    description: "Remote data source"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to put."
 runner_type: python-script

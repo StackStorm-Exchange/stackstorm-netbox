@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PATCH Device Bays"
+# NetBox API version: 3.6.9
+description: "Patch a device bay object."
 enabled: true
 entry_point: run.py
 name: patch.dcim.device_bays
@@ -28,7 +28,7 @@ parameters:
   label:
     required: false
     type: string
-    description: "Label"
+    description: "Physical label"
   description:
     required: false
     type: string
@@ -47,6 +47,6 @@ parameters:
     description: "Custom fields"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to patch."
 runner_type: python-script

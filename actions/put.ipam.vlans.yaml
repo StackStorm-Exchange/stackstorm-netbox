@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PUT Vlans"
+# NetBox API version: 3.6.9
+description: "Put a VLAN object."
 enabled: true
 entry_point: run.py
 name: put.ipam.vlans
@@ -20,15 +20,15 @@ parameters:
   site:
     required: false
     type: integer
-    description: "Site"
+    description: "The specific site to which this VLAN is assigned (if any)"
   group:
     required: false
     type: integer
-    description: "Group"
+    description: "VLAN group (optional)"
   vid:
     required: true
     type: integer
-    description: "ID"
+    description: "VLAN ID"
   name:
     required: true
     type: string
@@ -40,11 +40,15 @@ parameters:
   status:
     required: false
     type: string
-    description: "Status"
+    description: "Operational status of this VLAN
+
+* `active` - Active
+* `reserved` - Reserved
+* `deprecated` - Deprecated"
   role:
     required: false
     type: integer
-    description: "Role"
+    description: "The primary function of this VLAN"
   description:
     required: false
     type: string
@@ -63,6 +67,6 @@ parameters:
     description: "Custom fields"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to put."
 runner_type: python-script

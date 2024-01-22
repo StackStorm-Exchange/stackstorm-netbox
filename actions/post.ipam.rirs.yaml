@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "POST Rirs"
+# NetBox API version: 3.6.9
+description: "Post a list of RIR objects."
 enabled: true
 entry_point: run.py
 name: post.ipam.rirs

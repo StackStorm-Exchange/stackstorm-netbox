@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PUT Wireless Links"
+# NetBox API version: 3.6.9
+description: "Put a wireless link object."
 enabled: true
 entry_point: run.py
 name: put.wireless.wireless_links
@@ -20,19 +20,21 @@ parameters:
   interface_a:
     required: true
     type: integer
-    description: "Interface A"
+    description: "Interface a"
   interface_b:
     required: true
     type: integer
-    description: "Interface B"
+    description: "Interface b"
   ssid:
     required: false
     type: string
-    description: "SSID"
+    description: "Ssid"
   status:
     required: false
     type: string
-    description: "Status"
+    description: "* `connected` - Connected
+* `planned` - Planned
+* `decommissioning` - Decommissioning"
   tenant:
     required: false
     type: integer
@@ -40,11 +42,11 @@ parameters:
   auth_type:
     required: false
     type: string
-    description: "Auth Type"
+    description: "Authentication type"
   auth_cipher:
     required: false
     type: string
-    description: "Auth cipher"
+    description: "Authentication cipher"
   auth_psk:
     required: false
     type: string
@@ -67,6 +69,6 @@ parameters:
     description: "Custom fields"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to put."
 runner_type: python-script

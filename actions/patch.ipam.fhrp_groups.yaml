@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PATCH Fhrp Groups"
+# NetBox API version: 3.6.9
+description: "Patch a FHRP group object."
 enabled: true
 entry_point: run.py
 name: patch.ipam.fhrp_groups
@@ -24,11 +24,17 @@ parameters:
   protocol:
     required: false
     type: string
-    description: "Protocol"
+    description: "* `vrrp2` - VRRPv2
+* `vrrp3` - VRRPv3
+* `carp` - CARP
+* `clusterxl` - ClusterXL
+* `hsrp` - HSRP
+* `glbp` - GLBP
+* `other` - Other"
   group_id:
     required: false
     type: integer
-    description: "Group ID"
+    description: "Group id"
   auth_type:
     required: false
     type: string
@@ -55,6 +61,6 @@ parameters:
     description: "Custom fields"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to patch."
 runner_type: python-script

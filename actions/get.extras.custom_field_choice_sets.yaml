@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "Return all CablePaths which traverse a given pass-through port."
+# NetBox API version: 3.6.9
+description: "Get a custom field choice set object."
 enabled: true
 entry_point: run.py
-name: get.circuits.circuit_terminations.paths
+name: get.extras.custom_field_choice_sets
 parameters:
   endpoint_uri:
-    default: "/circuits/circuit-terminations/{{ id }}/paths/"
+    default: "/extras/custom-field-choice-sets/{{ id }}/"
     immutable: true
     type: string
   http_verb:
@@ -19,7 +19,7 @@ parameters:
     type: boolean
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object."
   save_in_key_store:
     type: boolean

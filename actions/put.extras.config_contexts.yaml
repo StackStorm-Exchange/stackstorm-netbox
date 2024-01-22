@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PUT Config Contexts"
+# NetBox API version: 3.6.9
+description: "Put a config context object."
 enabled: true
 entry_point: run.py
 name: put.extras.config_contexts
@@ -88,17 +88,13 @@ parameters:
   data_source:
     required: false
     type: integer
-    description: "Data source"
-  data_file:
-    required: false
-    type: integer
-    description: "Data file"
+    description: "Remote data source"
   data:
     required: true
     type: object
     description: "Data"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to put."
 runner_type: python-script

@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "POST Users"
+# NetBox API version: 3.6.9
+description: "Post a list of user objects."
 enabled: true
 entry_point: run.py
 name: post.users.users
@@ -20,7 +20,7 @@ parameters:
   username:
     required: true
     type: string
-    description: "Username"
+    description: "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
   password:
     required: true
     type: string
@@ -52,5 +52,5 @@ parameters:
   groups:
     required: false
     type: array
-    description: "Groups"
+    description: "The groups this user belongs to. A user will get all permissions granted to each of their groups."
 runner_type: python-script

@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "POST Ip Ranges"
+# NetBox API version: 3.6.9
+description: "Post a list of IP range objects."
 enabled: true
 entry_point: run.py
 name: post.ipam.ip_ranges
@@ -28,7 +28,7 @@ parameters:
   vrf:
     required: false
     type: integer
-    description: "VRF"
+    description: "Vrf"
   tenant:
     required: false
     type: integer
@@ -36,15 +36,15 @@ parameters:
   status:
     required: false
     type: string
-    description: "Status"
+    description: "Operational status of this range
+
+* `active` - Active
+* `reserved` - Reserved
+* `deprecated` - Deprecated"
   role:
     required: false
     type: integer
-    description: "Role"
-  mark_utilized:
-    required: false
-    type: boolean
-    description: "Mark utilized"
+    description: "The primary function of this range"
   description:
     required: false
     type: string
@@ -61,4 +61,8 @@ parameters:
     required: false
     type: object
     description: "Custom fields"
+  mark_utilized:
+    required: false
+    type: boolean
+    description: "Treat as 100% utilized"
 runner_type: python-script

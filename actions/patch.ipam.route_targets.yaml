@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PATCH Route Targets"
+# NetBox API version: 3.6.9
+description: "Patch a route target object."
 enabled: true
 entry_point: run.py
 name: patch.ipam.route_targets
@@ -20,7 +20,7 @@ parameters:
   name:
     required: false
     type: string
-    description: "Name"
+    description: "Route target value (formatted in accordance with RFC 4360)"
   tenant:
     required: false
     type: integer
@@ -43,6 +43,6 @@ parameters:
     description: "Custom fields"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to patch."
 runner_type: python-script

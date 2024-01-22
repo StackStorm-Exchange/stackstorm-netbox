@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PATCH Asns"
+# NetBox API version: 3.6.9
+description: "Patch a ASN object."
 enabled: true
 entry_point: run.py
 name: patch.ipam.asns
@@ -20,11 +20,11 @@ parameters:
   asn:
     required: false
     type: integer
-    description: "ASN"
+    description: "16- or 32-bit autonomous system number"
   rir:
     required: false
     type: integer
-    description: "RIR"
+    description: "Regional Internet Registry responsible for this AS number space"
   tenant:
     required: false
     type: integer
@@ -47,6 +47,6 @@ parameters:
     description: "Custom fields"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to patch."
 runner_type: python-script
