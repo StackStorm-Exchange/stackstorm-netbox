@@ -232,8 +232,8 @@ def main():
     # Delete all existing actions
     delete_actions()
     # Write actions to file
-    version = spec['info']['version'].split(' ')[0]  # parses '3.6.9 (3.6)' to '3.6.9'
-    write_actions(version, actions)
+    versions = spec['info']['version'].split(' ')[0].split('.')
+    write_actions(f'{versions[0]}.{versions[1]}', actions)
 
 
 if __name__ == '__main__':
