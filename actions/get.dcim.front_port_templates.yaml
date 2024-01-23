@@ -20,123 +20,123 @@ parameters:
   color:
     required: 
     type: 
-    description: ""
+    description: "Color"
   color__empty:
     required: 
     type: 
-    description: ""
+    description: "Color is empty/null (boolean)"
   color__ic:
     required: 
     type: 
-    description: ""
+    description: "Color contains (case-insensitive)"
   color__ie:
     required: 
     type: 
-    description: ""
+    description: "Color exact match (case-insensitive)"
   color__iew:
     required: 
     type: 
-    description: ""
+    description: "Color ends with (case-insensitive)"
   color__isw:
     required: 
     type: 
-    description: ""
+    description: "Color starts with (case-sensitive)"
   color__n:
     required: 
     type: 
-    description: ""
+    description: "Color not equal to"
   color__nic:
     required: 
     type: 
-    description: ""
+    description: "Color does not contain (case-insensitive)"
   color__nie:
     required: 
     type: 
-    description: ""
+    description: "Color inverse exact match (case-insensitive)"
   color__niew:
     required: 
     type: 
-    description: ""
+    description: "Color does not end with (case-insensitive)"
   color__nisw:
     required: 
     type: 
-    description: ""
+    description: "Color does not start with (case-sensitive)"
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__empty:
     required: 
     type: 
-    description: ""
+    description: "Created is empty/null (boolean)"
   created__gt:
     required: 
     type: 
-    description: ""
+    description: "Created greater than"
   created__gte:
     required: 
     type: 
-    description: ""
+    description: "Created greater than or equal to"
   created__lt:
     required: 
     type: 
-    description: ""
+    description: "Created less than"
   created__lte:
     required: 
     type: 
-    description: ""
+    description: "Created less than or equal to"
   created__n:
     required: 
     type: 
-    description: ""
+    description: "Created not equal to"
   created_by_request:
     required: 
     type: 
-    description: ""
+    description: "Created_by_request"
   description:
     required: 
     type: 
-    description: ""
+    description: "Description"
   description__empty:
     required: 
     type: 
-    description: ""
+    description: "Description is empty/null (boolean)"
   description__ic:
     required: 
     type: 
-    description: ""
+    description: "Description contains (case-insensitive)"
   description__ie:
     required: 
     type: 
-    description: ""
+    description: "Description exact match (case-insensitive)"
   description__iew:
     required: 
     type: 
-    description: ""
+    description: "Description ends with (case-insensitive)"
   description__isw:
     required: 
     type: 
-    description: ""
+    description: "Description starts with (case-sensitive)"
   description__n:
     required: 
     type: 
-    description: ""
+    description: "Description not equal to"
   description__nic:
     required: 
     type: 
-    description: ""
+    description: "Description does not contain (case-insensitive)"
   description__nie:
     required: 
     type: 
-    description: ""
+    description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: 
     type: 
-    description: ""
+    description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: 
     type: 
-    description: ""
+    description: "Description does not start with (case-sensitive)"
   devicetype_id:
     required: 
     type: 
@@ -144,63 +144,63 @@ parameters:
   devicetype_id__n:
     required: 
     type: 
-    description: "Device type (ID)"
+    description: "Devicetype_id not equal to"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   last_updated:
     required: 
     type: 
-    description: ""
+    description: "Last_updated"
   last_updated__empty:
     required: 
     type: 
-    description: ""
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than"
   last_updated__gte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than"
   last_updated__lte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than or equal to"
   last_updated__n:
     required: 
     type: 
-    description: ""
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: 
@@ -208,7 +208,7 @@ parameters:
   modified_by_request:
     required: 
     type: 
-    description: ""
+    description: "Modified_by_request"
   moduletype_id:
     required: 
     type: 
@@ -216,51 +216,51 @@ parameters:
   moduletype_id__n:
     required: 
     type: 
-    description: "Module type (ID)"
+    description: "Moduletype_id not equal to"
   name:
     required: 
     type: 
-    description: ""
+    description: "Name"
   name__empty:
     required: 
     type: 
-    description: ""
+    description: "Name is empty/null (boolean)"
   name__ic:
     required: 
     type: 
-    description: ""
+    description: "Name contains (case-insensitive)"
   name__ie:
     required: 
     type: 
-    description: ""
+    description: "Name exact match (case-insensitive)"
   name__iew:
     required: 
     type: 
-    description: ""
+    description: "Name ends with (case-insensitive)"
   name__isw:
     required: 
     type: 
-    description: ""
+    description: "Name starts with (case-sensitive)"
   name__n:
     required: 
     type: 
-    description: ""
+    description: "Name not equal to"
   name__nic:
     required: 
     type: 
-    description: ""
+    description: "Name does not contain (case-insensitive)"
   name__nie:
     required: 
     type: 
-    description: ""
+    description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: 
     type: 
-    description: ""
+    description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: 
     type: 
-    description: ""
+    description: "Name does not start with (case-sensitive)"
   offset:
     required: false
     type: 
@@ -276,15 +276,15 @@ parameters:
   type:
     required: 
     type: 
-    description: ""
+    description: "Type"
   type__n:
     required: 
     type: 
-    description: ""
+    description: "Type not equal to"
   updated_by_request:
     required: 
     type: 
-    description: ""
+    description: "Updated_by_request"
   save_in_key_store:
     type: boolean
     default: false

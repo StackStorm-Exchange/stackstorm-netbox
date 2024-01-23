@@ -20,51 +20,51 @@ parameters:
   assigned_object_type:
     required: 
     type: 
-    description: ""
+    description: "Assigned_object_type"
   assigned_object_type__n:
     required: 
     type: 
-    description: ""
+    description: "Assigned_object_type not equal to"
   assigned_object_type_id:
     required: 
     type: 
-    description: ""
+    description: "Assigned_object_type_id"
   assigned_object_type_id__n:
     required: 
     type: 
-    description: ""
+    description: "Assigned_object_type_id not equal to"
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__empty:
     required: 
     type: 
-    description: ""
+    description: "Created is empty/null (boolean)"
   created__gt:
     required: 
     type: 
-    description: ""
+    description: "Created greater than"
   created__gte:
     required: 
     type: 
-    description: ""
+    description: "Created greater than or equal to"
   created__lt:
     required: 
     type: 
-    description: ""
+    description: "Created less than"
   created__lte:
     required: 
     type: 
-    description: ""
+    description: "Created less than or equal to"
   created__n:
     required: 
     type: 
-    description: ""
+    description: "Created not equal to"
   created_by_request:
     required: 
     type: 
-    description: ""
+    description: "Created_by_request"
   device:
     required: 
     type: 
@@ -72,7 +72,7 @@ parameters:
   device__n:
     required: 
     type: 
-    description: "Device (name)"
+    description: "Device not equal to"
   device_id:
     required: 
     type: 
@@ -80,35 +80,35 @@ parameters:
   device_id__n:
     required: 
     type: 
-    description: "Device (ID)"
+    description: "Device_id not equal to"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   interface:
     required: 
     type: 
@@ -116,7 +116,7 @@ parameters:
   interface__n:
     required: 
     type: 
-    description: "Interface (name)"
+    description: "Interface not equal to"
   interface_id:
     required: 
     type: 
@@ -124,7 +124,7 @@ parameters:
   interface_id__n:
     required: 
     type: 
-    description: "Interface (ID)"
+    description: "Interface_id not equal to"
   l2vpn:
     required: 
     type: 
@@ -132,7 +132,7 @@ parameters:
   l2vpn__n:
     required: 
     type: 
-    description: "L2VPN (slug)"
+    description: "L2vpn not equal to"
   l2vpn_id:
     required: 
     type: 
@@ -140,35 +140,35 @@ parameters:
   l2vpn_id__n:
     required: 
     type: 
-    description: "L2VPN (ID)"
+    description: "L2vpn_id not equal to"
   last_updated:
     required: 
     type: 
-    description: ""
+    description: "Last_updated"
   last_updated__empty:
     required: 
     type: 
-    description: ""
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than"
   last_updated__gte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than"
   last_updated__lte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than or equal to"
   last_updated__n:
     required: 
     type: 
-    description: ""
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: 
@@ -176,7 +176,7 @@ parameters:
   modified_by_request:
     required: 
     type: 
-    description: ""
+    description: "Modified_by_request"
   offset:
     required: false
     type: 
@@ -192,31 +192,31 @@ parameters:
   region:
     required: 
     type: 
-    description: ""
+    description: "Region"
   region_id:
     required: 
     type: 
-    description: ""
+    description: "Region_id"
   site:
     required: 
     type: 
-    description: ""
+    description: "Site"
   site_id:
     required: 
     type: 
-    description: ""
+    description: "Site_id"
   tag:
     required: 
     type: 
-    description: ""
+    description: "Tag"
   tag__n:
     required: 
     type: 
-    description: ""
+    description: "Tag not equal to"
   updated_by_request:
     required: 
     type: 
-    description: ""
+    description: "Updated_by_request"
   virtual_machine:
     required: 
     type: 
@@ -224,7 +224,7 @@ parameters:
   virtual_machine__n:
     required: 
     type: 
-    description: "Virtual machine (name)"
+    description: "Virtual_machine not equal to"
   virtual_machine_id:
     required: 
     type: 
@@ -232,7 +232,7 @@ parameters:
   virtual_machine_id__n:
     required: 
     type: 
-    description: "Virtual machine (ID)"
+    description: "Virtual_machine_id not equal to"
   vlan:
     required: 
     type: 
@@ -240,7 +240,7 @@ parameters:
   vlan__n:
     required: 
     type: 
-    description: "VLAN (name)"
+    description: "Vlan not equal to"
   vlan_id:
     required: 
     type: 
@@ -248,7 +248,7 @@ parameters:
   vlan_id__n:
     required: 
     type: 
-    description: "VLAN (ID)"
+    description: "Vlan_id not equal to"
   vlan_vid:
     required: 
     type: 
@@ -256,27 +256,27 @@ parameters:
   vlan_vid__empty:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid is empty/null (boolean)"
   vlan_vid__gt:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid greater than"
   vlan_vid__gte:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid greater than or equal to"
   vlan_vid__lt:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid less than"
   vlan_vid__lte:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid less than or equal to"
   vlan_vid__n:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid not equal to"
   vminterface:
     required: 
     type: 
@@ -284,7 +284,7 @@ parameters:
   vminterface__n:
     required: 
     type: 
-    description: "VM interface (name)"
+    description: "Vminterface not equal to"
   vminterface_id:
     required: 
     type: 
@@ -292,7 +292,7 @@ parameters:
   vminterface_id__n:
     required: 
     type: 
-    description: "VM Interface (ID)"
+    description: "Vminterface_id not equal to"
   save_in_key_store:
     type: boolean
     default: false

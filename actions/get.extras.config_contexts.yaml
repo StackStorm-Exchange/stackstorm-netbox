@@ -24,7 +24,7 @@ parameters:
   cluster_group__n:
     required: 
     type: 
-    description: "Cluster group (slug)"
+    description: "Cluster_group not equal to"
   cluster_group_id:
     required: 
     type: 
@@ -32,7 +32,7 @@ parameters:
   cluster_group_id__n:
     required: 
     type: 
-    description: "Cluster group"
+    description: "Cluster_group_id not equal to"
   cluster_id:
     required: 
     type: 
@@ -40,7 +40,7 @@ parameters:
   cluster_id__n:
     required: 
     type: 
-    description: "Cluster"
+    description: "Cluster_id not equal to"
   cluster_type:
     required: 
     type: 
@@ -48,7 +48,7 @@ parameters:
   cluster_type__n:
     required: 
     type: 
-    description: "Cluster type (slug)"
+    description: "Cluster_type not equal to"
   cluster_type_id:
     required: 
     type: 
@@ -56,39 +56,39 @@ parameters:
   cluster_type_id__n:
     required: 
     type: 
-    description: "Cluster type"
+    description: "Cluster_type_id not equal to"
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__empty:
     required: 
     type: 
-    description: ""
+    description: "Created is empty/null (boolean)"
   created__gt:
     required: 
     type: 
-    description: ""
+    description: "Created greater than"
   created__gte:
     required: 
     type: 
-    description: ""
+    description: "Created greater than or equal to"
   created__lt:
     required: 
     type: 
-    description: ""
+    description: "Created less than"
   created__lte:
     required: 
     type: 
-    description: ""
+    description: "Created less than or equal to"
   created__n:
     required: 
     type: 
-    description: ""
+    description: "Created not equal to"
   created_by_request:
     required: 
     type: 
-    description: ""
+    description: "Created_by_request"
   data_file_id:
     required: 
     type: 
@@ -96,7 +96,7 @@ parameters:
   data_file_id__n:
     required: 
     type: 
-    description: "Data file (ID)"
+    description: "Data_file_id not equal to"
   data_source_id:
     required: 
     type: 
@@ -104,79 +104,79 @@ parameters:
   data_source_id__n:
     required: 
     type: 
-    description: "Data source (ID)"
+    description: "Data_source_id not equal to"
   data_synced:
     required: 
     type: 
-    description: ""
+    description: "Data_synced"
   data_synced__empty:
     required: 
     type: 
-    description: ""
+    description: "Data_synced is empty/null (boolean)"
   data_synced__gt:
     required: 
     type: 
-    description: ""
+    description: "Data_synced greater than"
   data_synced__gte:
     required: 
     type: 
-    description: ""
+    description: "Data_synced greater than or equal to"
   data_synced__lt:
     required: 
     type: 
-    description: ""
+    description: "Data_synced less than"
   data_synced__lte:
     required: 
     type: 
-    description: ""
+    description: "Data_synced less than or equal to"
   data_synced__n:
     required: 
     type: 
-    description: ""
+    description: "Data_synced not equal to"
   description:
     required: 
     type: 
-    description: ""
+    description: "Description"
   description__empty:
     required: 
     type: 
-    description: ""
+    description: "Description is empty/null (boolean)"
   description__ic:
     required: 
     type: 
-    description: ""
+    description: "Description contains (case-insensitive)"
   description__ie:
     required: 
     type: 
-    description: ""
+    description: "Description exact match (case-insensitive)"
   description__iew:
     required: 
     type: 
-    description: ""
+    description: "Description ends with (case-insensitive)"
   description__isw:
     required: 
     type: 
-    description: ""
+    description: "Description starts with (case-sensitive)"
   description__n:
     required: 
     type: 
-    description: ""
+    description: "Description not equal to"
   description__nic:
     required: 
     type: 
-    description: ""
+    description: "Description does not contain (case-insensitive)"
   description__nie:
     required: 
     type: 
-    description: ""
+    description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: 
     type: 
-    description: ""
+    description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: 
     type: 
-    description: ""
+    description: "Description does not start with (case-sensitive)"
   device_type_id:
     required: 
     type: 
@@ -184,67 +184,67 @@ parameters:
   device_type_id__n:
     required: 
     type: 
-    description: "Device type"
+    description: "Device_type_id not equal to"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   is_active:
     required: 
     type: 
-    description: ""
+    description: "Is_active"
   last_updated:
     required: 
     type: 
-    description: ""
+    description: "Last_updated"
   last_updated__empty:
     required: 
     type: 
-    description: ""
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than"
   last_updated__gte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than"
   last_updated__lte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than or equal to"
   last_updated__n:
     required: 
     type: 
-    description: ""
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: 
@@ -256,7 +256,7 @@ parameters:
   location__n:
     required: 
     type: 
-    description: "Location (slug)"
+    description: "Location not equal to"
   location_id:
     required: 
     type: 
@@ -264,55 +264,55 @@ parameters:
   location_id__n:
     required: 
     type: 
-    description: "Location"
+    description: "Location_id not equal to"
   modified_by_request:
     required: 
     type: 
-    description: ""
+    description: "Modified_by_request"
   name:
     required: 
     type: 
-    description: ""
+    description: "Name"
   name__empty:
     required: 
     type: 
-    description: ""
+    description: "Name is empty/null (boolean)"
   name__ic:
     required: 
     type: 
-    description: ""
+    description: "Name contains (case-insensitive)"
   name__ie:
     required: 
     type: 
-    description: ""
+    description: "Name exact match (case-insensitive)"
   name__iew:
     required: 
     type: 
-    description: ""
+    description: "Name ends with (case-insensitive)"
   name__isw:
     required: 
     type: 
-    description: ""
+    description: "Name starts with (case-sensitive)"
   name__n:
     required: 
     type: 
-    description: ""
+    description: "Name not equal to"
   name__nic:
     required: 
     type: 
-    description: ""
+    description: "Name does not contain (case-insensitive)"
   name__nie:
     required: 
     type: 
-    description: ""
+    description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: 
     type: 
-    description: ""
+    description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: 
     type: 
-    description: ""
+    description: "Name does not start with (case-sensitive)"
   offset:
     required: false
     type: 
@@ -328,7 +328,7 @@ parameters:
   platform__n:
     required: 
     type: 
-    description: "Platform (slug)"
+    description: "Platform not equal to"
   platform_id:
     required: 
     type: 
@@ -336,7 +336,7 @@ parameters:
   platform_id__n:
     required: 
     type: 
-    description: "Platform"
+    description: "Platform_id not equal to"
   q:
     required: 
     type: 
@@ -348,7 +348,7 @@ parameters:
   region__n:
     required: 
     type: 
-    description: "Region (slug)"
+    description: "Region not equal to"
   region_id:
     required: 
     type: 
@@ -356,7 +356,7 @@ parameters:
   region_id__n:
     required: 
     type: 
-    description: "Region"
+    description: "Region_id not equal to"
   role:
     required: 
     type: 
@@ -364,7 +364,7 @@ parameters:
   role__n:
     required: 
     type: 
-    description: "Role (slug)"
+    description: "Role not equal to"
   role_id:
     required: 
     type: 
@@ -372,7 +372,7 @@ parameters:
   role_id__n:
     required: 
     type: 
-    description: "Role"
+    description: "Role_id not equal to"
   site:
     required: 
     type: 
@@ -380,7 +380,7 @@ parameters:
   site__n:
     required: 
     type: 
-    description: "Site (slug)"
+    description: "Site not equal to"
   site_group:
     required: 
     type: 
@@ -388,7 +388,7 @@ parameters:
   site_group__n:
     required: 
     type: 
-    description: "Site group (slug)"
+    description: "Site_group not equal to"
   site_group_id:
     required: 
     type: 
@@ -396,7 +396,7 @@ parameters:
   site_group_id__n:
     required: 
     type: 
-    description: "Site group"
+    description: "Site_group_id not equal to"
   site_id:
     required: 
     type: 
@@ -404,7 +404,7 @@ parameters:
   site_id__n:
     required: 
     type: 
-    description: "Site"
+    description: "Site_id not equal to"
   tag:
     required: 
     type: 
@@ -412,7 +412,7 @@ parameters:
   tag__n:
     required: 
     type: 
-    description: "Tag (slug)"
+    description: "Tag not equal to"
   tag_id:
     required: 
     type: 
@@ -420,7 +420,7 @@ parameters:
   tag_id__n:
     required: 
     type: 
-    description: "Tag"
+    description: "Tag_id not equal to"
   tenant:
     required: 
     type: 
@@ -428,7 +428,7 @@ parameters:
   tenant__n:
     required: 
     type: 
-    description: "Tenant (slug)"
+    description: "Tenant not equal to"
   tenant_group:
     required: 
     type: 
@@ -436,7 +436,7 @@ parameters:
   tenant_group__n:
     required: 
     type: 
-    description: "Tenant group (slug)"
+    description: "Tenant_group not equal to"
   tenant_group_id:
     required: 
     type: 
@@ -444,7 +444,7 @@ parameters:
   tenant_group_id__n:
     required: 
     type: 
-    description: "Tenant group"
+    description: "Tenant_group_id not equal to"
   tenant_id:
     required: 
     type: 
@@ -452,11 +452,11 @@ parameters:
   tenant_id__n:
     required: 
     type: 
-    description: "Tenant"
+    description: "Tenant_id not equal to"
   updated_by_request:
     required: 
     type: 
-    description: ""
+    description: "Updated_by_request"
   save_in_key_store:
     type: boolean
     default: false

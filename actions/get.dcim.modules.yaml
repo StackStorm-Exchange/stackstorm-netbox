@@ -20,123 +20,123 @@ parameters:
   asset_tag:
     required: 
     type: 
-    description: ""
+    description: "Asset_tag"
   asset_tag__empty:
     required: 
     type: 
-    description: ""
+    description: "Asset_tag is empty/null (boolean)"
   asset_tag__ic:
     required: 
     type: 
-    description: ""
+    description: "Asset_tag contains (case-insensitive)"
   asset_tag__ie:
     required: 
     type: 
-    description: ""
+    description: "Asset_tag exact match (case-insensitive)"
   asset_tag__iew:
     required: 
     type: 
-    description: ""
+    description: "Asset_tag ends with (case-insensitive)"
   asset_tag__isw:
     required: 
     type: 
-    description: ""
+    description: "Asset_tag starts with (case-sensitive)"
   asset_tag__n:
     required: 
     type: 
-    description: ""
+    description: "Asset_tag not equal to"
   asset_tag__nic:
     required: 
     type: 
-    description: ""
+    description: "Asset_tag does not contain (case-insensitive)"
   asset_tag__nie:
     required: 
     type: 
-    description: ""
+    description: "Asset_tag inverse exact match (case-insensitive)"
   asset_tag__niew:
     required: 
     type: 
-    description: ""
+    description: "Asset_tag does not end with (case-insensitive)"
   asset_tag__nisw:
     required: 
     type: 
-    description: ""
+    description: "Asset_tag does not start with (case-sensitive)"
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__empty:
     required: 
     type: 
-    description: ""
+    description: "Created is empty/null (boolean)"
   created__gt:
     required: 
     type: 
-    description: ""
+    description: "Created greater than"
   created__gte:
     required: 
     type: 
-    description: ""
+    description: "Created greater than or equal to"
   created__lt:
     required: 
     type: 
-    description: ""
+    description: "Created less than"
   created__lte:
     required: 
     type: 
-    description: ""
+    description: "Created less than or equal to"
   created__n:
     required: 
     type: 
-    description: ""
+    description: "Created not equal to"
   created_by_request:
     required: 
     type: 
-    description: ""
+    description: "Created_by_request"
   description:
     required: 
     type: 
-    description: ""
+    description: "Description"
   description__empty:
     required: 
     type: 
-    description: ""
+    description: "Description is empty/null (boolean)"
   description__ic:
     required: 
     type: 
-    description: ""
+    description: "Description contains (case-insensitive)"
   description__ie:
     required: 
     type: 
-    description: ""
+    description: "Description exact match (case-insensitive)"
   description__iew:
     required: 
     type: 
-    description: ""
+    description: "Description ends with (case-insensitive)"
   description__isw:
     required: 
     type: 
-    description: ""
+    description: "Description starts with (case-sensitive)"
   description__n:
     required: 
     type: 
-    description: ""
+    description: "Description not equal to"
   description__nic:
     required: 
     type: 
-    description: ""
+    description: "Description does not contain (case-insensitive)"
   description__nie:
     required: 
     type: 
-    description: ""
+    description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: 
     type: 
-    description: ""
+    description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: 
     type: 
-    description: ""
+    description: "Description does not start with (case-sensitive)"
   device_id:
     required: 
     type: 
@@ -144,63 +144,63 @@ parameters:
   device_id__n:
     required: 
     type: 
-    description: "Device (ID)"
+    description: "Device_id not equal to"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   last_updated:
     required: 
     type: 
-    description: ""
+    description: "Last_updated"
   last_updated__empty:
     required: 
     type: 
-    description: ""
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than"
   last_updated__gte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than"
   last_updated__lte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than or equal to"
   last_updated__n:
     required: 
     type: 
-    description: ""
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: 
@@ -212,7 +212,7 @@ parameters:
   manufacturer__n:
     required: 
     type: 
-    description: "Manufacturer (slug)"
+    description: "Manufacturer not equal to"
   manufacturer_id:
     required: 
     type: 
@@ -220,11 +220,11 @@ parameters:
   manufacturer_id__n:
     required: 
     type: 
-    description: "Manufacturer (ID)"
+    description: "Manufacturer_id not equal to"
   modified_by_request:
     required: 
     type: 
-    description: ""
+    description: "Modified_by_request"
   module_bay_id:
     required: 
     type: 
@@ -232,7 +232,7 @@ parameters:
   module_bay_id__n:
     required: 
     type: 
-    description: "Module Bay (ID)"
+    description: "Module_bay_id not equal to"
   module_type:
     required: 
     type: 
@@ -240,7 +240,7 @@ parameters:
   module_type__n:
     required: 
     type: 
-    description: "Module type (model)"
+    description: "Module_type not equal to"
   module_type_id:
     required: 
     type: 
@@ -248,7 +248,7 @@ parameters:
   module_type_id__n:
     required: 
     type: 
-    description: "Module type (ID)"
+    description: "Module_type_id not equal to"
   offset:
     required: false
     type: 
@@ -264,67 +264,67 @@ parameters:
   serial:
     required: 
     type: 
-    description: ""
+    description: "Serial"
   serial__empty:
     required: 
     type: 
-    description: ""
+    description: "Serial is empty/null (boolean)"
   serial__ic:
     required: 
     type: 
-    description: ""
+    description: "Serial contains (case-insensitive)"
   serial__ie:
     required: 
     type: 
-    description: ""
+    description: "Serial exact match (case-insensitive)"
   serial__iew:
     required: 
     type: 
-    description: ""
+    description: "Serial ends with (case-insensitive)"
   serial__isw:
     required: 
     type: 
-    description: ""
+    description: "Serial starts with (case-sensitive)"
   serial__n:
     required: 
     type: 
-    description: ""
+    description: "Serial not equal to"
   serial__nic:
     required: 
     type: 
-    description: ""
+    description: "Serial does not contain (case-insensitive)"
   serial__nie:
     required: 
     type: 
-    description: ""
+    description: "Serial inverse exact match (case-insensitive)"
   serial__niew:
     required: 
     type: 
-    description: ""
+    description: "Serial does not end with (case-insensitive)"
   serial__nisw:
     required: 
     type: 
-    description: ""
+    description: "Serial does not start with (case-sensitive)"
   status:
     required: 
     type: 
-    description: ""
+    description: "Status"
   status__n:
     required: 
     type: 
-    description: ""
+    description: "Status not equal to"
   tag:
     required: 
     type: 
-    description: ""
+    description: "Tag"
   tag__n:
     required: 
     type: 
-    description: ""
+    description: "Tag not equal to"
   updated_by_request:
     required: 
     type: 
-    description: ""
+    description: "Updated_by_request"
   save_in_key_store:
     type: boolean
     default: false

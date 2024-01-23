@@ -20,47 +20,47 @@ parameters:
   cable:
     required: 
     type: 
-    description: ""
+    description: "Cable"
   cable__n:
     required: 
     type: 
-    description: ""
+    description: "Cable not equal to"
   cable_end:
     required: 
     type: 
-    description: ""
+    description: "Cable_end"
   cable_end__n:
     required: 
     type: 
-    description: ""
+    description: "Cable_end not equal to"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   limit:
     required: false
     type: 
@@ -76,39 +76,39 @@ parameters:
   termination_id:
     required: 
     type: 
-    description: ""
+    description: "Termination_id"
   termination_id__empty:
     required: 
     type: 
-    description: ""
+    description: "Termination_id is empty/null (boolean)"
   termination_id__gt:
     required: 
     type: 
-    description: ""
+    description: "Termination_id greater than"
   termination_id__gte:
     required: 
     type: 
-    description: ""
+    description: "Termination_id greater than or equal to"
   termination_id__lt:
     required: 
     type: 
-    description: ""
+    description: "Termination_id less than"
   termination_id__lte:
     required: 
     type: 
-    description: ""
+    description: "Termination_id less than or equal to"
   termination_id__n:
     required: 
     type: 
-    description: ""
+    description: "Termination_id not equal to"
   termination_type:
     required: 
     type: 
-    description: ""
+    description: "Termination_type"
   termination_type__n:
     required: 
     type: 
-    description: ""
+    description: "Termination_type not equal to"
   save_in_key_store:
     type: boolean
     default: false

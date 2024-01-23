@@ -20,79 +20,79 @@ parameters:
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__empty:
     required: 
     type: 
-    description: ""
+    description: "Created is empty/null (boolean)"
   created__gt:
     required: 
     type: 
-    description: ""
+    description: "Created greater than"
   created__gte:
     required: 
     type: 
-    description: ""
+    description: "Created greater than or equal to"
   created__lt:
     required: 
     type: 
-    description: ""
+    description: "Created less than"
   created__lte:
     required: 
     type: 
-    description: ""
+    description: "Created less than or equal to"
   created__n:
     required: 
     type: 
-    description: ""
+    description: "Created not equal to"
   created_by_request:
     required: 
     type: 
-    description: ""
+    description: "Created_by_request"
   description:
     required: 
     type: 
-    description: ""
+    description: "Description"
   description__empty:
     required: 
     type: 
-    description: ""
+    description: "Description is empty/null (boolean)"
   description__ic:
     required: 
     type: 
-    description: ""
+    description: "Description contains (case-insensitive)"
   description__ie:
     required: 
     type: 
-    description: ""
+    description: "Description exact match (case-insensitive)"
   description__iew:
     required: 
     type: 
-    description: ""
+    description: "Description ends with (case-insensitive)"
   description__isw:
     required: 
     type: 
-    description: ""
+    description: "Description starts with (case-sensitive)"
   description__n:
     required: 
     type: 
-    description: ""
+    description: "Description not equal to"
   description__nic:
     required: 
     type: 
-    description: ""
+    description: "Description does not contain (case-insensitive)"
   description__nie:
     required: 
     type: 
-    description: ""
+    description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: 
     type: 
-    description: ""
+    description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: 
     type: 
-    description: ""
+    description: "Description does not start with (case-sensitive)"
   device:
     required: 
     type: 
@@ -100,7 +100,7 @@ parameters:
   device__n:
     required: 
     type: 
-    description: "Device model"
+    description: "Device not equal to"
   device_id:
     required: 
     type: 
@@ -108,7 +108,7 @@ parameters:
   device_id__n:
     required: 
     type: 
-    description: "VDC (ID)"
+    description: "Device_id not equal to"
   has_primary_ip:
     required: 
     type: 
@@ -116,59 +116,59 @@ parameters:
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   last_updated:
     required: 
     type: 
-    description: ""
+    description: "Last_updated"
   last_updated__empty:
     required: 
     type: 
-    description: ""
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than"
   last_updated__gte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than"
   last_updated__lte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than or equal to"
   last_updated__n:
     required: 
     type: 
-    description: ""
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: 
@@ -176,51 +176,51 @@ parameters:
   modified_by_request:
     required: 
     type: 
-    description: ""
+    description: "Modified_by_request"
   name:
     required: 
     type: 
-    description: ""
+    description: "Name"
   name__empty:
     required: 
     type: 
-    description: ""
+    description: "Name is empty/null (boolean)"
   name__ic:
     required: 
     type: 
-    description: ""
+    description: "Name contains (case-insensitive)"
   name__ie:
     required: 
     type: 
-    description: ""
+    description: "Name exact match (case-insensitive)"
   name__iew:
     required: 
     type: 
-    description: ""
+    description: "Name ends with (case-insensitive)"
   name__isw:
     required: 
     type: 
-    description: ""
+    description: "Name starts with (case-sensitive)"
   name__n:
     required: 
     type: 
-    description: ""
+    description: "Name not equal to"
   name__nic:
     required: 
     type: 
-    description: ""
+    description: "Name does not contain (case-insensitive)"
   name__nie:
     required: 
     type: 
-    description: ""
+    description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: 
     type: 
-    description: ""
+    description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: 
     type: 
-    description: ""
+    description: "Name does not start with (case-sensitive)"
   offset:
     required: false
     type: 
@@ -236,7 +236,7 @@ parameters:
   primary_ip4_id__n:
     required: 
     type: 
-    description: "Primary IPv4 (ID)"
+    description: "Primary_ip4_id not equal to"
   primary_ip6_id:
     required: 
     type: 
@@ -244,7 +244,7 @@ parameters:
   primary_ip6_id__n:
     required: 
     type: 
-    description: "Primary IPv6 (ID)"
+    description: "Primary_ip6_id not equal to"
   q:
     required: 
     type: 
@@ -252,19 +252,19 @@ parameters:
   status:
     required: 
     type: 
-    description: ""
+    description: "Status"
   status__n:
     required: 
     type: 
-    description: ""
+    description: "Status not equal to"
   tag:
     required: 
     type: 
-    description: ""
+    description: "Tag"
   tag__n:
     required: 
     type: 
-    description: ""
+    description: "Tag not equal to"
   tenant:
     required: 
     type: 
@@ -272,7 +272,7 @@ parameters:
   tenant__n:
     required: 
     type: 
-    description: "Tenant (slug)"
+    description: "Tenant not equal to"
   tenant_group:
     required: 
     type: 
@@ -280,7 +280,7 @@ parameters:
   tenant_group__n:
     required: 
     type: 
-    description: "Tenant Group (slug)"
+    description: "Tenant_group not equal to"
   tenant_group_id:
     required: 
     type: 
@@ -288,7 +288,7 @@ parameters:
   tenant_group_id__n:
     required: 
     type: 
-    description: "Tenant Group (ID)"
+    description: "Tenant_group_id not equal to"
   tenant_id:
     required: 
     type: 
@@ -296,11 +296,11 @@ parameters:
   tenant_id__n:
     required: 
     type: 
-    description: "Tenant (ID)"
+    description: "Tenant_id not equal to"
   updated_by_request:
     required: 
     type: 
-    description: ""
+    description: "Updated_by_request"
   save_in_key_store:
     type: boolean
     default: false

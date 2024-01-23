@@ -20,147 +20,147 @@ parameters:
   content_type_id:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id"
   content_type_id__empty:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id is empty/null (boolean)"
   content_type_id__gt:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id greater than"
   content_type_id__gte:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id greater than or equal to"
   content_type_id__lt:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id less than"
   content_type_id__lte:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id less than or equal to"
   content_type_id__n:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id not equal to"
   content_types:
     required: 
     type: 
-    description: ""
+    description: "Content_types"
   content_types__ic:
     required: 
     type: 
-    description: ""
+    description: "Content_types contains (case-insensitive)"
   content_types__ie:
     required: 
     type: 
-    description: ""
+    description: "Content_types exact match (case-insensitive)"
   content_types__iew:
     required: 
     type: 
-    description: ""
+    description: "Content_types ends with (case-insensitive)"
   content_types__isw:
     required: 
     type: 
-    description: ""
+    description: "Content_types starts with (case-sensitive)"
   content_types__n:
     required: 
     type: 
-    description: ""
+    description: "Content_types not equal to"
   content_types__nic:
     required: 
     type: 
-    description: ""
+    description: "Content_types does not contain (case-insensitive)"
   content_types__nie:
     required: 
     type: 
-    description: ""
+    description: "Content_types inverse exact match (case-insensitive)"
   content_types__niew:
     required: 
     type: 
-    description: ""
+    description: "Content_types does not end with (case-insensitive)"
   content_types__nisw:
     required: 
     type: 
-    description: ""
+    description: "Content_types does not start with (case-sensitive)"
   enabled:
     required: 
     type: 
-    description: ""
+    description: "Enabled"
   group_name:
     required: 
     type: 
-    description: ""
+    description: "Group_name"
   group_name__empty:
     required: 
     type: 
-    description: ""
+    description: "Group_name is empty/null (boolean)"
   group_name__ic:
     required: 
     type: 
-    description: ""
+    description: "Group_name contains (case-insensitive)"
   group_name__ie:
     required: 
     type: 
-    description: ""
+    description: "Group_name exact match (case-insensitive)"
   group_name__iew:
     required: 
     type: 
-    description: ""
+    description: "Group_name ends with (case-insensitive)"
   group_name__isw:
     required: 
     type: 
-    description: ""
+    description: "Group_name starts with (case-sensitive)"
   group_name__n:
     required: 
     type: 
-    description: ""
+    description: "Group_name not equal to"
   group_name__nic:
     required: 
     type: 
-    description: ""
+    description: "Group_name does not contain (case-insensitive)"
   group_name__nie:
     required: 
     type: 
-    description: ""
+    description: "Group_name inverse exact match (case-insensitive)"
   group_name__niew:
     required: 
     type: 
-    description: ""
+    description: "Group_name does not end with (case-insensitive)"
   group_name__nisw:
     required: 
     type: 
-    description: ""
+    description: "Group_name does not start with (case-sensitive)"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   limit:
     required: false
     type: 
@@ -168,131 +168,131 @@ parameters:
   link_text:
     required: 
     type: 
-    description: ""
+    description: "Link_text"
   link_text__ic:
     required: 
     type: 
-    description: ""
+    description: "Link_text contains (case-insensitive)"
   link_text__ie:
     required: 
     type: 
-    description: ""
+    description: "Link_text exact match (case-insensitive)"
   link_text__iew:
     required: 
     type: 
-    description: ""
+    description: "Link_text ends with (case-insensitive)"
   link_text__isw:
     required: 
     type: 
-    description: ""
+    description: "Link_text starts with (case-sensitive)"
   link_text__n:
     required: 
     type: 
-    description: ""
+    description: "Link_text not equal to"
   link_text__nic:
     required: 
     type: 
-    description: ""
+    description: "Link_text does not contain (case-insensitive)"
   link_text__nie:
     required: 
     type: 
-    description: ""
+    description: "Link_text inverse exact match (case-insensitive)"
   link_text__niew:
     required: 
     type: 
-    description: ""
+    description: "Link_text does not end with (case-insensitive)"
   link_text__nisw:
     required: 
     type: 
-    description: ""
+    description: "Link_text does not start with (case-sensitive)"
   link_url:
     required: 
     type: 
-    description: ""
+    description: "Link_url"
   link_url__ic:
     required: 
     type: 
-    description: ""
+    description: "Link_url contains (case-insensitive)"
   link_url__ie:
     required: 
     type: 
-    description: ""
+    description: "Link_url exact match (case-insensitive)"
   link_url__iew:
     required: 
     type: 
-    description: ""
+    description: "Link_url ends with (case-insensitive)"
   link_url__isw:
     required: 
     type: 
-    description: ""
+    description: "Link_url starts with (case-sensitive)"
   link_url__n:
     required: 
     type: 
-    description: ""
+    description: "Link_url not equal to"
   link_url__nic:
     required: 
     type: 
-    description: ""
+    description: "Link_url does not contain (case-insensitive)"
   link_url__nie:
     required: 
     type: 
-    description: ""
+    description: "Link_url inverse exact match (case-insensitive)"
   link_url__niew:
     required: 
     type: 
-    description: ""
+    description: "Link_url does not end with (case-insensitive)"
   link_url__nisw:
     required: 
     type: 
-    description: ""
+    description: "Link_url does not start with (case-sensitive)"
   name:
     required: 
     type: 
-    description: ""
+    description: "Name"
   name__empty:
     required: 
     type: 
-    description: ""
+    description: "Name is empty/null (boolean)"
   name__ic:
     required: 
     type: 
-    description: ""
+    description: "Name contains (case-insensitive)"
   name__ie:
     required: 
     type: 
-    description: ""
+    description: "Name exact match (case-insensitive)"
   name__iew:
     required: 
     type: 
-    description: ""
+    description: "Name ends with (case-insensitive)"
   name__isw:
     required: 
     type: 
-    description: ""
+    description: "Name starts with (case-sensitive)"
   name__n:
     required: 
     type: 
-    description: ""
+    description: "Name not equal to"
   name__nic:
     required: 
     type: 
-    description: ""
+    description: "Name does not contain (case-insensitive)"
   name__nie:
     required: 
     type: 
-    description: ""
+    description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: 
     type: 
-    description: ""
+    description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: 
     type: 
-    description: ""
+    description: "Name does not start with (case-sensitive)"
   new_window:
     required: 
     type: 
-    description: ""
+    description: "New_window"
   offset:
     required: false
     type: 
@@ -308,31 +308,31 @@ parameters:
   weight:
     required: 
     type: 
-    description: ""
+    description: "Weight"
   weight__empty:
     required: 
     type: 
-    description: ""
+    description: "Weight is empty/null (boolean)"
   weight__gt:
     required: 
     type: 
-    description: ""
+    description: "Weight greater than"
   weight__gte:
     required: 
     type: 
-    description: ""
+    description: "Weight greater than or equal to"
   weight__lt:
     required: 
     type: 
-    description: ""
+    description: "Weight less than"
   weight__lte:
     required: 
     type: 
-    description: ""
+    description: "Weight less than or equal to"
   weight__n:
     required: 
     type: 
-    description: ""
+    description: "Weight not equal to"
   save_in_key_store:
     type: boolean
     default: false

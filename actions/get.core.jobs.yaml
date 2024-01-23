@@ -20,83 +20,83 @@ parameters:
   completed:
     required: 
     type: 
-    description: ""
+    description: "Completed"
   completed__after:
     required: 
     type: 
-    description: ""
+    description: "Completed"
   completed__before:
     required: 
     type: 
-    description: ""
+    description: "Completed"
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__after:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__before:
     required: 
     type: 
-    description: ""
+    description: "Created"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   interval:
     required: 
     type: 
-    description: ""
+    description: "Interval"
   interval__empty:
     required: 
     type: 
-    description: ""
+    description: "Interval is empty/null (boolean)"
   interval__gt:
     required: 
     type: 
-    description: ""
+    description: "Interval greater than"
   interval__gte:
     required: 
     type: 
-    description: ""
+    description: "Interval greater than or equal to"
   interval__lt:
     required: 
     type: 
-    description: ""
+    description: "Interval less than"
   interval__lte:
     required: 
     type: 
-    description: ""
+    description: "Interval less than or equal to"
   interval__n:
     required: 
     type: 
-    description: ""
+    description: "Interval not equal to"
   limit:
     required: false
     type: 
@@ -104,83 +104,83 @@ parameters:
   name:
     required: 
     type: 
-    description: ""
+    description: "Name"
   name__empty:
     required: 
     type: 
-    description: ""
+    description: "Name is empty/null (boolean)"
   name__ic:
     required: 
     type: 
-    description: ""
+    description: "Name contains (case-insensitive)"
   name__ie:
     required: 
     type: 
-    description: ""
+    description: "Name exact match (case-insensitive)"
   name__iew:
     required: 
     type: 
-    description: ""
+    description: "Name ends with (case-insensitive)"
   name__isw:
     required: 
     type: 
-    description: ""
+    description: "Name starts with (case-sensitive)"
   name__n:
     required: 
     type: 
-    description: ""
+    description: "Name not equal to"
   name__nic:
     required: 
     type: 
-    description: ""
+    description: "Name does not contain (case-insensitive)"
   name__nie:
     required: 
     type: 
-    description: ""
+    description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: 
     type: 
-    description: ""
+    description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: 
     type: 
-    description: ""
+    description: "Name does not start with (case-sensitive)"
   object_id:
     required: 
     type: 
-    description: ""
+    description: "Object_id"
   object_id__empty:
     required: 
     type: 
-    description: ""
+    description: "Object_id is empty/null (boolean)"
   object_id__gt:
     required: 
     type: 
-    description: ""
+    description: "Object_id greater than"
   object_id__gte:
     required: 
     type: 
-    description: ""
+    description: "Object_id greater than or equal to"
   object_id__lt:
     required: 
     type: 
-    description: ""
+    description: "Object_id less than"
   object_id__lte:
     required: 
     type: 
-    description: ""
+    description: "Object_id less than or equal to"
   object_id__n:
     required: 
     type: 
-    description: ""
+    description: "Object_id not equal to"
   object_type:
     required: 
     type: 
-    description: ""
+    description: "Object_type"
   object_type__n:
     required: 
     type: 
-    description: ""
+    description: "Object_type not equal to"
   offset:
     required: false
     type: 
@@ -196,43 +196,43 @@ parameters:
   scheduled:
     required: 
     type: 
-    description: ""
+    description: "Scheduled"
   scheduled__after:
     required: 
     type: 
-    description: ""
+    description: "Scheduled"
   scheduled__before:
     required: 
     type: 
-    description: ""
+    description: "Scheduled"
   started:
     required: 
     type: 
-    description: ""
+    description: "Started"
   started__after:
     required: 
     type: 
-    description: ""
+    description: "Started"
   started__before:
     required: 
     type: 
-    description: ""
+    description: "Started"
   status:
     required: 
     type: 
-    description: ""
+    description: "Status"
   status__n:
     required: 
     type: 
-    description: ""
+    description: "Status not equal to"
   user:
     required: 
     type: 
-    description: ""
+    description: "User"
   user__n:
     required: 
     type: 
-    description: ""
+    description: "User not equal to"
   save_in_key_store:
     type: boolean
     default: false

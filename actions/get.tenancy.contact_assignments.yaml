@@ -24,55 +24,55 @@ parameters:
   contact_id__n:
     required: 
     type: 
-    description: "Contact (ID)"
+    description: "Contact_id not equal to"
   content_type:
     required: 
     type: 
-    description: ""
+    description: "Content_type"
   content_type__n:
     required: 
     type: 
-    description: ""
+    description: "Content_type not equal to"
   content_type_id:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id"
   content_type_id__n:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id not equal to"
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__empty:
     required: 
     type: 
-    description: ""
+    description: "Created is empty/null (boolean)"
   created__gt:
     required: 
     type: 
-    description: ""
+    description: "Created greater than"
   created__gte:
     required: 
     type: 
-    description: ""
+    description: "Created greater than or equal to"
   created__lt:
     required: 
     type: 
-    description: ""
+    description: "Created less than"
   created__lte:
     required: 
     type: 
-    description: ""
+    description: "Created less than or equal to"
   created__n:
     required: 
     type: 
-    description: ""
+    description: "Created not equal to"
   created_by_request:
     required: 
     type: 
-    description: ""
+    description: "Created_by_request"
   group:
     required: 
     type: 
@@ -80,7 +80,7 @@ parameters:
   group__n:
     required: 
     type: 
-    description: "Contact group (slug)"
+    description: "Group not equal to"
   group_id:
     required: 
     type: 
@@ -88,63 +88,63 @@ parameters:
   group_id__n:
     required: 
     type: 
-    description: "Contact group (ID)"
+    description: "Group_id not equal to"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   last_updated:
     required: 
     type: 
-    description: ""
+    description: "Last_updated"
   last_updated__empty:
     required: 
     type: 
-    description: ""
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than"
   last_updated__gte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than"
   last_updated__lte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than or equal to"
   last_updated__n:
     required: 
     type: 
-    description: ""
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: 
@@ -152,35 +152,35 @@ parameters:
   modified_by_request:
     required: 
     type: 
-    description: ""
+    description: "Modified_by_request"
   object_id:
     required: 
     type: 
-    description: ""
+    description: "Object_id"
   object_id__empty:
     required: 
     type: 
-    description: ""
+    description: "Object_id is empty/null (boolean)"
   object_id__gt:
     required: 
     type: 
-    description: ""
+    description: "Object_id greater than"
   object_id__gte:
     required: 
     type: 
-    description: ""
+    description: "Object_id greater than or equal to"
   object_id__lt:
     required: 
     type: 
-    description: ""
+    description: "Object_id less than"
   object_id__lte:
     required: 
     type: 
-    description: ""
+    description: "Object_id less than or equal to"
   object_id__n:
     required: 
     type: 
-    description: ""
+    description: "Object_id not equal to"
   offset:
     required: false
     type: 
@@ -192,11 +192,11 @@ parameters:
   priority:
     required: 
     type: 
-    description: ""
+    description: "Priority"
   priority__n:
     required: 
     type: 
-    description: ""
+    description: "Priority not equal to"
   q:
     required: 
     type: 
@@ -208,7 +208,7 @@ parameters:
   role__n:
     required: 
     type: 
-    description: "Contact role (slug)"
+    description: "Role not equal to"
   role_id:
     required: 
     type: 
@@ -216,19 +216,19 @@ parameters:
   role_id__n:
     required: 
     type: 
-    description: "Contact role (ID)"
+    description: "Role_id not equal to"
   tag:
     required: 
     type: 
-    description: ""
+    description: "Tag"
   tag__n:
     required: 
     type: 
-    description: ""
+    description: "Tag not equal to"
   updated_by_request:
     required: 
     type: 
-    description: ""
+    description: "Updated_by_request"
   save_in_key_store:
     type: boolean
     default: false

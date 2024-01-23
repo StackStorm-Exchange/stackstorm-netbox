@@ -20,15 +20,15 @@ parameters:
   cable_end:
     required: 
     type: 
-    description: ""
+    description: "Cable_end"
   cable_end__n:
     required: 
     type: 
-    description: ""
+    description: "Cable_end not equal to"
   cabled:
     required: 
     type: 
-    description: ""
+    description: "Cabled"
   circuit_id:
     required: 
     type: 
@@ -36,139 +36,139 @@ parameters:
   circuit_id__n:
     required: 
     type: 
-    description: "Circuit"
+    description: "Circuit_id not equal to"
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__empty:
     required: 
     type: 
-    description: ""
+    description: "Created is empty/null (boolean)"
   created__gt:
     required: 
     type: 
-    description: ""
+    description: "Created greater than"
   created__gte:
     required: 
     type: 
-    description: ""
+    description: "Created greater than or equal to"
   created__lt:
     required: 
     type: 
-    description: ""
+    description: "Created less than"
   created__lte:
     required: 
     type: 
-    description: ""
+    description: "Created less than or equal to"
   created__n:
     required: 
     type: 
-    description: ""
+    description: "Created not equal to"
   created_by_request:
     required: 
     type: 
-    description: ""
+    description: "Created_by_request"
   description:
     required: 
     type: 
-    description: ""
+    description: "Description"
   description__empty:
     required: 
     type: 
-    description: ""
+    description: "Description is empty/null (boolean)"
   description__ic:
     required: 
     type: 
-    description: ""
+    description: "Description contains (case-insensitive)"
   description__ie:
     required: 
     type: 
-    description: ""
+    description: "Description exact match (case-insensitive)"
   description__iew:
     required: 
     type: 
-    description: ""
+    description: "Description ends with (case-insensitive)"
   description__isw:
     required: 
     type: 
-    description: ""
+    description: "Description starts with (case-sensitive)"
   description__n:
     required: 
     type: 
-    description: ""
+    description: "Description not equal to"
   description__nic:
     required: 
     type: 
-    description: ""
+    description: "Description does not contain (case-insensitive)"
   description__nie:
     required: 
     type: 
-    description: ""
+    description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: 
     type: 
-    description: ""
+    description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: 
     type: 
-    description: ""
+    description: "Description does not start with (case-sensitive)"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   last_updated:
     required: 
     type: 
-    description: ""
+    description: "Last_updated"
   last_updated__empty:
     required: 
     type: 
-    description: ""
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than"
   last_updated__gte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than"
   last_updated__lte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than or equal to"
   last_updated__n:
     required: 
     type: 
-    description: ""
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: 
@@ -176,11 +176,11 @@ parameters:
   modified_by_request:
     required: 
     type: 
-    description: ""
+    description: "Modified_by_request"
   occupied:
     required: 
     type: 
-    description: ""
+    description: "Occupied"
   offset:
     required: false
     type: 
@@ -192,31 +192,31 @@ parameters:
   port_speed:
     required: 
     type: 
-    description: ""
+    description: "Port_speed"
   port_speed__empty:
     required: 
     type: 
-    description: ""
+    description: "Port_speed is empty/null (boolean)"
   port_speed__gt:
     required: 
     type: 
-    description: ""
+    description: "Port_speed greater than"
   port_speed__gte:
     required: 
     type: 
-    description: ""
+    description: "Port_speed greater than or equal to"
   port_speed__lt:
     required: 
     type: 
-    description: ""
+    description: "Port_speed less than"
   port_speed__lte:
     required: 
     type: 
-    description: ""
+    description: "Port_speed less than or equal to"
   port_speed__n:
     required: 
     type: 
-    description: ""
+    description: "Port_speed not equal to"
   provider_network_id:
     required: 
     type: 
@@ -224,7 +224,7 @@ parameters:
   provider_network_id__n:
     required: 
     type: 
-    description: "ProviderNetwork (ID)"
+    description: "Provider_network_id not equal to"
   q:
     required: 
     type: 
@@ -236,7 +236,7 @@ parameters:
   site__n:
     required: 
     type: 
-    description: "Site (slug)"
+    description: "Site not equal to"
   site_id:
     required: 
     type: 
@@ -244,99 +244,99 @@ parameters:
   site_id__n:
     required: 
     type: 
-    description: "Site (ID)"
+    description: "Site_id not equal to"
   tag:
     required: 
     type: 
-    description: ""
+    description: "Tag"
   tag__n:
     required: 
     type: 
-    description: ""
+    description: "Tag not equal to"
   term_side:
     required: 
     type: 
-    description: ""
+    description: "Term_side"
   term_side__n:
     required: 
     type: 
-    description: ""
+    description: "Term_side not equal to"
   updated_by_request:
     required: 
     type: 
-    description: ""
+    description: "Updated_by_request"
   upstream_speed:
     required: 
     type: 
-    description: ""
+    description: "Upstream_speed"
   upstream_speed__empty:
     required: 
     type: 
-    description: ""
+    description: "Upstream_speed is empty/null (boolean)"
   upstream_speed__gt:
     required: 
     type: 
-    description: ""
+    description: "Upstream_speed greater than"
   upstream_speed__gte:
     required: 
     type: 
-    description: ""
+    description: "Upstream_speed greater than or equal to"
   upstream_speed__lt:
     required: 
     type: 
-    description: ""
+    description: "Upstream_speed less than"
   upstream_speed__lte:
     required: 
     type: 
-    description: ""
+    description: "Upstream_speed less than or equal to"
   upstream_speed__n:
     required: 
     type: 
-    description: ""
+    description: "Upstream_speed not equal to"
   xconnect_id:
     required: 
     type: 
-    description: ""
+    description: "Xconnect_id"
   xconnect_id__empty:
     required: 
     type: 
-    description: ""
+    description: "Xconnect_id is empty/null (boolean)"
   xconnect_id__ic:
     required: 
     type: 
-    description: ""
+    description: "Xconnect_id contains (case-insensitive)"
   xconnect_id__ie:
     required: 
     type: 
-    description: ""
+    description: "Xconnect_id exact match (case-insensitive)"
   xconnect_id__iew:
     required: 
     type: 
-    description: ""
+    description: "Xconnect_id ends with (case-insensitive)"
   xconnect_id__isw:
     required: 
     type: 
-    description: ""
+    description: "Xconnect_id starts with (case-sensitive)"
   xconnect_id__n:
     required: 
     type: 
-    description: ""
+    description: "Xconnect_id not equal to"
   xconnect_id__nic:
     required: 
     type: 
-    description: ""
+    description: "Xconnect_id does not contain (case-insensitive)"
   xconnect_id__nie:
     required: 
     type: 
-    description: ""
+    description: "Xconnect_id inverse exact match (case-insensitive)"
   xconnect_id__niew:
     required: 
     type: 
-    description: ""
+    description: "Xconnect_id does not end with (case-insensitive)"
   xconnect_id__nisw:
     required: 
     type: 
-    description: ""
+    description: "Xconnect_id does not start with (case-sensitive)"
   save_in_key_store:
     type: boolean
     default: false

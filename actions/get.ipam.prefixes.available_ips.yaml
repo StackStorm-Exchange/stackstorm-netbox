@@ -20,7 +20,7 @@ parameters:
   id:
     required: true
     type: 
-    description: ""
+    description: "Id"
   save_in_key_store:
     type: boolean
     default: false

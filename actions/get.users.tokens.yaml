@@ -20,143 +20,143 @@ parameters:
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__gte:
     required: 
     type: 
-    description: ""
+    description: "Created greater than or equal to"
   created__lte:
     required: 
     type: 
-    description: ""
+    description: "Created less than or equal to"
   description:
     required: 
     type: 
-    description: ""
+    description: "Description"
   description__empty:
     required: 
     type: 
-    description: ""
+    description: "Description is empty/null (boolean)"
   description__ic:
     required: 
     type: 
-    description: ""
+    description: "Description contains (case-insensitive)"
   description__ie:
     required: 
     type: 
-    description: ""
+    description: "Description exact match (case-insensitive)"
   description__iew:
     required: 
     type: 
-    description: ""
+    description: "Description ends with (case-insensitive)"
   description__isw:
     required: 
     type: 
-    description: ""
+    description: "Description starts with (case-sensitive)"
   description__n:
     required: 
     type: 
-    description: ""
+    description: "Description not equal to"
   description__nic:
     required: 
     type: 
-    description: ""
+    description: "Description does not contain (case-insensitive)"
   description__nie:
     required: 
     type: 
-    description: ""
+    description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: 
     type: 
-    description: ""
+    description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: 
     type: 
-    description: ""
+    description: "Description does not start with (case-sensitive)"
   expires:
     required: 
     type: 
-    description: ""
+    description: "Expires"
   expires__gte:
     required: 
     type: 
-    description: ""
+    description: "Expires greater than or equal to"
   expires__lte:
     required: 
     type: 
-    description: ""
+    description: "Expires less than or equal to"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   key:
     required: 
     type: 
-    description: ""
+    description: "Key"
   key__empty:
     required: 
     type: 
-    description: ""
+    description: "Key is empty/null (boolean)"
   key__ic:
     required: 
     type: 
-    description: ""
+    description: "Key contains (case-insensitive)"
   key__ie:
     required: 
     type: 
-    description: ""
+    description: "Key exact match (case-insensitive)"
   key__iew:
     required: 
     type: 
-    description: ""
+    description: "Key ends with (case-insensitive)"
   key__isw:
     required: 
     type: 
-    description: ""
+    description: "Key starts with (case-sensitive)"
   key__n:
     required: 
     type: 
-    description: ""
+    description: "Key not equal to"
   key__nic:
     required: 
     type: 
-    description: ""
+    description: "Key does not contain (case-insensitive)"
   key__nie:
     required: 
     type: 
-    description: ""
+    description: "Key inverse exact match (case-insensitive)"
   key__niew:
     required: 
     type: 
-    description: ""
+    description: "Key does not end with (case-insensitive)"
   key__nisw:
     required: 
     type: 
-    description: ""
+    description: "Key does not start with (case-sensitive)"
   limit:
     required: false
     type: 
@@ -180,7 +180,7 @@ parameters:
   user__n:
     required: 
     type: 
-    description: "User (name)"
+    description: "User not equal to"
   user_id:
     required: 
     type: 
@@ -188,11 +188,11 @@ parameters:
   user_id__n:
     required: 
     type: 
-    description: "User"
+    description: "User_id not equal to"
   write_enabled:
     required: 
     type: 
-    description: ""
+    description: "Write_enabled"
   save_in_key_store:
     type: boolean
     default: false

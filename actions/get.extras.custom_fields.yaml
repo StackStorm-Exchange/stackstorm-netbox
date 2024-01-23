@@ -20,131 +20,131 @@ parameters:
   choice_set:
     required: 
     type: 
-    description: ""
+    description: "Choice_set"
   choice_set__n:
     required: 
     type: 
-    description: ""
+    description: "Choice_set not equal to"
   choice_set_id:
     required: 
     type: 
-    description: ""
+    description: "Choice_set_id"
   choice_set_id__n:
     required: 
     type: 
-    description: ""
+    description: "Choice_set_id not equal to"
   content_type_id:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id"
   content_type_id__empty:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id is empty/null (boolean)"
   content_type_id__gt:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id greater than"
   content_type_id__gte:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id greater than or equal to"
   content_type_id__lt:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id less than"
   content_type_id__lte:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id less than or equal to"
   content_type_id__n:
     required: 
     type: 
-    description: ""
+    description: "Content_type_id not equal to"
   content_types:
     required: 
     type: 
-    description: ""
+    description: "Content_types"
   content_types__ic:
     required: 
     type: 
-    description: ""
+    description: "Content_types contains (case-insensitive)"
   content_types__ie:
     required: 
     type: 
-    description: ""
+    description: "Content_types exact match (case-insensitive)"
   content_types__iew:
     required: 
     type: 
-    description: ""
+    description: "Content_types ends with (case-insensitive)"
   content_types__isw:
     required: 
     type: 
-    description: ""
+    description: "Content_types starts with (case-sensitive)"
   content_types__n:
     required: 
     type: 
-    description: ""
+    description: "Content_types not equal to"
   content_types__nic:
     required: 
     type: 
-    description: ""
+    description: "Content_types does not contain (case-insensitive)"
   content_types__nie:
     required: 
     type: 
-    description: ""
+    description: "Content_types inverse exact match (case-insensitive)"
   content_types__niew:
     required: 
     type: 
-    description: ""
+    description: "Content_types does not end with (case-insensitive)"
   content_types__nisw:
     required: 
     type: 
-    description: ""
+    description: "Content_types does not start with (case-sensitive)"
   description:
     required: 
     type: 
-    description: ""
+    description: "Description"
   description__empty:
     required: 
     type: 
-    description: ""
+    description: "Description is empty/null (boolean)"
   description__ic:
     required: 
     type: 
-    description: ""
+    description: "Description contains (case-insensitive)"
   description__ie:
     required: 
     type: 
-    description: ""
+    description: "Description exact match (case-insensitive)"
   description__iew:
     required: 
     type: 
-    description: ""
+    description: "Description ends with (case-insensitive)"
   description__isw:
     required: 
     type: 
-    description: ""
+    description: "Description starts with (case-sensitive)"
   description__n:
     required: 
     type: 
-    description: ""
+    description: "Description not equal to"
   description__nic:
     required: 
     type: 
-    description: ""
+    description: "Description does not contain (case-insensitive)"
   description__nie:
     required: 
     type: 
-    description: ""
+    description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: 
     type: 
-    description: ""
+    description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: 
     type: 
-    description: ""
+    description: "Description does not start with (case-sensitive)"
   filter_logic:
     required: 
     type: 
@@ -152,83 +152,83 @@ parameters:
   filter_logic__n:
     required: 
     type: 
-    description: "Loose matches any instance of a given string; exact matches the entire field."
+    description: "Filter_logic not equal to"
   group_name:
     required: 
     type: 
-    description: ""
+    description: "Group_name"
   group_name__empty:
     required: 
     type: 
-    description: ""
+    description: "Group_name is empty/null (boolean)"
   group_name__ic:
     required: 
     type: 
-    description: ""
+    description: "Group_name contains (case-insensitive)"
   group_name__ie:
     required: 
     type: 
-    description: ""
+    description: "Group_name exact match (case-insensitive)"
   group_name__iew:
     required: 
     type: 
-    description: ""
+    description: "Group_name ends with (case-insensitive)"
   group_name__isw:
     required: 
     type: 
-    description: ""
+    description: "Group_name starts with (case-sensitive)"
   group_name__n:
     required: 
     type: 
-    description: ""
+    description: "Group_name not equal to"
   group_name__nic:
     required: 
     type: 
-    description: ""
+    description: "Group_name does not contain (case-insensitive)"
   group_name__nie:
     required: 
     type: 
-    description: ""
+    description: "Group_name inverse exact match (case-insensitive)"
   group_name__niew:
     required: 
     type: 
-    description: ""
+    description: "Group_name does not end with (case-insensitive)"
   group_name__nisw:
     required: 
     type: 
-    description: ""
+    description: "Group_name does not start with (case-sensitive)"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   is_cloneable:
     required: 
     type: 
-    description: ""
+    description: "Is_cloneable"
   limit:
     required: false
     type: 
@@ -236,47 +236,47 @@ parameters:
   name:
     required: 
     type: 
-    description: ""
+    description: "Name"
   name__empty:
     required: 
     type: 
-    description: ""
+    description: "Name is empty/null (boolean)"
   name__ic:
     required: 
     type: 
-    description: ""
+    description: "Name contains (case-insensitive)"
   name__ie:
     required: 
     type: 
-    description: ""
+    description: "Name exact match (case-insensitive)"
   name__iew:
     required: 
     type: 
-    description: ""
+    description: "Name ends with (case-insensitive)"
   name__isw:
     required: 
     type: 
-    description: ""
+    description: "Name starts with (case-sensitive)"
   name__n:
     required: 
     type: 
-    description: ""
+    description: "Name not equal to"
   name__nic:
     required: 
     type: 
-    description: ""
+    description: "Name does not contain (case-insensitive)"
   name__nie:
     required: 
     type: 
-    description: ""
+    description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: 
     type: 
-    description: ""
+    description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: 
     type: 
-    description: ""
+    description: "Name does not start with (case-sensitive)"
   offset:
     required: false
     type: 
@@ -292,35 +292,35 @@ parameters:
   required:
     required: 
     type: 
-    description: ""
+    description: "Required"
   search_weight:
     required: 
     type: 
-    description: ""
+    description: "Search_weight"
   search_weight__empty:
     required: 
     type: 
-    description: ""
+    description: "Search_weight is empty/null (boolean)"
   search_weight__gt:
     required: 
     type: 
-    description: ""
+    description: "Search_weight greater than"
   search_weight__gte:
     required: 
     type: 
-    description: ""
+    description: "Search_weight greater than or equal to"
   search_weight__lt:
     required: 
     type: 
-    description: ""
+    description: "Search_weight less than"
   search_weight__lte:
     required: 
     type: 
-    description: ""
+    description: "Search_weight less than or equal to"
   search_weight__n:
     required: 
     type: 
-    description: ""
+    description: "Search_weight not equal to"
   type:
     required: 
     type: 
@@ -328,7 +328,7 @@ parameters:
   type__n:
     required: 
     type: 
-    description: "The type of data this custom field holds"
+    description: "Type not equal to"
   ui_visibility:
     required: 
     type: 
@@ -336,35 +336,35 @@ parameters:
   ui_visibility__n:
     required: 
     type: 
-    description: "Specifies the visibility of custom field in the UI"
+    description: "Ui_visibility not equal to"
   weight:
     required: 
     type: 
-    description: ""
+    description: "Weight"
   weight__empty:
     required: 
     type: 
-    description: ""
+    description: "Weight is empty/null (boolean)"
   weight__gt:
     required: 
     type: 
-    description: ""
+    description: "Weight greater than"
   weight__gte:
     required: 
     type: 
-    description: ""
+    description: "Weight greater than or equal to"
   weight__lt:
     required: 
     type: 
-    description: ""
+    description: "Weight less than"
   weight__lte:
     required: 
     type: 
-    description: ""
+    description: "Weight less than or equal to"
   weight__n:
     required: 
     type: 
-    description: ""
+    description: "Weight not equal to"
   save_in_key_store:
     type: boolean
     default: false

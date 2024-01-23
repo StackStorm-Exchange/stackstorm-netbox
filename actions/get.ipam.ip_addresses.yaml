@@ -20,7 +20,7 @@ parameters:
   address:
     required: 
     type: 
-    description: ""
+    description: "Address"
   assigned:
     required: 
     type: 
@@ -32,135 +32,135 @@ parameters:
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__empty:
     required: 
     type: 
-    description: ""
+    description: "Created is empty/null (boolean)"
   created__gt:
     required: 
     type: 
-    description: ""
+    description: "Created greater than"
   created__gte:
     required: 
     type: 
-    description: ""
+    description: "Created greater than or equal to"
   created__lt:
     required: 
     type: 
-    description: ""
+    description: "Created less than"
   created__lte:
     required: 
     type: 
-    description: ""
+    description: "Created less than or equal to"
   created__n:
     required: 
     type: 
-    description: ""
+    description: "Created not equal to"
   created_by_request:
     required: 
     type: 
-    description: ""
+    description: "Created_by_request"
   description:
     required: 
     type: 
-    description: ""
+    description: "Description"
   description__empty:
     required: 
     type: 
-    description: ""
+    description: "Description is empty/null (boolean)"
   description__ic:
     required: 
     type: 
-    description: ""
+    description: "Description contains (case-insensitive)"
   description__ie:
     required: 
     type: 
-    description: ""
+    description: "Description exact match (case-insensitive)"
   description__iew:
     required: 
     type: 
-    description: ""
+    description: "Description ends with (case-insensitive)"
   description__isw:
     required: 
     type: 
-    description: ""
+    description: "Description starts with (case-sensitive)"
   description__n:
     required: 
     type: 
-    description: ""
+    description: "Description not equal to"
   description__nic:
     required: 
     type: 
-    description: ""
+    description: "Description does not contain (case-insensitive)"
   description__nie:
     required: 
     type: 
-    description: ""
+    description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: 
     type: 
-    description: ""
+    description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: 
     type: 
-    description: ""
+    description: "Description does not start with (case-sensitive)"
   device:
     required: 
     type: 
-    description: ""
+    description: "Device"
   device_id:
     required: 
     type: 
-    description: ""
+    description: "Device_id"
   dns_name:
     required: 
     type: 
-    description: ""
+    description: "Dns_name"
   dns_name__empty:
     required: 
     type: 
-    description: ""
+    description: "Dns_name is empty/null (boolean)"
   dns_name__ic:
     required: 
     type: 
-    description: ""
+    description: "Dns_name contains (case-insensitive)"
   dns_name__ie:
     required: 
     type: 
-    description: ""
+    description: "Dns_name exact match (case-insensitive)"
   dns_name__iew:
     required: 
     type: 
-    description: ""
+    description: "Dns_name ends with (case-insensitive)"
   dns_name__isw:
     required: 
     type: 
-    description: ""
+    description: "Dns_name starts with (case-sensitive)"
   dns_name__n:
     required: 
     type: 
-    description: ""
+    description: "Dns_name not equal to"
   dns_name__nic:
     required: 
     type: 
-    description: ""
+    description: "Dns_name does not contain (case-insensitive)"
   dns_name__nie:
     required: 
     type: 
-    description: ""
+    description: "Dns_name inverse exact match (case-insensitive)"
   dns_name__niew:
     required: 
     type: 
-    description: ""
+    description: "Dns_name does not end with (case-insensitive)"
   dns_name__nisw:
     required: 
     type: 
-    description: ""
+    description: "Dns_name does not start with (case-sensitive)"
   family:
     required: 
     type: integer
-    description: ""
+    description: "Family"
   fhrpgroup_id:
     required: 
     type: 
@@ -168,35 +168,35 @@ parameters:
   fhrpgroup_id__n:
     required: 
     type: 
-    description: "FHRP group (ID)"
+    description: "Fhrpgroup_id not equal to"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   interface:
     required: 
     type: 
@@ -204,7 +204,7 @@ parameters:
   interface__n:
     required: 
     type: 
-    description: "Interface (name)"
+    description: "Interface not equal to"
   interface_id:
     required: 
     type: 
@@ -212,35 +212,35 @@ parameters:
   interface_id__n:
     required: 
     type: 
-    description: "Interface (ID)"
+    description: "Interface_id not equal to"
   last_updated:
     required: 
     type: 
-    description: ""
+    description: "Last_updated"
   last_updated__empty:
     required: 
     type: 
-    description: ""
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than"
   last_updated__gte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than"
   last_updated__lte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than or equal to"
   last_updated__n:
     required: 
     type: 
-    description: ""
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: 
@@ -248,19 +248,19 @@ parameters:
   mask_length:
     required: 
     type: 
-    description: ""
+    description: "Mask_length"
   mask_length__gte:
     required: 
     type: integer
-    description: ""
+    description: "Mask_length greater than or equal to"
   mask_length__lte:
     required: 
     type: integer
-    description: ""
+    description: "Mask_length less than or equal to"
   modified_by_request:
     required: 
     type: 
-    description: ""
+    description: "Modified_by_request"
   offset:
     required: false
     type: 
@@ -272,15 +272,15 @@ parameters:
   parent:
     required: 
     type: 
-    description: ""
+    description: "Parent"
   present_in_vrf:
     required: 
     type: 
-    description: ""
+    description: "Present_in_vrf"
   present_in_vrf_id:
     required: 
     type: 
-    description: ""
+    description: "Present_in_vrf_id"
   q:
     required: 
     type: 
@@ -292,7 +292,7 @@ parameters:
   role__n:
     required: 
     type: 
-    description: "The functional role of this IP"
+    description: "Role not equal to"
   status:
     required: 
     type: 
@@ -300,15 +300,15 @@ parameters:
   status__n:
     required: 
     type: 
-    description: "The operational status of this IP"
+    description: "Status not equal to"
   tag:
     required: 
     type: 
-    description: ""
+    description: "Tag"
   tag__n:
     required: 
     type: 
-    description: ""
+    description: "Tag not equal to"
   tenant:
     required: 
     type: 
@@ -316,7 +316,7 @@ parameters:
   tenant__n:
     required: 
     type: 
-    description: "Tenant (slug)"
+    description: "Tenant not equal to"
   tenant_group:
     required: 
     type: 
@@ -324,7 +324,7 @@ parameters:
   tenant_group__n:
     required: 
     type: 
-    description: "Tenant Group (slug)"
+    description: "Tenant_group not equal to"
   tenant_group_id:
     required: 
     type: 
@@ -332,7 +332,7 @@ parameters:
   tenant_group_id__n:
     required: 
     type: 
-    description: "Tenant Group (ID)"
+    description: "Tenant_group_id not equal to"
   tenant_id:
     required: 
     type: 
@@ -340,19 +340,19 @@ parameters:
   tenant_id__n:
     required: 
     type: 
-    description: "Tenant (ID)"
+    description: "Tenant_id not equal to"
   updated_by_request:
     required: 
     type: 
-    description: ""
+    description: "Updated_by_request"
   virtual_machine:
     required: 
     type: 
-    description: ""
+    description: "Virtual_machine"
   virtual_machine_id:
     required: 
     type: 
-    description: ""
+    description: "Virtual_machine_id"
   vminterface:
     required: 
     type: 
@@ -360,7 +360,7 @@ parameters:
   vminterface__n:
     required: 
     type: 
-    description: "VM interface (name)"
+    description: "Vminterface not equal to"
   vminterface_id:
     required: 
     type: 
@@ -368,7 +368,7 @@ parameters:
   vminterface_id__n:
     required: 
     type: 
-    description: "VM interface (ID)"
+    description: "Vminterface_id not equal to"
   vrf:
     required: 
     type: 
@@ -376,7 +376,7 @@ parameters:
   vrf__n:
     required: 
     type: 
-    description: "VRF (RD)"
+    description: "Vrf not equal to"
   vrf_id:
     required: 
     type: 
@@ -384,7 +384,7 @@ parameters:
   vrf_id__n:
     required: 
     type: 
-    description: "VRF"
+    description: "Vrf_id not equal to"
   save_in_key_store:
     type: boolean
     default: false

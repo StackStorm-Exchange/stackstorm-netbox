@@ -20,31 +20,31 @@ parameters:
   children:
     required: 
     type: 
-    description: ""
+    description: "Children"
   children__empty:
     required: 
     type: 
-    description: ""
+    description: "Children is empty/null (boolean)"
   children__gt:
     required: 
     type: 
-    description: ""
+    description: "Children greater than"
   children__gte:
     required: 
     type: 
-    description: ""
+    description: "Children greater than or equal to"
   children__lt:
     required: 
     type: 
-    description: ""
+    description: "Children less than"
   children__lte:
     required: 
     type: 
-    description: ""
+    description: "Children less than or equal to"
   children__n:
     required: 
     type: 
-    description: ""
+    description: "Children not equal to"
   contains:
     required: 
     type: 
@@ -52,171 +52,171 @@ parameters:
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__empty:
     required: 
     type: 
-    description: ""
+    description: "Created is empty/null (boolean)"
   created__gt:
     required: 
     type: 
-    description: ""
+    description: "Created greater than"
   created__gte:
     required: 
     type: 
-    description: ""
+    description: "Created greater than or equal to"
   created__lt:
     required: 
     type: 
-    description: ""
+    description: "Created less than"
   created__lte:
     required: 
     type: 
-    description: ""
+    description: "Created less than or equal to"
   created__n:
     required: 
     type: 
-    description: ""
+    description: "Created not equal to"
   created_by_request:
     required: 
     type: 
-    description: ""
+    description: "Created_by_request"
   depth:
     required: 
     type: 
-    description: ""
+    description: "Depth"
   depth__empty:
     required: 
     type: 
-    description: ""
+    description: "Depth is empty/null (boolean)"
   depth__gt:
     required: 
     type: 
-    description: ""
+    description: "Depth greater than"
   depth__gte:
     required: 
     type: 
-    description: ""
+    description: "Depth greater than or equal to"
   depth__lt:
     required: 
     type: 
-    description: ""
+    description: "Depth less than"
   depth__lte:
     required: 
     type: 
-    description: ""
+    description: "Depth less than or equal to"
   depth__n:
     required: 
     type: 
-    description: ""
+    description: "Depth not equal to"
   description:
     required: 
     type: 
-    description: ""
+    description: "Description"
   description__empty:
     required: 
     type: 
-    description: ""
+    description: "Description is empty/null (boolean)"
   description__ic:
     required: 
     type: 
-    description: ""
+    description: "Description contains (case-insensitive)"
   description__ie:
     required: 
     type: 
-    description: ""
+    description: "Description exact match (case-insensitive)"
   description__iew:
     required: 
     type: 
-    description: ""
+    description: "Description ends with (case-insensitive)"
   description__isw:
     required: 
     type: 
-    description: ""
+    description: "Description starts with (case-sensitive)"
   description__n:
     required: 
     type: 
-    description: ""
+    description: "Description not equal to"
   description__nic:
     required: 
     type: 
-    description: ""
+    description: "Description does not contain (case-insensitive)"
   description__nie:
     required: 
     type: 
-    description: ""
+    description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: 
     type: 
-    description: ""
+    description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: 
     type: 
-    description: ""
+    description: "Description does not start with (case-sensitive)"
   family:
     required: 
     type: integer
-    description: ""
+    description: "Family"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   is_pool:
     required: 
     type: 
-    description: ""
+    description: "Is_pool"
   last_updated:
     required: 
     type: 
-    description: ""
+    description: "Last_updated"
   last_updated__empty:
     required: 
     type: 
-    description: ""
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than"
   last_updated__gte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than"
   last_updated__lte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than or equal to"
   last_updated__n:
     required: 
     type: 
-    description: ""
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: 
@@ -224,23 +224,23 @@ parameters:
   mark_utilized:
     required: 
     type: 
-    description: ""
+    description: "Mark_utilized"
   mask_length:
     required: 
     type: 
-    description: ""
+    description: "Mask_length"
   mask_length__gte:
     required: 
     type: integer
-    description: ""
+    description: "Mask_length greater than or equal to"
   mask_length__lte:
     required: 
     type: integer
-    description: ""
+    description: "Mask_length less than or equal to"
   modified_by_request:
     required: 
     type: 
-    description: ""
+    description: "Modified_by_request"
   offset:
     required: false
     type: 
@@ -252,15 +252,15 @@ parameters:
   prefix:
     required: 
     type: 
-    description: ""
+    description: "Prefix"
   present_in_vrf:
     required: 
     type: 
-    description: ""
+    description: "Present_in_vrf"
   present_in_vrf_id:
     required: 
     type: 
-    description: ""
+    description: "Present_in_vrf_id"
   q:
     required: 
     type: 
@@ -272,7 +272,7 @@ parameters:
   region__n:
     required: 
     type: 
-    description: "Region (slug)"
+    description: "Region not equal to"
   region_id:
     required: 
     type: 
@@ -280,7 +280,7 @@ parameters:
   region_id__n:
     required: 
     type: 
-    description: "Region (ID)"
+    description: "Region_id not equal to"
   role:
     required: 
     type: 
@@ -288,7 +288,7 @@ parameters:
   role__n:
     required: 
     type: 
-    description: "Role (slug)"
+    description: "Role not equal to"
   role_id:
     required: 
     type: 
@@ -296,7 +296,7 @@ parameters:
   role_id__n:
     required: 
     type: 
-    description: "Role (ID)"
+    description: "Role_id not equal to"
   site:
     required: 
     type: 
@@ -304,7 +304,7 @@ parameters:
   site__n:
     required: 
     type: 
-    description: "Site (slug)"
+    description: "Site not equal to"
   site_group:
     required: 
     type: 
@@ -312,7 +312,7 @@ parameters:
   site_group__n:
     required: 
     type: 
-    description: "Site group (slug)"
+    description: "Site_group not equal to"
   site_group_id:
     required: 
     type: 
@@ -320,7 +320,7 @@ parameters:
   site_group_id__n:
     required: 
     type: 
-    description: "Site group (ID)"
+    description: "Site_group_id not equal to"
   site_id:
     required: 
     type: 
@@ -328,7 +328,7 @@ parameters:
   site_id__n:
     required: 
     type: 
-    description: "Site (ID)"
+    description: "Site_id not equal to"
   status:
     required: 
     type: 
@@ -336,15 +336,15 @@ parameters:
   status__n:
     required: 
     type: 
-    description: "Operational status of this prefix"
+    description: "Status not equal to"
   tag:
     required: 
     type: 
-    description: ""
+    description: "Tag"
   tag__n:
     required: 
     type: 
-    description: ""
+    description: "Tag not equal to"
   tenant:
     required: 
     type: 
@@ -352,7 +352,7 @@ parameters:
   tenant__n:
     required: 
     type: 
-    description: "Tenant (slug)"
+    description: "Tenant not equal to"
   tenant_group:
     required: 
     type: 
@@ -360,7 +360,7 @@ parameters:
   tenant_group__n:
     required: 
     type: 
-    description: "Tenant Group (slug)"
+    description: "Tenant_group not equal to"
   tenant_group_id:
     required: 
     type: 
@@ -368,7 +368,7 @@ parameters:
   tenant_group_id__n:
     required: 
     type: 
-    description: "Tenant Group (ID)"
+    description: "Tenant_group_id not equal to"
   tenant_id:
     required: 
     type: 
@@ -376,11 +376,11 @@ parameters:
   tenant_id__n:
     required: 
     type: 
-    description: "Tenant (ID)"
+    description: "Tenant_id not equal to"
   updated_by_request:
     required: 
     type: 
-    description: ""
+    description: "Updated_by_request"
   vlan_id:
     required: 
     type: 
@@ -388,7 +388,7 @@ parameters:
   vlan_id__n:
     required: 
     type: 
-    description: "VLAN (ID)"
+    description: "Vlan_id not equal to"
   vlan_vid:
     required: 
     type: 
@@ -396,27 +396,27 @@ parameters:
   vlan_vid__empty:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid is empty/null (boolean)"
   vlan_vid__gt:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid greater than"
   vlan_vid__gte:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid greater than or equal to"
   vlan_vid__lt:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid less than"
   vlan_vid__lte:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid less than or equal to"
   vlan_vid__n:
     required: 
     type: 
-    description: "VLAN number (1-4094)"
+    description: "Vlan_vid not equal to"
   vrf:
     required: 
     type: 
@@ -424,7 +424,7 @@ parameters:
   vrf__n:
     required: 
     type: 
-    description: "VRF (RD)"
+    description: "Vrf not equal to"
   vrf_id:
     required: 
     type: 
@@ -432,7 +432,7 @@ parameters:
   vrf_id__n:
     required: 
     type: 
-    description: "VRF"
+    description: "Vrf_id not equal to"
   within:
     required: 
     type: 

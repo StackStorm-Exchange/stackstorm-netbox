@@ -20,67 +20,67 @@ parameters:
   can_add:
     required: 
     type: 
-    description: ""
+    description: "Can_add"
   can_change:
     required: 
     type: 
-    description: ""
+    description: "Can_change"
   can_delete:
     required: 
     type: 
-    description: ""
+    description: "Can_delete"
   can_view:
     required: 
     type: 
-    description: ""
+    description: "Can_view"
   description:
     required: 
     type: 
-    description: ""
+    description: "Description"
   description__empty:
     required: 
     type: 
-    description: ""
+    description: "Description is empty/null (boolean)"
   description__ic:
     required: 
     type: 
-    description: ""
+    description: "Description contains (case-insensitive)"
   description__ie:
     required: 
     type: 
-    description: ""
+    description: "Description exact match (case-insensitive)"
   description__iew:
     required: 
     type: 
-    description: ""
+    description: "Description ends with (case-insensitive)"
   description__isw:
     required: 
     type: 
-    description: ""
+    description: "Description starts with (case-sensitive)"
   description__n:
     required: 
     type: 
-    description: ""
+    description: "Description not equal to"
   description__nic:
     required: 
     type: 
-    description: ""
+    description: "Description does not contain (case-insensitive)"
   description__nie:
     required: 
     type: 
-    description: ""
+    description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: 
     type: 
-    description: ""
+    description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: 
     type: 
-    description: ""
+    description: "Description does not start with (case-sensitive)"
   enabled:
     required: 
     type: 
-    description: ""
+    description: "Enabled"
   group:
     required: 
     type: 
@@ -88,7 +88,7 @@ parameters:
   group__n:
     required: 
     type: 
-    description: "Group (name)"
+    description: "Group not equal to"
   group_id:
     required: 
     type: 
@@ -96,35 +96,35 @@ parameters:
   group_id__n:
     required: 
     type: 
-    description: "Group"
+    description: "Group_id not equal to"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   limit:
     required: false
     type: 
@@ -132,55 +132,55 @@ parameters:
   name:
     required: 
     type: 
-    description: ""
+    description: "Name"
   name__empty:
     required: 
     type: 
-    description: ""
+    description: "Name is empty/null (boolean)"
   name__ic:
     required: 
     type: 
-    description: ""
+    description: "Name contains (case-insensitive)"
   name__ie:
     required: 
     type: 
-    description: ""
+    description: "Name exact match (case-insensitive)"
   name__iew:
     required: 
     type: 
-    description: ""
+    description: "Name ends with (case-insensitive)"
   name__isw:
     required: 
     type: 
-    description: ""
+    description: "Name starts with (case-sensitive)"
   name__n:
     required: 
     type: 
-    description: ""
+    description: "Name not equal to"
   name__nic:
     required: 
     type: 
-    description: ""
+    description: "Name does not contain (case-insensitive)"
   name__nie:
     required: 
     type: 
-    description: ""
+    description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: 
     type: 
-    description: ""
+    description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: 
     type: 
-    description: ""
+    description: "Name does not start with (case-sensitive)"
   object_types:
     required: 
     type: 
-    description: ""
+    description: "Object_types"
   object_types__n:
     required: 
     type: 
-    description: ""
+    description: "Object_types not equal to"
   offset:
     required: false
     type: 
@@ -200,7 +200,7 @@ parameters:
   user__n:
     required: 
     type: 
-    description: "User (name)"
+    description: "User not equal to"
   user_id:
     required: 
     type: 
@@ -208,7 +208,7 @@ parameters:
   user_id__n:
     required: 
     type: 
-    description: "User"
+    description: "User_id not equal to"
   save_in_key_store:
     type: boolean
     default: false

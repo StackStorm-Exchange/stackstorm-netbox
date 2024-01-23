@@ -17,6 +17,53 @@ def sanitize_parameters(parameters):
         if parameter['name'] == 'tags':
             parameter['description'] = 'Array of tag strings'
 
+        parameter_name = parameter['name'].split('__')[0].capitalize()
+
+        if parameter['name'].endswith('__empty'):
+            parameter['description'] = f'{parameter_name} is empty/null (boolean)'
+
+        if parameter['name'].endswith('__gt'):
+            parameter['description'] = f'{parameter_name} greater than'
+
+        if parameter['name'].endswith('__gte'):
+            parameter['description'] = f'{parameter_name} greater than or equal to'
+
+        if parameter['name'].endswith('__ic'):
+            parameter['description'] = f'{parameter_name} contains (case-insensitive)'
+
+        if parameter['name'].endswith('__ie'):
+            parameter['description'] = f'{parameter_name} exact match (case-insensitive)'
+
+        if parameter['name'].endswith('__iew'):
+            parameter['description'] = f'{parameter_name} ends with (case-insensitive)'
+
+        if parameter['name'].endswith('__isw'):
+            parameter['description'] = f'{parameter_name} starts with (case-sensitive)'
+
+        if parameter['name'].endswith('__nic'):
+            parameter['description'] = f'{parameter_name} does not contain (case-insensitive)'
+
+        if parameter['name'].endswith('__nie'):
+            parameter['description'] = f'{parameter_name} inverse exact match (case-insensitive)'
+
+        if parameter['name'].endswith('__niew'):
+            parameter['description'] = f'{parameter_name} does not end with (case-insensitive)'
+
+        if parameter['name'].endswith('__nisw'):
+            parameter['description'] = f'{parameter_name} does not start with (case-sensitive)'
+
+        if parameter['name'].endswith('__lt'):
+            parameter['description'] = f'{parameter_name} less than'
+
+        if parameter['name'].endswith('__lte'):
+            parameter['description'] = f'{parameter_name} less than or equal to'
+
+        if parameter['name'].endswith('__n'):
+            parameter['description'] = f'{parameter_name} not equal to'
+
+        if not parameter.get('description'):
+            parameter['description'] = parameter_name
+
         if parameter.get('schema'):
             if parameter['schema']['type'] == 'number':
                 parameter['type'] = 'integer'

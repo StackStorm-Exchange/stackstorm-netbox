@@ -20,83 +20,83 @@ parameters:
   action:
     required: 
     type: 
-    description: ""
+    description: "Action"
   action__n:
     required: 
     type: 
-    description: ""
+    description: "Action not equal to"
   changed_object_id:
     required: 
     type: 
-    description: ""
+    description: "Changed_object_id"
   changed_object_id__empty:
     required: 
     type: 
-    description: ""
+    description: "Changed_object_id is empty/null (boolean)"
   changed_object_id__gt:
     required: 
     type: 
-    description: ""
+    description: "Changed_object_id greater than"
   changed_object_id__gte:
     required: 
     type: 
-    description: ""
+    description: "Changed_object_id greater than or equal to"
   changed_object_id__lt:
     required: 
     type: 
-    description: ""
+    description: "Changed_object_id less than"
   changed_object_id__lte:
     required: 
     type: 
-    description: ""
+    description: "Changed_object_id less than or equal to"
   changed_object_id__n:
     required: 
     type: 
-    description: ""
+    description: "Changed_object_id not equal to"
   changed_object_type:
     required: 
     type: 
-    description: ""
+    description: "Changed_object_type"
   changed_object_type__n:
     required: 
     type: 
-    description: ""
+    description: "Changed_object_type not equal to"
   changed_object_type_id:
     required: 
     type: 
-    description: ""
+    description: "Changed_object_type_id"
   changed_object_type_id__n:
     required: 
     type: 
-    description: ""
+    description: "Changed_object_type_id not equal to"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   limit:
     required: false
     type: 
@@ -104,47 +104,47 @@ parameters:
   object_repr:
     required: 
     type: 
-    description: ""
+    description: "Object_repr"
   object_repr__empty:
     required: 
     type: 
-    description: ""
+    description: "Object_repr is empty/null (boolean)"
   object_repr__ic:
     required: 
     type: 
-    description: ""
+    description: "Object_repr contains (case-insensitive)"
   object_repr__ie:
     required: 
     type: 
-    description: ""
+    description: "Object_repr exact match (case-insensitive)"
   object_repr__iew:
     required: 
     type: 
-    description: ""
+    description: "Object_repr ends with (case-insensitive)"
   object_repr__isw:
     required: 
     type: 
-    description: ""
+    description: "Object_repr starts with (case-sensitive)"
   object_repr__n:
     required: 
     type: 
-    description: ""
+    description: "Object_repr not equal to"
   object_repr__nic:
     required: 
     type: 
-    description: ""
+    description: "Object_repr does not contain (case-insensitive)"
   object_repr__nie:
     required: 
     type: 
-    description: ""
+    description: "Object_repr inverse exact match (case-insensitive)"
   object_repr__niew:
     required: 
     type: 
-    description: ""
+    description: "Object_repr does not end with (case-insensitive)"
   object_repr__nisw:
     required: 
     type: 
-    description: ""
+    description: "Object_repr does not start with (case-sensitive)"
   offset:
     required: false
     type: 
@@ -160,15 +160,15 @@ parameters:
   request_id:
     required: 
     type: 
-    description: ""
+    description: "Request_id"
   time_after:
     required: 
     type: 
-    description: ""
+    description: "Time_after"
   time_before:
     required: 
     type: 
-    description: ""
+    description: "Time_before"
   user:
     required: 
     type: 
@@ -176,7 +176,7 @@ parameters:
   user__n:
     required: 
     type: 
-    description: "User name"
+    description: "User not equal to"
   user_id:
     required: 
     type: 
@@ -184,51 +184,51 @@ parameters:
   user_id__n:
     required: 
     type: 
-    description: "User (ID)"
+    description: "User_id not equal to"
   user_name:
     required: 
     type: 
-    description: ""
+    description: "User_name"
   user_name__empty:
     required: 
     type: 
-    description: ""
+    description: "User_name is empty/null (boolean)"
   user_name__ic:
     required: 
     type: 
-    description: ""
+    description: "User_name contains (case-insensitive)"
   user_name__ie:
     required: 
     type: 
-    description: ""
+    description: "User_name exact match (case-insensitive)"
   user_name__iew:
     required: 
     type: 
-    description: ""
+    description: "User_name ends with (case-insensitive)"
   user_name__isw:
     required: 
     type: 
-    description: ""
+    description: "User_name starts with (case-sensitive)"
   user_name__n:
     required: 
     type: 
-    description: ""
+    description: "User_name not equal to"
   user_name__nic:
     required: 
     type: 
-    description: ""
+    description: "User_name does not contain (case-insensitive)"
   user_name__nie:
     required: 
     type: 
-    description: ""
+    description: "User_name inverse exact match (case-insensitive)"
   user_name__niew:
     required: 
     type: 
-    description: ""
+    description: "User_name does not end with (case-insensitive)"
   user_name__nisw:
     required: 
     type: 
-    description: ""
+    description: "User_name does not start with (case-sensitive)"
   save_in_key_store:
     type: boolean
     default: false

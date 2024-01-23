@@ -20,167 +20,167 @@ parameters:
   address:
     required: 
     type: 
-    description: ""
+    description: "Address"
   address__empty:
     required: 
     type: 
-    description: ""
+    description: "Address is empty/null (boolean)"
   address__ic:
     required: 
     type: 
-    description: ""
+    description: "Address contains (case-insensitive)"
   address__ie:
     required: 
     type: 
-    description: ""
+    description: "Address exact match (case-insensitive)"
   address__iew:
     required: 
     type: 
-    description: ""
+    description: "Address ends with (case-insensitive)"
   address__isw:
     required: 
     type: 
-    description: ""
+    description: "Address starts with (case-sensitive)"
   address__n:
     required: 
     type: 
-    description: ""
+    description: "Address not equal to"
   address__nic:
     required: 
     type: 
-    description: ""
+    description: "Address does not contain (case-insensitive)"
   address__nie:
     required: 
     type: 
-    description: ""
+    description: "Address inverse exact match (case-insensitive)"
   address__niew:
     required: 
     type: 
-    description: ""
+    description: "Address does not end with (case-insensitive)"
   address__nisw:
     required: 
     type: 
-    description: ""
+    description: "Address does not start with (case-sensitive)"
   created:
     required: 
     type: 
-    description: ""
+    description: "Created"
   created__empty:
     required: 
     type: 
-    description: ""
+    description: "Created is empty/null (boolean)"
   created__gt:
     required: 
     type: 
-    description: ""
+    description: "Created greater than"
   created__gte:
     required: 
     type: 
-    description: ""
+    description: "Created greater than or equal to"
   created__lt:
     required: 
     type: 
-    description: ""
+    description: "Created less than"
   created__lte:
     required: 
     type: 
-    description: ""
+    description: "Created less than or equal to"
   created__n:
     required: 
     type: 
-    description: ""
+    description: "Created not equal to"
   created_by_request:
     required: 
     type: 
-    description: ""
+    description: "Created_by_request"
   description:
     required: 
     type: 
-    description: ""
+    description: "Description"
   description__empty:
     required: 
     type: 
-    description: ""
+    description: "Description is empty/null (boolean)"
   description__ic:
     required: 
     type: 
-    description: ""
+    description: "Description contains (case-insensitive)"
   description__ie:
     required: 
     type: 
-    description: ""
+    description: "Description exact match (case-insensitive)"
   description__iew:
     required: 
     type: 
-    description: ""
+    description: "Description ends with (case-insensitive)"
   description__isw:
     required: 
     type: 
-    description: ""
+    description: "Description starts with (case-sensitive)"
   description__n:
     required: 
     type: 
-    description: ""
+    description: "Description not equal to"
   description__nic:
     required: 
     type: 
-    description: ""
+    description: "Description does not contain (case-insensitive)"
   description__nie:
     required: 
     type: 
-    description: ""
+    description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: 
     type: 
-    description: ""
+    description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: 
     type: 
-    description: ""
+    description: "Description does not start with (case-sensitive)"
   email:
     required: 
     type: 
-    description: ""
+    description: "Email"
   email__empty:
     required: 
     type: 
-    description: ""
+    description: "Email is empty/null (boolean)"
   email__ic:
     required: 
     type: 
-    description: ""
+    description: "Email contains (case-insensitive)"
   email__ie:
     required: 
     type: 
-    description: ""
+    description: "Email exact match (case-insensitive)"
   email__iew:
     required: 
     type: 
-    description: ""
+    description: "Email ends with (case-insensitive)"
   email__isw:
     required: 
     type: 
-    description: ""
+    description: "Email starts with (case-sensitive)"
   email__n:
     required: 
     type: 
-    description: ""
+    description: "Email not equal to"
   email__nic:
     required: 
     type: 
-    description: ""
+    description: "Email does not contain (case-insensitive)"
   email__nie:
     required: 
     type: 
-    description: ""
+    description: "Email inverse exact match (case-insensitive)"
   email__niew:
     required: 
     type: 
-    description: ""
+    description: "Email does not end with (case-insensitive)"
   email__nisw:
     required: 
     type: 
-    description: ""
+    description: "Email does not start with (case-sensitive)"
   group:
     required: 
     type: 
@@ -188,7 +188,7 @@ parameters:
   group__n:
     required: 
     type: 
-    description: "Contact group (slug)"
+    description: "Group not equal to"
   group_id:
     required: 
     type: 
@@ -196,63 +196,63 @@ parameters:
   group_id__n:
     required: 
     type: 
-    description: "Contact group (ID)"
+    description: "Group_id not equal to"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   id__empty:
     required: 
     type: 
-    description: ""
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: 
     type: 
-    description: ""
+    description: "Id greater than"
   id__gte:
     required: 
     type: 
-    description: ""
+    description: "Id greater than or equal to"
   id__lt:
     required: 
     type: 
-    description: ""
+    description: "Id less than"
   id__lte:
     required: 
     type: 
-    description: ""
+    description: "Id less than or equal to"
   id__n:
     required: 
     type: 
-    description: ""
+    description: "Id not equal to"
   last_updated:
     required: 
     type: 
-    description: ""
+    description: "Last_updated"
   last_updated__empty:
     required: 
     type: 
-    description: ""
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than"
   last_updated__gte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than"
   last_updated__lte:
     required: 
     type: 
-    description: ""
+    description: "Last_updated less than or equal to"
   last_updated__n:
     required: 
     type: 
-    description: ""
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: 
@@ -260,95 +260,95 @@ parameters:
   link:
     required: 
     type: 
-    description: ""
+    description: "Link"
   link__empty:
     required: 
     type: 
-    description: ""
+    description: "Link is empty/null (boolean)"
   link__ic:
     required: 
     type: 
-    description: ""
+    description: "Link contains (case-insensitive)"
   link__ie:
     required: 
     type: 
-    description: ""
+    description: "Link exact match (case-insensitive)"
   link__iew:
     required: 
     type: 
-    description: ""
+    description: "Link ends with (case-insensitive)"
   link__isw:
     required: 
     type: 
-    description: ""
+    description: "Link starts with (case-sensitive)"
   link__n:
     required: 
     type: 
-    description: ""
+    description: "Link not equal to"
   link__nic:
     required: 
     type: 
-    description: ""
+    description: "Link does not contain (case-insensitive)"
   link__nie:
     required: 
     type: 
-    description: ""
+    description: "Link inverse exact match (case-insensitive)"
   link__niew:
     required: 
     type: 
-    description: ""
+    description: "Link does not end with (case-insensitive)"
   link__nisw:
     required: 
     type: 
-    description: ""
+    description: "Link does not start with (case-sensitive)"
   modified_by_request:
     required: 
     type: 
-    description: ""
+    description: "Modified_by_request"
   name:
     required: 
     type: 
-    description: ""
+    description: "Name"
   name__empty:
     required: 
     type: 
-    description: ""
+    description: "Name is empty/null (boolean)"
   name__ic:
     required: 
     type: 
-    description: ""
+    description: "Name contains (case-insensitive)"
   name__ie:
     required: 
     type: 
-    description: ""
+    description: "Name exact match (case-insensitive)"
   name__iew:
     required: 
     type: 
-    description: ""
+    description: "Name ends with (case-insensitive)"
   name__isw:
     required: 
     type: 
-    description: ""
+    description: "Name starts with (case-sensitive)"
   name__n:
     required: 
     type: 
-    description: ""
+    description: "Name not equal to"
   name__nic:
     required: 
     type: 
-    description: ""
+    description: "Name does not contain (case-insensitive)"
   name__nie:
     required: 
     type: 
-    description: ""
+    description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: 
     type: 
-    description: ""
+    description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: 
     type: 
-    description: ""
+    description: "Name does not start with (case-sensitive)"
   offset:
     required: false
     type: 
@@ -360,47 +360,47 @@ parameters:
   phone:
     required: 
     type: 
-    description: ""
+    description: "Phone"
   phone__empty:
     required: 
     type: 
-    description: ""
+    description: "Phone is empty/null (boolean)"
   phone__ic:
     required: 
     type: 
-    description: ""
+    description: "Phone contains (case-insensitive)"
   phone__ie:
     required: 
     type: 
-    description: ""
+    description: "Phone exact match (case-insensitive)"
   phone__iew:
     required: 
     type: 
-    description: ""
+    description: "Phone ends with (case-insensitive)"
   phone__isw:
     required: 
     type: 
-    description: ""
+    description: "Phone starts with (case-sensitive)"
   phone__n:
     required: 
     type: 
-    description: ""
+    description: "Phone not equal to"
   phone__nic:
     required: 
     type: 
-    description: ""
+    description: "Phone does not contain (case-insensitive)"
   phone__nie:
     required: 
     type: 
-    description: ""
+    description: "Phone inverse exact match (case-insensitive)"
   phone__niew:
     required: 
     type: 
-    description: ""
+    description: "Phone does not end with (case-insensitive)"
   phone__nisw:
     required: 
     type: 
-    description: ""
+    description: "Phone does not start with (case-sensitive)"
   q:
     required: 
     type: 
@@ -408,59 +408,59 @@ parameters:
   tag:
     required: 
     type: 
-    description: ""
+    description: "Tag"
   tag__n:
     required: 
     type: 
-    description: ""
+    description: "Tag not equal to"
   title:
     required: 
     type: 
-    description: ""
+    description: "Title"
   title__empty:
     required: 
     type: 
-    description: ""
+    description: "Title is empty/null (boolean)"
   title__ic:
     required: 
     type: 
-    description: ""
+    description: "Title contains (case-insensitive)"
   title__ie:
     required: 
     type: 
-    description: ""
+    description: "Title exact match (case-insensitive)"
   title__iew:
     required: 
     type: 
-    description: ""
+    description: "Title ends with (case-insensitive)"
   title__isw:
     required: 
     type: 
-    description: ""
+    description: "Title starts with (case-sensitive)"
   title__n:
     required: 
     type: 
-    description: ""
+    description: "Title not equal to"
   title__nic:
     required: 
     type: 
-    description: ""
+    description: "Title does not contain (case-insensitive)"
   title__nie:
     required: 
     type: 
-    description: ""
+    description: "Title inverse exact match (case-insensitive)"
   title__niew:
     required: 
     type: 
-    description: ""
+    description: "Title does not end with (case-insensitive)"
   title__nisw:
     required: 
     type: 
-    description: ""
+    description: "Title does not start with (case-sensitive)"
   updated_by_request:
     required: 
     type: 
-    description: ""
+    description: "Updated_by_request"
   save_in_key_store:
     type: boolean
     default: false

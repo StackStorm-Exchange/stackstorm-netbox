@@ -20,11 +20,11 @@ parameters:
   app_label:
     required: 
     type: 
-    description: ""
+    description: "App_label"
   id:
     required: 
     type: 
-    description: ""
+    description: "Id"
   limit:
     required: false
     type: 
@@ -32,7 +32,7 @@ parameters:
   model:
     required: 
     type: 
-    description: ""
+    description: "Model"
   offset:
     required: false
     type: 
