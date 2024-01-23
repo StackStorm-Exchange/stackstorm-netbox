@@ -83,10 +83,13 @@ def parse_component_properties(properties, required):
         if data.get('readOnly'):
             continue
 
+        description = data.get('description', name.replace('_', ' ').capitalize())
+        title = data.get('title', description)
+
         parameter = {
             'name': name,
             'type': data.get('type', 'object'),
-            'description': data.get('title', data.get('description', name.replace('_', ' ').capitalize()))
+            'description': title
         }
 
         if name in required:
