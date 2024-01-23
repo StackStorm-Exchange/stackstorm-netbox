@@ -1,5 +1,9 @@
 # Change Log
 
+## 3.1.0
+
+- Updated spec as per v3.4.7
+
 ## 3.0.7
 
 - Add @abhi1693 as code owner.
