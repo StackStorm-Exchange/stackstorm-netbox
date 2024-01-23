@@ -62,3 +62,10 @@ http://<ip-address>:<port>/netbox/webhooks/
 ```
 
 **Note:** the sensor does not support HTTPS but this could be accomplished by fronting the sensor with Nginx/Apache/etc, which would terminate the SSL connection and then proxy the request to the sensor over HTTP.
+
+## Maintainers
+
+Active pack maintainers with review & write repository access and expertise with Netbox:
+
+  - John Anderson <lampwins@gmail.com> @lampwins
+  - Abhimanyu Saharan <asaharan@onemindservices.com> @abhi1693
