@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   manufacturer:
-    required: true
+    required: false
     type: integer
     description: "Manufacturer"
   model:
-    required: true
+    required: false
     type: string
     description: "Model"
   part_number:

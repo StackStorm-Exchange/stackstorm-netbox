@@ -18,15 +18,15 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Full name of the provider"
   slug:
-    required: true
+    required: false
     type: string
     description: "Slug"
   accounts:
-    required: true
+    required: false
     type: array
     description: "Accounts"
   description:

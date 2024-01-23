@@ -18,180 +18,180 @@ parameters:
     immutable: true
     type: boolean
   created:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Created"
   created__gte:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Created greater than or equal to"
   created__lte:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Created less than or equal to"
   description:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description"
   description__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Description is empty/null (boolean)"
   description__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description contains (case-insensitive)"
   description__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description exact match (case-insensitive)"
   description__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description ends with (case-insensitive)"
   description__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description starts with (case-sensitive)"
   description__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description not equal to"
   description__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not contain (case-insensitive)"
   description__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not end with (case-insensitive)"
   description__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not start with (case-sensitive)"
   expires:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Expires"
   expires__gte:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Expires greater than or equal to"
   expires__lte:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Expires less than or equal to"
   id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id"
   id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Id is empty/null (boolean)"
   id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than"
   id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than or equal to"
   id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than"
   id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than or equal to"
   id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id not equal to"
   key:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Key"
   key__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Key is empty/null (boolean)"
   key__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Key contains (case-insensitive)"
   key__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Key exact match (case-insensitive)"
   key__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Key ends with (case-insensitive)"
   key__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Key starts with (case-sensitive)"
   key__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Key not equal to"
   key__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Key does not contain (case-insensitive)"
   key__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Key inverse exact match (case-insensitive)"
   key__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Key does not end with (case-insensitive)"
   key__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Key does not start with (case-sensitive)"
   limit:
     required: false
-    type: 
+    type: integer
     description: "Number of results to return per page."
   offset:
     required: false
-    type: 
+    type: integer
     description: "The initial index from which to return the results."
   ordering:
     required: false
-    type: 
+    type: string
     description: "Which field to use when ordering the results."
   q:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Search"
   user:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User (name)"
   user__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User not equal to"
   user_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User"
   user_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_id not equal to"
   write_enabled:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Write_enabled"
   save_in_key_store:
     type: boolean

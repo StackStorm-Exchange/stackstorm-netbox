@@ -26,7 +26,7 @@ parameters:
     type: integer
     description: "Module type"
   name:
-    required: true
+    required: false
     type: string
     description: "{module} is accepted as a substitution for the module bay position when attached to a module type."
   label:
@@ -34,7 +34,7 @@ parameters:
     type: string
     description: "Physical label"
   type:
-    required: true
+    required: false
     type: string
     description: "* `virtual` - Virtual
 * `bridge` - Bridge

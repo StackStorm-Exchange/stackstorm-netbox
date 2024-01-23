@@ -18,15 +18,15 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   slug:
-    required: true
+    required: false
     type: string
     description: "Slug"
   site:
-    required: true
+    required: false
     type: integer
     description: "Site"
   parent:

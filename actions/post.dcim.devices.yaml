@@ -22,11 +22,11 @@ parameters:
     type: string
     description: "Name"
   device_type:
-    required: true
+    required: false
     type: integer
     description: "Device type"
   role:
-    required: true
+    required: false
     type: integer
     description: "The function this device serves"
   tenant:
@@ -46,7 +46,7 @@ parameters:
     type: string
     description: "A unique tag used to identify this device"
   site:
-    required: true
+    required: false
     type: integer
     description: "Site"
   location:

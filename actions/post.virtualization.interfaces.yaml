@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   virtual_machine:
-    required: true
+    required: false
     type: integer
     description: "Virtual machine"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   enabled:

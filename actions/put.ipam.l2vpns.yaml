@@ -22,15 +22,15 @@ parameters:
     type: integer
     description: "Identifier"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   slug:
-    required: true
+    required: false
     type: string
     description: "Slug"
   type:
-    required: true
+    required: false
     type: string
     description: "* `vpws` - VPWS
 * `vpls` - VPLS

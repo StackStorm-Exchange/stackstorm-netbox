@@ -18,576 +18,576 @@ parameters:
     immutable: true
     type: boolean
   cluster:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster"
   cluster__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster not equal to"
   cluster_group:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster group (slug)"
   cluster_group__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster_group not equal to"
   cluster_group_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster group (ID)"
   cluster_group_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster_group_id not equal to"
   cluster_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster (ID)"
   cluster_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster_id not equal to"
   cluster_type:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster type (slug)"
   cluster_type__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster_type not equal to"
   cluster_type_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster type (ID)"
   cluster_type_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Cluster_type_id not equal to"
   config_template_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Config template (ID)"
   config_template_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Config_template_id not equal to"
   contact:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact"
   contact__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact not equal to"
   contact_group:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact group"
   contact_group__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact_group not equal to"
   contact_role:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact Role"
   contact_role__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact_role not equal to"
   created:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created"
   created__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created is empty/null (boolean)"
   created__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created greater than"
   created__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created greater than or equal to"
   created__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created less than"
   created__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created less than or equal to"
   created__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created not equal to"
   created_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Created_by_request"
   description:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description"
   description__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Description is empty/null (boolean)"
   description__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description contains (case-insensitive)"
   description__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description exact match (case-insensitive)"
   description__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description ends with (case-insensitive)"
   description__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description starts with (case-sensitive)"
   description__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description not equal to"
   description__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not contain (case-insensitive)"
   description__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not end with (case-insensitive)"
   description__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not start with (case-sensitive)"
   device:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Device"
   device__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Device not equal to"
   device_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Device (ID)"
   device_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Device_id not equal to"
   disk:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Disk"
   disk__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Disk is empty/null (boolean)"
   disk__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Disk greater than"
   disk__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Disk greater than or equal to"
   disk__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Disk less than"
   disk__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Disk less than or equal to"
   disk__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Disk not equal to"
   has_primary_ip:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Has a primary IP"
   id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id"
   id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Id is empty/null (boolean)"
   id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than"
   id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than or equal to"
   id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than"
   id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than or equal to"
   id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id not equal to"
   last_updated:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated"
   last_updated__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated greater than"
   last_updated__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated greater than or equal to"
   last_updated__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated less than"
   last_updated__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated less than or equal to"
   last_updated__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated not equal to"
   limit:
     required: false
-    type: 
+    type: integer
     description: "Number of results to return per page."
   local_context_data:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Has local config context data"
   mac_address:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Mac_address"
   mac_address__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Mac_address contains (case-insensitive)"
   mac_address__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Mac_address exact match (case-insensitive)"
   mac_address__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Mac_address ends with (case-insensitive)"
   mac_address__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Mac_address starts with (case-sensitive)"
   mac_address__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Mac_address not equal to"
   mac_address__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Mac_address does not contain (case-insensitive)"
   mac_address__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Mac_address inverse exact match (case-insensitive)"
   mac_address__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Mac_address does not end with (case-insensitive)"
   mac_address__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Mac_address does not start with (case-sensitive)"
   memory:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Memory"
   memory__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Memory is empty/null (boolean)"
   memory__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Memory greater than"
   memory__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Memory greater than or equal to"
   memory__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Memory less than"
   memory__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Memory less than or equal to"
   memory__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Memory not equal to"
   modified_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Modified_by_request"
   name:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name"
   name__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Name is empty/null (boolean)"
   name__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name contains (case-insensitive)"
   name__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name exact match (case-insensitive)"
   name__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name ends with (case-insensitive)"
   name__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name starts with (case-sensitive)"
   name__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name not equal to"
   name__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name does not contain (case-insensitive)"
   name__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name inverse exact match (case-insensitive)"
   name__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name does not end with (case-insensitive)"
   name__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name does not start with (case-sensitive)"
   offset:
     required: false
-    type: 
+    type: integer
     description: "The initial index from which to return the results."
   ordering:
     required: false
-    type: 
+    type: string
     description: "Which field to use when ordering the results."
   platform:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Platform (slug)"
   platform__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Platform not equal to"
   platform_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Platform (ID)"
   platform_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Platform_id not equal to"
   primary_ip4_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Primary IPv4 (ID)"
   primary_ip4_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Primary_ip4_id not equal to"
   primary_ip6_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Primary IPv6 (ID)"
   primary_ip6_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Primary_ip6_id not equal to"
   q:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Search"
   region:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Region (slug)"
   region__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Region not equal to"
   region_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Region (ID)"
   region_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Region_id not equal to"
   role:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Role (slug)"
   role__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Role not equal to"
   role_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Role (ID)"
   role_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Role_id not equal to"
   site:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Site (slug)"
   site__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Site not equal to"
   site_group:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Site group (slug)"
   site_group__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Site_group not equal to"
   site_group_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Site group (ID)"
   site_group_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Site_group_id not equal to"
   site_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Site (ID)"
   site_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Site_id not equal to"
   status:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Status"
   status__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Status not equal to"
   tag:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tag"
   tag__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tag not equal to"
   tenant:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant (slug)"
   tenant__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant not equal to"
   tenant_group:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant Group (slug)"
   tenant_group__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant_group not equal to"
   tenant_group_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant Group (ID)"
   tenant_group_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant_group_id not equal to"
   tenant_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant (ID)"
   tenant_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant_id not equal to"
   updated_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Updated_by_request"
   vcpus:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Vcpus"
   vcpus__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Vcpus is empty/null (boolean)"
   vcpus__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Vcpus greater than"
   vcpus__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Vcpus greater than or equal to"
   vcpus__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Vcpus less than"
   vcpus__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Vcpus less than or equal to"
   vcpus__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Vcpus not equal to"
   save_in_key_store:
     type: boolean

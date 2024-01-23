@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   start_address:
-    required: true
+    required: false
     type: string
     description: "Start address"
   end_address:
-    required: true
+    required: false
     type: string
     description: "End address"
   vrf:

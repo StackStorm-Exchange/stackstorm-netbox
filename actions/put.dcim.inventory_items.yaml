@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   device:
-    required: true
+    required: false
     type: integer
     description: "Device"
   parent:
@@ -26,7 +26,7 @@ parameters:
     type: integer
     description: "Parent"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   label:

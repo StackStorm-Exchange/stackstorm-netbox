@@ -18,15 +18,15 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   ports:
-    required: true
+    required: false
     type: array
     description: "Port numbers"
   protocol:
-    required: true
+    required: false
     type: string
     description: "* `tcp` - TCP
 * `udp` - UDP

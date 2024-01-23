@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   user:
-    required: true
+    required: false
     type: integer
     description: "User"
   expires:

@@ -26,11 +26,11 @@ parameters:
     type: integer
     description: "VLAN group (optional)"
   vid:
-    required: true
+    required: false
     type: integer
     description: "VLAN ID"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   tenant:

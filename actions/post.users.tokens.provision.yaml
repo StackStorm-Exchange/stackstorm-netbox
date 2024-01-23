@@ -30,11 +30,11 @@ parameters:
     type: string
     description: "Description"
   username:
-    required: true
+    required: false
     type: string
     description: "Username"
   password:
-    required: true
+    required: false
     type: string
     description: "Password"
 runner_type: python-script

@@ -23,12 +23,12 @@ parameters:
     immutable: true
     type: boolean
   peer_device:
-    required: true
-    type: 
+    required: false
+    type: string
     description: "The name of the peer device"
   peer_interface:
-    required: true
-    type: 
+    required: false
+    type: string
     description: "The name of the peer interface"
   save_in_key_store:
     type: boolean

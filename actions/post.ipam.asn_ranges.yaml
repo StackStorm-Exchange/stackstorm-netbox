@@ -18,23 +18,23 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   slug:
-    required: true
+    required: false
     type: string
     description: "Slug"
   rir:
-    required: true
+    required: false
     type: integer
     description: "Rir"
   start:
-    required: true
+    required: false
     type: integer
     description: "Start"
   end:
-    required: true
+    required: false
     type: integer
     description: "End"
   tenant:

@@ -18,96 +18,96 @@ parameters:
     immutable: true
     type: boolean
   cable:
-    required: 
-    type: 
+    required: false
+    type: integer
     description: "Cable"
   cable__n:
-    required: 
-    type: 
+    required: false
+    type: integer
     description: "Cable not equal to"
   cable_end:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Cable_end"
   cable_end__n:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Cable_end not equal to"
   id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id"
   id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Id is empty/null (boolean)"
   id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than"
   id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than or equal to"
   id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than"
   id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than or equal to"
   id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id not equal to"
   limit:
     required: false
-    type: 
+    type: integer
     description: "Number of results to return per page."
   offset:
     required: false
-    type: 
+    type: integer
     description: "The initial index from which to return the results."
   ordering:
     required: false
-    type: 
+    type: string
     description: "Which field to use when ordering the results."
   termination_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Termination_id"
   termination_id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Termination_id is empty/null (boolean)"
   termination_id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Termination_id greater than"
   termination_id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Termination_id greater than or equal to"
   termination_id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Termination_id less than"
   termination_id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Termination_id less than or equal to"
   termination_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Termination_id not equal to"
   termination_type:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Termination_type"
   termination_type__n:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Termination_type not equal to"
   save_in_key_store:
     type: boolean

@@ -18,8 +18,8 @@ parameters:
     immutable: true
     type: boolean
   id:
-    required: true
-    type: 
+    required: false
+    type: integer
     description: "Id"
   save_in_key_store:
     type: boolean

@@ -18,332 +18,332 @@ parameters:
     immutable: true
     type: boolean
   console_ports:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Has console ports"
   console_server_ports:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Has console server ports"
   created:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created"
   created__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created is empty/null (boolean)"
   created__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created greater than"
   created__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created greater than or equal to"
   created__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created less than"
   created__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created less than or equal to"
   created__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created not equal to"
   created_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Created_by_request"
   description:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description"
   description__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Description is empty/null (boolean)"
   description__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description contains (case-insensitive)"
   description__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description exact match (case-insensitive)"
   description__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description ends with (case-insensitive)"
   description__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description starts with (case-sensitive)"
   description__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description not equal to"
   description__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not contain (case-insensitive)"
   description__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not end with (case-insensitive)"
   description__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not start with (case-sensitive)"
   id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id"
   id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Id is empty/null (boolean)"
   id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than"
   id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than or equal to"
   id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than"
   id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than or equal to"
   id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id not equal to"
   interfaces:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Has interfaces"
   last_updated:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated"
   last_updated__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated greater than"
   last_updated__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated greater than or equal to"
   last_updated__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated less than"
   last_updated__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated less than or equal to"
   last_updated__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated not equal to"
   limit:
     required: false
-    type: 
+    type: integer
     description: "Number of results to return per page."
   manufacturer:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Manufacturer (slug)"
   manufacturer__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Manufacturer not equal to"
   manufacturer_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Manufacturer (ID)"
   manufacturer_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Manufacturer_id not equal to"
   model:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Model"
   model__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Model is empty/null (boolean)"
   model__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Model contains (case-insensitive)"
   model__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Model exact match (case-insensitive)"
   model__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Model ends with (case-insensitive)"
   model__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Model starts with (case-sensitive)"
   model__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Model not equal to"
   model__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Model does not contain (case-insensitive)"
   model__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Model inverse exact match (case-insensitive)"
   model__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Model does not end with (case-insensitive)"
   model__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Model does not start with (case-sensitive)"
   modified_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Modified_by_request"
   offset:
     required: false
-    type: 
+    type: integer
     description: "The initial index from which to return the results."
   ordering:
     required: false
-    type: 
+    type: string
     description: "Which field to use when ordering the results."
   part_number:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Part_number"
   part_number__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Part_number is empty/null (boolean)"
   part_number__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Part_number contains (case-insensitive)"
   part_number__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Part_number exact match (case-insensitive)"
   part_number__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Part_number ends with (case-insensitive)"
   part_number__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Part_number starts with (case-sensitive)"
   part_number__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Part_number not equal to"
   part_number__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Part_number does not contain (case-insensitive)"
   part_number__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Part_number inverse exact match (case-insensitive)"
   part_number__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Part_number does not end with (case-insensitive)"
   part_number__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Part_number does not start with (case-sensitive)"
   pass_through_ports:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Has pass-through ports"
   power_outlets:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Has power outlets"
   power_ports:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Has power ports"
   q:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Search"
   tag:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tag"
   tag__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tag not equal to"
   updated_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Updated_by_request"
   weight:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Weight"
   weight__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Weight is empty/null (boolean)"
   weight__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Weight greater than"
   weight__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Weight greater than or equal to"
   weight__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Weight less than"
   weight__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Weight less than or equal to"
   weight__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Weight not equal to"
   weight_unit:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Weight_unit"
   weight_unit__n:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Weight_unit not equal to"
   save_in_key_store:
     type: boolean

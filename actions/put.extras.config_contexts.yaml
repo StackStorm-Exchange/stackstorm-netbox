@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   weight:
@@ -90,7 +90,7 @@ parameters:
     type: integer
     description: "Remote data source"
   data:
-    required: true
+    required: false
     type: object
     description: "Data"
   id:

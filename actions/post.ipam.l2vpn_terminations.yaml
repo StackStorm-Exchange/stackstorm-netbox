@@ -18,15 +18,15 @@ parameters:
     immutable: true
     type: boolean
   l2vpn:
-    required: true
+    required: false
     type: integer
     description: "L2vpn"
   assigned_object_type:
-    required: true
+    required: false
     type: string
     description: "Assigned object type"
   assigned_object_id:
-    required: true
+    required: false
     type: integer
     description: "Assigned object id"
   tags:

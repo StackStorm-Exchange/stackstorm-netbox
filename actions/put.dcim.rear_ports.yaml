@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   device:
-    required: true
+    required: false
     type: integer
     description: "Device"
   module:
@@ -26,7 +26,7 @@ parameters:
     type: integer
     description: "Module"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   label:
@@ -34,7 +34,7 @@ parameters:
     type: string
     description: "Physical label"
   type:
-    required: true
+    required: false
     type: string
     description: "* `8p8c` - 8P8C
 * `8p6c` - 8P6C

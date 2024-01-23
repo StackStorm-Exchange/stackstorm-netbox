@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   device:
@@ -42,7 +42,7 @@ parameters:
     type: integer
     description: "Primary IPv6"
   status:
-    required: true
+    required: false
     type: string
     description: "* `active` - Active
 * `planned` - Planned

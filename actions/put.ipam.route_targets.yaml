@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Route target value (formatted in accordance with RFC 4360)"
   tenant:

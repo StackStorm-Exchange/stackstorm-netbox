@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   content_types:
-    required: true
+    required: false
     type: array
     description: "Content types"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   description:
@@ -30,7 +30,7 @@ parameters:
     type: string
     description: "Description"
   template_code:
-    required: true
+    required: false
     type: string
     description: "Jinja2 template code. The list of objects being exported is passed as a context variable named &lt;code&gt;queryset&lt;/code&gt;."
   mime_type:

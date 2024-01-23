@@ -18,15 +18,15 @@ parameters:
     immutable: true
     type: boolean
   device:
-    required: true
+    required: false
     type: integer
     description: "Device"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   installed_module:
-    required: true
+    required: false
     type: integer
     description: "Installed module"
   label:

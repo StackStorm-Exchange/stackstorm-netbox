@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   type:
-    required: true
+    required: false
     type: integer
     description: "Type"
   group:

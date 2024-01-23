@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   asn:
-    required: true
+    required: false
     type: integer
     description: "16- or 32-bit autonomous system number"
   rir:
-    required: true
+    required: false
     type: integer
     description: "Regional Internet Registry responsible for this AS number space"
   tenant:

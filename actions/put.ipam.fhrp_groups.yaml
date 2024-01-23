@@ -22,7 +22,7 @@ parameters:
     type: string
     description: "Name"
   protocol:
-    required: true
+    required: false
     type: string
     description: "* `vrrp2` - VRRPv2
 * `vrrp3` - VRRPv3
@@ -32,7 +32,7 @@ parameters:
 * `glbp` - GLBP
 * `other` - Other"
   group_id:
-    required: true
+    required: false
     type: integer
     description: "Group id"
   auth_type:

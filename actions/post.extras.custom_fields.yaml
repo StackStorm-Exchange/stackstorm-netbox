@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   content_types:
-    required: true
+    required: false
     type: array
     description: "Content types"
   type:
@@ -44,7 +44,7 @@ parameters:
     type: string
     description: "Object type"
   name:
-    required: true
+    required: false
     type: string
     description: "Internal field name"
   label:

@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   assigned_object_type:
-    required: true
+    required: false
     type: string
     description: "Assigned object type"
   assigned_object_id:
-    required: true
+    required: false
     type: integer
     description: "Assigned object id"
   created_by:
@@ -37,7 +37,7 @@ parameters:
 * `warning` - Warning
 * `danger` - Danger"
   comments:
-    required: true
+    required: false
     type: string
     description: "Comments"
   tags:

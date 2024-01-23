@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   circuit:
-    required: true
+    required: false
     type: integer
     description: "Circuit"
   term_side:
-    required: true
+    required: false
     type: string
     description: "Termination"
   site:

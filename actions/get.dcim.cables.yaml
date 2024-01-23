@@ -18,364 +18,364 @@ parameters:
     immutable: true
     type: boolean
   color:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Color"
   color__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Color not equal to"
   created:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created"
   created__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created is empty/null (boolean)"
   created__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created greater than"
   created__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created greater than or equal to"
   created__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created less than"
   created__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created less than or equal to"
   created__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created not equal to"
   created_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Created_by_request"
   description:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description"
   description__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Description is empty/null (boolean)"
   description__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description contains (case-insensitive)"
   description__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description exact match (case-insensitive)"
   description__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description ends with (case-insensitive)"
   description__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description starts with (case-sensitive)"
   description__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description not equal to"
   description__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not contain (case-insensitive)"
   description__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not end with (case-insensitive)"
   description__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not start with (case-sensitive)"
   device:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Device"
   device_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Device_id"
   id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id"
   id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Id is empty/null (boolean)"
   id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than"
   id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than or equal to"
   id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than"
   id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than or equal to"
   id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id not equal to"
   label:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Label"
   label__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Label is empty/null (boolean)"
   label__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Label contains (case-insensitive)"
   label__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Label exact match (case-insensitive)"
   label__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Label ends with (case-insensitive)"
   label__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Label starts with (case-sensitive)"
   label__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Label not equal to"
   label__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Label does not contain (case-insensitive)"
   label__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Label inverse exact match (case-insensitive)"
   label__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Label does not end with (case-insensitive)"
   label__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Label does not start with (case-sensitive)"
   last_updated:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated"
   last_updated__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated greater than"
   last_updated__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated greater than or equal to"
   last_updated__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated less than"
   last_updated__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated less than or equal to"
   last_updated__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated not equal to"
   length:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Length"
   length__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Length is empty/null (boolean)"
   length__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Length greater than"
   length__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Length greater than or equal to"
   length__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Length less than"
   length__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Length less than or equal to"
   length__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Length not equal to"
   length_unit:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Length_unit"
   length_unit__n:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Length_unit not equal to"
   limit:
     required: false
-    type: 
+    type: integer
     description: "Number of results to return per page."
   location:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Location"
   location_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Location_id"
   modified_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Modified_by_request"
   offset:
     required: false
-    type: 
+    type: integer
     description: "The initial index from which to return the results."
   ordering:
     required: false
-    type: 
+    type: string
     description: "Which field to use when ordering the results."
   q:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Search"
   rack:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Rack"
   rack_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Rack_id"
   site:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Site"
   site_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Site_id"
   status:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Status"
   status__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Status not equal to"
   tag:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tag"
   tag__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tag not equal to"
   tenant:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant (slug)"
   tenant__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant not equal to"
   tenant_group:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant Group (slug)"
   tenant_group__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant_group not equal to"
   tenant_group_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant Group (ID)"
   tenant_group_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant_group_id not equal to"
   tenant_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant (ID)"
   tenant_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant_id not equal to"
   termination_a_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Termination_a_id"
   termination_a_type:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Termination_a_type"
   termination_a_type__n:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Termination_a_type not equal to"
   termination_b_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Termination_b_id"
   termination_b_type:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Termination_b_type"
   termination_b_type__n:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Termination_b_type not equal to"
   type:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Type"
   type__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Type not equal to"
   unterminated:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Unterminated"
   updated_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Updated_by_request"
   save_in_key_store:
     type: boolean

@@ -18,15 +18,15 @@ parameters:
     immutable: true
     type: boolean
   device:
-    required: true
+    required: false
     type: integer
     description: "Device"
   module_bay:
-    required: true
+    required: false
     type: integer
     description: "Module bay"
   module_type:
-    required: true
+    required: false
     type: integer
     description: "Module type"
   status:

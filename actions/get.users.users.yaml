@@ -18,252 +18,252 @@ parameters:
     immutable: true
     type: boolean
   email:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Email"
   email__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Email is empty/null (boolean)"
   email__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Email contains (case-insensitive)"
   email__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Email exact match (case-insensitive)"
   email__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Email ends with (case-insensitive)"
   email__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Email starts with (case-sensitive)"
   email__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Email not equal to"
   email__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Email does not contain (case-insensitive)"
   email__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Email inverse exact match (case-insensitive)"
   email__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Email does not end with (case-insensitive)"
   email__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Email does not start with (case-sensitive)"
   first_name:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "First_name"
   first_name__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "First_name is empty/null (boolean)"
   first_name__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "First_name contains (case-insensitive)"
   first_name__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "First_name exact match (case-insensitive)"
   first_name__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "First_name ends with (case-insensitive)"
   first_name__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "First_name starts with (case-sensitive)"
   first_name__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "First_name not equal to"
   first_name__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "First_name does not contain (case-insensitive)"
   first_name__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "First_name inverse exact match (case-insensitive)"
   first_name__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "First_name does not end with (case-insensitive)"
   first_name__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "First_name does not start with (case-sensitive)"
   group:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Group (name)"
   group__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Group not equal to"
   group_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Group"
   group_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Group_id not equal to"
   id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id"
   id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Id is empty/null (boolean)"
   id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than"
   id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than or equal to"
   id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than"
   id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than or equal to"
   id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id not equal to"
   is_active:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Is_active"
   is_staff:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Is_staff"
   is_superuser:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Is_superuser"
   last_name:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_name"
   last_name__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Last_name is empty/null (boolean)"
   last_name__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_name contains (case-insensitive)"
   last_name__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_name exact match (case-insensitive)"
   last_name__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_name ends with (case-insensitive)"
   last_name__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_name starts with (case-sensitive)"
   last_name__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_name not equal to"
   last_name__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_name does not contain (case-insensitive)"
   last_name__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_name inverse exact match (case-insensitive)"
   last_name__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_name does not end with (case-insensitive)"
   last_name__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_name does not start with (case-sensitive)"
   limit:
     required: false
-    type: 
+    type: integer
     description: "Number of results to return per page."
   offset:
     required: false
-    type: 
+    type: integer
     description: "The initial index from which to return the results."
   ordering:
     required: false
-    type: 
+    type: string
     description: "Which field to use when ordering the results."
   q:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Search"
   username:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Username"
   username__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Username is empty/null (boolean)"
   username__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Username contains (case-insensitive)"
   username__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Username exact match (case-insensitive)"
   username__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Username ends with (case-insensitive)"
   username__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Username starts with (case-sensitive)"
   username__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Username not equal to"
   username__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Username does not contain (case-insensitive)"
   username__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Username inverse exact match (case-insensitive)"
   username__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Username does not end with (case-insensitive)"
   username__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Username does not start with (case-sensitive)"
   save_in_key_store:
     type: boolean

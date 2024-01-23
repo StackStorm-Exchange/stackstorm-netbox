@@ -18,216 +18,216 @@ parameters:
     immutable: true
     type: boolean
   contact_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact (ID)"
   contact_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact_id not equal to"
   content_type:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Content_type"
   content_type__n:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Content_type not equal to"
   content_type_id:
-    required: 
-    type: 
+    required: false
+    type: integer
     description: "Content_type_id"
   content_type_id__n:
-    required: 
-    type: 
+    required: false
+    type: integer
     description: "Content_type_id not equal to"
   created:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created"
   created__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created is empty/null (boolean)"
   created__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created greater than"
   created__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created greater than or equal to"
   created__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created less than"
   created__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created less than or equal to"
   created__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created not equal to"
   created_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Created_by_request"
   group:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact group (slug)"
   group__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Group not equal to"
   group_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact group (ID)"
   group_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Group_id not equal to"
   id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id"
   id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Id is empty/null (boolean)"
   id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than"
   id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than or equal to"
   id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than"
   id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than or equal to"
   id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id not equal to"
   last_updated:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated"
   last_updated__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated greater than"
   last_updated__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated greater than or equal to"
   last_updated__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated less than"
   last_updated__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated less than or equal to"
   last_updated__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated not equal to"
   limit:
     required: false
-    type: 
+    type: integer
     description: "Number of results to return per page."
   modified_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Modified_by_request"
   object_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_id"
   object_id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Object_id is empty/null (boolean)"
   object_id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_id greater than"
   object_id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_id greater than or equal to"
   object_id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_id less than"
   object_id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_id less than or equal to"
   object_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_id not equal to"
   offset:
     required: false
-    type: 
+    type: integer
     description: "The initial index from which to return the results."
   ordering:
     required: false
-    type: 
+    type: string
     description: "Which field to use when ordering the results."
   priority:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Priority"
   priority__n:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Priority not equal to"
   q:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Search"
   role:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact role (slug)"
   role__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Role not equal to"
   role_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Contact role (ID)"
   role_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Role_id not equal to"
   tag:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tag"
   tag__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tag not equal to"
   updated_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Updated_by_request"
   save_in_key_store:
     type: boolean

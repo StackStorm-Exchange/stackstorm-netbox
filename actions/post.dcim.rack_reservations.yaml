@@ -18,15 +18,15 @@ parameters:
     immutable: true
     type: boolean
   rack:
-    required: true
+    required: false
     type: integer
     description: "Rack"
   units:
-    required: true
+    required: false
     type: array
     description: "Units"
   user:
-    required: true
+    required: false
     type: integer
     description: "User"
   tenant:
@@ -34,7 +34,7 @@ parameters:
     type: integer
     description: "Tenant"
   description:
-    required: true
+    required: false
     type: string
     description: "Description"
   comments:

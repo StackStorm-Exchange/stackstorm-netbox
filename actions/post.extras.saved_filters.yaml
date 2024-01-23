@@ -18,15 +18,15 @@ parameters:
     immutable: true
     type: boolean
   content_types:
-    required: true
+    required: false
     type: array
     description: "Content types"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   slug:
-    required: true
+    required: false
     type: string
     description: "Slug"
   description:
@@ -50,7 +50,7 @@ parameters:
     type: boolean
     description: "Shared"
   parameters:
-    required: true
+    required: false
     type: object
     description: "Parameters"
 runner_type: python-script

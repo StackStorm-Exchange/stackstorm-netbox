@@ -67,9 +67,13 @@ def sanitize_parameters(parameters):
         if parameter.get('schema'):
             if parameter['schema']['type'] == 'number':
                 parameter['type'] = 'integer'
+            else:
+                parameter['type'] = parameter['schema']['type']
         else:
             if parameter['type'] == 'number':
                 parameter['type'] = 'integer'
+
+        parameter['required'] = False
 
     return parameters
 
@@ -229,6 +233,7 @@ def main():
     parser.add_argument(
         '--skip-ssl',
         action='store_false',
+        default=True,
         help='Disable SSL certificate verification'
     )
 
@@ -237,7 +242,7 @@ def main():
 
     try:
         print(f'Connecting to {host}...')
-        response = requests.get(f'{host}/api/schema?format=json', verify=args.no_verify_ssl)
+        response = requests.get(f'{host}/api/schema?format=json', verify=args.skip_ssl)
         response.raise_for_status()
         spec = response.json()
     except requests.RequestException as e:

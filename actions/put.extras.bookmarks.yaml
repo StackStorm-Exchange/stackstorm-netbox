@@ -18,15 +18,15 @@ parameters:
     immutable: true
     type: boolean
   object_type:
-    required: true
+    required: false
     type: string
     description: "Object type"
   object_id:
-    required: true
+    required: false
     type: integer
     description: "Object id"
   user:
-    required: true
+    required: false
     type: integer
     description: "User"
   id:

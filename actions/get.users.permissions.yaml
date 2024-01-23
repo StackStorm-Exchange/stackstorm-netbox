@@ -18,196 +18,196 @@ parameters:
     immutable: true
     type: boolean
   can_add:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Can_add"
   can_change:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Can_change"
   can_delete:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Can_delete"
   can_view:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Can_view"
   description:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description"
   description__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Description is empty/null (boolean)"
   description__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description contains (case-insensitive)"
   description__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description exact match (case-insensitive)"
   description__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description ends with (case-insensitive)"
   description__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description starts with (case-sensitive)"
   description__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description not equal to"
   description__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not contain (case-insensitive)"
   description__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not end with (case-insensitive)"
   description__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not start with (case-sensitive)"
   enabled:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Enabled"
   group:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Group (name)"
   group__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Group not equal to"
   group_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Group"
   group_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Group_id not equal to"
   id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id"
   id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Id is empty/null (boolean)"
   id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than"
   id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than or equal to"
   id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than"
   id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than or equal to"
   id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id not equal to"
   limit:
     required: false
-    type: 
+    type: integer
     description: "Number of results to return per page."
   name:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name"
   name__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Name is empty/null (boolean)"
   name__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name contains (case-insensitive)"
   name__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name exact match (case-insensitive)"
   name__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name ends with (case-insensitive)"
   name__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name starts with (case-sensitive)"
   name__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name not equal to"
   name__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name does not contain (case-insensitive)"
   name__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name inverse exact match (case-insensitive)"
   name__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name does not end with (case-insensitive)"
   name__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Name does not start with (case-sensitive)"
   object_types:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_types"
   object_types__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_types not equal to"
   offset:
     required: false
-    type: 
+    type: integer
     description: "The initial index from which to return the results."
   ordering:
     required: false
-    type: 
+    type: string
     description: "Which field to use when ordering the results."
   q:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Search"
   user:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User (name)"
   user__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User not equal to"
   user_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User"
   user_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_id not equal to"
   save_in_key_store:
     type: boolean

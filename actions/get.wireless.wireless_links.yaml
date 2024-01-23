@@ -18,368 +18,368 @@ parameters:
     immutable: true
     type: boolean
   auth_cipher:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_cipher"
   auth_cipher__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_cipher not equal to"
   auth_psk:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_psk"
   auth_psk__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Auth_psk is empty/null (boolean)"
   auth_psk__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_psk contains (case-insensitive)"
   auth_psk__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_psk exact match (case-insensitive)"
   auth_psk__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_psk ends with (case-insensitive)"
   auth_psk__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_psk starts with (case-sensitive)"
   auth_psk__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_psk not equal to"
   auth_psk__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_psk does not contain (case-insensitive)"
   auth_psk__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_psk inverse exact match (case-insensitive)"
   auth_psk__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_psk does not end with (case-insensitive)"
   auth_psk__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_psk does not start with (case-sensitive)"
   auth_type:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_type"
   auth_type__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Auth_type not equal to"
   created:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created"
   created__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created is empty/null (boolean)"
   created__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created greater than"
   created__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created greater than or equal to"
   created__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created less than"
   created__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created less than or equal to"
   created__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Created not equal to"
   created_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Created_by_request"
   description:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description"
   description__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Description is empty/null (boolean)"
   description__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description contains (case-insensitive)"
   description__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description exact match (case-insensitive)"
   description__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description ends with (case-insensitive)"
   description__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description starts with (case-sensitive)"
   description__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description not equal to"
   description__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not contain (case-insensitive)"
   description__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not end with (case-insensitive)"
   description__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Description does not start with (case-sensitive)"
   id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id"
   id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Id is empty/null (boolean)"
   id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than"
   id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than or equal to"
   id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than"
   id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than or equal to"
   id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id not equal to"
   interface_a_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_a_id"
   interface_a_id__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_a_id is empty/null (boolean)"
   interface_a_id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_a_id greater than"
   interface_a_id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_a_id greater than or equal to"
   interface_a_id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_a_id less than"
   interface_a_id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_a_id less than or equal to"
   interface_a_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_a_id not equal to"
   interface_b_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_b_id"
   interface_b_id__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_b_id is empty/null (boolean)"
   interface_b_id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_b_id greater than"
   interface_b_id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_b_id greater than or equal to"
   interface_b_id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_b_id less than"
   interface_b_id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_b_id less than or equal to"
   interface_b_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Interface_b_id not equal to"
   last_updated:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated"
   last_updated__empty:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated greater than"
   last_updated__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated greater than or equal to"
   last_updated__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated less than"
   last_updated__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated less than or equal to"
   last_updated__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Last_updated not equal to"
   limit:
     required: false
-    type: 
+    type: integer
     description: "Number of results to return per page."
   modified_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Modified_by_request"
   offset:
     required: false
-    type: 
+    type: integer
     description: "The initial index from which to return the results."
   ordering:
     required: false
-    type: 
+    type: string
     description: "Which field to use when ordering the results."
   q:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Search"
   ssid:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Ssid"
   ssid__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Ssid is empty/null (boolean)"
   ssid__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Ssid contains (case-insensitive)"
   ssid__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Ssid exact match (case-insensitive)"
   ssid__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Ssid ends with (case-insensitive)"
   ssid__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Ssid starts with (case-sensitive)"
   ssid__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Ssid not equal to"
   ssid__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Ssid does not contain (case-insensitive)"
   ssid__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Ssid inverse exact match (case-insensitive)"
   ssid__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Ssid does not end with (case-insensitive)"
   ssid__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Ssid does not start with (case-sensitive)"
   status:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Status"
   status__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Status not equal to"
   tag:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tag"
   tag__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tag not equal to"
   tenant:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant (slug)"
   tenant__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant not equal to"
   tenant_group:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant Group (slug)"
   tenant_group__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant_group not equal to"
   tenant_group_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant Group (ID)"
   tenant_group_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant_group_id not equal to"
   tenant_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant (ID)"
   tenant_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Tenant_id not equal to"
   updated_by_request:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Updated_by_request"
   save_in_key_store:
     type: boolean

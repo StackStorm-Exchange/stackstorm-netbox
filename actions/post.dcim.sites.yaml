@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Full name of the site"
   slug:
-    required: true
+    required: false
     type: string
     description: "Slug"
   status:

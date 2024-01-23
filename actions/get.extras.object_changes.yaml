@@ -18,216 +18,216 @@ parameters:
     immutable: true
     type: boolean
   action:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Action"
   action__n:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Action not equal to"
   changed_object_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Changed_object_id"
   changed_object_id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Changed_object_id is empty/null (boolean)"
   changed_object_id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Changed_object_id greater than"
   changed_object_id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Changed_object_id greater than or equal to"
   changed_object_id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Changed_object_id less than"
   changed_object_id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Changed_object_id less than or equal to"
   changed_object_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Changed_object_id not equal to"
   changed_object_type:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Changed_object_type"
   changed_object_type__n:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Changed_object_type not equal to"
   changed_object_type_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Changed_object_type_id"
   changed_object_type_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Changed_object_type_id not equal to"
   id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id"
   id__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Id is empty/null (boolean)"
   id__gt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than"
   id__gte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id greater than or equal to"
   id__lt:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than"
   id__lte:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id less than or equal to"
   id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Id not equal to"
   limit:
     required: false
-    type: 
+    type: integer
     description: "Number of results to return per page."
   object_repr:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_repr"
   object_repr__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "Object_repr is empty/null (boolean)"
   object_repr__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_repr contains (case-insensitive)"
   object_repr__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_repr exact match (case-insensitive)"
   object_repr__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_repr ends with (case-insensitive)"
   object_repr__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_repr starts with (case-sensitive)"
   object_repr__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_repr not equal to"
   object_repr__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_repr does not contain (case-insensitive)"
   object_repr__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_repr inverse exact match (case-insensitive)"
   object_repr__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_repr does not end with (case-insensitive)"
   object_repr__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "Object_repr does not start with (case-sensitive)"
   offset:
     required: false
-    type: 
+    type: integer
     description: "The initial index from which to return the results."
   ordering:
     required: false
-    type: 
+    type: string
     description: "Which field to use when ordering the results."
   q:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Search"
   request_id:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Request_id"
   time_after:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Time_after"
   time_before:
-    required: 
-    type: 
+    required: false
+    type: string
     description: "Time_before"
   user:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User name"
   user__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User not equal to"
   user_id:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User (ID)"
   user_id__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_id not equal to"
   user_name:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_name"
   user_name__empty:
-    required: 
-    type: 
+    required: false
+    type: boolean
     description: "User_name is empty/null (boolean)"
   user_name__ic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_name contains (case-insensitive)"
   user_name__ie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_name exact match (case-insensitive)"
   user_name__iew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_name ends with (case-insensitive)"
   user_name__isw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_name starts with (case-sensitive)"
   user_name__n:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_name not equal to"
   user_name__nic:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_name does not contain (case-insensitive)"
   user_name__nie:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_name inverse exact match (case-insensitive)"
   user_name__niew:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_name does not end with (case-insensitive)"
   user_name__nisw:
-    required: 
-    type: 
+    required: false
+    type: array
     description: "User_name does not start with (case-sensitive)"
   save_in_key_store:
     type: boolean
