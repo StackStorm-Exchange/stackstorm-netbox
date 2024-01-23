@@ -83,8 +83,11 @@ def parse_component_properties(properties, required):
         if data.get('readOnly'):
             continue
 
-        parameter = {'name': name, 'type': data.get('type', 'object'),
-                     'description': data.get('title', data.get('description', name.replace('_', ' ').capitalize()))}
+        parameter = {
+            'name': name,
+            'type': data.get('type', 'object'),
+            'description': data.get('title', data.get('description', name.replace('_', ' ').capitalize()))
+        }
 
         if name in required:
             parameter['required'] = True
@@ -124,8 +127,8 @@ def get_actions(spec):
             }
 
             print(f'Processing {action_name} ...')
-            ref = method_spec.get('requestBody', {}).get('content', {}).get('application/json', {}).get('schema',
-                                                                                                        {}).get('$ref')
+            content = method_spec.get('requestBody', {}).get('content', {})
+            ref = content.get('application/json', {}).get('schema', {}).get('$ref')
 
             if ref:
                 ref_name = ref.split('/')[-1]
@@ -172,7 +175,9 @@ def get_actions(spec):
     for detailed_get in deferred_detail_gets:
         list_action = actions.get(detailed_get)
         if list_action is None:
-            raise Exception("Unable to find list action for deferred GET endpoint {}".format(detailed_get))
+            raise Exception(
+                "Unable to find list action for deferred GET endpoint {}".format(detailed_get)
+            )
 
     return actions
 
@@ -212,8 +217,17 @@ def main():
     Main entry point.
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('--host', type=str, default='https://demo.netbox.dev', help='NetBox hostname')
-    parser.add_argument('--no-verify-ssl', action='store_false', help='Disable SSL certificate verification')
+    parser.add_argument(
+        '--host',
+        type=str,
+        default='https://demo.netbox.dev',
+        help='NetBox hostname'
+    )
+    parser.add_argument(
+        '--skip-ssl',
+        action='store_false',
+        help='Disable SSL certificate verification'
+    )
 
     args = parser.parse_args()
     host = str(args.host).rstrip('/')
