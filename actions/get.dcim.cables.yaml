@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.6
+# NetBox API version: 3.7
 description: "Get a list of cable objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  circuittermination_id:
+    required: false
+    type: array
+    description: "Circuittermination_id"
   color:
     required: false
     type: array
@@ -25,6 +29,14 @@ parameters:
     required: false
     type: array
     description: "Color not equal to"
+  consoleport_id:
+    required: false
+    type: array
+    description: "Consoleport_id"
+  consoleserverport_id:
+    required: false
+    type: array
+    description: "Consoleserverport_id"
   created:
     required: false
     type: array
@@ -109,6 +121,10 @@ parameters:
     required: false
     type: array
     description: "Device_id"
+  frontport_id:
+    required: false
+    type: array
+    description: "Frontport_id"
   id:
     required: false
     type: array
@@ -137,6 +153,10 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  interface_id:
+    required: false
+    type: array
+    description: "Interface_id"
   label:
     required: false
     type: array
@@ -269,6 +289,18 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  powerfeed_id:
+    required: false
+    type: array
+    description: "Powerfeed_id"
+  poweroutlet_id:
+    required: false
+    type: array
+    description: "Poweroutlet_id"
+  powerport_id:
+    required: false
+    type: array
+    description: "Powerport_id"
   q:
     required: false
     type: string
@@ -281,6 +313,10 @@ parameters:
     required: false
     type: array
     description: "Rack_id"
+  rearport_id:
+    required: false
+    type: array
+    description: "Rearport_id"
   site:
     required: false
     type: array

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.6
+# NetBox API version: 3.7
 description: "Put a data source object."
 enabled: true
 entry_point: run.py
@@ -24,9 +24,7 @@ parameters:
   type:
     required: false
     type: string
-    description: "* `local` - Local
-* `git` - Git
-* `amazon-s3` - Amazon S3"
+    description: "Type"
   source_url:
     required: false
     type: string

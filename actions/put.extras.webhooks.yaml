@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.6
+# NetBox API version: 3.7
 description: "Put a webhook object."
 enabled: true
 entry_point: run.py
@@ -17,42 +17,18 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  content_types:
-    required: false
-    type: array
-    description: "Content types"
   name:
     required: false
     type: string
     description: "Name"
-  type_create:
+  description:
     required: false
-    type: boolean
-    description: "On create"
-  type_update:
-    required: false
-    type: boolean
-    description: "On update"
-  type_delete:
-    required: false
-    type: boolean
-    description: "On delete"
-  type_job_start:
-    required: false
-    type: boolean
-    description: "On job start"
-  type_job_end:
-    required: false
-    type: boolean
-    description: "On job end"
+    type: string
+    description: "Description"
   payload_url:
     required: false
     type: string
     description: "URL"
-  enabled:
-    required: false
-    type: boolean
-    description: "Enabled"
   http_method:
     required: false
     type: string
@@ -77,10 +53,6 @@ parameters:
     required: false
     type: string
     description: "When provided, the request will include a &lt;code&gt;X-Hook-Signature&lt;/code&gt; header containing a HMAC hex digest of the payload body using the secret as the key. The secret is not transmitted in the request."
-  conditions:
-    required: false
-    type: object
-    description: "A set of conditions which determine whether the webhook will be generated."
   ssl_verification:
     required: false
     type: boolean
