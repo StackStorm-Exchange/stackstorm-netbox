@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.6.9
-description: "Get a rear port template object."
+description: "Get a list of rear port template objects."
 enabled: true
 entry_point: run.py
 name: get.dcim.rear_port_templates
 parameters:
   endpoint_uri:
-    default: "/dcim/rear-port-templates/{{ id }}/"
+    default: "/dcim/rear-port-templates/"
     immutable: true
     type: string
   http_verb:
@@ -14,13 +14,305 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: false
+    default: true
     immutable: true
     type: boolean
+  color:
+    required: 
+    type: 
+    description: ""
+  color__empty:
+    required: 
+    type: 
+    description: ""
+  color__ic:
+    required: 
+    type: 
+    description: ""
+  color__ie:
+    required: 
+    type: 
+    description: ""
+  color__iew:
+    required: 
+    type: 
+    description: ""
+  color__isw:
+    required: 
+    type: 
+    description: ""
+  color__n:
+    required: 
+    type: 
+    description: ""
+  color__nic:
+    required: 
+    type: 
+    description: ""
+  color__nie:
+    required: 
+    type: 
+    description: ""
+  color__niew:
+    required: 
+    type: 
+    description: ""
+  color__nisw:
+    required: 
+    type: 
+    description: ""
+  created:
+    required: 
+    type: 
+    description: ""
+  created__empty:
+    required: 
+    type: 
+    description: ""
+  created__gt:
+    required: 
+    type: 
+    description: ""
+  created__gte:
+    required: 
+    type: 
+    description: ""
+  created__lt:
+    required: 
+    type: 
+    description: ""
+  created__lte:
+    required: 
+    type: 
+    description: ""
+  created__n:
+    required: 
+    type: 
+    description: ""
+  created_by_request:
+    required: 
+    type: 
+    description: ""
+  description:
+    required: 
+    type: 
+    description: ""
+  description__empty:
+    required: 
+    type: 
+    description: ""
+  description__ic:
+    required: 
+    type: 
+    description: ""
+  description__ie:
+    required: 
+    type: 
+    description: ""
+  description__iew:
+    required: 
+    type: 
+    description: ""
+  description__isw:
+    required: 
+    type: 
+    description: ""
+  description__n:
+    required: 
+    type: 
+    description: ""
+  description__nic:
+    required: 
+    type: 
+    description: ""
+  description__nie:
+    required: 
+    type: 
+    description: ""
+  description__niew:
+    required: 
+    type: 
+    description: ""
+  description__nisw:
+    required: 
+    type: 
+    description: ""
+  devicetype_id:
+    required: 
+    type: 
+    description: "Device type (ID)"
+  devicetype_id__n:
+    required: 
+    type: 
+    description: "Device type (ID)"
   id:
-    required: true
-    type: integer
-    description: "ID of the object."
+    required: 
+    type: 
+    description: ""
+  id__empty:
+    required: 
+    type: 
+    description: ""
+  id__gt:
+    required: 
+    type: 
+    description: ""
+  id__gte:
+    required: 
+    type: 
+    description: ""
+  id__lt:
+    required: 
+    type: 
+    description: ""
+  id__lte:
+    required: 
+    type: 
+    description: ""
+  id__n:
+    required: 
+    type: 
+    description: ""
+  last_updated:
+    required: 
+    type: 
+    description: ""
+  last_updated__empty:
+    required: 
+    type: 
+    description: ""
+  last_updated__gt:
+    required: 
+    type: 
+    description: ""
+  last_updated__gte:
+    required: 
+    type: 
+    description: ""
+  last_updated__lt:
+    required: 
+    type: 
+    description: ""
+  last_updated__lte:
+    required: 
+    type: 
+    description: ""
+  last_updated__n:
+    required: 
+    type: 
+    description: ""
+  limit:
+    required: false
+    type: 
+    description: "Number of results to return per page."
+  modified_by_request:
+    required: 
+    type: 
+    description: ""
+  moduletype_id:
+    required: 
+    type: 
+    description: "Module type (ID)"
+  moduletype_id__n:
+    required: 
+    type: 
+    description: "Module type (ID)"
+  name:
+    required: 
+    type: 
+    description: ""
+  name__empty:
+    required: 
+    type: 
+    description: ""
+  name__ic:
+    required: 
+    type: 
+    description: ""
+  name__ie:
+    required: 
+    type: 
+    description: ""
+  name__iew:
+    required: 
+    type: 
+    description: ""
+  name__isw:
+    required: 
+    type: 
+    description: ""
+  name__n:
+    required: 
+    type: 
+    description: ""
+  name__nic:
+    required: 
+    type: 
+    description: ""
+  name__nie:
+    required: 
+    type: 
+    description: ""
+  name__niew:
+    required: 
+    type: 
+    description: ""
+  name__nisw:
+    required: 
+    type: 
+    description: ""
+  offset:
+    required: false
+    type: 
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: 
+    description: "Which field to use when ordering the results."
+  positions:
+    required: 
+    type: 
+    description: ""
+  positions__empty:
+    required: 
+    type: 
+    description: ""
+  positions__gt:
+    required: 
+    type: 
+    description: ""
+  positions__gte:
+    required: 
+    type: 
+    description: ""
+  positions__lt:
+    required: 
+    type: 
+    description: ""
+  positions__lte:
+    required: 
+    type: 
+    description: ""
+  positions__n:
+    required: 
+    type: 
+    description: ""
+  q:
+    required: 
+    type: 
+    description: "Search"
+  type:
+    required: 
+    type: 
+    description: ""
+  type__n:
+    required: 
+    type: 
+    description: ""
+  updated_by_request:
+    required: 
+    type: 
+    description: ""
   save_in_key_store:
     type: boolean
     default: false

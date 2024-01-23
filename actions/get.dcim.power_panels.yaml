@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.6.9
-description: "Get a power panel object."
+description: "Get a list of power panel objects."
 enabled: true
 entry_point: run.py
 name: get.dcim.power_panels
 parameters:
   endpoint_uri:
-    default: "/dcim/power-panels/{{ id }}/"
+    default: "/dcim/power-panels/"
     immutable: true
     type: string
   http_verb:
@@ -14,13 +14,297 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: false
+    default: true
     immutable: true
     type: boolean
+  contact:
+    required: 
+    type: 
+    description: "Contact"
+  contact__n:
+    required: 
+    type: 
+    description: "Contact"
+  contact_group:
+    required: 
+    type: 
+    description: "Contact group"
+  contact_group__n:
+    required: 
+    type: 
+    description: "Contact group"
+  contact_role:
+    required: 
+    type: 
+    description: "Contact Role"
+  contact_role__n:
+    required: 
+    type: 
+    description: "Contact Role"
+  created:
+    required: 
+    type: 
+    description: ""
+  created__empty:
+    required: 
+    type: 
+    description: ""
+  created__gt:
+    required: 
+    type: 
+    description: ""
+  created__gte:
+    required: 
+    type: 
+    description: ""
+  created__lt:
+    required: 
+    type: 
+    description: ""
+  created__lte:
+    required: 
+    type: 
+    description: ""
+  created__n:
+    required: 
+    type: 
+    description: ""
+  created_by_request:
+    required: 
+    type: 
+    description: ""
+  description:
+    required: 
+    type: 
+    description: ""
+  description__empty:
+    required: 
+    type: 
+    description: ""
+  description__ic:
+    required: 
+    type: 
+    description: ""
+  description__ie:
+    required: 
+    type: 
+    description: ""
+  description__iew:
+    required: 
+    type: 
+    description: ""
+  description__isw:
+    required: 
+    type: 
+    description: ""
+  description__n:
+    required: 
+    type: 
+    description: ""
+  description__nic:
+    required: 
+    type: 
+    description: ""
+  description__nie:
+    required: 
+    type: 
+    description: ""
+  description__niew:
+    required: 
+    type: 
+    description: ""
+  description__nisw:
+    required: 
+    type: 
+    description: ""
   id:
-    required: true
-    type: integer
-    description: "ID of the object."
+    required: 
+    type: 
+    description: ""
+  id__empty:
+    required: 
+    type: 
+    description: ""
+  id__gt:
+    required: 
+    type: 
+    description: ""
+  id__gte:
+    required: 
+    type: 
+    description: ""
+  id__lt:
+    required: 
+    type: 
+    description: ""
+  id__lte:
+    required: 
+    type: 
+    description: ""
+  id__n:
+    required: 
+    type: 
+    description: ""
+  last_updated:
+    required: 
+    type: 
+    description: ""
+  last_updated__empty:
+    required: 
+    type: 
+    description: ""
+  last_updated__gt:
+    required: 
+    type: 
+    description: ""
+  last_updated__gte:
+    required: 
+    type: 
+    description: ""
+  last_updated__lt:
+    required: 
+    type: 
+    description: ""
+  last_updated__lte:
+    required: 
+    type: 
+    description: ""
+  last_updated__n:
+    required: 
+    type: 
+    description: ""
+  limit:
+    required: false
+    type: 
+    description: "Number of results to return per page."
+  location_id:
+    required: 
+    type: 
+    description: "Location (ID)"
+  location_id__n:
+    required: 
+    type: 
+    description: "Location (ID)"
+  modified_by_request:
+    required: 
+    type: 
+    description: ""
+  name:
+    required: 
+    type: 
+    description: ""
+  name__empty:
+    required: 
+    type: 
+    description: ""
+  name__ic:
+    required: 
+    type: 
+    description: ""
+  name__ie:
+    required: 
+    type: 
+    description: ""
+  name__iew:
+    required: 
+    type: 
+    description: ""
+  name__isw:
+    required: 
+    type: 
+    description: ""
+  name__n:
+    required: 
+    type: 
+    description: ""
+  name__nic:
+    required: 
+    type: 
+    description: ""
+  name__nie:
+    required: 
+    type: 
+    description: ""
+  name__niew:
+    required: 
+    type: 
+    description: ""
+  name__nisw:
+    required: 
+    type: 
+    description: ""
+  offset:
+    required: false
+    type: 
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: 
+    description: "Which field to use when ordering the results."
+  q:
+    required: 
+    type: 
+    description: "Search"
+  region:
+    required: 
+    type: 
+    description: "Region (slug)"
+  region__n:
+    required: 
+    type: 
+    description: "Region (slug)"
+  region_id:
+    required: 
+    type: 
+    description: "Region (ID)"
+  region_id__n:
+    required: 
+    type: 
+    description: "Region (ID)"
+  site:
+    required: 
+    type: 
+    description: "Site name (slug)"
+  site__n:
+    required: 
+    type: 
+    description: "Site name (slug)"
+  site_group:
+    required: 
+    type: 
+    description: "Site group (slug)"
+  site_group__n:
+    required: 
+    type: 
+    description: "Site group (slug)"
+  site_group_id:
+    required: 
+    type: 
+    description: "Site group (ID)"
+  site_group_id__n:
+    required: 
+    type: 
+    description: "Site group (ID)"
+  site_id:
+    required: 
+    type: 
+    description: "Site (ID)"
+  site_id__n:
+    required: 
+    type: 
+    description: "Site (ID)"
+  tag:
+    required: 
+    type: 
+    description: ""
+  tag__n:
+    required: 
+    type: 
+    description: ""
+  updated_by_request:
+    required: 
+    type: 
+    description: ""
   save_in_key_store:
     type: boolean
     default: false

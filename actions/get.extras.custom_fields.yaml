@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.6.9
-description: "Get a custom field object."
+description: "Get a list of custom field objects."
 enabled: true
 entry_point: run.py
 name: get.extras.custom_fields
 parameters:
   endpoint_uri:
-    default: "/extras/custom-fields/{{ id }}/"
+    default: "/extras/custom-fields/"
     immutable: true
     type: string
   http_verb:
@@ -14,13 +14,357 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: false
+    default: true
     immutable: true
     type: boolean
+  choice_set:
+    required: 
+    type: 
+    description: ""
+  choice_set__n:
+    required: 
+    type: 
+    description: ""
+  choice_set_id:
+    required: 
+    type: 
+    description: ""
+  choice_set_id__n:
+    required: 
+    type: 
+    description: ""
+  content_type_id:
+    required: 
+    type: 
+    description: ""
+  content_type_id__empty:
+    required: 
+    type: 
+    description: ""
+  content_type_id__gt:
+    required: 
+    type: 
+    description: ""
+  content_type_id__gte:
+    required: 
+    type: 
+    description: ""
+  content_type_id__lt:
+    required: 
+    type: 
+    description: ""
+  content_type_id__lte:
+    required: 
+    type: 
+    description: ""
+  content_type_id__n:
+    required: 
+    type: 
+    description: ""
+  content_types:
+    required: 
+    type: 
+    description: ""
+  content_types__ic:
+    required: 
+    type: 
+    description: ""
+  content_types__ie:
+    required: 
+    type: 
+    description: ""
+  content_types__iew:
+    required: 
+    type: 
+    description: ""
+  content_types__isw:
+    required: 
+    type: 
+    description: ""
+  content_types__n:
+    required: 
+    type: 
+    description: ""
+  content_types__nic:
+    required: 
+    type: 
+    description: ""
+  content_types__nie:
+    required: 
+    type: 
+    description: ""
+  content_types__niew:
+    required: 
+    type: 
+    description: ""
+  content_types__nisw:
+    required: 
+    type: 
+    description: ""
+  description:
+    required: 
+    type: 
+    description: ""
+  description__empty:
+    required: 
+    type: 
+    description: ""
+  description__ic:
+    required: 
+    type: 
+    description: ""
+  description__ie:
+    required: 
+    type: 
+    description: ""
+  description__iew:
+    required: 
+    type: 
+    description: ""
+  description__isw:
+    required: 
+    type: 
+    description: ""
+  description__n:
+    required: 
+    type: 
+    description: ""
+  description__nic:
+    required: 
+    type: 
+    description: ""
+  description__nie:
+    required: 
+    type: 
+    description: ""
+  description__niew:
+    required: 
+    type: 
+    description: ""
+  description__nisw:
+    required: 
+    type: 
+    description: ""
+  filter_logic:
+    required: 
+    type: 
+    description: "Loose matches any instance of a given string; exact matches the entire field."
+  filter_logic__n:
+    required: 
+    type: 
+    description: "Loose matches any instance of a given string; exact matches the entire field."
+  group_name:
+    required: 
+    type: 
+    description: ""
+  group_name__empty:
+    required: 
+    type: 
+    description: ""
+  group_name__ic:
+    required: 
+    type: 
+    description: ""
+  group_name__ie:
+    required: 
+    type: 
+    description: ""
+  group_name__iew:
+    required: 
+    type: 
+    description: ""
+  group_name__isw:
+    required: 
+    type: 
+    description: ""
+  group_name__n:
+    required: 
+    type: 
+    description: ""
+  group_name__nic:
+    required: 
+    type: 
+    description: ""
+  group_name__nie:
+    required: 
+    type: 
+    description: ""
+  group_name__niew:
+    required: 
+    type: 
+    description: ""
+  group_name__nisw:
+    required: 
+    type: 
+    description: ""
   id:
-    required: true
-    type: integer
-    description: "ID of the object."
+    required: 
+    type: 
+    description: ""
+  id__empty:
+    required: 
+    type: 
+    description: ""
+  id__gt:
+    required: 
+    type: 
+    description: ""
+  id__gte:
+    required: 
+    type: 
+    description: ""
+  id__lt:
+    required: 
+    type: 
+    description: ""
+  id__lte:
+    required: 
+    type: 
+    description: ""
+  id__n:
+    required: 
+    type: 
+    description: ""
+  is_cloneable:
+    required: 
+    type: 
+    description: ""
+  limit:
+    required: false
+    type: 
+    description: "Number of results to return per page."
+  name:
+    required: 
+    type: 
+    description: ""
+  name__empty:
+    required: 
+    type: 
+    description: ""
+  name__ic:
+    required: 
+    type: 
+    description: ""
+  name__ie:
+    required: 
+    type: 
+    description: ""
+  name__iew:
+    required: 
+    type: 
+    description: ""
+  name__isw:
+    required: 
+    type: 
+    description: ""
+  name__n:
+    required: 
+    type: 
+    description: ""
+  name__nic:
+    required: 
+    type: 
+    description: ""
+  name__nie:
+    required: 
+    type: 
+    description: ""
+  name__niew:
+    required: 
+    type: 
+    description: ""
+  name__nisw:
+    required: 
+    type: 
+    description: ""
+  offset:
+    required: false
+    type: 
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: 
+    description: "Which field to use when ordering the results."
+  q:
+    required: 
+    type: 
+    description: "Search"
+  required:
+    required: 
+    type: 
+    description: ""
+  search_weight:
+    required: 
+    type: 
+    description: ""
+  search_weight__empty:
+    required: 
+    type: 
+    description: ""
+  search_weight__gt:
+    required: 
+    type: 
+    description: ""
+  search_weight__gte:
+    required: 
+    type: 
+    description: ""
+  search_weight__lt:
+    required: 
+    type: 
+    description: ""
+  search_weight__lte:
+    required: 
+    type: 
+    description: ""
+  search_weight__n:
+    required: 
+    type: 
+    description: ""
+  type:
+    required: 
+    type: 
+    description: "The type of data this custom field holds"
+  type__n:
+    required: 
+    type: 
+    description: "The type of data this custom field holds"
+  ui_visibility:
+    required: 
+    type: 
+    description: "Specifies the visibility of custom field in the UI"
+  ui_visibility__n:
+    required: 
+    type: 
+    description: "Specifies the visibility of custom field in the UI"
+  weight:
+    required: 
+    type: 
+    description: ""
+  weight__empty:
+    required: 
+    type: 
+    description: ""
+  weight__gt:
+    required: 
+    type: 
+    description: ""
+  weight__gte:
+    required: 
+    type: 
+    description: ""
+  weight__lt:
+    required: 
+    type: 
+    description: ""
+  weight__lte:
+    required: 
+    type: 
+    description: ""
+  weight__n:
+    required: 
+    type: 
+    description: ""
   save_in_key_store:
     type: boolean
     default: false

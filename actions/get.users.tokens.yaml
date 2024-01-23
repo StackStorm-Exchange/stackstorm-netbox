@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.6.9
-description: "Get a token object."
+description: "Get a list of token objects."
 enabled: true
 entry_point: run.py
 name: get.users.tokens
 parameters:
   endpoint_uri:
-    default: "/users/tokens/{{ id }}/"
+    default: "/users/tokens/"
     immutable: true
     type: string
   http_verb:
@@ -14,13 +14,185 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: false
+    default: true
     immutable: true
     type: boolean
+  created:
+    required: 
+    type: 
+    description: ""
+  created__gte:
+    required: 
+    type: 
+    description: ""
+  created__lte:
+    required: 
+    type: 
+    description: ""
+  description:
+    required: 
+    type: 
+    description: ""
+  description__empty:
+    required: 
+    type: 
+    description: ""
+  description__ic:
+    required: 
+    type: 
+    description: ""
+  description__ie:
+    required: 
+    type: 
+    description: ""
+  description__iew:
+    required: 
+    type: 
+    description: ""
+  description__isw:
+    required: 
+    type: 
+    description: ""
+  description__n:
+    required: 
+    type: 
+    description: ""
+  description__nic:
+    required: 
+    type: 
+    description: ""
+  description__nie:
+    required: 
+    type: 
+    description: ""
+  description__niew:
+    required: 
+    type: 
+    description: ""
+  description__nisw:
+    required: 
+    type: 
+    description: ""
+  expires:
+    required: 
+    type: 
+    description: ""
+  expires__gte:
+    required: 
+    type: 
+    description: ""
+  expires__lte:
+    required: 
+    type: 
+    description: ""
   id:
-    required: true
-    type: integer
-    description: "ID of the object."
+    required: 
+    type: 
+    description: ""
+  id__empty:
+    required: 
+    type: 
+    description: ""
+  id__gt:
+    required: 
+    type: 
+    description: ""
+  id__gte:
+    required: 
+    type: 
+    description: ""
+  id__lt:
+    required: 
+    type: 
+    description: ""
+  id__lte:
+    required: 
+    type: 
+    description: ""
+  id__n:
+    required: 
+    type: 
+    description: ""
+  key:
+    required: 
+    type: 
+    description: ""
+  key__empty:
+    required: 
+    type: 
+    description: ""
+  key__ic:
+    required: 
+    type: 
+    description: ""
+  key__ie:
+    required: 
+    type: 
+    description: ""
+  key__iew:
+    required: 
+    type: 
+    description: ""
+  key__isw:
+    required: 
+    type: 
+    description: ""
+  key__n:
+    required: 
+    type: 
+    description: ""
+  key__nic:
+    required: 
+    type: 
+    description: ""
+  key__nie:
+    required: 
+    type: 
+    description: ""
+  key__niew:
+    required: 
+    type: 
+    description: ""
+  key__nisw:
+    required: 
+    type: 
+    description: ""
+  limit:
+    required: false
+    type: 
+    description: "Number of results to return per page."
+  offset:
+    required: false
+    type: 
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: 
+    description: "Which field to use when ordering the results."
+  q:
+    required: 
+    type: 
+    description: "Search"
+  user:
+    required: 
+    type: 
+    description: "User (name)"
+  user__n:
+    required: 
+    type: 
+    description: "User (name)"
+  user_id:
+    required: 
+    type: 
+    description: "User"
+  user_id__n:
+    required: 
+    type: 
+    description: "User"
+  write_enabled:
+    required: 
+    type: 
+    description: ""
   save_in_key_store:
     type: boolean
     default: false

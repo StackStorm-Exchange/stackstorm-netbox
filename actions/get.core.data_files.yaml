@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.6.9
-description: "Get a data file object."
+description: "Get a list of data file objects."
 enabled: true
 entry_point: run.py
 name: get.core.data_files
 parameters:
   endpoint_uri:
-    default: "/core/data-files/{{ id }}/"
+    default: "/core/data-files/"
     immutable: true
     type: string
   http_verb:
@@ -14,13 +14,253 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: false
+    default: true
     immutable: true
     type: boolean
+  created:
+    required: 
+    type: 
+    description: ""
+  created__empty:
+    required: 
+    type: 
+    description: ""
+  created__gt:
+    required: 
+    type: 
+    description: ""
+  created__gte:
+    required: 
+    type: 
+    description: ""
+  created__lt:
+    required: 
+    type: 
+    description: ""
+  created__lte:
+    required: 
+    type: 
+    description: ""
+  created__n:
+    required: 
+    type: 
+    description: ""
+  created_by_request:
+    required: 
+    type: 
+    description: ""
+  hash:
+    required: 
+    type: 
+    description: ""
+  hash__empty:
+    required: 
+    type: 
+    description: ""
+  hash__ic:
+    required: 
+    type: 
+    description: ""
+  hash__ie:
+    required: 
+    type: 
+    description: ""
+  hash__iew:
+    required: 
+    type: 
+    description: ""
+  hash__isw:
+    required: 
+    type: 
+    description: ""
+  hash__n:
+    required: 
+    type: 
+    description: ""
+  hash__nic:
+    required: 
+    type: 
+    description: ""
+  hash__nie:
+    required: 
+    type: 
+    description: ""
+  hash__niew:
+    required: 
+    type: 
+    description: ""
+  hash__nisw:
+    required: 
+    type: 
+    description: ""
   id:
-    required: true
-    type: integer
-    description: "ID of the object."
+    required: 
+    type: 
+    description: ""
+  id__empty:
+    required: 
+    type: 
+    description: ""
+  id__gt:
+    required: 
+    type: 
+    description: ""
+  id__gte:
+    required: 
+    type: 
+    description: ""
+  id__lt:
+    required: 
+    type: 
+    description: ""
+  id__lte:
+    required: 
+    type: 
+    description: ""
+  id__n:
+    required: 
+    type: 
+    description: ""
+  last_updated:
+    required: 
+    type: 
+    description: ""
+  last_updated__empty:
+    required: 
+    type: 
+    description: ""
+  last_updated__gt:
+    required: 
+    type: 
+    description: ""
+  last_updated__gte:
+    required: 
+    type: 
+    description: ""
+  last_updated__lt:
+    required: 
+    type: 
+    description: ""
+  last_updated__lte:
+    required: 
+    type: 
+    description: ""
+  last_updated__n:
+    required: 
+    type: 
+    description: ""
+  limit:
+    required: false
+    type: 
+    description: "Number of results to return per page."
+  modified_by_request:
+    required: 
+    type: 
+    description: ""
+  offset:
+    required: false
+    type: 
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: 
+    description: "Which field to use when ordering the results."
+  path:
+    required: 
+    type: 
+    description: ""
+  path__empty:
+    required: 
+    type: 
+    description: ""
+  path__ic:
+    required: 
+    type: 
+    description: ""
+  path__ie:
+    required: 
+    type: 
+    description: ""
+  path__iew:
+    required: 
+    type: 
+    description: ""
+  path__isw:
+    required: 
+    type: 
+    description: ""
+  path__n:
+    required: 
+    type: 
+    description: ""
+  path__nic:
+    required: 
+    type: 
+    description: ""
+  path__nie:
+    required: 
+    type: 
+    description: ""
+  path__niew:
+    required: 
+    type: 
+    description: ""
+  path__nisw:
+    required: 
+    type: 
+    description: ""
+  q:
+    required: 
+    type: 
+    description: ""
+  size:
+    required: 
+    type: 
+    description: ""
+  size__empty:
+    required: 
+    type: 
+    description: ""
+  size__gt:
+    required: 
+    type: 
+    description: ""
+  size__gte:
+    required: 
+    type: 
+    description: ""
+  size__lt:
+    required: 
+    type: 
+    description: ""
+  size__lte:
+    required: 
+    type: 
+    description: ""
+  size__n:
+    required: 
+    type: 
+    description: ""
+  source:
+    required: 
+    type: 
+    description: "Data source (name)"
+  source__n:
+    required: 
+    type: 
+    description: "Data source (name)"
+  source_id:
+    required: 
+    type: 
+    description: "Data source (ID)"
+  source_id__n:
+    required: 
+    type: 
+    description: "Data source (ID)"
+  updated_by_request:
+    required: 
+    type: 
+    description: ""
   save_in_key_store:
     type: boolean
     default: false

@@ -6,7 +6,7 @@ entry_point: run.py
 name: get.extras.object_changes
 parameters:
   endpoint_uri:
-    default: "/extras/object-changes/{{ id }}/"
+    default: "/extras/object-changes/"
     immutable: true
     type: string
   http_verb:
@@ -14,13 +14,221 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: false
+    default: true
     immutable: true
     type: boolean
+  action:
+    required: 
+    type: 
+    description: ""
+  action__n:
+    required: 
+    type: 
+    description: ""
+  changed_object_id:
+    required: 
+    type: 
+    description: ""
+  changed_object_id__empty:
+    required: 
+    type: 
+    description: ""
+  changed_object_id__gt:
+    required: 
+    type: 
+    description: ""
+  changed_object_id__gte:
+    required: 
+    type: 
+    description: ""
+  changed_object_id__lt:
+    required: 
+    type: 
+    description: ""
+  changed_object_id__lte:
+    required: 
+    type: 
+    description: ""
+  changed_object_id__n:
+    required: 
+    type: 
+    description: ""
+  changed_object_type:
+    required: 
+    type: 
+    description: ""
+  changed_object_type__n:
+    required: 
+    type: 
+    description: ""
+  changed_object_type_id:
+    required: 
+    type: 
+    description: ""
+  changed_object_type_id__n:
+    required: 
+    type: 
+    description: ""
   id:
-    required: true
-    type: integer
-    description: "ID of the object."
+    required: 
+    type: 
+    description: ""
+  id__empty:
+    required: 
+    type: 
+    description: ""
+  id__gt:
+    required: 
+    type: 
+    description: ""
+  id__gte:
+    required: 
+    type: 
+    description: ""
+  id__lt:
+    required: 
+    type: 
+    description: ""
+  id__lte:
+    required: 
+    type: 
+    description: ""
+  id__n:
+    required: 
+    type: 
+    description: ""
+  limit:
+    required: false
+    type: 
+    description: "Number of results to return per page."
+  object_repr:
+    required: 
+    type: 
+    description: ""
+  object_repr__empty:
+    required: 
+    type: 
+    description: ""
+  object_repr__ic:
+    required: 
+    type: 
+    description: ""
+  object_repr__ie:
+    required: 
+    type: 
+    description: ""
+  object_repr__iew:
+    required: 
+    type: 
+    description: ""
+  object_repr__isw:
+    required: 
+    type: 
+    description: ""
+  object_repr__n:
+    required: 
+    type: 
+    description: ""
+  object_repr__nic:
+    required: 
+    type: 
+    description: ""
+  object_repr__nie:
+    required: 
+    type: 
+    description: ""
+  object_repr__niew:
+    required: 
+    type: 
+    description: ""
+  object_repr__nisw:
+    required: 
+    type: 
+    description: ""
+  offset:
+    required: false
+    type: 
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: 
+    description: "Which field to use when ordering the results."
+  q:
+    required: 
+    type: 
+    description: "Search"
+  request_id:
+    required: 
+    type: 
+    description: ""
+  time_after:
+    required: 
+    type: 
+    description: ""
+  time_before:
+    required: 
+    type: 
+    description: ""
+  user:
+    required: 
+    type: 
+    description: "User name"
+  user__n:
+    required: 
+    type: 
+    description: "User name"
+  user_id:
+    required: 
+    type: 
+    description: "User (ID)"
+  user_id__n:
+    required: 
+    type: 
+    description: "User (ID)"
+  user_name:
+    required: 
+    type: 
+    description: ""
+  user_name__empty:
+    required: 
+    type: 
+    description: ""
+  user_name__ic:
+    required: 
+    type: 
+    description: ""
+  user_name__ie:
+    required: 
+    type: 
+    description: ""
+  user_name__iew:
+    required: 
+    type: 
+    description: ""
+  user_name__isw:
+    required: 
+    type: 
+    description: ""
+  user_name__n:
+    required: 
+    type: 
+    description: ""
+  user_name__nic:
+    required: 
+    type: 
+    description: ""
+  user_name__nie:
+    required: 
+    type: 
+    description: ""
+  user_name__niew:
+    required: 
+    type: 
+    description: ""
+  user_name__nisw:
+    required: 
+    type: 
+    description: ""
   save_in_key_store:
     type: boolean
     default: false

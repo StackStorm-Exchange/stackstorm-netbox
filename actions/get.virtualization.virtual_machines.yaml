@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.6.9
-description: "Get a virtual machine object."
+description: "Get a list of virtual machine objects."
 enabled: true
 entry_point: run.py
 name: get.virtualization.virtual_machines
 parameters:
   endpoint_uri:
-    default: "/virtualization/virtual-machines/{{ id }}/"
+    default: "/virtualization/virtual-machines/"
     immutable: true
     type: string
   http_verb:
@@ -14,13 +14,581 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: false
+    default: true
     immutable: true
     type: boolean
+  cluster:
+    required: 
+    type: 
+    description: "Cluster"
+  cluster__n:
+    required: 
+    type: 
+    description: "Cluster"
+  cluster_group:
+    required: 
+    type: 
+    description: "Cluster group (slug)"
+  cluster_group__n:
+    required: 
+    type: 
+    description: "Cluster group (slug)"
+  cluster_group_id:
+    required: 
+    type: 
+    description: "Cluster group (ID)"
+  cluster_group_id__n:
+    required: 
+    type: 
+    description: "Cluster group (ID)"
+  cluster_id:
+    required: 
+    type: 
+    description: "Cluster (ID)"
+  cluster_id__n:
+    required: 
+    type: 
+    description: "Cluster (ID)"
+  cluster_type:
+    required: 
+    type: 
+    description: "Cluster type (slug)"
+  cluster_type__n:
+    required: 
+    type: 
+    description: "Cluster type (slug)"
+  cluster_type_id:
+    required: 
+    type: 
+    description: "Cluster type (ID)"
+  cluster_type_id__n:
+    required: 
+    type: 
+    description: "Cluster type (ID)"
+  config_template_id:
+    required: 
+    type: 
+    description: "Config template (ID)"
+  config_template_id__n:
+    required: 
+    type: 
+    description: "Config template (ID)"
+  contact:
+    required: 
+    type: 
+    description: "Contact"
+  contact__n:
+    required: 
+    type: 
+    description: "Contact"
+  contact_group:
+    required: 
+    type: 
+    description: "Contact group"
+  contact_group__n:
+    required: 
+    type: 
+    description: "Contact group"
+  contact_role:
+    required: 
+    type: 
+    description: "Contact Role"
+  contact_role__n:
+    required: 
+    type: 
+    description: "Contact Role"
+  created:
+    required: 
+    type: 
+    description: ""
+  created__empty:
+    required: 
+    type: 
+    description: ""
+  created__gt:
+    required: 
+    type: 
+    description: ""
+  created__gte:
+    required: 
+    type: 
+    description: ""
+  created__lt:
+    required: 
+    type: 
+    description: ""
+  created__lte:
+    required: 
+    type: 
+    description: ""
+  created__n:
+    required: 
+    type: 
+    description: ""
+  created_by_request:
+    required: 
+    type: 
+    description: ""
+  description:
+    required: 
+    type: 
+    description: ""
+  description__empty:
+    required: 
+    type: 
+    description: ""
+  description__ic:
+    required: 
+    type: 
+    description: ""
+  description__ie:
+    required: 
+    type: 
+    description: ""
+  description__iew:
+    required: 
+    type: 
+    description: ""
+  description__isw:
+    required: 
+    type: 
+    description: ""
+  description__n:
+    required: 
+    type: 
+    description: ""
+  description__nic:
+    required: 
+    type: 
+    description: ""
+  description__nie:
+    required: 
+    type: 
+    description: ""
+  description__niew:
+    required: 
+    type: 
+    description: ""
+  description__nisw:
+    required: 
+    type: 
+    description: ""
+  device:
+    required: 
+    type: 
+    description: "Device"
+  device__n:
+    required: 
+    type: 
+    description: "Device"
+  device_id:
+    required: 
+    type: 
+    description: "Device (ID)"
+  device_id__n:
+    required: 
+    type: 
+    description: "Device (ID)"
+  disk:
+    required: 
+    type: 
+    description: ""
+  disk__empty:
+    required: 
+    type: 
+    description: ""
+  disk__gt:
+    required: 
+    type: 
+    description: ""
+  disk__gte:
+    required: 
+    type: 
+    description: ""
+  disk__lt:
+    required: 
+    type: 
+    description: ""
+  disk__lte:
+    required: 
+    type: 
+    description: ""
+  disk__n:
+    required: 
+    type: 
+    description: ""
+  has_primary_ip:
+    required: 
+    type: 
+    description: "Has a primary IP"
   id:
-    required: true
-    type: integer
-    description: "ID of the object."
+    required: 
+    type: 
+    description: ""
+  id__empty:
+    required: 
+    type: 
+    description: ""
+  id__gt:
+    required: 
+    type: 
+    description: ""
+  id__gte:
+    required: 
+    type: 
+    description: ""
+  id__lt:
+    required: 
+    type: 
+    description: ""
+  id__lte:
+    required: 
+    type: 
+    description: ""
+  id__n:
+    required: 
+    type: 
+    description: ""
+  last_updated:
+    required: 
+    type: 
+    description: ""
+  last_updated__empty:
+    required: 
+    type: 
+    description: ""
+  last_updated__gt:
+    required: 
+    type: 
+    description: ""
+  last_updated__gte:
+    required: 
+    type: 
+    description: ""
+  last_updated__lt:
+    required: 
+    type: 
+    description: ""
+  last_updated__lte:
+    required: 
+    type: 
+    description: ""
+  last_updated__n:
+    required: 
+    type: 
+    description: ""
+  limit:
+    required: false
+    type: 
+    description: "Number of results to return per page."
+  local_context_data:
+    required: 
+    type: 
+    description: "Has local config context data"
+  mac_address:
+    required: 
+    type: 
+    description: ""
+  mac_address__ic:
+    required: 
+    type: 
+    description: ""
+  mac_address__ie:
+    required: 
+    type: 
+    description: ""
+  mac_address__iew:
+    required: 
+    type: 
+    description: ""
+  mac_address__isw:
+    required: 
+    type: 
+    description: ""
+  mac_address__n:
+    required: 
+    type: 
+    description: ""
+  mac_address__nic:
+    required: 
+    type: 
+    description: ""
+  mac_address__nie:
+    required: 
+    type: 
+    description: ""
+  mac_address__niew:
+    required: 
+    type: 
+    description: ""
+  mac_address__nisw:
+    required: 
+    type: 
+    description: ""
+  memory:
+    required: 
+    type: 
+    description: ""
+  memory__empty:
+    required: 
+    type: 
+    description: ""
+  memory__gt:
+    required: 
+    type: 
+    description: ""
+  memory__gte:
+    required: 
+    type: 
+    description: ""
+  memory__lt:
+    required: 
+    type: 
+    description: ""
+  memory__lte:
+    required: 
+    type: 
+    description: ""
+  memory__n:
+    required: 
+    type: 
+    description: ""
+  modified_by_request:
+    required: 
+    type: 
+    description: ""
+  name:
+    required: 
+    type: 
+    description: ""
+  name__empty:
+    required: 
+    type: 
+    description: ""
+  name__ic:
+    required: 
+    type: 
+    description: ""
+  name__ie:
+    required: 
+    type: 
+    description: ""
+  name__iew:
+    required: 
+    type: 
+    description: ""
+  name__isw:
+    required: 
+    type: 
+    description: ""
+  name__n:
+    required: 
+    type: 
+    description: ""
+  name__nic:
+    required: 
+    type: 
+    description: ""
+  name__nie:
+    required: 
+    type: 
+    description: ""
+  name__niew:
+    required: 
+    type: 
+    description: ""
+  name__nisw:
+    required: 
+    type: 
+    description: ""
+  offset:
+    required: false
+    type: 
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: 
+    description: "Which field to use when ordering the results."
+  platform:
+    required: 
+    type: 
+    description: "Platform (slug)"
+  platform__n:
+    required: 
+    type: 
+    description: "Platform (slug)"
+  platform_id:
+    required: 
+    type: 
+    description: "Platform (ID)"
+  platform_id__n:
+    required: 
+    type: 
+    description: "Platform (ID)"
+  primary_ip4_id:
+    required: 
+    type: 
+    description: "Primary IPv4 (ID)"
+  primary_ip4_id__n:
+    required: 
+    type: 
+    description: "Primary IPv4 (ID)"
+  primary_ip6_id:
+    required: 
+    type: 
+    description: "Primary IPv6 (ID)"
+  primary_ip6_id__n:
+    required: 
+    type: 
+    description: "Primary IPv6 (ID)"
+  q:
+    required: 
+    type: 
+    description: "Search"
+  region:
+    required: 
+    type: 
+    description: "Region (slug)"
+  region__n:
+    required: 
+    type: 
+    description: "Region (slug)"
+  region_id:
+    required: 
+    type: 
+    description: "Region (ID)"
+  region_id__n:
+    required: 
+    type: 
+    description: "Region (ID)"
+  role:
+    required: 
+    type: 
+    description: "Role (slug)"
+  role__n:
+    required: 
+    type: 
+    description: "Role (slug)"
+  role_id:
+    required: 
+    type: 
+    description: "Role (ID)"
+  role_id__n:
+    required: 
+    type: 
+    description: "Role (ID)"
+  site:
+    required: 
+    type: 
+    description: "Site (slug)"
+  site__n:
+    required: 
+    type: 
+    description: "Site (slug)"
+  site_group:
+    required: 
+    type: 
+    description: "Site group (slug)"
+  site_group__n:
+    required: 
+    type: 
+    description: "Site group (slug)"
+  site_group_id:
+    required: 
+    type: 
+    description: "Site group (ID)"
+  site_group_id__n:
+    required: 
+    type: 
+    description: "Site group (ID)"
+  site_id:
+    required: 
+    type: 
+    description: "Site (ID)"
+  site_id__n:
+    required: 
+    type: 
+    description: "Site (ID)"
+  status:
+    required: 
+    type: 
+    description: ""
+  status__n:
+    required: 
+    type: 
+    description: ""
+  tag:
+    required: 
+    type: 
+    description: ""
+  tag__n:
+    required: 
+    type: 
+    description: ""
+  tenant:
+    required: 
+    type: 
+    description: "Tenant (slug)"
+  tenant__n:
+    required: 
+    type: 
+    description: "Tenant (slug)"
+  tenant_group:
+    required: 
+    type: 
+    description: "Tenant Group (slug)"
+  tenant_group__n:
+    required: 
+    type: 
+    description: "Tenant Group (slug)"
+  tenant_group_id:
+    required: 
+    type: 
+    description: "Tenant Group (ID)"
+  tenant_group_id__n:
+    required: 
+    type: 
+    description: "Tenant Group (ID)"
+  tenant_id:
+    required: 
+    type: 
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: 
+    type: 
+    description: "Tenant (ID)"
+  updated_by_request:
+    required: 
+    type: 
+    description: ""
+  vcpus:
+    required: 
+    type: 
+    description: ""
+  vcpus__empty:
+    required: 
+    type: 
+    description: ""
+  vcpus__gt:
+    required: 
+    type: 
+    description: ""
+  vcpus__gte:
+    required: 
+    type: 
+    description: ""
+  vcpus__lt:
+    required: 
+    type: 
+    description: ""
+  vcpus__lte:
+    required: 
+    type: 
+    description: ""
+  vcpus__n:
+    required: 
+    type: 
+    description: ""
   save_in_key_store:
     type: boolean
     default: false

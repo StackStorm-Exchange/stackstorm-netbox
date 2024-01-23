@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.6.9
-description: "Get a interface object."
+description: "Get a list of interface objects."
 enabled: true
 entry_point: run.py
 name: get.dcim.interfaces
 parameters:
   endpoint_uri:
-    default: "/dcim/interfaces/{{ id }}/"
+    default: "/dcim/interfaces/"
     immutable: true
     type: string
   http_verb:
@@ -14,13 +14,833 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: false
+    default: true
     immutable: true
     type: boolean
+  bridge_id:
+    required: 
+    type: 
+    description: "Bridged interface (ID)"
+  bridge_id__n:
+    required: 
+    type: 
+    description: "Bridged interface (ID)"
+  cable_end:
+    required: 
+    type: 
+    description: ""
+  cable_end__n:
+    required: 
+    type: 
+    description: ""
+  cabled:
+    required: 
+    type: 
+    description: ""
+  connected:
+    required: 
+    type: 
+    description: ""
+  created:
+    required: 
+    type: 
+    description: ""
+  created__empty:
+    required: 
+    type: 
+    description: ""
+  created__gt:
+    required: 
+    type: 
+    description: ""
+  created__gte:
+    required: 
+    type: 
+    description: ""
+  created__lt:
+    required: 
+    type: 
+    description: ""
+  created__lte:
+    required: 
+    type: 
+    description: ""
+  created__n:
+    required: 
+    type: 
+    description: ""
+  created_by_request:
+    required: 
+    type: 
+    description: ""
+  description:
+    required: 
+    type: 
+    description: ""
+  description__empty:
+    required: 
+    type: 
+    description: ""
+  description__ic:
+    required: 
+    type: 
+    description: ""
+  description__ie:
+    required: 
+    type: 
+    description: ""
+  description__iew:
+    required: 
+    type: 
+    description: ""
+  description__isw:
+    required: 
+    type: 
+    description: ""
+  description__n:
+    required: 
+    type: 
+    description: ""
+  description__nic:
+    required: 
+    type: 
+    description: ""
+  description__nie:
+    required: 
+    type: 
+    description: ""
+  description__niew:
+    required: 
+    type: 
+    description: ""
+  description__nisw:
+    required: 
+    type: 
+    description: ""
+  device:
+    required: 
+    type: 
+    description: "Device (name)"
+  device__n:
+    required: 
+    type: 
+    description: "Device (name)"
+  device_id:
+    required: 
+    type: 
+    description: "Device (ID)"
+  device_id__n:
+    required: 
+    type: 
+    description: "Device (ID)"
+  device_role:
+    required: 
+    type: 
+    description: "Device role (slug)"
+  device_role__n:
+    required: 
+    type: 
+    description: "Device role (slug)"
+  device_role_id:
+    required: 
+    type: 
+    description: "Device role (ID)"
+  device_role_id__n:
+    required: 
+    type: 
+    description: "Device role (ID)"
+  device_type:
+    required: 
+    type: 
+    description: "Device type (model)"
+  device_type__n:
+    required: 
+    type: 
+    description: "Device type (model)"
+  device_type_id:
+    required: 
+    type: 
+    description: "Device type (ID)"
+  device_type_id__n:
+    required: 
+    type: 
+    description: "Device type (ID)"
+  duplex:
+    required: 
+    type: 
+    description: ""
+  duplex__n:
+    required: 
+    type: 
+    description: ""
+  enabled:
+    required: 
+    type: 
+    description: ""
   id:
-    required: true
-    type: integer
-    description: "ID of the object."
+    required: 
+    type: 
+    description: ""
+  id__empty:
+    required: 
+    type: 
+    description: ""
+  id__gt:
+    required: 
+    type: 
+    description: ""
+  id__gte:
+    required: 
+    type: 
+    description: ""
+  id__lt:
+    required: 
+    type: 
+    description: ""
+  id__lte:
+    required: 
+    type: 
+    description: ""
+  id__n:
+    required: 
+    type: 
+    description: ""
+  kind:
+    required: 
+    type: 
+    description: "Kind of interface"
+  l2vpn:
+    required: 
+    type: 
+    description: "L2VPN"
+  l2vpn__n:
+    required: 
+    type: 
+    description: "L2VPN"
+  l2vpn_id:
+    required: 
+    type: 
+    description: "L2VPN (ID)"
+  l2vpn_id__n:
+    required: 
+    type: 
+    description: "L2VPN (ID)"
+  label:
+    required: 
+    type: 
+    description: ""
+  label__empty:
+    required: 
+    type: 
+    description: ""
+  label__ic:
+    required: 
+    type: 
+    description: ""
+  label__ie:
+    required: 
+    type: 
+    description: ""
+  label__iew:
+    required: 
+    type: 
+    description: ""
+  label__isw:
+    required: 
+    type: 
+    description: ""
+  label__n:
+    required: 
+    type: 
+    description: ""
+  label__nic:
+    required: 
+    type: 
+    description: ""
+  label__nie:
+    required: 
+    type: 
+    description: ""
+  label__niew:
+    required: 
+    type: 
+    description: ""
+  label__nisw:
+    required: 
+    type: 
+    description: ""
+  lag_id:
+    required: 
+    type: 
+    description: "LAG interface (ID)"
+  lag_id__n:
+    required: 
+    type: 
+    description: "LAG interface (ID)"
+  last_updated:
+    required: 
+    type: 
+    description: ""
+  last_updated__empty:
+    required: 
+    type: 
+    description: ""
+  last_updated__gt:
+    required: 
+    type: 
+    description: ""
+  last_updated__gte:
+    required: 
+    type: 
+    description: ""
+  last_updated__lt:
+    required: 
+    type: 
+    description: ""
+  last_updated__lte:
+    required: 
+    type: 
+    description: ""
+  last_updated__n:
+    required: 
+    type: 
+    description: ""
+  limit:
+    required: false
+    type: 
+    description: "Number of results to return per page."
+  location:
+    required: 
+    type: 
+    description: "Location (slug)"
+  location__n:
+    required: 
+    type: 
+    description: "Location (slug)"
+  location_id:
+    required: 
+    type: 
+    description: "Location (ID)"
+  location_id__n:
+    required: 
+    type: 
+    description: "Location (ID)"
+  mac_address:
+    required: 
+    type: 
+    description: ""
+  mac_address__ic:
+    required: 
+    type: 
+    description: ""
+  mac_address__ie:
+    required: 
+    type: 
+    description: ""
+  mac_address__iew:
+    required: 
+    type: 
+    description: ""
+  mac_address__isw:
+    required: 
+    type: 
+    description: ""
+  mac_address__n:
+    required: 
+    type: 
+    description: ""
+  mac_address__nic:
+    required: 
+    type: 
+    description: ""
+  mac_address__nie:
+    required: 
+    type: 
+    description: ""
+  mac_address__niew:
+    required: 
+    type: 
+    description: ""
+  mac_address__nisw:
+    required: 
+    type: 
+    description: ""
+  mgmt_only:
+    required: 
+    type: 
+    description: ""
+  mode:
+    required: 
+    type: 
+    description: "IEEE 802.1Q tagging strategy"
+  mode__n:
+    required: 
+    type: 
+    description: "IEEE 802.1Q tagging strategy"
+  modified_by_request:
+    required: 
+    type: 
+    description: ""
+  module_id:
+    required: 
+    type: 
+    description: "Module (ID)"
+  module_id__n:
+    required: 
+    type: 
+    description: "Module (ID)"
+  mtu:
+    required: 
+    type: 
+    description: ""
+  mtu__empty:
+    required: 
+    type: 
+    description: ""
+  mtu__gt:
+    required: 
+    type: 
+    description: ""
+  mtu__gte:
+    required: 
+    type: 
+    description: ""
+  mtu__lt:
+    required: 
+    type: 
+    description: ""
+  mtu__lte:
+    required: 
+    type: 
+    description: ""
+  mtu__n:
+    required: 
+    type: 
+    description: ""
+  name:
+    required: 
+    type: 
+    description: ""
+  name__empty:
+    required: 
+    type: 
+    description: ""
+  name__ic:
+    required: 
+    type: 
+    description: ""
+  name__ie:
+    required: 
+    type: 
+    description: ""
+  name__iew:
+    required: 
+    type: 
+    description: ""
+  name__isw:
+    required: 
+    type: 
+    description: ""
+  name__n:
+    required: 
+    type: 
+    description: ""
+  name__nic:
+    required: 
+    type: 
+    description: ""
+  name__nie:
+    required: 
+    type: 
+    description: ""
+  name__niew:
+    required: 
+    type: 
+    description: ""
+  name__nisw:
+    required: 
+    type: 
+    description: ""
+  occupied:
+    required: 
+    type: 
+    description: ""
+  offset:
+    required: false
+    type: 
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: 
+    description: "Which field to use when ordering the results."
+  parent_id:
+    required: 
+    type: 
+    description: "Parent interface (ID)"
+  parent_id__n:
+    required: 
+    type: 
+    description: "Parent interface (ID)"
+  poe_mode:
+    required: 
+    type: 
+    description: ""
+  poe_mode__n:
+    required: 
+    type: 
+    description: ""
+  poe_type:
+    required: 
+    type: 
+    description: ""
+  poe_type__n:
+    required: 
+    type: 
+    description: ""
+  q:
+    required: 
+    type: 
+    description: "Search"
+  rack:
+    required: 
+    type: 
+    description: "Rack (name)"
+  rack__n:
+    required: 
+    type: 
+    description: "Rack (name)"
+  rack_id:
+    required: 
+    type: 
+    description: "Rack (ID)"
+  rack_id__n:
+    required: 
+    type: 
+    description: "Rack (ID)"
+  region:
+    required: 
+    type: 
+    description: "Region (slug)"
+  region__n:
+    required: 
+    type: 
+    description: "Region (slug)"
+  region_id:
+    required: 
+    type: 
+    description: "Region (ID)"
+  region_id__n:
+    required: 
+    type: 
+    description: "Region (ID)"
+  rf_channel:
+    required: 
+    type: 
+    description: ""
+  rf_channel__n:
+    required: 
+    type: 
+    description: ""
+  rf_channel_frequency:
+    required: 
+    type: 
+    description: ""
+  rf_channel_frequency__empty:
+    required: 
+    type: 
+    description: ""
+  rf_channel_frequency__gt:
+    required: 
+    type: 
+    description: ""
+  rf_channel_frequency__gte:
+    required: 
+    type: 
+    description: ""
+  rf_channel_frequency__lt:
+    required: 
+    type: 
+    description: ""
+  rf_channel_frequency__lte:
+    required: 
+    type: 
+    description: ""
+  rf_channel_frequency__n:
+    required: 
+    type: 
+    description: ""
+  rf_channel_width:
+    required: 
+    type: 
+    description: ""
+  rf_channel_width__empty:
+    required: 
+    type: 
+    description: ""
+  rf_channel_width__gt:
+    required: 
+    type: 
+    description: ""
+  rf_channel_width__gte:
+    required: 
+    type: 
+    description: ""
+  rf_channel_width__lt:
+    required: 
+    type: 
+    description: ""
+  rf_channel_width__lte:
+    required: 
+    type: 
+    description: ""
+  rf_channel_width__n:
+    required: 
+    type: 
+    description: ""
+  rf_role:
+    required: 
+    type: 
+    description: ""
+  rf_role__n:
+    required: 
+    type: 
+    description: ""
+  role:
+    required: 
+    type: 
+    description: "Device role (slug)"
+  role__n:
+    required: 
+    type: 
+    description: "Device role (slug)"
+  role_id:
+    required: 
+    type: 
+    description: "Device role (ID)"
+  role_id__n:
+    required: 
+    type: 
+    description: "Device role (ID)"
+  site:
+    required: 
+    type: 
+    description: "Site name (slug)"
+  site__n:
+    required: 
+    type: 
+    description: "Site name (slug)"
+  site_group:
+    required: 
+    type: 
+    description: "Site group (slug)"
+  site_group__n:
+    required: 
+    type: 
+    description: "Site group (slug)"
+  site_group_id:
+    required: 
+    type: 
+    description: "Site group (ID)"
+  site_group_id__n:
+    required: 
+    type: 
+    description: "Site group (ID)"
+  site_id:
+    required: 
+    type: 
+    description: "Site (ID)"
+  site_id__n:
+    required: 
+    type: 
+    description: "Site (ID)"
+  speed:
+    required: 
+    type: 
+    description: ""
+  speed__empty:
+    required: 
+    type: 
+    description: ""
+  speed__gt:
+    required: 
+    type: 
+    description: ""
+  speed__gte:
+    required: 
+    type: 
+    description: ""
+  speed__lt:
+    required: 
+    type: 
+    description: ""
+  speed__lte:
+    required: 
+    type: 
+    description: ""
+  speed__n:
+    required: 
+    type: 
+    description: ""
+  tag:
+    required: 
+    type: 
+    description: ""
+  tag__n:
+    required: 
+    type: 
+    description: ""
+  tx_power:
+    required: 
+    type: 
+    description: ""
+  tx_power__empty:
+    required: 
+    type: 
+    description: ""
+  tx_power__gt:
+    required: 
+    type: 
+    description: ""
+  tx_power__gte:
+    required: 
+    type: 
+    description: ""
+  tx_power__lt:
+    required: 
+    type: 
+    description: ""
+  tx_power__lte:
+    required: 
+    type: 
+    description: ""
+  tx_power__n:
+    required: 
+    type: 
+    description: ""
+  type:
+    required: 
+    type: 
+    description: ""
+  type__n:
+    required: 
+    type: 
+    description: ""
+  updated_by_request:
+    required: 
+    type: 
+    description: ""
+  vdc:
+    required: 
+    type: 
+    description: "Virtual Device Context"
+  vdc__n:
+    required: 
+    type: 
+    description: "Virtual Device Context"
+  vdc_id:
+    required: 
+    type: 
+    description: "Virtual Device Context"
+  vdc_id__n:
+    required: 
+    type: 
+    description: "Virtual Device Context"
+  vdc_identifier:
+    required: 
+    type: 
+    description: "Virtual Device Context (Identifier)"
+  vdc_identifier__n:
+    required: 
+    type: 
+    description: "Virtual Device Context (Identifier)"
+  virtual_chassis:
+    required: 
+    type: 
+    description: "Virtual Chassis"
+  virtual_chassis__n:
+    required: 
+    type: 
+    description: "Virtual Chassis"
+  virtual_chassis_id:
+    required: 
+    type: 
+    description: "Virtual Chassis (ID)"
+  virtual_chassis_id__n:
+    required: 
+    type: 
+    description: "Virtual Chassis (ID)"
+  virtual_chassis_member:
+    required: 
+    type: 
+    description: ""
+  virtual_chassis_member_id:
+    required: 
+    type: 
+    description: ""
+  vlan:
+    required: 
+    type: 
+    description: "Assigned VID"
+  vlan_id:
+    required: 
+    type: 
+    description: "Assigned VLAN"
+  vrf:
+    required: 
+    type: 
+    description: "VRF (RD)"
+  vrf__n:
+    required: 
+    type: 
+    description: "VRF (RD)"
+  vrf_id:
+    required: 
+    type: 
+    description: "VRF"
+  vrf_id__n:
+    required: 
+    type: 
+    description: "VRF"
+  wwn:
+    required: 
+    type: 
+    description: ""
+  wwn__ic:
+    required: 
+    type: 
+    description: ""
+  wwn__ie:
+    required: 
+    type: 
+    description: ""
+  wwn__iew:
+    required: 
+    type: 
+    description: ""
+  wwn__isw:
+    required: 
+    type: 
+    description: ""
+  wwn__n:
+    required: 
+    type: 
+    description: ""
+  wwn__nic:
+    required: 
+    type: 
+    description: ""
+  wwn__nie:
+    required: 
+    type: 
+    description: ""
+  wwn__niew:
+    required: 
+    type: 
+    description: ""
+  wwn__nisw:
+    required: 
+    type: 
+    description: ""
   save_in_key_store:
     type: boolean
     default: false

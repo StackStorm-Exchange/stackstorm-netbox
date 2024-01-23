@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.6.9
-description: "Get a power feed object."
+description: "Get a list of power feed objects."
 enabled: true
 entry_point: run.py
 name: get.dcim.power_feeds
 parameters:
   endpoint_uri:
-    default: "/dcim/power-feeds/{{ id }}/"
+    default: "/dcim/power-feeds/"
     immutable: true
     type: string
   http_verb:
@@ -14,13 +14,449 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: false
+    default: true
     immutable: true
     type: boolean
+  amperage:
+    required: 
+    type: 
+    description: ""
+  amperage__empty:
+    required: 
+    type: 
+    description: ""
+  amperage__gt:
+    required: 
+    type: 
+    description: ""
+  amperage__gte:
+    required: 
+    type: 
+    description: ""
+  amperage__lt:
+    required: 
+    type: 
+    description: ""
+  amperage__lte:
+    required: 
+    type: 
+    description: ""
+  amperage__n:
+    required: 
+    type: 
+    description: ""
+  cable_end:
+    required: 
+    type: 
+    description: ""
+  cable_end__n:
+    required: 
+    type: 
+    description: ""
+  cabled:
+    required: 
+    type: 
+    description: ""
+  connected:
+    required: 
+    type: 
+    description: ""
+  created:
+    required: 
+    type: 
+    description: ""
+  created__empty:
+    required: 
+    type: 
+    description: ""
+  created__gt:
+    required: 
+    type: 
+    description: ""
+  created__gte:
+    required: 
+    type: 
+    description: ""
+  created__lt:
+    required: 
+    type: 
+    description: ""
+  created__lte:
+    required: 
+    type: 
+    description: ""
+  created__n:
+    required: 
+    type: 
+    description: ""
+  created_by_request:
+    required: 
+    type: 
+    description: ""
+  description:
+    required: 
+    type: 
+    description: ""
+  description__empty:
+    required: 
+    type: 
+    description: ""
+  description__ic:
+    required: 
+    type: 
+    description: ""
+  description__ie:
+    required: 
+    type: 
+    description: ""
+  description__iew:
+    required: 
+    type: 
+    description: ""
+  description__isw:
+    required: 
+    type: 
+    description: ""
+  description__n:
+    required: 
+    type: 
+    description: ""
+  description__nic:
+    required: 
+    type: 
+    description: ""
+  description__nie:
+    required: 
+    type: 
+    description: ""
+  description__niew:
+    required: 
+    type: 
+    description: ""
+  description__nisw:
+    required: 
+    type: 
+    description: ""
   id:
-    required: true
-    type: integer
-    description: "ID of the object."
+    required: 
+    type: 
+    description: ""
+  id__empty:
+    required: 
+    type: 
+    description: ""
+  id__gt:
+    required: 
+    type: 
+    description: ""
+  id__gte:
+    required: 
+    type: 
+    description: ""
+  id__lt:
+    required: 
+    type: 
+    description: ""
+  id__lte:
+    required: 
+    type: 
+    description: ""
+  id__n:
+    required: 
+    type: 
+    description: ""
+  last_updated:
+    required: 
+    type: 
+    description: ""
+  last_updated__empty:
+    required: 
+    type: 
+    description: ""
+  last_updated__gt:
+    required: 
+    type: 
+    description: ""
+  last_updated__gte:
+    required: 
+    type: 
+    description: ""
+  last_updated__lt:
+    required: 
+    type: 
+    description: ""
+  last_updated__lte:
+    required: 
+    type: 
+    description: ""
+  last_updated__n:
+    required: 
+    type: 
+    description: ""
+  limit:
+    required: false
+    type: 
+    description: "Number of results to return per page."
+  max_utilization:
+    required: 
+    type: 
+    description: ""
+  max_utilization__empty:
+    required: 
+    type: 
+    description: ""
+  max_utilization__gt:
+    required: 
+    type: 
+    description: ""
+  max_utilization__gte:
+    required: 
+    type: 
+    description: ""
+  max_utilization__lt:
+    required: 
+    type: 
+    description: ""
+  max_utilization__lte:
+    required: 
+    type: 
+    description: ""
+  max_utilization__n:
+    required: 
+    type: 
+    description: ""
+  modified_by_request:
+    required: 
+    type: 
+    description: ""
+  name:
+    required: 
+    type: 
+    description: ""
+  name__empty:
+    required: 
+    type: 
+    description: ""
+  name__ic:
+    required: 
+    type: 
+    description: ""
+  name__ie:
+    required: 
+    type: 
+    description: ""
+  name__iew:
+    required: 
+    type: 
+    description: ""
+  name__isw:
+    required: 
+    type: 
+    description: ""
+  name__n:
+    required: 
+    type: 
+    description: ""
+  name__nic:
+    required: 
+    type: 
+    description: ""
+  name__nie:
+    required: 
+    type: 
+    description: ""
+  name__niew:
+    required: 
+    type: 
+    description: ""
+  name__nisw:
+    required: 
+    type: 
+    description: ""
+  occupied:
+    required: 
+    type: 
+    description: ""
+  offset:
+    required: false
+    type: 
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: 
+    description: "Which field to use when ordering the results."
+  phase:
+    required: 
+    type: 
+    description: ""
+  phase__n:
+    required: 
+    type: 
+    description: ""
+  power_panel_id:
+    required: 
+    type: 
+    description: "Power panel (ID)"
+  power_panel_id__n:
+    required: 
+    type: 
+    description: "Power panel (ID)"
+  q:
+    required: 
+    type: 
+    description: "Search"
+  rack_id:
+    required: 
+    type: 
+    description: "Rack (ID)"
+  rack_id__n:
+    required: 
+    type: 
+    description: "Rack (ID)"
+  region:
+    required: 
+    type: 
+    description: "Region (slug)"
+  region__n:
+    required: 
+    type: 
+    description: "Region (slug)"
+  region_id:
+    required: 
+    type: 
+    description: "Region (ID)"
+  region_id__n:
+    required: 
+    type: 
+    description: "Region (ID)"
+  site:
+    required: 
+    type: 
+    description: "Site name (slug)"
+  site__n:
+    required: 
+    type: 
+    description: "Site name (slug)"
+  site_group:
+    required: 
+    type: 
+    description: "Site group (slug)"
+  site_group__n:
+    required: 
+    type: 
+    description: "Site group (slug)"
+  site_group_id:
+    required: 
+    type: 
+    description: "Site group (ID)"
+  site_group_id__n:
+    required: 
+    type: 
+    description: "Site group (ID)"
+  site_id:
+    required: 
+    type: 
+    description: "Site (ID)"
+  site_id__n:
+    required: 
+    type: 
+    description: "Site (ID)"
+  status:
+    required: 
+    type: 
+    description: ""
+  status__n:
+    required: 
+    type: 
+    description: ""
+  supply:
+    required: 
+    type: 
+    description: ""
+  supply__n:
+    required: 
+    type: 
+    description: ""
+  tag:
+    required: 
+    type: 
+    description: ""
+  tag__n:
+    required: 
+    type: 
+    description: ""
+  tenant:
+    required: 
+    type: 
+    description: "Tenant (slug)"
+  tenant__n:
+    required: 
+    type: 
+    description: "Tenant (slug)"
+  tenant_group:
+    required: 
+    type: 
+    description: "Tenant Group (slug)"
+  tenant_group__n:
+    required: 
+    type: 
+    description: "Tenant Group (slug)"
+  tenant_group_id:
+    required: 
+    type: 
+    description: "Tenant Group (ID)"
+  tenant_group_id__n:
+    required: 
+    type: 
+    description: "Tenant Group (ID)"
+  tenant_id:
+    required: 
+    type: 
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: 
+    type: 
+    description: "Tenant (ID)"
+  type:
+    required: 
+    type: 
+    description: ""
+  type__n:
+    required: 
+    type: 
+    description: ""
+  updated_by_request:
+    required: 
+    type: 
+    description: ""
+  voltage:
+    required: 
+    type: 
+    description: ""
+  voltage__empty:
+    required: 
+    type: 
+    description: ""
+  voltage__gt:
+    required: 
+    type: 
+    description: ""
+  voltage__gte:
+    required: 
+    type: 
+    description: ""
+  voltage__lt:
+    required: 
+    type: 
+    description: ""
+  voltage__lte:
+    required: 
+    type: 
+    description: ""
+  voltage__n:
+    required: 
+    type: 
+    description: ""
   save_in_key_store:
     type: boolean
     default: false

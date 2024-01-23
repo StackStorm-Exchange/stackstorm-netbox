@@ -94,11 +94,11 @@ def get_actions(spec):
                     action['parameters'] = sanitize_parameters(method_spec['parameters'])
                     actions[action_name] = action
 
-                elif path.endswith('/{{ id }}'):
+                elif path.endswith('/{{ id }}/'):
                     # defer these until we have processed everything else to ensure the list
                     # endpoints are present for lookup
                     deferred_detail_gets.append(action_name)
-                elif '{{ id }}' in path and not path.endswith('/{{ id }}'):
+                elif '{{ id }}' in path and not path.endswith('{{ id }}'):
                     action['parameters'].append({
                         'name': 'id',
                         'required': True,

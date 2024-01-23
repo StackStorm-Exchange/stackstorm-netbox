@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.6.9
-description: "Get a device object."
+description: "Get a list of device objects."
 enabled: true
 entry_point: run.py
 name: get.dcim.devices
 parameters:
   endpoint_uri:
-    default: "/dcim/devices/{{ id }}/"
+    default: "/dcim/devices/"
     immutable: true
     type: string
   http_verb:
@@ -14,13 +14,809 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: false
+    default: true
     immutable: true
     type: boolean
+  airflow:
+    required: 
+    type: 
+    description: ""
+  airflow__n:
+    required: 
+    type: 
+    description: ""
+  asset_tag:
+    required: 
+    type: 
+    description: ""
+  asset_tag__empty:
+    required: 
+    type: 
+    description: ""
+  asset_tag__ic:
+    required: 
+    type: 
+    description: ""
+  asset_tag__ie:
+    required: 
+    type: 
+    description: ""
+  asset_tag__iew:
+    required: 
+    type: 
+    description: ""
+  asset_tag__isw:
+    required: 
+    type: 
+    description: ""
+  asset_tag__n:
+    required: 
+    type: 
+    description: ""
+  asset_tag__nic:
+    required: 
+    type: 
+    description: ""
+  asset_tag__nie:
+    required: 
+    type: 
+    description: ""
+  asset_tag__niew:
+    required: 
+    type: 
+    description: ""
+  asset_tag__nisw:
+    required: 
+    type: 
+    description: ""
+  cluster_id:
+    required: 
+    type: 
+    description: "VM cluster (ID)"
+  cluster_id__n:
+    required: 
+    type: 
+    description: "VM cluster (ID)"
+  config_template_id:
+    required: 
+    type: 
+    description: "Config template (ID)"
+  config_template_id__n:
+    required: 
+    type: 
+    description: "Config template (ID)"
+  console_ports:
+    required: 
+    type: 
+    description: "Has console ports"
+  console_server_ports:
+    required: 
+    type: 
+    description: "Has console server ports"
+  contact:
+    required: 
+    type: 
+    description: "Contact"
+  contact__n:
+    required: 
+    type: 
+    description: "Contact"
+  contact_group:
+    required: 
+    type: 
+    description: "Contact group"
+  contact_group__n:
+    required: 
+    type: 
+    description: "Contact group"
+  contact_role:
+    required: 
+    type: 
+    description: "Contact Role"
+  contact_role__n:
+    required: 
+    type: 
+    description: "Contact Role"
+  created:
+    required: 
+    type: 
+    description: ""
+  created__empty:
+    required: 
+    type: 
+    description: ""
+  created__gt:
+    required: 
+    type: 
+    description: ""
+  created__gte:
+    required: 
+    type: 
+    description: ""
+  created__lt:
+    required: 
+    type: 
+    description: ""
+  created__lte:
+    required: 
+    type: 
+    description: ""
+  created__n:
+    required: 
+    type: 
+    description: ""
+  created_by_request:
+    required: 
+    type: 
+    description: ""
+  description:
+    required: 
+    type: 
+    description: ""
+  description__empty:
+    required: 
+    type: 
+    description: ""
+  description__ic:
+    required: 
+    type: 
+    description: ""
+  description__ie:
+    required: 
+    type: 
+    description: ""
+  description__iew:
+    required: 
+    type: 
+    description: ""
+  description__isw:
+    required: 
+    type: 
+    description: ""
+  description__n:
+    required: 
+    type: 
+    description: ""
+  description__nic:
+    required: 
+    type: 
+    description: ""
+  description__nie:
+    required: 
+    type: 
+    description: ""
+  description__niew:
+    required: 
+    type: 
+    description: ""
+  description__nisw:
+    required: 
+    type: 
+    description: ""
+  device_bays:
+    required: 
+    type: 
+    description: "Has device bays"
+  device_type:
+    required: 
+    type: 
+    description: "Device type (slug)"
+  device_type__n:
+    required: 
+    type: 
+    description: "Device type (slug)"
+  device_type_id:
+    required: 
+    type: 
+    description: "Device type (ID)"
+  device_type_id__n:
+    required: 
+    type: 
+    description: "Device type (ID)"
+  face:
+    required: 
+    type: 
+    description: ""
+  face__n:
+    required: 
+    type: 
+    description: ""
+  has_oob_ip:
+    required: 
+    type: 
+    description: "Has an out-of-band IP"
+  has_primary_ip:
+    required: 
+    type: 
+    description: "Has a primary IP"
   id:
-    required: true
-    type: integer
-    description: "ID of the object."
+    required: 
+    type: 
+    description: ""
+  id__empty:
+    required: 
+    type: 
+    description: ""
+  id__gt:
+    required: 
+    type: 
+    description: ""
+  id__gte:
+    required: 
+    type: 
+    description: ""
+  id__lt:
+    required: 
+    type: 
+    description: ""
+  id__lte:
+    required: 
+    type: 
+    description: ""
+  id__n:
+    required: 
+    type: 
+    description: ""
+  interfaces:
+    required: 
+    type: 
+    description: "Has interfaces"
+  is_full_depth:
+    required: 
+    type: 
+    description: "Is full depth"
+  last_updated:
+    required: 
+    type: 
+    description: ""
+  last_updated__empty:
+    required: 
+    type: 
+    description: ""
+  last_updated__gt:
+    required: 
+    type: 
+    description: ""
+  last_updated__gte:
+    required: 
+    type: 
+    description: ""
+  last_updated__lt:
+    required: 
+    type: 
+    description: ""
+  last_updated__lte:
+    required: 
+    type: 
+    description: ""
+  last_updated__n:
+    required: 
+    type: 
+    description: ""
+  latitude:
+    required: 
+    type: 
+    description: ""
+  latitude__empty:
+    required: 
+    type: 
+    description: ""
+  latitude__gt:
+    required: 
+    type: 
+    description: ""
+  latitude__gte:
+    required: 
+    type: 
+    description: ""
+  latitude__lt:
+    required: 
+    type: 
+    description: ""
+  latitude__lte:
+    required: 
+    type: 
+    description: ""
+  latitude__n:
+    required: 
+    type: 
+    description: ""
+  limit:
+    required: false
+    type: 
+    description: "Number of results to return per page."
+  local_context_data:
+    required: 
+    type: 
+    description: "Has local config context data"
+  location_id:
+    required: 
+    type: 
+    description: "Location (ID)"
+  location_id__n:
+    required: 
+    type: 
+    description: "Location (ID)"
+  longitude:
+    required: 
+    type: 
+    description: ""
+  longitude__empty:
+    required: 
+    type: 
+    description: ""
+  longitude__gt:
+    required: 
+    type: 
+    description: ""
+  longitude__gte:
+    required: 
+    type: 
+    description: ""
+  longitude__lt:
+    required: 
+    type: 
+    description: ""
+  longitude__lte:
+    required: 
+    type: 
+    description: ""
+  longitude__n:
+    required: 
+    type: 
+    description: ""
+  mac_address:
+    required: 
+    type: 
+    description: ""
+  mac_address__ic:
+    required: 
+    type: 
+    description: ""
+  mac_address__ie:
+    required: 
+    type: 
+    description: ""
+  mac_address__iew:
+    required: 
+    type: 
+    description: ""
+  mac_address__isw:
+    required: 
+    type: 
+    description: ""
+  mac_address__n:
+    required: 
+    type: 
+    description: ""
+  mac_address__nic:
+    required: 
+    type: 
+    description: ""
+  mac_address__nie:
+    required: 
+    type: 
+    description: ""
+  mac_address__niew:
+    required: 
+    type: 
+    description: ""
+  mac_address__nisw:
+    required: 
+    type: 
+    description: ""
+  manufacturer:
+    required: 
+    type: 
+    description: "Manufacturer (slug)"
+  manufacturer__n:
+    required: 
+    type: 
+    description: "Manufacturer (slug)"
+  manufacturer_id:
+    required: 
+    type: 
+    description: "Manufacturer (ID)"
+  manufacturer_id__n:
+    required: 
+    type: 
+    description: "Manufacturer (ID)"
+  model:
+    required: 
+    type: 
+    description: "Device model (slug)"
+  model__n:
+    required: 
+    type: 
+    description: "Device model (slug)"
+  modified_by_request:
+    required: 
+    type: 
+    description: ""
+  module_bays:
+    required: 
+    type: 
+    description: "Has module bays"
+  name:
+    required: 
+    type: 
+    description: ""
+  name__empty:
+    required: 
+    type: 
+    description: ""
+  name__ic:
+    required: 
+    type: 
+    description: ""
+  name__ie:
+    required: 
+    type: 
+    description: ""
+  name__iew:
+    required: 
+    type: 
+    description: ""
+  name__isw:
+    required: 
+    type: 
+    description: ""
+  name__n:
+    required: 
+    type: 
+    description: ""
+  name__nic:
+    required: 
+    type: 
+    description: ""
+  name__nie:
+    required: 
+    type: 
+    description: ""
+  name__niew:
+    required: 
+    type: 
+    description: ""
+  name__nisw:
+    required: 
+    type: 
+    description: ""
+  offset:
+    required: false
+    type: 
+    description: "The initial index from which to return the results."
+  oob_ip_id:
+    required: 
+    type: 
+    description: "OOB IP (ID)"
+  oob_ip_id__n:
+    required: 
+    type: 
+    description: "OOB IP (ID)"
+  ordering:
+    required: false
+    type: 
+    description: "Which field to use when ordering the results."
+  parent_device_id:
+    required: 
+    type: 
+    description: "Parent Device (ID)"
+  parent_device_id__n:
+    required: 
+    type: 
+    description: "Parent Device (ID)"
+  pass_through_ports:
+    required: 
+    type: 
+    description: "Has pass-through ports"
+  platform:
+    required: 
+    type: 
+    description: "Platform (slug)"
+  platform__n:
+    required: 
+    type: 
+    description: "Platform (slug)"
+  platform_id:
+    required: 
+    type: 
+    description: "Platform (ID)"
+  platform_id__n:
+    required: 
+    type: 
+    description: "Platform (ID)"
+  position:
+    required: 
+    type: 
+    description: ""
+  position__empty:
+    required: 
+    type: 
+    description: ""
+  position__gt:
+    required: 
+    type: 
+    description: ""
+  position__gte:
+    required: 
+    type: 
+    description: ""
+  position__lt:
+    required: 
+    type: 
+    description: ""
+  position__lte:
+    required: 
+    type: 
+    description: ""
+  position__n:
+    required: 
+    type: 
+    description: ""
+  power_outlets:
+    required: 
+    type: 
+    description: "Has power outlets"
+  power_ports:
+    required: 
+    type: 
+    description: "Has power ports"
+  primary_ip4_id:
+    required: 
+    type: 
+    description: "Primary IPv4 (ID)"
+  primary_ip4_id__n:
+    required: 
+    type: 
+    description: "Primary IPv4 (ID)"
+  primary_ip6_id:
+    required: 
+    type: 
+    description: "Primary IPv6 (ID)"
+  primary_ip6_id__n:
+    required: 
+    type: 
+    description: "Primary IPv6 (ID)"
+  q:
+    required: 
+    type: 
+    description: "Search"
+  rack_id:
+    required: 
+    type: 
+    description: "Rack (ID)"
+  rack_id__n:
+    required: 
+    type: 
+    description: "Rack (ID)"
+  region:
+    required: 
+    type: 
+    description: "Region (slug)"
+  region__n:
+    required: 
+    type: 
+    description: "Region (slug)"
+  region_id:
+    required: 
+    type: 
+    description: "Region (ID)"
+  region_id__n:
+    required: 
+    type: 
+    description: "Region (ID)"
+  role:
+    required: 
+    type: 
+    description: "Role (slug)"
+  role__n:
+    required: 
+    type: 
+    description: "Role (slug)"
+  role_id:
+    required: 
+    type: 
+    description: "Role (ID)"
+  role_id__n:
+    required: 
+    type: 
+    description: "Role (ID)"
+  serial:
+    required: 
+    type: 
+    description: ""
+  serial__empty:
+    required: 
+    type: 
+    description: ""
+  serial__ic:
+    required: 
+    type: 
+    description: ""
+  serial__ie:
+    required: 
+    type: 
+    description: ""
+  serial__iew:
+    required: 
+    type: 
+    description: ""
+  serial__isw:
+    required: 
+    type: 
+    description: ""
+  serial__n:
+    required: 
+    type: 
+    description: ""
+  serial__nic:
+    required: 
+    type: 
+    description: ""
+  serial__nie:
+    required: 
+    type: 
+    description: ""
+  serial__niew:
+    required: 
+    type: 
+    description: ""
+  serial__nisw:
+    required: 
+    type: 
+    description: ""
+  site:
+    required: 
+    type: 
+    description: "Site name (slug)"
+  site__n:
+    required: 
+    type: 
+    description: "Site name (slug)"
+  site_group:
+    required: 
+    type: 
+    description: "Site group (slug)"
+  site_group__n:
+    required: 
+    type: 
+    description: "Site group (slug)"
+  site_group_id:
+    required: 
+    type: 
+    description: "Site group (ID)"
+  site_group_id__n:
+    required: 
+    type: 
+    description: "Site group (ID)"
+  site_id:
+    required: 
+    type: 
+    description: "Site (ID)"
+  site_id__n:
+    required: 
+    type: 
+    description: "Site (ID)"
+  status:
+    required: 
+    type: 
+    description: ""
+  status__n:
+    required: 
+    type: 
+    description: ""
+  tag:
+    required: 
+    type: 
+    description: ""
+  tag__n:
+    required: 
+    type: 
+    description: ""
+  tenant:
+    required: 
+    type: 
+    description: "Tenant (slug)"
+  tenant__n:
+    required: 
+    type: 
+    description: "Tenant (slug)"
+  tenant_group:
+    required: 
+    type: 
+    description: "Tenant Group (slug)"
+  tenant_group__n:
+    required: 
+    type: 
+    description: "Tenant Group (slug)"
+  tenant_group_id:
+    required: 
+    type: 
+    description: "Tenant Group (ID)"
+  tenant_group_id__n:
+    required: 
+    type: 
+    description: "Tenant Group (ID)"
+  tenant_id:
+    required: 
+    type: 
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: 
+    type: 
+    description: "Tenant (ID)"
+  updated_by_request:
+    required: 
+    type: 
+    description: ""
+  vc_position:
+    required: 
+    type: 
+    description: ""
+  vc_position__empty:
+    required: 
+    type: 
+    description: ""
+  vc_position__gt:
+    required: 
+    type: 
+    description: ""
+  vc_position__gte:
+    required: 
+    type: 
+    description: ""
+  vc_position__lt:
+    required: 
+    type: 
+    description: ""
+  vc_position__lte:
+    required: 
+    type: 
+    description: ""
+  vc_position__n:
+    required: 
+    type: 
+    description: ""
+  vc_priority:
+    required: 
+    type: 
+    description: ""
+  vc_priority__empty:
+    required: 
+    type: 
+    description: ""
+  vc_priority__gt:
+    required: 
+    type: 
+    description: ""
+  vc_priority__gte:
+    required: 
+    type: 
+    description: ""
+  vc_priority__lt:
+    required: 
+    type: 
+    description: ""
+  vc_priority__lte:
+    required: 
+    type: 
+    description: ""
+  vc_priority__n:
+    required: 
+    type: 
+    description: ""
+  virtual_chassis_id:
+    required: 
+    type: 
+    description: "Virtual chassis (ID)"
+  virtual_chassis_id__n:
+    required: 
+    type: 
+    description: "Virtual chassis (ID)"
+  virtual_chassis_member:
+    required: 
+    type: 
+    description: "Is a virtual chassis member"
   save_in_key_store:
     type: boolean
     default: false

@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
 # NetBox API version: 3.6.9
-description: "Get a VRF object."
+description: "Get a list of VRF objects."
 enabled: true
 entry_point: run.py
 name: get.ipam.vrfs
 parameters:
   endpoint_uri:
-    default: "/ipam/vrfs/{{ id }}/"
+    default: "/ipam/vrfs/"
     immutable: true
     type: string
   http_verb:
@@ -14,13 +14,329 @@ parameters:
     immutable: true
     type: string
   get_detail_route_eligible:
-    default: false
+    default: true
     immutable: true
     type: boolean
+  created:
+    required: 
+    type: 
+    description: ""
+  created__empty:
+    required: 
+    type: 
+    description: ""
+  created__gt:
+    required: 
+    type: 
+    description: ""
+  created__gte:
+    required: 
+    type: 
+    description: ""
+  created__lt:
+    required: 
+    type: 
+    description: ""
+  created__lte:
+    required: 
+    type: 
+    description: ""
+  created__n:
+    required: 
+    type: 
+    description: ""
+  created_by_request:
+    required: 
+    type: 
+    description: ""
+  description:
+    required: 
+    type: 
+    description: ""
+  description__empty:
+    required: 
+    type: 
+    description: ""
+  description__ic:
+    required: 
+    type: 
+    description: ""
+  description__ie:
+    required: 
+    type: 
+    description: ""
+  description__iew:
+    required: 
+    type: 
+    description: ""
+  description__isw:
+    required: 
+    type: 
+    description: ""
+  description__n:
+    required: 
+    type: 
+    description: ""
+  description__nic:
+    required: 
+    type: 
+    description: ""
+  description__nie:
+    required: 
+    type: 
+    description: ""
+  description__niew:
+    required: 
+    type: 
+    description: ""
+  description__nisw:
+    required: 
+    type: 
+    description: ""
+  enforce_unique:
+    required: 
+    type: 
+    description: ""
+  export_target:
+    required: 
+    type: 
+    description: "Export target (name)"
+  export_target__n:
+    required: 
+    type: 
+    description: "Export target (name)"
+  export_target_id:
+    required: 
+    type: 
+    description: "Export target"
+  export_target_id__n:
+    required: 
+    type: 
+    description: "Export target"
   id:
-    required: true
-    type: integer
-    description: "ID of the object."
+    required: 
+    type: 
+    description: ""
+  id__empty:
+    required: 
+    type: 
+    description: ""
+  id__gt:
+    required: 
+    type: 
+    description: ""
+  id__gte:
+    required: 
+    type: 
+    description: ""
+  id__lt:
+    required: 
+    type: 
+    description: ""
+  id__lte:
+    required: 
+    type: 
+    description: ""
+  id__n:
+    required: 
+    type: 
+    description: ""
+  import_target:
+    required: 
+    type: 
+    description: "Import target (name)"
+  import_target__n:
+    required: 
+    type: 
+    description: "Import target (name)"
+  import_target_id:
+    required: 
+    type: 
+    description: "Import target"
+  import_target_id__n:
+    required: 
+    type: 
+    description: "Import target"
+  last_updated:
+    required: 
+    type: 
+    description: ""
+  last_updated__empty:
+    required: 
+    type: 
+    description: ""
+  last_updated__gt:
+    required: 
+    type: 
+    description: ""
+  last_updated__gte:
+    required: 
+    type: 
+    description: ""
+  last_updated__lt:
+    required: 
+    type: 
+    description: ""
+  last_updated__lte:
+    required: 
+    type: 
+    description: ""
+  last_updated__n:
+    required: 
+    type: 
+    description: ""
+  limit:
+    required: false
+    type: 
+    description: "Number of results to return per page."
+  modified_by_request:
+    required: 
+    type: 
+    description: ""
+  name:
+    required: 
+    type: 
+    description: ""
+  name__empty:
+    required: 
+    type: 
+    description: ""
+  name__ic:
+    required: 
+    type: 
+    description: ""
+  name__ie:
+    required: 
+    type: 
+    description: ""
+  name__iew:
+    required: 
+    type: 
+    description: ""
+  name__isw:
+    required: 
+    type: 
+    description: ""
+  name__n:
+    required: 
+    type: 
+    description: ""
+  name__nic:
+    required: 
+    type: 
+    description: ""
+  name__nie:
+    required: 
+    type: 
+    description: ""
+  name__niew:
+    required: 
+    type: 
+    description: ""
+  name__nisw:
+    required: 
+    type: 
+    description: ""
+  offset:
+    required: false
+    type: 
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: 
+    description: "Which field to use when ordering the results."
+  q:
+    required: 
+    type: 
+    description: "Search"
+  rd:
+    required: 
+    type: 
+    description: ""
+  rd__empty:
+    required: 
+    type: 
+    description: ""
+  rd__ic:
+    required: 
+    type: 
+    description: ""
+  rd__ie:
+    required: 
+    type: 
+    description: ""
+  rd__iew:
+    required: 
+    type: 
+    description: ""
+  rd__isw:
+    required: 
+    type: 
+    description: ""
+  rd__n:
+    required: 
+    type: 
+    description: ""
+  rd__nic:
+    required: 
+    type: 
+    description: ""
+  rd__nie:
+    required: 
+    type: 
+    description: ""
+  rd__niew:
+    required: 
+    type: 
+    description: ""
+  rd__nisw:
+    required: 
+    type: 
+    description: ""
+  tag:
+    required: 
+    type: 
+    description: ""
+  tag__n:
+    required: 
+    type: 
+    description: ""
+  tenant:
+    required: 
+    type: 
+    description: "Tenant (slug)"
+  tenant__n:
+    required: 
+    type: 
+    description: "Tenant (slug)"
+  tenant_group:
+    required: 
+    type: 
+    description: "Tenant Group (slug)"
+  tenant_group__n:
+    required: 
+    type: 
+    description: "Tenant Group (slug)"
+  tenant_group_id:
+    required: 
+    type: 
+    description: "Tenant Group (ID)"
+  tenant_group_id__n:
+    required: 
+    type: 
+    description: "Tenant Group (ID)"
+  tenant_id:
+    required: 
+    type: 
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: 
+    type: 
+    description: "Tenant (ID)"
+  updated_by_request:
+    required: 
+    type: 
+    description: ""
   save_in_key_store:
     type: boolean
     default: false
