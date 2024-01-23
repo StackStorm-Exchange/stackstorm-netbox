@@ -84,3 +84,10 @@ python generate.py --https --port 443 demo.netbox.dev
 4. Update the `pack.yaml` file with the new version of NetBox that was used to generate the pack.
 5. Commit the changes and create a pull request.
 6. Once the pull request is merged, a new version of the pack will be released to the StackStorm Exchange.
+
+## Maintainers
+
+Active pack maintainers with review & write repository access and expertise with Netbox:
+
+  - John Anderson <lampwins@gmail.com> @lampwins
+  - Abhimanyu Saharan <asaharan@onemindservices.com> @abhi1693
