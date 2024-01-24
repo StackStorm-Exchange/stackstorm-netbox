@@ -6,7 +6,7 @@ keywords:
   - networking
   - ipam
   - dcim
-version: 3.1.0
+version: 3.2.0
 python_versions:
   - "3"
 author: John Anderson, Jefferson White
