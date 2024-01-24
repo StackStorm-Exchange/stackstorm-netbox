@@ -1,0 +1,77 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.7
+description: "Put a IPSec policy object."
+enabled: true
+entry_point: run.py
+name: put.vpn.ipsec_policies
+parameters:
+  endpoint_uri:
+    default: "/vpn/ipsec-policies/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  name:
+    required: false
+    type: string
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  proposals:
+    required: false
+    type: array
+    description: "Proposals"
+  pfs_group:
+    required: false
+    type: integer
+    description: "Diffie-Hellman group for Perfect Forward Secrecy
+
+* `1` - Group 1
+* `2` - Group 2
+* `5` - Group 5
+* `14` - Group 14
+* `15` - Group 15
+* `16` - Group 16
+* `17` - Group 17
+* `18` - Group 18
+* `19` - Group 19
+* `20` - Group 20
+* `21` - Group 21
+* `22` - Group 22
+* `23` - Group 23
+* `24` - Group 24
+* `25` - Group 25
+* `26` - Group 26
+* `27` - Group 27
+* `28` - Group 28
+* `29` - Group 29
+* `30` - Group 30
+* `31` - Group 31
+* `32` - Group 32
+* `33` - Group 33
+* `34` - Group 34"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to put."
+runner_type: python-script

@@ -1,0 +1,81 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.7
+description: "Post a list of event rule objects."
+enabled: true
+entry_point: run.py
+name: post.extras.event_rules
+parameters:
+  endpoint_uri:
+    default: "/extras/event-rules/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  content_types:
+    required: false
+    type: array
+    description: "Content types"
+  name:
+    required: false
+    type: string
+    description: "Name"
+  type_create:
+    required: false
+    type: boolean
+    description: "On create"
+  type_update:
+    required: false
+    type: boolean
+    description: "On update"
+  type_delete:
+    required: false
+    type: boolean
+    description: "On delete"
+  type_job_start:
+    required: false
+    type: boolean
+    description: "On job start"
+  type_job_end:
+    required: false
+    type: boolean
+    description: "On job end"
+  enabled:
+    required: false
+    type: boolean
+    description: "Enabled"
+  conditions:
+    required: false
+    type: object
+    description: "A set of conditions which determine whether the event will be generated."
+  action_type:
+    required: false
+    type: string
+    description: "* `webhook` - Webhook
+* `script` - Script"
+  action_object_type:
+    required: false
+    type: string
+    description: "Action object type"
+  action_object_id:
+    required: false
+    type: integer
+    description: "Action object id"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+runner_type: python-script

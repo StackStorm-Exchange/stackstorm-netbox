@@ -1,0 +1,24 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.7
+description: "Delete a tunnel group object."
+enabled: true
+entry_point: run.py
+name: delete.vpn.tunnel_groups
+parameters:
+  endpoint_uri:
+    default: "/vpn/tunnel-groups/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: delete
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to delete."
+runner_type: python-script

@@ -1,0 +1,102 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.7
+description: "Put a IKE proposal object."
+enabled: true
+entry_point: run.py
+name: put.vpn.ike_proposals
+parameters:
+  endpoint_uri:
+    default: "/vpn/ike-proposals/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  name:
+    required: false
+    type: string
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  authentication_method:
+    required: false
+    type: string
+    description: "* `preshared-keys` - Pre-shared keys
+* `certificates` - Certificates
+* `rsa-signatures` - RSA signatures
+* `dsa-signatures` - DSA signatures"
+  encryption_algorithm:
+    required: false
+    type: string
+    description: "* `aes-128-cbc` - 128-bit AES (CBC)
+* `aes-128-gcm` - 128-bit AES (GCM)
+* `aes-192-cbc` - 192-bit AES (CBC)
+* `aes-192-gcm` - 192-bit AES (GCM)
+* `aes-256-cbc` - 256-bit AES (CBC)
+* `aes-256-gcm` - 256-bit AES (GCM)
+* `3des-cbc` - DES"
+  authentication_algorithm:
+    required: false
+    type: string
+    description: "* `hmac-sha1` - SHA-1 HMAC
+* `hmac-sha256` - SHA-256 HMAC
+* `hmac-sha384` - SHA-384 HMAC
+* `hmac-sha512` - SHA-512 HMAC
+* `hmac-md5` - MD5 HMAC"
+  group:
+    required: false
+    type: integer
+    description: "Diffie-Hellman group ID
+
+* `1` - Group 1
+* `2` - Group 2
+* `5` - Group 5
+* `14` - Group 14
+* `15` - Group 15
+* `16` - Group 16
+* `17` - Group 17
+* `18` - Group 18
+* `19` - Group 19
+* `20` - Group 20
+* `21` - Group 21
+* `22` - Group 22
+* `23` - Group 23
+* `24` - Group 24
+* `25` - Group 25
+* `26` - Group 26
+* `27` - Group 27
+* `28` - Group 28
+* `29` - Group 29
+* `30` - Group 30
+* `31` - Group 31
+* `32` - Group 32
+* `33` - Group 33
+* `34` - Group 34"
+  sa_lifetime:
+    required: false
+    type: integer
+    description: "Security association lifetime (in seconds)"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to put."
+runner_type: python-script
