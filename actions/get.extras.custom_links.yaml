@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "GET Custom Links"
+# NetBox API version: 3.6
+description: "Get a list of custom link objects."
 enabled: true
 entry_point: run.py
 name: get.extras.custom_links
@@ -17,310 +17,322 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  id:
+  content_type_id:
     required: false
-    type: string
-    description: ""
+    type: array
+    description: "Content_type_id"
+  content_type_id__empty:
+    required: false
+    type: array
+    description: "Content_type_id is empty/null (boolean)"
+  content_type_id__gt:
+    required: false
+    type: array
+    description: "Content_type_id greater than"
+  content_type_id__gte:
+    required: false
+    type: array
+    description: "Content_type_id greater than or equal to"
+  content_type_id__lt:
+    required: false
+    type: array
+    description: "Content_type_id less than"
+  content_type_id__lte:
+    required: false
+    type: array
+    description: "Content_type_id less than or equal to"
+  content_type_id__n:
+    required: false
+    type: array
+    description: "Content_type_id not equal to"
   content_types:
     required: false
     type: string
-    description: ""
-  name:
-    required: false
-    type: string
-    description: ""
-  enabled:
-    required: false
-    type: string
-    description: ""
-  link_text:
-    required: false
-    type: string
-    description: ""
-  link_url:
-    required: false
-    type: string
-    description: ""
-  weight:
-    required: false
-    type: string
-    description: ""
-  group_name:
-    required: false
-    type: string
-    description: ""
-  new_window:
-    required: false
-    type: string
-    description: ""
-  q:
-    required: false
-    type: string
-    description: ""
-  content_type_id:
-    required: false
-    type: string
-    description: ""
-  id__n:
-    required: false
-    type: string
-    description: ""
-  id__lte:
-    required: false
-    type: string
-    description: ""
-  id__lt:
-    required: false
-    type: string
-    description: ""
-  id__gte:
-    required: false
-    type: string
-    description: ""
-  id__gt:
-    required: false
-    type: string
-    description: ""
-  content_types__n:
-    required: false
-    type: string
-    description: ""
+    description: "Content_types"
   content_types__ic:
     required: false
     type: string
-    description: ""
-  content_types__nic:
-    required: false
-    type: string
-    description: ""
-  content_types__iew:
-    required: false
-    type: string
-    description: ""
-  content_types__niew:
-    required: false
-    type: string
-    description: ""
-  content_types__isw:
-    required: false
-    type: string
-    description: ""
-  content_types__nisw:
-    required: false
-    type: string
-    description: ""
+    description: "Content_types contains (case-insensitive)"
   content_types__ie:
     required: false
     type: string
-    description: ""
+    description: "Content_types exact match (case-insensitive)"
+  content_types__iew:
+    required: false
+    type: string
+    description: "Content_types ends with (case-insensitive)"
+  content_types__isw:
+    required: false
+    type: string
+    description: "Content_types starts with (case-sensitive)"
+  content_types__n:
+    required: false
+    type: string
+    description: "Content_types not equal to"
+  content_types__nic:
+    required: false
+    type: string
+    description: "Content_types does not contain (case-insensitive)"
   content_types__nie:
     required: false
     type: string
-    description: ""
-  name__n:
+    description: "Content_types inverse exact match (case-insensitive)"
+  content_types__niew:
     required: false
     type: string
-    description: ""
-  name__ic:
+    description: "Content_types does not end with (case-insensitive)"
+  content_types__nisw:
     required: false
     type: string
-    description: ""
-  name__nic:
+    description: "Content_types does not start with (case-sensitive)"
+  enabled:
     required: false
-    type: string
-    description: ""
-  name__iew:
+    type: boolean
+    description: "Enabled"
+  group_name:
     required: false
-    type: string
-    description: ""
-  name__niew:
-    required: false
-    type: string
-    description: ""
-  name__isw:
-    required: false
-    type: string
-    description: ""
-  name__nisw:
-    required: false
-    type: string
-    description: ""
-  name__ie:
-    required: false
-    type: string
-    description: ""
-  name__nie:
-    required: false
-    type: string
-    description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
-  link_text__n:
-    required: false
-    type: string
-    description: ""
-  link_text__ic:
-    required: false
-    type: string
-    description: ""
-  link_text__nic:
-    required: false
-    type: string
-    description: ""
-  link_text__iew:
-    required: false
-    type: string
-    description: ""
-  link_text__niew:
-    required: false
-    type: string
-    description: ""
-  link_text__isw:
-    required: false
-    type: string
-    description: ""
-  link_text__nisw:
-    required: false
-    type: string
-    description: ""
-  link_text__ie:
-    required: false
-    type: string
-    description: ""
-  link_text__nie:
-    required: false
-    type: string
-    description: ""
-  link_url__n:
-    required: false
-    type: string
-    description: ""
-  link_url__ic:
-    required: false
-    type: string
-    description: ""
-  link_url__nic:
-    required: false
-    type: string
-    description: ""
-  link_url__iew:
-    required: false
-    type: string
-    description: ""
-  link_url__niew:
-    required: false
-    type: string
-    description: ""
-  link_url__isw:
-    required: false
-    type: string
-    description: ""
-  link_url__nisw:
-    required: false
-    type: string
-    description: ""
-  link_url__ie:
-    required: false
-    type: string
-    description: ""
-  link_url__nie:
-    required: false
-    type: string
-    description: ""
-  weight__n:
-    required: false
-    type: string
-    description: ""
-  weight__lte:
-    required: false
-    type: string
-    description: ""
-  weight__lt:
-    required: false
-    type: string
-    description: ""
-  weight__gte:
-    required: false
-    type: string
-    description: ""
-  weight__gt:
-    required: false
-    type: string
-    description: ""
-  group_name__n:
-    required: false
-    type: string
-    description: ""
-  group_name__ic:
-    required: false
-    type: string
-    description: ""
-  group_name__nic:
-    required: false
-    type: string
-    description: ""
-  group_name__iew:
-    required: false
-    type: string
-    description: ""
-  group_name__niew:
-    required: false
-    type: string
-    description: ""
-  group_name__isw:
-    required: false
-    type: string
-    description: ""
-  group_name__nisw:
-    required: false
-    type: string
-    description: ""
-  group_name__ie:
-    required: false
-    type: string
-    description: ""
-  group_name__nie:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Group_name"
   group_name__empty:
     required: false
-    type: string
-    description: ""
-  content_type_id__n:
+    type: boolean
+    description: "Group_name is empty/null (boolean)"
+  group_name__ic:
     required: false
-    type: string
-    description: ""
-  content_type_id__lte:
+    type: array
+    description: "Group_name contains (case-insensitive)"
+  group_name__ie:
     required: false
-    type: string
-    description: ""
-  content_type_id__lt:
+    type: array
+    description: "Group_name exact match (case-insensitive)"
+  group_name__iew:
     required: false
-    type: string
-    description: ""
-  content_type_id__gte:
+    type: array
+    description: "Group_name ends with (case-insensitive)"
+  group_name__isw:
     required: false
-    type: string
-    description: ""
-  content_type_id__gt:
+    type: array
+    description: "Group_name starts with (case-sensitive)"
+  group_name__n:
     required: false
-    type: string
-    description: ""
-  ordering:
+    type: array
+    description: "Group_name not equal to"
+  group_name__nic:
     required: false
-    type: string
-    description: "Which field to use when ordering the results."
+    type: array
+    description: "Group_name does not contain (case-insensitive)"
+  group_name__nie:
+    required: false
+    type: array
+    description: "Group_name inverse exact match (case-insensitive)"
+  group_name__niew:
+    required: false
+    type: array
+    description: "Group_name does not end with (case-insensitive)"
+  group_name__nisw:
+    required: false
+    type: array
+    description: "Group_name does not start with (case-sensitive)"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  link_text:
+    required: false
+    type: string
+    description: "Link_text"
+  link_text__ic:
+    required: false
+    type: string
+    description: "Link_text contains (case-insensitive)"
+  link_text__ie:
+    required: false
+    type: string
+    description: "Link_text exact match (case-insensitive)"
+  link_text__iew:
+    required: false
+    type: string
+    description: "Link_text ends with (case-insensitive)"
+  link_text__isw:
+    required: false
+    type: string
+    description: "Link_text starts with (case-sensitive)"
+  link_text__n:
+    required: false
+    type: string
+    description: "Link_text not equal to"
+  link_text__nic:
+    required: false
+    type: string
+    description: "Link_text does not contain (case-insensitive)"
+  link_text__nie:
+    required: false
+    type: string
+    description: "Link_text inverse exact match (case-insensitive)"
+  link_text__niew:
+    required: false
+    type: string
+    description: "Link_text does not end with (case-insensitive)"
+  link_text__nisw:
+    required: false
+    type: string
+    description: "Link_text does not start with (case-sensitive)"
+  link_url:
+    required: false
+    type: string
+    description: "Link_url"
+  link_url__ic:
+    required: false
+    type: string
+    description: "Link_url contains (case-insensitive)"
+  link_url__ie:
+    required: false
+    type: string
+    description: "Link_url exact match (case-insensitive)"
+  link_url__iew:
+    required: false
+    type: string
+    description: "Link_url ends with (case-insensitive)"
+  link_url__isw:
+    required: false
+    type: string
+    description: "Link_url starts with (case-sensitive)"
+  link_url__n:
+    required: false
+    type: string
+    description: "Link_url not equal to"
+  link_url__nic:
+    required: false
+    type: string
+    description: "Link_url does not contain (case-insensitive)"
+  link_url__nie:
+    required: false
+    type: string
+    description: "Link_url inverse exact match (case-insensitive)"
+  link_url__niew:
+    required: false
+    type: string
+    description: "Link_url does not end with (case-insensitive)"
+  link_url__nisw:
+    required: false
+    type: string
+    description: "Link_url does not start with (case-sensitive)"
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
+  new_window:
+    required: false
+    type: boolean
+    description: "New_window"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  q:
+    required: false
+    type: string
+    description: "Search"
+  weight:
+    required: false
+    type: array
+    description: "Weight"
+  weight__empty:
+    required: false
+    type: boolean
+    description: "Weight is empty/null (boolean)"
+  weight__gt:
+    required: false
+    type: array
+    description: "Weight greater than"
+  weight__gte:
+    required: false
+    type: array
+    description: "Weight greater than or equal to"
+  weight__lt:
+    required: false
+    type: array
+    description: "Weight less than"
+  weight__lte:
+    required: false
+    type: array
+    description: "Weight less than or equal to"
+  weight__n:
+    required: false
+    type: array
+    description: "Weight not equal to"
   save_in_key_store:
     type: boolean
     default: false

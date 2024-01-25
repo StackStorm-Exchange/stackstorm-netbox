@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PATCH Ip Addresses"
+# NetBox API version: 3.6
+description: "Patch a IP address object."
 enabled: true
 entry_point: run.py
 name: patch.ipam.ip_addresses
@@ -24,7 +24,7 @@ parameters:
   vrf:
     required: false
     type: integer
-    description: "VRF"
+    description: "Vrf"
   tenant:
     required: false
     type: integer
@@ -32,11 +32,26 @@ parameters:
   status:
     required: false
     type: string
-    description: "Status"
+    description: "The operational status of this IP
+
+* `active` - Active
+* `reserved` - Reserved
+* `deprecated` - Deprecated
+* `dhcp` - DHCP
+* `slaac` - SLAAC"
   role:
     required: false
     type: string
-    description: "Role"
+    description: "The functional role of this IP
+
+* `loopback` - Loopback
+* `secondary` - Secondary
+* `anycast` - Anycast
+* `vip` - VIP
+* `vrrp` - VRRP
+* `hsrp` - HSRP
+* `glbp` - GLBP
+* `carp` - CARP"
   assigned_object_type:
     required: false
     type: string
@@ -48,11 +63,11 @@ parameters:
   nat_inside:
     required: false
     type: integer
-    description: "NAT (Inside)"
+    description: "NAT (inside)"
   dns_name:
     required: false
     type: string
-    description: "DNS Name"
+    description: "Hostname or FQDN (not case-sensitive)"
   description:
     required: false
     type: string
@@ -71,6 +86,6 @@ parameters:
     description: "Custom fields"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to patch."
 runner_type: python-script

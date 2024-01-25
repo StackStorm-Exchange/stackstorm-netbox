@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "GET Devices"
+# NetBox API version: 3.6
+description: "Get a list of device objects."
 enabled: true
 entry_point: run.py
 name: get.dcim.devices
@@ -17,666 +17,806 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  id:
-    required: false
-    type: string
-    description: ""
-  asset_tag:
-    required: false
-    type: string
-    description: ""
-  face:
-    required: false
-    type: string
-    description: ""
-  position:
-    required: false
-    type: string
-    description: ""
   airflow:
     required: false
     type: string
-    description: ""
-  vc_position:
-    required: false
-    type: string
-    description: ""
-  vc_priority:
-    required: false
-    type: string
-    description: ""
-  created:
-    required: false
-    type: string
-    description: ""
-  last_updated:
-    required: false
-    type: string
-    description: ""
-  created_by_request:
-    required: false
-    type: string
-    description: ""
-  updated_by_request:
-    required: false
-    type: string
-    description: ""
-  q:
-    required: false
-    type: string
-    description: ""
-  tag:
-    required: false
-    type: string
-    description: ""
-  tenant_group_id:
-    required: false
-    type: string
-    description: ""
-  tenant_group:
-    required: false
-    type: string
-    description: ""
-  tenant_id:
-    required: false
-    type: string
-    description: ""
-  tenant:
-    required: false
-    type: string
-    description: ""
-  contact:
-    required: false
-    type: string
-    description: ""
-  contact_role:
-    required: false
-    type: string
-    description: ""
-  contact_group:
-    required: false
-    type: string
-    description: ""
-  local_context_data:
-    required: false
-    type: string
-    description: ""
-  manufacturer_id:
-    required: false
-    type: string
-    description: ""
-  manufacturer:
-    required: false
-    type: string
-    description: ""
-  device_type:
-    required: false
-    type: string
-    description: ""
-  device_type_id:
-    required: false
-    type: string
-    description: ""
-  role_id:
-    required: false
-    type: string
-    description: ""
-  role:
-    required: false
-    type: string
-    description: ""
-  parent_device_id:
-    required: false
-    type: string
-    description: ""
-  platform_id:
-    required: false
-    type: string
-    description: ""
-  platform:
-    required: false
-    type: string
-    description: ""
-  region_id:
-    required: false
-    type: string
-    description: ""
-  region:
-    required: false
-    type: string
-    description: ""
-  site_group_id:
-    required: false
-    type: string
-    description: ""
-  site_group:
-    required: false
-    type: string
-    description: ""
-  site_id:
-    required: false
-    type: string
-    description: ""
-  site:
-    required: false
-    type: string
-    description: ""
-  location_id:
-    required: false
-    type: string
-    description: ""
-  rack_id:
-    required: false
-    type: string
-    description: ""
-  cluster_id:
-    required: false
-    type: string
-    description: ""
-  model:
-    required: false
-    type: string
-    description: ""
-  name:
-    required: false
-    type: string
-    description: ""
-  status:
-    required: false
-    type: string
-    description: ""
-  is_full_depth:
-    required: false
-    type: string
-    description: ""
-  mac_address:
-    required: false
-    type: string
-    description: ""
-  serial:
-    required: false
-    type: string
-    description: ""
-  has_primary_ip:
-    required: false
-    type: string
-    description: ""
-  virtual_chassis_id:
-    required: false
-    type: string
-    description: ""
-  virtual_chassis_member:
-    required: false
-    type: string
-    description: ""
-  config_template_id:
-    required: false
-    type: string
-    description: ""
-  console_ports:
-    required: false
-    type: string
-    description: ""
-  console_server_ports:
-    required: false
-    type: string
-    description: ""
-  power_ports:
-    required: false
-    type: string
-    description: ""
-  power_outlets:
-    required: false
-    type: string
-    description: ""
-  interfaces:
-    required: false
-    type: string
-    description: ""
-  pass_through_ports:
-    required: false
-    type: string
-    description: ""
-  module_bays:
-    required: false
-    type: string
-    description: ""
-  device_bays:
-    required: false
-    type: string
-    description: ""
-  primary_ip4_id:
-    required: false
-    type: string
-    description: ""
-  primary_ip6_id:
-    required: false
-    type: string
-    description: ""
-  id__n:
-    required: false
-    type: string
-    description: ""
-  id__lte:
-    required: false
-    type: string
-    description: ""
-  id__lt:
-    required: false
-    type: string
-    description: ""
-  id__gte:
-    required: false
-    type: string
-    description: ""
-  id__gt:
-    required: false
-    type: string
-    description: ""
-  asset_tag__n:
-    required: false
-    type: string
-    description: ""
-  asset_tag__ic:
-    required: false
-    type: string
-    description: ""
-  asset_tag__nic:
-    required: false
-    type: string
-    description: ""
-  asset_tag__iew:
-    required: false
-    type: string
-    description: ""
-  asset_tag__niew:
-    required: false
-    type: string
-    description: ""
-  asset_tag__isw:
-    required: false
-    type: string
-    description: ""
-  asset_tag__nisw:
-    required: false
-    type: string
-    description: ""
-  asset_tag__ie:
-    required: false
-    type: string
-    description: ""
-  asset_tag__nie:
-    required: false
-    type: string
-    description: ""
-  asset_tag__empty:
-    required: false
-    type: string
-    description: ""
-  face__n:
-    required: false
-    type: string
-    description: ""
-  position__n:
-    required: false
-    type: string
-    description: ""
-  position__lte:
-    required: false
-    type: string
-    description: ""
-  position__lt:
-    required: false
-    type: string
-    description: ""
-  position__gte:
-    required: false
-    type: string
-    description: ""
-  position__gt:
-    required: false
-    type: string
-    description: ""
+    description: "Airflow"
   airflow__n:
     required: false
     type: string
-    description: ""
-  vc_position__n:
+    description: "Airflow not equal to"
+  asset_tag:
     required: false
-    type: string
-    description: ""
-  vc_position__lte:
+    type: array
+    description: "Asset_tag"
+  asset_tag__empty:
     required: false
-    type: string
-    description: ""
-  vc_position__lt:
+    type: boolean
+    description: "Asset_tag is empty/null (boolean)"
+  asset_tag__ic:
     required: false
-    type: string
-    description: ""
-  vc_position__gte:
+    type: array
+    description: "Asset_tag contains (case-insensitive)"
+  asset_tag__ie:
     required: false
-    type: string
-    description: ""
-  vc_position__gt:
+    type: array
+    description: "Asset_tag exact match (case-insensitive)"
+  asset_tag__iew:
     required: false
-    type: string
-    description: ""
-  vc_priority__n:
+    type: array
+    description: "Asset_tag ends with (case-insensitive)"
+  asset_tag__isw:
     required: false
-    type: string
-    description: ""
-  vc_priority__lte:
+    type: array
+    description: "Asset_tag starts with (case-sensitive)"
+  asset_tag__n:
     required: false
-    type: string
-    description: ""
-  vc_priority__lt:
+    type: array
+    description: "Asset_tag not equal to"
+  asset_tag__nic:
     required: false
-    type: string
-    description: ""
-  vc_priority__gte:
+    type: array
+    description: "Asset_tag does not contain (case-insensitive)"
+  asset_tag__nie:
     required: false
-    type: string
-    description: ""
-  vc_priority__gt:
+    type: array
+    description: "Asset_tag inverse exact match (case-insensitive)"
+  asset_tag__niew:
     required: false
-    type: string
-    description: ""
-  created__n:
+    type: array
+    description: "Asset_tag does not end with (case-insensitive)"
+  asset_tag__nisw:
     required: false
-    type: string
-    description: ""
-  created__lte:
+    type: array
+    description: "Asset_tag does not start with (case-sensitive)"
+  cluster_id:
     required: false
-    type: string
-    description: ""
-  created__lt:
-    required: false
-    type: string
-    description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__gt:
-    required: false
-    type: string
-    description: ""
-  last_updated__n:
-    required: false
-    type: string
-    description: ""
-  last_updated__lte:
-    required: false
-    type: string
-    description: ""
-  last_updated__lt:
-    required: false
-    type: string
-    description: ""
-  last_updated__gte:
-    required: false
-    type: string
-    description: ""
-  last_updated__gt:
-    required: false
-    type: string
-    description: ""
-  tag__n:
-    required: false
-    type: string
-    description: ""
-  tenant_group_id__n:
-    required: false
-    type: string
-    description: ""
-  tenant_group__n:
-    required: false
-    type: string
-    description: ""
-  tenant_id__n:
-    required: false
-    type: string
-    description: ""
-  tenant__n:
-    required: false
-    type: string
-    description: ""
-  contact__n:
-    required: false
-    type: string
-    description: ""
-  contact_role__n:
-    required: false
-    type: string
-    description: ""
-  contact_group__n:
-    required: false
-    type: string
-    description: ""
-  manufacturer_id__n:
-    required: false
-    type: string
-    description: ""
-  manufacturer__n:
-    required: false
-    type: string
-    description: ""
-  device_type__n:
-    required: false
-    type: string
-    description: ""
-  device_type_id__n:
-    required: false
-    type: string
-    description: ""
-  role_id__n:
-    required: false
-    type: string
-    description: ""
-  role__n:
-    required: false
-    type: string
-    description: ""
-  parent_device_id__n:
-    required: false
-    type: string
-    description: ""
-  platform_id__n:
-    required: false
-    type: string
-    description: ""
-  platform__n:
-    required: false
-    type: string
-    description: ""
-  region_id__n:
-    required: false
-    type: string
-    description: ""
-  region__n:
-    required: false
-    type: string
-    description: ""
-  site_group_id__n:
-    required: false
-    type: string
-    description: ""
-  site_group__n:
-    required: false
-    type: string
-    description: ""
-  site_id__n:
-    required: false
-    type: string
-    description: ""
-  site__n:
-    required: false
-    type: string
-    description: ""
-  location_id__n:
-    required: false
-    type: string
-    description: ""
-  rack_id__n:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "VM cluster (ID)"
   cluster_id__n:
     required: false
-    type: string
-    description: ""
-  model__n:
+    type: array
+    description: "Cluster_id not equal to"
+  config_template_id:
     required: false
-    type: string
-    description: ""
-  name__n:
-    required: false
-    type: string
-    description: ""
-  name__ic:
-    required: false
-    type: string
-    description: ""
-  name__nic:
-    required: false
-    type: string
-    description: ""
-  name__iew:
-    required: false
-    type: string
-    description: ""
-  name__niew:
-    required: false
-    type: string
-    description: ""
-  name__isw:
-    required: false
-    type: string
-    description: ""
-  name__nisw:
-    required: false
-    type: string
-    description: ""
-  name__ie:
-    required: false
-    type: string
-    description: ""
-  name__nie:
-    required: false
-    type: string
-    description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
-  status__n:
-    required: false
-    type: string
-    description: ""
-  mac_address__n:
-    required: false
-    type: string
-    description: ""
-  mac_address__ic:
-    required: false
-    type: string
-    description: ""
-  mac_address__nic:
-    required: false
-    type: string
-    description: ""
-  mac_address__iew:
-    required: false
-    type: string
-    description: ""
-  mac_address__niew:
-    required: false
-    type: string
-    description: ""
-  mac_address__isw:
-    required: false
-    type: string
-    description: ""
-  mac_address__nisw:
-    required: false
-    type: string
-    description: ""
-  mac_address__ie:
-    required: false
-    type: string
-    description: ""
-  mac_address__nie:
-    required: false
-    type: string
-    description: ""
-  serial__n:
-    required: false
-    type: string
-    description: ""
-  serial__ic:
-    required: false
-    type: string
-    description: ""
-  serial__nic:
-    required: false
-    type: string
-    description: ""
-  serial__iew:
-    required: false
-    type: string
-    description: ""
-  serial__niew:
-    required: false
-    type: string
-    description: ""
-  serial__isw:
-    required: false
-    type: string
-    description: ""
-  serial__nisw:
-    required: false
-    type: string
-    description: ""
-  serial__ie:
-    required: false
-    type: string
-    description: ""
-  serial__nie:
-    required: false
-    type: string
-    description: ""
-  serial__empty:
-    required: false
-    type: string
-    description: ""
-  virtual_chassis_id__n:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Config template (ID)"
   config_template_id__n:
     required: false
-    type: string
-    description: ""
-  primary_ip4_id__n:
+    type: array
+    description: "Config_template_id not equal to"
+  console_ports:
+    required: false
+    type: boolean
+    description: "Has console ports"
+  console_server_ports:
+    required: false
+    type: boolean
+    description: "Has console server ports"
+  contact:
+    required: false
+    type: array
+    description: "Contact"
+  contact__n:
+    required: false
+    type: array
+    description: "Contact not equal to"
+  contact_group:
+    required: false
+    type: array
+    description: "Contact group"
+  contact_group__n:
+    required: false
+    type: array
+    description: "Contact_group not equal to"
+  contact_role:
+    required: false
+    type: array
+    description: "Contact Role"
+  contact_role__n:
+    required: false
+    type: array
+    description: "Contact_role not equal to"
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
     required: false
     type: string
-    description: ""
-  primary_ip6_id__n:
+    description: "Created_by_request"
+  description:
+    required: false
+    type: array
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
+    required: false
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  device_bays:
+    required: false
+    type: boolean
+    description: "Has device bays"
+  device_type:
+    required: false
+    type: array
+    description: "Device type (slug)"
+  device_type__n:
+    required: false
+    type: array
+    description: "Device_type not equal to"
+  device_type_id:
+    required: false
+    type: array
+    description: "Device type (ID)"
+  device_type_id__n:
+    required: false
+    type: array
+    description: "Device_type_id not equal to"
+  face:
     required: false
     type: string
-    description: ""
-  ordering:
+    description: "Face"
+  face__n:
     required: false
     type: string
-    description: "Which field to use when ordering the results."
+    description: "Face not equal to"
+  has_oob_ip:
+    required: false
+    type: boolean
+    description: "Has an out-of-band IP"
+  has_primary_ip:
+    required: false
+    type: boolean
+    description: "Has a primary IP"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  interfaces:
+    required: false
+    type: boolean
+    description: "Has interfaces"
+  is_full_depth:
+    required: false
+    type: boolean
+    description: "Is full depth"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
+  latitude:
+    required: false
+    type: array
+    description: "Latitude"
+  latitude__empty:
+    required: false
+    type: boolean
+    description: "Latitude is empty/null (boolean)"
+  latitude__gt:
+    required: false
+    type: array
+    description: "Latitude greater than"
+  latitude__gte:
+    required: false
+    type: array
+    description: "Latitude greater than or equal to"
+  latitude__lt:
+    required: false
+    type: array
+    description: "Latitude less than"
+  latitude__lte:
+    required: false
+    type: array
+    description: "Latitude less than or equal to"
+  latitude__n:
+    required: false
+    type: array
+    description: "Latitude not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  local_context_data:
+    required: false
+    type: boolean
+    description: "Has local config context data"
+  location_id:
+    required: false
+    type: array
+    description: "Location (ID)"
+  location_id__n:
+    required: false
+    type: array
+    description: "Location_id not equal to"
+  longitude:
+    required: false
+    type: array
+    description: "Longitude"
+  longitude__empty:
+    required: false
+    type: boolean
+    description: "Longitude is empty/null (boolean)"
+  longitude__gt:
+    required: false
+    type: array
+    description: "Longitude greater than"
+  longitude__gte:
+    required: false
+    type: array
+    description: "Longitude greater than or equal to"
+  longitude__lt:
+    required: false
+    type: array
+    description: "Longitude less than"
+  longitude__lte:
+    required: false
+    type: array
+    description: "Longitude less than or equal to"
+  longitude__n:
+    required: false
+    type: array
+    description: "Longitude not equal to"
+  mac_address:
+    required: false
+    type: array
+    description: "Mac_address"
+  mac_address__ic:
+    required: false
+    type: array
+    description: "Mac_address contains (case-insensitive)"
+  mac_address__ie:
+    required: false
+    type: array
+    description: "Mac_address exact match (case-insensitive)"
+  mac_address__iew:
+    required: false
+    type: array
+    description: "Mac_address ends with (case-insensitive)"
+  mac_address__isw:
+    required: false
+    type: array
+    description: "Mac_address starts with (case-sensitive)"
+  mac_address__n:
+    required: false
+    type: array
+    description: "Mac_address not equal to"
+  mac_address__nic:
+    required: false
+    type: array
+    description: "Mac_address does not contain (case-insensitive)"
+  mac_address__nie:
+    required: false
+    type: array
+    description: "Mac_address inverse exact match (case-insensitive)"
+  mac_address__niew:
+    required: false
+    type: array
+    description: "Mac_address does not end with (case-insensitive)"
+  mac_address__nisw:
+    required: false
+    type: array
+    description: "Mac_address does not start with (case-sensitive)"
+  manufacturer:
+    required: false
+    type: array
+    description: "Manufacturer (slug)"
+  manufacturer__n:
+    required: false
+    type: array
+    description: "Manufacturer not equal to"
+  manufacturer_id:
+    required: false
+    type: array
+    description: "Manufacturer (ID)"
+  manufacturer_id__n:
+    required: false
+    type: array
+    description: "Manufacturer_id not equal to"
+  model:
+    required: false
+    type: array
+    description: "Device model (slug)"
+  model__n:
+    required: false
+    type: array
+    description: "Model not equal to"
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  module_bays:
+    required: false
+    type: boolean
+    description: "Has module bays"
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  oob_ip_id:
+    required: false
+    type: array
+    description: "OOB IP (ID)"
+  oob_ip_id__n:
+    required: false
+    type: array
+    description: "Oob_ip_id not equal to"
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  parent_device_id:
+    required: false
+    type: array
+    description: "Parent Device (ID)"
+  parent_device_id__n:
+    required: false
+    type: array
+    description: "Parent_device_id not equal to"
+  pass_through_ports:
+    required: false
+    type: boolean
+    description: "Has pass-through ports"
+  platform:
+    required: false
+    type: array
+    description: "Platform (slug)"
+  platform__n:
+    required: false
+    type: array
+    description: "Platform not equal to"
+  platform_id:
+    required: false
+    type: array
+    description: "Platform (ID)"
+  platform_id__n:
+    required: false
+    type: array
+    description: "Platform_id not equal to"
+  position:
+    required: false
+    type: array
+    description: "Position"
+  position__empty:
+    required: false
+    type: boolean
+    description: "Position is empty/null (boolean)"
+  position__gt:
+    required: false
+    type: array
+    description: "Position greater than"
+  position__gte:
+    required: false
+    type: array
+    description: "Position greater than or equal to"
+  position__lt:
+    required: false
+    type: array
+    description: "Position less than"
+  position__lte:
+    required: false
+    type: array
+    description: "Position less than or equal to"
+  position__n:
+    required: false
+    type: array
+    description: "Position not equal to"
+  power_outlets:
+    required: false
+    type: boolean
+    description: "Has power outlets"
+  power_ports:
+    required: false
+    type: boolean
+    description: "Has power ports"
+  primary_ip4_id:
+    required: false
+    type: array
+    description: "Primary IPv4 (ID)"
+  primary_ip4_id__n:
+    required: false
+    type: array
+    description: "Primary_ip4_id not equal to"
+  primary_ip6_id:
+    required: false
+    type: array
+    description: "Primary IPv6 (ID)"
+  primary_ip6_id__n:
+    required: false
+    type: array
+    description: "Primary_ip6_id not equal to"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  rack_id:
+    required: false
+    type: array
+    description: "Rack (ID)"
+  rack_id__n:
+    required: false
+    type: array
+    description: "Rack_id not equal to"
+  region:
+    required: false
+    type: array
+    description: "Region (slug)"
+  region__n:
+    required: false
+    type: array
+    description: "Region not equal to"
+  region_id:
+    required: false
+    type: array
+    description: "Region (ID)"
+  region_id__n:
+    required: false
+    type: array
+    description: "Region_id not equal to"
+  role:
+    required: false
+    type: array
+    description: "Role (slug)"
+  role__n:
+    required: false
+    type: array
+    description: "Role not equal to"
+  role_id:
+    required: false
+    type: array
+    description: "Role (ID)"
+  role_id__n:
+    required: false
+    type: array
+    description: "Role_id not equal to"
+  serial:
+    required: false
+    type: array
+    description: "Serial"
+  serial__empty:
+    required: false
+    type: boolean
+    description: "Serial is empty/null (boolean)"
+  serial__ic:
+    required: false
+    type: array
+    description: "Serial contains (case-insensitive)"
+  serial__ie:
+    required: false
+    type: array
+    description: "Serial exact match (case-insensitive)"
+  serial__iew:
+    required: false
+    type: array
+    description: "Serial ends with (case-insensitive)"
+  serial__isw:
+    required: false
+    type: array
+    description: "Serial starts with (case-sensitive)"
+  serial__n:
+    required: false
+    type: array
+    description: "Serial not equal to"
+  serial__nic:
+    required: false
+    type: array
+    description: "Serial does not contain (case-insensitive)"
+  serial__nie:
+    required: false
+    type: array
+    description: "Serial inverse exact match (case-insensitive)"
+  serial__niew:
+    required: false
+    type: array
+    description: "Serial does not end with (case-insensitive)"
+  serial__nisw:
+    required: false
+    type: array
+    description: "Serial does not start with (case-sensitive)"
+  site:
+    required: false
+    type: array
+    description: "Site name (slug)"
+  site__n:
+    required: false
+    type: array
+    description: "Site not equal to"
+  site_group:
+    required: false
+    type: array
+    description: "Site group (slug)"
+  site_group__n:
+    required: false
+    type: array
+    description: "Site_group not equal to"
+  site_group_id:
+    required: false
+    type: array
+    description: "Site group (ID)"
+  site_group_id__n:
+    required: false
+    type: array
+    description: "Site_group_id not equal to"
+  site_id:
+    required: false
+    type: array
+    description: "Site (ID)"
+  site_id__n:
+    required: false
+    type: array
+    description: "Site_id not equal to"
+  status:
+    required: false
+    type: array
+    description: "Status"
+  status__n:
+    required: false
+    type: array
+    description: "Status not equal to"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  tenant:
+    required: false
+    type: array
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: array
+    description: "Tenant not equal to"
+  tenant_group:
+    required: false
+    type: array
+    description: "Tenant Group (slug)"
+  tenant_group__n:
+    required: false
+    type: array
+    description: "Tenant_group not equal to"
+  tenant_group_id:
+    required: false
+    type: array
+    description: "Tenant Group (ID)"
+  tenant_group_id__n:
+    required: false
+    type: array
+    description: "Tenant_group_id not equal to"
+  tenant_id:
+    required: false
+    type: array
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: array
+    description: "Tenant_id not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  vc_position:
+    required: false
+    type: array
+    description: "Vc_position"
+  vc_position__empty:
+    required: false
+    type: boolean
+    description: "Vc_position is empty/null (boolean)"
+  vc_position__gt:
+    required: false
+    type: array
+    description: "Vc_position greater than"
+  vc_position__gte:
+    required: false
+    type: array
+    description: "Vc_position greater than or equal to"
+  vc_position__lt:
+    required: false
+    type: array
+    description: "Vc_position less than"
+  vc_position__lte:
+    required: false
+    type: array
+    description: "Vc_position less than or equal to"
+  vc_position__n:
+    required: false
+    type: array
+    description: "Vc_position not equal to"
+  vc_priority:
+    required: false
+    type: array
+    description: "Vc_priority"
+  vc_priority__empty:
+    required: false
+    type: boolean
+    description: "Vc_priority is empty/null (boolean)"
+  vc_priority__gt:
+    required: false
+    type: array
+    description: "Vc_priority greater than"
+  vc_priority__gte:
+    required: false
+    type: array
+    description: "Vc_priority greater than or equal to"
+  vc_priority__lt:
+    required: false
+    type: array
+    description: "Vc_priority less than"
+  vc_priority__lte:
+    required: false
+    type: array
+    description: "Vc_priority less than or equal to"
+  vc_priority__n:
+    required: false
+    type: array
+    description: "Vc_priority not equal to"
+  virtual_chassis_id:
+    required: false
+    type: array
+    description: "Virtual chassis (ID)"
+  virtual_chassis_id__n:
+    required: false
+    type: array
+    description: "Virtual_chassis_id not equal to"
+  virtual_chassis_member:
+    required: false
+    type: boolean
+    description: "Is a virtual chassis member"
   save_in_key_store:
     type: boolean
     default: false

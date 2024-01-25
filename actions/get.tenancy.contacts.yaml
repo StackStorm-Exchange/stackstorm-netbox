@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "GET Contacts"
+# NetBox API version: 3.6
+description: "Get a list of contact objects."
 enabled: true
 entry_point: run.py
 name: get.tenancy.contacts
@@ -17,390 +17,450 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  id:
-    required: false
-    type: string
-    description: ""
-  name:
-    required: false
-    type: string
-    description: ""
-  title:
-    required: false
-    type: string
-    description: ""
-  phone:
-    required: false
-    type: string
-    description: ""
-  email:
-    required: false
-    type: string
-    description: ""
   address:
     required: false
-    type: string
-    description: ""
-  link:
+    type: array
+    description: "Address"
+  address__empty:
     required: false
-    type: string
-    description: ""
+    type: boolean
+    description: "Address is empty/null (boolean)"
+  address__ic:
+    required: false
+    type: array
+    description: "Address contains (case-insensitive)"
+  address__ie:
+    required: false
+    type: array
+    description: "Address exact match (case-insensitive)"
+  address__iew:
+    required: false
+    type: array
+    description: "Address ends with (case-insensitive)"
+  address__isw:
+    required: false
+    type: array
+    description: "Address starts with (case-sensitive)"
+  address__n:
+    required: false
+    type: array
+    description: "Address not equal to"
+  address__nic:
+    required: false
+    type: array
+    description: "Address does not contain (case-insensitive)"
+  address__nie:
+    required: false
+    type: array
+    description: "Address inverse exact match (case-insensitive)"
+  address__niew:
+    required: false
+    type: array
+    description: "Address does not end with (case-insensitive)"
+  address__nisw:
+    required: false
+    type: array
+    description: "Address does not start with (case-sensitive)"
   created:
     required: false
-    type: string
-    description: ""
-  last_updated:
+    type: array
+    description: "Created"
+  created__empty:
     required: false
-    type: string
-    description: ""
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
   created_by_request:
     required: false
     type: string
-    description: ""
-  updated_by_request:
+    description: "Created_by_request"
+  description:
     required: false
-    type: string
-    description: ""
-  q:
+    type: array
+    description: "Description"
+  description__empty:
     required: false
-    type: string
-    description: ""
-  tag:
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
     required: false
-    type: string
-    description: ""
-  group_id:
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
     required: false
-    type: string
-    description: ""
-  group:
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
     required: false
-    type: string
-    description: ""
-  id__n:
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
     required: false
-    type: string
-    description: ""
-  id__lte:
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
     required: false
-    type: string
-    description: ""
-  id__lt:
+    type: array
+    description: "Description not equal to"
+  description__nic:
     required: false
-    type: string
-    description: ""
-  id__gte:
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
     required: false
-    type: string
-    description: ""
-  id__gt:
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
     required: false
-    type: string
-    description: ""
-  name__n:
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
     required: false
-    type: string
-    description: ""
-  name__ic:
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  email:
     required: false
-    type: string
-    description: ""
-  name__nic:
-    required: false
-    type: string
-    description: ""
-  name__iew:
-    required: false
-    type: string
-    description: ""
-  name__niew:
-    required: false
-    type: string
-    description: ""
-  name__isw:
-    required: false
-    type: string
-    description: ""
-  name__nisw:
-    required: false
-    type: string
-    description: ""
-  name__ie:
-    required: false
-    type: string
-    description: ""
-  name__nie:
-    required: false
-    type: string
-    description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
-  title__n:
-    required: false
-    type: string
-    description: ""
-  title__ic:
-    required: false
-    type: string
-    description: ""
-  title__nic:
-    required: false
-    type: string
-    description: ""
-  title__iew:
-    required: false
-    type: string
-    description: ""
-  title__niew:
-    required: false
-    type: string
-    description: ""
-  title__isw:
-    required: false
-    type: string
-    description: ""
-  title__nisw:
-    required: false
-    type: string
-    description: ""
-  title__ie:
-    required: false
-    type: string
-    description: ""
-  title__nie:
-    required: false
-    type: string
-    description: ""
-  title__empty:
-    required: false
-    type: string
-    description: ""
-  phone__n:
-    required: false
-    type: string
-    description: ""
-  phone__ic:
-    required: false
-    type: string
-    description: ""
-  phone__nic:
-    required: false
-    type: string
-    description: ""
-  phone__iew:
-    required: false
-    type: string
-    description: ""
-  phone__niew:
-    required: false
-    type: string
-    description: ""
-  phone__isw:
-    required: false
-    type: string
-    description: ""
-  phone__nisw:
-    required: false
-    type: string
-    description: ""
-  phone__ie:
-    required: false
-    type: string
-    description: ""
-  phone__nie:
-    required: false
-    type: string
-    description: ""
-  phone__empty:
-    required: false
-    type: string
-    description: ""
-  email__n:
-    required: false
-    type: string
-    description: ""
-  email__ic:
-    required: false
-    type: string
-    description: ""
-  email__nic:
-    required: false
-    type: string
-    description: ""
-  email__iew:
-    required: false
-    type: string
-    description: ""
-  email__niew:
-    required: false
-    type: string
-    description: ""
-  email__isw:
-    required: false
-    type: string
-    description: ""
-  email__nisw:
-    required: false
-    type: string
-    description: ""
-  email__ie:
-    required: false
-    type: string
-    description: ""
-  email__nie:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Email"
   email__empty:
     required: false
-    type: string
-    description: ""
-  address__n:
+    type: boolean
+    description: "Email is empty/null (boolean)"
+  email__ic:
     required: false
-    type: string
-    description: ""
-  address__ic:
+    type: array
+    description: "Email contains (case-insensitive)"
+  email__ie:
     required: false
-    type: string
-    description: ""
-  address__nic:
+    type: array
+    description: "Email exact match (case-insensitive)"
+  email__iew:
     required: false
-    type: string
-    description: ""
-  address__iew:
+    type: array
+    description: "Email ends with (case-insensitive)"
+  email__isw:
     required: false
-    type: string
-    description: ""
-  address__niew:
+    type: array
+    description: "Email starts with (case-sensitive)"
+  email__n:
     required: false
-    type: string
-    description: ""
-  address__isw:
+    type: array
+    description: "Email not equal to"
+  email__nic:
     required: false
-    type: string
-    description: ""
-  address__nisw:
+    type: array
+    description: "Email does not contain (case-insensitive)"
+  email__nie:
     required: false
-    type: string
-    description: ""
-  address__ie:
+    type: array
+    description: "Email inverse exact match (case-insensitive)"
+  email__niew:
     required: false
-    type: string
-    description: ""
-  address__nie:
+    type: array
+    description: "Email does not end with (case-insensitive)"
+  email__nisw:
     required: false
-    type: string
-    description: ""
-  address__empty:
+    type: array
+    description: "Email does not start with (case-sensitive)"
+  group:
     required: false
-    type: string
-    description: ""
-  link__n:
-    required: false
-    type: string
-    description: ""
-  link__ic:
-    required: false
-    type: string
-    description: ""
-  link__nic:
-    required: false
-    type: string
-    description: ""
-  link__iew:
-    required: false
-    type: string
-    description: ""
-  link__niew:
-    required: false
-    type: string
-    description: ""
-  link__isw:
-    required: false
-    type: string
-    description: ""
-  link__nisw:
-    required: false
-    type: string
-    description: ""
-  link__ie:
-    required: false
-    type: string
-    description: ""
-  link__nie:
-    required: false
-    type: string
-    description: ""
-  link__empty:
-    required: false
-    type: string
-    description: ""
-  created__n:
-    required: false
-    type: string
-    description: ""
-  created__lte:
-    required: false
-    type: string
-    description: ""
-  created__lt:
-    required: false
-    type: string
-    description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__gt:
-    required: false
-    type: string
-    description: ""
-  last_updated__n:
-    required: false
-    type: string
-    description: ""
-  last_updated__lte:
-    required: false
-    type: string
-    description: ""
-  last_updated__lt:
-    required: false
-    type: string
-    description: ""
-  last_updated__gte:
-    required: false
-    type: string
-    description: ""
-  last_updated__gt:
-    required: false
-    type: string
-    description: ""
-  tag__n:
-    required: false
-    type: string
-    description: ""
-  group_id__n:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Contact group (slug)"
   group__n:
     required: false
-    type: string
-    description: ""
-  ordering:
+    type: array
+    description: "Group not equal to"
+  group_id:
     required: false
-    type: string
-    description: "Which field to use when ordering the results."
+    type: array
+    description: "Contact group (ID)"
+  group_id__n:
+    required: false
+    type: array
+    description: "Group_id not equal to"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  link:
+    required: false
+    type: array
+    description: "Link"
+  link__empty:
+    required: false
+    type: boolean
+    description: "Link is empty/null (boolean)"
+  link__ic:
+    required: false
+    type: array
+    description: "Link contains (case-insensitive)"
+  link__ie:
+    required: false
+    type: array
+    description: "Link exact match (case-insensitive)"
+  link__iew:
+    required: false
+    type: array
+    description: "Link ends with (case-insensitive)"
+  link__isw:
+    required: false
+    type: array
+    description: "Link starts with (case-sensitive)"
+  link__n:
+    required: false
+    type: array
+    description: "Link not equal to"
+  link__nic:
+    required: false
+    type: array
+    description: "Link does not contain (case-insensitive)"
+  link__nie:
+    required: false
+    type: array
+    description: "Link inverse exact match (case-insensitive)"
+  link__niew:
+    required: false
+    type: array
+    description: "Link does not end with (case-insensitive)"
+  link__nisw:
+    required: false
+    type: array
+    description: "Link does not start with (case-sensitive)"
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  phone:
+    required: false
+    type: array
+    description: "Phone"
+  phone__empty:
+    required: false
+    type: boolean
+    description: "Phone is empty/null (boolean)"
+  phone__ic:
+    required: false
+    type: array
+    description: "Phone contains (case-insensitive)"
+  phone__ie:
+    required: false
+    type: array
+    description: "Phone exact match (case-insensitive)"
+  phone__iew:
+    required: false
+    type: array
+    description: "Phone ends with (case-insensitive)"
+  phone__isw:
+    required: false
+    type: array
+    description: "Phone starts with (case-sensitive)"
+  phone__n:
+    required: false
+    type: array
+    description: "Phone not equal to"
+  phone__nic:
+    required: false
+    type: array
+    description: "Phone does not contain (case-insensitive)"
+  phone__nie:
+    required: false
+    type: array
+    description: "Phone inverse exact match (case-insensitive)"
+  phone__niew:
+    required: false
+    type: array
+    description: "Phone does not end with (case-insensitive)"
+  phone__nisw:
+    required: false
+    type: array
+    description: "Phone does not start with (case-sensitive)"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  title:
+    required: false
+    type: array
+    description: "Title"
+  title__empty:
+    required: false
+    type: boolean
+    description: "Title is empty/null (boolean)"
+  title__ic:
+    required: false
+    type: array
+    description: "Title contains (case-insensitive)"
+  title__ie:
+    required: false
+    type: array
+    description: "Title exact match (case-insensitive)"
+  title__iew:
+    required: false
+    type: array
+    description: "Title ends with (case-insensitive)"
+  title__isw:
+    required: false
+    type: array
+    description: "Title starts with (case-sensitive)"
+  title__n:
+    required: false
+    type: array
+    description: "Title not equal to"
+  title__nic:
+    required: false
+    type: array
+    description: "Title does not contain (case-insensitive)"
+  title__nie:
+    required: false
+    type: array
+    description: "Title inverse exact match (case-insensitive)"
+  title__niew:
+    required: false
+    type: array
+    description: "Title does not end with (case-insensitive)"
+  title__nisw:
+    required: false
+    type: array
+    description: "Title does not start with (case-sensitive)"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
   save_in_key_store:
     type: boolean
     default: false

@@ -1,74 +1,100 @@
+"""
+Generate actions from NetBox API schema from OpenAPI v3 specification.
+"""
+
 import argparse
 import os
 
 import jinja2
 import requests
 
-
-def get_spec(host, https, port, ssl_verify):
-    protocol = 'https://' if https else 'http://'
-    url = "{}{}:{}/api/swagger.json".format(protocol, host, port)
-    print(f"Getting API spec from NetBox instance at {host}")
-    try:
-        response = requests.get(url, verify=ssl_verify)
-        return response.json()
-    except Exception as e:
-        print(f"Failed to get the API spec!: {e}")
-        exit(1)
+RUNNING_DIR_NAME = os.path.dirname(__file__)
+ACTIONS_DIR = os.path.join(RUNNING_DIR_NAME, '../actions')
 
 
 def sanitize_parameters(parameters):
     for parameter in parameters:
         if parameter['name'] == 'tags':
-            parameter['description'] = "Array of tag strings"
+            parameter['description'] = 'Array of tag strings'
 
-        if parameter['type'] == 'number':
-            parameter['type'] = 'integer'
+        parameter_name = parameter['name'].split('__')[0].capitalize()
+
+        if parameter['name'].endswith('__empty'):
+            parameter['description'] = f'{parameter_name} is empty/null (boolean)'
+
+        if parameter['name'].endswith('__gt'):
+            parameter['description'] = f'{parameter_name} greater than'
+
+        if parameter['name'].endswith('__gte'):
+            parameter['description'] = f'{parameter_name} greater than or equal to'
+
+        if parameter['name'].endswith('__ic'):
+            parameter['description'] = f'{parameter_name} contains (case-insensitive)'
+
+        if parameter['name'].endswith('__ie'):
+            parameter['description'] = f'{parameter_name} exact match (case-insensitive)'
+
+        if parameter['name'].endswith('__iew'):
+            parameter['description'] = f'{parameter_name} ends with (case-insensitive)'
+
+        if parameter['name'].endswith('__isw'):
+            parameter['description'] = f'{parameter_name} starts with (case-sensitive)'
+
+        if parameter['name'].endswith('__nic'):
+            parameter['description'] = f'{parameter_name} does not contain (case-insensitive)'
+
+        if parameter['name'].endswith('__nie'):
+            parameter['description'] = f'{parameter_name} inverse exact match (case-insensitive)'
+
+        if parameter['name'].endswith('__niew'):
+            parameter['description'] = f'{parameter_name} does not end with (case-insensitive)'
+
+        if parameter['name'].endswith('__nisw'):
+            parameter['description'] = f'{parameter_name} does not start with (case-sensitive)'
+
+        if parameter['name'].endswith('__lt'):
+            parameter['description'] = f'{parameter_name} less than'
+
+        if parameter['name'].endswith('__lte'):
+            parameter['description'] = f'{parameter_name} less than or equal to'
+
+        if parameter['name'].endswith('__n'):
+            parameter['description'] = f'{parameter_name} not equal to'
+
+        if not parameter.get('description'):
+            parameter['description'] = parameter_name
+
+        if parameter.get('schema'):
+            if parameter['schema']['type'] == 'number':
+                parameter['type'] = 'integer'
+            else:
+                parameter['type'] = parameter['schema']['type']
+        else:
+            if parameter['type'] == 'number':
+                parameter['type'] = 'integer'
+
+        parameter['required'] = False
+
     return parameters
 
 
-def parse_properties(properties, required, spec, ignore=None):
+def parse_component_properties(properties, required):
     """
-    Given a definition's properties, parse out the parameters list for the action.
-
-    We need to do some manipulation and explicitly ignore some elements.
-
-    Input:
-        properties(dict): properties for the definition
-        required(list): list of required element names
-        spec(dict): the overall spec object for linking outside elements
-        ignore(list): optional list of elements to explicitly ignore
+    Parse component properties from OpenAPI v3 specification.
     """
     parameters = []
-    for name, data in list(properties.items()):
-        if data.get('readOnly', False):
+    for name, data in properties.items():
+        if data.get('readOnly'):
             continue
 
-        if ignore and name in ignore:
-            continue
+        description = data.get('description', name.replace('_', ' ').capitalize())
+        title = data.get('title', description)
 
         parameter = {
             'name': name,
+            'type': data.get('type', 'object'),
+            'description': title
         }
-
-        data_properties = data.get('properties', {})
-
-        if data.get('$ref', False):
-            # foreign key relationships should be integers
-            props = spec['definitions'][data['$ref'].split('/')[-1]]['properties']
-            parameter['type'] = props['id']['type']
-            parameter['description'] = f"{props['id']['title']} of {name}"
-        elif data_properties.get('label', False) and data_properties.get('value', False):
-            # choice fields should be converted to integer types
-            parameter['type'] = "integer"
-            parameter['description'] = name.replace("_", " ").capitalize()
-        else:
-            # everything else is just copied over
-            parameter['type'] = data['type']
-            if data.get('title', False):
-                parameter['description'] = data['title']
-            else:
-                parameter['description'] = name.replace("_", " ").capitalize()
 
         if name in required:
             parameter['required'] = True
@@ -76,151 +102,161 @@ def parse_properties(properties, required, spec, ignore=None):
             parameter['required'] = False
 
         parameters.append(parameter)
-
     return sanitize_parameters(parameters)
 
 
-def run(spec):
+def get_actions(spec):
+    """
+    Generate actions from NetBox API schema from OpenAPI v3 specification.
+    """
+    print('Generating actions...')
     actions = {}
     deferred_detail_gets = []
-    for path, verbs in list(spec['paths'].items()):
-        path_parts = [x.replace("-", "_") for x in path.replace("/{id}", "").strip("/").split("/")]
-        for verb, verb_data in verbs.items():
-            if verb == "parameters":
+    for path, path_spec in spec['paths'].items():
+        path = path.replace('/api', '')
+        path_parts = [x.replace('-', '_') for x in path.replace('/{id}', '').strip('/').split('/')]
+
+        for method, method_spec in path_spec.items():
+            if method == 'parameters':
                 continue
 
-            action_name = "{}.{}".format(verb, ".".join(path_parts))
-            if "{id}" in path:
-                path = path.replace("{id}", "{{ id }}")
+            action_name = f'{method}.{".".join(path_parts)}'
+            if '{id}' in path:
+                path = path.replace('{id}', '{{ id }}')
+
             action = {
-                'description': verb_data['description'].replace("\n", "") or "{} {}".format(
-                    verb.upper(), path_parts[-1].replace("_", " ").title()
-                ),
+                'description': method_spec['description'],
                 'parameters': [],
                 'endpoint_uri': path,
                 'immutable': True,
-                'verb': verb,
+                'verb': method,
                 'get_detail_route_eligible': True,
             }
-            print(f"Processing {action_name}...")
 
-            if verb_data['parameters'] and verb_data['parameters'][0].get('schema', False):
-                ref_name = verb_data['parameters'][0]['schema']['$ref'].split('/')[-1]
-                schema = spec['definitions'][ref_name]
+            print(f'Processing {action_name} ...')
+            content = method_spec.get('requestBody', {}).get('content', {})
+            ref = content.get('application/json', {}).get('schema', {}).get('$ref')
+
+            if ref:
+                ref_name = ref.split('/')[-1]
+                schema = spec['components']['schemas'][ref_name]
                 try:
-                    required = ['id'] if verb == 'patch' else schema['required']
+                    required = ['id'] if method == 'patch' else schema['required']
                 except KeyError:
                     required = []
-                action['parameters'] = parse_properties(schema['properties'], required, spec)
+                action['parameters'] = parse_component_properties(schema['properties'], required)
 
-            if verb == 'get':
-                if verb_data['operationId'].endswith('_list'):
-                    action['parameters'] = sanitize_parameters(verb_data['parameters'])
+            if method == 'get':
+                if method_spec['operationId'].endswith('_list'):
+                    action['parameters'] = sanitize_parameters(method_spec['parameters'])
                     actions[action_name] = action
-                elif path.endswith("/{{ id }}/"):
+
+                elif path.endswith('/{{ id }}/'):
                     # defer these until we have processed everything else to ensure the list
                     # endpoints are present for lookup
                     deferred_detail_gets.append(action_name)
-                elif "{{ id }}" in path and not path.endswith("{{ id }}"):
+                elif '{{ id }}' in path and not path.endswith('{{ id }}'):
                     action['parameters'].append({
                         'name': 'id',
                         'required': True,
-                        'description': "ID of the object.",
-                        'type': 'string'
+                        'description': f'ID of the object.',
+                        'type': 'integer',
                     })
                     action['get_detail_route_eligible'] = False
                     actions[action_name] = action
 
-            if verb in ['delete', 'put', 'patch']:
+            if method in ['delete', 'put', 'patch']:
                 action['parameters'].append({
                     'name': 'id',
                     'required': True,
-                    'description': "ID of the object to {}.".format(verb),
-                    'type': 'string'
+                    'description': f'ID of the object to {method}.',
+                    'type': 'integer',
                 })
                 actions[action_name] = action
 
-            if verb == 'post':
-                if "{{ id }}" not in path:
+            if method == 'post':
+                if '{{ id }}' not in path:
                     actions[action_name] = action
-
-            #
-            # Begin special endpoint processing
-            #
-            if action_name == 'get.dcim.devices.napalm':
-                action.update({'immutable': False})
-                actions[action_name] = action
-
-            #
-            # End special endpoint handling
-            #
 
     # process deferred detail get endpoints
     for detailed_get in deferred_detail_gets:
         list_action = actions.get(detailed_get)
         if list_action is None:
-            print("Unable to find list action for deferred GET endpoint {}".format(detailed_get))
+            raise Exception(
+                "Unable to find list action for deferred GET endpoint {}".format(detailed_get)
+            )
 
-    # delete all current ".yaml" action files
-    running_dir_name = os.path.dirname(__file__)
-    actions_dir = os.path.join(running_dir_name, '../actions')
-    current_actions_listing = os.listdir(actions_dir)
+    return actions
+
+
+def delete_actions():
+    """
+    Removes all actions from the actions directory.
+    """
+    print(f'Deleting all actions from {ACTIONS_DIR}')
+    current_actions_listing = os.listdir(ACTIONS_DIR)
     for item in current_actions_listing:
         if item.endswith('.yaml'):
-            os.remove(os.path.join(actions_dir, item))
+            os.remove(os.path.join(ACTIONS_DIR, item))
 
-    # render the new actions and write them to file
-    with open('action-template.jinja2') as f:
+
+def write_actions(version, actions):
+    # Render new actions and write them to file
+    with open('action-template.jinja2', 'r') as f:
         template = jinja2.Template(f.read(), autoescape=True)
-    for name, action in list(actions.items()):
+
+    for name, action in actions.items():
         template_vars = {
-            'version': spec['info']['version'],
+            'version': version,
             'action_name': name,
-            'parameters': action['parameters'],
-            'description': action['description'],
-            'endpoint_uri': action['endpoint_uri'],
-            'immutable': action['immutable'],
-            'verb': action['verb'],
-            'get_detail_route_eligible': action['get_detail_route_eligible'],
+            **action
         }
-        rendered_template = template.render(**template_vars)
-        f = open(os.path.join(actions_dir, "{}.yaml".format(name)), 'w')
-        f.write(rendered_template)
+        rendered = template.render(template_vars)
+        f = open(os.path.join(ACTIONS_DIR, f'{name}.yaml'), 'w')
+        f.write(rendered + '\n')
         f.close()
 
-    return len(actions)
+    print(f'Wrote {len(actions)} actions to {ACTIONS_DIR}')
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description='Generate action meta yaml files from a NetBox API Swagger spec.'
-    )
+def main():
+    """
+    Main entry point.
+    """
+    parser = argparse.ArgumentParser()
     parser.add_argument(
-        'host',
+        '--url',
         type=str,
-        help='NetBox instance to pull API spec from',
-        default='demo.netbox.dev'
-    )
-    parser.add_argument(
-        '--https',
-        help='Use HTTPS (If using the default HTTPS port, you must also specify --port 443)',
-        action='store_true',
-    )
-    parser.add_argument(
-        '--port',
-        type=int,
-        help='Port NetBox is run on',
-        default=8000,
+        default='https://demo.netbox.dev',
+        help='NetBox hostname'
     )
     parser.add_argument(
         '--skip-ssl',
         action='store_false',
-        help='Skips SSL certificate verification',
-        default=True
+        default=True,
+        help='Disable SSL certificate verification'
     )
-    args = parser.parse_args()
 
-    specification = get_spec(args.host, args.https, args.port, args.skip_ssl)
-    total_actions = run(specification)
-    print("Wrote {} actions to file.".format(total_actions))
-    print("Done!")
+    args = parser.parse_args()
+    url = str(args.url).rstrip('/')
+
+    try:
+        print(f'Connecting to {url}...')
+        response = requests.get(f'{url}/api/schema?format=json', verify=args.skip_ssl)
+        response.raise_for_status()
+        spec = response.json()
+    except requests.RequestException as e:
+        print(f'Failed to fetch schema: {e}')
+        exit(1)
+
+    # Generate actions from schema
+    actions = get_actions(spec)
+    # Delete all existing actions
+    delete_actions()
+    # Write actions to file
+    versions = spec['info']['version'].split(' ')[0].split('.')
+    write_actions(f'{versions[0]}.{versions[1]}', actions)
+
+
+if __name__ == '__main__':
+    main()

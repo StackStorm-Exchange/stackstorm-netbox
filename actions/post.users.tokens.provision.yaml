@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
+# NetBox API version: 3.6
 description: "Non-authenticated REST API endpoint via which a user may create a Token."
 enabled: true
 entry_point: run.py
@@ -17,4 +17,24 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  expires:
+    required: false
+    type: string
+    description: "Expires"
+  write_enabled:
+    required: false
+    type: boolean
+    description: "Permit create/update/delete operations using this key"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  username:
+    required: false
+    type: string
+    description: "Username"
+  password:
+    required: false
+    type: string
+    description: "Password"
 runner_type: python-script

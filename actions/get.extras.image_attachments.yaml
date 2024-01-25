@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "GET Image Attachments"
+# NetBox API version: 3.6
+description: "Get a list of image attachment objects."
 enabled: true
 entry_point: run.py
 name: get.extras.image_attachments
@@ -17,134 +17,142 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  id:
-    required: false
-    type: string
-    description: ""
-  content_type_id:
-    required: false
-    type: string
-    description: ""
-  object_id:
-    required: false
-    type: string
-    description: ""
-  name:
-    required: false
-    type: string
-    description: ""
-  q:
-    required: false
-    type: string
-    description: ""
-  created:
-    required: false
-    type: string
-    description: ""
   content_type:
     required: false
     type: string
-    description: ""
-  id__n:
-    required: false
-    type: string
-    description: ""
-  id__lte:
-    required: false
-    type: string
-    description: ""
-  id__lt:
-    required: false
-    type: string
-    description: ""
-  id__gte:
-    required: false
-    type: string
-    description: ""
-  id__gt:
-    required: false
-    type: string
-    description: ""
-  content_type_id__n:
-    required: false
-    type: string
-    description: ""
-  object_id__n:
-    required: false
-    type: string
-    description: ""
-  object_id__lte:
-    required: false
-    type: string
-    description: ""
-  object_id__lt:
-    required: false
-    type: string
-    description: ""
-  object_id__gte:
-    required: false
-    type: string
-    description: ""
-  object_id__gt:
-    required: false
-    type: string
-    description: ""
-  name__n:
-    required: false
-    type: string
-    description: ""
-  name__ic:
-    required: false
-    type: string
-    description: ""
-  name__nic:
-    required: false
-    type: string
-    description: ""
-  name__iew:
-    required: false
-    type: string
-    description: ""
-  name__niew:
-    required: false
-    type: string
-    description: ""
-  name__isw:
-    required: false
-    type: string
-    description: ""
-  name__nisw:
-    required: false
-    type: string
-    description: ""
-  name__ie:
-    required: false
-    type: string
-    description: ""
-  name__nie:
-    required: false
-    type: string
-    description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
+    description: "Content_type"
   content_type__n:
     required: false
     type: string
-    description: ""
-  ordering:
+    description: "Content_type not equal to"
+  content_type_id:
+    required: false
+    type: integer
+    description: "Content_type_id"
+  content_type_id__n:
+    required: false
+    type: integer
+    description: "Content_type_id not equal to"
+  created:
     required: false
     type: string
-    description: "Which field to use when ordering the results."
+    description: "Created"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
+  object_id:
+    required: false
+    type: array
+    description: "Object_id"
+  object_id__empty:
+    required: false
+    type: boolean
+    description: "Object_id is empty/null (boolean)"
+  object_id__gt:
+    required: false
+    type: array
+    description: "Object_id greater than"
+  object_id__gte:
+    required: false
+    type: array
+    description: "Object_id greater than or equal to"
+  object_id__lt:
+    required: false
+    type: array
+    description: "Object_id less than"
+  object_id__lte:
+    required: false
+    type: array
+    description: "Object_id less than or equal to"
+  object_id__n:
+    required: false
+    type: array
+    description: "Object_id not equal to"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  q:
+    required: false
+    type: string
+    description: "Search"
   save_in_key_store:
     type: boolean
     default: false

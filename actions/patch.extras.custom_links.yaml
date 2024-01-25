@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PATCH Custom Links"
+# NetBox API version: 3.6
+description: "Patch a custom link object."
 enabled: true
 entry_point: run.py
 name: patch.extras.custom_links
@@ -32,11 +32,11 @@ parameters:
   link_text:
     required: false
     type: string
-    description: "Link text"
+    description: "Jinja2 template code for link text"
   link_url:
     required: false
     type: string
-    description: "Link URL"
+    description: "Jinja2 template code for link URL"
   weight:
     required: false
     type: integer
@@ -44,17 +44,33 @@ parameters:
   group_name:
     required: false
     type: string
-    description: "Group name"
+    description: "Links with the same group will appear as a dropdown menu"
   button_class:
     required: false
     type: string
-    description: "Button class"
+    description: "The class of the first link in a group will be used for the dropdown button
+
+* `outline-dark` - Default
+* `blue` - Blue
+* `indigo` - Indigo
+* `purple` - Purple
+* `pink` - Pink
+* `red` - Red
+* `orange` - Orange
+* `yellow` - Yellow
+* `green` - Green
+* `teal` - Teal
+* `cyan` - Cyan
+* `gray` - Gray
+* `black` - Black
+* `white` - White
+* `ghost-dark` - Link"
   new_window:
     required: false
     type: boolean
-    description: "New window"
+    description: "Force link to open in a new window"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to patch."
 runner_type: python-script

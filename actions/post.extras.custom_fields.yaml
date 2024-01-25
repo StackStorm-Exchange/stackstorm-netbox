@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "POST Custom Fields"
+# NetBox API version: 3.6
+description: "Post a list of custom field objects."
 enabled: true
 entry_point: run.py
 name: post.extras.custom_fields
@@ -18,29 +18,43 @@ parameters:
     immutable: true
     type: boolean
   content_types:
-    required: true
+    required: false
     type: array
     description: "Content types"
   type:
     required: false
     type: string
-    description: "Type"
+    description: "The type of data this custom field holds
+
+* `text` - Text
+* `longtext` - Text (long)
+* `integer` - Integer
+* `decimal` - Decimal
+* `boolean` - Boolean (true/false)
+* `date` - Date
+* `datetime` - Date &amp; time
+* `url` - URL
+* `json` - JSON
+* `select` - Selection
+* `multiselect` - Multiple selection
+* `object` - Object
+* `multiobject` - Multiple objects"
   object_type:
     required: false
     type: string
     description: "Object type"
   name:
-    required: true
+    required: false
     type: string
-    description: "Name"
+    description: "Internal field name"
   label:
     required: false
     type: string
-    description: "Label"
+    description: "Name of the field as displayed to users (if not provided, &#39;the field&#39;s name will be used)"
   group_name:
     required: false
     type: string
-    description: "Group name"
+    description: "Custom fields within the same group will be displayed together"
   description:
     required: false
     type: string
@@ -48,27 +62,36 @@ parameters:
   required:
     required: false
     type: boolean
-    description: "Required"
+    description: "If true, this field is required when creating new objects or editing an existing object."
   search_weight:
     required: false
     type: integer
-    description: "Search weight"
+    description: "Weighting for search. Lower values are considered more important. Fields with a search weight of zero will be ignored."
   filter_logic:
     required: false
     type: string
-    description: "Filter logic"
+    description: "Loose matches any instance of a given string; exact matches the entire field.
+
+* `disabled` - Disabled
+* `loose` - Loose
+* `exact` - Exact"
   ui_visibility:
     required: false
     type: string
-    description: "UI visibility"
+    description: "Specifies the visibility of custom field in the UI
+
+* `read-write` - Read/write
+* `read-only` - Read-only
+* `hidden` - Hidden
+* `hidden-ifunset` - Hidden (if unset)"
   is_cloneable:
     required: false
     type: boolean
-    description: "Cloneable"
+    description: "Replicate this value when cloning objects"
   default:
     required: false
     type: object
-    description: "Default"
+    description: "Default value for the field (must be a JSON value). Encapsulate strings with double quotes (e.g. &#34;Foo&#34;)."
   weight:
     required: false
     type: integer
@@ -84,9 +107,9 @@ parameters:
   validation_regex:
     required: false
     type: string
-    description: "Validation regex"
-  choices:
+    description: "Regular expression to enforce on text field values. Use ^ and $ to force matching of entire string. For example, &lt;code&gt;^[A-Z]{3}$&lt;/code&gt; will limit values to exactly three uppercase letters."
+  choice_set:
     required: false
-    type: array
-    description: "Choices"
+    type: integer
+    description: "Choice set"
 runner_type: python-script

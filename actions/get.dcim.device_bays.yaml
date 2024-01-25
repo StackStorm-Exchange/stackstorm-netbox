@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "GET Device Bays"
+# NetBox API version: 3.6
+description: "Get a list of device bay objects."
 enabled: true
 entry_point: run.py
 name: get.dcim.device_bays
@@ -17,354 +17,418 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  id:
-    required: false
-    type: string
-    description: ""
-  name:
-    required: false
-    type: string
-    description: ""
-  label:
-    required: false
-    type: string
-    description: ""
-  description:
-    required: false
-    type: string
-    description: ""
-  q:
-    required: false
-    type: string
-    description: ""
-  region_id:
-    required: false
-    type: string
-    description: ""
-  region:
-    required: false
-    type: string
-    description: ""
-  site_group_id:
-    required: false
-    type: string
-    description: ""
-  site_group:
-    required: false
-    type: string
-    description: ""
-  site_id:
-    required: false
-    type: string
-    description: ""
-  site:
-    required: false
-    type: string
-    description: ""
-  location_id:
-    required: false
-    type: string
-    description: ""
-  location:
-    required: false
-    type: string
-    description: ""
-  rack_id:
-    required: false
-    type: string
-    description: ""
-  rack:
-    required: false
-    type: string
-    description: ""
-  device_id:
-    required: false
-    type: string
-    description: ""
-  device:
-    required: false
-    type: string
-    description: ""
-  virtual_chassis_id:
-    required: false
-    type: string
-    description: ""
-  virtual_chassis:
-    required: false
-    type: string
-    description: ""
   created:
     required: false
-    type: string
-    description: ""
-  last_updated:
+    type: array
+    description: "Created"
+  created__empty:
     required: false
-    type: string
-    description: ""
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
   created_by_request:
     required: false
     type: string
-    description: ""
-  updated_by_request:
+    description: "Created_by_request"
+  description:
     required: false
-    type: string
-    description: ""
-  tag:
-    required: false
-    type: string
-    description: ""
-  id__n:
-    required: false
-    type: string
-    description: ""
-  id__lte:
-    required: false
-    type: string
-    description: ""
-  id__lt:
-    required: false
-    type: string
-    description: ""
-  id__gte:
-    required: false
-    type: string
-    description: ""
-  id__gt:
-    required: false
-    type: string
-    description: ""
-  name__n:
-    required: false
-    type: string
-    description: ""
-  name__ic:
-    required: false
-    type: string
-    description: ""
-  name__nic:
-    required: false
-    type: string
-    description: ""
-  name__iew:
-    required: false
-    type: string
-    description: ""
-  name__niew:
-    required: false
-    type: string
-    description: ""
-  name__isw:
-    required: false
-    type: string
-    description: ""
-  name__nisw:
-    required: false
-    type: string
-    description: ""
-  name__ie:
-    required: false
-    type: string
-    description: ""
-  name__nie:
-    required: false
-    type: string
-    description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
-  label__n:
-    required: false
-    type: string
-    description: ""
-  label__ic:
-    required: false
-    type: string
-    description: ""
-  label__nic:
-    required: false
-    type: string
-    description: ""
-  label__iew:
-    required: false
-    type: string
-    description: ""
-  label__niew:
-    required: false
-    type: string
-    description: ""
-  label__isw:
-    required: false
-    type: string
-    description: ""
-  label__nisw:
-    required: false
-    type: string
-    description: ""
-  label__ie:
-    required: false
-    type: string
-    description: ""
-  label__nie:
-    required: false
-    type: string
-    description: ""
-  label__empty:
-    required: false
-    type: string
-    description: ""
-  description__n:
-    required: false
-    type: string
-    description: ""
-  description__ic:
-    required: false
-    type: string
-    description: ""
-  description__nic:
-    required: false
-    type: string
-    description: ""
-  description__iew:
-    required: false
-    type: string
-    description: ""
-  description__niew:
-    required: false
-    type: string
-    description: ""
-  description__isw:
-    required: false
-    type: string
-    description: ""
-  description__nisw:
-    required: false
-    type: string
-    description: ""
-  description__ie:
-    required: false
-    type: string
-    description: ""
-  description__nie:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Description"
   description__empty:
     required: false
-    type: string
-    description: ""
-  region_id__n:
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
     required: false
-    type: string
-    description: ""
-  region__n:
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
     required: false
-    type: string
-    description: ""
-  site_group_id__n:
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
     required: false
-    type: string
-    description: ""
-  site_group__n:
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
     required: false
-    type: string
-    description: ""
-  site_id__n:
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
     required: false
-    type: string
-    description: ""
-  site__n:
+    type: array
+    description: "Description not equal to"
+  description__nic:
     required: false
-    type: string
-    description: ""
-  location_id__n:
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
     required: false
-    type: string
-    description: ""
-  location__n:
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
     required: false
-    type: string
-    description: ""
-  rack_id__n:
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
     required: false
-    type: string
-    description: ""
-  rack__n:
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  device:
     required: false
-    type: string
-    description: ""
-  device_id__n:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Device (name)"
   device__n:
     required: false
-    type: string
-    description: ""
-  virtual_chassis_id__n:
+    type: array
+    description: "Device not equal to"
+  device_id:
     required: false
-    type: string
-    description: ""
-  virtual_chassis__n:
+    type: array
+    description: "Device (ID)"
+  device_id__n:
     required: false
-    type: string
-    description: ""
-  created__n:
+    type: array
+    description: "Device_id not equal to"
+  device_role:
     required: false
-    type: string
-    description: ""
-  created__lte:
+    type: array
+    description: "Device role (slug)"
+  device_role__n:
     required: false
-    type: string
-    description: ""
-  created__lt:
+    type: array
+    description: "Device_role not equal to"
+  device_role_id:
     required: false
-    type: string
-    description: ""
-  created__gte:
+    type: array
+    description: "Device role (ID)"
+  device_role_id__n:
     required: false
-    type: string
-    description: ""
-  created__gt:
+    type: array
+    description: "Device_role_id not equal to"
+  device_type:
     required: false
-    type: string
-    description: ""
-  last_updated__n:
+    type: array
+    description: "Device type (model)"
+  device_type__n:
     required: false
-    type: string
-    description: ""
-  last_updated__lte:
+    type: array
+    description: "Device_type not equal to"
+  device_type_id:
     required: false
-    type: string
-    description: ""
-  last_updated__lt:
+    type: array
+    description: "Device type (ID)"
+  device_type_id__n:
     required: false
-    type: string
-    description: ""
-  last_updated__gte:
+    type: array
+    description: "Device_type_id not equal to"
+  id:
     required: false
-    type: string
-    description: ""
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  label:
+    required: false
+    type: array
+    description: "Label"
+  label__empty:
+    required: false
+    type: boolean
+    description: "Label is empty/null (boolean)"
+  label__ic:
+    required: false
+    type: array
+    description: "Label contains (case-insensitive)"
+  label__ie:
+    required: false
+    type: array
+    description: "Label exact match (case-insensitive)"
+  label__iew:
+    required: false
+    type: array
+    description: "Label ends with (case-insensitive)"
+  label__isw:
+    required: false
+    type: array
+    description: "Label starts with (case-sensitive)"
+  label__n:
+    required: false
+    type: array
+    description: "Label not equal to"
+  label__nic:
+    required: false
+    type: array
+    description: "Label does not contain (case-insensitive)"
+  label__nie:
+    required: false
+    type: array
+    description: "Label inverse exact match (case-insensitive)"
+  label__niew:
+    required: false
+    type: array
+    description: "Label does not end with (case-insensitive)"
+  label__nisw:
+    required: false
+    type: array
+    description: "Label does not start with (case-sensitive)"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: string
-    description: ""
-  tag__n:
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
     required: false
-    type: string
-    description: ""
-  ordering:
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
     required: false
-    type: string
-    description: "Which field to use when ordering the results."
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  location:
+    required: false
+    type: array
+    description: "Location (slug)"
+  location__n:
+    required: false
+    type: array
+    description: "Location not equal to"
+  location_id:
+    required: false
+    type: array
+    description: "Location (ID)"
+  location_id__n:
+    required: false
+    type: array
+    description: "Location_id not equal to"
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  q:
+    required: false
+    type: string
+    description: "Search"
+  rack:
+    required: false
+    type: array
+    description: "Rack (name)"
+  rack__n:
+    required: false
+    type: array
+    description: "Rack not equal to"
+  rack_id:
+    required: false
+    type: array
+    description: "Rack (ID)"
+  rack_id__n:
+    required: false
+    type: array
+    description: "Rack_id not equal to"
+  region:
+    required: false
+    type: array
+    description: "Region (slug)"
+  region__n:
+    required: false
+    type: array
+    description: "Region not equal to"
+  region_id:
+    required: false
+    type: array
+    description: "Region (ID)"
+  region_id__n:
+    required: false
+    type: array
+    description: "Region_id not equal to"
+  role:
+    required: false
+    type: array
+    description: "Device role (slug)"
+  role__n:
+    required: false
+    type: array
+    description: "Role not equal to"
+  role_id:
+    required: false
+    type: array
+    description: "Device role (ID)"
+  role_id__n:
+    required: false
+    type: array
+    description: "Role_id not equal to"
+  site:
+    required: false
+    type: array
+    description: "Site name (slug)"
+  site__n:
+    required: false
+    type: array
+    description: "Site not equal to"
+  site_group:
+    required: false
+    type: array
+    description: "Site group (slug)"
+  site_group__n:
+    required: false
+    type: array
+    description: "Site_group not equal to"
+  site_group_id:
+    required: false
+    type: array
+    description: "Site group (ID)"
+  site_group_id__n:
+    required: false
+    type: array
+    description: "Site_group_id not equal to"
+  site_id:
+    required: false
+    type: array
+    description: "Site (ID)"
+  site_id__n:
+    required: false
+    type: array
+    description: "Site_id not equal to"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  virtual_chassis:
+    required: false
+    type: array
+    description: "Virtual Chassis"
+  virtual_chassis__n:
+    required: false
+    type: array
+    description: "Virtual_chassis not equal to"
+  virtual_chassis_id:
+    required: false
+    type: array
+    description: "Virtual Chassis (ID)"
+  virtual_chassis_id__n:
+    required: false
+    type: array
+    description: "Virtual_chassis_id not equal to"
   save_in_key_store:
     type: boolean
     default: false

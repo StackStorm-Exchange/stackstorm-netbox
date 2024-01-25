@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PATCH L2Vpns"
+# NetBox API version: 3.6
+description: "Patch a L2VPN object."
 enabled: true
 entry_point: run.py
 name: patch.ipam.l2vpns
@@ -32,7 +32,18 @@ parameters:
   type:
     required: false
     type: string
-    description: "Type"
+    description: "* `vpws` - VPWS
+* `vpls` - VPLS
+* `vxlan` - VXLAN
+* `vxlan-evpn` - VXLAN-EVPN
+* `mpls-evpn` - MPLS EVPN
+* `pbb-evpn` - PBB EVPN
+* `epl` - EPL
+* `evpl` - EVPL
+* `ep-lan` - Ethernet Private LAN
+* `evp-lan` - Ethernet Virtual Private LAN
+* `ep-tree` - Ethernet Private Tree
+* `evp-tree` - Ethernet Virtual Private Tree"
   import_targets:
     required: false
     type: array
@@ -63,6 +74,6 @@ parameters:
     description: "Custom fields"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to patch."
 runner_type: python-script

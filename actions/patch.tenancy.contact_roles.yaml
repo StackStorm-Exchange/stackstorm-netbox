@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PATCH Contact Roles"
+# NetBox API version: 3.6
+description: "Patch a contact role object."
 enabled: true
 entry_point: run.py
 name: patch.tenancy.contact_roles
@@ -39,6 +39,6 @@ parameters:
     description: "Custom fields"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to patch."
 runner_type: python-script

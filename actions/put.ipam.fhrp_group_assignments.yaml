@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PUT Fhrp Group Assignments"
+# NetBox API version: 3.6
+description: "Put a FHRP group assignment object."
 enabled: true
 entry_point: run.py
 name: put.ipam.fhrp_group_assignments
@@ -18,23 +18,23 @@ parameters:
     immutable: true
     type: boolean
   group:
-    required: true
+    required: false
     type: integer
     description: "Group"
   interface_type:
-    required: true
+    required: false
     type: string
     description: "Interface type"
   interface_id:
-    required: true
+    required: false
     type: integer
     description: "Interface id"
   priority:
-    required: true
+    required: false
     type: integer
     description: "Priority"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to put."
 runner_type: python-script

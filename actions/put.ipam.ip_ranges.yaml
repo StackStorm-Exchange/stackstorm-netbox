@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PUT Ip Ranges"
+# NetBox API version: 3.6
+description: "Put a IP range object."
 enabled: true
 entry_point: run.py
 name: put.ipam.ip_ranges
@@ -18,17 +18,17 @@ parameters:
     immutable: true
     type: boolean
   start_address:
-    required: true
+    required: false
     type: string
     description: "Start address"
   end_address:
-    required: true
+    required: false
     type: string
     description: "End address"
   vrf:
     required: false
     type: integer
-    description: "VRF"
+    description: "Vrf"
   tenant:
     required: false
     type: integer
@@ -36,15 +36,15 @@ parameters:
   status:
     required: false
     type: string
-    description: "Status"
+    description: "Operational status of this range
+
+* `active` - Active
+* `reserved` - Reserved
+* `deprecated` - Deprecated"
   role:
     required: false
     type: integer
-    description: "Role"
-  mark_utilized:
-    required: false
-    type: boolean
-    description: "Mark utilized"
+    description: "The primary function of this range"
   description:
     required: false
     type: string
@@ -61,8 +61,12 @@ parameters:
     required: false
     type: object
     description: "Custom fields"
+  mark_utilized:
+    required: false
+    type: boolean
+    description: "Treat as 100% utilized"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to put."
 runner_type: python-script

@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "POST Services"
+# NetBox API version: 3.6
+description: "Post a list of service objects."
 enabled: true
 entry_point: run.py
 name: post.ipam.services
@@ -26,21 +26,23 @@ parameters:
     type: integer
     description: "Virtual machine"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   ports:
-    required: true
+    required: false
     type: array
-    description: "Ports"
+    description: "Port numbers"
   protocol:
-    required: true
+    required: false
     type: string
-    description: "Protocol"
+    description: "* `tcp` - TCP
+* `udp` - UDP
+* `sctp` - SCTP"
   ipaddresses:
     required: false
     type: array
-    description: "Ipaddresses"
+    description: "IP addresses"
   description:
     required: false
     type: string

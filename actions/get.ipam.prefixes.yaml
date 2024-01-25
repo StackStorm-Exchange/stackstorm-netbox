@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "GET Prefixes"
+# NetBox API version: 3.6
+description: "Get a list of prefix objects."
 enabled: true
 entry_point: run.py
 name: get.ipam.prefixes
@@ -17,402 +17,430 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  id:
+  children:
     required: false
-    type: string
-    description: ""
-  is_pool:
+    type: array
+    description: "Children"
+  children__empty:
     required: false
-    type: string
-    description: ""
-  mark_utilized:
+    type: array
+    description: "Children is empty/null (boolean)"
+  children__gt:
     required: false
-    type: string
-    description: ""
-  description:
+    type: array
+    description: "Children greater than"
+  children__gte:
     required: false
-    type: string
-    description: ""
-  created:
+    type: array
+    description: "Children greater than or equal to"
+  children__lt:
     required: false
-    type: string
-    description: ""
-  last_updated:
+    type: array
+    description: "Children less than"
+  children__lte:
     required: false
-    type: string
-    description: ""
-  created_by_request:
+    type: array
+    description: "Children less than or equal to"
+  children__n:
     required: false
-    type: string
-    description: ""
-  updated_by_request:
-    required: false
-    type: string
-    description: ""
-  q:
-    required: false
-    type: string
-    description: ""
-  tag:
-    required: false
-    type: string
-    description: ""
-  tenant_group_id:
-    required: false
-    type: string
-    description: ""
-  tenant_group:
-    required: false
-    type: string
-    description: ""
-  tenant_id:
-    required: false
-    type: string
-    description: ""
-  tenant:
-    required: false
-    type: string
-    description: ""
-  family:
-    required: false
-    type: integer
-    description: ""
-  prefix:
-    required: false
-    type: string
-    description: ""
-  within:
-    required: false
-    type: string
-    description: ""
-  within_include:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Children not equal to"
   contains:
     required: false
     type: string
-    description: ""
-  depth:
+    description: "Prefixes which contain this prefix or IP"
+  created:
     required: false
-    type: string
-    description: ""
-  children:
+    type: array
+    description: "Created"
+  created__empty:
     required: false
-    type: string
-    description: ""
-  mask_length:
-    required: false
-    type: string
-    description: ""
-  mask_length__gte:
-    required: false
-    type: integer
-    description: ""
-  mask_length__lte:
-    required: false
-    type: integer
-    description: ""
-  vrf_id:
-    required: false
-    type: string
-    description: ""
-  vrf:
-    required: false
-    type: string
-    description: ""
-  present_in_vrf_id:
-    required: false
-    type: string
-    description: ""
-  present_in_vrf:
-    required: false
-    type: string
-    description: ""
-  region_id:
-    required: false
-    type: string
-    description: ""
-  region:
-    required: false
-    type: string
-    description: ""
-  site_group_id:
-    required: false
-    type: string
-    description: ""
-  site_group:
-    required: false
-    type: string
-    description: ""
-  site_id:
-    required: false
-    type: string
-    description: ""
-  site:
-    required: false
-    type: string
-    description: ""
-  vlan_id:
-    required: false
-    type: string
-    description: ""
-  vlan_vid:
-    required: false
-    type: integer
-    description: ""
-  role_id:
-    required: false
-    type: string
-    description: ""
-  role:
-    required: false
-    type: string
-    description: ""
-  status:
-    required: false
-    type: string
-    description: ""
-  id__n:
-    required: false
-    type: string
-    description: ""
-  id__lte:
-    required: false
-    type: string
-    description: ""
-  id__lt:
-    required: false
-    type: string
-    description: ""
-  id__gte:
-    required: false
-    type: string
-    description: ""
-  id__gt:
-    required: false
-    type: string
-    description: ""
-  description__n:
-    required: false
-    type: string
-    description: ""
-  description__ic:
-    required: false
-    type: string
-    description: ""
-  description__nic:
-    required: false
-    type: string
-    description: ""
-  description__iew:
-    required: false
-    type: string
-    description: ""
-  description__niew:
-    required: false
-    type: string
-    description: ""
-  description__isw:
-    required: false
-    type: string
-    description: ""
-  description__nisw:
-    required: false
-    type: string
-    description: ""
-  description__ie:
-    required: false
-    type: string
-    description: ""
-  description__nie:
-    required: false
-    type: string
-    description: ""
-  description__empty:
-    required: false
-    type: string
-    description: ""
-  created__n:
-    required: false
-    type: string
-    description: ""
-  created__lte:
-    required: false
-    type: string
-    description: ""
-  created__lt:
-    required: false
-    type: string
-    description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: string
-    description: ""
-  last_updated__n:
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
     required: false
     type: string
-    description: ""
-  last_updated__lte:
+    description: "Created_by_request"
+  depth:
     required: false
-    type: string
-    description: ""
-  last_updated__lt:
+    type: array
+    description: "Depth"
+  depth__empty:
     required: false
-    type: string
-    description: ""
-  last_updated__gte:
-    required: false
-    type: string
-    description: ""
-  last_updated__gt:
-    required: false
-    type: string
-    description: ""
-  tag__n:
-    required: false
-    type: string
-    description: ""
-  tenant_group_id__n:
-    required: false
-    type: string
-    description: ""
-  tenant_group__n:
-    required: false
-    type: string
-    description: ""
-  tenant_id__n:
-    required: false
-    type: string
-    description: ""
-  tenant__n:
-    required: false
-    type: string
-    description: ""
-  depth__n:
-    required: false
-    type: string
-    description: ""
-  depth__lte:
-    required: false
-    type: string
-    description: ""
-  depth__lt:
-    required: false
-    type: string
-    description: ""
-  depth__gte:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Depth is empty/null (boolean)"
   depth__gt:
     required: false
-    type: string
-    description: ""
-  children__n:
+    type: array
+    description: "Depth greater than"
+  depth__gte:
     required: false
-    type: string
-    description: ""
-  children__lte:
+    type: array
+    description: "Depth greater than or equal to"
+  depth__lt:
     required: false
-    type: string
-    description: ""
-  children__lt:
+    type: array
+    description: "Depth less than"
+  depth__lte:
     required: false
-    type: string
-    description: ""
-  children__gte:
+    type: array
+    description: "Depth less than or equal to"
+  depth__n:
     required: false
-    type: string
-    description: ""
-  children__gt:
+    type: array
+    description: "Depth not equal to"
+  description:
     required: false
-    type: string
-    description: ""
-  vrf_id__n:
+    type: array
+    description: "Description"
+  description__empty:
     required: false
-    type: string
-    description: ""
-  vrf__n:
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
     required: false
-    type: string
-    description: ""
-  region_id__n:
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
     required: false
-    type: string
-    description: ""
-  region__n:
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
     required: false
-    type: string
-    description: ""
-  site_group_id__n:
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
     required: false
-    type: string
-    description: ""
-  site_group__n:
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
     required: false
-    type: string
-    description: ""
-  site_id__n:
+    type: array
+    description: "Description not equal to"
+  description__nic:
     required: false
-    type: string
-    description: ""
-  site__n:
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
     required: false
-    type: string
-    description: ""
-  vlan_id__n:
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
     required: false
-    type: string
-    description: ""
-  vlan_vid__n:
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
     required: false
-    type: integer
-    description: ""
-  vlan_vid__lte:
-    required: false
-    type: integer
-    description: ""
-  vlan_vid__lt:
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  family:
     required: false
     type: integer
-    description: ""
-  vlan_vid__gte:
+    description: "Family"
+  id:
     required: false
-    type: integer
-    description: ""
-  vlan_vid__gt:
+    type: array
+    description: "Id"
+  id__empty:
     required: false
-    type: integer
-    description: ""
-  role_id__n:
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
     required: false
-    type: string
-    description: ""
-  role__n:
+    type: array
+    description: "Id greater than"
+  id__gte:
     required: false
-    type: string
-    description: ""
-  status__n:
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
     required: false
-    type: string
-    description: ""
-  ordering:
+    type: array
+    description: "Id less than"
+  id__lte:
     required: false
-    type: string
-    description: "Which field to use when ordering the results."
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  is_pool:
+    required: false
+    type: boolean
+    description: "Is_pool"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  mark_utilized:
+    required: false
+    type: boolean
+    description: "Mark_utilized"
+  mask_length:
+    required: false
+    type: array
+    description: "Mask_length"
+  mask_length__gte:
+    required: false
+    type: integer
+    description: "Mask_length greater than or equal to"
+  mask_length__lte:
+    required: false
+    type: integer
+    description: "Mask_length less than or equal to"
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  prefix:
+    required: false
+    type: array
+    description: "Prefix"
+  present_in_vrf:
+    required: false
+    type: string
+    description: "Present_in_vrf"
+  present_in_vrf_id:
+    required: false
+    type: string
+    description: "Present_in_vrf_id"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  region:
+    required: false
+    type: array
+    description: "Region (slug)"
+  region__n:
+    required: false
+    type: array
+    description: "Region not equal to"
+  region_id:
+    required: false
+    type: array
+    description: "Region (ID)"
+  region_id__n:
+    required: false
+    type: array
+    description: "Region_id not equal to"
+  role:
+    required: false
+    type: array
+    description: "Role (slug)"
+  role__n:
+    required: false
+    type: array
+    description: "Role not equal to"
+  role_id:
+    required: false
+    type: array
+    description: "Role (ID)"
+  role_id__n:
+    required: false
+    type: array
+    description: "Role_id not equal to"
+  site:
+    required: false
+    type: array
+    description: "Site (slug)"
+  site__n:
+    required: false
+    type: array
+    description: "Site not equal to"
+  site_group:
+    required: false
+    type: array
+    description: "Site group (slug)"
+  site_group__n:
+    required: false
+    type: array
+    description: "Site_group not equal to"
+  site_group_id:
+    required: false
+    type: array
+    description: "Site group (ID)"
+  site_group_id__n:
+    required: false
+    type: array
+    description: "Site_group_id not equal to"
+  site_id:
+    required: false
+    type: array
+    description: "Site (ID)"
+  site_id__n:
+    required: false
+    type: array
+    description: "Site_id not equal to"
+  status:
+    required: false
+    type: array
+    description: "Operational status of this prefix"
+  status__n:
+    required: false
+    type: array
+    description: "Status not equal to"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  tenant:
+    required: false
+    type: array
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: array
+    description: "Tenant not equal to"
+  tenant_group:
+    required: false
+    type: array
+    description: "Tenant Group (slug)"
+  tenant_group__n:
+    required: false
+    type: array
+    description: "Tenant_group not equal to"
+  tenant_group_id:
+    required: false
+    type: array
+    description: "Tenant Group (ID)"
+  tenant_group_id__n:
+    required: false
+    type: array
+    description: "Tenant_group_id not equal to"
+  tenant_id:
+    required: false
+    type: array
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: array
+    description: "Tenant_id not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  vlan_id:
+    required: false
+    type: array
+    description: "VLAN (ID)"
+  vlan_id__n:
+    required: false
+    type: array
+    description: "Vlan_id not equal to"
+  vlan_vid:
+    required: false
+    type: integer
+    description: "VLAN number (1-4094)"
+  vlan_vid__empty:
+    required: false
+    type: integer
+    description: "Vlan_vid is empty/null (boolean)"
+  vlan_vid__gt:
+    required: false
+    type: integer
+    description: "Vlan_vid greater than"
+  vlan_vid__gte:
+    required: false
+    type: integer
+    description: "Vlan_vid greater than or equal to"
+  vlan_vid__lt:
+    required: false
+    type: integer
+    description: "Vlan_vid less than"
+  vlan_vid__lte:
+    required: false
+    type: integer
+    description: "Vlan_vid less than or equal to"
+  vlan_vid__n:
+    required: false
+    type: integer
+    description: "Vlan_vid not equal to"
+  vrf:
+    required: false
+    type: array
+    description: "VRF (RD)"
+  vrf__n:
+    required: false
+    type: array
+    description: "Vrf not equal to"
+  vrf_id:
+    required: false
+    type: array
+    description: "VRF"
+  vrf_id__n:
+    required: false
+    type: array
+    description: "Vrf_id not equal to"
+  within:
+    required: false
+    type: string
+    description: "Within prefix"
+  within_include:
+    required: false
+    type: string
+    description: "Within and including prefix"
   save_in_key_store:
     type: boolean
     default: false

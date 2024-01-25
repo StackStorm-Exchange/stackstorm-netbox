@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PUT Cable Terminations"
+# NetBox API version: 3.6
+description: "Put a cable termination object."
 enabled: true
 entry_point: run.py
 name: put.dcim.cable_terminations
@@ -18,23 +18,23 @@ parameters:
     immutable: true
     type: boolean
   cable:
-    required: true
+    required: false
     type: integer
     description: "Cable"
   cable_end:
-    required: true
+    required: false
     type: string
     description: "End"
   termination_type:
-    required: true
+    required: false
     type: string
     description: "Termination type"
   termination_id:
-    required: true
+    required: false
     type: integer
     description: "Termination id"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to put."
 runner_type: python-script

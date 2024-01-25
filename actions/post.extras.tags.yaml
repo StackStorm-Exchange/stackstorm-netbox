@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "POST Tags"
+# NetBox API version: 3.6
+description: "Post a list of tag objects."
 enabled: true
 entry_point: run.py
 name: post.extras.tags
@@ -18,11 +18,11 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   slug:
-    required: true
+    required: false
     type: string
     description: "Slug"
   color:
@@ -33,4 +33,8 @@ parameters:
     required: false
     type: string
     description: "Description"
+  object_types:
+    required: false
+    type: array
+    description: "Object types"
 runner_type: python-script

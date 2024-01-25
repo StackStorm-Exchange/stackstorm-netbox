@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "GET Racks"
+# NetBox API version: 3.6
+description: "Get a list of rack objects."
 enabled: true
 entry_point: run.py
 name: get.dcim.racks
@@ -17,610 +17,722 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  id:
-    required: false
-    type: string
-    description: ""
-  name:
-    required: false
-    type: string
-    description: ""
-  facility_id:
-    required: false
-    type: string
-    description: ""
   asset_tag:
     required: false
-    type: string
-    description: ""
-  u_height:
+    type: array
+    description: "Asset_tag"
+  asset_tag__empty:
     required: false
-    type: string
-    description: ""
-  desc_units:
+    type: boolean
+    description: "Asset_tag is empty/null (boolean)"
+  asset_tag__ic:
     required: false
-    type: string
-    description: ""
-  outer_width:
+    type: array
+    description: "Asset_tag contains (case-insensitive)"
+  asset_tag__ie:
     required: false
-    type: string
-    description: ""
-  outer_depth:
+    type: array
+    description: "Asset_tag exact match (case-insensitive)"
+  asset_tag__iew:
     required: false
-    type: string
-    description: ""
-  outer_unit:
+    type: array
+    description: "Asset_tag ends with (case-insensitive)"
+  asset_tag__isw:
     required: false
-    type: string
-    description: ""
-  mounting_depth:
+    type: array
+    description: "Asset_tag starts with (case-sensitive)"
+  asset_tag__n:
     required: false
-    type: string
-    description: ""
-  weight:
+    type: array
+    description: "Asset_tag not equal to"
+  asset_tag__nic:
     required: false
-    type: string
-    description: ""
-  max_weight:
+    type: array
+    description: "Asset_tag does not contain (case-insensitive)"
+  asset_tag__nie:
     required: false
-    type: string
-    description: ""
-  weight_unit:
+    type: array
+    description: "Asset_tag inverse exact match (case-insensitive)"
+  asset_tag__niew:
     required: false
-    type: string
-    description: ""
+    type: array
+    description: "Asset_tag does not end with (case-insensitive)"
+  asset_tag__nisw:
+    required: false
+    type: array
+    description: "Asset_tag does not start with (case-sensitive)"
+  contact:
+    required: false
+    type: array
+    description: "Contact"
+  contact__n:
+    required: false
+    type: array
+    description: "Contact not equal to"
+  contact_group:
+    required: false
+    type: array
+    description: "Contact group"
+  contact_group__n:
+    required: false
+    type: array
+    description: "Contact_group not equal to"
+  contact_role:
+    required: false
+    type: array
+    description: "Contact Role"
+  contact_role__n:
+    required: false
+    type: array
+    description: "Contact_role not equal to"
   created:
     required: false
-    type: string
-    description: ""
-  last_updated:
+    type: array
+    description: "Created"
+  created__empty:
     required: false
-    type: string
-    description: ""
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
   created_by_request:
     required: false
     type: string
-    description: ""
-  updated_by_request:
+    description: "Created_by_request"
+  desc_units:
     required: false
-    type: string
-    description: ""
-  q:
+    type: boolean
+    description: "Desc_units"
+  description:
     required: false
-    type: string
-    description: ""
-  tag:
+    type: array
+    description: "Description"
+  description__empty:
     required: false
-    type: string
-    description: ""
-  tenant_group_id:
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
     required: false
-    type: string
-    description: ""
-  tenant_group:
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
     required: false
-    type: string
-    description: ""
-  tenant_id:
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
     required: false
-    type: string
-    description: ""
-  tenant:
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
     required: false
-    type: string
-    description: ""
-  contact:
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
     required: false
-    type: string
-    description: ""
-  contact_role:
+    type: array
+    description: "Description not equal to"
+  description__nic:
     required: false
-    type: string
-    description: ""
-  contact_group:
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
     required: false
-    type: string
-    description: ""
-  region_id:
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
     required: false
-    type: string
-    description: ""
-  region:
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
     required: false
-    type: string
-    description: ""
-  site_group_id:
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  facility_id:
     required: false
-    type: string
-    description: ""
-  site_group:
-    required: false
-    type: string
-    description: ""
-  site_id:
-    required: false
-    type: string
-    description: ""
-  site:
-    required: false
-    type: string
-    description: ""
-  location_id:
-    required: false
-    type: string
-    description: ""
-  location:
-    required: false
-    type: string
-    description: ""
-  status:
-    required: false
-    type: string
-    description: ""
-  type:
-    required: false
-    type: string
-    description: ""
-  width:
-    required: false
-    type: string
-    description: ""
-  role_id:
-    required: false
-    type: string
-    description: ""
-  role:
-    required: false
-    type: string
-    description: ""
-  serial:
-    required: false
-    type: string
-    description: ""
-  id__n:
-    required: false
-    type: string
-    description: ""
-  id__lte:
-    required: false
-    type: string
-    description: ""
-  id__lt:
-    required: false
-    type: string
-    description: ""
-  id__gte:
-    required: false
-    type: string
-    description: ""
-  id__gt:
-    required: false
-    type: string
-    description: ""
-  name__n:
-    required: false
-    type: string
-    description: ""
-  name__ic:
-    required: false
-    type: string
-    description: ""
-  name__nic:
-    required: false
-    type: string
-    description: ""
-  name__iew:
-    required: false
-    type: string
-    description: ""
-  name__niew:
-    required: false
-    type: string
-    description: ""
-  name__isw:
-    required: false
-    type: string
-    description: ""
-  name__nisw:
-    required: false
-    type: string
-    description: ""
-  name__ie:
-    required: false
-    type: string
-    description: ""
-  name__nie:
-    required: false
-    type: string
-    description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
-  facility_id__n:
-    required: false
-    type: string
-    description: ""
-  facility_id__ic:
-    required: false
-    type: string
-    description: ""
-  facility_id__nic:
-    required: false
-    type: string
-    description: ""
-  facility_id__iew:
-    required: false
-    type: string
-    description: ""
-  facility_id__niew:
-    required: false
-    type: string
-    description: ""
-  facility_id__isw:
-    required: false
-    type: string
-    description: ""
-  facility_id__nisw:
-    required: false
-    type: string
-    description: ""
-  facility_id__ie:
-    required: false
-    type: string
-    description: ""
-  facility_id__nie:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Facility_id"
   facility_id__empty:
     required: false
-    type: string
-    description: ""
-  asset_tag__n:
+    type: boolean
+    description: "Facility_id is empty/null (boolean)"
+  facility_id__ic:
     required: false
-    type: string
-    description: ""
-  asset_tag__ic:
+    type: array
+    description: "Facility_id contains (case-insensitive)"
+  facility_id__ie:
     required: false
-    type: string
-    description: ""
-  asset_tag__nic:
+    type: array
+    description: "Facility_id exact match (case-insensitive)"
+  facility_id__iew:
     required: false
-    type: string
-    description: ""
-  asset_tag__iew:
+    type: array
+    description: "Facility_id ends with (case-insensitive)"
+  facility_id__isw:
     required: false
-    type: string
-    description: ""
-  asset_tag__niew:
+    type: array
+    description: "Facility_id starts with (case-sensitive)"
+  facility_id__n:
     required: false
-    type: string
-    description: ""
-  asset_tag__isw:
+    type: array
+    description: "Facility_id not equal to"
+  facility_id__nic:
     required: false
-    type: string
-    description: ""
-  asset_tag__nisw:
+    type: array
+    description: "Facility_id does not contain (case-insensitive)"
+  facility_id__nie:
     required: false
-    type: string
-    description: ""
-  asset_tag__ie:
+    type: array
+    description: "Facility_id inverse exact match (case-insensitive)"
+  facility_id__niew:
     required: false
-    type: string
-    description: ""
-  asset_tag__nie:
+    type: array
+    description: "Facility_id does not end with (case-insensitive)"
+  facility_id__nisw:
     required: false
-    type: string
-    description: ""
-  asset_tag__empty:
+    type: array
+    description: "Facility_id does not start with (case-sensitive)"
+  id:
     required: false
-    type: string
-    description: ""
-  u_height__n:
+    type: array
+    description: "Id"
+  id__empty:
     required: false
-    type: string
-    description: ""
-  u_height__lte:
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
     required: false
-    type: string
-    description: ""
-  u_height__lt:
+    type: array
+    description: "Id greater than"
+  id__gte:
     required: false
-    type: string
-    description: ""
-  u_height__gte:
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
     required: false
-    type: string
-    description: ""
-  u_height__gt:
+    type: array
+    description: "Id less than"
+  id__lte:
     required: false
-    type: string
-    description: ""
-  outer_width__n:
+    type: array
+    description: "Id less than or equal to"
+  id__n:
     required: false
-    type: string
-    description: ""
-  outer_width__lte:
+    type: array
+    description: "Id not equal to"
+  last_updated:
     required: false
-    type: string
-    description: ""
-  outer_width__lt:
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
     required: false
-    type: string
-    description: ""
-  outer_width__gte:
-    required: false
-    type: string
-    description: ""
-  outer_width__gt:
-    required: false
-    type: string
-    description: ""
-  outer_depth__n:
-    required: false
-    type: string
-    description: ""
-  outer_depth__lte:
-    required: false
-    type: string
-    description: ""
-  outer_depth__lt:
-    required: false
-    type: string
-    description: ""
-  outer_depth__gte:
-    required: false
-    type: string
-    description: ""
-  outer_depth__gt:
-    required: false
-    type: string
-    description: ""
-  outer_unit__n:
-    required: false
-    type: string
-    description: ""
-  mounting_depth__n:
-    required: false
-    type: string
-    description: ""
-  mounting_depth__lte:
-    required: false
-    type: string
-    description: ""
-  mounting_depth__lt:
-    required: false
-    type: string
-    description: ""
-  mounting_depth__gte:
-    required: false
-    type: string
-    description: ""
-  mounting_depth__gt:
-    required: false
-    type: string
-    description: ""
-  weight__n:
-    required: false
-    type: string
-    description: ""
-  weight__lte:
-    required: false
-    type: string
-    description: ""
-  weight__lt:
-    required: false
-    type: string
-    description: ""
-  weight__gte:
-    required: false
-    type: string
-    description: ""
-  weight__gt:
-    required: false
-    type: string
-    description: ""
-  max_weight__n:
-    required: false
-    type: string
-    description: ""
-  max_weight__lte:
-    required: false
-    type: string
-    description: ""
-  max_weight__lt:
-    required: false
-    type: string
-    description: ""
-  max_weight__gte:
-    required: false
-    type: string
-    description: ""
-  max_weight__gt:
-    required: false
-    type: string
-    description: ""
-  weight_unit__n:
-    required: false
-    type: string
-    description: ""
-  created__n:
-    required: false
-    type: string
-    description: ""
-  created__lte:
-    required: false
-    type: string
-    description: ""
-  created__lt:
-    required: false
-    type: string
-    description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__gt:
-    required: false
-    type: string
-    description: ""
-  last_updated__n:
-    required: false
-    type: string
-    description: ""
-  last_updated__lte:
-    required: false
-    type: string
-    description: ""
-  last_updated__lt:
-    required: false
-    type: string
-    description: ""
-  last_updated__gte:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: string
-    description: ""
-  tag__n:
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
     required: false
-    type: string
-    description: ""
-  tenant_group_id__n:
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
     required: false
-    type: string
-    description: ""
-  tenant_group__n:
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
     required: false
-    type: string
-    description: ""
-  tenant_id__n:
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
     required: false
-    type: string
-    description: ""
-  tenant__n:
-    required: false
-    type: string
-    description: ""
-  contact__n:
-    required: false
-    type: string
-    description: ""
-  contact_role__n:
-    required: false
-    type: string
-    description: ""
-  contact_group__n:
-    required: false
-    type: string
-    description: ""
-  region_id__n:
-    required: false
-    type: string
-    description: ""
-  region__n:
-    required: false
-    type: string
-    description: ""
-  site_group_id__n:
-    required: false
-    type: string
-    description: ""
-  site_group__n:
-    required: false
-    type: string
-    description: ""
-  site_id__n:
-    required: false
-    type: string
-    description: ""
-  site__n:
-    required: false
-    type: string
-    description: ""
-  location_id__n:
-    required: false
-    type: string
-    description: ""
-  location__n:
-    required: false
-    type: string
-    description: ""
-  status__n:
-    required: false
-    type: string
-    description: ""
-  type__n:
-    required: false
-    type: string
-    description: ""
-  width__n:
-    required: false
-    type: string
-    description: ""
-  role_id__n:
-    required: false
-    type: string
-    description: ""
-  role__n:
-    required: false
-    type: string
-    description: ""
-  serial__n:
-    required: false
-    type: string
-    description: ""
-  serial__ic:
-    required: false
-    type: string
-    description: ""
-  serial__nic:
-    required: false
-    type: string
-    description: ""
-  serial__iew:
-    required: false
-    type: string
-    description: ""
-  serial__niew:
-    required: false
-    type: string
-    description: ""
-  serial__isw:
-    required: false
-    type: string
-    description: ""
-  serial__nisw:
-    required: false
-    type: string
-    description: ""
-  serial__ie:
-    required: false
-    type: string
-    description: ""
-  serial__nie:
-    required: false
-    type: string
-    description: ""
-  serial__empty:
-    required: false
-    type: string
-    description: ""
-  ordering:
-    required: false
-    type: string
-    description: "Which field to use when ordering the results."
+    type: array
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  location:
+    required: false
+    type: array
+    description: "Location (slug)"
+  location__n:
+    required: false
+    type: array
+    description: "Location not equal to"
+  location_id:
+    required: false
+    type: array
+    description: "Location (ID)"
+  location_id__n:
+    required: false
+    type: array
+    description: "Location_id not equal to"
+  max_weight:
+    required: false
+    type: array
+    description: "Max_weight"
+  max_weight__empty:
+    required: false
+    type: boolean
+    description: "Max_weight is empty/null (boolean)"
+  max_weight__gt:
+    required: false
+    type: array
+    description: "Max_weight greater than"
+  max_weight__gte:
+    required: false
+    type: array
+    description: "Max_weight greater than or equal to"
+  max_weight__lt:
+    required: false
+    type: array
+    description: "Max_weight less than"
+  max_weight__lte:
+    required: false
+    type: array
+    description: "Max_weight less than or equal to"
+  max_weight__n:
+    required: false
+    type: array
+    description: "Max_weight not equal to"
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  mounting_depth:
+    required: false
+    type: array
+    description: "Mounting_depth"
+  mounting_depth__empty:
+    required: false
+    type: boolean
+    description: "Mounting_depth is empty/null (boolean)"
+  mounting_depth__gt:
+    required: false
+    type: array
+    description: "Mounting_depth greater than"
+  mounting_depth__gte:
+    required: false
+    type: array
+    description: "Mounting_depth greater than or equal to"
+  mounting_depth__lt:
+    required: false
+    type: array
+    description: "Mounting_depth less than"
+  mounting_depth__lte:
+    required: false
+    type: array
+    description: "Mounting_depth less than or equal to"
+  mounting_depth__n:
+    required: false
+    type: array
+    description: "Mounting_depth not equal to"
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  outer_depth:
+    required: false
+    type: array
+    description: "Outer_depth"
+  outer_depth__empty:
+    required: false
+    type: boolean
+    description: "Outer_depth is empty/null (boolean)"
+  outer_depth__gt:
+    required: false
+    type: array
+    description: "Outer_depth greater than"
+  outer_depth__gte:
+    required: false
+    type: array
+    description: "Outer_depth greater than or equal to"
+  outer_depth__lt:
+    required: false
+    type: array
+    description: "Outer_depth less than"
+  outer_depth__lte:
+    required: false
+    type: array
+    description: "Outer_depth less than or equal to"
+  outer_depth__n:
+    required: false
+    type: array
+    description: "Outer_depth not equal to"
+  outer_unit:
+    required: false
+    type: string
+    description: "Outer_unit"
+  outer_unit__n:
+    required: false
+    type: string
+    description: "Outer_unit not equal to"
+  outer_width:
+    required: false
+    type: array
+    description: "Outer_width"
+  outer_width__empty:
+    required: false
+    type: boolean
+    description: "Outer_width is empty/null (boolean)"
+  outer_width__gt:
+    required: false
+    type: array
+    description: "Outer_width greater than"
+  outer_width__gte:
+    required: false
+    type: array
+    description: "Outer_width greater than or equal to"
+  outer_width__lt:
+    required: false
+    type: array
+    description: "Outer_width less than"
+  outer_width__lte:
+    required: false
+    type: array
+    description: "Outer_width less than or equal to"
+  outer_width__n:
+    required: false
+    type: array
+    description: "Outer_width not equal to"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  region:
+    required: false
+    type: array
+    description: "Region (slug)"
+  region__n:
+    required: false
+    type: array
+    description: "Region not equal to"
+  region_id:
+    required: false
+    type: array
+    description: "Region (ID)"
+  region_id__n:
+    required: false
+    type: array
+    description: "Region_id not equal to"
+  role:
+    required: false
+    type: array
+    description: "Role (slug)"
+  role__n:
+    required: false
+    type: array
+    description: "Role not equal to"
+  role_id:
+    required: false
+    type: array
+    description: "Role (ID)"
+  role_id__n:
+    required: false
+    type: array
+    description: "Role_id not equal to"
+  serial:
+    required: false
+    type: array
+    description: "Serial"
+  serial__empty:
+    required: false
+    type: boolean
+    description: "Serial is empty/null (boolean)"
+  serial__ic:
+    required: false
+    type: array
+    description: "Serial contains (case-insensitive)"
+  serial__ie:
+    required: false
+    type: array
+    description: "Serial exact match (case-insensitive)"
+  serial__iew:
+    required: false
+    type: array
+    description: "Serial ends with (case-insensitive)"
+  serial__isw:
+    required: false
+    type: array
+    description: "Serial starts with (case-sensitive)"
+  serial__n:
+    required: false
+    type: array
+    description: "Serial not equal to"
+  serial__nic:
+    required: false
+    type: array
+    description: "Serial does not contain (case-insensitive)"
+  serial__nie:
+    required: false
+    type: array
+    description: "Serial inverse exact match (case-insensitive)"
+  serial__niew:
+    required: false
+    type: array
+    description: "Serial does not end with (case-insensitive)"
+  serial__nisw:
+    required: false
+    type: array
+    description: "Serial does not start with (case-sensitive)"
+  site:
+    required: false
+    type: array
+    description: "Site (slug)"
+  site__n:
+    required: false
+    type: array
+    description: "Site not equal to"
+  site_group:
+    required: false
+    type: array
+    description: "Site group (slug)"
+  site_group__n:
+    required: false
+    type: array
+    description: "Site_group not equal to"
+  site_group_id:
+    required: false
+    type: array
+    description: "Site group (ID)"
+  site_group_id__n:
+    required: false
+    type: array
+    description: "Site_group_id not equal to"
+  site_id:
+    required: false
+    type: array
+    description: "Site (ID)"
+  site_id__n:
+    required: false
+    type: array
+    description: "Site_id not equal to"
+  starting_unit:
+    required: false
+    type: array
+    description: "Starting_unit"
+  starting_unit__empty:
+    required: false
+    type: boolean
+    description: "Starting_unit is empty/null (boolean)"
+  starting_unit__gt:
+    required: false
+    type: array
+    description: "Starting_unit greater than"
+  starting_unit__gte:
+    required: false
+    type: array
+    description: "Starting_unit greater than or equal to"
+  starting_unit__lt:
+    required: false
+    type: array
+    description: "Starting_unit less than"
+  starting_unit__lte:
+    required: false
+    type: array
+    description: "Starting_unit less than or equal to"
+  starting_unit__n:
+    required: false
+    type: array
+    description: "Starting_unit not equal to"
+  status:
+    required: false
+    type: array
+    description: "Status"
+  status__n:
+    required: false
+    type: array
+    description: "Status not equal to"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  tenant:
+    required: false
+    type: array
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: array
+    description: "Tenant not equal to"
+  tenant_group:
+    required: false
+    type: array
+    description: "Tenant Group (slug)"
+  tenant_group__n:
+    required: false
+    type: array
+    description: "Tenant_group not equal to"
+  tenant_group_id:
+    required: false
+    type: array
+    description: "Tenant Group (ID)"
+  tenant_group_id__n:
+    required: false
+    type: array
+    description: "Tenant_group_id not equal to"
+  tenant_id:
+    required: false
+    type: array
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: array
+    description: "Tenant_id not equal to"
+  type:
+    required: false
+    type: array
+    description: "Type"
+  type__n:
+    required: false
+    type: array
+    description: "Type not equal to"
+  u_height:
+    required: false
+    type: array
+    description: "U_height"
+  u_height__empty:
+    required: false
+    type: boolean
+    description: "U_height is empty/null (boolean)"
+  u_height__gt:
+    required: false
+    type: array
+    description: "U_height greater than"
+  u_height__gte:
+    required: false
+    type: array
+    description: "U_height greater than or equal to"
+  u_height__lt:
+    required: false
+    type: array
+    description: "U_height less than"
+  u_height__lte:
+    required: false
+    type: array
+    description: "U_height less than or equal to"
+  u_height__n:
+    required: false
+    type: array
+    description: "U_height not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  weight:
+    required: false
+    type: array
+    description: "Weight"
+  weight__empty:
+    required: false
+    type: boolean
+    description: "Weight is empty/null (boolean)"
+  weight__gt:
+    required: false
+    type: array
+    description: "Weight greater than"
+  weight__gte:
+    required: false
+    type: array
+    description: "Weight greater than or equal to"
+  weight__lt:
+    required: false
+    type: array
+    description: "Weight less than"
+  weight__lte:
+    required: false
+    type: array
+    description: "Weight less than or equal to"
+  weight__n:
+    required: false
+    type: array
+    description: "Weight not equal to"
+  weight_unit:
+    required: false
+    type: string
+    description: "Weight_unit"
+  weight_unit__n:
+    required: false
+    type: string
+    description: "Weight_unit not equal to"
+  width:
+    required: false
+    type: array
+    description: "Rail-to-rail width"
+  width__n:
+    required: false
+    type: array
+    description: "Width not equal to"
   save_in_key_store:
     type: boolean
     default: false

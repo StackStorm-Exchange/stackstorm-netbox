@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PUT Permissions"
+# NetBox API version: 3.6
+description: "Put a permission object."
 enabled: true
 entry_point: run.py
 name: put.users.permissions
@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   description:
@@ -30,7 +30,7 @@ parameters:
     type: boolean
     description: "Enabled"
   object_types:
-    required: true
+    required: false
     type: array
     description: "Object types"
   groups:
@@ -42,15 +42,15 @@ parameters:
     type: array
     description: "Users"
   actions:
-    required: true
+    required: false
     type: array
-    description: "Actions"
+    description: "The list of actions granted by this permission"
   constraints:
     required: false
     type: object
-    description: "Constraints"
+    description: "Queryset filter matching the applicable objects of the selected type(s)"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to put."
 runner_type: python-script

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
+# NetBox API version: 3.6
 description: "Retrieve a list of job results"
 enabled: true
 entry_point: run.py
@@ -17,210 +17,222 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  id:
-    required: false
-    type: string
-    description: ""
-  object_type:
-    required: false
-    type: string
-    description: ""
-  object_id:
-    required: false
-    type: string
-    description: ""
-  name:
-    required: false
-    type: string
-    description: ""
-  interval:
-    required: false
-    type: string
-    description: ""
-  status:
-    required: false
-    type: string
-    description: ""
-  user:
-    required: false
-    type: string
-    description: ""
-  q:
-    required: false
-    type: string
-    description: ""
-  created:
-    required: false
-    type: string
-    description: ""
-  created__before:
-    required: false
-    type: string
-    description: ""
-  created__after:
-    required: false
-    type: string
-    description: ""
-  scheduled:
-    required: false
-    type: string
-    description: ""
-  scheduled__before:
-    required: false
-    type: string
-    description: ""
-  scheduled__after:
-    required: false
-    type: string
-    description: ""
-  started:
-    required: false
-    type: string
-    description: ""
-  started__before:
-    required: false
-    type: string
-    description: ""
-  started__after:
-    required: false
-    type: string
-    description: ""
   completed:
     required: false
     type: string
-    description: ""
-  completed__before:
-    required: false
-    type: string
-    description: ""
+    description: "Completed"
   completed__after:
     required: false
     type: string
-    description: ""
-  id__n:
+    description: "Completed"
+  completed__before:
     required: false
     type: string
-    description: ""
-  id__lte:
+    description: "Completed"
+  created:
     required: false
     type: string
-    description: ""
-  id__lt:
+    description: "Created"
+  created__after:
     required: false
     type: string
-    description: ""
-  id__gte:
+    description: "Created"
+  created__before:
     required: false
     type: string
-    description: ""
+    description: "Created"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: string
-    description: ""
-  object_type__n:
+    type: array
+    description: "Id greater than"
+  id__gte:
     required: false
-    type: string
-    description: ""
-  object_id__n:
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
     required: false
-    type: string
-    description: ""
-  object_id__lte:
+    type: array
+    description: "Id less than"
+  id__lte:
     required: false
-    type: string
-    description: ""
-  object_id__lt:
+    type: array
+    description: "Id less than or equal to"
+  id__n:
     required: false
-    type: string
-    description: ""
-  object_id__gte:
+    type: array
+    description: "Id not equal to"
+  interval:
     required: false
-    type: string
-    description: ""
-  object_id__gt:
+    type: array
+    description: "Interval"
+  interval__empty:
     required: false
-    type: string
-    description: ""
-  name__n:
-    required: false
-    type: string
-    description: ""
-  name__ic:
-    required: false
-    type: string
-    description: ""
-  name__nic:
-    required: false
-    type: string
-    description: ""
-  name__iew:
-    required: false
-    type: string
-    description: ""
-  name__niew:
-    required: false
-    type: string
-    description: ""
-  name__isw:
-    required: false
-    type: string
-    description: ""
-  name__nisw:
-    required: false
-    type: string
-    description: ""
-  name__ie:
-    required: false
-    type: string
-    description: ""
-  name__nie:
-    required: false
-    type: string
-    description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
-  interval__n:
-    required: false
-    type: string
-    description: ""
-  interval__lte:
-    required: false
-    type: string
-    description: ""
-  interval__lt:
-    required: false
-    type: string
-    description: ""
-  interval__gte:
-    required: false
-    type: string
-    description: ""
+    type: boolean
+    description: "Interval is empty/null (boolean)"
   interval__gt:
     required: false
-    type: string
-    description: ""
-  status__n:
+    type: array
+    description: "Interval greater than"
+  interval__gte:
     required: false
-    type: string
-    description: ""
-  user__n:
+    type: array
+    description: "Interval greater than or equal to"
+  interval__lt:
     required: false
-    type: string
-    description: ""
-  ordering:
+    type: array
+    description: "Interval less than"
+  interval__lte:
     required: false
-    type: string
-    description: "Which field to use when ordering the results."
+    type: array
+    description: "Interval less than or equal to"
+  interval__n:
+    required: false
+    type: array
+    description: "Interval not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
+  object_id:
+    required: false
+    type: array
+    description: "Object_id"
+  object_id__empty:
+    required: false
+    type: boolean
+    description: "Object_id is empty/null (boolean)"
+  object_id__gt:
+    required: false
+    type: array
+    description: "Object_id greater than"
+  object_id__gte:
+    required: false
+    type: array
+    description: "Object_id greater than or equal to"
+  object_id__lt:
+    required: false
+    type: array
+    description: "Object_id less than"
+  object_id__lte:
+    required: false
+    type: array
+    description: "Object_id less than or equal to"
+  object_id__n:
+    required: false
+    type: array
+    description: "Object_id not equal to"
+  object_type:
+    required: false
+    type: integer
+    description: "Object_type"
+  object_type__n:
+    required: false
+    type: integer
+    description: "Object_type not equal to"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  q:
+    required: false
+    type: string
+    description: "Search"
+  scheduled:
+    required: false
+    type: string
+    description: "Scheduled"
+  scheduled__after:
+    required: false
+    type: string
+    description: "Scheduled"
+  scheduled__before:
+    required: false
+    type: string
+    description: "Scheduled"
+  started:
+    required: false
+    type: string
+    description: "Started"
+  started__after:
+    required: false
+    type: string
+    description: "Started"
+  started__before:
+    required: false
+    type: string
+    description: "Started"
+  status:
+    required: false
+    type: array
+    description: "Status"
+  status__n:
+    required: false
+    type: array
+    description: "Status not equal to"
+  user:
+    required: false
+    type: integer
+    description: "User"
+  user__n:
+    required: false
+    type: integer
+    description: "User not equal to"
   save_in_key_store:
     type: boolean
     default: false

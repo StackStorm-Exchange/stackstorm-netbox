@@ -1,0 +1,36 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.6
+description: "Patch a bookmark object."
+enabled: true
+entry_point: run.py
+name: patch.extras.bookmarks
+parameters:
+  endpoint_uri:
+    default: "/extras/bookmarks/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  object_type:
+    required: false
+    type: string
+    description: "Object type"
+  object_id:
+    required: false
+    type: integer
+    description: "Object id"
+  user:
+    required: false
+    type: integer
+    description: "User"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

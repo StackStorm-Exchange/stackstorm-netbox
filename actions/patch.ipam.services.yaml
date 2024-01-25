@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PATCH Services"
+# NetBox API version: 3.6
+description: "Patch a service object."
 enabled: true
 entry_point: run.py
 name: patch.ipam.services
@@ -32,15 +32,17 @@ parameters:
   ports:
     required: false
     type: array
-    description: "Ports"
+    description: "Port numbers"
   protocol:
     required: false
     type: string
-    description: "Protocol"
+    description: "* `tcp` - TCP
+* `udp` - UDP
+* `sctp` - SCTP"
   ipaddresses:
     required: false
     type: array
-    description: "Ipaddresses"
+    description: "IP addresses"
   description:
     required: false
     type: string
@@ -59,6 +61,6 @@ parameters:
     description: "Custom fields"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to patch."
 runner_type: python-script

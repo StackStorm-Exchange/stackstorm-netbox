@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "GET Circuits"
+# NetBox API version: 3.6
+description: "Get a list of circuit objects."
 enabled: true
 entry_point: run.py
 name: get.circuits.circuits
@@ -17,430 +17,458 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  id:
-    required: false
-    type: string
-    description: ""
   cid:
     required: false
-    type: string
-    description: ""
-  description:
+    type: array
+    description: "Cid"
+  cid__empty:
     required: false
-    type: string
-    description: ""
-  install_date:
+    type: boolean
+    description: "Cid is empty/null (boolean)"
+  cid__ic:
     required: false
-    type: string
-    description: ""
-  termination_date:
+    type: array
+    description: "Cid contains (case-insensitive)"
+  cid__ie:
     required: false
-    type: string
-    description: ""
+    type: array
+    description: "Cid exact match (case-insensitive)"
+  cid__iew:
+    required: false
+    type: array
+    description: "Cid ends with (case-insensitive)"
+  cid__isw:
+    required: false
+    type: array
+    description: "Cid starts with (case-sensitive)"
+  cid__n:
+    required: false
+    type: array
+    description: "Cid not equal to"
+  cid__nic:
+    required: false
+    type: array
+    description: "Cid does not contain (case-insensitive)"
+  cid__nie:
+    required: false
+    type: array
+    description: "Cid inverse exact match (case-insensitive)"
+  cid__niew:
+    required: false
+    type: array
+    description: "Cid does not end with (case-insensitive)"
+  cid__nisw:
+    required: false
+    type: array
+    description: "Cid does not start with (case-sensitive)"
   commit_rate:
     required: false
-    type: string
-    description: ""
+    type: array
+    description: "Commit_rate"
+  commit_rate__empty:
+    required: false
+    type: boolean
+    description: "Commit_rate is empty/null (boolean)"
+  commit_rate__gt:
+    required: false
+    type: array
+    description: "Commit_rate greater than"
+  commit_rate__gte:
+    required: false
+    type: array
+    description: "Commit_rate greater than or equal to"
+  commit_rate__lt:
+    required: false
+    type: array
+    description: "Commit_rate less than"
+  commit_rate__lte:
+    required: false
+    type: array
+    description: "Commit_rate less than or equal to"
+  commit_rate__n:
+    required: false
+    type: array
+    description: "Commit_rate not equal to"
+  contact:
+    required: false
+    type: array
+    description: "Contact"
+  contact__n:
+    required: false
+    type: array
+    description: "Contact not equal to"
+  contact_group:
+    required: false
+    type: array
+    description: "Contact group"
+  contact_group__n:
+    required: false
+    type: array
+    description: "Contact_group not equal to"
+  contact_role:
+    required: false
+    type: array
+    description: "Contact Role"
+  contact_role__n:
+    required: false
+    type: array
+    description: "Contact_role not equal to"
   created:
     required: false
-    type: string
-    description: ""
-  last_updated:
+    type: array
+    description: "Created"
+  created__empty:
     required: false
-    type: string
-    description: ""
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
   created_by_request:
     required: false
     type: string
-    description: ""
-  updated_by_request:
+    description: "Created_by_request"
+  description:
     required: false
-    type: string
-    description: ""
-  q:
-    required: false
-    type: string
-    description: ""
-  tag:
-    required: false
-    type: string
-    description: ""
-  tenant_group_id:
-    required: false
-    type: string
-    description: ""
-  tenant_group:
-    required: false
-    type: string
-    description: ""
-  tenant_id:
-    required: false
-    type: string
-    description: ""
-  tenant:
-    required: false
-    type: string
-    description: ""
-  contact:
-    required: false
-    type: string
-    description: ""
-  contact_role:
-    required: false
-    type: string
-    description: ""
-  contact_group:
-    required: false
-    type: string
-    description: ""
-  provider_id:
-    required: false
-    type: string
-    description: ""
-  provider:
-    required: false
-    type: string
-    description: ""
-  provider_account_id:
-    required: false
-    type: string
-    description: ""
-  provider_network_id:
-    required: false
-    type: string
-    description: ""
-  type_id:
-    required: false
-    type: string
-    description: ""
-  type:
-    required: false
-    type: string
-    description: ""
-  status:
-    required: false
-    type: string
-    description: ""
-  region_id:
-    required: false
-    type: string
-    description: ""
-  region:
-    required: false
-    type: string
-    description: ""
-  site_group_id:
-    required: false
-    type: string
-    description: ""
-  site_group:
-    required: false
-    type: string
-    description: ""
-  site_id:
-    required: false
-    type: string
-    description: ""
-  site:
-    required: false
-    type: string
-    description: ""
-  id__n:
-    required: false
-    type: string
-    description: ""
-  id__lte:
-    required: false
-    type: string
-    description: ""
-  id__lt:
-    required: false
-    type: string
-    description: ""
-  id__gte:
-    required: false
-    type: string
-    description: ""
-  id__gt:
-    required: false
-    type: string
-    description: ""
-  cid__n:
-    required: false
-    type: string
-    description: ""
-  cid__ic:
-    required: false
-    type: string
-    description: ""
-  cid__nic:
-    required: false
-    type: string
-    description: ""
-  cid__iew:
-    required: false
-    type: string
-    description: ""
-  cid__niew:
-    required: false
-    type: string
-    description: ""
-  cid__isw:
-    required: false
-    type: string
-    description: ""
-  cid__nisw:
-    required: false
-    type: string
-    description: ""
-  cid__ie:
-    required: false
-    type: string
-    description: ""
-  cid__nie:
-    required: false
-    type: string
-    description: ""
-  cid__empty:
-    required: false
-    type: string
-    description: ""
-  description__n:
-    required: false
-    type: string
-    description: ""
-  description__ic:
-    required: false
-    type: string
-    description: ""
-  description__nic:
-    required: false
-    type: string
-    description: ""
-  description__iew:
-    required: false
-    type: string
-    description: ""
-  description__niew:
-    required: false
-    type: string
-    description: ""
-  description__isw:
-    required: false
-    type: string
-    description: ""
-  description__nisw:
-    required: false
-    type: string
-    description: ""
-  description__ie:
-    required: false
-    type: string
-    description: ""
-  description__nie:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Description"
   description__empty:
     required: false
-    type: string
-    description: ""
-  install_date__n:
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
     required: false
-    type: string
-    description: ""
-  install_date__lte:
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
     required: false
-    type: string
-    description: ""
-  install_date__lt:
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
     required: false
-    type: string
-    description: ""
-  install_date__gte:
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
     required: false
-    type: string
-    description: ""
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  install_date:
+    required: false
+    type: array
+    description: "Install_date"
+  install_date__empty:
+    required: false
+    type: boolean
+    description: "Install_date is empty/null (boolean)"
   install_date__gt:
     required: false
-    type: string
-    description: ""
-  termination_date__n:
+    type: array
+    description: "Install_date greater than"
+  install_date__gte:
     required: false
-    type: string
-    description: ""
-  termination_date__lte:
+    type: array
+    description: "Install_date greater than or equal to"
+  install_date__lt:
     required: false
-    type: string
-    description: ""
-  termination_date__lt:
+    type: array
+    description: "Install_date less than"
+  install_date__lte:
     required: false
-    type: string
-    description: ""
-  termination_date__gte:
+    type: array
+    description: "Install_date less than or equal to"
+  install_date__n:
     required: false
-    type: string
-    description: ""
-  termination_date__gt:
+    type: array
+    description: "Install_date not equal to"
+  last_updated:
     required: false
-    type: string
-    description: ""
-  commit_rate__n:
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
     required: false
-    type: string
-    description: ""
-  commit_rate__lte:
-    required: false
-    type: string
-    description: ""
-  commit_rate__lt:
-    required: false
-    type: string
-    description: ""
-  commit_rate__gte:
-    required: false
-    type: string
-    description: ""
-  commit_rate__gt:
-    required: false
-    type: string
-    description: ""
-  created__n:
-    required: false
-    type: string
-    description: ""
-  created__lte:
-    required: false
-    type: string
-    description: ""
-  created__lt:
-    required: false
-    type: string
-    description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__gt:
-    required: false
-    type: string
-    description: ""
-  last_updated__n:
-    required: false
-    type: string
-    description: ""
-  last_updated__lte:
-    required: false
-    type: string
-    description: ""
-  last_updated__lt:
-    required: false
-    type: string
-    description: ""
-  last_updated__gte:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: string
-    description: ""
-  tag__n:
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
     required: false
-    type: string
-    description: ""
-  tenant_group_id__n:
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
     required: false
-    type: string
-    description: ""
-  tenant_group__n:
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
     required: false
-    type: string
-    description: ""
-  tenant_id__n:
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
     required: false
-    type: string
-    description: ""
-  tenant__n:
-    required: false
-    type: string
-    description: ""
-  contact__n:
-    required: false
-    type: string
-    description: ""
-  contact_role__n:
-    required: false
-    type: string
-    description: ""
-  contact_group__n:
-    required: false
-    type: string
-    description: ""
-  provider_id__n:
-    required: false
-    type: string
-    description: ""
-  provider__n:
-    required: false
-    type: string
-    description: ""
-  provider_account_id__n:
-    required: false
-    type: string
-    description: ""
-  provider_network_id__n:
-    required: false
-    type: string
-    description: ""
-  type_id__n:
-    required: false
-    type: string
-    description: ""
-  type__n:
-    required: false
-    type: string
-    description: ""
-  status__n:
-    required: false
-    type: string
-    description: ""
-  region_id__n:
-    required: false
-    type: string
-    description: ""
-  region__n:
-    required: false
-    type: string
-    description: ""
-  site_group_id__n:
-    required: false
-    type: string
-    description: ""
-  site_group__n:
-    required: false
-    type: string
-    description: ""
-  site_id__n:
-    required: false
-    type: string
-    description: ""
-  site__n:
-    required: false
-    type: string
-    description: ""
-  ordering:
-    required: false
-    type: string
-    description: "Which field to use when ordering the results."
+    type: array
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  provider:
+    required: false
+    type: array
+    description: "Provider (slug)"
+  provider__n:
+    required: false
+    type: array
+    description: "Provider not equal to"
+  provider_account_id:
+    required: false
+    type: array
+    description: "ProviderAccount (ID)"
+  provider_account_id__n:
+    required: false
+    type: array
+    description: "Provider_account_id not equal to"
+  provider_id:
+    required: false
+    type: array
+    description: "Provider (ID)"
+  provider_id__n:
+    required: false
+    type: array
+    description: "Provider_id not equal to"
+  provider_network_id:
+    required: false
+    type: array
+    description: "ProviderNetwork (ID)"
+  provider_network_id__n:
+    required: false
+    type: array
+    description: "Provider_network_id not equal to"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  region:
+    required: false
+    type: array
+    description: "Region (slug)"
+  region__n:
+    required: false
+    type: array
+    description: "Region not equal to"
+  region_id:
+    required: false
+    type: array
+    description: "Region (ID)"
+  region_id__n:
+    required: false
+    type: array
+    description: "Region_id not equal to"
+  site:
+    required: false
+    type: array
+    description: "Site (slug)"
+  site__n:
+    required: false
+    type: array
+    description: "Site not equal to"
+  site_group:
+    required: false
+    type: array
+    description: "Site group (slug)"
+  site_group__n:
+    required: false
+    type: array
+    description: "Site_group not equal to"
+  site_group_id:
+    required: false
+    type: array
+    description: "Site group (ID)"
+  site_group_id__n:
+    required: false
+    type: array
+    description: "Site_group_id not equal to"
+  site_id:
+    required: false
+    type: array
+    description: "Site (ID)"
+  site_id__n:
+    required: false
+    type: array
+    description: "Site_id not equal to"
+  status:
+    required: false
+    type: array
+    description: "Status"
+  status__n:
+    required: false
+    type: array
+    description: "Status not equal to"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  tenant:
+    required: false
+    type: array
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: array
+    description: "Tenant not equal to"
+  tenant_group:
+    required: false
+    type: array
+    description: "Tenant Group (slug)"
+  tenant_group__n:
+    required: false
+    type: array
+    description: "Tenant_group not equal to"
+  tenant_group_id:
+    required: false
+    type: array
+    description: "Tenant Group (ID)"
+  tenant_group_id__n:
+    required: false
+    type: array
+    description: "Tenant_group_id not equal to"
+  tenant_id:
+    required: false
+    type: array
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: array
+    description: "Tenant_id not equal to"
+  termination_date:
+    required: false
+    type: array
+    description: "Termination_date"
+  termination_date__empty:
+    required: false
+    type: boolean
+    description: "Termination_date is empty/null (boolean)"
+  termination_date__gt:
+    required: false
+    type: array
+    description: "Termination_date greater than"
+  termination_date__gte:
+    required: false
+    type: array
+    description: "Termination_date greater than or equal to"
+  termination_date__lt:
+    required: false
+    type: array
+    description: "Termination_date less than"
+  termination_date__lte:
+    required: false
+    type: array
+    description: "Termination_date less than or equal to"
+  termination_date__n:
+    required: false
+    type: array
+    description: "Termination_date not equal to"
+  type:
+    required: false
+    type: array
+    description: "Circuit type (slug)"
+  type__n:
+    required: false
+    type: array
+    description: "Type not equal to"
+  type_id:
+    required: false
+    type: array
+    description: "Circuit type (ID)"
+  type_id__n:
+    required: false
+    type: array
+    description: "Type_id not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
   save_in_key_store:
     type: boolean
     default: false

@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "POST Webhooks"
+# NetBox API version: 3.6
+description: "Post a list of webhook objects."
 enabled: true
 entry_point: run.py
 name: post.extras.webhooks
@@ -18,35 +18,35 @@ parameters:
     immutable: true
     type: boolean
   content_types:
-    required: true
+    required: false
     type: array
     description: "Content types"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   type_create:
     required: false
     type: boolean
-    description: "Type create"
+    description: "On create"
   type_update:
     required: false
     type: boolean
-    description: "Type update"
+    description: "On update"
   type_delete:
     required: false
     type: boolean
-    description: "Type delete"
+    description: "On delete"
   type_job_start:
     required: false
     type: boolean
-    description: "Type job start"
+    description: "On job start"
   type_job_end:
     required: false
     type: boolean
-    description: "Type job end"
+    description: "On job end"
   payload_url:
-    required: true
+    required: false
     type: string
     description: "URL"
   enabled:
@@ -56,33 +56,45 @@ parameters:
   http_method:
     required: false
     type: string
-    description: "HTTP method"
+    description: "* `GET` - GET
+* `POST` - POST
+* `PUT` - PUT
+* `PATCH` - PATCH
+* `DELETE` - DELETE"
   http_content_type:
     required: false
     type: string
-    description: "HTTP content type"
+    description: "The complete list of official content types is available &lt;a href=&#34;https://www.iana.org/assignments/media-types/media-types.xhtml&#34;&gt;here&lt;/a&gt;."
   additional_headers:
     required: false
     type: string
-    description: "Additional headers"
+    description: "User-supplied HTTP headers to be sent with the request in addition to the HTTP content type. Headers should be defined in the format &lt;code&gt;Name: Value&lt;/code&gt;. Jinja2 template processing is supported with the same context as the request body (below)."
   body_template:
     required: false
     type: string
-    description: "Body template"
+    description: "Jinja2 template for a custom request body. If blank, a JSON object representing the change will be included. Available context data includes: &lt;code&gt;event&lt;/code&gt;, &lt;code&gt;model&lt;/code&gt;, &lt;code&gt;timestamp&lt;/code&gt;, &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;request_id&lt;/code&gt;, and &lt;code&gt;data&lt;/code&gt;."
   secret:
     required: false
     type: string
-    description: "Secret"
+    description: "When provided, the request will include a &lt;code&gt;X-Hook-Signature&lt;/code&gt; header containing a HMAC hex digest of the payload body using the secret as the key. The secret is not transmitted in the request."
   conditions:
     required: false
     type: object
-    description: "Conditions"
+    description: "A set of conditions which determine whether the webhook will be generated."
   ssl_verification:
     required: false
     type: boolean
-    description: "SSL verification"
+    description: "Enable SSL certificate verification. Disable with caution!"
   ca_file_path:
     required: false
     type: string
-    description: "CA File Path"
+    description: "The specific CA certificate file to use for SSL verification. Leave blank to use the system defaults."
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
 runner_type: python-script

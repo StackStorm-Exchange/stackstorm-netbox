@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "GET Groups"
+# NetBox API version: 3.6
+description: "Get a list of group objects."
 enabled: true
 entry_point: run.py
 name: get.users.groups
@@ -19,88 +19,92 @@ parameters:
     type: boolean
   id:
     required: false
-    type: string
-    description: ""
-  name:
+    type: array
+    description: "Id"
+  id__empty:
     required: false
-    type: string
-    description: ""
-  q:
-    required: false
-    type: string
-    description: ""
-  id__n:
-    required: false
-    type: string
-    description: ""
-  id__lte:
-    required: false
-    type: string
-    description: ""
-  id__lt:
-    required: false
-    type: string
-    description: ""
-  id__gte:
-    required: false
-    type: string
-    description: ""
+    type: boolean
+    description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: string
-    description: ""
-  name__n:
+    type: array
+    description: "Id greater than"
+  id__gte:
     required: false
-    type: string
-    description: ""
-  name__ic:
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
     required: false
-    type: string
-    description: ""
-  name__nic:
+    type: array
+    description: "Id less than"
+  id__lte:
     required: false
-    type: string
-    description: ""
-  name__iew:
+    type: array
+    description: "Id less than or equal to"
+  id__n:
     required: false
-    type: string
-    description: ""
-  name__niew:
-    required: false
-    type: string
-    description: ""
-  name__isw:
-    required: false
-    type: string
-    description: ""
-  name__nisw:
-    required: false
-    type: string
-    description: ""
-  name__ie:
-    required: false
-    type: string
-    description: ""
-  name__nie:
-    required: false
-    type: string
-    description: ""
-  name__empty:
-    required: false
-    type: string
-    description: ""
-  ordering:
-    required: false
-    type: string
-    description: "Which field to use when ordering the results."
+    type: array
+    description: "Id not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  q:
+    required: false
+    type: string
+    description: "Search"
   save_in_key_store:
     type: boolean
     default: false

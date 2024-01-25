@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "GET Circuit Terminations"
+# NetBox API version: 3.6
+description: "Get a list of circuit termination objects."
 enabled: true
 entry_point: run.py
 name: get.circuits.circuit_terminations
@@ -17,302 +17,326 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  id:
-    required: false
-    type: string
-    description: ""
-  term_side:
-    required: false
-    type: string
-    description: ""
-  port_speed:
-    required: false
-    type: string
-    description: ""
-  upstream_speed:
-    required: false
-    type: string
-    description: ""
-  xconnect_id:
-    required: false
-    type: string
-    description: ""
-  description:
-    required: false
-    type: string
-    description: ""
   cable_end:
     required: false
     type: string
-    description: ""
-  created:
-    required: false
-    type: string
-    description: ""
-  last_updated:
-    required: false
-    type: string
-    description: ""
-  created_by_request:
-    required: false
-    type: string
-    description: ""
-  updated_by_request:
-    required: false
-    type: string
-    description: ""
-  q:
-    required: false
-    type: string
-    description: ""
-  tag:
-    required: false
-    type: string
-    description: ""
-  cabled:
-    required: false
-    type: string
-    description: ""
-  occupied:
-    required: false
-    type: string
-    description: ""
-  circuit_id:
-    required: false
-    type: string
-    description: ""
-  site_id:
-    required: false
-    type: string
-    description: ""
-  site:
-    required: false
-    type: string
-    description: ""
-  provider_network_id:
-    required: false
-    type: string
-    description: ""
-  id__n:
-    required: false
-    type: string
-    description: ""
-  id__lte:
-    required: false
-    type: string
-    description: ""
-  id__lt:
-    required: false
-    type: string
-    description: ""
-  id__gte:
-    required: false
-    type: string
-    description: ""
-  id__gt:
-    required: false
-    type: string
-    description: ""
-  term_side__n:
-    required: false
-    type: string
-    description: ""
-  port_speed__n:
-    required: false
-    type: string
-    description: ""
-  port_speed__lte:
-    required: false
-    type: string
-    description: ""
-  port_speed__lt:
-    required: false
-    type: string
-    description: ""
-  port_speed__gte:
-    required: false
-    type: string
-    description: ""
-  port_speed__gt:
-    required: false
-    type: string
-    description: ""
-  upstream_speed__n:
-    required: false
-    type: string
-    description: ""
-  upstream_speed__lte:
-    required: false
-    type: string
-    description: ""
-  upstream_speed__lt:
-    required: false
-    type: string
-    description: ""
-  upstream_speed__gte:
-    required: false
-    type: string
-    description: ""
-  upstream_speed__gt:
-    required: false
-    type: string
-    description: ""
-  xconnect_id__n:
-    required: false
-    type: string
-    description: ""
-  xconnect_id__ic:
-    required: false
-    type: string
-    description: ""
-  xconnect_id__nic:
-    required: false
-    type: string
-    description: ""
-  xconnect_id__iew:
-    required: false
-    type: string
-    description: ""
-  xconnect_id__niew:
-    required: false
-    type: string
-    description: ""
-  xconnect_id__isw:
-    required: false
-    type: string
-    description: ""
-  xconnect_id__nisw:
-    required: false
-    type: string
-    description: ""
-  xconnect_id__ie:
-    required: false
-    type: string
-    description: ""
-  xconnect_id__nie:
-    required: false
-    type: string
-    description: ""
-  xconnect_id__empty:
-    required: false
-    type: string
-    description: ""
-  description__n:
-    required: false
-    type: string
-    description: ""
-  description__ic:
-    required: false
-    type: string
-    description: ""
-  description__nic:
-    required: false
-    type: string
-    description: ""
-  description__iew:
-    required: false
-    type: string
-    description: ""
-  description__niew:
-    required: false
-    type: string
-    description: ""
-  description__isw:
-    required: false
-    type: string
-    description: ""
-  description__nisw:
-    required: false
-    type: string
-    description: ""
-  description__ie:
-    required: false
-    type: string
-    description: ""
-  description__nie:
-    required: false
-    type: string
-    description: ""
-  description__empty:
-    required: false
-    type: string
-    description: ""
+    description: "Cable_end"
   cable_end__n:
     required: false
     type: string
-    description: ""
-  created__n:
+    description: "Cable_end not equal to"
+  cabled:
     required: false
-    type: string
-    description: ""
-  created__lte:
+    type: boolean
+    description: "Cabled"
+  circuit_id:
     required: false
-    type: string
-    description: ""
-  created__lt:
-    required: false
-    type: string
-    description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__gt:
-    required: false
-    type: string
-    description: ""
-  last_updated__n:
-    required: false
-    type: string
-    description: ""
-  last_updated__lte:
-    required: false
-    type: string
-    description: ""
-  last_updated__lt:
-    required: false
-    type: string
-    description: ""
-  last_updated__gte:
-    required: false
-    type: string
-    description: ""
-  last_updated__gt:
-    required: false
-    type: string
-    description: ""
-  tag__n:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Circuit"
   circuit_id__n:
     required: false
-    type: string
-    description: ""
-  site_id__n:
+    type: array
+    description: "Circuit_id not equal to"
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
     required: false
     type: string
-    description: ""
-  site__n:
+    description: "Created_by_request"
+  description:
     required: false
-    type: string
-    description: ""
-  provider_network_id__n:
+    type: array
+    description: "Description"
+  description__empty:
     required: false
-    type: string
-    description: ""
-  ordering:
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
     required: false
-    type: string
-    description: "Which field to use when ordering the results."
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
+    required: false
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  occupied:
+    required: false
+    type: boolean
+    description: "Occupied"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  port_speed:
+    required: false
+    type: array
+    description: "Port_speed"
+  port_speed__empty:
+    required: false
+    type: boolean
+    description: "Port_speed is empty/null (boolean)"
+  port_speed__gt:
+    required: false
+    type: array
+    description: "Port_speed greater than"
+  port_speed__gte:
+    required: false
+    type: array
+    description: "Port_speed greater than or equal to"
+  port_speed__lt:
+    required: false
+    type: array
+    description: "Port_speed less than"
+  port_speed__lte:
+    required: false
+    type: array
+    description: "Port_speed less than or equal to"
+  port_speed__n:
+    required: false
+    type: array
+    description: "Port_speed not equal to"
+  provider_network_id:
+    required: false
+    type: array
+    description: "ProviderNetwork (ID)"
+  provider_network_id__n:
+    required: false
+    type: array
+    description: "Provider_network_id not equal to"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  site:
+    required: false
+    type: array
+    description: "Site (slug)"
+  site__n:
+    required: false
+    type: array
+    description: "Site not equal to"
+  site_id:
+    required: false
+    type: array
+    description: "Site (ID)"
+  site_id__n:
+    required: false
+    type: array
+    description: "Site_id not equal to"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  term_side:
+    required: false
+    type: string
+    description: "Term_side"
+  term_side__n:
+    required: false
+    type: string
+    description: "Term_side not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  upstream_speed:
+    required: false
+    type: array
+    description: "Upstream_speed"
+  upstream_speed__empty:
+    required: false
+    type: boolean
+    description: "Upstream_speed is empty/null (boolean)"
+  upstream_speed__gt:
+    required: false
+    type: array
+    description: "Upstream_speed greater than"
+  upstream_speed__gte:
+    required: false
+    type: array
+    description: "Upstream_speed greater than or equal to"
+  upstream_speed__lt:
+    required: false
+    type: array
+    description: "Upstream_speed less than"
+  upstream_speed__lte:
+    required: false
+    type: array
+    description: "Upstream_speed less than or equal to"
+  upstream_speed__n:
+    required: false
+    type: array
+    description: "Upstream_speed not equal to"
+  xconnect_id:
+    required: false
+    type: array
+    description: "Xconnect_id"
+  xconnect_id__empty:
+    required: false
+    type: boolean
+    description: "Xconnect_id is empty/null (boolean)"
+  xconnect_id__ic:
+    required: false
+    type: array
+    description: "Xconnect_id contains (case-insensitive)"
+  xconnect_id__ie:
+    required: false
+    type: array
+    description: "Xconnect_id exact match (case-insensitive)"
+  xconnect_id__iew:
+    required: false
+    type: array
+    description: "Xconnect_id ends with (case-insensitive)"
+  xconnect_id__isw:
+    required: false
+    type: array
+    description: "Xconnect_id starts with (case-sensitive)"
+  xconnect_id__n:
+    required: false
+    type: array
+    description: "Xconnect_id not equal to"
+  xconnect_id__nic:
+    required: false
+    type: array
+    description: "Xconnect_id does not contain (case-insensitive)"
+  xconnect_id__nie:
+    required: false
+    type: array
+    description: "Xconnect_id inverse exact match (case-insensitive)"
+  xconnect_id__niew:
+    required: false
+    type: array
+    description: "Xconnect_id does not end with (case-insensitive)"
+  xconnect_id__nisw:
+    required: false
+    type: array
+    description: "Xconnect_id does not start with (case-sensitive)"
   save_in_key_store:
     type: boolean
     default: false

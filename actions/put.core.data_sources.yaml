@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "PUT Data Sources"
+# NetBox API version: 3.6
+description: "Put a data source object."
 enabled: true
 entry_point: run.py
 name: put.core.data_sources
@@ -18,15 +18,17 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   type:
     required: false
     type: string
-    description: "Type"
+    description: "* `local` - Local
+* `git` - Git
+* `amazon-s3` - Amazon S3"
   source_url:
-    required: true
+    required: false
     type: string
     description: "URL"
   enabled:
@@ -48,9 +50,9 @@ parameters:
   ignore_rules:
     required: false
     type: string
-    description: "Ignore rules"
+    description: "Patterns (one per line) matching files to ignore when syncing"
   id:
     required: true
-    type: string
+    type: integer
     description: "ID of the object to put."
 runner_type: python-script

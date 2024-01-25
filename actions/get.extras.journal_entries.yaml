@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.5
-description: "GET Journal Entries"
+# NetBox API version: 3.6
+description: "Get a list of journal entry objects."
 enabled: true
 entry_point: run.py
 name: get.extras.journal_entries
@@ -17,154 +17,174 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  id:
-    required: false
-    type: string
-    description: ""
-  assigned_object_type_id:
-    required: false
-    type: string
-    description: ""
   assigned_object_id:
     required: false
-    type: string
-    description: ""
-  created:
+    type: array
+    description: "Assigned_object_id"
+  assigned_object_id__empty:
     required: false
-    type: string
-    description: ""
-  kind:
+    type: boolean
+    description: "Assigned_object_id is empty/null (boolean)"
+  assigned_object_id__gt:
     required: false
-    type: string
-    description: ""
-  last_updated:
+    type: array
+    description: "Assigned_object_id greater than"
+  assigned_object_id__gte:
     required: false
-    type: string
-    description: ""
-  created_by_request:
+    type: array
+    description: "Assigned_object_id greater than or equal to"
+  assigned_object_id__lt:
     required: false
-    type: string
-    description: ""
-  updated_by_request:
+    type: array
+    description: "Assigned_object_id less than"
+  assigned_object_id__lte:
     required: false
-    type: string
-    description: ""
-  q:
+    type: array
+    description: "Assigned_object_id less than or equal to"
+  assigned_object_id__n:
     required: false
-    type: string
-    description: ""
-  tag:
-    required: false
-    type: string
-    description: ""
+    type: array
+    description: "Assigned_object_id not equal to"
   assigned_object_type:
     required: false
     type: string
-    description: ""
-  created_by_id:
-    required: false
-    type: string
-    description: ""
-  created_by:
-    required: false
-    type: string
-    description: ""
-  id__n:
-    required: false
-    type: string
-    description: ""
-  id__lte:
-    required: false
-    type: string
-    description: ""
-  id__lt:
-    required: false
-    type: string
-    description: ""
-  id__gte:
-    required: false
-    type: string
-    description: ""
-  id__gt:
-    required: false
-    type: string
-    description: ""
-  assigned_object_type_id__n:
-    required: false
-    type: string
-    description: ""
-  assigned_object_id__n:
-    required: false
-    type: string
-    description: ""
-  assigned_object_id__lte:
-    required: false
-    type: string
-    description: ""
-  assigned_object_id__lt:
-    required: false
-    type: string
-    description: ""
-  assigned_object_id__gte:
-    required: false
-    type: string
-    description: ""
-  assigned_object_id__gt:
-    required: false
-    type: string
-    description: ""
-  kind__n:
-    required: false
-    type: string
-    description: ""
-  last_updated__n:
-    required: false
-    type: string
-    description: ""
-  last_updated__lte:
-    required: false
-    type: string
-    description: ""
-  last_updated__lt:
-    required: false
-    type: string
-    description: ""
-  last_updated__gte:
-    required: false
-    type: string
-    description: ""
-  last_updated__gt:
-    required: false
-    type: string
-    description: ""
-  tag__n:
-    required: false
-    type: string
-    description: ""
+    description: "Assigned_object_type"
   assigned_object_type__n:
     required: false
     type: string
-    description: ""
-  created_by_id__n:
+    description: "Assigned_object_type not equal to"
+  assigned_object_type_id:
+    required: false
+    type: array
+    description: "Assigned_object_type_id"
+  assigned_object_type_id__n:
+    required: false
+    type: array
+    description: "Assigned_object_type_id not equal to"
+  created_after:
     required: false
     type: string
-    description: ""
+    description: "Created_after"
+  created_before:
+    required: false
+    type: string
+    description: "Created_before"
+  created_by:
+    required: false
+    type: array
+    description: "User (name)"
   created_by__n:
     required: false
-    type: string
-    description: ""
-  ordering:
+    type: array
+    description: "Created_by not equal to"
+  created_by_id:
+    required: false
+    type: array
+    description: "User (ID)"
+  created_by_id__n:
+    required: false
+    type: array
+    description: "Created_by_id not equal to"
+  created_by_request:
     required: false
     type: string
-    description: "Which field to use when ordering the results."
+    description: "Created_by_request"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  kind:
+    required: false
+    type: array
+    description: "Kind"
+  kind__n:
+    required: false
+    type: array
+    description: "Kind not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  q:
+    required: false
+    type: string
+    description: "Search"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
   save_in_key_store:
     type: boolean
     default: false
