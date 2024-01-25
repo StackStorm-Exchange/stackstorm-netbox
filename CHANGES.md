@@ -1,12 +1,20 @@
 # Change Log
 
-## 3.2.0
+## 3.3.0
 
 - Updated spec as per v3.6.9
 
+## 3.2.0
+
+- Update spec as per v3.5.9
+
 ## 3.1.0
 
-- Updated spec as per v3.5.9
+- Updated spec as per v3.4.7
+
+## 3.0.7
+
+- Add @abhi1693 as code owner.
 
 ## 3.0.6
 
