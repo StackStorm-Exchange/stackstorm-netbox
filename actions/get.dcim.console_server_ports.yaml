@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.4
+# NetBox API version: 3.5
 description: "GET Console Server Ports"
 enabled: true
 entry_point: run.py
@@ -106,6 +106,14 @@ parameters:
     type: string
     description: ""
   last_updated:
+    required: false
+    type: string
+    description: ""
+  created_by_request:
+    required: false
+    type: string
+    description: ""
+  updated_by_request:
     required: false
     type: string
     description: ""

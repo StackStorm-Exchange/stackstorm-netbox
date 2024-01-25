@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.4
+# NetBox API version: 3.5
 description: "PUT Platforms"
 enabled: true
 entry_point: run.py
@@ -29,6 +29,10 @@ parameters:
     required: false
     type: integer
     description: "Manufacturer"
+  config_template:
+    required: false
+    type: integer
+    description: "Config template"
   napalm_driver:
     required: false
     type: string

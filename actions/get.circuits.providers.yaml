@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.4
+# NetBox API version: 3.5
 description: "GET Providers"
 enabled: true
 entry_point: run.py
@@ -29,15 +29,19 @@ parameters:
     required: false
     type: string
     description: ""
-  account:
-    required: false
-    type: string
-    description: ""
   created:
     required: false
     type: string
     description: ""
   last_updated:
+    required: false
+    type: string
+    description: ""
+  created_by_request:
+    required: false
+    type: string
+    description: ""
+  updated_by_request:
     required: false
     type: string
     description: ""
@@ -186,46 +190,6 @@ parameters:
     type: string
     description: ""
   slug__empty:
-    required: false
-    type: string
-    description: ""
-  account__n:
-    required: false
-    type: string
-    description: ""
-  account__ic:
-    required: false
-    type: string
-    description: ""
-  account__nic:
-    required: false
-    type: string
-    description: ""
-  account__iew:
-    required: false
-    type: string
-    description: ""
-  account__niew:
-    required: false
-    type: string
-    description: ""
-  account__isw:
-    required: false
-    type: string
-    description: ""
-  account__nisw:
-    required: false
-    type: string
-    description: ""
-  account__ie:
-    required: false
-    type: string
-    description: ""
-  account__nie:
-    required: false
-    type: string
-    description: ""
-  account__empty:
     required: false
     type: string
     description: ""

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.4
+# NetBox API version: 3.5
 description: "GET Webhooks"
 enabled: true
 entry_point: run.py
@@ -34,6 +34,14 @@ parameters:
     type: string
     description: ""
   type_delete:
+    required: false
+    type: string
+    description: ""
+  type_job_start:
+    required: false
+    type: string
+    description: ""
+  type_job_end:
     required: false
     type: string
     description: ""

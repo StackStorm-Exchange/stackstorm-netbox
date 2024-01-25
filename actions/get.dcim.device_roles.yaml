@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.4
+# NetBox API version: 3.5
 description: "GET Device Roles"
 enabled: true
 entry_point: run.py
@@ -49,11 +49,23 @@ parameters:
     required: false
     type: string
     description: ""
+  created_by_request:
+    required: false
+    type: string
+    description: ""
+  updated_by_request:
+    required: false
+    type: string
+    description: ""
   q:
     required: false
     type: string
     description: ""
   tag:
+    required: false
+    type: string
+    description: ""
+  config_template_id:
     required: false
     type: string
     description: ""
@@ -278,6 +290,10 @@ parameters:
     type: string
     description: ""
   tag__n:
+    required: false
+    type: string
+    description: ""
+  config_template_id__n:
     required: false
     type: string
     description: ""

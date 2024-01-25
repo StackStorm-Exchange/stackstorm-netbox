@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.4
+# NetBox API version: 3.5
 description: "PATCH Custom Fields"
 enabled: true
 entry_point: run.py
@@ -61,6 +61,10 @@ parameters:
     required: false
     type: string
     description: "UI visibility"
+  is_cloneable:
+    required: false
+    type: boolean
+    description: "Cloneable"
   default:
     required: false
     type: object

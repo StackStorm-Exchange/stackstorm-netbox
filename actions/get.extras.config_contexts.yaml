@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.4
+# NetBox API version: 3.5
 description: "GET Config Contexts"
 enabled: true
 entry_point: run.py
@@ -29,11 +29,23 @@ parameters:
     required: false
     type: string
     description: ""
+  data_synced:
+    required: false
+    type: string
+    description: ""
   created:
     required: false
     type: string
     description: ""
   last_updated:
+    required: false
+    type: string
+    description: ""
+  created_by_request:
+    required: false
+    type: string
+    description: ""
+  updated_by_request:
     required: false
     type: string
     description: ""
@@ -137,6 +149,14 @@ parameters:
     required: false
     type: string
     description: ""
+  data_source_id:
+    required: false
+    type: string
+    description: ""
+  data_file_id:
+    required: false
+    type: string
+    description: ""
   id__n:
     required: false
     type: string
@@ -194,6 +214,26 @@ parameters:
     type: string
     description: ""
   name__empty:
+    required: false
+    type: string
+    description: ""
+  data_synced__n:
+    required: false
+    type: string
+    description: ""
+  data_synced__lte:
+    required: false
+    type: string
+    description: ""
+  data_synced__lt:
+    required: false
+    type: string
+    description: ""
+  data_synced__gte:
+    required: false
+    type: string
+    description: ""
+  data_synced__gt:
     required: false
     type: string
     description: ""
@@ -330,6 +370,14 @@ parameters:
     type: string
     description: ""
   tag__n:
+    required: false
+    type: string
+    description: ""
+  data_source_id__n:
+    required: false
+    type: string
+    description: ""
+  data_file_id__n:
     required: false
     type: string
     description: ""
