@@ -1,0 +1,75 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.7
+description: "Post a list of L2VPN objects."
+enabled: true
+entry_point: run.py
+name: post.vpn.l2vpns
+parameters:
+  endpoint_uri:
+    default: "/vpn/l2vpns/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  identifier:
+    required: false
+    type: integer
+    description: "Identifier"
+  name:
+    required: false
+    type: string
+    description: "Name"
+  slug:
+    required: false
+    type: string
+    description: "Slug"
+  type:
+    required: false
+    type: string
+    description: "* `vpws` - VPWS
+* `vpls` - VPLS
+* `vxlan` - VXLAN
+* `vxlan-evpn` - VXLAN-EVPN
+* `mpls-evpn` - MPLS EVPN
+* `pbb-evpn` - PBB EVPN
+* `epl` - EPL
+* `evpl` - EVPL
+* `ep-lan` - Ethernet Private LAN
+* `evp-lan` - Ethernet Virtual Private LAN
+* `ep-tree` - Ethernet Private Tree
+* `evp-tree` - Ethernet Virtual Private Tree"
+  import_targets:
+    required: false
+    type: array
+    description: "Import targets"
+  export_targets:
+    required: false
+    type: array
+    description: "Export targets"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tenant:
+    required: false
+    type: integer
+    description: "Tenant"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+runner_type: python-script

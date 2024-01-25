@@ -1,0 +1,60 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.7
+description: "Patch a IPSec proposal object."
+enabled: true
+entry_point: run.py
+name: patch.vpn.ipsec_proposals
+parameters:
+  endpoint_uri:
+    default: "/vpn/ipsec-proposals/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  name:
+    required: false
+    type: string
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  encryption_algorithm:
+    required: false
+    type: string
+    description: "Encryption"
+  authentication_algorithm:
+    required: false
+    type: string
+    description: "Authentication"
+  sa_lifetime_seconds:
+    required: false
+    type: integer
+    description: "SA lifetime (seconds)"
+  sa_lifetime_data:
+    required: false
+    type: integer
+    description: "SA lifetime (KB)"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

@@ -1,0 +1,311 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.7
+description: "Get a list of IPSec proposal objects."
+enabled: true
+entry_point: run.py
+name: get.vpn.ipsec_proposals
+parameters:
+  endpoint_uri:
+    default: "/vpn/ipsec-proposals/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  authentication_algorithm:
+    required: false
+    type: array
+    description: "Authentication_algorithm"
+  authentication_algorithm__n:
+    required: false
+    type: array
+    description: "Authentication_algorithm not equal to"
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
+    required: false
+    type: string
+    description: "Created_by_request"
+  description:
+    required: false
+    type: array
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
+    required: false
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  encryption_algorithm:
+    required: false
+    type: array
+    description: "Encryption_algorithm"
+  encryption_algorithm__n:
+    required: false
+    type: array
+    description: "Encryption_algorithm not equal to"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  q:
+    required: false
+    type: string
+    description: "Search"
+  sa_lifetime_data:
+    required: false
+    type: array
+    description: "Sa_lifetime_data"
+  sa_lifetime_data__empty:
+    required: false
+    type: boolean
+    description: "Sa_lifetime_data is empty/null (boolean)"
+  sa_lifetime_data__gt:
+    required: false
+    type: array
+    description: "Sa_lifetime_data greater than"
+  sa_lifetime_data__gte:
+    required: false
+    type: array
+    description: "Sa_lifetime_data greater than or equal to"
+  sa_lifetime_data__lt:
+    required: false
+    type: array
+    description: "Sa_lifetime_data less than"
+  sa_lifetime_data__lte:
+    required: false
+    type: array
+    description: "Sa_lifetime_data less than or equal to"
+  sa_lifetime_data__n:
+    required: false
+    type: array
+    description: "Sa_lifetime_data not equal to"
+  sa_lifetime_seconds:
+    required: false
+    type: array
+    description: "Sa_lifetime_seconds"
+  sa_lifetime_seconds__empty:
+    required: false
+    type: boolean
+    description: "Sa_lifetime_seconds is empty/null (boolean)"
+  sa_lifetime_seconds__gt:
+    required: false
+    type: array
+    description: "Sa_lifetime_seconds greater than"
+  sa_lifetime_seconds__gte:
+    required: false
+    type: array
+    description: "Sa_lifetime_seconds greater than or equal to"
+  sa_lifetime_seconds__lt:
+    required: false
+    type: array
+    description: "Sa_lifetime_seconds less than"
+  sa_lifetime_seconds__lte:
+    required: false
+    type: array
+    description: "Sa_lifetime_seconds less than or equal to"
+  sa_lifetime_seconds__n:
+    required: false
+    type: array
+    description: "Sa_lifetime_seconds not equal to"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script

@@ -1,0 +1,307 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.7
+description: "Get a list of L2VPN termination objects."
+enabled: true
+entry_point: run.py
+name: get.vpn.l2vpn_terminations
+parameters:
+  endpoint_uri:
+    default: "/vpn/l2vpn-terminations/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  assigned_object_type:
+    required: false
+    type: string
+    description: "Assigned_object_type"
+  assigned_object_type__n:
+    required: false
+    type: string
+    description: "Assigned_object_type not equal to"
+  assigned_object_type_id:
+    required: false
+    type: integer
+    description: "Assigned_object_type_id"
+  assigned_object_type_id__n:
+    required: false
+    type: integer
+    description: "Assigned_object_type_id not equal to"
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
+    required: false
+    type: string
+    description: "Created_by_request"
+  device:
+    required: false
+    type: array
+    description: "Device (name)"
+  device__n:
+    required: false
+    type: array
+    description: "Device not equal to"
+  device_id:
+    required: false
+    type: array
+    description: "Device (ID)"
+  device_id__n:
+    required: false
+    type: array
+    description: "Device_id not equal to"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  interface:
+    required: false
+    type: array
+    description: "Interface (name)"
+  interface__n:
+    required: false
+    type: array
+    description: "Interface not equal to"
+  interface_id:
+    required: false
+    type: array
+    description: "Interface (ID)"
+  interface_id__n:
+    required: false
+    type: array
+    description: "Interface_id not equal to"
+  l2vpn:
+    required: false
+    type: array
+    description: "L2VPN (slug)"
+  l2vpn__n:
+    required: false
+    type: array
+    description: "L2vpn not equal to"
+  l2vpn_id:
+    required: false
+    type: array
+    description: "L2VPN (ID)"
+  l2vpn_id__n:
+    required: false
+    type: array
+    description: "L2vpn_id not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  q:
+    required: false
+    type: string
+    description: "Search"
+  region:
+    required: false
+    type: array
+    description: "Region"
+  region_id:
+    required: false
+    type: array
+    description: "Region_id"
+  site:
+    required: false
+    type: array
+    description: "Site"
+  site_id:
+    required: false
+    type: array
+    description: "Site_id"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  virtual_machine:
+    required: false
+    type: array
+    description: "Virtual machine (name)"
+  virtual_machine__n:
+    required: false
+    type: array
+    description: "Virtual_machine not equal to"
+  virtual_machine_id:
+    required: false
+    type: array
+    description: "Virtual machine (ID)"
+  virtual_machine_id__n:
+    required: false
+    type: array
+    description: "Virtual_machine_id not equal to"
+  vlan:
+    required: false
+    type: array
+    description: "VLAN (name)"
+  vlan__n:
+    required: false
+    type: array
+    description: "Vlan not equal to"
+  vlan_id:
+    required: false
+    type: array
+    description: "VLAN (ID)"
+  vlan_id__n:
+    required: false
+    type: array
+    description: "Vlan_id not equal to"
+  vlan_vid:
+    required: false
+    type: integer
+    description: "VLAN number (1-4094)"
+  vlan_vid__empty:
+    required: false
+    type: integer
+    description: "Vlan_vid is empty/null (boolean)"
+  vlan_vid__gt:
+    required: false
+    type: integer
+    description: "Vlan_vid greater than"
+  vlan_vid__gte:
+    required: false
+    type: integer
+    description: "Vlan_vid greater than or equal to"
+  vlan_vid__lt:
+    required: false
+    type: integer
+    description: "Vlan_vid less than"
+  vlan_vid__lte:
+    required: false
+    type: integer
+    description: "Vlan_vid less than or equal to"
+  vlan_vid__n:
+    required: false
+    type: integer
+    description: "Vlan_vid not equal to"
+  vminterface:
+    required: false
+    type: array
+    description: "VM interface (name)"
+  vminterface__n:
+    required: false
+    type: array
+    description: "Vminterface not equal to"
+  vminterface_id:
+    required: false
+    type: array
+    description: "VM Interface (ID)"
+  vminterface_id__n:
+    required: false
+    type: array
+    description: "Vminterface_id not equal to"
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script

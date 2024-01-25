@@ -1,0 +1,69 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.7
+description: "Post a list of tunnel objects."
+enabled: true
+entry_point: run.py
+name: post.vpn.tunnels
+parameters:
+  endpoint_uri:
+    default: "/vpn/tunnels/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  name:
+    required: false
+    type: string
+    description: "Name"
+  status:
+    required: false
+    type: string
+    description: "* `planned` - Planned
+* `active` - Active
+* `disabled` - Disabled"
+  group:
+    required: false
+    type: integer
+    description: "Group"
+  encapsulation:
+    required: false
+    type: string
+    description: "* `ipsec-transport` - IPsec - Transport
+* `ipsec-tunnel` - IPsec - Tunnel
+* `ip-ip` - IP-in-IP
+* `gre` - GRE"
+  ipsec_profile:
+    required: false
+    type: integer
+    description: "Ipsec profile"
+  tenant:
+    required: false
+    type: integer
+    description: "Tenant"
+  tunnel_id:
+    required: false
+    type: integer
+    description: "Tunnel id"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+runner_type: python-script

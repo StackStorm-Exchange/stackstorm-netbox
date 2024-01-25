@@ -1,0 +1,375 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 3.7
+description: "Get a list of event rule objects."
+enabled: true
+entry_point: run.py
+name: get.extras.event_rules
+parameters:
+  endpoint_uri:
+    default: "/extras/event-rules/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  action_object_id:
+    required: false
+    type: array
+    description: "Action_object_id"
+  action_object_id__empty:
+    required: false
+    type: array
+    description: "Action_object_id is empty/null (boolean)"
+  action_object_id__gt:
+    required: false
+    type: array
+    description: "Action_object_id greater than"
+  action_object_id__gte:
+    required: false
+    type: array
+    description: "Action_object_id greater than or equal to"
+  action_object_id__lt:
+    required: false
+    type: array
+    description: "Action_object_id less than"
+  action_object_id__lte:
+    required: false
+    type: array
+    description: "Action_object_id less than or equal to"
+  action_object_id__n:
+    required: false
+    type: array
+    description: "Action_object_id not equal to"
+  action_object_type:
+    required: false
+    type: string
+    description: "Action_object_type"
+  action_object_type__n:
+    required: false
+    type: string
+    description: "Action_object_type not equal to"
+  action_type:
+    required: false
+    type: array
+    description: "Action_type"
+  action_type__n:
+    required: false
+    type: array
+    description: "Action_type not equal to"
+  content_type_id:
+    required: false
+    type: array
+    description: "Content_type_id"
+  content_type_id__empty:
+    required: false
+    type: array
+    description: "Content_type_id is empty/null (boolean)"
+  content_type_id__gt:
+    required: false
+    type: array
+    description: "Content_type_id greater than"
+  content_type_id__gte:
+    required: false
+    type: array
+    description: "Content_type_id greater than or equal to"
+  content_type_id__lt:
+    required: false
+    type: array
+    description: "Content_type_id less than"
+  content_type_id__lte:
+    required: false
+    type: array
+    description: "Content_type_id less than or equal to"
+  content_type_id__n:
+    required: false
+    type: array
+    description: "Content_type_id not equal to"
+  content_types:
+    required: false
+    type: string
+    description: "Content_types"
+  content_types__ic:
+    required: false
+    type: string
+    description: "Content_types contains (case-insensitive)"
+  content_types__ie:
+    required: false
+    type: string
+    description: "Content_types exact match (case-insensitive)"
+  content_types__iew:
+    required: false
+    type: string
+    description: "Content_types ends with (case-insensitive)"
+  content_types__isw:
+    required: false
+    type: string
+    description: "Content_types starts with (case-sensitive)"
+  content_types__n:
+    required: false
+    type: string
+    description: "Content_types not equal to"
+  content_types__nic:
+    required: false
+    type: string
+    description: "Content_types does not contain (case-insensitive)"
+  content_types__nie:
+    required: false
+    type: string
+    description: "Content_types inverse exact match (case-insensitive)"
+  content_types__niew:
+    required: false
+    type: string
+    description: "Content_types does not end with (case-insensitive)"
+  content_types__nisw:
+    required: false
+    type: string
+    description: "Content_types does not start with (case-sensitive)"
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
+    required: false
+    type: string
+    description: "Created_by_request"
+  description:
+    required: false
+    type: array
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
+    required: false
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  enabled:
+    required: false
+    type: boolean
+    description: "Enabled"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  q:
+    required: false
+    type: string
+    description: "Search"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  type_create:
+    required: false
+    type: boolean
+    description: "Type_create"
+  type_delete:
+    required: false
+    type: boolean
+    description: "Type_delete"
+  type_job_end:
+    required: false
+    type: boolean
+    description: "Type_job_end"
+  type_job_start:
+    required: false
+    type: boolean
+    description: "Type_job_start"
+  type_update:
+    required: false
+    type: boolean
+    description: "Type_update"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script
