@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.6
+# NetBox API version: 3.7
 description: "Post a list of device type objects."
 enabled: true
 entry_point: run.py
@@ -41,10 +41,14 @@ parameters:
     required: false
     type: integer
     description: "Position (U)"
+  exclude_from_utilization:
+    required: false
+    type: boolean
+    description: "Devices of this type are excluded when calculating rack utilization."
   is_full_depth:
     required: false
     type: boolean
-    description: "Device consumes both front and rear rack faces"
+    description: "Device consumes both front and rear rack faces."
   subdevice_role:
     required: false
     type: string

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.6
+# NetBox API version: 3.7
 description: "Get a list of device type objects."
 enabled: true
 entry_point: run.py
@@ -129,6 +129,10 @@ parameters:
     required: false
     type: boolean
     description: "Has device bays"
+  exclude_from_utilization:
+    required: false
+    type: boolean
+    description: "Exclude_from_utilization"
   has_front_image:
     required: false
     type: boolean

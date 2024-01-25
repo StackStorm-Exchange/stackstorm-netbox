@@ -1,5 +1,9 @@
 # Change Log
 
+## 3.4.0
+
+- Updated spec as per v3.7.1
+
 ## 3.3.0
 
 - Updated spec as per v3.6.9
@@ -98,4 +102,3 @@
 
 ## 0.1.0
 - First release
-

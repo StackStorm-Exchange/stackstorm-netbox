@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.6
+# NetBox API version: 3.7
 description: "Get a list of custom field objects."
 enabled: true
 entry_point: run.py
@@ -329,14 +329,22 @@ parameters:
     required: false
     type: array
     description: "Type not equal to"
-  ui_visibility:
+  ui_editable:
     required: false
     type: string
-    description: "Specifies the visibility of custom field in the UI"
-  ui_visibility__n:
+    description: "Specifies whether the custom field value can be edited in the UI"
+  ui_editable__n:
     required: false
     type: string
-    description: "Ui_visibility not equal to"
+    description: "Ui_editable not equal to"
+  ui_visible:
+    required: false
+    type: string
+    description: "Specifies whether the custom field is displayed in the UI"
+  ui_visible__n:
+    required: false
+    type: string
+    description: "Ui_visible not equal to"
   weight:
     required: false
     type: array

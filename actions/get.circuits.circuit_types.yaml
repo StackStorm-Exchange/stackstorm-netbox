@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.6
+# NetBox API version: 3.7
 description: "Get a list of circuit type objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,50 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  color:
+    required: false
+    type: array
+    description: "Color"
+  color__empty:
+    required: false
+    type: boolean
+    description: "Color is empty/null (boolean)"
+  color__ic:
+    required: false
+    type: array
+    description: "Color contains (case-insensitive)"
+  color__ie:
+    required: false
+    type: array
+    description: "Color exact match (case-insensitive)"
+  color__iew:
+    required: false
+    type: array
+    description: "Color ends with (case-insensitive)"
+  color__isw:
+    required: false
+    type: array
+    description: "Color starts with (case-sensitive)"
+  color__n:
+    required: false
+    type: array
+    description: "Color not equal to"
+  color__nic:
+    required: false
+    type: array
+    description: "Color does not contain (case-insensitive)"
+  color__nie:
+    required: false
+    type: array
+    description: "Color inverse exact match (case-insensitive)"
+  color__niew:
+    required: false
+    type: array
+    description: "Color does not end with (case-insensitive)"
+  color__nisw:
+    required: false
+    type: array
+    description: "Color does not start with (case-sensitive)"
   created:
     required: false
     type: array

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.6
+# NetBox API version: 3.7
 description: "Patch a custom field object."
 enabled: true
 entry_point: run.py
@@ -75,15 +75,22 @@ parameters:
 * `disabled` - Disabled
 * `loose` - Loose
 * `exact` - Exact"
-  ui_visibility:
+  ui_visible:
     required: false
     type: string
-    description: "Specifies the visibility of custom field in the UI
+    description: "Specifies whether the custom field is displayed in the UI
 
-* `read-write` - Read/write
-* `read-only` - Read-only
-* `hidden` - Hidden
-* `hidden-ifunset` - Hidden (if unset)"
+* `always` - Always
+* `if-set` - If set
+* `hidden` - Hidden"
+  ui_editable:
+    required: false
+    type: string
+    description: "Specifies whether the custom field value can be edited in the UI
+
+* `yes` - Yes
+* `no` - No
+* `hidden` - Hidden"
   is_cloneable:
     required: false
     type: boolean

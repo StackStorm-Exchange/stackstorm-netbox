@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.6
-description: "Get a list of L2VPN objects."
+# NetBox API version: 3.7
+description: "Get a list of event rule objects."
 enabled: true
 entry_point: run.py
-name: get.ipam.l2vpns
+name: get.extras.event_rules
 parameters:
   endpoint_uri:
-    default: "/ipam/l2vpns/"
+    default: "/extras/event-rules/"
     immutable: true
     type: string
   http_verb:
@@ -17,6 +17,118 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  action_object_id:
+    required: false
+    type: array
+    description: "Action_object_id"
+  action_object_id__empty:
+    required: false
+    type: array
+    description: "Action_object_id is empty/null (boolean)"
+  action_object_id__gt:
+    required: false
+    type: array
+    description: "Action_object_id greater than"
+  action_object_id__gte:
+    required: false
+    type: array
+    description: "Action_object_id greater than or equal to"
+  action_object_id__lt:
+    required: false
+    type: array
+    description: "Action_object_id less than"
+  action_object_id__lte:
+    required: false
+    type: array
+    description: "Action_object_id less than or equal to"
+  action_object_id__n:
+    required: false
+    type: array
+    description: "Action_object_id not equal to"
+  action_object_type:
+    required: false
+    type: string
+    description: "Action_object_type"
+  action_object_type__n:
+    required: false
+    type: string
+    description: "Action_object_type not equal to"
+  action_type:
+    required: false
+    type: array
+    description: "Action_type"
+  action_type__n:
+    required: false
+    type: array
+    description: "Action_type not equal to"
+  content_type_id:
+    required: false
+    type: array
+    description: "Content_type_id"
+  content_type_id__empty:
+    required: false
+    type: array
+    description: "Content_type_id is empty/null (boolean)"
+  content_type_id__gt:
+    required: false
+    type: array
+    description: "Content_type_id greater than"
+  content_type_id__gte:
+    required: false
+    type: array
+    description: "Content_type_id greater than or equal to"
+  content_type_id__lt:
+    required: false
+    type: array
+    description: "Content_type_id less than"
+  content_type_id__lte:
+    required: false
+    type: array
+    description: "Content_type_id less than or equal to"
+  content_type_id__n:
+    required: false
+    type: array
+    description: "Content_type_id not equal to"
+  content_types:
+    required: false
+    type: string
+    description: "Content_types"
+  content_types__ic:
+    required: false
+    type: string
+    description: "Content_types contains (case-insensitive)"
+  content_types__ie:
+    required: false
+    type: string
+    description: "Content_types exact match (case-insensitive)"
+  content_types__iew:
+    required: false
+    type: string
+    description: "Content_types ends with (case-insensitive)"
+  content_types__isw:
+    required: false
+    type: string
+    description: "Content_types starts with (case-sensitive)"
+  content_types__n:
+    required: false
+    type: string
+    description: "Content_types not equal to"
+  content_types__nic:
+    required: false
+    type: string
+    description: "Content_types does not contain (case-insensitive)"
+  content_types__nie:
+    required: false
+    type: string
+    description: "Content_types inverse exact match (case-insensitive)"
+  content_types__niew:
+    required: false
+    type: string
+    description: "Content_types does not end with (case-insensitive)"
+  content_types__nisw:
+    required: false
+    type: string
+    description: "Content_types does not start with (case-sensitive)"
   created:
     required: false
     type: array
@@ -93,22 +205,10 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
-  export_target:
+  enabled:
     required: false
-    type: array
-    description: "Export target (name)"
-  export_target__n:
-    required: false
-    type: array
-    description: "Export_target not equal to"
-  export_target_id:
-    required: false
-    type: array
-    description: "Export target"
-  export_target_id__n:
-    required: false
-    type: array
-    description: "Export_target_id not equal to"
+    type: boolean
+    description: "Enabled"
   id:
     required: false
     type: array
@@ -137,50 +237,6 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
-  identifier:
-    required: false
-    type: array
-    description: "Identifier"
-  identifier__empty:
-    required: false
-    type: boolean
-    description: "Identifier is empty/null (boolean)"
-  identifier__gt:
-    required: false
-    type: array
-    description: "Identifier greater than"
-  identifier__gte:
-    required: false
-    type: array
-    description: "Identifier greater than or equal to"
-  identifier__lt:
-    required: false
-    type: array
-    description: "Identifier less than"
-  identifier__lte:
-    required: false
-    type: array
-    description: "Identifier less than or equal to"
-  identifier__n:
-    required: false
-    type: array
-    description: "Identifier not equal to"
-  import_target:
-    required: false
-    type: array
-    description: "Import target (name)"
-  import_target__n:
-    required: false
-    type: array
-    description: "Import_target not equal to"
-  import_target_id:
-    required: false
-    type: array
-    description: "Import target"
-  import_target_id__n:
-    required: false
-    type: array
-    description: "Import_target_id not equal to"
   last_updated:
     required: false
     type: array
@@ -273,50 +329,6 @@ parameters:
     required: false
     type: string
     description: "Search"
-  slug:
-    required: false
-    type: array
-    description: "Slug"
-  slug__empty:
-    required: false
-    type: boolean
-    description: "Slug is empty/null (boolean)"
-  slug__ic:
-    required: false
-    type: array
-    description: "Slug contains (case-insensitive)"
-  slug__ie:
-    required: false
-    type: array
-    description: "Slug exact match (case-insensitive)"
-  slug__iew:
-    required: false
-    type: array
-    description: "Slug ends with (case-insensitive)"
-  slug__isw:
-    required: false
-    type: array
-    description: "Slug starts with (case-sensitive)"
-  slug__n:
-    required: false
-    type: array
-    description: "Slug not equal to"
-  slug__nic:
-    required: false
-    type: array
-    description: "Slug does not contain (case-insensitive)"
-  slug__nie:
-    required: false
-    type: array
-    description: "Slug inverse exact match (case-insensitive)"
-  slug__niew:
-    required: false
-    type: array
-    description: "Slug does not end with (case-insensitive)"
-  slug__nisw:
-    required: false
-    type: array
-    description: "Slug does not start with (case-sensitive)"
   tag:
     required: false
     type: array
@@ -325,46 +337,26 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
-  tenant:
+  type_create:
     required: false
-    type: array
-    description: "Tenant (slug)"
-  tenant__n:
+    type: boolean
+    description: "Type_create"
+  type_delete:
     required: false
-    type: array
-    description: "Tenant not equal to"
-  tenant_group:
+    type: boolean
+    description: "Type_delete"
+  type_job_end:
     required: false
-    type: array
-    description: "Tenant Group (slug)"
-  tenant_group__n:
+    type: boolean
+    description: "Type_job_end"
+  type_job_start:
     required: false
-    type: array
-    description: "Tenant_group not equal to"
-  tenant_group_id:
+    type: boolean
+    description: "Type_job_start"
+  type_update:
     required: false
-    type: array
-    description: "Tenant Group (ID)"
-  tenant_group_id__n:
-    required: false
-    type: array
-    description: "Tenant_group_id not equal to"
-  tenant_id:
-    required: false
-    type: array
-    description: "Tenant (ID)"
-  tenant_id__n:
-    required: false
-    type: array
-    description: "Tenant_id not equal to"
-  type:
-    required: false
-    type: array
-    description: "Type"
-  type__n:
-    required: false
-    type: array
-    description: "Type not equal to"
+    type: boolean
+    description: "Type_update"
   updated_by_request:
     required: false
     type: string

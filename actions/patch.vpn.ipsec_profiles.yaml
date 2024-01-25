@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.6
-description: "Patch a L2VPN termination object."
+# NetBox API version: 3.7
+description: "Patch a IPSec profile object."
 enabled: true
 entry_point: run.py
-name: patch.ipam.l2vpn_terminations
+name: patch.vpn.ipsec_profiles
 parameters:
   endpoint_uri:
-    default: "/ipam/l2vpn-terminations/{{ id }}/"
+    default: "/vpn/ipsec-profiles/{{ id }}/"
     immutable: true
     type: string
   http_verb:
@@ -17,18 +17,31 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  l2vpn:
-    required: false
-    type: integer
-    description: "L2vpn"
-  assigned_object_type:
+  name:
     required: false
     type: string
-    description: "Assigned object type"
-  assigned_object_id:
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  mode:
+    required: false
+    type: string
+    description: "* `esp` - ESP
+* `ah` - AH"
+  ike_policy:
     required: false
     type: integer
-    description: "Assigned object id"
+    description: "Ike policy"
+  ipsec_policy:
+    required: false
+    type: integer
+    description: "Ipsec policy"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
   tags:
     required: false
     type: array
