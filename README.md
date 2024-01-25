@@ -77,7 +77,7 @@ pip install -r requirements.txt
 2. Change to `bin` directory and run the `generate.py` script:
 ```shell
 cd bin
-python generate.py --host https://demo.netbox.dev
+python generate.py --url https://demo.netbox.dev
 ```
 
 3. Update the `CHANGES.md` file with the new version of NetBox that was used to generate the pack.

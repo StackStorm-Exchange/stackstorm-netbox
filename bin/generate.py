@@ -225,7 +225,7 @@ def main():
     """
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '--host',
+        '--url',
         type=str,
         default='https://demo.netbox.dev',
         help='NetBox hostname'
@@ -238,11 +238,11 @@ def main():
     )
 
     args = parser.parse_args()
-    host = str(args.host).rstrip('/')
+    url = str(args.url).rstrip('/')
 
     try:
-        print(f'Connecting to {host}...')
-        response = requests.get(f'{host}/api/schema?format=json', verify=args.skip_ssl)
+        print(f'Connecting to {url}...')
+        response = requests.get(f'{url}/api/schema?format=json', verify=args.skip_ssl)
         response.raise_for_status()
         spec = response.json()
     except requests.RequestException as e:
