@@ -62,3 +62,32 @@ http://<ip-address>:<port>/netbox/webhooks/
 ```
 
 **Note:** the sensor does not support HTTPS but this could be accomplished by fronting the sensor with Nginx/Apache/etc, which would terminate the SSL connection and then proxy the request to the sensor over HTTP.
+
+# How to update the pack
+
+The pack is auto generated from the NetBox OpenAPI (Swagger) spec file. To update the pack, follow these steps:
+
+1. Create a virtual environment and install the required dependencies:
+```shell
+virtualenv -p python3 venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+2. Change to `bin` directory and run the `generate.py` script:
+```shell
+cd bin
+python generate.py --url https://demo.netbox.dev
+```
+
+3. Update the `CHANGES.md` file with the new version of NetBox that was used to generate the pack.
+4. Update the `pack.yaml` file with the new version of NetBox that was used to generate the pack.
+5. Commit the changes and create a pull request.
+6. Once the pull request is merged, a new version of the pack will be released to the StackStorm Exchange.
+
+## Maintainers
+
+Active pack maintainers with review & write repository access and expertise with Netbox:
+
+  - John Anderson <lampwins@gmail.com> @lampwins
+  - Abhimanyu Saharan <asaharan@onemindservices.com> @abhi1693
