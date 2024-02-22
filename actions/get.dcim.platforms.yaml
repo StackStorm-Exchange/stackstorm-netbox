@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  available_for_device_type:
+    required: false
+    type: string
+    description: "Available_for_device_type"
   config_template_id:
     required: false
     type: array
