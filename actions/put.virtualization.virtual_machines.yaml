@@ -82,6 +82,10 @@ parameters:
     required: false
     type: string
     description: "Comments"
+  config_template:
+    required: false
+    type: integer
+    description: "Config template"
   local_context_data:
     required: false
     type: object

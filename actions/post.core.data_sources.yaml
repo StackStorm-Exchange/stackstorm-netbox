@@ -49,4 +49,8 @@ parameters:
     required: false
     type: string
     description: "Patterns (one per line) matching files to ignore when syncing"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
 runner_type: python-script

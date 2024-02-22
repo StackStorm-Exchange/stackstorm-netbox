@@ -57,7 +57,7 @@ parameters:
   mark_utilized:
     required: false
     type: boolean
-    description: "Treat as 100% utilized"
+    description: "Treat as fully utilized"
   description:
     required: false
     type: string

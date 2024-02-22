@@ -49,6 +49,10 @@ parameters:
     required: false
     type: string
     description: "Date joined"
+  last_login:
+    required: false
+    type: string
+    description: "Last login"
   groups:
     required: false
     type: array
