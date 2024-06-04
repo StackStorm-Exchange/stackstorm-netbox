@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of IPSec policy objects."
 enabled: true
 entry_point: run.py
@@ -121,6 +121,22 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  ipsec_proposal:
+    required: false
+    type: array
+    description: "Ipsec_proposal"
+  ipsec_proposal__n:
+    required: false
+    type: array
+    description: "Ipsec_proposal not equal to"
+  ipsec_proposal_id:
+    required: false
+    type: array
+    description: "Ipsec_proposal_id"
+  ipsec_proposal_id__n:
+    required: false
+    type: array
+    description: "Ipsec_proposal_id not equal to"
   last_updated:
     required: false
     type: array
@@ -221,70 +237,14 @@ parameters:
     required: false
     type: array
     description: "Proposal"
-  proposal__empty:
-    required: false
-    type: boolean
-    description: "Proposal is empty/null (boolean)"
-  proposal__ic:
-    required: false
-    type: array
-    description: "Proposal contains (case-insensitive)"
-  proposal__ie:
-    required: false
-    type: array
-    description: "Proposal exact match (case-insensitive)"
-  proposal__iew:
-    required: false
-    type: array
-    description: "Proposal ends with (case-insensitive)"
-  proposal__isw:
-    required: false
-    type: array
-    description: "Proposal starts with (case-sensitive)"
   proposal__n:
     required: false
     type: array
     description: "Proposal not equal to"
-  proposal__nic:
-    required: false
-    type: array
-    description: "Proposal does not contain (case-insensitive)"
-  proposal__nie:
-    required: false
-    type: array
-    description: "Proposal inverse exact match (case-insensitive)"
-  proposal__niew:
-    required: false
-    type: array
-    description: "Proposal does not end with (case-insensitive)"
-  proposal__nisw:
-    required: false
-    type: array
-    description: "Proposal does not start with (case-sensitive)"
   proposal_id:
     required: false
     type: array
     description: "Proposal_id"
-  proposal_id__empty:
-    required: false
-    type: array
-    description: "Proposal_id is empty/null (boolean)"
-  proposal_id__gt:
-    required: false
-    type: array
-    description: "Proposal_id greater than"
-  proposal_id__gte:
-    required: false
-    type: array
-    description: "Proposal_id greater than or equal to"
-  proposal_id__lt:
-    required: false
-    type: array
-    description: "Proposal_id less than"
-  proposal_id__lte:
-    required: false
-    type: array
-    description: "Proposal_id less than or equal to"
   proposal_id__n:
     required: false
     type: array

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a interface object."
 enabled: true
 entry_point: run.py
@@ -19,7 +19,7 @@ parameters:
     type: boolean
   virtual_machine:
     required: false
-    type: integer
+    type: object
     description: "Virtual machine"
   name:
     required: false
@@ -59,7 +59,7 @@ parameters:
 * `tagged-all` - Tagged (All)"
   untagged_vlan:
     required: false
-    type: integer
+    type: object
     description: "Untagged vlan"
   tagged_vlans:
     required: false
@@ -67,7 +67,7 @@ parameters:
     description: "Tagged vlans"
   vrf:
     required: false
-    type: integer
+    type: object
     description: "Vrf"
   tags:
     required: false

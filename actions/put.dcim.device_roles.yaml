@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a device role object."
 enabled: true
 entry_point: run.py
@@ -35,7 +35,7 @@ parameters:
     description: "Virtual machines may be assigned to this role"
   config_template:
     required: false
-    type: integer
+    type: object
     description: "Config template"
   description:
     required: false

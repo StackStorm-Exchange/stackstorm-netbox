@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of circuit objects."
 enabled: true
 entry_point: run.py
@@ -297,6 +297,14 @@ parameters:
     required: false
     type: array
     description: "Provider not equal to"
+  provider_account:
+    required: false
+    type: array
+    description: "Provider account (account)"
+  provider_account__n:
+    required: false
+    type: array
+    description: "Provider_account not equal to"
   provider_account_id:
     required: false
     type: array
@@ -421,6 +429,14 @@ parameters:
     required: false
     type: array
     description: "Tenant_id not equal to"
+  termination_a_id:
+    required: false
+    type: array
+    description: "Termination A (ID)"
+  termination_a_id__n:
+    required: false
+    type: array
+    description: "Termination_a_id not equal to"
   termination_date:
     required: false
     type: array
@@ -449,6 +465,14 @@ parameters:
     required: false
     type: array
     description: "Termination_date not equal to"
+  termination_z_id:
+    required: false
+    type: array
+    description: "Termination A (ID)"
+  termination_z_id__n:
+    required: false
+    type: array
+    description: "Termination_z_id not equal to"
   type:
     required: false
     type: array

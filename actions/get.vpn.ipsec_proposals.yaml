@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of IPSec proposal objects."
 enabled: true
 entry_point: run.py
@@ -137,6 +137,22 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  ipsec_policy:
+    required: false
+    type: array
+    description: "IPSec policy (name)"
+  ipsec_policy__n:
+    required: false
+    type: array
+    description: "Ipsec_policy not equal to"
+  ipsec_policy_id:
+    required: false
+    type: array
+    description: "IPSec policy (ID)"
+  ipsec_policy_id__n:
+    required: false
+    type: array
+    description: "Ipsec_policy_id not equal to"
   last_updated:
     required: false
     type: array

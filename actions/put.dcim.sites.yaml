@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a site object."
 enabled: true
 entry_point: run.py
@@ -35,15 +35,15 @@ parameters:
 * `retired` - Retired"
   region:
     required: false
-    type: integer
+    type: object
     description: "Region"
   group:
     required: false
-    type: integer
+    type: object
     description: "Group"
   tenant:
     required: false
-    type: integer
+    type: object
     description: "Tenant"
   facility:
     required: false

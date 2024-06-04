@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of cable objects."
 enabled: true
 entry_point: run.py
@@ -260,7 +260,12 @@ parameters:
   length_unit:
     required: false
     type: string
-    description: "Length_unit"
+    description: "* `km` - Kilometers
+* `m` - Meters
+* `cm` - Centimeters
+* `mi` - Miles
+* `ft` - Feet
+* `in` - Inches"
   length_unit__n:
     required: false
     type: string

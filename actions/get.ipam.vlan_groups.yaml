@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of VLAN group objects."
 enabled: true
 entry_point: run.py
@@ -21,6 +21,10 @@ parameters:
     required: false
     type: integer
     description: "Cluster"
+  cluster_group:
+    required: false
+    type: integer
+    description: "Cluster_group"
   clustergroup:
     required: false
     type: integer
@@ -329,6 +333,10 @@ parameters:
     required: false
     type: integer
     description: "Site"
+  site_group:
+    required: false
+    type: integer
+    description: "Site_group"
   sitegroup:
     required: false
     type: integer

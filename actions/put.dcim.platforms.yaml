@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a platform object."
 enabled: true
 entry_point: run.py
@@ -25,26 +25,10 @@ parameters:
     required: false
     type: string
     description: "Slug"
-  manufacturer:
-    required: false
-    type: integer
-    description: "Optionally limit this platform to devices of a certain manufacturer"
-  config_template:
-    required: false
-    type: integer
-    description: "Config template"
   description:
     required: false
     type: string
     description: "Description"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
   id:
     required: true
     type: integer

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of location objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,22 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  ancestor:
+    required: false
+    type: array
+    description: "Location (slug)"
+  ancestor__n:
+    required: false
+    type: array
+    description: "Ancestor not equal to"
+  ancestor_id:
+    required: false
+    type: array
+    description: "Location (ID)"
+  ancestor_id__n:
+    required: false
+    type: array
+    description: "Ancestor_id not equal to"
   contact:
     required: false
     type: array
@@ -117,6 +133,50 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  facility:
+    required: false
+    type: array
+    description: "Facility"
+  facility__empty:
+    required: false
+    type: boolean
+    description: "Facility is empty/null (boolean)"
+  facility__ic:
+    required: false
+    type: array
+    description: "Facility contains (case-insensitive)"
+  facility__ie:
+    required: false
+    type: array
+    description: "Facility exact match (case-insensitive)"
+  facility__iew:
+    required: false
+    type: array
+    description: "Facility ends with (case-insensitive)"
+  facility__isw:
+    required: false
+    type: array
+    description: "Facility starts with (case-sensitive)"
+  facility__n:
+    required: false
+    type: array
+    description: "Facility not equal to"
+  facility__nic:
+    required: false
+    type: array
+    description: "Facility does not contain (case-insensitive)"
+  facility__nie:
+    required: false
+    type: array
+    description: "Facility inverse exact match (case-insensitive)"
+  facility__niew:
+    required: false
+    type: array
+    description: "Facility does not end with (case-insensitive)"
+  facility__nisw:
+    required: false
+    type: array
+    description: "Facility does not start with (case-sensitive)"
   id:
     required: false
     type: array
@@ -236,7 +296,7 @@ parameters:
   parent:
     required: false
     type: array
-    description: "Location (slug)"
+    description: "Parent location (slug)"
   parent__n:
     required: false
     type: array
@@ -244,7 +304,7 @@ parameters:
   parent_id:
     required: false
     type: array
-    description: "Location (ID)"
+    description: "Parent location (ID)"
   parent_id__n:
     required: false
     type: array

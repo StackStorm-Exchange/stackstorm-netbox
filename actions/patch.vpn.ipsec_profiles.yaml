@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Patch a IPSec profile object."
 enabled: true
 entry_point: run.py
@@ -32,11 +32,11 @@ parameters:
 * `ah` - AH"
   ike_policy:
     required: false
-    type: integer
+    type: object
     description: "Ike policy"
   ipsec_policy:
     required: false
-    type: integer
+    type: object
     description: "Ipsec policy"
   comments:
     required: false

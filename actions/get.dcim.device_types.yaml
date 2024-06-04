@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of device type objects."
 enabled: true
 entry_point: run.py
@@ -20,15 +20,77 @@ parameters:
   airflow:
     required: false
     type: string
-    description: "Airflow"
+    description: "* `front-to-rear` - Front to rear
+* `rear-to-front` - Rear to front
+* `left-to-right` - Left to right
+* `right-to-left` - Right to left
+* `side-to-rear` - Side to rear
+* `passive` - Passive
+* `mixed` - Mixed"
   airflow__n:
     required: false
     type: string
     description: "Airflow not equal to"
+  console_port_template_count:
+    required: false
+    type: array
+    description: "Console_port_template_count"
+  console_port_template_count__empty:
+    required: false
+    type: boolean
+    description: "Console_port_template_count is empty/null (boolean)"
+  console_port_template_count__gt:
+    required: false
+    type: array
+    description: "Console_port_template_count greater than"
+  console_port_template_count__gte:
+    required: false
+    type: array
+    description: "Console_port_template_count greater than or equal to"
+  console_port_template_count__lt:
+    required: false
+    type: array
+    description: "Console_port_template_count less than"
+  console_port_template_count__lte:
+    required: false
+    type: array
+    description: "Console_port_template_count less than or equal to"
+  console_port_template_count__n:
+    required: false
+    type: array
+    description: "Console_port_template_count not equal to"
   console_ports:
     required: false
     type: boolean
     description: "Has console ports"
+  console_server_port_template_count:
+    required: false
+    type: array
+    description: "Console_server_port_template_count"
+  console_server_port_template_count__empty:
+    required: false
+    type: boolean
+    description: "Console_server_port_template_count is empty/null (boolean)"
+  console_server_port_template_count__gt:
+    required: false
+    type: array
+    description: "Console_server_port_template_count greater than"
+  console_server_port_template_count__gte:
+    required: false
+    type: array
+    description: "Console_server_port_template_count greater than or equal to"
+  console_server_port_template_count__lt:
+    required: false
+    type: array
+    description: "Console_server_port_template_count less than"
+  console_server_port_template_count__lte:
+    required: false
+    type: array
+    description: "Console_server_port_template_count less than or equal to"
+  console_server_port_template_count__n:
+    required: false
+    type: array
+    description: "Console_server_port_template_count not equal to"
   console_server_ports:
     required: false
     type: boolean
@@ -125,6 +187,34 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  device_bay_template_count:
+    required: false
+    type: array
+    description: "Device_bay_template_count"
+  device_bay_template_count__empty:
+    required: false
+    type: boolean
+    description: "Device_bay_template_count is empty/null (boolean)"
+  device_bay_template_count__gt:
+    required: false
+    type: array
+    description: "Device_bay_template_count greater than"
+  device_bay_template_count__gte:
+    required: false
+    type: array
+    description: "Device_bay_template_count greater than or equal to"
+  device_bay_template_count__lt:
+    required: false
+    type: array
+    description: "Device_bay_template_count less than"
+  device_bay_template_count__lte:
+    required: false
+    type: array
+    description: "Device_bay_template_count less than or equal to"
+  device_bay_template_count__n:
+    required: false
+    type: array
+    description: "Device_bay_template_count not equal to"
   device_bays:
     required: false
     type: boolean
@@ -133,6 +223,34 @@ parameters:
     required: false
     type: boolean
     description: "Exclude_from_utilization"
+  front_port_template_count:
+    required: false
+    type: array
+    description: "Front_port_template_count"
+  front_port_template_count__empty:
+    required: false
+    type: boolean
+    description: "Front_port_template_count is empty/null (boolean)"
+  front_port_template_count__gt:
+    required: false
+    type: array
+    description: "Front_port_template_count greater than"
+  front_port_template_count__gte:
+    required: false
+    type: array
+    description: "Front_port_template_count greater than or equal to"
+  front_port_template_count__lt:
+    required: false
+    type: array
+    description: "Front_port_template_count less than"
+  front_port_template_count__lte:
+    required: false
+    type: array
+    description: "Front_port_template_count less than or equal to"
+  front_port_template_count__n:
+    required: false
+    type: array
+    description: "Front_port_template_count not equal to"
   has_front_image:
     required: false
     type: boolean
@@ -169,10 +287,66 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  interface_template_count:
+    required: false
+    type: array
+    description: "Interface_template_count"
+  interface_template_count__empty:
+    required: false
+    type: boolean
+    description: "Interface_template_count is empty/null (boolean)"
+  interface_template_count__gt:
+    required: false
+    type: array
+    description: "Interface_template_count greater than"
+  interface_template_count__gte:
+    required: false
+    type: array
+    description: "Interface_template_count greater than or equal to"
+  interface_template_count__lt:
+    required: false
+    type: array
+    description: "Interface_template_count less than"
+  interface_template_count__lte:
+    required: false
+    type: array
+    description: "Interface_template_count less than or equal to"
+  interface_template_count__n:
+    required: false
+    type: array
+    description: "Interface_template_count not equal to"
   interfaces:
     required: false
     type: boolean
     description: "Has interfaces"
+  inventory_item_template_count:
+    required: false
+    type: array
+    description: "Inventory_item_template_count"
+  inventory_item_template_count__empty:
+    required: false
+    type: boolean
+    description: "Inventory_item_template_count is empty/null (boolean)"
+  inventory_item_template_count__gt:
+    required: false
+    type: array
+    description: "Inventory_item_template_count greater than"
+  inventory_item_template_count__gte:
+    required: false
+    type: array
+    description: "Inventory_item_template_count greater than or equal to"
+  inventory_item_template_count__lt:
+    required: false
+    type: array
+    description: "Inventory_item_template_count less than"
+  inventory_item_template_count__lte:
+    required: false
+    type: array
+    description: "Inventory_item_template_count less than or equal to"
+  inventory_item_template_count__n:
+    required: false
+    type: array
+    description: "Inventory_item_template_count not equal to"
   inventory_items:
     required: false
     type: boolean
@@ -277,6 +451,34 @@ parameters:
     required: false
     type: string
     description: "Modified_by_request"
+  module_bay_template_count:
+    required: false
+    type: array
+    description: "Module_bay_template_count"
+  module_bay_template_count__empty:
+    required: false
+    type: boolean
+    description: "Module_bay_template_count is empty/null (boolean)"
+  module_bay_template_count__gt:
+    required: false
+    type: array
+    description: "Module_bay_template_count greater than"
+  module_bay_template_count__gte:
+    required: false
+    type: array
+    description: "Module_bay_template_count greater than or equal to"
+  module_bay_template_count__lt:
+    required: false
+    type: array
+    description: "Module_bay_template_count less than"
+  module_bay_template_count__lte:
+    required: false
+    type: array
+    description: "Module_bay_template_count less than or equal to"
+  module_bay_template_count__n:
+    required: false
+    type: array
+    description: "Module_bay_template_count not equal to"
   module_bays:
     required: false
     type: boolean
@@ -337,10 +539,66 @@ parameters:
     required: false
     type: boolean
     description: "Has pass-through ports"
+  power_outlet_template_count:
+    required: false
+    type: array
+    description: "Power_outlet_template_count"
+  power_outlet_template_count__empty:
+    required: false
+    type: boolean
+    description: "Power_outlet_template_count is empty/null (boolean)"
+  power_outlet_template_count__gt:
+    required: false
+    type: array
+    description: "Power_outlet_template_count greater than"
+  power_outlet_template_count__gte:
+    required: false
+    type: array
+    description: "Power_outlet_template_count greater than or equal to"
+  power_outlet_template_count__lt:
+    required: false
+    type: array
+    description: "Power_outlet_template_count less than"
+  power_outlet_template_count__lte:
+    required: false
+    type: array
+    description: "Power_outlet_template_count less than or equal to"
+  power_outlet_template_count__n:
+    required: false
+    type: array
+    description: "Power_outlet_template_count not equal to"
   power_outlets:
     required: false
     type: boolean
     description: "Has power outlets"
+  power_port_template_count:
+    required: false
+    type: array
+    description: "Power_port_template_count"
+  power_port_template_count__empty:
+    required: false
+    type: boolean
+    description: "Power_port_template_count is empty/null (boolean)"
+  power_port_template_count__gt:
+    required: false
+    type: array
+    description: "Power_port_template_count greater than"
+  power_port_template_count__gte:
+    required: false
+    type: array
+    description: "Power_port_template_count greater than or equal to"
+  power_port_template_count__lt:
+    required: false
+    type: array
+    description: "Power_port_template_count less than"
+  power_port_template_count__lte:
+    required: false
+    type: array
+    description: "Power_port_template_count less than or equal to"
+  power_port_template_count__n:
+    required: false
+    type: array
+    description: "Power_port_template_count not equal to"
   power_ports:
     required: false
     type: boolean
@@ -349,6 +607,34 @@ parameters:
     required: false
     type: string
     description: "Search"
+  rear_port_template_count:
+    required: false
+    type: array
+    description: "Rear_port_template_count"
+  rear_port_template_count__empty:
+    required: false
+    type: boolean
+    description: "Rear_port_template_count is empty/null (boolean)"
+  rear_port_template_count__gt:
+    required: false
+    type: array
+    description: "Rear_port_template_count greater than"
+  rear_port_template_count__gte:
+    required: false
+    type: array
+    description: "Rear_port_template_count greater than or equal to"
+  rear_port_template_count__lt:
+    required: false
+    type: array
+    description: "Rear_port_template_count less than"
+  rear_port_template_count__lte:
+    required: false
+    type: array
+    description: "Rear_port_template_count less than or equal to"
+  rear_port_template_count__n:
+    required: false
+    type: array
+    description: "Rear_port_template_count not equal to"
   slug:
     required: false
     type: array
@@ -396,7 +682,10 @@ parameters:
   subdevice_role:
     required: false
     type: string
-    description: "Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child."
+    description: "Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child.
+
+* `parent` - Parent
+* `child` - Child"
   subdevice_role__n:
     required: false
     type: string
@@ -472,7 +761,10 @@ parameters:
   weight_unit:
     required: false
     type: string
-    description: "Weight_unit"
+    description: "* `kg` - Kilograms
+* `g` - Grams
+* `lb` - Pounds
+* `oz` - Ounces"
   weight_unit__n:
     required: false
     type: string

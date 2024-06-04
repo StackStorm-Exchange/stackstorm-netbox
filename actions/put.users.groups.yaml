@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a group object."
 enabled: true
 entry_point: run.py
@@ -21,6 +21,14 @@ parameters:
     required: false
     type: string
     description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  permissions:
+    required: false
+    type: array
+    description: "Permissions"
   id:
     required: true
     type: integer

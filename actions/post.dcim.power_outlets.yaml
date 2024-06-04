@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Post a list of power outlet objects."
 enabled: true
 entry_point: run.py
@@ -19,11 +19,11 @@ parameters:
     type: boolean
   device:
     required: false
-    type: integer
+    type: object
     description: "Device"
   module:
     required: false
-    type: integer
+    type: object
     description: "Module"
   name:
     required: false
@@ -121,6 +121,9 @@ parameters:
 * `usb-a` - USB Type A
 * `usb-micro-b` - USB Micro B
 * `usb-c` - USB Type C
+* `molex-micro-fit-1x2` - Molex Micro-Fit 1x2
+* `molex-micro-fit-2x2` - Molex Micro-Fit 2x2
+* `molex-micro-fit-2x4` - Molex Micro-Fit 2x4
 * `dc-terminal` - DC Terminal
 * `hdot-cx` - HDOT Cx
 * `saf-d-grid` - Saf-D-Grid
@@ -133,7 +136,7 @@ parameters:
 * `other` - Other"
   power_port:
     required: false
-    type: integer
+    type: object
     description: "Power port"
   feed_leg:
     required: false

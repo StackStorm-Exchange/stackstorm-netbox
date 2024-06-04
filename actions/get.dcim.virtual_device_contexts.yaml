@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of virtual device context objects."
 enabled: true
 entry_point: run.py
@@ -141,6 +141,42 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  identifier:
+    required: false
+    type: array
+    description: "Identifier"
+  identifier__empty:
+    required: false
+    type: boolean
+    description: "Identifier is empty/null (boolean)"
+  identifier__gt:
+    required: false
+    type: array
+    description: "Identifier greater than"
+  identifier__gte:
+    required: false
+    type: array
+    description: "Identifier greater than or equal to"
+  identifier__lt:
+    required: false
+    type: array
+    description: "Identifier less than"
+  identifier__lte:
+    required: false
+    type: array
+    description: "Identifier less than or equal to"
+  identifier__n:
+    required: false
+    type: array
+    description: "Identifier not equal to"
+  interface_id:
+    required: false
+    type: array
+    description: "Interface (ID)"
+  interface_id__n:
+    required: false
+    type: array
+    description: "Interface_id not equal to"
   last_updated:
     required: false
     type: array

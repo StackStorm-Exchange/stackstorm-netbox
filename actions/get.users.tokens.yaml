@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of token objects."
 enabled: true
 entry_point: run.py
@@ -157,6 +157,34 @@ parameters:
     required: false
     type: array
     description: "Key does not start with (case-sensitive)"
+  last_used:
+    required: false
+    type: array
+    description: "Last_used"
+  last_used__empty:
+    required: false
+    type: boolean
+    description: "Last_used is empty/null (boolean)"
+  last_used__gt:
+    required: false
+    type: array
+    description: "Last_used greater than"
+  last_used__gte:
+    required: false
+    type: array
+    description: "Last_used greater than or equal to"
+  last_used__lt:
+    required: false
+    type: array
+    description: "Last_used less than"
+  last_used__lte:
+    required: false
+    type: array
+    description: "Last_used less than or equal to"
+  last_used__n:
+    required: false
+    type: array
+    description: "Last_used not equal to"
   limit:
     required: false
     type: integer

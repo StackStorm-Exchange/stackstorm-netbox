@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of ASN range objects."
 enabled: true
 entry_point: run.py
@@ -257,6 +257,50 @@ parameters:
     required: false
     type: array
     description: "Rir_id not equal to"
+  slug:
+    required: false
+    type: array
+    description: "Slug"
+  slug__empty:
+    required: false
+    type: boolean
+    description: "Slug is empty/null (boolean)"
+  slug__ic:
+    required: false
+    type: array
+    description: "Slug contains (case-insensitive)"
+  slug__ie:
+    required: false
+    type: array
+    description: "Slug exact match (case-insensitive)"
+  slug__iew:
+    required: false
+    type: array
+    description: "Slug ends with (case-insensitive)"
+  slug__isw:
+    required: false
+    type: array
+    description: "Slug starts with (case-sensitive)"
+  slug__n:
+    required: false
+    type: array
+    description: "Slug not equal to"
+  slug__nic:
+    required: false
+    type: array
+    description: "Slug does not contain (case-insensitive)"
+  slug__nie:
+    required: false
+    type: array
+    description: "Slug inverse exact match (case-insensitive)"
+  slug__niew:
+    required: false
+    type: array
+    description: "Slug does not end with (case-insensitive)"
+  slug__nisw:
+    required: false
+    type: array
+    description: "Slug does not start with (case-sensitive)"
   start:
     required: false
     type: array

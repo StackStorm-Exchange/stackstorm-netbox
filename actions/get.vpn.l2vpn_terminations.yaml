@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of L2VPN termination objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,34 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  assigned_object_id:
+    required: false
+    type: array
+    description: "Assigned_object_id"
+  assigned_object_id__empty:
+    required: false
+    type: boolean
+    description: "Assigned_object_id is empty/null (boolean)"
+  assigned_object_id__gt:
+    required: false
+    type: array
+    description: "Assigned_object_id greater than"
+  assigned_object_id__gte:
+    required: false
+    type: array
+    description: "Assigned_object_id greater than or equal to"
+  assigned_object_id__lt:
+    required: false
+    type: array
+    description: "Assigned_object_id less than"
+  assigned_object_id__lte:
+    required: false
+    type: array
+    description: "Assigned_object_id less than or equal to"
+  assigned_object_id__n:
+    required: false
+    type: array
+    description: "Assigned_object_id not equal to"
   assigned_object_type:
     required: false
     type: string
@@ -25,14 +53,6 @@ parameters:
     required: false
     type: string
     description: "Assigned_object_type not equal to"
-  assigned_object_type_id:
-    required: false
-    type: integer
-    description: "Assigned_object_type_id"
-  assigned_object_type_id__n:
-    required: false
-    type: integer
-    description: "Assigned_object_type_id not equal to"
   created:
     required: false
     type: array

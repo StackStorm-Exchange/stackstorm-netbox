@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of IKE proposal objects."
 enabled: true
 entry_point: run.py
@@ -153,6 +153,22 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  ike_policy:
+    required: false
+    type: array
+    description: "IKE policy (name)"
+  ike_policy__n:
+    required: false
+    type: array
+    description: "Ike_policy not equal to"
+  ike_policy_id:
+    required: false
+    type: array
+    description: "IKE policy (ID)"
+  ike_policy_id__n:
+    required: false
+    type: array
+    description: "Ike_policy_id not equal to"
   last_updated:
     required: false
     type: array

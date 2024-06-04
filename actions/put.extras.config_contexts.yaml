@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a config context object."
 enabled: true
 entry_point: run.py
@@ -87,8 +87,8 @@ parameters:
     description: "Array of tag strings"
   data_source:
     required: false
-    type: integer
-    description: "Remote data source"
+    type: object
+    description: "Data source"
   data:
     required: false
     type: object

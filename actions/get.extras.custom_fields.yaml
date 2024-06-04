@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of custom field objects."
 enabled: true
 entry_point: run.py
@@ -33,74 +33,38 @@ parameters:
     required: false
     type: array
     description: "Choice_set_id not equal to"
-  content_type_id:
+  created:
     required: false
     type: array
-    description: "Content_type_id"
-  content_type_id__empty:
+    description: "Created"
+  created__empty:
     required: false
     type: array
-    description: "Content_type_id is empty/null (boolean)"
-  content_type_id__gt:
+    description: "Created is empty/null (boolean)"
+  created__gt:
     required: false
     type: array
-    description: "Content_type_id greater than"
-  content_type_id__gte:
+    description: "Created greater than"
+  created__gte:
     required: false
     type: array
-    description: "Content_type_id greater than or equal to"
-  content_type_id__lt:
+    description: "Created greater than or equal to"
+  created__lt:
     required: false
     type: array
-    description: "Content_type_id less than"
-  content_type_id__lte:
+    description: "Created less than"
+  created__lte:
     required: false
     type: array
-    description: "Content_type_id less than or equal to"
-  content_type_id__n:
+    description: "Created less than or equal to"
+  created__n:
     required: false
     type: array
-    description: "Content_type_id not equal to"
-  content_types:
+    description: "Created not equal to"
+  created_by_request:
     required: false
     type: string
-    description: "Content_types"
-  content_types__ic:
-    required: false
-    type: string
-    description: "Content_types contains (case-insensitive)"
-  content_types__ie:
-    required: false
-    type: string
-    description: "Content_types exact match (case-insensitive)"
-  content_types__iew:
-    required: false
-    type: string
-    description: "Content_types ends with (case-insensitive)"
-  content_types__isw:
-    required: false
-    type: string
-    description: "Content_types starts with (case-sensitive)"
-  content_types__n:
-    required: false
-    type: string
-    description: "Content_types not equal to"
-  content_types__nic:
-    required: false
-    type: string
-    description: "Content_types does not contain (case-insensitive)"
-  content_types__nie:
-    required: false
-    type: string
-    description: "Content_types inverse exact match (case-insensitive)"
-  content_types__niew:
-    required: false
-    type: string
-    description: "Content_types does not end with (case-insensitive)"
-  content_types__nisw:
-    required: false
-    type: string
-    description: "Content_types does not start with (case-sensitive)"
+    description: "Created_by_request"
   description:
     required: false
     type: array
@@ -148,7 +112,11 @@ parameters:
   filter_logic:
     required: false
     type: string
-    description: "Loose matches any instance of a given string; exact matches the entire field."
+    description: "Loose matches any instance of a given string; exact matches the entire field.
+
+* `disabled` - Disabled
+* `loose` - Loose
+* `exact` - Exact"
   filter_logic__n:
     required: false
     type: string
@@ -229,10 +197,86 @@ parameters:
     required: false
     type: boolean
     description: "Is_cloneable"
+  label:
+    required: false
+    type: array
+    description: "Label"
+  label__empty:
+    required: false
+    type: boolean
+    description: "Label is empty/null (boolean)"
+  label__ic:
+    required: false
+    type: array
+    description: "Label contains (case-insensitive)"
+  label__ie:
+    required: false
+    type: array
+    description: "Label exact match (case-insensitive)"
+  label__iew:
+    required: false
+    type: array
+    description: "Label ends with (case-insensitive)"
+  label__isw:
+    required: false
+    type: array
+    description: "Label starts with (case-sensitive)"
+  label__n:
+    required: false
+    type: array
+    description: "Label not equal to"
+  label__nic:
+    required: false
+    type: array
+    description: "Label does not contain (case-insensitive)"
+  label__nie:
+    required: false
+    type: array
+    description: "Label inverse exact match (case-insensitive)"
+  label__niew:
+    required: false
+    type: array
+    description: "Label does not end with (case-insensitive)"
+  label__nisw:
+    required: false
+    type: array
+    description: "Label does not start with (case-sensitive)"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
   name:
     required: false
     type: array
@@ -277,6 +321,54 @@ parameters:
     required: false
     type: array
     description: "Name does not start with (case-sensitive)"
+  object_type:
+    required: false
+    type: string
+    description: "Object_type"
+  object_type__ic:
+    required: false
+    type: string
+    description: "Object_type contains (case-insensitive)"
+  object_type__ie:
+    required: false
+    type: string
+    description: "Object_type exact match (case-insensitive)"
+  object_type__iew:
+    required: false
+    type: string
+    description: "Object_type ends with (case-insensitive)"
+  object_type__isw:
+    required: false
+    type: string
+    description: "Object_type starts with (case-sensitive)"
+  object_type__n:
+    required: false
+    type: string
+    description: "Object_type not equal to"
+  object_type__nic:
+    required: false
+    type: string
+    description: "Object_type does not contain (case-insensitive)"
+  object_type__nie:
+    required: false
+    type: string
+    description: "Object_type inverse exact match (case-insensitive)"
+  object_type__niew:
+    required: false
+    type: string
+    description: "Object_type does not end with (case-insensitive)"
+  object_type__nisw:
+    required: false
+    type: string
+    description: "Object_type does not start with (case-sensitive)"
+  object_type_id:
+    required: false
+    type: array
+    description: "Object_type_id"
+  object_type_id__n:
+    required: false
+    type: array
+    description: "Object_type_id not equal to"
   offset:
     required: false
     type: integer
@@ -289,6 +381,22 @@ parameters:
     required: false
     type: string
     description: "Search"
+  related_object_type:
+    required: false
+    type: string
+    description: "Related_object_type"
+  related_object_type__n:
+    required: false
+    type: string
+    description: "Related_object_type not equal to"
+  related_object_type_id:
+    required: false
+    type: array
+    description: "Related_object_type_id"
+  related_object_type_id__n:
+    required: false
+    type: array
+    description: "Related_object_type_id not equal to"
   required:
     required: false
     type: boolean
@@ -332,7 +440,11 @@ parameters:
   ui_editable:
     required: false
     type: string
-    description: "Specifies whether the custom field value can be edited in the UI"
+    description: "Specifies whether the custom field value can be edited in the UI
+
+* `yes` - Yes
+* `no` - No
+* `hidden` - Hidden"
   ui_editable__n:
     required: false
     type: string
@@ -340,11 +452,119 @@ parameters:
   ui_visible:
     required: false
     type: string
-    description: "Specifies whether the custom field is displayed in the UI"
+    description: "Specifies whether the custom field is displayed in the UI
+
+* `always` - Always
+* `if-set` - If set
+* `hidden` - Hidden"
   ui_visible__n:
     required: false
     type: string
     description: "Ui_visible not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  validation_maximum:
+    required: false
+    type: array
+    description: "Validation_maximum"
+  validation_maximum__empty:
+    required: false
+    type: boolean
+    description: "Validation_maximum is empty/null (boolean)"
+  validation_maximum__gt:
+    required: false
+    type: array
+    description: "Validation_maximum greater than"
+  validation_maximum__gte:
+    required: false
+    type: array
+    description: "Validation_maximum greater than or equal to"
+  validation_maximum__lt:
+    required: false
+    type: array
+    description: "Validation_maximum less than"
+  validation_maximum__lte:
+    required: false
+    type: array
+    description: "Validation_maximum less than or equal to"
+  validation_maximum__n:
+    required: false
+    type: array
+    description: "Validation_maximum not equal to"
+  validation_minimum:
+    required: false
+    type: array
+    description: "Validation_minimum"
+  validation_minimum__empty:
+    required: false
+    type: boolean
+    description: "Validation_minimum is empty/null (boolean)"
+  validation_minimum__gt:
+    required: false
+    type: array
+    description: "Validation_minimum greater than"
+  validation_minimum__gte:
+    required: false
+    type: array
+    description: "Validation_minimum greater than or equal to"
+  validation_minimum__lt:
+    required: false
+    type: array
+    description: "Validation_minimum less than"
+  validation_minimum__lte:
+    required: false
+    type: array
+    description: "Validation_minimum less than or equal to"
+  validation_minimum__n:
+    required: false
+    type: array
+    description: "Validation_minimum not equal to"
+  validation_regex:
+    required: false
+    type: array
+    description: "Validation_regex"
+  validation_regex__empty:
+    required: false
+    type: boolean
+    description: "Validation_regex is empty/null (boolean)"
+  validation_regex__ic:
+    required: false
+    type: array
+    description: "Validation_regex contains (case-insensitive)"
+  validation_regex__ie:
+    required: false
+    type: array
+    description: "Validation_regex exact match (case-insensitive)"
+  validation_regex__iew:
+    required: false
+    type: array
+    description: "Validation_regex ends with (case-insensitive)"
+  validation_regex__isw:
+    required: false
+    type: array
+    description: "Validation_regex starts with (case-sensitive)"
+  validation_regex__n:
+    required: false
+    type: array
+    description: "Validation_regex not equal to"
+  validation_regex__nic:
+    required: false
+    type: array
+    description: "Validation_regex does not contain (case-insensitive)"
+  validation_regex__nie:
+    required: false
+    type: array
+    description: "Validation_regex inverse exact match (case-insensitive)"
+  validation_regex__niew:
+    required: false
+    type: array
+    description: "Validation_regex does not end with (case-insensitive)"
+  validation_regex__nisw:
+    required: false
+    type: array
+    description: "Validation_regex does not start with (case-sensitive)"
   weight:
     required: false
     type: array

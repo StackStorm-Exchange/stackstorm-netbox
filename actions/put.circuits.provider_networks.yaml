@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a provider network object."
 enabled: true
 entry_point: run.py
@@ -17,34 +17,14 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  provider:
-    required: false
-    type: integer
-    description: "Provider"
   name:
     required: false
     type: string
     description: "Name"
-  service_id:
-    required: false
-    type: string
-    description: "Service id"
   description:
     required: false
     type: string
     description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
   id:
     required: true
     type: integer

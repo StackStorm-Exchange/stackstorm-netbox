@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of tunnel termination objects."
 enabled: true
 entry_point: run.py
@@ -165,6 +165,34 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
+  termination_id:
+    required: false
+    type: array
+    description: "Termination_id"
+  termination_id__empty:
+    required: false
+    type: boolean
+    description: "Termination_id is empty/null (boolean)"
+  termination_id__gt:
+    required: false
+    type: array
+    description: "Termination_id greater than"
+  termination_id__gte:
+    required: false
+    type: array
+    description: "Termination_id greater than or equal to"
+  termination_id__lt:
+    required: false
+    type: array
+    description: "Termination_id less than"
+  termination_id__lte:
+    required: false
+    type: array
+    description: "Termination_id less than or equal to"
+  termination_id__n:
+    required: false
+    type: array
+    description: "Termination_id not equal to"
   termination_type:
     required: false
     type: string

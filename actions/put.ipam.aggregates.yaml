@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a aggregate object."
 enabled: true
 entry_point: run.py
@@ -23,11 +23,11 @@ parameters:
     description: "Prefix"
   rir:
     required: false
-    type: integer
-    description: "Regional Internet Registry responsible for this IP space"
+    type: object
+    description: "Rir"
   tenant:
     required: false
-    type: integer
+    type: object
     description: "Tenant"
   date_added:
     required: false

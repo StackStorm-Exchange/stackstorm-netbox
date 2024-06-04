@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of export template objects."
 enabled: true
 entry_point: run.py
@@ -17,74 +17,46 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  content_type_id:
+  as_attachment:
+    required: false
+    type: boolean
+    description: "As_attachment"
+  auto_sync_enabled:
+    required: false
+    type: boolean
+    description: "Auto_sync_enabled"
+  created:
     required: false
     type: array
-    description: "Content_type_id"
-  content_type_id__empty:
+    description: "Created"
+  created__empty:
     required: false
     type: array
-    description: "Content_type_id is empty/null (boolean)"
-  content_type_id__gt:
+    description: "Created is empty/null (boolean)"
+  created__gt:
     required: false
     type: array
-    description: "Content_type_id greater than"
-  content_type_id__gte:
+    description: "Created greater than"
+  created__gte:
     required: false
     type: array
-    description: "Content_type_id greater than or equal to"
-  content_type_id__lt:
+    description: "Created greater than or equal to"
+  created__lt:
     required: false
     type: array
-    description: "Content_type_id less than"
-  content_type_id__lte:
+    description: "Created less than"
+  created__lte:
     required: false
     type: array
-    description: "Content_type_id less than or equal to"
-  content_type_id__n:
+    description: "Created less than or equal to"
+  created__n:
     required: false
     type: array
-    description: "Content_type_id not equal to"
-  content_types:
+    description: "Created not equal to"
+  created_by_request:
     required: false
     type: string
-    description: "Content_types"
-  content_types__ic:
-    required: false
-    type: string
-    description: "Content_types contains (case-insensitive)"
-  content_types__ie:
-    required: false
-    type: string
-    description: "Content_types exact match (case-insensitive)"
-  content_types__iew:
-    required: false
-    type: string
-    description: "Content_types ends with (case-insensitive)"
-  content_types__isw:
-    required: false
-    type: string
-    description: "Content_types starts with (case-sensitive)"
-  content_types__n:
-    required: false
-    type: string
-    description: "Content_types not equal to"
-  content_types__nic:
-    required: false
-    type: string
-    description: "Content_types does not contain (case-insensitive)"
-  content_types__nie:
-    required: false
-    type: string
-    description: "Content_types inverse exact match (case-insensitive)"
-  content_types__niew:
-    required: false
-    type: string
-    description: "Content_types does not end with (case-insensitive)"
-  content_types__nisw:
-    required: false
-    type: string
-    description: "Content_types does not start with (case-sensitive)"
+    description: "Created_by_request"
   data_file_id:
     required: false
     type: array
@@ -173,6 +145,50 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  file_extension:
+    required: false
+    type: array
+    description: "File_extension"
+  file_extension__empty:
+    required: false
+    type: boolean
+    description: "File_extension is empty/null (boolean)"
+  file_extension__ic:
+    required: false
+    type: array
+    description: "File_extension contains (case-insensitive)"
+  file_extension__ie:
+    required: false
+    type: array
+    description: "File_extension exact match (case-insensitive)"
+  file_extension__iew:
+    required: false
+    type: array
+    description: "File_extension ends with (case-insensitive)"
+  file_extension__isw:
+    required: false
+    type: array
+    description: "File_extension starts with (case-sensitive)"
+  file_extension__n:
+    required: false
+    type: array
+    description: "File_extension not equal to"
+  file_extension__nic:
+    required: false
+    type: array
+    description: "File_extension does not contain (case-insensitive)"
+  file_extension__nie:
+    required: false
+    type: array
+    description: "File_extension inverse exact match (case-insensitive)"
+  file_extension__niew:
+    required: false
+    type: array
+    description: "File_extension does not end with (case-insensitive)"
+  file_extension__nisw:
+    required: false
+    type: array
+    description: "File_extension does not start with (case-sensitive)"
   id:
     required: false
     type: array
@@ -201,10 +217,86 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  mime_type:
+    required: false
+    type: array
+    description: "Mime_type"
+  mime_type__empty:
+    required: false
+    type: boolean
+    description: "Mime_type is empty/null (boolean)"
+  mime_type__ic:
+    required: false
+    type: array
+    description: "Mime_type contains (case-insensitive)"
+  mime_type__ie:
+    required: false
+    type: array
+    description: "Mime_type exact match (case-insensitive)"
+  mime_type__iew:
+    required: false
+    type: array
+    description: "Mime_type ends with (case-insensitive)"
+  mime_type__isw:
+    required: false
+    type: array
+    description: "Mime_type starts with (case-sensitive)"
+  mime_type__n:
+    required: false
+    type: array
+    description: "Mime_type not equal to"
+  mime_type__nic:
+    required: false
+    type: array
+    description: "Mime_type does not contain (case-insensitive)"
+  mime_type__nie:
+    required: false
+    type: array
+    description: "Mime_type inverse exact match (case-insensitive)"
+  mime_type__niew:
+    required: false
+    type: array
+    description: "Mime_type does not end with (case-insensitive)"
+  mime_type__nisw:
+    required: false
+    type: array
+    description: "Mime_type does not start with (case-sensitive)"
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
   name:
     required: false
     type: array
@@ -249,6 +341,54 @@ parameters:
     required: false
     type: array
     description: "Name does not start with (case-sensitive)"
+  object_type:
+    required: false
+    type: string
+    description: "Object_type"
+  object_type__ic:
+    required: false
+    type: string
+    description: "Object_type contains (case-insensitive)"
+  object_type__ie:
+    required: false
+    type: string
+    description: "Object_type exact match (case-insensitive)"
+  object_type__iew:
+    required: false
+    type: string
+    description: "Object_type ends with (case-insensitive)"
+  object_type__isw:
+    required: false
+    type: string
+    description: "Object_type starts with (case-sensitive)"
+  object_type__n:
+    required: false
+    type: string
+    description: "Object_type not equal to"
+  object_type__nic:
+    required: false
+    type: string
+    description: "Object_type does not contain (case-insensitive)"
+  object_type__nie:
+    required: false
+    type: string
+    description: "Object_type inverse exact match (case-insensitive)"
+  object_type__niew:
+    required: false
+    type: string
+    description: "Object_type does not end with (case-insensitive)"
+  object_type__nisw:
+    required: false
+    type: string
+    description: "Object_type does not start with (case-sensitive)"
+  object_type_id:
+    required: false
+    type: array
+    description: "Object_type_id"
+  object_type_id__n:
+    required: false
+    type: array
+    description: "Object_type_id not equal to"
   offset:
     required: false
     type: integer
@@ -261,6 +401,10 @@ parameters:
     required: false
     type: string
     description: "Search"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
   save_in_key_store:
     type: boolean
     default: false

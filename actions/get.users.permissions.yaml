@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of permission objects."
 enabled: true
 entry_point: run.py
@@ -173,6 +173,54 @@ parameters:
     required: false
     type: array
     description: "Name does not start with (case-sensitive)"
+  object_type:
+    required: false
+    type: string
+    description: "Object_type"
+  object_type__ic:
+    required: false
+    type: string
+    description: "Object_type contains (case-insensitive)"
+  object_type__ie:
+    required: false
+    type: string
+    description: "Object_type exact match (case-insensitive)"
+  object_type__iew:
+    required: false
+    type: string
+    description: "Object_type ends with (case-insensitive)"
+  object_type__isw:
+    required: false
+    type: string
+    description: "Object_type starts with (case-sensitive)"
+  object_type__n:
+    required: false
+    type: string
+    description: "Object_type not equal to"
+  object_type__nic:
+    required: false
+    type: string
+    description: "Object_type does not contain (case-insensitive)"
+  object_type__nie:
+    required: false
+    type: string
+    description: "Object_type inverse exact match (case-insensitive)"
+  object_type__niew:
+    required: false
+    type: string
+    description: "Object_type does not end with (case-insensitive)"
+  object_type__nisw:
+    required: false
+    type: string
+    description: "Object_type does not start with (case-sensitive)"
+  object_type_id:
+    required: false
+    type: array
+    description: "Object_type_id"
+  object_type_id__n:
+    required: false
+    type: array
+    description: "Object_type_id not equal to"
   object_types:
     required: false
     type: array

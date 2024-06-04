@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of wireless LAN objects."
 enabled: true
 entry_point: run.py
@@ -197,6 +197,14 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  interface_id:
+    required: false
+    type: array
+    description: "Interface_id"
+  interface_id__n:
+    required: false
+    type: array
+    description: "Interface_id not equal to"
   last_updated:
     required: false
     type: array

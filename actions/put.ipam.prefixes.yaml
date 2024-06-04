@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a prefix object."
 enabled: true
 entry_point: run.py
@@ -23,19 +23,19 @@ parameters:
     description: "Prefix"
   site:
     required: false
-    type: integer
+    type: object
     description: "Site"
   vrf:
     required: false
-    type: integer
+    type: object
     description: "Vrf"
   tenant:
     required: false
-    type: integer
+    type: object
     description: "Tenant"
   vlan:
     required: false
-    type: integer
+    type: object
     description: "Vlan"
   status:
     required: false
@@ -48,8 +48,8 @@ parameters:
 * `deprecated` - Deprecated"
   role:
     required: false
-    type: integer
-    description: "The primary function of this prefix"
+    type: object
+    description: "Role"
   is_pool:
     required: false
     type: boolean

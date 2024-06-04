@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of ASN objects."
 enabled: true
 entry_point: run.py
@@ -193,6 +193,22 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  provider:
+    required: false
+    type: array
+    description: "Provider (slug)"
+  provider__n:
+    required: false
+    type: array
+    description: "Provider not equal to"
+  provider_id:
+    required: false
+    type: array
+    description: "Provider (ID)"
+  provider_id__n:
+    required: false
+    type: array
+    description: "Provider_id not equal to"
   q:
     required: false
     type: string

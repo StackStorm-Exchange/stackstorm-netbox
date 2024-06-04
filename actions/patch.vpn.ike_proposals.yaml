@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Patch a IKE proposal object."
 enabled: true
 entry_point: run.py
@@ -41,7 +41,8 @@ parameters:
 * `aes-192-gcm` - 192-bit AES (GCM)
 * `aes-256-cbc` - 256-bit AES (CBC)
 * `aes-256-gcm` - 256-bit AES (GCM)
-* `3des-cbc` - DES"
+* `3des-cbc` - 3DES
+* `des-cbc` - DES"
   authentication_algorithm:
     required: false
     type: string

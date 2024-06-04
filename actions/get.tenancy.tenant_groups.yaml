@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of tenant group objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,22 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  ancestor:
+    required: false
+    type: array
+    description: "Tenant group (slug)"
+  ancestor__n:
+    required: false
+    type: array
+    description: "Ancestor not equal to"
+  ancestor_id:
+    required: false
+    type: array
+    description: "Tenant group (ID)"
+  ancestor_id__n:
+    required: false
+    type: array
+    description: "Ancestor_id not equal to"
   created:
     required: false
     type: array
@@ -212,7 +228,7 @@ parameters:
   parent:
     required: false
     type: array
-    description: "Tenant group (slug)"
+    description: "Parent tenant group (slug)"
   parent__n:
     required: false
     type: array
@@ -220,7 +236,7 @@ parameters:
   parent_id:
     required: false
     type: array
-    description: "Tenant group (ID)"
+    description: "Parent tenant group (ID)"
   parent_id__n:
     required: false
     type: array

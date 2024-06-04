@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a interface template object."
 enabled: true
 entry_point: run.py
@@ -19,11 +19,11 @@ parameters:
     type: boolean
   device_type:
     required: false
-    type: integer
+    type: object
     description: "Device type"
   module_type:
     required: false
-    type: integer
+    type: object
     description: "Module type"
   name:
     required: false
@@ -80,6 +80,8 @@ parameters:
 * `800gbase-x-qsfpdd` - QSFP-DD (800GE)
 * `800gbase-x-osfp` - OSFP (800GE)
 * `1000base-kx` - 1000BASE-KX (1GE)
+* `2.5gbase-kx` - 2.5GBASE-KX (2.5GE)
+* `5gbase-kr` - 5GBASE-KR (5GE)
 * `10gbase-kr` - 10GBASE-KR (10GE)
 * `10gbase-kx4` - 10GBASE-KX4 (10GE)
 * `25gbase-kr` - 25GBASE-KR (25GE)
@@ -100,6 +102,8 @@ parameters:
 * `gsm` - GSM
 * `cdma` - CDMA
 * `lte` - LTE
+* `4g` - 4G
+* `5g` - 5G
 * `sonet-oc3` - OC-3/STM-1
 * `sonet-oc12` - OC-12/STM-4
 * `sonet-oc48` - OC-48/STM-16
@@ -113,7 +117,10 @@ parameters:
 * `8gfc-sfpp` - SFP+ (8GFC)
 * `16gfc-sfpp` - SFP+ (16GFC)
 * `32gfc-sfp28` - SFP28 (32GFC)
+* `32gfc-sfpp` - SFP+ (32GFC)
 * `64gfc-qsfpp` - QSFP+ (64GFC)
+* `64gfc-sfpdd` - SFP-DD (64GFC)
+* `64gfc-sfpp` - SFP+ (64GFC)
 * `128gfc-qsfp28` - QSFP28 (128GFC)
 * `infiniband-sdr` - SDR (2 Gbps)
 * `infiniband-ddr` - DDR (4 Gbps)
@@ -130,12 +137,15 @@ parameters:
 * `e3` - E3 (34 Mbps)
 * `xdsl` - xDSL
 * `docsis` - DOCSIS
-* `gpon` - GPON (2.5 Gbps / 1.25 Gps)
+* `bpon` - BPON (622 Mbps / 155 Mbps)
+* `epon` - EPON (1 Gbps)
+* `10g-epon` - 10G-EPON (10 Gbps)
+* `gpon` - GPON (2.5 Gbps / 1.25 Gbps)
 * `xg-pon` - XG-PON (10 Gbps / 2.5 Gbps)
 * `xgs-pon` - XGS-PON (10 Gbps)
 * `ng-pon2` - NG-PON2 (TWDM-PON) (4x10 Gbps)
-* `epon` - EPON (1 Gbps)
-* `10g-epon` - 10G-EPON (10 Gbps)
+* `25g-pon` - 25G-PON (25 Gbps)
+* `50g-pon` - 50G-PON (50 Gbps)
 * `cisco-stackwise` - Cisco StackWise
 * `cisco-stackwise-plus` - Cisco StackWise Plus
 * `cisco-flexstack` - Cisco FlexStack

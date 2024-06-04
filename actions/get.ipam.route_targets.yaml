@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of route target objects."
 enabled: true
 entry_point: run.py
@@ -93,6 +93,22 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  exporting_l2vpn:
+    required: false
+    type: array
+    description: "Exporting L2VPN (identifier)"
+  exporting_l2vpn__n:
+    required: false
+    type: array
+    description: "Exporting_l2vpn not equal to"
+  exporting_l2vpn_id:
+    required: false
+    type: array
+    description: "Exporting L2VPN"
+  exporting_l2vpn_id__n:
+    required: false
+    type: array
+    description: "Exporting_l2vpn_id not equal to"
   exporting_vrf:
     required: false
     type: array
@@ -137,6 +153,22 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  importing_l2vpn:
+    required: false
+    type: array
+    description: "Importing L2VPN (identifier)"
+  importing_l2vpn__n:
+    required: false
+    type: array
+    description: "Importing_l2vpn not equal to"
+  importing_l2vpn_id:
+    required: false
+    type: array
+    description: "Importing L2VPN"
+  importing_l2vpn_id__n:
+    required: false
+    type: array
+    description: "Importing_l2vpn_id not equal to"
   importing_vrf:
     required: false
     type: array

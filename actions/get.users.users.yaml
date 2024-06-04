@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of user objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,34 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  date_joined:
+    required: false
+    type: array
+    description: "Date_joined"
+  date_joined__empty:
+    required: false
+    type: boolean
+    description: "Date_joined is empty/null (boolean)"
+  date_joined__gt:
+    required: false
+    type: array
+    description: "Date_joined greater than"
+  date_joined__gte:
+    required: false
+    type: array
+    description: "Date_joined greater than or equal to"
+  date_joined__lt:
+    required: false
+    type: array
+    description: "Date_joined less than"
+  date_joined__lte:
+    required: false
+    type: array
+    description: "Date_joined less than or equal to"
+  date_joined__n:
+    required: false
+    type: array
+    description: "Date_joined not equal to"
   email:
     required: false
     type: array
@@ -161,6 +189,34 @@ parameters:
     required: false
     type: boolean
     description: "Is_superuser"
+  last_login:
+    required: false
+    type: array
+    description: "Last_login"
+  last_login__empty:
+    required: false
+    type: boolean
+    description: "Last_login is empty/null (boolean)"
+  last_login__gt:
+    required: false
+    type: array
+    description: "Last_login greater than"
+  last_login__gte:
+    required: false
+    type: array
+    description: "Last_login greater than or equal to"
+  last_login__lt:
+    required: false
+    type: array
+    description: "Last_login less than"
+  last_login__lte:
+    required: false
+    type: array
+    description: "Last_login less than or equal to"
+  last_login__n:
+    required: false
+    type: array
+    description: "Last_login not equal to"
   last_name:
     required: false
     type: array
@@ -217,6 +273,14 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  permission_id:
+    required: false
+    type: array
+    description: "Permission (ID)"
+  permission_id__n:
+    required: false
+    type: array
+    description: "Permission_id not equal to"
   q:
     required: false
     type: string

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Post a list of ASN objects."
 enabled: true
 entry_point: run.py
@@ -23,11 +23,11 @@ parameters:
     description: "16- or 32-bit autonomous system number"
   rir:
     required: false
-    type: integer
-    description: "Regional Internet Registry responsible for this AS number space"
+    type: object
+    description: "Rir"
   tenant:
     required: false
-    type: integer
+    type: object
     description: "Tenant"
   description:
     required: false

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Patch a user object."
 enabled: true
 entry_point: run.py
@@ -56,7 +56,11 @@ parameters:
   groups:
     required: false
     type: array
-    description: "The groups this user belongs to. A user will get all permissions granted to each of their groups."
+    description: "Groups"
+  permissions:
+    required: false
+    type: array
+    description: "Permissions"
   id:
     required: true
     type: integer

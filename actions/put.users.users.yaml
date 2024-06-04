@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a user object."
 enabled: true
 entry_point: run.py
@@ -21,42 +21,6 @@ parameters:
     required: false
     type: string
     description: "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
-  password:
-    required: false
-    type: string
-    description: "Password"
-  first_name:
-    required: false
-    type: string
-    description: "First name"
-  last_name:
-    required: false
-    type: string
-    description: "Last name"
-  email:
-    required: false
-    type: string
-    description: "Email address"
-  is_staff:
-    required: false
-    type: boolean
-    description: "Staff status"
-  is_active:
-    required: false
-    type: boolean
-    description: "Active"
-  date_joined:
-    required: false
-    type: string
-    description: "Date joined"
-  last_login:
-    required: false
-    type: string
-    description: "Last login"
-  groups:
-    required: false
-    type: array
-    description: "The groups this user belongs to. A user will get all permissions granted to each of their groups."
   id:
     required: true
     type: integer

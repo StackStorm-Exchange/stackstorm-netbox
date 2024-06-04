@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Patch a saved filter object."
 enabled: true
 entry_point: run.py
@@ -17,10 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  content_types:
+  object_types:
     required: false
     type: array
-    description: "Content types"
+    description: "Object types"
   name:
     required: false
     type: string

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of interface objects."
 enabled: true
 entry_point: run.py
@@ -28,11 +28,20 @@ parameters:
   cable_end:
     required: false
     type: string
-    description: "Cable_end"
+    description: "* `A` - A
+* `B` - B"
   cable_end__n:
     required: false
     type: string
     description: "Cable_end not equal to"
+  cable_id:
+    required: false
+    type: array
+    description: "Cable (ID)"
+  cable_id__n:
+    required: false
+    type: array
+    description: "Cable_id not equal to"
   cabled:
     required: false
     type: boolean
@@ -133,22 +142,6 @@ parameters:
     required: false
     type: array
     description: "Device_id not equal to"
-  device_role:
-    required: false
-    type: array
-    description: "Device role (slug)"
-  device_role__n:
-    required: false
-    type: array
-    description: "Device_role not equal to"
-  device_role_id:
-    required: false
-    type: array
-    description: "Device role (ID)"
-  device_role_id__n:
-    required: false
-    type: array
-    description: "Device_role_id not equal to"
   device_type:
     required: false
     type: array
@@ -365,6 +358,10 @@ parameters:
     required: false
     type: array
     description: "Mac_address does not start with (case-sensitive)"
+  mark_connected:
+    required: false
+    type: boolean
+    description: "Mark_connected"
   mgmt_only:
     required: false
     type: boolean
@@ -372,7 +369,11 @@ parameters:
   mode:
     required: false
     type: string
-    description: "IEEE 802.1Q tagging strategy"
+    description: "IEEE 802.1Q tagging strategy
+
+* `access` - Access
+* `tagged` - Tagged
+* `tagged-all` - Tagged (All)"
   mode__n:
     required: false
     type: string
@@ -801,6 +802,22 @@ parameters:
     required: false
     type: array
     description: "Vrf_id not equal to"
+  wireless_lan_id:
+    required: false
+    type: array
+    description: "Wireless LAN"
+  wireless_lan_id__n:
+    required: false
+    type: array
+    description: "Wireless_lan_id not equal to"
+  wireless_link_id:
+    required: false
+    type: array
+    description: "Wireless link"
+  wireless_link_id__n:
+    required: false
+    type: array
+    description: "Wireless_link_id not equal to"
   wwn:
     required: false
     type: array

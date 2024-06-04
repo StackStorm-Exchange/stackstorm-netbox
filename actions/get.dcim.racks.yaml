@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of rack objects."
 enabled: true
 entry_point: run.py
@@ -428,7 +428,8 @@ parameters:
   outer_unit:
     required: false
     type: string
-    description: "Outer_unit"
+    description: "* `mm` - Millimeters
+* `in` - Inches"
   outer_unit__n:
     required: false
     type: string
@@ -720,7 +721,10 @@ parameters:
   weight_unit:
     required: false
     type: string
-    description: "Weight_unit"
+    description: "* `kg` - Kilograms
+* `g` - Grams
+* `lb` - Pounds
+* `oz` - Ounces"
   weight_unit__n:
     required: false
     type: string

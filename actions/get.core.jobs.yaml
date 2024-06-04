@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Retrieve a list of job results"
 enabled: true
 entry_point: run.py
@@ -97,6 +97,10 @@ parameters:
     required: false
     type: array
     description: "Interval not equal to"
+  job_id:
+    required: false
+    type: string
+    description: "Job_id"
   limit:
     required: false
     type: integer

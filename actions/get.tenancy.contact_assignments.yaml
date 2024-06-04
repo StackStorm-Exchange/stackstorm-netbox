@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of contact assignment objects."
 enabled: true
 entry_point: run.py
@@ -25,22 +25,6 @@ parameters:
     required: false
     type: array
     description: "Contact_id not equal to"
-  content_type:
-    required: false
-    type: string
-    description: "Content_type"
-  content_type__n:
-    required: false
-    type: string
-    description: "Content_type not equal to"
-  content_type_id:
-    required: false
-    type: integer
-    description: "Content_type_id"
-  content_type_id__n:
-    required: false
-    type: integer
-    description: "Content_type_id not equal to"
   created:
     required: false
     type: array
@@ -181,6 +165,22 @@ parameters:
     required: false
     type: array
     description: "Object_id not equal to"
+  object_type:
+    required: false
+    type: string
+    description: "Object_type"
+  object_type__n:
+    required: false
+    type: string
+    description: "Object_type not equal to"
+  object_type_id:
+    required: false
+    type: integer
+    description: "Object_type_id"
+  object_type_id__n:
+    required: false
+    type: integer
+    description: "Object_type_id not equal to"
   offset:
     required: false
     type: integer
@@ -192,7 +192,10 @@ parameters:
   priority:
     required: false
     type: string
-    description: "Priority"
+    description: "* `primary` - Primary
+* `secondary` - Secondary
+* `tertiary` - Tertiary
+* `inactive` - Inactive"
   priority__n:
     required: false
     type: string

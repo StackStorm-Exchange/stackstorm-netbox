@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of service template objects."
 enabled: true
 entry_point: run.py
@@ -216,7 +216,9 @@ parameters:
   protocol:
     required: false
     type: string
-    description: "Protocol"
+    description: "* `tcp` - TCP
+* `udp` - UDP
+* `sctp` - SCTP"
   protocol__n:
     required: false
     type: string

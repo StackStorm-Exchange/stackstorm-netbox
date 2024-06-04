@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of virtual chassis objects."
 enabled: true
 entry_point: run.py
@@ -213,6 +213,34 @@ parameters:
     required: false
     type: array
     description: "Master_id not equal to"
+  member_count:
+    required: false
+    type: array
+    description: "Member_count"
+  member_count__empty:
+    required: false
+    type: boolean
+    description: "Member_count is empty/null (boolean)"
+  member_count__gt:
+    required: false
+    type: array
+    description: "Member_count greater than"
+  member_count__gte:
+    required: false
+    type: array
+    description: "Member_count greater than or equal to"
+  member_count__lt:
+    required: false
+    type: array
+    description: "Member_count less than"
+  member_count__lte:
+    required: false
+    type: array
+    description: "Member_count less than or equal to"
+  member_count__n:
+    required: false
+    type: array
+    description: "Member_count not equal to"
   modified_by_request:
     required: false
     type: string

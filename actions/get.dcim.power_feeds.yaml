@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of power feed objects."
 enabled: true
 entry_point: run.py
@@ -45,14 +45,51 @@ parameters:
     required: false
     type: array
     description: "Amperage not equal to"
+  available_power:
+    required: false
+    type: array
+    description: "Available_power"
+  available_power__empty:
+    required: false
+    type: boolean
+    description: "Available_power is empty/null (boolean)"
+  available_power__gt:
+    required: false
+    type: array
+    description: "Available_power greater than"
+  available_power__gte:
+    required: false
+    type: array
+    description: "Available_power greater than or equal to"
+  available_power__lt:
+    required: false
+    type: array
+    description: "Available_power less than"
+  available_power__lte:
+    required: false
+    type: array
+    description: "Available_power less than or equal to"
+  available_power__n:
+    required: false
+    type: array
+    description: "Available_power not equal to"
   cable_end:
     required: false
     type: string
-    description: "Cable_end"
+    description: "* `A` - A
+* `B` - B"
   cable_end__n:
     required: false
     type: string
     description: "Cable_end not equal to"
+  cable_id:
+    required: false
+    type: array
+    description: "Cable (ID)"
+  cable_id__n:
+    required: false
+    type: array
+    description: "Cable_id not equal to"
   cabled:
     required: false
     type: boolean
@@ -197,6 +234,10 @@ parameters:
     required: false
     type: integer
     description: "Number of results to return per page."
+  mark_connected:
+    required: false
+    type: boolean
+    description: "Mark_connected"
   max_utilization:
     required: false
     type: array
@@ -288,7 +329,8 @@ parameters:
   phase:
     required: false
     type: string
-    description: "Phase"
+    description: "* `single-phase` - Single phase
+* `three-phase` - Three-phase"
   phase__n:
     required: false
     type: string
@@ -372,7 +414,8 @@ parameters:
   supply:
     required: false
     type: string
-    description: "Supply"
+    description: "* `ac` - AC
+* `dc` - DC"
   supply__n:
     required: false
     type: string
@@ -420,7 +463,8 @@ parameters:
   type:
     required: false
     type: string
-    description: "Type"
+    description: "* `primary` - Primary
+* `redundant` - Redundant"
   type__n:
     required: false
     type: string
