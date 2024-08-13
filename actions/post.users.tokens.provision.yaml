@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Non-authenticated REST API endpoint via which a user may create a Token."
 enabled: true
 entry_point: run.py

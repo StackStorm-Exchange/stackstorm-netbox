@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of site objects."
 enabled: true
 entry_point: run.py
@@ -477,6 +477,46 @@ parameters:
     required: false
     type: array
     description: "Tenant_id not equal to"
+  time_zone:
+    required: false
+    type: array
+    description: "Time_zone"
+  time_zone__ic:
+    required: false
+    type: array
+    description: "Time_zone contains (case-insensitive)"
+  time_zone__ie:
+    required: false
+    type: array
+    description: "Time_zone exact match (case-insensitive)"
+  time_zone__iew:
+    required: false
+    type: array
+    description: "Time_zone ends with (case-insensitive)"
+  time_zone__isw:
+    required: false
+    type: array
+    description: "Time_zone starts with (case-sensitive)"
+  time_zone__n:
+    required: false
+    type: array
+    description: "Time_zone not equal to"
+  time_zone__nic:
+    required: false
+    type: array
+    description: "Time_zone does not contain (case-insensitive)"
+  time_zone__nie:
+    required: false
+    type: array
+    description: "Time_zone inverse exact match (case-insensitive)"
+  time_zone__niew:
+    required: false
+    type: array
+    description: "Time_zone does not end with (case-insensitive)"
+  time_zone__nisw:
+    required: false
+    type: array
+    description: "Time_zone does not start with (case-sensitive)"
   updated_by_request:
     required: false
     type: string

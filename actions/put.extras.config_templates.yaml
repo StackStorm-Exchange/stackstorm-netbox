@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a config template object."
 enabled: true
 entry_point: run.py
@@ -25,26 +25,6 @@ parameters:
     required: false
     type: string
     description: "Description"
-  environment_params:
-    required: false
-    type: object
-    description: "Environment parameters"
-  template_code:
-    required: false
-    type: string
-    description: "Jinja2 template code."
-  data_source:
-    required: false
-    type: integer
-    description: "Remote data source"
-  data_file:
-    required: false
-    type: integer
-    description: "Data file"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
   id:
     required: true
     type: integer

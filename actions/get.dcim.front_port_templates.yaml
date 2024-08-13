@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of front port template objects."
 enabled: true
 entry_point: run.py
@@ -137,6 +137,14 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  device_type_id:
+    required: false
+    type: array
+    description: "Device type (ID)"
+  device_type_id__n:
+    required: false
+    type: array
+    description: "Device_type_id not equal to"
   devicetype_id:
     required: false
     type: array
@@ -173,6 +181,50 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  label:
+    required: false
+    type: array
+    description: "Label"
+  label__empty:
+    required: false
+    type: boolean
+    description: "Label is empty/null (boolean)"
+  label__ic:
+    required: false
+    type: array
+    description: "Label contains (case-insensitive)"
+  label__ie:
+    required: false
+    type: array
+    description: "Label exact match (case-insensitive)"
+  label__iew:
+    required: false
+    type: array
+    description: "Label ends with (case-insensitive)"
+  label__isw:
+    required: false
+    type: array
+    description: "Label starts with (case-sensitive)"
+  label__n:
+    required: false
+    type: array
+    description: "Label not equal to"
+  label__nic:
+    required: false
+    type: array
+    description: "Label does not contain (case-insensitive)"
+  label__nie:
+    required: false
+    type: array
+    description: "Label inverse exact match (case-insensitive)"
+  label__niew:
+    required: false
+    type: array
+    description: "Label does not end with (case-insensitive)"
+  label__nisw:
+    required: false
+    type: array
+    description: "Label does not start with (case-sensitive)"
   last_updated:
     required: false
     type: array
@@ -209,6 +261,14 @@ parameters:
     required: false
     type: string
     description: "Modified_by_request"
+  module_type_id:
+    required: false
+    type: array
+    description: "Module type (ID)"
+  module_type_id__n:
+    required: false
+    type: array
+    description: "Module_type_id not equal to"
   moduletype_id:
     required: false
     type: array
@@ -273,6 +333,42 @@ parameters:
     required: false
     type: string
     description: "Search"
+  rear_port_id:
+    required: false
+    type: array
+    description: "Rear_port_id"
+  rear_port_id__n:
+    required: false
+    type: array
+    description: "Rear_port_id not equal to"
+  rear_port_position:
+    required: false
+    type: array
+    description: "Rear_port_position"
+  rear_port_position__empty:
+    required: false
+    type: boolean
+    description: "Rear_port_position is empty/null (boolean)"
+  rear_port_position__gt:
+    required: false
+    type: array
+    description: "Rear_port_position greater than"
+  rear_port_position__gte:
+    required: false
+    type: array
+    description: "Rear_port_position greater than or equal to"
+  rear_port_position__lt:
+    required: false
+    type: array
+    description: "Rear_port_position less than"
+  rear_port_position__lte:
+    required: false
+    type: array
+    description: "Rear_port_position less than or equal to"
+  rear_port_position__n:
+    required: false
+    type: array
+    description: "Rear_port_position not equal to"
   type:
     required: false
     type: array

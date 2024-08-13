@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of power outlet template objects."
 enabled: true
 entry_point: run.py
@@ -93,6 +93,14 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  device_type_id:
+    required: false
+    type: array
+    description: "Device type (ID)"
+  device_type_id__n:
+    required: false
+    type: array
+    description: "Device_type_id not equal to"
   devicetype_id:
     required: false
     type: array
@@ -137,6 +145,50 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  label:
+    required: false
+    type: array
+    description: "Label"
+  label__empty:
+    required: false
+    type: boolean
+    description: "Label is empty/null (boolean)"
+  label__ic:
+    required: false
+    type: array
+    description: "Label contains (case-insensitive)"
+  label__ie:
+    required: false
+    type: array
+    description: "Label exact match (case-insensitive)"
+  label__iew:
+    required: false
+    type: array
+    description: "Label ends with (case-insensitive)"
+  label__isw:
+    required: false
+    type: array
+    description: "Label starts with (case-sensitive)"
+  label__n:
+    required: false
+    type: array
+    description: "Label not equal to"
+  label__nic:
+    required: false
+    type: array
+    description: "Label does not contain (case-insensitive)"
+  label__nie:
+    required: false
+    type: array
+    description: "Label inverse exact match (case-insensitive)"
+  label__niew:
+    required: false
+    type: array
+    description: "Label does not end with (case-insensitive)"
+  label__nisw:
+    required: false
+    type: array
+    description: "Label does not start with (case-sensitive)"
   last_updated:
     required: false
     type: array
@@ -173,6 +225,14 @@ parameters:
     required: false
     type: string
     description: "Modified_by_request"
+  module_type_id:
+    required: false
+    type: array
+    description: "Module type (ID)"
+  module_type_id__n:
+    required: false
+    type: array
+    description: "Module_type_id not equal to"
   moduletype_id:
     required: false
     type: array
@@ -233,6 +293,14 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  power_port_id:
+    required: false
+    type: array
+    description: "Power port (ID)"
+  power_port_id__n:
+    required: false
+    type: array
+    description: "Power_port_id not equal to"
   q:
     required: false
     type: string
@@ -240,7 +308,18 @@ parameters:
   type:
     required: false
     type: string
-    description: "Type"
+    description: "* `IEC 60320` - [(&#39;iec-60320-c5&#39;, &#39;C5&#39;), (&#39;iec-60320-c7&#39;, &#39;C7&#39;), (&#39;iec-60320-c13&#39;, &#39;C13&#39;), (&#39;iec-60320-c15&#39;, &#39;C15&#39;), (&#39;iec-60320-c19&#39;, &#39;C19&#39;), (&#39;iec-60320-c21&#39;, &#39;C21&#39;)]
+* `IEC 60309` - [(&#39;iec-60309-p-n-e-4h&#39;, &#39;P+N+E 4H&#39;), (&#39;iec-60309-p-n-e-6h&#39;, &#39;P+N+E 6H&#39;), (&#39;iec-60309-p-n-e-9h&#39;, &#39;P+N+E 9H&#39;), (&#39;iec-60309-2p-e-4h&#39;, &#39;2P+E 4H&#39;), (&#39;iec-60309-2p-e-6h&#39;, &#39;2P+E 6H&#39;), (&#39;iec-60309-2p-e-9h&#39;, &#39;2P+E 9H&#39;), (&#39;iec-60309-3p-e-4h&#39;, &#39;3P+E 4H&#39;), (&#39;iec-60309-3p-e-6h&#39;, &#39;3P+E 6H&#39;), (&#39;iec-60309-3p-e-9h&#39;, &#39;3P+E 9H&#39;), (&#39;iec-60309-3p-n-e-4h&#39;, &#39;3P+N+E 4H&#39;), (&#39;iec-60309-3p-n-e-6h&#39;, &#39;3P+N+E 6H&#39;), (&#39;iec-60309-3p-n-e-9h&#39;, &#39;3P+N+E 9H&#39;)]
+* `IEC 60906-1` - [(&#39;iec-60906-1&#39;, &#39;IEC 60906-1&#39;), (&#39;nbr-14136-10a&#39;, &#39;2P+T 10A (NBR 14136)&#39;), (&#39;nbr-14136-20a&#39;, &#39;2P+T 20A (NBR 14136)&#39;)]
+* `NEMA (Non-locking)` - [(&#39;nema-1-15r&#39;, &#39;NEMA 1-15R&#39;), (&#39;nema-5-15r&#39;, &#39;NEMA 5-15R&#39;), (&#39;nema-5-20r&#39;, &#39;NEMA 5-20R&#39;), (&#39;nema-5-30r&#39;, &#39;NEMA 5-30R&#39;), (&#39;nema-5-50r&#39;, &#39;NEMA 5-50R&#39;), (&#39;nema-6-15r&#39;, &#39;NEMA 6-15R&#39;), (&#39;nema-6-20r&#39;, &#39;NEMA 6-20R&#39;), (&#39;nema-6-30r&#39;, &#39;NEMA 6-30R&#39;), (&#39;nema-6-50r&#39;, &#39;NEMA 6-50R&#39;), (&#39;nema-10-30r&#39;, &#39;NEMA 10-30R&#39;), (&#39;nema-10-50r&#39;, &#39;NEMA 10-50R&#39;), (&#39;nema-14-20r&#39;, &#39;NEMA 14-20R&#39;), (&#39;nema-14-30r&#39;, &#39;NEMA 14-30R&#39;), (&#39;nema-14-50r&#39;, &#39;NEMA 14-50R&#39;), (&#39;nema-14-60r&#39;, &#39;NEMA 14-60R&#39;), (&#39;nema-15-15r&#39;, &#39;NEMA 15-15R&#39;), (&#39;nema-15-20r&#39;, &#39;NEMA 15-20R&#39;), (&#39;nema-15-30r&#39;, &#39;NEMA 15-30R&#39;), (&#39;nema-15-50r&#39;, &#39;NEMA 15-50R&#39;), (&#39;nema-15-60r&#39;, &#39;NEMA 15-60R&#39;)]
+* `NEMA (Locking)` - [(&#39;nema-l1-15r&#39;, &#39;NEMA L1-15R&#39;), (&#39;nema-l5-15r&#39;, &#39;NEMA L5-15R&#39;), (&#39;nema-l5-20r&#39;, &#39;NEMA L5-20R&#39;), (&#39;nema-l5-30r&#39;, &#39;NEMA L5-30R&#39;), (&#39;nema-l5-50r&#39;, &#39;NEMA L5-50R&#39;), (&#39;nema-l6-15r&#39;, &#39;NEMA L6-15R&#39;), (&#39;nema-l6-20r&#39;, &#39;NEMA L6-20R&#39;), (&#39;nema-l6-30r&#39;, &#39;NEMA L6-30R&#39;), (&#39;nema-l6-50r&#39;, &#39;NEMA L6-50R&#39;), (&#39;nema-l10-30r&#39;, &#39;NEMA L10-30R&#39;), (&#39;nema-l14-20r&#39;, &#39;NEMA L14-20R&#39;), (&#39;nema-l14-30r&#39;, &#39;NEMA L14-30R&#39;), (&#39;nema-l14-50r&#39;, &#39;NEMA L14-50R&#39;), (&#39;nema-l14-60r&#39;, &#39;NEMA L14-60R&#39;), (&#39;nema-l15-20r&#39;, &#39;NEMA L15-20R&#39;), (&#39;nema-l15-30r&#39;, &#39;NEMA L15-30R&#39;), (&#39;nema-l15-50r&#39;, &#39;NEMA L15-50R&#39;), (&#39;nema-l15-60r&#39;, &#39;NEMA L15-60R&#39;), (&#39;nema-l21-20r&#39;, &#39;NEMA L21-20R&#39;), (&#39;nema-l21-30r&#39;, &#39;NEMA L21-30R&#39;), (&#39;nema-l22-30r&#39;, &#39;NEMA L22-30R&#39;)]
+* `California Style` - [(&#39;CS6360C&#39;, &#39;CS6360C&#39;), (&#39;CS6364C&#39;, &#39;CS6364C&#39;), (&#39;CS8164C&#39;, &#39;CS8164C&#39;), (&#39;CS8264C&#39;, &#39;CS8264C&#39;), (&#39;CS8364C&#39;, &#39;CS8364C&#39;), (&#39;CS8464C&#39;, &#39;CS8464C&#39;)]
+* `ITA/International` - [(&#39;ita-e&#39;, &#39;ITA Type E (CEE 7/5)&#39;), (&#39;ita-f&#39;, &#39;ITA Type F (CEE 7/3)&#39;), (&#39;ita-g&#39;, &#39;ITA Type G (BS 1363)&#39;), (&#39;ita-h&#39;, &#39;ITA Type H&#39;), (&#39;ita-i&#39;, &#39;ITA Type I&#39;), (&#39;ita-j&#39;, &#39;ITA Type J&#39;), (&#39;ita-k&#39;, &#39;ITA Type K&#39;), (&#39;ita-l&#39;, &#39;ITA Type L (CEI 23-50)&#39;), (&#39;ita-m&#39;, &#39;ITA Type M (BS 546)&#39;), (&#39;ita-n&#39;, &#39;ITA Type N&#39;), (&#39;ita-o&#39;, &#39;ITA Type O&#39;), (&#39;ita-multistandard&#39;, &#39;ITA Multistandard&#39;)]
+* `USB` - [(&#39;usb-a&#39;, &#39;USB Type A&#39;), (&#39;usb-micro-b&#39;, &#39;USB Micro B&#39;), (&#39;usb-c&#39;, &#39;USB Type C&#39;)]
+* `Molex` - [(&#39;molex-micro-fit-1x2&#39;, &#39;Molex Micro-Fit 1x2&#39;), (&#39;molex-micro-fit-2x2&#39;, &#39;Molex Micro-Fit 2x2&#39;), (&#39;molex-micro-fit-2x4&#39;, &#39;Molex Micro-Fit 2x4&#39;)]
+* `DC` - [(&#39;dc-terminal&#39;, &#39;DC Terminal&#39;)]
+* `Proprietary` - [(&#39;hdot-cx&#39;, &#39;HDOT Cx&#39;), (&#39;saf-d-grid&#39;, &#39;Saf-D-Grid&#39;), (&#39;neutrik-powercon-20a&#39;, &#39;Neutrik powerCON (20A)&#39;), (&#39;neutrik-powercon-32a&#39;, &#39;Neutrik powerCON (32A)&#39;), (&#39;neutrik-powercon-true1&#39;, &#39;Neutrik powerCON TRUE1&#39;), (&#39;neutrik-powercon-true1-top&#39;, &#39;Neutrik powerCON TRUE1 TOP&#39;), (&#39;ubiquiti-smartpower&#39;, &#39;Ubiquiti SmartPower&#39;)]
+* `Other` - [(&#39;hardwired&#39;, &#39;Hardwired&#39;), (&#39;other&#39;, &#39;Other&#39;)]"
   type__n:
     required: false
     type: string

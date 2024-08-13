@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of role objects."
 enabled: true
 entry_point: run.py
@@ -269,6 +269,34 @@ parameters:
     required: false
     type: string
     description: "Updated_by_request"
+  weight:
+    required: false
+    type: array
+    description: "Weight"
+  weight__empty:
+    required: false
+    type: boolean
+    description: "Weight is empty/null (boolean)"
+  weight__gt:
+    required: false
+    type: array
+    description: "Weight greater than"
+  weight__gte:
+    required: false
+    type: array
+    description: "Weight greater than or equal to"
+  weight__lt:
+    required: false
+    type: array
+    description: "Weight less than"
+  weight__lte:
+    required: false
+    type: array
+    description: "Weight less than or equal to"
+  weight__n:
+    required: false
+    type: array
+    description: "Weight not equal to"
   save_in_key_store:
     type: boolean
     default: false

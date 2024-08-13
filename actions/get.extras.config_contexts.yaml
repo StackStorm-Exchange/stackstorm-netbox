@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of config context objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  auto_sync_enabled:
+    required: false
+    type: boolean
+    description: "Auto_sync_enabled"
   cluster_group:
     required: false
     type: array
@@ -177,6 +181,22 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  device_role:
+    required: false
+    type: array
+    description: "Role (slug)"
+  device_role__n:
+    required: false
+    type: array
+    description: "Device_role not equal to"
+  device_role_id:
+    required: false
+    type: array
+    description: "Role"
+  device_role_id__n:
+    required: false
+    type: array
+    description: "Device_role_id not equal to"
   device_type_id:
     required: false
     type: array
@@ -457,6 +477,34 @@ parameters:
     required: false
     type: string
     description: "Updated_by_request"
+  weight:
+    required: false
+    type: array
+    description: "Weight"
+  weight__empty:
+    required: false
+    type: boolean
+    description: "Weight is empty/null (boolean)"
+  weight__gt:
+    required: false
+    type: array
+    description: "Weight greater than"
+  weight__gte:
+    required: false
+    type: array
+    description: "Weight greater than or equal to"
+  weight__lt:
+    required: false
+    type: array
+    description: "Weight less than"
+  weight__lte:
+    required: false
+    type: array
+    description: "Weight less than or equal to"
+  weight__n:
+    required: false
+    type: array
+    description: "Weight not equal to"
   save_in_key_store:
     type: boolean
     default: false

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Patch a virtual machine object."
 enabled: true
 entry_point: run.py
@@ -32,36 +32,36 @@ parameters:
 * `decommissioning` - Decommissioning"
   site:
     required: false
-    type: integer
+    type: object
     description: "Site"
   cluster:
     required: false
-    type: integer
+    type: object
     description: "Cluster"
   device:
     required: false
-    type: integer
+    type: object
     description: "Device"
   role:
     required: false
-    type: integer
+    type: object
     description: "Role"
   tenant:
     required: false
-    type: integer
+    type: object
     description: "Tenant"
   platform:
     required: false
-    type: integer
+    type: object
     description: "Platform"
   primary_ip4:
     required: false
-    type: integer
-    description: "Primary IPv4"
+    type: object
+    description: "Primary ip4"
   primary_ip6:
     required: false
-    type: integer
-    description: "Primary IPv6"
+    type: object
+    description: "Primary ip6"
   vcpus:
     required: false
     type: integer
@@ -84,7 +84,7 @@ parameters:
     description: "Comments"
   config_template:
     required: false
-    type: integer
+    type: object
     description: "Config template"
   local_context_data:
     required: false

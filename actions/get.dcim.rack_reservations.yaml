@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of rack reservation objects."
 enabled: true
 entry_point: run.py
@@ -281,6 +281,10 @@ parameters:
     required: false
     type: array
     description: "Tenant_id not equal to"
+  unit:
+    required: false
+    type: integer
+    description: "Unit"
   updated_by_request:
     required: false
     type: string

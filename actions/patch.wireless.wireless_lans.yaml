@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Patch a wireless LAN object."
 enabled: true
 entry_point: run.py
@@ -27,7 +27,7 @@ parameters:
     description: "Description"
   group:
     required: false
-    type: integer
+    type: object
     description: "Group"
   status:
     required: false
@@ -38,11 +38,11 @@ parameters:
 * `deprecated` - Deprecated"
   vlan:
     required: false
-    type: integer
+    type: object
     description: "Vlan"
   tenant:
     required: false
-    type: integer
+    type: object
     description: "Tenant"
   auth_type:
     required: false

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of group objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,50 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  description:
+    required: false
+    type: array
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
+    required: false
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
   id:
     required: false
     type: array
@@ -101,10 +145,26 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  permission_id:
+    required: false
+    type: array
+    description: "Permission (ID)"
+  permission_id__n:
+    required: false
+    type: array
+    description: "Permission_id not equal to"
   q:
     required: false
     type: string
     description: "Search"
+  user_id:
+    required: false
+    type: array
+    description: "User (ID)"
+  user_id__n:
+    required: false
+    type: array
+    description: "User_id not equal to"
   save_in_key_store:
     type: boolean
     default: false

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of interface objects."
 enabled: true
 entry_point: run.py
@@ -237,6 +237,18 @@ parameters:
     required: false
     type: array
     description: "Mac_address does not start with (case-sensitive)"
+  mode:
+    required: false
+    type: string
+    description: "IEEE 802.1Q tagging strategy
+
+* `access` - Access
+* `tagged` - Tagged
+* `tagged-all` - Tagged (All)"
+  mode__n:
+    required: false
+    type: string
+    description: "Mode not equal to"
   modified_by_request:
     required: false
     type: string

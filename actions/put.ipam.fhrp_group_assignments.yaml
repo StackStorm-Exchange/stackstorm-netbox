@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a FHRP group assignment object."
 enabled: true
 entry_point: run.py
@@ -19,7 +19,7 @@ parameters:
     type: boolean
   group:
     required: false
-    type: integer
+    type: object
     description: "Group"
   interface_type:
     required: false

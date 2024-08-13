@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
-description: "Read-only list of ContentTypes. Limit results to ContentTypes pertinent to NetBox objects."
+# NetBox API version: 4.0
+description: "Read-only list of ObjectTypes."
 enabled: true
 entry_point: run.py
-name: get.extras.content_types
+name: get.extras.object_types
 parameters:
   endpoint_uri:
-    default: "/extras/content-types/"
+    default: "/extras/object-types/"
     immutable: true
     type: string
   http_verb:

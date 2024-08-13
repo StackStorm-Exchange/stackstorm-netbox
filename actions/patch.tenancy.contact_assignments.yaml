@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Patch a contact assignment object."
 enabled: true
 entry_point: run.py
@@ -17,21 +17,21 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  content_type:
+  object_type:
     required: false
     type: string
-    description: "Content type"
+    description: "Object type"
   object_id:
     required: false
     type: integer
     description: "Object id"
   contact:
     required: false
-    type: integer
+    type: object
     description: "Contact"
   role:
     required: false
-    type: integer
+    type: object
     description: "Role"
   priority:
     required: false

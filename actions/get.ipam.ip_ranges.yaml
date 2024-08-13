@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of IP range objects."
 enabled: true
 entry_point: run.py
@@ -205,6 +205,34 @@ parameters:
     required: false
     type: array
     description: "Role_id not equal to"
+  size:
+    required: false
+    type: array
+    description: "Size"
+  size__empty:
+    required: false
+    type: boolean
+    description: "Size is empty/null (boolean)"
+  size__gt:
+    required: false
+    type: array
+    description: "Size greater than"
+  size__gte:
+    required: false
+    type: array
+    description: "Size greater than or equal to"
+  size__lt:
+    required: false
+    type: array
+    description: "Size less than"
+  size__lte:
+    required: false
+    type: array
+    description: "Size less than or equal to"
+  size__n:
+    required: false
+    type: array
+    description: "Size not equal to"
   start_address:
     required: false
     type: array

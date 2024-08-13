@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Patch a circuit object."
 enabled: true
 entry_point: run.py
@@ -23,15 +23,15 @@ parameters:
     description: "Circuit ID"
   provider:
     required: false
-    type: integer
+    type: object
     description: "Provider"
   provider_account:
     required: false
-    type: integer
+    type: object
     description: "Provider account"
   type:
     required: false
-    type: integer
+    type: object
     description: "Type"
   status:
     required: false
@@ -44,7 +44,7 @@ parameters:
 * `decommissioned` - Decommissioned"
   tenant:
     required: false
-    type: integer
+    type: object
     description: "Tenant"
   install_date:
     required: false

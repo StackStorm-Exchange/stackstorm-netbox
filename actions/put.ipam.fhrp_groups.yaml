@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Put a FHRP group object."
 enabled: true
 entry_point: run.py
@@ -17,10 +17,6 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  name:
-    required: false
-    type: string
-    description: "Name"
   protocol:
     required: false
     type: string
@@ -35,30 +31,10 @@ parameters:
     required: false
     type: integer
     description: "Group id"
-  auth_type:
-    required: false
-    type: string
-    description: "Authentication type"
-  auth_key:
-    required: false
-    type: string
-    description: "Authentication key"
   description:
     required: false
     type: string
     description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
   id:
     required: true
     type: integer

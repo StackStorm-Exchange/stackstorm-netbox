@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Post a list of ASN range objects."
 enabled: true
 entry_point: run.py
@@ -27,7 +27,7 @@ parameters:
     description: "Slug"
   rir:
     required: false
-    type: integer
+    type: object
     description: "Rir"
   start:
     required: false
@@ -39,7 +39,7 @@ parameters:
     description: "End"
   tenant:
     required: false
-    type: integer
+    type: object
     description: "Tenant"
   description:
     required: false

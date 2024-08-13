@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "This endpoint allows a user to determine what device (if any) is connected to a given peer device and peer
 interface. This is useful in a situation where a device boots with no configuration, but can detect its neighbors
 via a protocol such as LLDP. Two query parameters must be included in the request:

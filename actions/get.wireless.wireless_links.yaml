@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of wireless link objects."
 enabled: true
 entry_point: run.py
@@ -185,26 +185,6 @@ parameters:
     required: false
     type: array
     description: "Interface_a_id"
-  interface_a_id__empty:
-    required: false
-    type: array
-    description: "Interface_a_id is empty/null (boolean)"
-  interface_a_id__gt:
-    required: false
-    type: array
-    description: "Interface_a_id greater than"
-  interface_a_id__gte:
-    required: false
-    type: array
-    description: "Interface_a_id greater than or equal to"
-  interface_a_id__lt:
-    required: false
-    type: array
-    description: "Interface_a_id less than"
-  interface_a_id__lte:
-    required: false
-    type: array
-    description: "Interface_a_id less than or equal to"
   interface_a_id__n:
     required: false
     type: array
@@ -213,26 +193,6 @@ parameters:
     required: false
     type: array
     description: "Interface_b_id"
-  interface_b_id__empty:
-    required: false
-    type: array
-    description: "Interface_b_id is empty/null (boolean)"
-  interface_b_id__gt:
-    required: false
-    type: array
-    description: "Interface_b_id greater than"
-  interface_b_id__gte:
-    required: false
-    type: array
-    description: "Interface_b_id greater than or equal to"
-  interface_b_id__lt:
-    required: false
-    type: array
-    description: "Interface_b_id less than"
-  interface_b_id__lte:
-    required: false
-    type: array
-    description: "Interface_b_id less than or equal to"
   interface_b_id__n:
     required: false
     type: array

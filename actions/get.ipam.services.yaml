@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of service objects."
 enabled: true
 entry_point: run.py
@@ -137,6 +137,22 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  ip_address:
+    required: false
+    type: array
+    description: "IP address"
+  ip_address__n:
+    required: false
+    type: array
+    description: "Ip_address not equal to"
+  ip_address_id:
+    required: false
+    type: array
+    description: "IP address (ID)"
+  ip_address_id__n:
+    required: false
+    type: array
+    description: "Ip_address_id not equal to"
   ipaddress:
     required: false
     type: array
@@ -248,7 +264,9 @@ parameters:
   protocol:
     required: false
     type: string
-    description: "Protocol"
+    description: "* `tcp` - TCP
+* `udp` - UDP
+* `sctp` - SCTP"
   protocol__n:
     required: false
     type: string

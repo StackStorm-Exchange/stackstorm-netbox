@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Patch a virtual device context object."
 enabled: true
 entry_point: run.py
@@ -23,24 +23,24 @@ parameters:
     description: "Name"
   device:
     required: false
-    type: integer
+    type: object
     description: "Device"
   identifier:
     required: false
     type: integer
-    description: "Numeric identifier unique to the parent device"
+    description: "Identifier"
   tenant:
     required: false
-    type: integer
+    type: object
     description: "Tenant"
   primary_ip4:
     required: false
-    type: integer
-    description: "Primary IPv4"
+    type: object
+    description: "Primary ip4"
   primary_ip6:
     required: false
-    type: integer
-    description: "Primary IPv6"
+    type: object
+    description: "Primary ip6"
   status:
     required: false
     type: string

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Patch a service object."
 enabled: true
 entry_point: run.py
@@ -19,30 +19,30 @@ parameters:
     type: boolean
   device:
     required: false
-    type: integer
+    type: object
     description: "Device"
   virtual_machine:
     required: false
-    type: integer
+    type: object
     description: "Virtual machine"
   name:
     required: false
     type: string
     description: "Name"
-  ports:
-    required: false
-    type: array
-    description: "Port numbers"
   protocol:
     required: false
     type: string
     description: "* `tcp` - TCP
 * `udp` - UDP
 * `sctp` - SCTP"
+  ports:
+    required: false
+    type: array
+    description: "Port numbers"
   ipaddresses:
     required: false
     type: array
-    description: "IP addresses"
+    description: "Ipaddresses"
   description:
     required: false
     type: string

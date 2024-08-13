@@ -31,7 +31,7 @@ class NetBoxWebhooksSensor(Sensor):
             if self._secret:
                 hmac_prep = hmac.new(
                     key=self._secret.encode('utf8'),
-                    msg=request.get_data().encode('utf8'),
+                    msg=request.get_data(),
                     digestmod=hashlib.sha512
                 )
                 if request.headers.get('X-Hook-Signature') != hmac_prep.hexdigest():

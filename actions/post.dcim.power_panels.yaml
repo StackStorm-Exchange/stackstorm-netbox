@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Post a list of power panel objects."
 enabled: true
 entry_point: run.py
@@ -17,14 +17,6 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  site:
-    required: false
-    type: integer
-    description: "Site"
-  location:
-    required: false
-    type: integer
-    description: "Location"
   name:
     required: false
     type: string
@@ -33,16 +25,4 @@ parameters:
     required: false
     type: string
     description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of virtual machine objects."
 enabled: true
 entry_point: run.py
@@ -249,6 +249,34 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
+  interface_count:
+    required: false
+    type: array
+    description: "Interface_count"
+  interface_count__empty:
+    required: false
+    type: boolean
+    description: "Interface_count is empty/null (boolean)"
+  interface_count__gt:
+    required: false
+    type: array
+    description: "Interface_count greater than"
+  interface_count__gte:
+    required: false
+    type: array
+    description: "Interface_count greater than or equal to"
+  interface_count__lt:
+    required: false
+    type: array
+    description: "Interface_count less than"
+  interface_count__lte:
+    required: false
+    type: array
+    description: "Interface_count less than or equal to"
+  interface_count__n:
+    required: false
+    type: array
+    description: "Interface_count not equal to"
   last_updated:
     required: false
     type: array
@@ -589,6 +617,34 @@ parameters:
     required: false
     type: array
     description: "Vcpus not equal to"
+  virtual_disk_count:
+    required: false
+    type: array
+    description: "Virtual_disk_count"
+  virtual_disk_count__empty:
+    required: false
+    type: boolean
+    description: "Virtual_disk_count is empty/null (boolean)"
+  virtual_disk_count__gt:
+    required: false
+    type: array
+    description: "Virtual_disk_count greater than"
+  virtual_disk_count__gte:
+    required: false
+    type: array
+    description: "Virtual_disk_count greater than or equal to"
+  virtual_disk_count__lt:
+    required: false
+    type: array
+    description: "Virtual_disk_count less than"
+  virtual_disk_count__lte:
+    required: false
+    type: array
+    description: "Virtual_disk_count less than or equal to"
+  virtual_disk_count__n:
+    required: false
+    type: array
+    description: "Virtual_disk_count not equal to"
   save_in_key_store:
     type: boolean
     default: false

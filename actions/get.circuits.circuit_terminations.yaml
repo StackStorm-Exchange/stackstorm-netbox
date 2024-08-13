@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.7
+# NetBox API version: 4.0
 description: "Get a list of circuit termination objects."
 enabled: true
 entry_point: run.py
@@ -20,11 +20,20 @@ parameters:
   cable_end:
     required: false
     type: string
-    description: "Cable_end"
+    description: "* `A` - A
+* `B` - B"
   cable_end__n:
     required: false
     type: string
     description: "Cable_end not equal to"
+  cable_id:
+    required: false
+    type: array
+    description: "Cable (ID)"
+  cable_id__n:
+    required: false
+    type: array
+    description: "Cable_id not equal to"
   cabled:
     required: false
     type: boolean
@@ -173,6 +182,10 @@ parameters:
     required: false
     type: integer
     description: "Number of results to return per page."
+  mark_connected:
+    required: false
+    type: boolean
+    description: "Mark_connected"
   modified_by_request:
     required: false
     type: string
@@ -217,6 +230,66 @@ parameters:
     required: false
     type: array
     description: "Port_speed not equal to"
+  pp_info:
+    required: false
+    type: array
+    description: "Pp_info"
+  pp_info__empty:
+    required: false
+    type: boolean
+    description: "Pp_info is empty/null (boolean)"
+  pp_info__ic:
+    required: false
+    type: array
+    description: "Pp_info contains (case-insensitive)"
+  pp_info__ie:
+    required: false
+    type: array
+    description: "Pp_info exact match (case-insensitive)"
+  pp_info__iew:
+    required: false
+    type: array
+    description: "Pp_info ends with (case-insensitive)"
+  pp_info__isw:
+    required: false
+    type: array
+    description: "Pp_info starts with (case-sensitive)"
+  pp_info__n:
+    required: false
+    type: array
+    description: "Pp_info not equal to"
+  pp_info__nic:
+    required: false
+    type: array
+    description: "Pp_info does not contain (case-insensitive)"
+  pp_info__nie:
+    required: false
+    type: array
+    description: "Pp_info inverse exact match (case-insensitive)"
+  pp_info__niew:
+    required: false
+    type: array
+    description: "Pp_info does not end with (case-insensitive)"
+  pp_info__nisw:
+    required: false
+    type: array
+    description: "Pp_info does not start with (case-sensitive)"
+  provider:
+    required: false
+    type: array
+    description: "Provider (slug)"
+  provider__n:
+    required: false
+    type: array
+    description: "Provider not equal to"
+  provider_id:
+    required: false
+    type: array
+    description: "Provider (ID)"
+  provider_id__n:
+    required: false
+    type: array
+    description: "Provider_id not equal to"
   provider_network_id:
     required: false
     type: array
@@ -256,7 +329,8 @@ parameters:
   term_side:
     required: false
     type: string
-    description: "Term_side"
+    description: "* `A` - A
+* `Z` - Z"
   term_side__n:
     required: false
     type: string
