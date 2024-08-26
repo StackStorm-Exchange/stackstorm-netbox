@@ -62,7 +62,7 @@ parameters:
     type: integer
     description: "Position (U)"
   face:
-    required: true
+    required: false
     type: string
     description: "Rack face"
   parent_device:
@@ -86,7 +86,7 @@ parameters:
     type: integer
     description: "Cluster"
   virtual_chassis:
-    required: true
+    required: false
     type: integer
     description: "Virtual chassis"
   vc_position:
