@@ -30,7 +30,7 @@ parameters:
     type: integer
     description: "Device role"
   tenant:
-    required: true
+    required: false
     type: integer
     description: "Tenant"
   platform:
@@ -54,7 +54,7 @@ parameters:
     type: integer
     description: "Location"
   rack:
-    required: true
+    required: false
     type: integer
     description: "Rack"
   position:
