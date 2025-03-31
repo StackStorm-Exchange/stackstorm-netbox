@@ -1,5 +1,9 @@
 # Change Log
 
+## 3.4.3
+
+- Enable use of encrypted KVs in pack config schema
+
 ## 3.4.2
 
 - Updated spec as per v4.0
@@ -34,11 +38,11 @@
 
 ## 3.0.5
 
-- Bug fix: Tags fields need additional translation when modifying 
+- Bug fix: Tags fields need additional translation when modifying
 
 ## 3.0.4
 
-- Bug fix: PATCH requests don't need all the fields to be required 
+- Bug fix: PATCH requests don't need all the fields to be required
 
 ## 3.0.3
 
