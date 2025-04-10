@@ -8,6 +8,7 @@ api_token:
   description: "API Token to use against the API"
   type: "string"
   required: true
+  secret: true
 
 use_https:
   description: "Use HTTPS when contacting the API"
@@ -33,3 +34,4 @@ sensor_secret:
   description: "When provided, will force request signature verification using the provided secret value."
   type: "string"
   default: ""
+  secret: true
