@@ -1,5 +1,9 @@
 # Change Log
 
+## 3.4.4
+
+- Enable use of optional `ca_file_path` for custom CA certificates to allow ssl verification
+
 ## 3.4.3
 
 - Enable use of encrypted KVs in pack config schema
