@@ -15,6 +15,11 @@ use_https:
   type: "boolean"
   required: true
 
+ca_file_path:
+  description: "Optional, specify a CA file path to use for SSL verification."
+  type: "string"
+  required: false
+
 ssl_verify:
   description: "Verify ssl/tls protocol certs when contacting the API."
   type: "boolean"

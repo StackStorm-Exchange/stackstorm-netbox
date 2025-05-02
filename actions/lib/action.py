@@ -1,3 +1,4 @@
+import os
 import requests
 from st2common.runners.base_action import Action
 
@@ -17,6 +18,10 @@ class NetboxBaseAction(Action):
     def make_request(self, endpoint_uri, http_action, **kwargs):
         """Logic to make all types of requests
         """
+
+        # Handle custom CA certs built into the netbox pack via ca_file_path value
+        if self.config.get("ca_file_path"):
+            os.environ["REQUESTS_CA_BUNDLE"] = self.config["ca_file_path"]
 
         if self.config["use_https"]:
             url = "https://"
