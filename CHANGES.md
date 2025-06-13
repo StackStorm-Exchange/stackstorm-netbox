@@ -1,5 +1,15 @@
 # Change Log
 
+## 3.4.4
+
+- Add action parameter fail_non_2xx to allow the user to indicate if the
+  the action has failed when non-2xx http status codes are return by netbox.
+  The default value is False, which is to maintain the current pack behaviour.
+
+- Regenerated actions against v4.3 spec.
+
+- Applied Black code format to python code.
+
 ## 3.4.3
 
 - Enable use of encrypted KVs in pack config schema
