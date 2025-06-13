@@ -17,6 +17,10 @@ parameters:
     default: {{ get_detail_route_eligible | lower }}
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   {%- for parameter in parameters %}
   {{ parameter.name }}:
     required: {{ parameter.required | lower }}
