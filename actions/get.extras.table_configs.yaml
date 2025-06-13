@@ -1,0 +1,351 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.3
+description: "Get a list of table config objects."
+enabled: true
+entry_point: run.py
+name: get.extras.table_configs
+parameters:
+  endpoint_uri:
+    default: "/extras/table-configs/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
+    required: false
+    type: string
+    description: "Created_by_request"
+  description:
+    required: false
+    type: array
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
+    required: false
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  enabled:
+    required: false
+    type: boolean
+    description: "Enabled"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
+  object_type:
+    required: false
+    type: string
+    description: "Object_type"
+  object_type__n:
+    required: false
+    type: string
+    description: "Object_type not equal to"
+  object_type_id:
+    required: false
+    type: array
+    description: "Object_type_id"
+  object_type_id__n:
+    required: false
+    type: array
+    description: "Object_type_id not equal to"
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  q:
+    required: false
+    type: string
+    description: "Search"
+  shared:
+    required: false
+    type: boolean
+    description: "Shared"
+  table:
+    required: false
+    type: array
+    description: "Table"
+  table__empty:
+    required: false
+    type: boolean
+    description: "Table is empty/null (boolean)"
+  table__ic:
+    required: false
+    type: array
+    description: "Table contains (case-insensitive)"
+  table__ie:
+    required: false
+    type: array
+    description: "Table exact match (case-insensitive)"
+  table__iew:
+    required: false
+    type: array
+    description: "Table ends with (case-insensitive)"
+  table__isw:
+    required: false
+    type: array
+    description: "Table starts with (case-sensitive)"
+  table__n:
+    required: false
+    type: array
+    description: "Table not equal to"
+  table__nic:
+    required: false
+    type: array
+    description: "Table does not contain (case-insensitive)"
+  table__nie:
+    required: false
+    type: array
+    description: "Table inverse exact match (case-insensitive)"
+  table__niew:
+    required: false
+    type: array
+    description: "Table does not end with (case-insensitive)"
+  table__nisw:
+    required: false
+    type: array
+    description: "Table does not start with (case-sensitive)"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  usable:
+    required: false
+    type: boolean
+    description: "Usable"
+  user:
+    required: false
+    type: array
+    description: "User (name)"
+  user__n:
+    required: false
+    type: array
+    description: "User not equal to"
+  user_id:
+    required: false
+    type: array
+    description: "User (ID)"
+  user_id__n:
+    required: false
+    type: array
+    description: "User_id not equal to"
+  weight:
+    required: false
+    type: array
+    description: "Weight"
+  weight__empty:
+    required: false
+    type: boolean
+    description: "Weight is empty/null (boolean)"
+  weight__gt:
+    required: false
+    type: array
+    description: "Weight greater than"
+  weight__gte:
+    required: false
+    type: array
+    description: "Weight greater than or equal to"
+  weight__lt:
+    required: false
+    type: array
+    description: "Weight less than"
+  weight__lte:
+    required: false
+    type: array
+    description: "Weight less than or equal to"
+  weight__n:
+    required: false
+    type: array
+    description: "Weight not equal to"
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of config template objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,14 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  as_attachment:
+    required: false
+    type: boolean
+    description: "As_attachment"
   auto_sync_enabled:
     required: false
     type: boolean
@@ -141,6 +149,94 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  file_extension:
+    required: false
+    type: array
+    description: "File_extension"
+  file_extension__empty:
+    required: false
+    type: boolean
+    description: "File_extension is empty/null (boolean)"
+  file_extension__ic:
+    required: false
+    type: array
+    description: "File_extension contains (case-insensitive)"
+  file_extension__ie:
+    required: false
+    type: array
+    description: "File_extension exact match (case-insensitive)"
+  file_extension__iew:
+    required: false
+    type: array
+    description: "File_extension ends with (case-insensitive)"
+  file_extension__isw:
+    required: false
+    type: array
+    description: "File_extension starts with (case-sensitive)"
+  file_extension__n:
+    required: false
+    type: array
+    description: "File_extension not equal to"
+  file_extension__nic:
+    required: false
+    type: array
+    description: "File_extension does not contain (case-insensitive)"
+  file_extension__nie:
+    required: false
+    type: array
+    description: "File_extension inverse exact match (case-insensitive)"
+  file_extension__niew:
+    required: false
+    type: array
+    description: "File_extension does not end with (case-insensitive)"
+  file_extension__nisw:
+    required: false
+    type: array
+    description: "File_extension does not start with (case-sensitive)"
+  file_name:
+    required: false
+    type: array
+    description: "File_name"
+  file_name__empty:
+    required: false
+    type: boolean
+    description: "File_name is empty/null (boolean)"
+  file_name__ic:
+    required: false
+    type: array
+    description: "File_name contains (case-insensitive)"
+  file_name__ie:
+    required: false
+    type: array
+    description: "File_name exact match (case-insensitive)"
+  file_name__iew:
+    required: false
+    type: array
+    description: "File_name ends with (case-insensitive)"
+  file_name__isw:
+    required: false
+    type: array
+    description: "File_name starts with (case-sensitive)"
+  file_name__n:
+    required: false
+    type: array
+    description: "File_name not equal to"
+  file_name__nic:
+    required: false
+    type: array
+    description: "File_name does not contain (case-insensitive)"
+  file_name__nie:
+    required: false
+    type: array
+    description: "File_name inverse exact match (case-insensitive)"
+  file_name__niew:
+    required: false
+    type: array
+    description: "File_name does not end with (case-insensitive)"
+  file_name__nisw:
+    required: false
+    type: array
+    description: "File_name does not start with (case-sensitive)"
   id:
     required: false
     type: array
@@ -201,6 +297,50 @@ parameters:
     required: false
     type: integer
     description: "Number of results to return per page."
+  mime_type:
+    required: false
+    type: array
+    description: "Mime_type"
+  mime_type__empty:
+    required: false
+    type: boolean
+    description: "Mime_type is empty/null (boolean)"
+  mime_type__ic:
+    required: false
+    type: array
+    description: "Mime_type contains (case-insensitive)"
+  mime_type__ie:
+    required: false
+    type: array
+    description: "Mime_type exact match (case-insensitive)"
+  mime_type__iew:
+    required: false
+    type: array
+    description: "Mime_type ends with (case-insensitive)"
+  mime_type__isw:
+    required: false
+    type: array
+    description: "Mime_type starts with (case-sensitive)"
+  mime_type__n:
+    required: false
+    type: array
+    description: "Mime_type not equal to"
+  mime_type__nic:
+    required: false
+    type: array
+    description: "Mime_type does not contain (case-insensitive)"
+  mime_type__nie:
+    required: false
+    type: array
+    description: "Mime_type inverse exact match (case-insensitive)"
+  mime_type__niew:
+    required: false
+    type: array
+    description: "Mime_type does not end with (case-insensitive)"
+  mime_type__nisw:
+    required: false
+    type: array
+    description: "Mime_type does not start with (case-sensitive)"
   modified_by_request:
     required: false
     type: string
@@ -269,6 +409,14 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
   updated_by_request:
     required: false
     type: string

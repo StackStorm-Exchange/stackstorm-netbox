@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Put a export template object."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   object_types:
     required: false
     type: array
@@ -29,14 +33,22 @@ parameters:
     required: false
     type: string
     description: "Description"
+  environment_params:
+    required: false
+    type: object
+    description: "Environment parameters"
   template_code:
     required: false
     type: string
-    description: "Jinja2 template code. The list of objects being exported is passed as a context variable named &lt;code&gt;queryset&lt;/code&gt;."
+    description: "Jinja template code."
   mime_type:
     required: false
     type: string
     description: "Defaults to &lt;code&gt;text/plain; charset=utf-8&lt;/code&gt;"
+  file_name:
+    required: false
+    type: string
+    description: "Filename to give to the rendered export file"
   file_extension:
     required: false
     type: string

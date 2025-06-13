@@ -1,0 +1,44 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.3
+description: "Patch a notification group object."
+enabled: true
+entry_point: run.py
+name: patch.extras.notification_groups
+parameters:
+  endpoint_uri:
+    default: "/extras/notification-groups/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  name:
+    required: false
+    type: string
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  groups:
+    required: false
+    type: array
+    description: "Groups"
+  users:
+    required: false
+    type: array
+    description: "Users"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

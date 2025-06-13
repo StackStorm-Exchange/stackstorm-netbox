@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of custom field objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   choice_set:
     required: false
     type: array
@@ -117,10 +121,6 @@ parameters:
 * `disabled` - Disabled
 * `loose` - Loose
 * `exact` - Exact"
-  filter_logic__n:
-    required: false
-    type: string
-    description: "Filter_logic not equal to"
   group_name:
     required: false
     type: array
@@ -433,10 +433,46 @@ parameters:
     required: false
     type: array
     description: "The type of data this custom field holds"
+  type__empty:
+    required: false
+    type: boolean
+    description: "Type is empty/null (boolean)"
+  type__ic:
+    required: false
+    type: array
+    description: "Type contains (case-insensitive)"
+  type__ie:
+    required: false
+    type: array
+    description: "Type exact match (case-insensitive)"
+  type__iew:
+    required: false
+    type: array
+    description: "Type ends with (case-insensitive)"
+  type__isw:
+    required: false
+    type: array
+    description: "Type starts with (case-sensitive)"
   type__n:
     required: false
     type: array
     description: "Type not equal to"
+  type__nic:
+    required: false
+    type: array
+    description: "Type does not contain (case-insensitive)"
+  type__nie:
+    required: false
+    type: array
+    description: "Type inverse exact match (case-insensitive)"
+  type__niew:
+    required: false
+    type: array
+    description: "Type does not end with (case-insensitive)"
+  type__nisw:
+    required: false
+    type: array
+    description: "Type does not start with (case-sensitive)"
   ui_editable:
     required: false
     type: string
@@ -445,10 +481,6 @@ parameters:
 * `yes` - Yes
 * `no` - No
 * `hidden` - Hidden"
-  ui_editable__n:
-    required: false
-    type: string
-    description: "Ui_editable not equal to"
   ui_visible:
     required: false
     type: string
@@ -457,10 +489,10 @@ parameters:
 * `always` - Always
 * `if-set` - If set
 * `hidden` - Hidden"
-  ui_visible__n:
+  unique:
     required: false
-    type: string
-    description: "Ui_visible not equal to"
+    type: boolean
+    description: "Unique"
   updated_by_request:
     required: false
     type: string
