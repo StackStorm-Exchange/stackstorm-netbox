@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of device bay objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   created:
     required: false
     type: array
@@ -109,6 +113,66 @@ parameters:
     required: false
     type: array
     description: "Device_id not equal to"
+  device_role:
+    required: false
+    type: array
+    description: "Device role (slug)"
+  device_role__n:
+    required: false
+    type: array
+    description: "Device_role not equal to"
+  device_role_id:
+    required: false
+    type: array
+    description: "Device role (ID)"
+  device_role_id__n:
+    required: false
+    type: array
+    description: "Device_role_id not equal to"
+  device_status:
+    required: false
+    type: array
+    description: "Device_status"
+  device_status__empty:
+    required: false
+    type: boolean
+    description: "Device_status is empty/null (boolean)"
+  device_status__ic:
+    required: false
+    type: array
+    description: "Device_status contains (case-insensitive)"
+  device_status__ie:
+    required: false
+    type: array
+    description: "Device_status exact match (case-insensitive)"
+  device_status__iew:
+    required: false
+    type: array
+    description: "Device_status ends with (case-insensitive)"
+  device_status__isw:
+    required: false
+    type: array
+    description: "Device_status starts with (case-sensitive)"
+  device_status__n:
+    required: false
+    type: array
+    description: "Device_status not equal to"
+  device_status__nic:
+    required: false
+    type: array
+    description: "Device_status does not contain (case-insensitive)"
+  device_status__nie:
+    required: false
+    type: array
+    description: "Device_status inverse exact match (case-insensitive)"
+  device_status__niew:
+    required: false
+    type: array
+    description: "Device_status does not end with (case-insensitive)"
+  device_status__nisw:
+    required: false
+    type: array
+    description: "Device_status does not start with (case-sensitive)"
   device_type:
     required: false
     type: array
@@ -340,7 +404,7 @@ parameters:
   region:
     required: false
     type: array
-    description: "Region (slug)"
+    description: "Region"
   region__n:
     required: false
     type: array
@@ -348,27 +412,11 @@ parameters:
   region_id:
     required: false
     type: array
-    description: "Region (ID)"
+    description: "Region_id"
   region_id__n:
     required: false
     type: array
     description: "Region_id not equal to"
-  role:
-    required: false
-    type: array
-    description: "Device role (slug)"
-  role__n:
-    required: false
-    type: array
-    description: "Role not equal to"
-  role_id:
-    required: false
-    type: array
-    description: "Device role (ID)"
-  role_id__n:
-    required: false
-    type: array
-    description: "Role_id not equal to"
   site:
     required: false
     type: array
@@ -380,7 +428,7 @@ parameters:
   site_group:
     required: false
     type: array
-    description: "Site group (slug)"
+    description: "Site_group"
   site_group__n:
     required: false
     type: array
@@ -388,7 +436,7 @@ parameters:
   site_group_id:
     required: false
     type: array
-    description: "Site group (ID)"
+    description: "Site_group_id"
   site_group_id__n:
     required: false
     type: array
@@ -409,6 +457,14 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
   updated_by_request:
     required: false
     type: string

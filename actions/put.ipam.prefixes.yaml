@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Put a prefix object."
 enabled: true
 entry_point: run.py
@@ -17,18 +17,26 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   prefix:
     required: false
     type: string
     description: "Prefix"
-  site:
-    required: false
-    type: object
-    description: "Site"
   vrf:
     required: false
     type: object
     description: "Vrf"
+  scope_type:
+    required: false
+    type: string
+    description: "Scope type"
+  scope_id:
+    required: false
+    type: integer
+    description: "Scope id"
   tenant:
     required: false
     type: object

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Patch a custom field object."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   object_types:
     required: false
     type: array
@@ -62,7 +66,11 @@ parameters:
   required:
     required: false
     type: boolean
-    description: "If true, this field is required when creating new objects or editing an existing object."
+    description: "This field is required when creating new objects or editing an existing object."
+  unique:
+    required: false
+    type: boolean
+    description: "Must be unique"
   search_weight:
     required: false
     type: integer
@@ -99,6 +107,10 @@ parameters:
     required: false
     type: object
     description: "Default value for the field (must be a JSON value). Encapsulate strings with double quotes (e.g. &#34;Foo&#34;)."
+  related_object_filter:
+    required: false
+    type: object
+    description: "Filter the object selection choices using a query_params dict (must be a JSON value).Encapsulate strings with double quotes (e.g. &#34;Foo&#34;)."
   weight:
     required: false
     type: integer

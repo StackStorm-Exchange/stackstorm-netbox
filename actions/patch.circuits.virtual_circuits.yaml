@@ -1,0 +1,73 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.3
+description: "Patch a virtual circuit object."
+enabled: true
+entry_point: run.py
+name: patch.circuits.virtual_circuits
+parameters:
+  endpoint_uri:
+    default: "/circuits/virtual-circuits/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  cid:
+    required: false
+    type: string
+    description: "Circuit ID"
+  provider_network:
+    required: false
+    type: object
+    description: "Provider network"
+  provider_account:
+    required: false
+    type: object
+    description: "Provider account"
+  type:
+    required: false
+    type: object
+    description: "Type"
+  status:
+    required: false
+    type: string
+    description: "* `planned` - Planned
+* `provisioning` - Provisioning
+* `active` - Active
+* `offline` - Offline
+* `deprovisioning` - Deprovisioning
+* `decommissioned` - Decommissioned"
+  tenant:
+    required: false
+    type: object
+    description: "Tenant"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

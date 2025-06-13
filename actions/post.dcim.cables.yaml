@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Post a list of cable objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   type:
     required: false
     type: string
@@ -42,6 +46,7 @@ parameters:
 * `smf-os1` - Singlemode Fiber (OS1)
 * `smf-os2` - Singlemode Fiber (OS2)
 * `aoc` - Active Optical Cabling (AOC)
+* `usb` - USB
 * `power` - Power"
   a_terminations:
     required: false

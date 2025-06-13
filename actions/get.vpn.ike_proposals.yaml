@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of IKE proposal objects."
 enabled: true
 entry_point: run.py
@@ -17,22 +17,98 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   authentication_algorithm:
     required: false
     type: array
     description: "Authentication_algorithm"
+  authentication_algorithm__empty:
+    required: false
+    type: boolean
+    description: "Authentication_algorithm is empty/null (boolean)"
+  authentication_algorithm__ic:
+    required: false
+    type: array
+    description: "Authentication_algorithm contains (case-insensitive)"
+  authentication_algorithm__ie:
+    required: false
+    type: array
+    description: "Authentication_algorithm exact match (case-insensitive)"
+  authentication_algorithm__iew:
+    required: false
+    type: array
+    description: "Authentication_algorithm ends with (case-insensitive)"
+  authentication_algorithm__isw:
+    required: false
+    type: array
+    description: "Authentication_algorithm starts with (case-sensitive)"
   authentication_algorithm__n:
     required: false
     type: array
     description: "Authentication_algorithm not equal to"
+  authentication_algorithm__nic:
+    required: false
+    type: array
+    description: "Authentication_algorithm does not contain (case-insensitive)"
+  authentication_algorithm__nie:
+    required: false
+    type: array
+    description: "Authentication_algorithm inverse exact match (case-insensitive)"
+  authentication_algorithm__niew:
+    required: false
+    type: array
+    description: "Authentication_algorithm does not end with (case-insensitive)"
+  authentication_algorithm__nisw:
+    required: false
+    type: array
+    description: "Authentication_algorithm does not start with (case-sensitive)"
   authentication_method:
     required: false
     type: array
     description: "Authentication_method"
+  authentication_method__empty:
+    required: false
+    type: boolean
+    description: "Authentication_method is empty/null (boolean)"
+  authentication_method__ic:
+    required: false
+    type: array
+    description: "Authentication_method contains (case-insensitive)"
+  authentication_method__ie:
+    required: false
+    type: array
+    description: "Authentication_method exact match (case-insensitive)"
+  authentication_method__iew:
+    required: false
+    type: array
+    description: "Authentication_method ends with (case-insensitive)"
+  authentication_method__isw:
+    required: false
+    type: array
+    description: "Authentication_method starts with (case-sensitive)"
   authentication_method__n:
     required: false
     type: array
     description: "Authentication_method not equal to"
+  authentication_method__nic:
+    required: false
+    type: array
+    description: "Authentication_method does not contain (case-insensitive)"
+  authentication_method__nie:
+    required: false
+    type: array
+    description: "Authentication_method inverse exact match (case-insensitive)"
+  authentication_method__niew:
+    required: false
+    type: array
+    description: "Authentication_method does not end with (case-insensitive)"
+  authentication_method__nisw:
+    required: false
+    type: array
+    description: "Authentication_method does not start with (case-sensitive)"
   created:
     required: false
     type: array
@@ -113,18 +189,86 @@ parameters:
     required: false
     type: array
     description: "Encryption_algorithm"
+  encryption_algorithm__empty:
+    required: false
+    type: boolean
+    description: "Encryption_algorithm is empty/null (boolean)"
+  encryption_algorithm__ic:
+    required: false
+    type: array
+    description: "Encryption_algorithm contains (case-insensitive)"
+  encryption_algorithm__ie:
+    required: false
+    type: array
+    description: "Encryption_algorithm exact match (case-insensitive)"
+  encryption_algorithm__iew:
+    required: false
+    type: array
+    description: "Encryption_algorithm ends with (case-insensitive)"
+  encryption_algorithm__isw:
+    required: false
+    type: array
+    description: "Encryption_algorithm starts with (case-sensitive)"
   encryption_algorithm__n:
     required: false
     type: array
     description: "Encryption_algorithm not equal to"
+  encryption_algorithm__nic:
+    required: false
+    type: array
+    description: "Encryption_algorithm does not contain (case-insensitive)"
+  encryption_algorithm__nie:
+    required: false
+    type: array
+    description: "Encryption_algorithm inverse exact match (case-insensitive)"
+  encryption_algorithm__niew:
+    required: false
+    type: array
+    description: "Encryption_algorithm does not end with (case-insensitive)"
+  encryption_algorithm__nisw:
+    required: false
+    type: array
+    description: "Encryption_algorithm does not start with (case-sensitive)"
   group:
     required: false
     type: array
     description: "Diffie-Hellman group ID"
+  group__ic:
+    required: false
+    type: array
+    description: "Group contains (case-insensitive)"
+  group__ie:
+    required: false
+    type: array
+    description: "Group exact match (case-insensitive)"
+  group__iew:
+    required: false
+    type: array
+    description: "Group ends with (case-insensitive)"
+  group__isw:
+    required: false
+    type: array
+    description: "Group starts with (case-sensitive)"
   group__n:
     required: false
     type: array
     description: "Group not equal to"
+  group__nic:
+    required: false
+    type: array
+    description: "Group does not contain (case-insensitive)"
+  group__nie:
+    required: false
+    type: array
+    description: "Group inverse exact match (case-insensitive)"
+  group__niew:
+    required: false
+    type: array
+    description: "Group does not end with (case-insensitive)"
+  group__nisw:
+    required: false
+    type: array
+    description: "Group does not start with (case-sensitive)"
   id:
     required: false
     type: array
@@ -297,6 +441,14 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
   updated_by_request:
     required: false
     type: string
