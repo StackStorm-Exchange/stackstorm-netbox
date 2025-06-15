@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of FHRP group objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   auth_key:
     required: false
     type: array
@@ -65,10 +69,46 @@ parameters:
     required: false
     type: array
     description: "Auth_type"
+  auth_type__empty:
+    required: false
+    type: boolean
+    description: "Auth_type is empty/null (boolean)"
+  auth_type__ic:
+    required: false
+    type: array
+    description: "Auth_type contains (case-insensitive)"
+  auth_type__ie:
+    required: false
+    type: array
+    description: "Auth_type exact match (case-insensitive)"
+  auth_type__iew:
+    required: false
+    type: array
+    description: "Auth_type ends with (case-insensitive)"
+  auth_type__isw:
+    required: false
+    type: array
+    description: "Auth_type starts with (case-sensitive)"
   auth_type__n:
     required: false
     type: array
     description: "Auth_type not equal to"
+  auth_type__nic:
+    required: false
+    type: array
+    description: "Auth_type does not contain (case-insensitive)"
+  auth_type__nie:
+    required: false
+    type: array
+    description: "Auth_type inverse exact match (case-insensitive)"
+  auth_type__niew:
+    required: false
+    type: array
+    description: "Auth_type does not end with (case-insensitive)"
+  auth_type__nisw:
+    required: false
+    type: array
+    description: "Auth_type does not start with (case-sensitive)"
   created:
     required: false
     type: array
@@ -293,10 +333,46 @@ parameters:
     required: false
     type: array
     description: "Protocol"
+  protocol__empty:
+    required: false
+    type: boolean
+    description: "Protocol is empty/null (boolean)"
+  protocol__ic:
+    required: false
+    type: array
+    description: "Protocol contains (case-insensitive)"
+  protocol__ie:
+    required: false
+    type: array
+    description: "Protocol exact match (case-insensitive)"
+  protocol__iew:
+    required: false
+    type: array
+    description: "Protocol ends with (case-insensitive)"
+  protocol__isw:
+    required: false
+    type: array
+    description: "Protocol starts with (case-sensitive)"
   protocol__n:
     required: false
     type: array
     description: "Protocol not equal to"
+  protocol__nic:
+    required: false
+    type: array
+    description: "Protocol does not contain (case-insensitive)"
+  protocol__nie:
+    required: false
+    type: array
+    description: "Protocol inverse exact match (case-insensitive)"
+  protocol__niew:
+    required: false
+    type: array
+    description: "Protocol does not end with (case-insensitive)"
+  protocol__nisw:
+    required: false
+    type: array
+    description: "Protocol does not start with (case-sensitive)"
   q:
     required: false
     type: string
@@ -313,6 +389,14 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
   updated_by_request:
     required: false
     type: string

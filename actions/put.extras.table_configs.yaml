@@ -1,0 +1,68 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.3
+description: "Put a table config object."
+enabled: true
+entry_point: run.py
+name: put.extras.table_configs
+parameters:
+  endpoint_uri:
+    default: "/extras/table-configs/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  object_type:
+    required: false
+    type: string
+    description: "Object type"
+  table:
+    required: false
+    type: string
+    description: "Table"
+  name:
+    required: false
+    type: string
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  user:
+    required: false
+    type: integer
+    description: "User"
+  weight:
+    required: false
+    type: integer
+    description: "Weight"
+  enabled:
+    required: false
+    type: boolean
+    description: "Enabled"
+  shared:
+    required: false
+    type: boolean
+    description: "Shared"
+  columns:
+    required: false
+    type: array
+    description: "Columns"
+  ordering:
+    required: false
+    type: array
+    description: "Ordering"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to put."
+runner_type: python-script

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of IKE policy objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   created:
     required: false
     type: array
@@ -173,10 +177,46 @@ parameters:
     required: false
     type: array
     description: "Mode"
+  mode__empty:
+    required: false
+    type: boolean
+    description: "Mode is empty/null (boolean)"
+  mode__ic:
+    required: false
+    type: array
+    description: "Mode contains (case-insensitive)"
+  mode__ie:
+    required: false
+    type: array
+    description: "Mode exact match (case-insensitive)"
+  mode__iew:
+    required: false
+    type: array
+    description: "Mode ends with (case-insensitive)"
+  mode__isw:
+    required: false
+    type: array
+    description: "Mode starts with (case-sensitive)"
   mode__n:
     required: false
     type: array
     description: "Mode not equal to"
+  mode__nic:
+    required: false
+    type: array
+    description: "Mode does not contain (case-insensitive)"
+  mode__nie:
+    required: false
+    type: array
+    description: "Mode inverse exact match (case-insensitive)"
+  mode__niew:
+    required: false
+    type: array
+    description: "Mode does not end with (case-insensitive)"
+  mode__nisw:
+    required: false
+    type: array
+    description: "Mode does not start with (case-sensitive)"
   modified_by_request:
     required: false
     type: string
@@ -273,22 +313,6 @@ parameters:
     required: false
     type: string
     description: "Preshared_key does not start with (case-sensitive)"
-  proposal:
-    required: false
-    type: array
-    description: "Proposal"
-  proposal__n:
-    required: false
-    type: array
-    description: "Proposal not equal to"
-  proposal_id:
-    required: false
-    type: array
-    description: "Proposal_id"
-  proposal_id__n:
-    required: false
-    type: array
-    description: "Proposal_id not equal to"
   q:
     required: false
     type: string
@@ -301,6 +325,14 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
   updated_by_request:
     required: false
     type: string
@@ -309,10 +341,42 @@ parameters:
     required: false
     type: array
     description: "Version"
+  version__ic:
+    required: false
+    type: array
+    description: "Version contains (case-insensitive)"
+  version__ie:
+    required: false
+    type: array
+    description: "Version exact match (case-insensitive)"
+  version__iew:
+    required: false
+    type: array
+    description: "Version ends with (case-insensitive)"
+  version__isw:
+    required: false
+    type: array
+    description: "Version starts with (case-sensitive)"
   version__n:
     required: false
     type: array
     description: "Version not equal to"
+  version__nic:
+    required: false
+    type: array
+    description: "Version does not contain (case-insensitive)"
+  version__nie:
+    required: false
+    type: array
+    description: "Version inverse exact match (case-insensitive)"
+  version__niew:
+    required: false
+    type: array
+    description: "Version does not end with (case-insensitive)"
+  version__nisw:
+    required: false
+    type: array
+    description: "Version does not start with (case-sensitive)"
   save_in_key_store:
     type: boolean
     default: false

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of rack objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,15 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  airflow:
+    required: false
+    type: string
+    description: "* `front-to-rear` - Front to rear
+* `rear-to-front` - Rear to front"
   asset_tag:
     required: false
     type: array
@@ -72,7 +81,7 @@ parameters:
   contact_group:
     required: false
     type: array
-    description: "Contact group"
+    description: "Contact_group"
   contact_group__n:
     required: false
     type: array
@@ -209,6 +218,50 @@ parameters:
     required: false
     type: array
     description: "Facility_id does not start with (case-sensitive)"
+  form_factor:
+    required: false
+    type: array
+    description: "Form_factor"
+  form_factor__empty:
+    required: false
+    type: boolean
+    description: "Form_factor is empty/null (boolean)"
+  form_factor__ic:
+    required: false
+    type: array
+    description: "Form_factor contains (case-insensitive)"
+  form_factor__ie:
+    required: false
+    type: array
+    description: "Form_factor exact match (case-insensitive)"
+  form_factor__iew:
+    required: false
+    type: array
+    description: "Form_factor ends with (case-insensitive)"
+  form_factor__isw:
+    required: false
+    type: array
+    description: "Form_factor starts with (case-sensitive)"
+  form_factor__n:
+    required: false
+    type: array
+    description: "Form_factor not equal to"
+  form_factor__nic:
+    required: false
+    type: array
+    description: "Form_factor does not contain (case-insensitive)"
+  form_factor__nie:
+    required: false
+    type: array
+    description: "Form_factor inverse exact match (case-insensitive)"
+  form_factor__niew:
+    required: false
+    type: array
+    description: "Form_factor does not end with (case-insensitive)"
+  form_factor__nisw:
+    required: false
+    type: array
+    description: "Form_factor does not start with (case-sensitive)"
   id:
     required: false
     type: array
@@ -272,7 +325,7 @@ parameters:
   location:
     required: false
     type: array
-    description: "Location (slug)"
+    description: "Location"
   location__n:
     required: false
     type: array
@@ -280,11 +333,27 @@ parameters:
   location_id:
     required: false
     type: array
-    description: "Location (ID)"
+    description: "Location_id"
   location_id__n:
     required: false
     type: array
     description: "Location_id not equal to"
+  manufacturer:
+    required: false
+    type: array
+    description: "Manufacturer (slug)"
+  manufacturer__n:
+    required: false
+    type: array
+    description: "Manufacturer not equal to"
+  manufacturer_id:
+    required: false
+    type: array
+    description: "Manufacturer (ID)"
+  manufacturer_id__n:
+    required: false
+    type: array
+    description: "Manufacturer_id not equal to"
   max_weight:
     required: false
     type: array
@@ -425,15 +494,39 @@ parameters:
     required: false
     type: array
     description: "Outer_depth not equal to"
+  outer_height:
+    required: false
+    type: array
+    description: "Outer_height"
+  outer_height__empty:
+    required: false
+    type: boolean
+    description: "Outer_height is empty/null (boolean)"
+  outer_height__gt:
+    required: false
+    type: array
+    description: "Outer_height greater than"
+  outer_height__gte:
+    required: false
+    type: array
+    description: "Outer_height greater than or equal to"
+  outer_height__lt:
+    required: false
+    type: array
+    description: "Outer_height less than"
+  outer_height__lte:
+    required: false
+    type: array
+    description: "Outer_height less than or equal to"
+  outer_height__n:
+    required: false
+    type: array
+    description: "Outer_height not equal to"
   outer_unit:
     required: false
     type: string
     description: "* `mm` - Millimeters
 * `in` - Inches"
-  outer_unit__n:
-    required: false
-    type: string
-    description: "Outer_unit not equal to"
   outer_width:
     required: false
     type: array
@@ -466,10 +559,26 @@ parameters:
     required: false
     type: string
     description: "Search"
+  rack_type:
+    required: false
+    type: array
+    description: "Rack type (slug)"
+  rack_type__n:
+    required: false
+    type: array
+    description: "Rack_type not equal to"
+  rack_type_id:
+    required: false
+    type: array
+    description: "Rack type (ID)"
+  rack_type_id__n:
+    required: false
+    type: array
+    description: "Rack_type_id not equal to"
   region:
     required: false
     type: array
-    description: "Region (slug)"
+    description: "Region"
   region__n:
     required: false
     type: array
@@ -477,7 +586,7 @@ parameters:
   region_id:
     required: false
     type: array
-    description: "Region (ID)"
+    description: "Region_id"
   region_id__n:
     required: false
     type: array
@@ -553,7 +662,7 @@ parameters:
   site_group:
     required: false
     type: array
-    description: "Site group (slug)"
+    description: "Site_group"
   site_group__n:
     required: false
     type: array
@@ -561,7 +670,7 @@ parameters:
   site_group_id:
     required: false
     type: array
-    description: "Site group (ID)"
+    description: "Site_group_id"
   site_group_id__n:
     required: false
     type: array
@@ -606,10 +715,46 @@ parameters:
     required: false
     type: array
     description: "Status"
+  status__empty:
+    required: false
+    type: boolean
+    description: "Status is empty/null (boolean)"
+  status__ic:
+    required: false
+    type: array
+    description: "Status contains (case-insensitive)"
+  status__ie:
+    required: false
+    type: array
+    description: "Status exact match (case-insensitive)"
+  status__iew:
+    required: false
+    type: array
+    description: "Status ends with (case-insensitive)"
+  status__isw:
+    required: false
+    type: array
+    description: "Status starts with (case-sensitive)"
   status__n:
     required: false
     type: array
     description: "Status not equal to"
+  status__nic:
+    required: false
+    type: array
+    description: "Status does not contain (case-insensitive)"
+  status__nie:
+    required: false
+    type: array
+    description: "Status inverse exact match (case-insensitive)"
+  status__niew:
+    required: false
+    type: array
+    description: "Status does not end with (case-insensitive)"
+  status__nisw:
+    required: false
+    type: array
+    description: "Status does not start with (case-sensitive)"
   tag:
     required: false
     type: array
@@ -618,6 +763,14 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
   tenant:
     required: false
     type: array
@@ -629,7 +782,7 @@ parameters:
   tenant_group:
     required: false
     type: array
-    description: "Tenant Group (slug)"
+    description: "Tenant_group"
   tenant_group__n:
     required: false
     type: array
@@ -637,7 +790,7 @@ parameters:
   tenant_group_id:
     required: false
     type: array
-    description: "Tenant Group (ID)"
+    description: "Tenant_group_id"
   tenant_group_id__n:
     required: false
     type: array
@@ -650,14 +803,6 @@ parameters:
     required: false
     type: array
     description: "Tenant_id not equal to"
-  type:
-    required: false
-    type: array
-    description: "Type"
-  type__n:
-    required: false
-    type: array
-    description: "Type not equal to"
   u_height:
     required: false
     type: array
@@ -725,18 +870,46 @@ parameters:
 * `g` - Grams
 * `lb` - Pounds
 * `oz` - Ounces"
-  weight_unit__n:
-    required: false
-    type: string
-    description: "Weight_unit not equal to"
   width:
     required: false
     type: array
     description: "Rail-to-rail width"
+  width__ic:
+    required: false
+    type: array
+    description: "Width contains (case-insensitive)"
+  width__ie:
+    required: false
+    type: array
+    description: "Width exact match (case-insensitive)"
+  width__iew:
+    required: false
+    type: array
+    description: "Width ends with (case-insensitive)"
+  width__isw:
+    required: false
+    type: array
+    description: "Width starts with (case-sensitive)"
   width__n:
     required: false
     type: array
     description: "Width not equal to"
+  width__nic:
+    required: false
+    type: array
+    description: "Width does not contain (case-insensitive)"
+  width__nie:
+    required: false
+    type: array
+    description: "Width inverse exact match (case-insensitive)"
+  width__niew:
+    required: false
+    type: array
+    description: "Width does not end with (case-insensitive)"
+  width__nisw:
+    required: false
+    type: array
+    description: "Width does not start with (case-sensitive)"
   save_in_key_store:
     type: boolean
     default: false

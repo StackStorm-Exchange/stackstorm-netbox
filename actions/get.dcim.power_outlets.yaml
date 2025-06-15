@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of power outlet objects."
 enabled: true
 entry_point: run.py
@@ -17,15 +17,15 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   cable_end:
     required: false
     type: string
     description: "* `A` - A
 * `B` - B"
-  cable_end__n:
-    required: false
-    type: string
-    description: "Cable_end not equal to"
   cable_id:
     required: false
     type: array
@@ -38,6 +38,50 @@ parameters:
     required: false
     type: boolean
     description: "Cabled"
+  color:
+    required: false
+    type: array
+    description: "Color"
+  color__empty:
+    required: false
+    type: boolean
+    description: "Color is empty/null (boolean)"
+  color__ic:
+    required: false
+    type: array
+    description: "Color contains (case-insensitive)"
+  color__ie:
+    required: false
+    type: array
+    description: "Color exact match (case-insensitive)"
+  color__iew:
+    required: false
+    type: array
+    description: "Color ends with (case-insensitive)"
+  color__isw:
+    required: false
+    type: array
+    description: "Color starts with (case-sensitive)"
+  color__n:
+    required: false
+    type: array
+    description: "Color not equal to"
+  color__nic:
+    required: false
+    type: array
+    description: "Color does not contain (case-insensitive)"
+  color__nie:
+    required: false
+    type: array
+    description: "Color inverse exact match (case-insensitive)"
+  color__niew:
+    required: false
+    type: array
+    description: "Color does not end with (case-insensitive)"
+  color__nisw:
+    required: false
+    type: array
+    description: "Color does not start with (case-sensitive)"
   connected:
     required: false
     type: boolean
@@ -134,6 +178,66 @@ parameters:
     required: false
     type: array
     description: "Device_id not equal to"
+  device_role:
+    required: false
+    type: array
+    description: "Device role (slug)"
+  device_role__n:
+    required: false
+    type: array
+    description: "Device_role not equal to"
+  device_role_id:
+    required: false
+    type: array
+    description: "Device role (ID)"
+  device_role_id__n:
+    required: false
+    type: array
+    description: "Device_role_id not equal to"
+  device_status:
+    required: false
+    type: array
+    description: "Device_status"
+  device_status__empty:
+    required: false
+    type: boolean
+    description: "Device_status is empty/null (boolean)"
+  device_status__ic:
+    required: false
+    type: array
+    description: "Device_status contains (case-insensitive)"
+  device_status__ie:
+    required: false
+    type: array
+    description: "Device_status exact match (case-insensitive)"
+  device_status__iew:
+    required: false
+    type: array
+    description: "Device_status ends with (case-insensitive)"
+  device_status__isw:
+    required: false
+    type: array
+    description: "Device_status starts with (case-sensitive)"
+  device_status__n:
+    required: false
+    type: array
+    description: "Device_status not equal to"
+  device_status__nic:
+    required: false
+    type: array
+    description: "Device_status does not contain (case-insensitive)"
+  device_status__nie:
+    required: false
+    type: array
+    description: "Device_status inverse exact match (case-insensitive)"
+  device_status__niew:
+    required: false
+    type: array
+    description: "Device_status does not end with (case-insensitive)"
+  device_status__nisw:
+    required: false
+    type: array
+    description: "Device_status does not start with (case-sensitive)"
   device_type:
     required: false
     type: array
@@ -154,10 +258,46 @@ parameters:
     required: false
     type: array
     description: "Phase (for three-phase feeds)"
+  feed_leg__empty:
+    required: false
+    type: boolean
+    description: "Feed_leg is empty/null (boolean)"
+  feed_leg__ic:
+    required: false
+    type: array
+    description: "Feed_leg contains (case-insensitive)"
+  feed_leg__ie:
+    required: false
+    type: array
+    description: "Feed_leg exact match (case-insensitive)"
+  feed_leg__iew:
+    required: false
+    type: array
+    description: "Feed_leg ends with (case-insensitive)"
+  feed_leg__isw:
+    required: false
+    type: array
+    description: "Feed_leg starts with (case-sensitive)"
   feed_leg__n:
     required: false
     type: array
     description: "Feed_leg not equal to"
+  feed_leg__nic:
+    required: false
+    type: array
+    description: "Feed_leg does not contain (case-insensitive)"
+  feed_leg__nie:
+    required: false
+    type: array
+    description: "Feed_leg inverse exact match (case-insensitive)"
+  feed_leg__niew:
+    required: false
+    type: array
+    description: "Feed_leg does not end with (case-insensitive)"
+  feed_leg__nisw:
+    required: false
+    type: array
+    description: "Feed_leg does not start with (case-sensitive)"
   id:
     required: false
     type: array
@@ -381,7 +521,7 @@ parameters:
   region:
     required: false
     type: array
-    description: "Region (slug)"
+    description: "Region"
   region__n:
     required: false
     type: array
@@ -389,27 +529,11 @@ parameters:
   region_id:
     required: false
     type: array
-    description: "Region (ID)"
+    description: "Region_id"
   region_id__n:
     required: false
     type: array
     description: "Region_id not equal to"
-  role:
-    required: false
-    type: array
-    description: "Device role (slug)"
-  role__n:
-    required: false
-    type: array
-    description: "Role not equal to"
-  role_id:
-    required: false
-    type: array
-    description: "Device role (ID)"
-  role_id__n:
-    required: false
-    type: array
-    description: "Role_id not equal to"
   site:
     required: false
     type: array
@@ -421,7 +545,7 @@ parameters:
   site_group:
     required: false
     type: array
-    description: "Site group (slug)"
+    description: "Site_group"
   site_group__n:
     required: false
     type: array
@@ -429,7 +553,7 @@ parameters:
   site_group_id:
     required: false
     type: array
-    description: "Site group (ID)"
+    description: "Site_group_id"
   site_group_id__n:
     required: false
     type: array
@@ -442,6 +566,50 @@ parameters:
     required: false
     type: array
     description: "Site_id not equal to"
+  status:
+    required: false
+    type: array
+    description: "Status"
+  status__empty:
+    required: false
+    type: boolean
+    description: "Status is empty/null (boolean)"
+  status__ic:
+    required: false
+    type: array
+    description: "Status contains (case-insensitive)"
+  status__ie:
+    required: false
+    type: array
+    description: "Status exact match (case-insensitive)"
+  status__iew:
+    required: false
+    type: array
+    description: "Status ends with (case-insensitive)"
+  status__isw:
+    required: false
+    type: array
+    description: "Status starts with (case-sensitive)"
+  status__n:
+    required: false
+    type: array
+    description: "Status not equal to"
+  status__nic:
+    required: false
+    type: array
+    description: "Status does not contain (case-insensitive)"
+  status__nie:
+    required: false
+    type: array
+    description: "Status inverse exact match (case-insensitive)"
+  status__niew:
+    required: false
+    type: array
+    description: "Status does not end with (case-insensitive)"
+  status__nisw:
+    required: false
+    type: array
+    description: "Status does not start with (case-sensitive)"
   tag:
     required: false
     type: array
@@ -450,14 +618,58 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
   type:
     required: false
     type: array
     description: "Physical port type"
+  type__empty:
+    required: false
+    type: boolean
+    description: "Type is empty/null (boolean)"
+  type__ic:
+    required: false
+    type: array
+    description: "Type contains (case-insensitive)"
+  type__ie:
+    required: false
+    type: array
+    description: "Type exact match (case-insensitive)"
+  type__iew:
+    required: false
+    type: array
+    description: "Type ends with (case-insensitive)"
+  type__isw:
+    required: false
+    type: array
+    description: "Type starts with (case-sensitive)"
   type__n:
     required: false
     type: array
     description: "Type not equal to"
+  type__nic:
+    required: false
+    type: array
+    description: "Type does not contain (case-insensitive)"
+  type__nie:
+    required: false
+    type: array
+    description: "Type inverse exact match (case-insensitive)"
+  type__niew:
+    required: false
+    type: array
+    description: "Type does not end with (case-insensitive)"
+  type__nisw:
+    required: false
+    type: array
+    description: "Type does not start with (case-sensitive)"
   updated_by_request:
     required: false
     type: string
