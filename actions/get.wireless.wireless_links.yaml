@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of wireless link objects."
 enabled: true
 entry_point: run.py
@@ -17,14 +17,54 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   auth_cipher:
     required: false
     type: array
     description: "Auth_cipher"
+  auth_cipher__empty:
+    required: false
+    type: boolean
+    description: "Auth_cipher is empty/null (boolean)"
+  auth_cipher__ic:
+    required: false
+    type: array
+    description: "Auth_cipher contains (case-insensitive)"
+  auth_cipher__ie:
+    required: false
+    type: array
+    description: "Auth_cipher exact match (case-insensitive)"
+  auth_cipher__iew:
+    required: false
+    type: array
+    description: "Auth_cipher ends with (case-insensitive)"
+  auth_cipher__isw:
+    required: false
+    type: array
+    description: "Auth_cipher starts with (case-sensitive)"
   auth_cipher__n:
     required: false
     type: array
     description: "Auth_cipher not equal to"
+  auth_cipher__nic:
+    required: false
+    type: array
+    description: "Auth_cipher does not contain (case-insensitive)"
+  auth_cipher__nie:
+    required: false
+    type: array
+    description: "Auth_cipher inverse exact match (case-insensitive)"
+  auth_cipher__niew:
+    required: false
+    type: array
+    description: "Auth_cipher does not end with (case-insensitive)"
+  auth_cipher__nisw:
+    required: false
+    type: array
+    description: "Auth_cipher does not start with (case-sensitive)"
   auth_psk:
     required: false
     type: array
@@ -73,10 +113,46 @@ parameters:
     required: false
     type: array
     description: "Auth_type"
+  auth_type__empty:
+    required: false
+    type: boolean
+    description: "Auth_type is empty/null (boolean)"
+  auth_type__ic:
+    required: false
+    type: array
+    description: "Auth_type contains (case-insensitive)"
+  auth_type__ie:
+    required: false
+    type: array
+    description: "Auth_type exact match (case-insensitive)"
+  auth_type__iew:
+    required: false
+    type: array
+    description: "Auth_type ends with (case-insensitive)"
+  auth_type__isw:
+    required: false
+    type: array
+    description: "Auth_type starts with (case-sensitive)"
   auth_type__n:
     required: false
     type: array
     description: "Auth_type not equal to"
+  auth_type__nic:
+    required: false
+    type: array
+    description: "Auth_type does not contain (case-insensitive)"
+  auth_type__nie:
+    required: false
+    type: array
+    description: "Auth_type inverse exact match (case-insensitive)"
+  auth_type__niew:
+    required: false
+    type: array
+    description: "Auth_type does not end with (case-insensitive)"
+  auth_type__nisw:
+    required: false
+    type: array
+    description: "Auth_type does not start with (case-sensitive)"
   created:
     required: false
     type: array
@@ -153,6 +229,41 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  distance:
+    required: false
+    type: array
+    description: "Distance"
+  distance__empty:
+    required: false
+    type: boolean
+    description: "Distance is empty/null (boolean)"
+  distance__gt:
+    required: false
+    type: array
+    description: "Distance greater than"
+  distance__gte:
+    required: false
+    type: array
+    description: "Distance greater than or equal to"
+  distance__lt:
+    required: false
+    type: array
+    description: "Distance less than"
+  distance__lte:
+    required: false
+    type: array
+    description: "Distance less than or equal to"
+  distance__n:
+    required: false
+    type: array
+    description: "Distance not equal to"
+  distance_unit:
+    required: false
+    type: string
+    description: "* `km` - Kilometers
+* `m` - Meters
+* `mi` - Miles
+* `ft` - Feet"
   id:
     required: false
     type: array
@@ -293,10 +404,46 @@ parameters:
     required: false
     type: array
     description: "Status"
+  status__empty:
+    required: false
+    type: boolean
+    description: "Status is empty/null (boolean)"
+  status__ic:
+    required: false
+    type: array
+    description: "Status contains (case-insensitive)"
+  status__ie:
+    required: false
+    type: array
+    description: "Status exact match (case-insensitive)"
+  status__iew:
+    required: false
+    type: array
+    description: "Status ends with (case-insensitive)"
+  status__isw:
+    required: false
+    type: array
+    description: "Status starts with (case-sensitive)"
   status__n:
     required: false
     type: array
     description: "Status not equal to"
+  status__nic:
+    required: false
+    type: array
+    description: "Status does not contain (case-insensitive)"
+  status__nie:
+    required: false
+    type: array
+    description: "Status inverse exact match (case-insensitive)"
+  status__niew:
+    required: false
+    type: array
+    description: "Status does not end with (case-insensitive)"
+  status__nisw:
+    required: false
+    type: array
+    description: "Status does not start with (case-sensitive)"
   tag:
     required: false
     type: array
@@ -305,6 +452,14 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
   tenant:
     required: false
     type: array
@@ -316,7 +471,7 @@ parameters:
   tenant_group:
     required: false
     type: array
-    description: "Tenant Group (slug)"
+    description: "Tenant_group"
   tenant_group__n:
     required: false
     type: array
@@ -324,7 +479,7 @@ parameters:
   tenant_group_id:
     required: false
     type: array
-    description: "Tenant Group (ID)"
+    description: "Tenant_group_id"
   tenant_group_id__n:
     required: false
     type: array

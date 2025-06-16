@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Post a list of L2VPN objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   identifier:
     required: false
     type: integer
@@ -38,12 +42,20 @@ parameters:
 * `vxlan-evpn` - VXLAN-EVPN
 * `mpls-evpn` - MPLS EVPN
 * `pbb-evpn` - PBB EVPN
+* `evpn-vpws` - EVPN VPWS
 * `epl` - EPL
 * `evpl` - EVPL
 * `ep-lan` - Ethernet Private LAN
 * `evp-lan` - Ethernet Virtual Private LAN
 * `ep-tree` - Ethernet Private Tree
-* `evp-tree` - Ethernet Virtual Private Tree"
+* `evp-tree` - Ethernet Virtual Private Tree
+* `spb` - SPB"
+  status:
+    required: false
+    type: string
+    description: "* `active` - Active
+* `planned` - Planned
+* `decommissioning` - Decommissioning"
   import_targets:
     required: false
     type: array

@@ -1,0 +1,635 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.3
+description: "Get a list of rack type objects."
+enabled: true
+entry_point: run.py
+name: get.dcim.rack_types
+parameters:
+  endpoint_uri:
+    default: "/dcim/rack-types/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
+    required: false
+    type: string
+    description: "Created_by_request"
+  desc_units:
+    required: false
+    type: boolean
+    description: "Desc_units"
+  description:
+    required: false
+    type: array
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
+    required: false
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  form_factor:
+    required: false
+    type: array
+    description: "Form_factor"
+  form_factor__empty:
+    required: false
+    type: boolean
+    description: "Form_factor is empty/null (boolean)"
+  form_factor__ic:
+    required: false
+    type: array
+    description: "Form_factor contains (case-insensitive)"
+  form_factor__ie:
+    required: false
+    type: array
+    description: "Form_factor exact match (case-insensitive)"
+  form_factor__iew:
+    required: false
+    type: array
+    description: "Form_factor ends with (case-insensitive)"
+  form_factor__isw:
+    required: false
+    type: array
+    description: "Form_factor starts with (case-sensitive)"
+  form_factor__n:
+    required: false
+    type: array
+    description: "Form_factor not equal to"
+  form_factor__nic:
+    required: false
+    type: array
+    description: "Form_factor does not contain (case-insensitive)"
+  form_factor__nie:
+    required: false
+    type: array
+    description: "Form_factor inverse exact match (case-insensitive)"
+  form_factor__niew:
+    required: false
+    type: array
+    description: "Form_factor does not end with (case-insensitive)"
+  form_factor__nisw:
+    required: false
+    type: array
+    description: "Form_factor does not start with (case-sensitive)"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  manufacturer:
+    required: false
+    type: array
+    description: "Manufacturer (slug)"
+  manufacturer__n:
+    required: false
+    type: array
+    description: "Manufacturer not equal to"
+  manufacturer_id:
+    required: false
+    type: array
+    description: "Manufacturer (ID)"
+  manufacturer_id__n:
+    required: false
+    type: array
+    description: "Manufacturer_id not equal to"
+  max_weight:
+    required: false
+    type: array
+    description: "Max_weight"
+  max_weight__empty:
+    required: false
+    type: boolean
+    description: "Max_weight is empty/null (boolean)"
+  max_weight__gt:
+    required: false
+    type: array
+    description: "Max_weight greater than"
+  max_weight__gte:
+    required: false
+    type: array
+    description: "Max_weight greater than or equal to"
+  max_weight__lt:
+    required: false
+    type: array
+    description: "Max_weight less than"
+  max_weight__lte:
+    required: false
+    type: array
+    description: "Max_weight less than or equal to"
+  max_weight__n:
+    required: false
+    type: array
+    description: "Max_weight not equal to"
+  model:
+    required: false
+    type: array
+    description: "Model"
+  model__empty:
+    required: false
+    type: boolean
+    description: "Model is empty/null (boolean)"
+  model__ic:
+    required: false
+    type: array
+    description: "Model contains (case-insensitive)"
+  model__ie:
+    required: false
+    type: array
+    description: "Model exact match (case-insensitive)"
+  model__iew:
+    required: false
+    type: array
+    description: "Model ends with (case-insensitive)"
+  model__isw:
+    required: false
+    type: array
+    description: "Model starts with (case-sensitive)"
+  model__n:
+    required: false
+    type: array
+    description: "Model not equal to"
+  model__nic:
+    required: false
+    type: array
+    description: "Model does not contain (case-insensitive)"
+  model__nie:
+    required: false
+    type: array
+    description: "Model inverse exact match (case-insensitive)"
+  model__niew:
+    required: false
+    type: array
+    description: "Model does not end with (case-insensitive)"
+  model__nisw:
+    required: false
+    type: array
+    description: "Model does not start with (case-sensitive)"
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  mounting_depth:
+    required: false
+    type: array
+    description: "Mounting_depth"
+  mounting_depth__empty:
+    required: false
+    type: boolean
+    description: "Mounting_depth is empty/null (boolean)"
+  mounting_depth__gt:
+    required: false
+    type: array
+    description: "Mounting_depth greater than"
+  mounting_depth__gte:
+    required: false
+    type: array
+    description: "Mounting_depth greater than or equal to"
+  mounting_depth__lt:
+    required: false
+    type: array
+    description: "Mounting_depth less than"
+  mounting_depth__lte:
+    required: false
+    type: array
+    description: "Mounting_depth less than or equal to"
+  mounting_depth__n:
+    required: false
+    type: array
+    description: "Mounting_depth not equal to"
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  outer_depth:
+    required: false
+    type: array
+    description: "Outer_depth"
+  outer_depth__empty:
+    required: false
+    type: boolean
+    description: "Outer_depth is empty/null (boolean)"
+  outer_depth__gt:
+    required: false
+    type: array
+    description: "Outer_depth greater than"
+  outer_depth__gte:
+    required: false
+    type: array
+    description: "Outer_depth greater than or equal to"
+  outer_depth__lt:
+    required: false
+    type: array
+    description: "Outer_depth less than"
+  outer_depth__lte:
+    required: false
+    type: array
+    description: "Outer_depth less than or equal to"
+  outer_depth__n:
+    required: false
+    type: array
+    description: "Outer_depth not equal to"
+  outer_height:
+    required: false
+    type: array
+    description: "Outer_height"
+  outer_height__empty:
+    required: false
+    type: boolean
+    description: "Outer_height is empty/null (boolean)"
+  outer_height__gt:
+    required: false
+    type: array
+    description: "Outer_height greater than"
+  outer_height__gte:
+    required: false
+    type: array
+    description: "Outer_height greater than or equal to"
+  outer_height__lt:
+    required: false
+    type: array
+    description: "Outer_height less than"
+  outer_height__lte:
+    required: false
+    type: array
+    description: "Outer_height less than or equal to"
+  outer_height__n:
+    required: false
+    type: array
+    description: "Outer_height not equal to"
+  outer_unit:
+    required: false
+    type: string
+    description: "* `mm` - Millimeters
+* `in` - Inches"
+  outer_width:
+    required: false
+    type: array
+    description: "Outer_width"
+  outer_width__empty:
+    required: false
+    type: boolean
+    description: "Outer_width is empty/null (boolean)"
+  outer_width__gt:
+    required: false
+    type: array
+    description: "Outer_width greater than"
+  outer_width__gte:
+    required: false
+    type: array
+    description: "Outer_width greater than or equal to"
+  outer_width__lt:
+    required: false
+    type: array
+    description: "Outer_width less than"
+  outer_width__lte:
+    required: false
+    type: array
+    description: "Outer_width less than or equal to"
+  outer_width__n:
+    required: false
+    type: array
+    description: "Outer_width not equal to"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  slug:
+    required: false
+    type: array
+    description: "Slug"
+  slug__empty:
+    required: false
+    type: boolean
+    description: "Slug is empty/null (boolean)"
+  slug__ic:
+    required: false
+    type: array
+    description: "Slug contains (case-insensitive)"
+  slug__ie:
+    required: false
+    type: array
+    description: "Slug exact match (case-insensitive)"
+  slug__iew:
+    required: false
+    type: array
+    description: "Slug ends with (case-insensitive)"
+  slug__isw:
+    required: false
+    type: array
+    description: "Slug starts with (case-sensitive)"
+  slug__n:
+    required: false
+    type: array
+    description: "Slug not equal to"
+  slug__nic:
+    required: false
+    type: array
+    description: "Slug does not contain (case-insensitive)"
+  slug__nie:
+    required: false
+    type: array
+    description: "Slug inverse exact match (case-insensitive)"
+  slug__niew:
+    required: false
+    type: array
+    description: "Slug does not end with (case-insensitive)"
+  slug__nisw:
+    required: false
+    type: array
+    description: "Slug does not start with (case-sensitive)"
+  starting_unit:
+    required: false
+    type: array
+    description: "Starting_unit"
+  starting_unit__empty:
+    required: false
+    type: boolean
+    description: "Starting_unit is empty/null (boolean)"
+  starting_unit__gt:
+    required: false
+    type: array
+    description: "Starting_unit greater than"
+  starting_unit__gte:
+    required: false
+    type: array
+    description: "Starting_unit greater than or equal to"
+  starting_unit__lt:
+    required: false
+    type: array
+    description: "Starting_unit less than"
+  starting_unit__lte:
+    required: false
+    type: array
+    description: "Starting_unit less than or equal to"
+  starting_unit__n:
+    required: false
+    type: array
+    description: "Starting_unit not equal to"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
+  u_height:
+    required: false
+    type: array
+    description: "U_height"
+  u_height__empty:
+    required: false
+    type: boolean
+    description: "U_height is empty/null (boolean)"
+  u_height__gt:
+    required: false
+    type: array
+    description: "U_height greater than"
+  u_height__gte:
+    required: false
+    type: array
+    description: "U_height greater than or equal to"
+  u_height__lt:
+    required: false
+    type: array
+    description: "U_height less than"
+  u_height__lte:
+    required: false
+    type: array
+    description: "U_height less than or equal to"
+  u_height__n:
+    required: false
+    type: array
+    description: "U_height not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  weight:
+    required: false
+    type: array
+    description: "Weight"
+  weight__empty:
+    required: false
+    type: boolean
+    description: "Weight is empty/null (boolean)"
+  weight__gt:
+    required: false
+    type: array
+    description: "Weight greater than"
+  weight__gte:
+    required: false
+    type: array
+    description: "Weight greater than or equal to"
+  weight__lt:
+    required: false
+    type: array
+    description: "Weight less than"
+  weight__lte:
+    required: false
+    type: array
+    description: "Weight less than or equal to"
+  weight__n:
+    required: false
+    type: array
+    description: "Weight not equal to"
+  weight_unit:
+    required: false
+    type: string
+    description: "* `kg` - Kilograms
+* `g` - Grams
+* `lb` - Pounds
+* `oz` - Ounces"
+  width:
+    required: false
+    type: array
+    description: "Rail-to-rail width"
+  width__ic:
+    required: false
+    type: array
+    description: "Width contains (case-insensitive)"
+  width__ie:
+    required: false
+    type: array
+    description: "Width exact match (case-insensitive)"
+  width__iew:
+    required: false
+    type: array
+    description: "Width ends with (case-insensitive)"
+  width__isw:
+    required: false
+    type: array
+    description: "Width starts with (case-sensitive)"
+  width__n:
+    required: false
+    type: array
+    description: "Width not equal to"
+  width__nic:
+    required: false
+    type: array
+    description: "Width does not contain (case-insensitive)"
+  width__nie:
+    required: false
+    type: array
+    description: "Width inverse exact match (case-insensitive)"
+  width__niew:
+    required: false
+    type: array
+    description: "Width does not end with (case-insensitive)"
+  width__nisw:
+    required: false
+    type: array
+    description: "Width does not start with (case-sensitive)"
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script

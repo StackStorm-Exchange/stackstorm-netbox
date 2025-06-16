@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Put a power outlet template object."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   device_type:
     required: false
     type: object
@@ -97,6 +101,7 @@ parameters:
 * `nema-l15-60r` - NEMA L15-60R
 * `nema-l21-20r` - NEMA L21-20R
 * `nema-l21-30r` - NEMA L21-30R
+* `nema-l22-20r` - NEMA L22-20R
 * `nema-l22-30r` - NEMA L22-30R
 * `CS6360C` - CS6360C
 * `CS6364C` - CS6364C
@@ -123,6 +128,7 @@ parameters:
 * `molex-micro-fit-2x2` - Molex Micro-Fit 2x2
 * `molex-micro-fit-2x4` - Molex Micro-Fit 2x4
 * `dc-terminal` - DC Terminal
+* `eaton-c39` - Eaton C39
 * `hdot-cx` - HDOT Cx
 * `saf-d-grid` - Saf-D-Grid
 * `neutrik-powercon-20a` - Neutrik powerCON (20A)

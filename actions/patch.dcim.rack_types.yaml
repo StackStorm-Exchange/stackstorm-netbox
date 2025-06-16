@@ -1,0 +1,123 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.3
+description: "Patch a rack type object."
+enabled: true
+entry_point: run.py
+name: patch.dcim.rack_types
+parameters:
+  endpoint_uri:
+    default: "/dcim/rack-types/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  manufacturer:
+    required: false
+    type: object
+    description: "Manufacturer"
+  model:
+    required: false
+    type: string
+    description: "Model"
+  slug:
+    required: false
+    type: string
+    description: "Slug"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  form_factor:
+    required: false
+    type: string
+    description: "* `2-post-frame` - 2-post frame
+* `4-post-frame` - 4-post frame
+* `4-post-cabinet` - 4-post cabinet
+* `wall-frame` - Wall-mounted frame
+* `wall-frame-vertical` - Wall-mounted frame (vertical)
+* `wall-cabinet` - Wall-mounted cabinet
+* `wall-cabinet-vertical` - Wall-mounted cabinet (vertical)"
+  width:
+    required: false
+    type: integer
+    description: "Rail-to-rail width
+
+* `10` - 10 inches
+* `19` - 19 inches
+* `21` - 21 inches
+* `23` - 23 inches"
+  u_height:
+    required: false
+    type: integer
+    description: "Height (U)"
+  starting_unit:
+    required: false
+    type: integer
+    description: "Starting unit for rack"
+  desc_units:
+    required: false
+    type: boolean
+    description: "Descending units"
+  outer_width:
+    required: false
+    type: integer
+    description: "Outer dimension of rack (width)"
+  outer_height:
+    required: false
+    type: integer
+    description: "Outer dimension of rack (height)"
+  outer_depth:
+    required: false
+    type: integer
+    description: "Outer dimension of rack (depth)"
+  outer_unit:
+    required: false
+    type: string
+    description: "* `mm` - Millimeters
+* `in` - Inches"
+  weight:
+    required: false
+    type: integer
+    description: "Weight"
+  max_weight:
+    required: false
+    type: integer
+    description: "Maximum load capacity for the rack"
+  weight_unit:
+    required: false
+    type: string
+    description: "* `kg` - Kilograms
+* `g` - Grams
+* `lb` - Pounds
+* `oz` - Ounces"
+  mounting_depth:
+    required: false
+    type: integer
+    description: "Maximum depth of a mounted device, in millimeters. For four-post racks, this is the distance between the front and rear rails."
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script
