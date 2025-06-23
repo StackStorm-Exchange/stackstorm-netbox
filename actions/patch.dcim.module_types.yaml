@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Patch a module type object."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,14 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  profile:
+    required: false
+    type: object
+    description: "Profile"
   manufacturer:
     required: false
     type: object
@@ -29,6 +37,15 @@ parameters:
     required: false
     type: string
     description: "Discrete part number (optional)"
+  airflow:
+    required: false
+    type: string
+    description: "* `front-to-rear` - Front to rear
+* `rear-to-front` - Rear to front
+* `left-to-right` - Left to right
+* `right-to-left` - Right to left
+* `side-to-rear` - Side to rear
+* `passive` - Passive"
   weight:
     required: false
     type: integer
@@ -44,6 +61,10 @@ parameters:
     required: false
     type: string
     description: "Description"
+  attributes:
+    required: false
+    type: object
+    description: "Attributes"
   comments:
     required: false
     type: string

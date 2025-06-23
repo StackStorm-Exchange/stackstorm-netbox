@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of service objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,34 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  contact:
+    required: false
+    type: array
+    description: "Contact"
+  contact__n:
+    required: false
+    type: array
+    description: "Contact not equal to"
+  contact_group:
+    required: false
+    type: array
+    description: "Contact_group"
+  contact_group__n:
+    required: false
+    type: array
+    description: "Contact_group not equal to"
+  contact_role:
+    required: false
+    type: array
+    description: "Contact Role"
+  contact_role__n:
+    required: false
+    type: array
+    description: "Contact_role not equal to"
   created:
     required: false
     type: array
@@ -96,19 +124,19 @@ parameters:
   device:
     required: false
     type: array
-    description: "Device (name)"
-  device__n:
-    required: false
-    type: array
-    description: "Device not equal to"
+    description: "Device"
   device_id:
     required: false
     type: array
-    description: "Device (ID)"
-  device_id__n:
+    description: "Device_id"
+  fhrpgroup:
     required: false
     type: array
-    description: "Device_id not equal to"
+    description: "Fhrpgroup"
+  fhrpgroup_id:
+    required: false
+    type: array
+    description: "Fhrpgroup_id"
   id:
     required: false
     type: array
@@ -153,22 +181,6 @@ parameters:
     required: false
     type: array
     description: "Ip_address_id not equal to"
-  ipaddress:
-    required: false
-    type: array
-    description: "IP address"
-  ipaddress__n:
-    required: false
-    type: array
-    description: "Ipaddress not equal to"
-  ipaddress_id:
-    required: false
-    type: array
-    description: "IP address (ID)"
-  ipaddress_id__n:
-    required: false
-    type: array
-    description: "Ipaddress_id not equal to"
   last_updated:
     required: false
     type: array
@@ -257,6 +269,42 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  parent_object_id:
+    required: false
+    type: array
+    description: "Parent_object_id"
+  parent_object_id__empty:
+    required: false
+    type: boolean
+    description: "Parent_object_id is empty/null (boolean)"
+  parent_object_id__gt:
+    required: false
+    type: array
+    description: "Parent_object_id greater than"
+  parent_object_id__gte:
+    required: false
+    type: array
+    description: "Parent_object_id greater than or equal to"
+  parent_object_id__lt:
+    required: false
+    type: array
+    description: "Parent_object_id less than"
+  parent_object_id__lte:
+    required: false
+    type: array
+    description: "Parent_object_id less than or equal to"
+  parent_object_id__n:
+    required: false
+    type: array
+    description: "Parent_object_id not equal to"
+  parent_object_type:
+    required: false
+    type: integer
+    description: "Parent_object_type"
+  parent_object_type__n:
+    required: false
+    type: integer
+    description: "Parent_object_type not equal to"
   port:
     required: false
     type: integer
@@ -267,10 +315,6 @@ parameters:
     description: "* `tcp` - TCP
 * `udp` - UDP
 * `sctp` - SCTP"
-  protocol__n:
-    required: false
-    type: string
-    description: "Protocol not equal to"
   q:
     required: false
     type: string
@@ -283,6 +327,14 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
   updated_by_request:
     required: false
     type: string
@@ -290,19 +342,11 @@ parameters:
   virtual_machine:
     required: false
     type: array
-    description: "Virtual machine (name)"
-  virtual_machine__n:
-    required: false
-    type: array
-    description: "Virtual_machine not equal to"
+    description: "Virtual_machine"
   virtual_machine_id:
     required: false
     type: array
-    description: "Virtual machine (ID)"
-  virtual_machine_id__n:
-    required: false
-    type: array
-    description: "Virtual_machine_id not equal to"
+    description: "Virtual_machine_id"
   save_in_key_store:
     type: boolean
     default: false

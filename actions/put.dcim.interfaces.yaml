@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Put a interface object."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   device:
     required: false
     type: object
@@ -48,10 +52,14 @@ parameters:
 * `100base-tx` - 100BASE-TX (10/100ME)
 * `100base-t1` - 100BASE-T1 (10/100ME Single Pair)
 * `1000base-t` - 1000BASE-T (1GE)
+* `1000base-sx` - 1000BASE-SX (1GE)
+* `1000base-lx` - 1000BASE-LX (1GE)
+* `1000base-tx` - 1000BASE-TX (1GE)
 * `2.5gbase-t` - 2.5GBASE-T (2.5GE)
 * `5gbase-t` - 5GBASE-T (5GE)
 * `10gbase-t` - 10GBASE-T (10GE)
 * `10gbase-cx4` - 10GBASE-CX4 (10GE)
+* `100base-x-sfp` - SFP (100ME)
 * `1000base-x-gbic` - GBIC (1GE)
 * `1000base-x-sfp` - SFP (1GE)
 * `10gbase-x-sfpp` - SFP+ (10GE)
@@ -101,7 +109,9 @@ parameters:
 * `ieee802.11ad` - IEEE 802.11ad
 * `ieee802.11ax` - IEEE 802.11ax
 * `ieee802.11ay` - IEEE 802.11ay
+* `ieee802.11be` - IEEE 802.11be
 * `ieee802.15.1` - IEEE 802.15.1 (Bluetooth)
+* `ieee802.15.4` - IEEE 802.15.4 (LR-WPAN)
 * `other-wireless` - Other (Wireless)
 * `gsm` - GSM
 * `cdma` - CDMA
@@ -141,6 +151,7 @@ parameters:
 * `e3` - E3 (34 Mbps)
 * `xdsl` - xDSL
 * `docsis` - DOCSIS
+* `moca` - MoCA
 * `bpon` - BPON (622 Mbps / 155 Mbps)
 * `epon` - EPON (1 Gbps)
 * `10g-epon` - 10G-EPON (10 Gbps)
@@ -185,10 +196,10 @@ parameters:
     required: false
     type: integer
     description: "Mtu"
-  mac_address:
+  primary_mac_address:
     required: false
-    type: string
-    description: "Mac address"
+    type: object
+    description: "Primary mac address"
   speed:
     required: false
     type: integer
@@ -218,7 +229,8 @@ parameters:
 
 * `access` - Access
 * `tagged` - Tagged
-* `tagged-all` - Tagged (All)"
+* `tagged-all` - Tagged (All)
+* `q-in-q` - Q-in-Q (802.1ad)"
   rf_role:
     required: false
     type: string
@@ -263,6 +275,14 @@ parameters:
     required: false
     type: array
     description: "Tagged vlans"
+  qinq_svlan:
+    required: false
+    type: object
+    description: "Qinq svlan"
+  vlan_translation_policy:
+    required: false
+    type: object
+    description: "Vlan translation policy"
   mark_connected:
     required: false
     type: boolean

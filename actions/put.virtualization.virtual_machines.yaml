@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Put a virtual machine object."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,10 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   name:
     required: false
     type: string
@@ -29,7 +33,8 @@ parameters:
 * `planned` - Planned
 * `staged` - Staged
 * `failed` - Failed
-* `decommissioning` - Decommissioning"
+* `decommissioning` - Decommissioning
+* `paused` - Paused"
   site:
     required: false
     type: object
@@ -42,6 +47,10 @@ parameters:
     required: false
     type: object
     description: "Device"
+  serial:
+    required: false
+    type: string
+    description: "Serial number"
   role:
     required: false
     type: object
@@ -73,7 +82,7 @@ parameters:
   disk:
     required: false
     type: integer
-    description: "Disk (GB)"
+    description: "Disk (MB)"
   description:
     required: false
     type: string

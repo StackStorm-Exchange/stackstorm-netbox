@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of circuit termination objects."
 enabled: true
 entry_point: run.py
@@ -17,15 +17,15 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
   cable_end:
     required: false
     type: string
     description: "* `A` - A
 * `B` - B"
-  cable_end__n:
-    required: false
-    type: string
-    description: "Cable_end not equal to"
   cable_id:
     required: false
     type: array
@@ -182,6 +182,22 @@ parameters:
     required: false
     type: integer
     description: "Number of results to return per page."
+  location:
+    required: false
+    type: array
+    description: "Location"
+  location__n:
+    required: false
+    type: array
+    description: "Location not equal to"
+  location_id:
+    required: false
+    type: array
+    description: "Location_id"
+  location_id__n:
+    required: false
+    type: array
+    description: "Location_id not equal to"
   mark_connected:
     required: false
     type: boolean
@@ -302,6 +318,22 @@ parameters:
     required: false
     type: string
     description: "Search"
+  region:
+    required: false
+    type: array
+    description: "Region"
+  region__n:
+    required: false
+    type: array
+    description: "Region not equal to"
+  region_id:
+    required: false
+    type: array
+    description: "Region_id"
+  region_id__n:
+    required: false
+    type: array
+    description: "Region_id not equal to"
   site:
     required: false
     type: array
@@ -310,6 +342,22 @@ parameters:
     required: false
     type: array
     description: "Site not equal to"
+  site_group:
+    required: false
+    type: array
+    description: "Site_group"
+  site_group__n:
+    required: false
+    type: array
+    description: "Site_group not equal to"
+  site_group_id:
+    required: false
+    type: array
+    description: "Site_group_id"
+  site_group_id__n:
+    required: false
+    type: array
+    description: "Site_group_id not equal to"
   site_id:
     required: false
     type: array
@@ -326,15 +374,55 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
   term_side:
     required: false
     type: string
     description: "* `A` - A
 * `Z` - Z"
-  term_side__n:
+  termination_id:
+    required: false
+    type: array
+    description: "Termination_id"
+  termination_id__empty:
+    required: false
+    type: boolean
+    description: "Termination_id is empty/null (boolean)"
+  termination_id__gt:
+    required: false
+    type: array
+    description: "Termination_id greater than"
+  termination_id__gte:
+    required: false
+    type: array
+    description: "Termination_id greater than or equal to"
+  termination_id__lt:
+    required: false
+    type: array
+    description: "Termination_id less than"
+  termination_id__lte:
+    required: false
+    type: array
+    description: "Termination_id less than or equal to"
+  termination_id__n:
+    required: false
+    type: array
+    description: "Termination_id not equal to"
+  termination_type:
     required: false
     type: string
-    description: "Term_side not equal to"
+    description: "Termination_type"
+  termination_type__n:
+    required: false
+    type: string
+    description: "Termination_type not equal to"
   updated_by_request:
     required: false
     type: string
