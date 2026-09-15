@@ -20,6 +20,12 @@ ssl_verify:
   type: "boolean"
   required: true
 
+default_fail_non_2xx:
+  description: "Default behavior for NetBox HTTP actions: when true, actions will fail on non-2xx NetBox responses unless the per-action fail_non_2xx parameter is explicitly set."
+  type: "boolean"
+  required: false
+  default: false
+
 sensor_address:
   description: "Host address to run the Webhook sensor on."
   type: "string"

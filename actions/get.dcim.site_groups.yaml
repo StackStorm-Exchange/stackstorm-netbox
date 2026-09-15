@@ -18,7 +18,6 @@ parameters:
     immutable: true
     type: boolean
   fail_non_2xx:
-    default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
   ancestor:

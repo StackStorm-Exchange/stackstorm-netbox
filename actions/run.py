@@ -10,10 +10,17 @@ class NetboxHTTPAction(NetboxBaseAction):
     Action to call netbox api and return response.
     """
 
-    def run(self, endpoint_uri, http_verb, get_detail_route_eligible, fail_non_2xx, **kwargs):
+    def run(self, endpoint_uri, http_verb, get_detail_route_eligible, fail_non_2xx=None, **kwargs):
         """
         StackStorm action entry point.
         """
+        # Determine effective fail_non_2xx behavior:
+        # - If the caller explicitly provided fail_non_2xx (True/False), honor that.
+        # - Otherwise, fall back to the pack-level default_fail_non_2xx config option (default False).
+        if fail_non_2xx is None:
+            effective_fail_non_2xx = self.config.get("default_fail_non_2xx", False)
+        else:
+            effective_fail_non_2xx = fail_non_2xx
         if http_verb == "get":
             if kwargs.get("id", False) and get_detail_route_eligible:
                 # modify the `endpoint_uri` to use the detail route
@@ -27,7 +34,7 @@ class NetboxHTTPAction(NetboxBaseAction):
 
             result = self.make_request(endpoint_uri, http_verb, **kwargs)
 
-            if fail_non_2xx:
+            if effective_fail_non_2xx:
                 # Return error rather than storing it in the keystone.
                 if result["status"] not in range(200, 300):
                     return (False, result)
@@ -53,7 +60,7 @@ class NetboxHTTPAction(NetboxBaseAction):
         # http return code is not 2xx.
         action_succeeded = True
 
-        if fail_non_2xx:
+        if effective_fail_non_2xx:
             action_succeeded = result.get("status") in range(200, 300)
 
         return (action_succeeded, result)

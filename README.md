@@ -16,10 +16,22 @@ hostname: "netbox.corp.lan"
 api_token: "aaabbbccc111222333"
 use_https: true
 ssl_verify: true
+default_fail_non_2xx: false  # Optional: when true, actions fail on non-2xx NetBox responses by default
 ```
 
 After editing, run `sudo st2ctl reload --register-configs` to ensure your configuration
 is loaded.
+
+### Controlling action failure on non-2xx responses
+
+By default, NetBox actions in this pack **do not** fail when NetBox returns a non-2xx HTTP status unless the `fail_non_2xx` action parameter is explicitly set to `true`.
+
+- The pack configuration option `default_fail_non_2xx` controls the **default** behavior for all NetBox HTTP actions:
+  - If `default_fail_non_2xx` is `false` or omitted (the default), actions will only fail on non-2xx responses when `fail_non_2xx=true` is explicitly set on the action invocation.
+  - If `default_fail_non_2xx` is `true`, actions will fail on non-2xx responses **by default**, unless explicitly overridden.
+- The per-action parameter `fail_non_2xx` always takes precedence over the pack config:
+  - `fail_non_2xx=true` forces the action to fail on non-2xx responses, regardless of `default_fail_non_2xx`.
+  - `fail_non_2xx=false` forces the action **not** to fail on non-2xx responses, even if `default_fail_non_2xx` is `true`.
 
 ## Actions
 
