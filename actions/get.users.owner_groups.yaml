@@ -1,0 +1,186 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.6
+description: "Get a list of owner group objects."
+enabled: true
+entry_point: run.py
+name: get.users.owner_groups
+parameters:
+  endpoint_uri:
+    default: "/users/owner-groups/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  description:
+    required: false
+    type: string
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: string
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: string
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: string
+    description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
+  description__isw:
+    required: false
+    type: string
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: string
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: string
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: string
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: string
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: string
+    description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
+  id:
+    required: false
+    type: integer
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: integer
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: integer
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: integer
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: integer
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: integer
+    description: "Id not equal to"
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  name:
+    required: false
+    type: string
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: string
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: string
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: string
+    description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: string
+    description: "Name"
+  name__isw:
+    required: false
+    type: string
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: string
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: string
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: string
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: string
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: string
+    description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: string
+    description: "Name"
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  q:
+    required: false
+    type: string
+    description: "Search"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script

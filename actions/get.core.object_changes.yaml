@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Retrieve a list of recent changes."
 enabled: true
 entry_point: run.py
@@ -26,9 +26,57 @@ parameters:
     description: "* `create` - Created
 * `update` - Updated
 * `delete` - Deleted"
+  action__empty:
+    required: false
+    type: boolean
+    description: "Action is empty/null (boolean)"
+  action__ic:
+    required: false
+    type: string
+    description: "Action contains (case-insensitive)"
+  action__ie:
+    required: false
+    type: string
+    description: "Action exact match (case-insensitive)"
+  action__iew:
+    required: false
+    type: string
+    description: "Action ends with (case-insensitive)"
+  action__iregex:
+    required: false
+    type: string
+    description: "Action"
+  action__isw:
+    required: false
+    type: string
+    description: "Action starts with (case-sensitive)"
+  action__n:
+    required: false
+    type: string
+    description: "Action not equal to"
+  action__nic:
+    required: false
+    type: string
+    description: "Action does not contain (case-insensitive)"
+  action__nie:
+    required: false
+    type: string
+    description: "Action inverse exact match (case-insensitive)"
+  action__niew:
+    required: false
+    type: string
+    description: "Action does not end with (case-insensitive)"
+  action__nisw:
+    required: false
+    type: string
+    description: "Action does not start with (case-sensitive)"
+  action__regex:
+    required: false
+    type: string
+    description: "Action"
   changed_object_id:
     required: false
-    type: array
+    type: integer
     description: "Changed_object_id"
   changed_object_id__empty:
     required: false
@@ -36,23 +84,23 @@ parameters:
     description: "Changed_object_id is empty/null (boolean)"
   changed_object_id__gt:
     required: false
-    type: array
+    type: integer
     description: "Changed_object_id greater than"
   changed_object_id__gte:
     required: false
-    type: array
+    type: integer
     description: "Changed_object_id greater than or equal to"
   changed_object_id__lt:
     required: false
-    type: array
+    type: integer
     description: "Changed_object_id less than"
   changed_object_id__lte:
     required: false
-    type: array
+    type: integer
     description: "Changed_object_id less than or equal to"
   changed_object_id__n:
     required: false
-    type: array
+    type: integer
     description: "Changed_object_id not equal to"
   changed_object_type:
     required: false
@@ -64,15 +112,15 @@ parameters:
     description: "Changed_object_type not equal to"
   changed_object_type_id:
     required: false
-    type: array
+    type: integer
     description: "Changed_object_type_id"
   changed_object_type_id__n:
     required: false
-    type: array
+    type: integer
     description: "Changed_object_type_id not equal to"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -80,23 +128,23 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   limit:
     required: false
@@ -104,7 +152,7 @@ parameters:
     description: "Number of results to return per page."
   object_repr:
     required: false
-    type: array
+    type: string
     description: "Object_repr"
   object_repr__empty:
     required: false
@@ -112,40 +160,48 @@ parameters:
     description: "Object_repr is empty/null (boolean)"
   object_repr__ic:
     required: false
-    type: array
+    type: string
     description: "Object_repr contains (case-insensitive)"
   object_repr__ie:
     required: false
-    type: array
+    type: string
     description: "Object_repr exact match (case-insensitive)"
   object_repr__iew:
     required: false
-    type: array
+    type: string
     description: "Object_repr ends with (case-insensitive)"
+  object_repr__iregex:
+    required: false
+    type: string
+    description: "Object_repr"
   object_repr__isw:
     required: false
-    type: array
+    type: string
     description: "Object_repr starts with (case-sensitive)"
   object_repr__n:
     required: false
-    type: array
+    type: string
     description: "Object_repr not equal to"
   object_repr__nic:
     required: false
-    type: array
+    type: string
     description: "Object_repr does not contain (case-insensitive)"
   object_repr__nie:
     required: false
-    type: array
+    type: string
     description: "Object_repr inverse exact match (case-insensitive)"
   object_repr__niew:
     required: false
-    type: array
+    type: string
     description: "Object_repr does not end with (case-insensitive)"
   object_repr__nisw:
     required: false
-    type: array
+    type: string
     description: "Object_repr does not start with (case-sensitive)"
+  object_repr__regex:
+    required: false
+    type: string
+    description: "Object_repr"
   offset:
     required: false
     type: integer
@@ -160,7 +216,7 @@ parameters:
     description: "Search"
   related_object_id:
     required: false
-    type: array
+    type: integer
     description: "Related_object_id"
   related_object_id__empty:
     required: false
@@ -168,36 +224,40 @@ parameters:
     description: "Related_object_id is empty/null (boolean)"
   related_object_id__gt:
     required: false
-    type: array
+    type: integer
     description: "Related_object_id greater than"
   related_object_id__gte:
     required: false
-    type: array
+    type: integer
     description: "Related_object_id greater than or equal to"
   related_object_id__lt:
     required: false
-    type: array
+    type: integer
     description: "Related_object_id less than"
   related_object_id__lte:
     required: false
-    type: array
+    type: integer
     description: "Related_object_id less than or equal to"
   related_object_id__n:
     required: false
-    type: array
+    type: integer
     description: "Related_object_id not equal to"
   related_object_type:
     required: false
-    type: integer
+    type: string
     description: "Related_object_type"
   related_object_type__n:
     required: false
-    type: integer
+    type: string
     description: "Related_object_type not equal to"
   request_id:
     required: false
     type: string
     description: "Request_id"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   time_after:
     required: false
     type: string
@@ -208,23 +268,23 @@ parameters:
     description: "Time_before"
   user:
     required: false
-    type: array
+    type: string
     description: "User name"
   user__n:
     required: false
-    type: array
+    type: string
     description: "User not equal to"
   user_id:
     required: false
-    type: array
+    type: integer
     description: "User (ID)"
   user_id__n:
     required: false
-    type: array
+    type: integer
     description: "User_id not equal to"
   user_name:
     required: false
-    type: array
+    type: string
     description: "User_name"
   user_name__empty:
     required: false
@@ -232,40 +292,48 @@ parameters:
     description: "User_name is empty/null (boolean)"
   user_name__ic:
     required: false
-    type: array
+    type: string
     description: "User_name contains (case-insensitive)"
   user_name__ie:
     required: false
-    type: array
+    type: string
     description: "User_name exact match (case-insensitive)"
   user_name__iew:
     required: false
-    type: array
+    type: string
     description: "User_name ends with (case-insensitive)"
+  user_name__iregex:
+    required: false
+    type: string
+    description: "User_name"
   user_name__isw:
     required: false
-    type: array
+    type: string
     description: "User_name starts with (case-sensitive)"
   user_name__n:
     required: false
-    type: array
+    type: string
     description: "User_name not equal to"
   user_name__nic:
     required: false
-    type: array
+    type: string
     description: "User_name does not contain (case-insensitive)"
   user_name__nie:
     required: false
-    type: array
+    type: string
     description: "User_name inverse exact match (case-insensitive)"
   user_name__niew:
     required: false
-    type: array
+    type: string
     description: "User_name does not end with (case-insensitive)"
   user_name__nisw:
     required: false
-    type: array
+    type: string
     description: "User_name does not start with (case-sensitive)"
+  user_name__regex:
+    required: false
+    type: string
+    description: "User_name"
   save_in_key_store:
     type: boolean
     default: false

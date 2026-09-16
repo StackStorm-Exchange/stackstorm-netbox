@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of L2VPN termination objects."
 enabled: true
 entry_point: run.py
@@ -22,7 +22,7 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   assigned_object_id:
     required: false
-    type: array
+    type: integer
     description: "Assigned_object_id"
   assigned_object_id__empty:
     required: false
@@ -30,23 +30,23 @@ parameters:
     description: "Assigned_object_id is empty/null (boolean)"
   assigned_object_id__gt:
     required: false
-    type: array
+    type: integer
     description: "Assigned_object_id greater than"
   assigned_object_id__gte:
     required: false
-    type: array
+    type: integer
     description: "Assigned_object_id greater than or equal to"
   assigned_object_id__lt:
     required: false
-    type: array
+    type: integer
     description: "Assigned_object_id less than"
   assigned_object_id__lte:
     required: false
-    type: array
+    type: integer
     description: "Assigned_object_id less than or equal to"
   assigned_object_id__n:
     required: false
-    type: array
+    type: integer
     description: "Assigned_object_id not equal to"
   assigned_object_type:
     required: false
@@ -56,33 +56,41 @@ parameters:
     required: false
     type: string
     description: "Assigned_object_type not equal to"
+  assigned_object_type_id:
+    required: false
+    type: integer
+    description: "Assigned_object_type_id"
+  assigned_object_type_id__n:
+    required: false
+    type: integer
+    description: "Assigned_object_type_id not equal to"
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -90,23 +98,23 @@ parameters:
     description: "Created_by_request"
   device:
     required: false
-    type: array
+    type: string
     description: "Device (name)"
   device__n:
     required: false
-    type: array
+    type: string
     description: "Device not equal to"
   device_id:
     required: false
-    type: array
+    type: integer
     description: "Device (ID)"
   device_id__n:
     required: false
-    type: array
+    type: integer
     description: "Device_id not equal to"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -114,83 +122,83 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   interface:
     required: false
-    type: array
+    type: string
     description: "Interface (name)"
   interface__n:
     required: false
-    type: array
+    type: string
     description: "Interface not equal to"
   interface_id:
     required: false
-    type: array
+    type: integer
     description: "Interface (ID)"
   interface_id__n:
     required: false
-    type: array
+    type: integer
     description: "Interface_id not equal to"
   l2vpn:
     required: false
-    type: array
+    type: string
     description: "L2VPN (slug)"
   l2vpn__n:
     required: false
-    type: array
+    type: string
     description: "L2vpn not equal to"
   l2vpn_id:
     required: false
-    type: array
+    type: integer
     description: "L2VPN (ID)"
   l2vpn_id__n:
     required: false
-    type: array
+    type: integer
     description: "L2vpn_id not equal to"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -214,35 +222,39 @@ parameters:
     description: "Search"
   region:
     required: false
-    type: array
+    type: string
     description: "Region"
   region_id:
     required: false
-    type: array
+    type: integer
     description: "Region_id"
   site:
     required: false
-    type: array
+    type: string
     description: "Site"
   site_id:
     required: false
-    type: array
+    type: integer
     description: "Site_id"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   tag:
     required: false
-    type: array
+    type: string
     description: "Tag"
   tag__n:
     required: false
-    type: array
+    type: string
     description: "Tag not equal to"
   tag_id:
     required: false
-    type: array
+    type: integer
     description: "Tag_id"
   tag_id__n:
     required: false
-    type: array
+    type: integer
     description: "Tag_id not equal to"
   updated_by_request:
     required: false
@@ -250,35 +262,35 @@ parameters:
     description: "Updated_by_request"
   virtual_machine:
     required: false
-    type: array
+    type: string
     description: "Virtual machine (name)"
   virtual_machine__n:
     required: false
-    type: array
+    type: string
     description: "Virtual_machine not equal to"
   virtual_machine_id:
     required: false
-    type: array
+    type: integer
     description: "Virtual machine (ID)"
   virtual_machine_id__n:
     required: false
-    type: array
+    type: integer
     description: "Virtual_machine_id not equal to"
   vlan:
     required: false
-    type: array
+    type: string
     description: "VLAN (name)"
   vlan__n:
     required: false
-    type: array
+    type: string
     description: "Vlan not equal to"
   vlan_id:
     required: false
-    type: array
+    type: integer
     description: "VLAN (ID)"
   vlan_id__n:
     required: false
-    type: array
+    type: integer
     description: "Vlan_id not equal to"
   vlan_vid:
     required: false
@@ -310,19 +322,19 @@ parameters:
     description: "Vlan_vid not equal to"
   vminterface:
     required: false
-    type: array
+    type: string
     description: "VM interface (name)"
   vminterface__n:
     required: false
-    type: array
+    type: string
     description: "Vminterface not equal to"
   vminterface_id:
     required: false
-    type: array
+    type: integer
     description: "VM Interface (ID)"
   vminterface_id__n:
     required: false
-    type: array
+    type: integer
     description: "Vminterface_id not equal to"
   save_in_key_store:
     type: boolean

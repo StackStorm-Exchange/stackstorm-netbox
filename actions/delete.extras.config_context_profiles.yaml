@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
-description: "Delete a cable termination object."
+# NetBox API version: 4.6
+description: "Delete a config context profile object."
 enabled: true
 entry_point: run.py
-name: delete.dcim.cable_terminations
+name: delete.extras.config_context_profiles
 parameters:
   endpoint_uri:
-    default: "/dcim/cable-terminations/{{ id }}/"
+    default: "/extras/config-context-profiles/{{ id }}/"
     immutable: true
     type: string
   http_verb:

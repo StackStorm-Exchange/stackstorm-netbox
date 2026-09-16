@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of interface template objects."
 enabled: true
 entry_point: run.py
@@ -22,39 +22,39 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   bridge_id:
     required: false
-    type: array
+    type: integer
     description: "Bridge_id"
   bridge_id__n:
     required: false
-    type: array
+    type: integer
     description: "Bridge_id not equal to"
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -62,7 +62,7 @@ parameters:
     description: "Created_by_request"
   description:
     required: false
-    type: array
+    type: string
     description: "Description"
   description__empty:
     required: false
@@ -70,47 +70,55 @@ parameters:
     description: "Description is empty/null (boolean)"
   description__ic:
     required: false
-    type: array
+    type: string
     description: "Description contains (case-insensitive)"
   description__ie:
     required: false
-    type: array
+    type: string
     description: "Description exact match (case-insensitive)"
   description__iew:
     required: false
-    type: array
+    type: string
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
   description__isw:
     required: false
-    type: array
+    type: string
     description: "Description starts with (case-sensitive)"
   description__n:
     required: false
-    type: array
+    type: string
     description: "Description not equal to"
   description__nic:
     required: false
-    type: array
+    type: string
     description: "Description does not contain (case-insensitive)"
   description__nie:
     required: false
-    type: array
+    type: string
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: false
-    type: array
+    type: string
     description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: false
-    type: array
+    type: string
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
   device_type_id:
     required: false
-    type: array
+    type: integer
     description: "Device type (ID)"
   device_type_id__n:
     required: false
-    type: array
+    type: integer
     description: "Device_type_id not equal to"
   enabled:
     required: false
@@ -118,7 +126,7 @@ parameters:
     description: "Enabled"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -126,27 +134,27 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   label:
     required: false
-    type: array
+    type: string
     description: "Label"
   label__empty:
     required: false
@@ -154,67 +162,75 @@ parameters:
     description: "Label is empty/null (boolean)"
   label__ic:
     required: false
-    type: array
+    type: string
     description: "Label contains (case-insensitive)"
   label__ie:
     required: false
-    type: array
+    type: string
     description: "Label exact match (case-insensitive)"
   label__iew:
     required: false
-    type: array
+    type: string
     description: "Label ends with (case-insensitive)"
+  label__iregex:
+    required: false
+    type: string
+    description: "Label"
   label__isw:
     required: false
-    type: array
+    type: string
     description: "Label starts with (case-sensitive)"
   label__n:
     required: false
-    type: array
+    type: string
     description: "Label not equal to"
   label__nic:
     required: false
-    type: array
+    type: string
     description: "Label does not contain (case-insensitive)"
   label__nie:
     required: false
-    type: array
+    type: string
     description: "Label inverse exact match (case-insensitive)"
   label__niew:
     required: false
-    type: array
+    type: string
     description: "Label does not end with (case-insensitive)"
   label__nisw:
     required: false
-    type: array
+    type: string
     description: "Label does not start with (case-sensitive)"
+  label__regex:
+    required: false
+    type: string
+    description: "Label"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -230,15 +246,15 @@ parameters:
     description: "Modified_by_request"
   module_type_id:
     required: false
-    type: array
+    type: integer
     description: "Module type (ID)"
   module_type_id__n:
     required: false
-    type: array
+    type: integer
     description: "Module_type_id not equal to"
   name:
     required: false
-    type: array
+    type: string
     description: "Name"
   name__empty:
     required: false
@@ -246,40 +262,48 @@ parameters:
     description: "Name is empty/null (boolean)"
   name__ic:
     required: false
-    type: array
+    type: string
     description: "Name contains (case-insensitive)"
   name__ie:
     required: false
-    type: array
+    type: string
     description: "Name exact match (case-insensitive)"
   name__iew:
     required: false
-    type: array
+    type: string
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: string
+    description: "Name"
   name__isw:
     required: false
-    type: array
+    type: string
     description: "Name starts with (case-sensitive)"
   name__n:
     required: false
-    type: array
+    type: string
     description: "Name not equal to"
   name__nic:
     required: false
-    type: array
+    type: string
     description: "Name does not contain (case-insensitive)"
   name__nie:
     required: false
-    type: array
+    type: string
     description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: false
-    type: array
+    type: string
     description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: false
-    type: array
+    type: string
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: string
+    description: "Name"
   offset:
     required: false
     type: integer
@@ -290,7 +314,7 @@ parameters:
     description: "Which field to use when ordering the results."
   poe_mode:
     required: false
-    type: array
+    type: string
     description: "Poe_mode"
   poe_mode__empty:
     required: false
@@ -298,43 +322,51 @@ parameters:
     description: "Poe_mode is empty/null (boolean)"
   poe_mode__ic:
     required: false
-    type: array
+    type: string
     description: "Poe_mode contains (case-insensitive)"
   poe_mode__ie:
     required: false
-    type: array
+    type: string
     description: "Poe_mode exact match (case-insensitive)"
   poe_mode__iew:
     required: false
-    type: array
+    type: string
     description: "Poe_mode ends with (case-insensitive)"
+  poe_mode__iregex:
+    required: false
+    type: string
+    description: "Poe_mode"
   poe_mode__isw:
     required: false
-    type: array
+    type: string
     description: "Poe_mode starts with (case-sensitive)"
   poe_mode__n:
     required: false
-    type: array
+    type: string
     description: "Poe_mode not equal to"
   poe_mode__nic:
     required: false
-    type: array
+    type: string
     description: "Poe_mode does not contain (case-insensitive)"
   poe_mode__nie:
     required: false
-    type: array
+    type: string
     description: "Poe_mode inverse exact match (case-insensitive)"
   poe_mode__niew:
     required: false
-    type: array
+    type: string
     description: "Poe_mode does not end with (case-insensitive)"
   poe_mode__nisw:
     required: false
-    type: array
+    type: string
     description: "Poe_mode does not start with (case-sensitive)"
+  poe_mode__regex:
+    required: false
+    type: string
+    description: "Poe_mode"
   poe_type:
     required: false
-    type: array
+    type: string
     description: "Poe_type"
   poe_type__empty:
     required: false
@@ -342,47 +374,55 @@ parameters:
     description: "Poe_type is empty/null (boolean)"
   poe_type__ic:
     required: false
-    type: array
+    type: string
     description: "Poe_type contains (case-insensitive)"
   poe_type__ie:
     required: false
-    type: array
+    type: string
     description: "Poe_type exact match (case-insensitive)"
   poe_type__iew:
     required: false
-    type: array
+    type: string
     description: "Poe_type ends with (case-insensitive)"
+  poe_type__iregex:
+    required: false
+    type: string
+    description: "Poe_type"
   poe_type__isw:
     required: false
-    type: array
+    type: string
     description: "Poe_type starts with (case-sensitive)"
   poe_type__n:
     required: false
-    type: array
+    type: string
     description: "Poe_type not equal to"
   poe_type__nic:
     required: false
-    type: array
+    type: string
     description: "Poe_type does not contain (case-insensitive)"
   poe_type__nie:
     required: false
-    type: array
+    type: string
     description: "Poe_type inverse exact match (case-insensitive)"
   poe_type__niew:
     required: false
-    type: array
+    type: string
     description: "Poe_type does not end with (case-insensitive)"
   poe_type__nisw:
     required: false
-    type: array
+    type: string
     description: "Poe_type does not start with (case-sensitive)"
+  poe_type__regex:
+    required: false
+    type: string
+    description: "Poe_type"
   q:
     required: false
     type: string
     description: "Search"
   rf_role:
     required: false
-    type: array
+    type: string
     description: "Rf_role"
   rf_role__empty:
     required: false
@@ -390,43 +430,55 @@ parameters:
     description: "Rf_role is empty/null (boolean)"
   rf_role__ic:
     required: false
-    type: array
+    type: string
     description: "Rf_role contains (case-insensitive)"
   rf_role__ie:
     required: false
-    type: array
+    type: string
     description: "Rf_role exact match (case-insensitive)"
   rf_role__iew:
     required: false
-    type: array
+    type: string
     description: "Rf_role ends with (case-insensitive)"
+  rf_role__iregex:
+    required: false
+    type: string
+    description: "Rf_role"
   rf_role__isw:
     required: false
-    type: array
+    type: string
     description: "Rf_role starts with (case-sensitive)"
   rf_role__n:
     required: false
-    type: array
+    type: string
     description: "Rf_role not equal to"
   rf_role__nic:
     required: false
-    type: array
+    type: string
     description: "Rf_role does not contain (case-insensitive)"
   rf_role__nie:
     required: false
-    type: array
+    type: string
     description: "Rf_role inverse exact match (case-insensitive)"
   rf_role__niew:
     required: false
-    type: array
+    type: string
     description: "Rf_role does not end with (case-insensitive)"
   rf_role__nisw:
     required: false
-    type: array
+    type: string
     description: "Rf_role does not start with (case-sensitive)"
+  rf_role__regex:
+    required: false
+    type: string
+    description: "Rf_role"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   type:
     required: false
-    type: array
+    type: string
     description: "Type"
   type__empty:
     required: false
@@ -434,40 +486,48 @@ parameters:
     description: "Type is empty/null (boolean)"
   type__ic:
     required: false
-    type: array
+    type: string
     description: "Type contains (case-insensitive)"
   type__ie:
     required: false
-    type: array
+    type: string
     description: "Type exact match (case-insensitive)"
   type__iew:
     required: false
-    type: array
+    type: string
     description: "Type ends with (case-insensitive)"
+  type__iregex:
+    required: false
+    type: string
+    description: "Type"
   type__isw:
     required: false
-    type: array
+    type: string
     description: "Type starts with (case-sensitive)"
   type__n:
     required: false
-    type: array
+    type: string
     description: "Type not equal to"
   type__nic:
     required: false
-    type: array
+    type: string
     description: "Type does not contain (case-insensitive)"
   type__nie:
     required: false
-    type: array
+    type: string
     description: "Type inverse exact match (case-insensitive)"
   type__niew:
     required: false
-    type: array
+    type: string
     description: "Type does not end with (case-insensitive)"
   type__nisw:
     required: false
-    type: array
+    type: string
     description: "Type does not start with (case-sensitive)"
+  type__regex:
+    required: false
+    type: string
+    description: "Type"
   updated_by_request:
     required: false
     type: string

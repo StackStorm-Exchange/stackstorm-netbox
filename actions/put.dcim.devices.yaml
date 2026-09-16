@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Put a device object."
 enabled: true
 entry_point: run.py
@@ -26,19 +26,19 @@ parameters:
     description: "Name"
   device_type:
     required: false
-    type: object
+    type: integer
     description: "Device type"
   role:
     required: false
-    type: object
+    type: integer
     description: "Role"
   tenant:
     required: false
-    type: object
+    type: integer
     description: "Tenant"
   platform:
     required: false
-    type: object
+    type: integer
     description: "Platform"
   serial:
     required: false
@@ -50,15 +50,15 @@ parameters:
     description: "A unique tag used to identify this device"
   site:
     required: false
-    type: object
+    type: integer
     description: "Site"
   location:
     required: false
-    type: object
+    type: integer
     description: "Location"
   rack:
     required: false
-    type: object
+    type: integer
     description: "Rack"
   position:
     required: false
@@ -101,23 +101,23 @@ parameters:
 * `mixed` - Mixed"
   primary_ip4:
     required: false
-    type: object
+    type: integer
     description: "Primary ip4"
   primary_ip6:
     required: false
-    type: object
+    type: integer
     description: "Primary ip6"
   oob_ip:
     required: false
-    type: object
+    type: integer
     description: "Oob ip"
   cluster:
     required: false
-    type: object
+    type: integer
     description: "Cluster"
   virtual_chassis:
     required: false
-    type: object
+    type: integer
     description: "Virtual chassis"
   vc_position:
     required: false
@@ -131,13 +131,17 @@ parameters:
     required: false
     type: string
     description: "Description"
+  owner:
+    required: false
+    type: integer
+    description: "Owner"
   comments:
     required: false
     type: string
     description: "Comments"
   config_template:
     required: false
-    type: object
+    type: integer
     description: "Config template"
   local_context_data:
     required: false

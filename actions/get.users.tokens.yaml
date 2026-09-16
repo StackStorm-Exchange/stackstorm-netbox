@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of token objects."
 enabled: true
 entry_point: run.py
@@ -34,7 +34,7 @@ parameters:
     description: "Created less than or equal to"
   description:
     required: false
-    type: array
+    type: string
     description: "Description"
   description__empty:
     required: false
@@ -42,40 +42,52 @@ parameters:
     description: "Description is empty/null (boolean)"
   description__ic:
     required: false
-    type: array
+    type: string
     description: "Description contains (case-insensitive)"
   description__ie:
     required: false
-    type: array
+    type: string
     description: "Description exact match (case-insensitive)"
   description__iew:
     required: false
-    type: array
+    type: string
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
   description__isw:
     required: false
-    type: array
+    type: string
     description: "Description starts with (case-sensitive)"
   description__n:
     required: false
-    type: array
+    type: string
     description: "Description not equal to"
   description__nic:
     required: false
-    type: array
+    type: string
     description: "Description does not contain (case-insensitive)"
   description__nie:
     required: false
-    type: array
+    type: string
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: false
-    type: array
+    type: string
     description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: false
-    type: array
+    type: string
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
+  enabled:
+    required: false
+    type: boolean
+    description: "Enabled"
   expires:
     required: false
     type: string
@@ -90,7 +102,7 @@ parameters:
     description: "Expires less than or equal to"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -98,27 +110,27 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   key:
     required: false
-    type: array
+    type: string
     description: "Key"
   key__empty:
     required: false
@@ -126,68 +138,60 @@ parameters:
     description: "Key is empty/null (boolean)"
   key__ic:
     required: false
-    type: array
+    type: string
     description: "Key contains (case-insensitive)"
   key__ie:
     required: false
-    type: array
+    type: string
     description: "Key exact match (case-insensitive)"
   key__iew:
     required: false
-    type: array
+    type: string
     description: "Key ends with (case-insensitive)"
+  key__iregex:
+    required: false
+    type: string
+    description: "Key"
   key__isw:
     required: false
-    type: array
+    type: string
     description: "Key starts with (case-sensitive)"
   key__n:
     required: false
-    type: array
+    type: string
     description: "Key not equal to"
   key__nic:
     required: false
-    type: array
+    type: string
     description: "Key does not contain (case-insensitive)"
   key__nie:
     required: false
-    type: array
+    type: string
     description: "Key inverse exact match (case-insensitive)"
   key__niew:
     required: false
-    type: array
+    type: string
     description: "Key does not end with (case-insensitive)"
   key__nisw:
     required: false
-    type: array
+    type: string
     description: "Key does not start with (case-sensitive)"
+  key__regex:
+    required: false
+    type: string
+    description: "Key"
   last_used:
     required: false
-    type: array
+    type: string
     description: "Last_used"
-  last_used__empty:
-    required: false
-    type: boolean
-    description: "Last_used is empty/null (boolean)"
-  last_used__gt:
-    required: false
-    type: array
-    description: "Last_used greater than"
   last_used__gte:
     required: false
-    type: array
+    type: string
     description: "Last_used greater than or equal to"
-  last_used__lt:
-    required: false
-    type: array
-    description: "Last_used less than"
   last_used__lte:
     required: false
-    type: array
+    type: string
     description: "Last_used less than or equal to"
-  last_used__n:
-    required: false
-    type: array
-    description: "Last_used not equal to"
   limit:
     required: false
     type: integer
@@ -200,26 +204,107 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  pepper_id:
+    required: false
+    type: integer
+    description: "Pepper_id"
+  pepper_id__empty:
+    required: false
+    type: boolean
+    description: "Pepper_id is empty/null (boolean)"
+  pepper_id__gt:
+    required: false
+    type: integer
+    description: "Pepper_id greater than"
+  pepper_id__gte:
+    required: false
+    type: integer
+    description: "Pepper_id greater than or equal to"
+  pepper_id__lt:
+    required: false
+    type: integer
+    description: "Pepper_id less than"
+  pepper_id__lte:
+    required: false
+    type: integer
+    description: "Pepper_id less than or equal to"
+  pepper_id__n:
+    required: false
+    type: integer
+    description: "Pepper_id not equal to"
   q:
     required: false
     type: string
     description: "Search"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   user:
     required: false
-    type: array
+    type: string
     description: "User (name)"
   user__n:
     required: false
-    type: array
+    type: string
     description: "User not equal to"
   user_id:
     required: false
-    type: array
+    type: integer
     description: "User"
   user_id__n:
     required: false
-    type: array
+    type: integer
     description: "User_id not equal to"
+  version:
+    required: false
+    type: integer
+    description: "* `1` - v1
+* `2` - v2"
+  version__ic:
+    required: false
+    type: integer
+    description: "Version contains (case-insensitive)"
+  version__ie:
+    required: false
+    type: integer
+    description: "Version exact match (case-insensitive)"
+  version__iew:
+    required: false
+    type: integer
+    description: "Version ends with (case-insensitive)"
+  version__iregex:
+    required: false
+    type: integer
+    description: "Version"
+  version__isw:
+    required: false
+    type: integer
+    description: "Version starts with (case-sensitive)"
+  version__n:
+    required: false
+    type: integer
+    description: "Version not equal to"
+  version__nic:
+    required: false
+    type: integer
+    description: "Version does not contain (case-insensitive)"
+  version__nie:
+    required: false
+    type: integer
+    description: "Version inverse exact match (case-insensitive)"
+  version__niew:
+    required: false
+    type: integer
+    description: "Version does not end with (case-insensitive)"
+  version__nisw:
+    required: false
+    type: integer
+    description: "Version does not start with (case-sensitive)"
+  version__regex:
+    required: false
+    type: integer
+    description: "Version"
   write_enabled:
     required: false
     type: boolean

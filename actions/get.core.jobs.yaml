@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Retrieve a list of job results"
 enabled: true
 entry_point: run.py
@@ -46,7 +46,7 @@ parameters:
     description: "Created"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -54,27 +54,27 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   interval:
     required: false
-    type: array
+    type: integer
     description: "Interval"
   interval__empty:
     required: false
@@ -82,23 +82,23 @@ parameters:
     description: "Interval is empty/null (boolean)"
   interval__gt:
     required: false
-    type: array
+    type: integer
     description: "Interval greater than"
   interval__gte:
     required: false
-    type: array
+    type: integer
     description: "Interval greater than or equal to"
   interval__lt:
     required: false
-    type: array
+    type: integer
     description: "Interval less than"
   interval__lte:
     required: false
-    type: array
+    type: integer
     description: "Interval less than or equal to"
   interval__n:
     required: false
-    type: array
+    type: integer
     description: "Interval not equal to"
   job_id:
     required: false
@@ -110,7 +110,7 @@ parameters:
     description: "Number of results to return per page."
   name:
     required: false
-    type: array
+    type: string
     description: "Name"
   name__empty:
     required: false
@@ -118,43 +118,51 @@ parameters:
     description: "Name is empty/null (boolean)"
   name__ic:
     required: false
-    type: array
+    type: string
     description: "Name contains (case-insensitive)"
   name__ie:
     required: false
-    type: array
+    type: string
     description: "Name exact match (case-insensitive)"
   name__iew:
     required: false
-    type: array
+    type: string
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: string
+    description: "Name"
   name__isw:
     required: false
-    type: array
+    type: string
     description: "Name starts with (case-sensitive)"
   name__n:
     required: false
-    type: array
+    type: string
     description: "Name not equal to"
   name__nic:
     required: false
-    type: array
+    type: string
     description: "Name does not contain (case-insensitive)"
   name__nie:
     required: false
-    type: array
+    type: string
     description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: false
-    type: array
+    type: string
     description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: false
-    type: array
+    type: string
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: string
+    description: "Name"
   object_id:
     required: false
-    type: array
+    type: integer
     description: "Object_id"
   object_id__empty:
     required: false
@@ -162,32 +170,40 @@ parameters:
     description: "Object_id is empty/null (boolean)"
   object_id__gt:
     required: false
-    type: array
+    type: integer
     description: "Object_id greater than"
   object_id__gte:
     required: false
-    type: array
+    type: integer
     description: "Object_id greater than or equal to"
   object_id__lt:
     required: false
-    type: array
+    type: integer
     description: "Object_id less than"
   object_id__lte:
     required: false
-    type: array
+    type: integer
     description: "Object_id less than or equal to"
   object_id__n:
     required: false
-    type: array
+    type: integer
     description: "Object_id not equal to"
   object_type:
     required: false
-    type: integer
+    type: string
     description: "Object_type"
   object_type__n:
     required: false
-    type: integer
+    type: string
     description: "Object_type not equal to"
+  object_type_id:
+    required: false
+    type: integer
+    description: "Object_type_id"
+  object_type_id__n:
+    required: false
+    type: integer
+    description: "Object_type_id not equal to"
   offset:
     required: false
     type: integer
@@ -200,6 +216,58 @@ parameters:
     required: false
     type: string
     description: "Search"
+  queue_name:
+    required: false
+    type: string
+    description: "Queue_name"
+  queue_name__empty:
+    required: false
+    type: boolean
+    description: "Queue_name is empty/null (boolean)"
+  queue_name__ic:
+    required: false
+    type: string
+    description: "Queue_name contains (case-insensitive)"
+  queue_name__ie:
+    required: false
+    type: string
+    description: "Queue_name exact match (case-insensitive)"
+  queue_name__iew:
+    required: false
+    type: string
+    description: "Queue_name ends with (case-insensitive)"
+  queue_name__iregex:
+    required: false
+    type: string
+    description: "Queue_name"
+  queue_name__isw:
+    required: false
+    type: string
+    description: "Queue_name starts with (case-sensitive)"
+  queue_name__n:
+    required: false
+    type: string
+    description: "Queue_name not equal to"
+  queue_name__nic:
+    required: false
+    type: string
+    description: "Queue_name does not contain (case-insensitive)"
+  queue_name__nie:
+    required: false
+    type: string
+    description: "Queue_name inverse exact match (case-insensitive)"
+  queue_name__niew:
+    required: false
+    type: string
+    description: "Queue_name does not end with (case-insensitive)"
+  queue_name__nisw:
+    required: false
+    type: string
+    description: "Queue_name does not start with (case-sensitive)"
+  queue_name__regex:
+    required: false
+    type: string
+    description: "Queue_name"
   scheduled:
     required: false
     type: string
@@ -212,6 +280,10 @@ parameters:
     required: false
     type: string
     description: "Scheduled"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   started:
     required: false
     type: string
@@ -226,7 +298,7 @@ parameters:
     description: "Started"
   status:
     required: false
-    type: array
+    type: string
     description: "Status"
   status__empty:
     required: false
@@ -234,40 +306,48 @@ parameters:
     description: "Status is empty/null (boolean)"
   status__ic:
     required: false
-    type: array
+    type: string
     description: "Status contains (case-insensitive)"
   status__ie:
     required: false
-    type: array
+    type: string
     description: "Status exact match (case-insensitive)"
   status__iew:
     required: false
-    type: array
+    type: string
     description: "Status ends with (case-insensitive)"
+  status__iregex:
+    required: false
+    type: string
+    description: "Status"
   status__isw:
     required: false
-    type: array
+    type: string
     description: "Status starts with (case-sensitive)"
   status__n:
     required: false
-    type: array
+    type: string
     description: "Status not equal to"
   status__nic:
     required: false
-    type: array
+    type: string
     description: "Status does not contain (case-insensitive)"
   status__nie:
     required: false
-    type: array
+    type: string
     description: "Status inverse exact match (case-insensitive)"
   status__niew:
     required: false
-    type: array
+    type: string
     description: "Status does not end with (case-insensitive)"
   status__nisw:
     required: false
-    type: array
+    type: string
     description: "Status does not start with (case-sensitive)"
+  status__regex:
+    required: false
+    type: string
+    description: "Status"
   user:
     required: false
     type: integer

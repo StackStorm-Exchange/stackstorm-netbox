@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of interface objects."
 enabled: true
 entry_point: run.py
@@ -22,55 +22,55 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   bridge_id:
     required: false
-    type: array
+    type: integer
     description: "Bridged interface (ID)"
   bridge_id__n:
     required: false
-    type: array
+    type: integer
     description: "Bridge_id not equal to"
   cluster:
     required: false
-    type: array
+    type: string
     description: "Cluster"
   cluster__n:
     required: false
-    type: array
+    type: string
     description: "Cluster not equal to"
   cluster_id:
     required: false
-    type: array
+    type: integer
     description: "Cluster (ID)"
   cluster_id__n:
     required: false
-    type: array
+    type: integer
     description: "Cluster_id not equal to"
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -78,7 +78,7 @@ parameters:
     description: "Created_by_request"
   description:
     required: false
-    type: array
+    type: string
     description: "Description"
   description__empty:
     required: false
@@ -86,47 +86,55 @@ parameters:
     description: "Description is empty/null (boolean)"
   description__ic:
     required: false
-    type: array
+    type: string
     description: "Description contains (case-insensitive)"
   description__ie:
     required: false
-    type: array
+    type: string
     description: "Description exact match (case-insensitive)"
   description__iew:
     required: false
-    type: array
+    type: string
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
   description__isw:
     required: false
-    type: array
+    type: string
     description: "Description starts with (case-sensitive)"
   description__n:
     required: false
-    type: array
+    type: string
     description: "Description not equal to"
   description__nic:
     required: false
-    type: array
+    type: string
     description: "Description does not contain (case-insensitive)"
   description__nie:
     required: false
-    type: array
+    type: string
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: false
-    type: array
+    type: string
     description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: false
-    type: array
+    type: string
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
   enabled:
     required: false
     type: boolean
     description: "Enabled"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -134,67 +142,67 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   l2vpn:
     required: false
-    type: array
+    type: integer
     description: "L2VPN"
   l2vpn__n:
     required: false
-    type: array
+    type: integer
     description: "L2vpn not equal to"
   l2vpn_id:
     required: false
-    type: array
+    type: integer
     description: "L2VPN (ID)"
   l2vpn_id__n:
     required: false
-    type: array
+    type: integer
     description: "L2vpn_id not equal to"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -202,47 +210,55 @@ parameters:
     description: "Number of results to return per page."
   mac_address:
     required: false
-    type: array
+    type: string
     description: "Mac_address"
   mac_address__ic:
     required: false
-    type: array
+    type: string
     description: "Mac_address contains (case-insensitive)"
   mac_address__ie:
     required: false
-    type: array
+    type: string
     description: "Mac_address exact match (case-insensitive)"
   mac_address__iew:
     required: false
-    type: array
+    type: string
     description: "Mac_address ends with (case-insensitive)"
+  mac_address__iregex:
+    required: false
+    type: string
+    description: "Mac_address"
   mac_address__isw:
     required: false
-    type: array
+    type: string
     description: "Mac_address starts with (case-sensitive)"
   mac_address__n:
     required: false
-    type: array
+    type: string
     description: "Mac_address not equal to"
   mac_address__nic:
     required: false
-    type: array
+    type: string
     description: "Mac_address does not contain (case-insensitive)"
   mac_address__nie:
     required: false
-    type: array
+    type: string
     description: "Mac_address inverse exact match (case-insensitive)"
   mac_address__niew:
     required: false
-    type: array
+    type: string
     description: "Mac_address does not end with (case-insensitive)"
   mac_address__nisw:
     required: false
-    type: array
+    type: string
     description: "Mac_address does not start with (case-sensitive)"
+  mac_address__regex:
+    required: false
+    type: string
+    description: "Mac_address"
   mode:
     required: false
-    type: array
+    type: string
     description: "802.1Q Mode"
   mode__empty:
     required: false
@@ -250,47 +266,55 @@ parameters:
     description: "Mode is empty/null (boolean)"
   mode__ic:
     required: false
-    type: array
+    type: string
     description: "Mode contains (case-insensitive)"
   mode__ie:
     required: false
-    type: array
+    type: string
     description: "Mode exact match (case-insensitive)"
   mode__iew:
     required: false
-    type: array
+    type: string
     description: "Mode ends with (case-insensitive)"
+  mode__iregex:
+    required: false
+    type: string
+    description: "802.1Q Mode"
   mode__isw:
     required: false
-    type: array
+    type: string
     description: "Mode starts with (case-sensitive)"
   mode__n:
     required: false
-    type: array
+    type: string
     description: "Mode not equal to"
   mode__nic:
     required: false
-    type: array
+    type: string
     description: "Mode does not contain (case-insensitive)"
   mode__nie:
     required: false
-    type: array
+    type: string
     description: "Mode inverse exact match (case-insensitive)"
   mode__niew:
     required: false
-    type: array
+    type: string
     description: "Mode does not end with (case-insensitive)"
   mode__nisw:
     required: false
-    type: array
+    type: string
     description: "Mode does not start with (case-sensitive)"
+  mode__regex:
+    required: false
+    type: string
+    description: "802.1Q Mode"
   modified_by_request:
     required: false
     type: string
     description: "Modified_by_request"
   mtu:
     required: false
-    type: array
+    type: integer
     description: "Mtu"
   mtu__empty:
     required: false
@@ -298,27 +322,27 @@ parameters:
     description: "Mtu is empty/null (boolean)"
   mtu__gt:
     required: false
-    type: array
+    type: integer
     description: "Mtu greater than"
   mtu__gte:
     required: false
-    type: array
+    type: integer
     description: "Mtu greater than or equal to"
   mtu__lt:
     required: false
-    type: array
+    type: integer
     description: "Mtu less than"
   mtu__lte:
     required: false
-    type: array
+    type: integer
     description: "Mtu less than or equal to"
   mtu__n:
     required: false
-    type: array
+    type: integer
     description: "Mtu not equal to"
   name:
     required: false
-    type: array
+    type: string
     description: "Name"
   name__empty:
     required: false
@@ -326,40 +350,48 @@ parameters:
     description: "Name is empty/null (boolean)"
   name__ic:
     required: false
-    type: array
+    type: string
     description: "Name contains (case-insensitive)"
   name__ie:
     required: false
-    type: array
+    type: string
     description: "Name exact match (case-insensitive)"
   name__iew:
     required: false
-    type: array
+    type: string
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: string
+    description: "Name"
   name__isw:
     required: false
-    type: array
+    type: string
     description: "Name starts with (case-sensitive)"
   name__n:
     required: false
-    type: array
+    type: string
     description: "Name not equal to"
   name__nic:
     required: false
-    type: array
+    type: string
     description: "Name does not contain (case-insensitive)"
   name__nie:
     required: false
-    type: array
+    type: string
     description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: false
-    type: array
+    type: string
     description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: false
-    type: array
+    type: string
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: string
+    description: "Name"
   offset:
     required: false
     type: integer
@@ -368,49 +400,85 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: string
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: string
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: string
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: string
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: integer
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: integer
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: integer
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: integer
+    description: "Owner_id not equal to"
   parent_id:
     required: false
-    type: array
+    type: integer
     description: "Parent interface (ID)"
   parent_id__n:
     required: false
-    type: array
+    type: integer
     description: "Parent_id not equal to"
   primary_mac_address:
     required: false
-    type: array
+    type: string
     description: "Primary MAC address"
   primary_mac_address__n:
     required: false
-    type: array
+    type: string
     description: "Primary_mac_address not equal to"
   primary_mac_address_id:
     required: false
-    type: array
+    type: integer
     description: "Primary MAC address (ID)"
   primary_mac_address_id__n:
     required: false
-    type: array
+    type: integer
     description: "Primary_mac_address_id not equal to"
   q:
     required: false
     type: string
     description: "Search"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   tag:
     required: false
-    type: array
+    type: string
     description: "Tag"
   tag__n:
     required: false
-    type: array
+    type: string
     description: "Tag not equal to"
   tag_id:
     required: false
-    type: array
+    type: integer
     description: "Tag_id"
   tag_id__n:
     required: false
-    type: array
+    type: integer
     description: "Tag_id not equal to"
   updated_by_request:
     required: false
@@ -418,19 +486,19 @@ parameters:
     description: "Updated_by_request"
   virtual_machine:
     required: false
-    type: array
+    type: string
     description: "Virtual machine"
   virtual_machine__n:
     required: false
-    type: array
+    type: string
     description: "Virtual_machine not equal to"
   virtual_machine_id:
     required: false
-    type: array
+    type: integer
     description: "Virtual machine (ID)"
   virtual_machine_id__n:
     required: false
-    type: array
+    type: integer
     description: "Virtual_machine_id not equal to"
   vlan:
     required: false
@@ -442,35 +510,35 @@ parameters:
     description: "Assigned VLAN"
   vlan_translation_policy:
     required: false
-    type: array
+    type: string
     description: "VLAN Translation Policy"
   vlan_translation_policy__n:
     required: false
-    type: array
+    type: string
     description: "Vlan_translation_policy not equal to"
   vlan_translation_policy_id:
     required: false
-    type: array
+    type: integer
     description: "VLAN Translation Policy (ID)"
   vlan_translation_policy_id__n:
     required: false
-    type: array
+    type: integer
     description: "Vlan_translation_policy_id not equal to"
   vrf:
     required: false
-    type: array
+    type: string
     description: "VRF (RD)"
   vrf__n:
     required: false
-    type: array
+    type: string
     description: "Vrf not equal to"
   vrf_id:
     required: false
-    type: array
+    type: integer
     description: "VRF"
   vrf_id__n:
     required: false
-    type: array
+    type: integer
     description: "Vrf_id not equal to"
   save_in_key_store:
     type: boolean

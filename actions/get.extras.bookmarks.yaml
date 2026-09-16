@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of bookmark objects."
 enabled: true
 entry_point: run.py
@@ -26,7 +26,7 @@ parameters:
     description: "Created"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -34,23 +34,23 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   limit:
     required: false
@@ -58,7 +58,7 @@ parameters:
     description: "Number of results to return per page."
   object_id:
     required: false
-    type: array
+    type: integer
     description: "Object_id"
   object_id__empty:
     required: false
@@ -66,23 +66,23 @@ parameters:
     description: "Object_id is empty/null (boolean)"
   object_id__gt:
     required: false
-    type: array
+    type: integer
     description: "Object_id greater than"
   object_id__gte:
     required: false
-    type: array
+    type: integer
     description: "Object_id greater than or equal to"
   object_id__lt:
     required: false
-    type: array
+    type: integer
     description: "Object_id less than"
   object_id__lte:
     required: false
-    type: array
+    type: integer
     description: "Object_id less than or equal to"
   object_id__n:
     required: false
-    type: array
+    type: integer
     description: "Object_id not equal to"
   object_type:
     required: false
@@ -94,31 +94,31 @@ parameters:
     description: "Object_type not equal to"
   object_type_id:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id"
   object_type_id__empty:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id is empty/null (boolean)"
   object_type_id__gt:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id greater than"
   object_type_id__gte:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id greater than or equal to"
   object_type_id__lt:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id less than"
   object_type_id__lte:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id less than or equal to"
   object_type_id__n:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id not equal to"
   offset:
     required: false
@@ -128,21 +128,25 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   user:
     required: false
-    type: array
+    type: string
     description: "User (name)"
   user__n:
     required: false
-    type: array
+    type: string
     description: "User not equal to"
   user_id:
     required: false
-    type: array
+    type: integer
     description: "User (ID)"
   user_id__n:
     required: false
-    type: array
+    type: integer
     description: "User_id not equal to"
   save_in_key_store:
     type: boolean

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Put a virtual circuit object."
 enabled: true
 entry_point: run.py
@@ -26,15 +26,15 @@ parameters:
     description: "Circuit ID"
   provider_network:
     required: false
-    type: object
+    type: integer
     description: "Provider network"
   provider_account:
     required: false
-    type: object
+    type: integer
     description: "Provider account"
   type:
     required: false
-    type: object
+    type: integer
     description: "Type"
   status:
     required: false
@@ -47,12 +47,16 @@ parameters:
 * `decommissioned` - Decommissioned"
   tenant:
     required: false
-    type: object
+    type: integer
     description: "Tenant"
   description:
     required: false
     type: string
     description: "Description"
+  owner:
+    required: false
+    type: integer
+    description: "Owner"
   comments:
     required: false
     type: string

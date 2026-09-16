@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Put a config template object."
 enabled: true
 entry_point: run.py
@@ -52,10 +52,22 @@ parameters:
     required: false
     type: boolean
     description: "Download file as attachment"
+  debug:
+    required: false
+    type: boolean
+    description: "Enable verbose error output when rendering this template. Not recommended for production use."
   data_source:
     required: false
-    type: object
+    type: integer
     description: "Data source"
+  auto_sync_enabled:
+    required: false
+    type: boolean
+    description: "Enable automatic synchronization of data when the data file is updated"
+  owner:
+    required: false
+    type: integer
+    description: "Owner"
   tags:
     required: false
     type: array

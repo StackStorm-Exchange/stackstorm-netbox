@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of custom link objects."
 enabled: true
 entry_point: run.py
@@ -40,33 +40,81 @@ parameters:
 * `black` - Black
 * `white` - White
 * `ghost-dark` - Link"
+  button_class__empty:
+    required: false
+    type: boolean
+    description: "Button_class is empty/null (boolean)"
+  button_class__ic:
+    required: false
+    type: string
+    description: "Button_class contains (case-insensitive)"
+  button_class__ie:
+    required: false
+    type: string
+    description: "Button_class exact match (case-insensitive)"
+  button_class__iew:
+    required: false
+    type: string
+    description: "Button_class ends with (case-insensitive)"
+  button_class__iregex:
+    required: false
+    type: string
+    description: "Button_class"
+  button_class__isw:
+    required: false
+    type: string
+    description: "Button_class starts with (case-sensitive)"
+  button_class__n:
+    required: false
+    type: string
+    description: "Button_class not equal to"
+  button_class__nic:
+    required: false
+    type: string
+    description: "Button_class does not contain (case-insensitive)"
+  button_class__nie:
+    required: false
+    type: string
+    description: "Button_class inverse exact match (case-insensitive)"
+  button_class__niew:
+    required: false
+    type: string
+    description: "Button_class does not end with (case-insensitive)"
+  button_class__nisw:
+    required: false
+    type: string
+    description: "Button_class does not start with (case-sensitive)"
+  button_class__regex:
+    required: false
+    type: string
+    description: "Button_class"
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -78,7 +126,7 @@ parameters:
     description: "Enabled"
   group_name:
     required: false
-    type: array
+    type: string
     description: "Group_name"
   group_name__empty:
     required: false
@@ -86,43 +134,51 @@ parameters:
     description: "Group_name is empty/null (boolean)"
   group_name__ic:
     required: false
-    type: array
+    type: string
     description: "Group_name contains (case-insensitive)"
   group_name__ie:
     required: false
-    type: array
+    type: string
     description: "Group_name exact match (case-insensitive)"
   group_name__iew:
     required: false
-    type: array
+    type: string
     description: "Group_name ends with (case-insensitive)"
+  group_name__iregex:
+    required: false
+    type: string
+    description: "Group_name"
   group_name__isw:
     required: false
-    type: array
+    type: string
     description: "Group_name starts with (case-sensitive)"
   group_name__n:
     required: false
-    type: array
+    type: string
     description: "Group_name not equal to"
   group_name__nic:
     required: false
-    type: array
+    type: string
     description: "Group_name does not contain (case-insensitive)"
   group_name__nie:
     required: false
-    type: array
+    type: string
     description: "Group_name inverse exact match (case-insensitive)"
   group_name__niew:
     required: false
-    type: array
+    type: string
     description: "Group_name does not end with (case-insensitive)"
   group_name__nisw:
     required: false
-    type: array
+    type: string
     description: "Group_name does not start with (case-sensitive)"
+  group_name__regex:
+    required: false
+    type: string
+    description: "Group_name"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -130,51 +186,51 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -196,6 +252,10 @@ parameters:
     required: false
     type: string
     description: "Link_text ends with (case-insensitive)"
+  link_text__iregex:
+    required: false
+    type: string
+    description: "Link_text"
   link_text__isw:
     required: false
     type: string
@@ -220,6 +280,10 @@ parameters:
     required: false
     type: string
     description: "Link_text does not start with (case-sensitive)"
+  link_text__regex:
+    required: false
+    type: string
+    description: "Link_text"
   link_url:
     required: false
     type: string
@@ -236,6 +300,10 @@ parameters:
     required: false
     type: string
     description: "Link_url ends with (case-insensitive)"
+  link_url__iregex:
+    required: false
+    type: string
+    description: "Link_url"
   link_url__isw:
     required: false
     type: string
@@ -260,13 +328,17 @@ parameters:
     required: false
     type: string
     description: "Link_url does not start with (case-sensitive)"
+  link_url__regex:
+    required: false
+    type: string
+    description: "Link_url"
   modified_by_request:
     required: false
     type: string
     description: "Modified_by_request"
   name:
     required: false
-    type: array
+    type: string
     description: "Name"
   name__empty:
     required: false
@@ -274,40 +346,48 @@ parameters:
     description: "Name is empty/null (boolean)"
   name__ic:
     required: false
-    type: array
+    type: string
     description: "Name contains (case-insensitive)"
   name__ie:
     required: false
-    type: array
+    type: string
     description: "Name exact match (case-insensitive)"
   name__iew:
     required: false
-    type: array
+    type: string
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: string
+    description: "Name"
   name__isw:
     required: false
-    type: array
+    type: string
     description: "Name starts with (case-sensitive)"
   name__n:
     required: false
-    type: array
+    type: string
     description: "Name not equal to"
   name__nic:
     required: false
-    type: array
+    type: string
     description: "Name does not contain (case-insensitive)"
   name__nie:
     required: false
-    type: array
+    type: string
     description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: false
-    type: array
+    type: string
     description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: false
-    type: array
+    type: string
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: string
+    description: "Name"
   new_window:
     required: false
     type: boolean
@@ -328,6 +408,10 @@ parameters:
     required: false
     type: string
     description: "Object_type ends with (case-insensitive)"
+  object_type__iregex:
+    required: false
+    type: string
+    description: "Object_type"
   object_type__isw:
     required: false
     type: string
@@ -352,13 +436,17 @@ parameters:
     required: false
     type: string
     description: "Object_type does not start with (case-sensitive)"
+  object_type__regex:
+    required: false
+    type: string
+    description: "Object_type"
   object_type_id:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id"
   object_type_id__n:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id not equal to"
   offset:
     required: false
@@ -368,17 +456,53 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: string
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: string
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: string
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: string
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: integer
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: integer
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: integer
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: integer
+    description: "Owner_id not equal to"
   q:
     required: false
     type: string
     description: "Search"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   updated_by_request:
     required: false
     type: string
     description: "Updated_by_request"
   weight:
     required: false
-    type: array
+    type: integer
     description: "Weight"
   weight__empty:
     required: false
@@ -386,23 +510,23 @@ parameters:
     description: "Weight is empty/null (boolean)"
   weight__gt:
     required: false
-    type: array
+    type: integer
     description: "Weight greater than"
   weight__gte:
     required: false
-    type: array
+    type: integer
     description: "Weight greater than or equal to"
   weight__lt:
     required: false
-    type: array
+    type: integer
     description: "Weight less than"
   weight__lte:
     required: false
-    type: array
+    type: integer
     description: "Weight less than or equal to"
   weight__n:
     required: false
-    type: array
+    type: integer
     description: "Weight not equal to"
   save_in_key_store:
     type: boolean

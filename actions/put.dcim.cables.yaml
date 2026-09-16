@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Put a cable object."
 enabled: true
 entry_point: run.py
@@ -31,22 +31,31 @@ parameters:
 * `cat7` - CAT7
 * `cat7a` - CAT7a
 * `cat8` - CAT8
+* `mrj21-trunk` - MRJ21 Trunk
 * `dac-active` - Direct Attach Copper (Active)
 * `dac-passive` - Direct Attach Copper (Passive)
-* `mrj21-trunk` - MRJ21 Trunk
 * `coaxial` - Coaxial
+* `rg-6` - RG-6
+* `rg-8` - RG-8
+* `rg-11` - RG-11
+* `rg-59` - RG-59
+* `rg-62` - RG-62
+* `rg-213` - RG-213
+* `lmr-100` - LMR-100
+* `lmr-200` - LMR-200
+* `lmr-400` - LMR-400
 * `mmf` - Multimode Fiber
 * `mmf-om1` - Multimode Fiber (OM1)
 * `mmf-om2` - Multimode Fiber (OM2)
 * `mmf-om3` - Multimode Fiber (OM3)
 * `mmf-om4` - Multimode Fiber (OM4)
 * `mmf-om5` - Multimode Fiber (OM5)
-* `smf` - Singlemode Fiber
-* `smf-os1` - Singlemode Fiber (OS1)
-* `smf-os2` - Singlemode Fiber (OS2)
+* `smf` - Single-mode Fiber
+* `smf-os1` - Single-mode Fiber (OS1)
+* `smf-os2` - Single-mode Fiber (OS2)
 * `aoc` - Active Optical Cabling (AOC)
-* `usb` - USB
-* `power` - Power"
+* `power` - Power
+* `usb` - USB"
   a_terminations:
     required: false
     type: array
@@ -61,10 +70,42 @@ parameters:
     description: "* `connected` - Connected
 * `planned` - Planned
 * `decommissioning` - Decommissioning"
+  profile:
+    required: false
+    type: string
+    description: "* `single-1c1p` - 1C1P
+* `single-1c2p` - 1C2P
+* `single-1c4p` - 1C4P
+* `single-1c6p` - 1C6P
+* `single-1c8p` - 1C8P
+* `single-1c12p` - 1C12P
+* `single-1c16p` - 1C16P
+* `trunk-2c1p` - 2C1P trunk
+* `trunk-2c2p` - 2C2P trunk
+* `trunk-2c4p` - 2C4P trunk
+* `trunk-2c4p-shuffle` - 2C4P trunk (shuffle)
+* `trunk-2c6p` - 2C6P trunk
+* `trunk-2c8p` - 2C8P trunk
+* `trunk-2c12p` - 2C12P trunk
+* `trunk-4c1p` - 4C1P trunk
+* `trunk-4c2p` - 4C2P trunk
+* `trunk-4c4p` - 4C4P trunk
+* `trunk-4c4p-shuffle` - 4C4P trunk (shuffle)
+* `trunk-4c6p` - 4C6P trunk
+* `trunk-4c8p` - 4C8P trunk
+* `trunk-8c4p` - 8C4P trunk
+* `breakout-1c2p-2c1p` - 1C2P:2C1P breakout
+* `breakout-1c4p-4c1p` - 1C4P:4C1P breakout
+* `breakout-1c6p-6c1p` - 1C6P:6C1P breakout
+* `breakout-2c4p-8c1p-shuffle` - 2C4P:8C1P breakout (shuffle)"
   tenant:
     required: false
-    type: object
+    type: integer
     description: "Tenant"
+  bundle:
+    required: false
+    type: integer
+    description: "Bundle"
   label:
     required: false
     type: string
@@ -90,6 +131,10 @@ parameters:
     required: false
     type: string
     description: "Description"
+  owner:
+    required: false
+    type: integer
+    description: "Owner"
   comments:
     required: false
     type: string
