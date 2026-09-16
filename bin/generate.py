@@ -65,10 +65,12 @@ def sanitize_parameters(parameters):
             parameter["description"] = parameter_name
 
         if parameter.get("schema"):
-            if parameter["schema"]["type"] == "number":
-                parameter["type"] = "integer"
-            else:
-                parameter["type"] = parameter["schema"]["type"]
+            param_type = parameter["schema"]["type"]
+            if param_type == "array":
+                param_type = parameter["schema"].get("items", {}).get("type", "string")
+            if param_type == "number":
+                param_type = "integer"
+            parameter["type"] = param_type
         else:
             if parameter["type"] == "number":
                 parameter["type"] = "integer"
@@ -76,6 +78,17 @@ def sanitize_parameters(parameters):
         parameter["required"] = False
 
     return parameters
+
+
+def resolve_property_type(data):
+    if "type" in data:
+        return data["type"]
+    for key in ("oneOf", "anyOf", "allOf"):
+        for sub in data.get(key, []):
+            resolved = resolve_property_type(sub)
+            if resolved and resolved != "object":
+                return resolved
+    return "object"
 
 
 def parse_component_properties(properties, required):
@@ -90,7 +103,7 @@ def parse_component_properties(properties, required):
         description = data.get("description", name.replace("_", " ").capitalize())
         title = data.get("title", description)
 
-        parameter = {"name": name, "type": data.get("type", "object"), "description": title}
+        parameter = {"name": name, "type": resolve_property_type(data), "description": title}
 
         if name in required:
             parameter["required"] = True
@@ -99,6 +112,26 @@ def parse_component_properties(properties, required):
 
         parameters.append(parameter)
     return sanitize_parameters(parameters)
+
+
+def extract_body_ref(schema):
+    if "$ref" in schema:
+        return schema["$ref"]
+    for branch in schema.get("oneOf", []) + schema.get("anyOf", []):
+        if branch.get("type") == "array":
+            continue
+        ref = extract_body_ref(branch)
+        if ref:
+            return ref
+    if "allOf" in schema:
+        refs = set()
+        for member in schema["allOf"]:
+            ref = extract_body_ref(member)
+            if ref:
+                refs.add(ref)
+        if len(refs) == 1:
+            return refs.pop()
+    return None
 
 
 def get_actions(spec):
@@ -131,16 +164,29 @@ def get_actions(spec):
 
             print(f"Processing {action_name} ...")
             content = method_spec.get("requestBody", {}).get("content", {})
-            ref = content.get("application/json", {}).get("schema", {}).get("$ref")
+            body_schema = content.get("application/json", {}).get("schema", {})
+            ref = extract_body_ref(body_schema)
 
             if ref:
                 ref_name = ref.split("/")[-1]
                 schema = spec["components"]["schemas"][ref_name]
-                try:
-                    required = ["id"] if method == "patch" else schema["required"]
-                except KeyError:
-                    required = []
-                action["parameters"] = parse_component_properties(schema["properties"], required)
+                properties = schema.get("properties")
+                if properties is None:
+                    print(
+                        f"WARNING: component {ref_name} for {action_name} has no properties, "
+                        f"no body parameters generated"
+                    )
+                else:
+                    try:
+                        required = ["id"] if method == "patch" else schema["required"]
+                    except KeyError:
+                        required = []
+                    action["parameters"] = parse_component_properties(properties, required)
+            elif content and body_schema.get("type") != "array":
+                print(
+                    f"WARNING: unresolved request body for {action_name} "
+                    f"(content types: {list(content.keys())}), no body parameters generated"
+                )
 
             if method == "get":
                 if method_spec["operationId"].endswith("_list"):
@@ -182,9 +228,8 @@ def get_actions(spec):
     for detailed_get in deferred_detail_gets:
         list_action = actions.get(detailed_get)
         if list_action is None:
-            raise Exception(
-                "Unable to find list action for deferred GET endpoint {}".format(detailed_get)
-            )
+            print(f"WARNING: no list action for deferred GET endpoint {detailed_get}, skipping")
+            continue
 
     return actions
 
