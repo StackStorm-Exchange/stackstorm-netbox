@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.4.5
+
+- Soften deferred detail-GET check to warn+skip for collection endpoints without a `_list` action.
+- Regenerated actions against v4.6 spec.
+
+
 ## 3.4.4
 
 - Add action parameter fail_non_2xx to allow the user to indicate if the
