@@ -22,15 +22,37 @@ class NetboxHTTPAction(NetboxBaseAction):
         else:
             effective_fail_non_2xx = fail_non_2xx
         if http_verb == "get":
-            if kwargs.get("id", False) and get_detail_route_eligible:
-                # modify the `endpoint_uri` to use the detail route
-                endpoint_uri = "{}{}/".format(endpoint_uri, str(kwargs.pop("id")))
-                self.logger.debug(
-                    "endpoint_uri transformed to {} because id was passed".format(endpoint_uri)
-                )
+            id_param = kwargs.get("id")
+            if get_detail_route_eligible and id_param:
+                # Scalar or 1-elem list -> detail route; multi-elem list -> list filter
+                if isinstance(id_param, (list, tuple)):
+                    if len(id_param) == 1:
+                        detail_id = id_param[0]
+                        kwargs.pop("id")
+                        endpoint_uri = "{}{}/".format(endpoint_uri, str(detail_id))
+                        self.logger.debug(
+                            "endpoint_uri transformed to {} (single id from list)".format(
+                                endpoint_uri
+                            )
+                        )
+                    # else: len > 1 -> keep id in kwargs for list filter, no endpoint change
+                else:
+                    # scalar id -> detail route
+                    detail_id = kwargs.pop("id")
+                    endpoint_uri = "{}{}/".format(endpoint_uri, str(detail_id))
+                    self.logger.debug(
+                        "endpoint_uri transformed to {} because id was passed".format(
+                            endpoint_uri
+                        )
+                    )
 
-            if kwargs.get("save_in_key_store") and not kwargs.get("save_in_key_store_key_name"):
-                return (False, "save_in_key_store_key_name MUST be used with save_in_key_store!")
+            if kwargs.get("save_in_key_store") and not kwargs.get(
+                "save_in_key_store_key_name"
+            ):
+                return (
+                    False,
+                    "save_in_key_store_key_name MUST be used with save_in_key_store!",
+                )
 
             result = self.make_request(endpoint_uri, http_verb, **kwargs)
 
@@ -45,7 +67,9 @@ class NetboxHTTPAction(NetboxBaseAction):
                 key_name = kwargs["save_in_key_store_key_name"]
                 client.keys.update(
                     KeyValuePair(
-                        name=key_name, value=json.dumps(result), ttl=kwargs["save_in_key_store_ttl"]
+                        name=key_name,
+                        value=json.dumps(result),
+                        ttl=kwargs["save_in_key_store_ttl"],
                     )
                 )
 
