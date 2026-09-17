@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of custom field objects."
 enabled: true
 entry_point: run.py
@@ -22,47 +22,47 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   choice_set:
     required: false
-    type: array
+    type: string
     description: "Choice_set"
   choice_set__n:
     required: false
-    type: array
+    type: string
     description: "Choice_set not equal to"
   choice_set_id:
     required: false
-    type: array
+    type: integer
     description: "Choice_set_id"
   choice_set_id__n:
     required: false
-    type: array
+    type: integer
     description: "Choice_set_id not equal to"
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -70,7 +70,7 @@ parameters:
     description: "Created_by_request"
   description:
     required: false
-    type: array
+    type: string
     description: "Description"
   description__empty:
     required: false
@@ -78,40 +78,48 @@ parameters:
     description: "Description is empty/null (boolean)"
   description__ic:
     required: false
-    type: array
+    type: string
     description: "Description contains (case-insensitive)"
   description__ie:
     required: false
-    type: array
+    type: string
     description: "Description exact match (case-insensitive)"
   description__iew:
     required: false
-    type: array
+    type: string
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
   description__isw:
     required: false
-    type: array
+    type: string
     description: "Description starts with (case-sensitive)"
   description__n:
     required: false
-    type: array
+    type: string
     description: "Description not equal to"
   description__nic:
     required: false
-    type: array
+    type: string
     description: "Description does not contain (case-insensitive)"
   description__nie:
     required: false
-    type: array
+    type: string
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: false
-    type: array
+    type: string
     description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: false
-    type: array
+    type: string
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
   filter_logic:
     required: false
     type: string
@@ -120,9 +128,57 @@ parameters:
 * `disabled` - Disabled
 * `loose` - Loose
 * `exact` - Exact"
+  filter_logic__empty:
+    required: false
+    type: boolean
+    description: "Filter_logic is empty/null (boolean)"
+  filter_logic__ic:
+    required: false
+    type: string
+    description: "Filter_logic contains (case-insensitive)"
+  filter_logic__ie:
+    required: false
+    type: string
+    description: "Filter_logic exact match (case-insensitive)"
+  filter_logic__iew:
+    required: false
+    type: string
+    description: "Filter_logic ends with (case-insensitive)"
+  filter_logic__iregex:
+    required: false
+    type: string
+    description: "Filter_logic"
+  filter_logic__isw:
+    required: false
+    type: string
+    description: "Filter_logic starts with (case-sensitive)"
+  filter_logic__n:
+    required: false
+    type: string
+    description: "Filter_logic not equal to"
+  filter_logic__nic:
+    required: false
+    type: string
+    description: "Filter_logic does not contain (case-insensitive)"
+  filter_logic__nie:
+    required: false
+    type: string
+    description: "Filter_logic inverse exact match (case-insensitive)"
+  filter_logic__niew:
+    required: false
+    type: string
+    description: "Filter_logic does not end with (case-insensitive)"
+  filter_logic__nisw:
+    required: false
+    type: string
+    description: "Filter_logic does not start with (case-sensitive)"
+  filter_logic__regex:
+    required: false
+    type: string
+    description: "Filter_logic"
   group_name:
     required: false
-    type: array
+    type: string
     description: "Group_name"
   group_name__empty:
     required: false
@@ -130,43 +186,51 @@ parameters:
     description: "Group_name is empty/null (boolean)"
   group_name__ic:
     required: false
-    type: array
+    type: string
     description: "Group_name contains (case-insensitive)"
   group_name__ie:
     required: false
-    type: array
+    type: string
     description: "Group_name exact match (case-insensitive)"
   group_name__iew:
     required: false
-    type: array
+    type: string
     description: "Group_name ends with (case-insensitive)"
+  group_name__iregex:
+    required: false
+    type: string
+    description: "Group_name"
   group_name__isw:
     required: false
-    type: array
+    type: string
     description: "Group_name starts with (case-sensitive)"
   group_name__n:
     required: false
-    type: array
+    type: string
     description: "Group_name not equal to"
   group_name__nic:
     required: false
-    type: array
+    type: string
     description: "Group_name does not contain (case-insensitive)"
   group_name__nie:
     required: false
-    type: array
+    type: string
     description: "Group_name inverse exact match (case-insensitive)"
   group_name__niew:
     required: false
-    type: array
+    type: string
     description: "Group_name does not end with (case-insensitive)"
   group_name__nisw:
     required: false
-    type: array
+    type: string
     description: "Group_name does not start with (case-sensitive)"
+  group_name__regex:
+    required: false
+    type: string
+    description: "Group_name"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -174,23 +238,23 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   is_cloneable:
     required: false
@@ -198,7 +262,7 @@ parameters:
     description: "Is_cloneable"
   label:
     required: false
-    type: array
+    type: string
     description: "Label"
   label__empty:
     required: false
@@ -206,67 +270,75 @@ parameters:
     description: "Label is empty/null (boolean)"
   label__ic:
     required: false
-    type: array
+    type: string
     description: "Label contains (case-insensitive)"
   label__ie:
     required: false
-    type: array
+    type: string
     description: "Label exact match (case-insensitive)"
   label__iew:
     required: false
-    type: array
+    type: string
     description: "Label ends with (case-insensitive)"
+  label__iregex:
+    required: false
+    type: string
+    description: "Label"
   label__isw:
     required: false
-    type: array
+    type: string
     description: "Label starts with (case-sensitive)"
   label__n:
     required: false
-    type: array
+    type: string
     description: "Label not equal to"
   label__nic:
     required: false
-    type: array
+    type: string
     description: "Label does not contain (case-insensitive)"
   label__nie:
     required: false
-    type: array
+    type: string
     description: "Label inverse exact match (case-insensitive)"
   label__niew:
     required: false
-    type: array
+    type: string
     description: "Label does not end with (case-insensitive)"
   label__nisw:
     required: false
-    type: array
+    type: string
     description: "Label does not start with (case-sensitive)"
+  label__regex:
+    required: false
+    type: string
+    description: "Label"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -278,7 +350,7 @@ parameters:
     description: "Modified_by_request"
   name:
     required: false
-    type: array
+    type: string
     description: "Name"
   name__empty:
     required: false
@@ -286,40 +358,48 @@ parameters:
     description: "Name is empty/null (boolean)"
   name__ic:
     required: false
-    type: array
+    type: string
     description: "Name contains (case-insensitive)"
   name__ie:
     required: false
-    type: array
+    type: string
     description: "Name exact match (case-insensitive)"
   name__iew:
     required: false
-    type: array
+    type: string
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: string
+    description: "Name"
   name__isw:
     required: false
-    type: array
+    type: string
     description: "Name starts with (case-sensitive)"
   name__n:
     required: false
-    type: array
+    type: string
     description: "Name not equal to"
   name__nic:
     required: false
-    type: array
+    type: string
     description: "Name does not contain (case-insensitive)"
   name__nie:
     required: false
-    type: array
+    type: string
     description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: false
-    type: array
+    type: string
     description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: false
-    type: array
+    type: string
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: string
+    description: "Name"
   object_type:
     required: false
     type: string
@@ -336,6 +416,10 @@ parameters:
     required: false
     type: string
     description: "Object_type ends with (case-insensitive)"
+  object_type__iregex:
+    required: false
+    type: string
+    description: "Object_type"
   object_type__isw:
     required: false
     type: string
@@ -360,13 +444,17 @@ parameters:
     required: false
     type: string
     description: "Object_type does not start with (case-sensitive)"
+  object_type__regex:
+    required: false
+    type: string
+    description: "Object_type"
   object_type_id:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id"
   object_type_id__n:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id not equal to"
   offset:
     required: false
@@ -376,6 +464,38 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: string
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: string
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: string
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: string
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: integer
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: integer
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: integer
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: integer
+    description: "Owner_id not equal to"
   q:
     required: false
     type: string
@@ -390,11 +510,11 @@ parameters:
     description: "Related_object_type not equal to"
   related_object_type_id:
     required: false
-    type: array
+    type: integer
     description: "Related_object_type_id"
   related_object_type_id__n:
     required: false
-    type: array
+    type: integer
     description: "Related_object_type_id not equal to"
   required:
     required: false
@@ -402,7 +522,7 @@ parameters:
     description: "Required"
   search_weight:
     required: false
-    type: array
+    type: integer
     description: "Search_weight"
   search_weight__empty:
     required: false
@@ -410,27 +530,31 @@ parameters:
     description: "Search_weight is empty/null (boolean)"
   search_weight__gt:
     required: false
-    type: array
+    type: integer
     description: "Search_weight greater than"
   search_weight__gte:
     required: false
-    type: array
+    type: integer
     description: "Search_weight greater than or equal to"
   search_weight__lt:
     required: false
-    type: array
+    type: integer
     description: "Search_weight less than"
   search_weight__lte:
     required: false
-    type: array
+    type: integer
     description: "Search_weight less than or equal to"
   search_weight__n:
     required: false
-    type: array
+    type: integer
     description: "Search_weight not equal to"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   type:
     required: false
-    type: array
+    type: string
     description: "The type of data this custom field holds"
   type__empty:
     required: false
@@ -438,40 +562,48 @@ parameters:
     description: "Type is empty/null (boolean)"
   type__ic:
     required: false
-    type: array
+    type: string
     description: "Type contains (case-insensitive)"
   type__ie:
     required: false
-    type: array
+    type: string
     description: "Type exact match (case-insensitive)"
   type__iew:
     required: false
-    type: array
+    type: string
     description: "Type ends with (case-insensitive)"
+  type__iregex:
+    required: false
+    type: string
+    description: "The type of data this custom field holds"
   type__isw:
     required: false
-    type: array
+    type: string
     description: "Type starts with (case-sensitive)"
   type__n:
     required: false
-    type: array
+    type: string
     description: "Type not equal to"
   type__nic:
     required: false
-    type: array
+    type: string
     description: "Type does not contain (case-insensitive)"
   type__nie:
     required: false
-    type: array
+    type: string
     description: "Type inverse exact match (case-insensitive)"
   type__niew:
     required: false
-    type: array
+    type: string
     description: "Type does not end with (case-insensitive)"
   type__nisw:
     required: false
-    type: array
+    type: string
     description: "Type does not start with (case-sensitive)"
+  type__regex:
+    required: false
+    type: string
+    description: "The type of data this custom field holds"
   ui_editable:
     required: false
     type: string
@@ -480,6 +612,54 @@ parameters:
 * `yes` - Yes
 * `no` - No
 * `hidden` - Hidden"
+  ui_editable__empty:
+    required: false
+    type: boolean
+    description: "Ui_editable is empty/null (boolean)"
+  ui_editable__ic:
+    required: false
+    type: string
+    description: "Ui_editable contains (case-insensitive)"
+  ui_editable__ie:
+    required: false
+    type: string
+    description: "Ui_editable exact match (case-insensitive)"
+  ui_editable__iew:
+    required: false
+    type: string
+    description: "Ui_editable ends with (case-insensitive)"
+  ui_editable__iregex:
+    required: false
+    type: string
+    description: "Ui_editable"
+  ui_editable__isw:
+    required: false
+    type: string
+    description: "Ui_editable starts with (case-sensitive)"
+  ui_editable__n:
+    required: false
+    type: string
+    description: "Ui_editable not equal to"
+  ui_editable__nic:
+    required: false
+    type: string
+    description: "Ui_editable does not contain (case-insensitive)"
+  ui_editable__nie:
+    required: false
+    type: string
+    description: "Ui_editable inverse exact match (case-insensitive)"
+  ui_editable__niew:
+    required: false
+    type: string
+    description: "Ui_editable does not end with (case-insensitive)"
+  ui_editable__nisw:
+    required: false
+    type: string
+    description: "Ui_editable does not start with (case-sensitive)"
+  ui_editable__regex:
+    required: false
+    type: string
+    description: "Ui_editable"
   ui_visible:
     required: false
     type: string
@@ -488,6 +668,54 @@ parameters:
 * `always` - Always
 * `if-set` - If set
 * `hidden` - Hidden"
+  ui_visible__empty:
+    required: false
+    type: boolean
+    description: "Ui_visible is empty/null (boolean)"
+  ui_visible__ic:
+    required: false
+    type: string
+    description: "Ui_visible contains (case-insensitive)"
+  ui_visible__ie:
+    required: false
+    type: string
+    description: "Ui_visible exact match (case-insensitive)"
+  ui_visible__iew:
+    required: false
+    type: string
+    description: "Ui_visible ends with (case-insensitive)"
+  ui_visible__iregex:
+    required: false
+    type: string
+    description: "Ui_visible"
+  ui_visible__isw:
+    required: false
+    type: string
+    description: "Ui_visible starts with (case-sensitive)"
+  ui_visible__n:
+    required: false
+    type: string
+    description: "Ui_visible not equal to"
+  ui_visible__nic:
+    required: false
+    type: string
+    description: "Ui_visible does not contain (case-insensitive)"
+  ui_visible__nie:
+    required: false
+    type: string
+    description: "Ui_visible inverse exact match (case-insensitive)"
+  ui_visible__niew:
+    required: false
+    type: string
+    description: "Ui_visible does not end with (case-insensitive)"
+  ui_visible__nisw:
+    required: false
+    type: string
+    description: "Ui_visible does not start with (case-sensitive)"
+  ui_visible__regex:
+    required: false
+    type: string
+    description: "Ui_visible"
   unique:
     required: false
     type: boolean
@@ -498,7 +726,7 @@ parameters:
     description: "Updated_by_request"
   validation_maximum:
     required: false
-    type: array
+    type: integer
     description: "Validation_maximum"
   validation_maximum__empty:
     required: false
@@ -506,27 +734,27 @@ parameters:
     description: "Validation_maximum is empty/null (boolean)"
   validation_maximum__gt:
     required: false
-    type: array
+    type: integer
     description: "Validation_maximum greater than"
   validation_maximum__gte:
     required: false
-    type: array
+    type: integer
     description: "Validation_maximum greater than or equal to"
   validation_maximum__lt:
     required: false
-    type: array
+    type: integer
     description: "Validation_maximum less than"
   validation_maximum__lte:
     required: false
-    type: array
+    type: integer
     description: "Validation_maximum less than or equal to"
   validation_maximum__n:
     required: false
-    type: array
+    type: integer
     description: "Validation_maximum not equal to"
   validation_minimum:
     required: false
-    type: array
+    type: integer
     description: "Validation_minimum"
   validation_minimum__empty:
     required: false
@@ -534,27 +762,27 @@ parameters:
     description: "Validation_minimum is empty/null (boolean)"
   validation_minimum__gt:
     required: false
-    type: array
+    type: integer
     description: "Validation_minimum greater than"
   validation_minimum__gte:
     required: false
-    type: array
+    type: integer
     description: "Validation_minimum greater than or equal to"
   validation_minimum__lt:
     required: false
-    type: array
+    type: integer
     description: "Validation_minimum less than"
   validation_minimum__lte:
     required: false
-    type: array
+    type: integer
     description: "Validation_minimum less than or equal to"
   validation_minimum__n:
     required: false
-    type: array
+    type: integer
     description: "Validation_minimum not equal to"
   validation_regex:
     required: false
-    type: array
+    type: string
     description: "Validation_regex"
   validation_regex__empty:
     required: false
@@ -562,43 +790,51 @@ parameters:
     description: "Validation_regex is empty/null (boolean)"
   validation_regex__ic:
     required: false
-    type: array
+    type: string
     description: "Validation_regex contains (case-insensitive)"
   validation_regex__ie:
     required: false
-    type: array
+    type: string
     description: "Validation_regex exact match (case-insensitive)"
   validation_regex__iew:
     required: false
-    type: array
+    type: string
     description: "Validation_regex ends with (case-insensitive)"
+  validation_regex__iregex:
+    required: false
+    type: string
+    description: "Validation_regex"
   validation_regex__isw:
     required: false
-    type: array
+    type: string
     description: "Validation_regex starts with (case-sensitive)"
   validation_regex__n:
     required: false
-    type: array
+    type: string
     description: "Validation_regex not equal to"
   validation_regex__nic:
     required: false
-    type: array
+    type: string
     description: "Validation_regex does not contain (case-insensitive)"
   validation_regex__nie:
     required: false
-    type: array
+    type: string
     description: "Validation_regex inverse exact match (case-insensitive)"
   validation_regex__niew:
     required: false
-    type: array
+    type: string
     description: "Validation_regex does not end with (case-insensitive)"
   validation_regex__nisw:
     required: false
-    type: array
+    type: string
     description: "Validation_regex does not start with (case-sensitive)"
+  validation_regex__regex:
+    required: false
+    type: string
+    description: "Validation_regex"
   weight:
     required: false
-    type: array
+    type: integer
     description: "Weight"
   weight__empty:
     required: false
@@ -606,23 +842,23 @@ parameters:
     description: "Weight is empty/null (boolean)"
   weight__gt:
     required: false
-    type: array
+    type: integer
     description: "Weight greater than"
   weight__gte:
     required: false
-    type: array
+    type: integer
     description: "Weight greater than or equal to"
   weight__lt:
     required: false
-    type: array
+    type: integer
     description: "Weight less than"
   weight__lte:
     required: false
-    type: array
+    type: integer
     description: "Weight less than or equal to"
   weight__n:
     required: false
-    type: array
+    type: integer
     description: "Weight not equal to"
   save_in_key_store:
     type: boolean

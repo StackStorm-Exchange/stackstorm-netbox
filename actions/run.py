@@ -16,7 +16,8 @@ class NetboxHTTPAction(NetboxBaseAction):
         """
         # Determine effective fail_non_2xx behavior:
         # - If the caller explicitly provided fail_non_2xx (True/False), honor that.
-        # - Otherwise, fall back to the pack-level default_fail_non_2xx config option (default False).
+        # - Otherwise, fall back to the pack-level default_fail_non_2xx config
+        #   option (default False).
         if fail_non_2xx is None:
             effective_fail_non_2xx = self.config.get("default_fail_non_2xx", False)
         else:

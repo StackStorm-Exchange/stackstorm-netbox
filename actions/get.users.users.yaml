@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of user objects."
 enabled: true
 entry_point: run.py
@@ -22,7 +22,7 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   date_joined:
     required: false
-    type: array
+    type: string
     description: "Date_joined"
   date_joined__empty:
     required: false
@@ -30,27 +30,27 @@ parameters:
     description: "Date_joined is empty/null (boolean)"
   date_joined__gt:
     required: false
-    type: array
+    type: string
     description: "Date_joined greater than"
   date_joined__gte:
     required: false
-    type: array
+    type: string
     description: "Date_joined greater than or equal to"
   date_joined__lt:
     required: false
-    type: array
+    type: string
     description: "Date_joined less than"
   date_joined__lte:
     required: false
-    type: array
+    type: string
     description: "Date_joined less than or equal to"
   date_joined__n:
     required: false
-    type: array
+    type: string
     description: "Date_joined not equal to"
   email:
     required: false
-    type: array
+    type: string
     description: "Email"
   email__empty:
     required: false
@@ -58,43 +58,51 @@ parameters:
     description: "Email is empty/null (boolean)"
   email__ic:
     required: false
-    type: array
+    type: string
     description: "Email contains (case-insensitive)"
   email__ie:
     required: false
-    type: array
+    type: string
     description: "Email exact match (case-insensitive)"
   email__iew:
     required: false
-    type: array
+    type: string
     description: "Email ends with (case-insensitive)"
+  email__iregex:
+    required: false
+    type: string
+    description: "Email"
   email__isw:
     required: false
-    type: array
+    type: string
     description: "Email starts with (case-sensitive)"
   email__n:
     required: false
-    type: array
+    type: string
     description: "Email not equal to"
   email__nic:
     required: false
-    type: array
+    type: string
     description: "Email does not contain (case-insensitive)"
   email__nie:
     required: false
-    type: array
+    type: string
     description: "Email inverse exact match (case-insensitive)"
   email__niew:
     required: false
-    type: array
+    type: string
     description: "Email does not end with (case-insensitive)"
   email__nisw:
     required: false
-    type: array
+    type: string
     description: "Email does not start with (case-sensitive)"
+  email__regex:
+    required: false
+    type: string
+    description: "Email"
   first_name:
     required: false
-    type: array
+    type: string
     description: "First_name"
   first_name__empty:
     required: false
@@ -102,59 +110,67 @@ parameters:
     description: "First_name is empty/null (boolean)"
   first_name__ic:
     required: false
-    type: array
+    type: string
     description: "First_name contains (case-insensitive)"
   first_name__ie:
     required: false
-    type: array
+    type: string
     description: "First_name exact match (case-insensitive)"
   first_name__iew:
     required: false
-    type: array
+    type: string
     description: "First_name ends with (case-insensitive)"
+  first_name__iregex:
+    required: false
+    type: string
+    description: "First_name"
   first_name__isw:
     required: false
-    type: array
+    type: string
     description: "First_name starts with (case-sensitive)"
   first_name__n:
     required: false
-    type: array
+    type: string
     description: "First_name not equal to"
   first_name__nic:
     required: false
-    type: array
+    type: string
     description: "First_name does not contain (case-insensitive)"
   first_name__nie:
     required: false
-    type: array
+    type: string
     description: "First_name inverse exact match (case-insensitive)"
   first_name__niew:
     required: false
-    type: array
+    type: string
     description: "First_name does not end with (case-insensitive)"
   first_name__nisw:
     required: false
-    type: array
+    type: string
     description: "First_name does not start with (case-sensitive)"
+  first_name__regex:
+    required: false
+    type: string
+    description: "First_name"
   group:
     required: false
-    type: array
+    type: string
     description: "Group (name)"
   group__n:
     required: false
-    type: array
+    type: string
     description: "Group not equal to"
   group_id:
     required: false
-    type: array
+    type: integer
     description: "Group"
   group_id__n:
     required: false
-    type: array
+    type: integer
     description: "Group_id not equal to"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -162,39 +178,35 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   is_active:
     required: false
     type: boolean
     description: "Is_active"
-  is_staff:
-    required: false
-    type: boolean
-    description: "Is_staff"
   is_superuser:
     required: false
     type: boolean
     description: "Is_superuser"
   last_login:
     required: false
-    type: array
+    type: string
     description: "Last_login"
   last_login__empty:
     required: false
@@ -202,27 +214,27 @@ parameters:
     description: "Last_login is empty/null (boolean)"
   last_login__gt:
     required: false
-    type: array
+    type: string
     description: "Last_login greater than"
   last_login__gte:
     required: false
-    type: array
+    type: string
     description: "Last_login greater than or equal to"
   last_login__lt:
     required: false
-    type: array
+    type: string
     description: "Last_login less than"
   last_login__lte:
     required: false
-    type: array
+    type: string
     description: "Last_login less than or equal to"
   last_login__n:
     required: false
-    type: array
+    type: string
     description: "Last_login not equal to"
   last_name:
     required: false
-    type: array
+    type: string
     description: "Last_name"
   last_name__empty:
     required: false
@@ -230,51 +242,59 @@ parameters:
     description: "Last_name is empty/null (boolean)"
   last_name__ic:
     required: false
-    type: array
+    type: string
     description: "Last_name contains (case-insensitive)"
   last_name__ie:
     required: false
-    type: array
+    type: string
     description: "Last_name exact match (case-insensitive)"
   last_name__iew:
     required: false
-    type: array
+    type: string
     description: "Last_name ends with (case-insensitive)"
+  last_name__iregex:
+    required: false
+    type: string
+    description: "Last_name"
   last_name__isw:
     required: false
-    type: array
+    type: string
     description: "Last_name starts with (case-sensitive)"
   last_name__n:
     required: false
-    type: array
+    type: string
     description: "Last_name not equal to"
   last_name__nic:
     required: false
-    type: array
+    type: string
     description: "Last_name does not contain (case-insensitive)"
   last_name__nie:
     required: false
-    type: array
+    type: string
     description: "Last_name inverse exact match (case-insensitive)"
   last_name__niew:
     required: false
-    type: array
+    type: string
     description: "Last_name does not end with (case-insensitive)"
   last_name__nisw:
     required: false
-    type: array
+    type: string
     description: "Last_name does not start with (case-sensitive)"
+  last_name__regex:
+    required: false
+    type: string
+    description: "Last_name"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
   notification_group_id:
     required: false
-    type: array
+    type: integer
     description: "Notification group (ID)"
   notification_group_id__n:
     required: false
-    type: array
+    type: integer
     description: "Notification_group_id not equal to"
   offset:
     required: false
@@ -284,21 +304,41 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: string
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: string
+    description: "Owner not equal to"
+  owner_id:
+    required: false
+    type: integer
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: integer
+    description: "Owner_id not equal to"
   permission_id:
     required: false
-    type: array
+    type: integer
     description: "Permission (ID)"
   permission_id__n:
     required: false
-    type: array
+    type: integer
     description: "Permission_id not equal to"
   q:
     required: false
     type: string
     description: "Search"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   username:
     required: false
-    type: array
+    type: string
     description: "Username"
   username__empty:
     required: false
@@ -306,40 +346,48 @@ parameters:
     description: "Username is empty/null (boolean)"
   username__ic:
     required: false
-    type: array
+    type: string
     description: "Username contains (case-insensitive)"
   username__ie:
     required: false
-    type: array
+    type: string
     description: "Username exact match (case-insensitive)"
   username__iew:
     required: false
-    type: array
+    type: string
     description: "Username ends with (case-insensitive)"
+  username__iregex:
+    required: false
+    type: string
+    description: "Username"
   username__isw:
     required: false
-    type: array
+    type: string
     description: "Username starts with (case-sensitive)"
   username__n:
     required: false
-    type: array
+    type: string
     description: "Username not equal to"
   username__nic:
     required: false
-    type: array
+    type: string
     description: "Username does not contain (case-insensitive)"
   username__nie:
     required: false
-    type: array
+    type: string
     description: "Username inverse exact match (case-insensitive)"
   username__niew:
     required: false
-    type: array
+    type: string
     description: "Username does not end with (case-insensitive)"
   username__nisw:
     required: false
-    type: array
+    type: string
     description: "Username does not start with (case-sensitive)"
+  username__regex:
+    required: false
+    type: string
+    description: "Username"
   save_in_key_store:
     type: boolean
     default: false

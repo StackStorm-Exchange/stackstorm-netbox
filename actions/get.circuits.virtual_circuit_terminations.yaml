@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of virtual circuit termination objects."
 enabled: true
 entry_point: run.py
@@ -22,31 +22,31 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -54,7 +54,7 @@ parameters:
     description: "Created_by_request"
   description:
     required: false
-    type: array
+    type: string
     description: "Description"
   description__empty:
     required: false
@@ -62,43 +62,51 @@ parameters:
     description: "Description is empty/null (boolean)"
   description__ic:
     required: false
-    type: array
+    type: string
     description: "Description contains (case-insensitive)"
   description__ie:
     required: false
-    type: array
+    type: string
     description: "Description exact match (case-insensitive)"
   description__iew:
     required: false
-    type: array
+    type: string
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
   description__isw:
     required: false
-    type: array
+    type: string
     description: "Description starts with (case-sensitive)"
   description__n:
     required: false
-    type: array
+    type: string
     description: "Description not equal to"
   description__nic:
     required: false
-    type: array
+    type: string
     description: "Description does not contain (case-insensitive)"
   description__nie:
     required: false
-    type: array
+    type: string
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: false
-    type: array
+    type: string
     description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: false
-    type: array
+    type: string
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -106,59 +114,59 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   interface_id:
     required: false
-    type: array
+    type: integer
     description: "Interface (ID)"
   interface_id__n:
     required: false
-    type: array
+    type: integer
     description: "Interface_id not equal to"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -178,43 +186,43 @@ parameters:
     description: "Which field to use when ordering the results."
   provider:
     required: false
-    type: array
+    type: string
     description: "Provider (slug)"
   provider__n:
     required: false
-    type: array
+    type: string
     description: "Provider not equal to"
   provider_account:
     required: false
-    type: array
+    type: string
     description: "Provider account (account)"
   provider_account__n:
     required: false
-    type: array
+    type: string
     description: "Provider_account not equal to"
   provider_account_id:
     required: false
-    type: array
+    type: integer
     description: "Provider account (ID)"
   provider_account_id__n:
     required: false
-    type: array
+    type: integer
     description: "Provider_account_id not equal to"
   provider_id:
     required: false
-    type: array
+    type: integer
     description: "Provider (ID)"
   provider_id__n:
     required: false
-    type: array
+    type: integer
     description: "Provider_id not equal to"
   provider_network_id:
     required: false
-    type: array
+    type: integer
     description: "Provider network (ID)"
   provider_network_id__n:
     required: false
-    type: array
+    type: integer
     description: "Provider_network_id not equal to"
   q:
     required: false
@@ -222,7 +230,7 @@ parameters:
     description: "Search"
   role:
     required: false
-    type: array
+    type: string
     description: "Role"
   role__empty:
     required: false
@@ -230,55 +238,67 @@ parameters:
     description: "Role is empty/null (boolean)"
   role__ic:
     required: false
-    type: array
+    type: string
     description: "Role contains (case-insensitive)"
   role__ie:
     required: false
-    type: array
+    type: string
     description: "Role exact match (case-insensitive)"
   role__iew:
     required: false
-    type: array
+    type: string
     description: "Role ends with (case-insensitive)"
+  role__iregex:
+    required: false
+    type: string
+    description: "Role"
   role__isw:
     required: false
-    type: array
+    type: string
     description: "Role starts with (case-sensitive)"
   role__n:
     required: false
-    type: array
+    type: string
     description: "Role not equal to"
   role__nic:
     required: false
-    type: array
+    type: string
     description: "Role does not contain (case-insensitive)"
   role__nie:
     required: false
-    type: array
+    type: string
     description: "Role inverse exact match (case-insensitive)"
   role__niew:
     required: false
-    type: array
+    type: string
     description: "Role does not end with (case-insensitive)"
   role__nisw:
     required: false
-    type: array
+    type: string
     description: "Role does not start with (case-sensitive)"
+  role__regex:
+    required: false
+    type: string
+    description: "Role"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   tag:
     required: false
-    type: array
+    type: string
     description: "Tag"
   tag__n:
     required: false
-    type: array
+    type: string
     description: "Tag not equal to"
   tag_id:
     required: false
-    type: array
+    type: integer
     description: "Tag_id"
   tag_id__n:
     required: false
-    type: array
+    type: integer
     description: "Tag_id not equal to"
   updated_by_request:
     required: false
@@ -286,11 +306,11 @@ parameters:
     description: "Updated_by_request"
   virtual_circuit_id:
     required: false
-    type: array
+    type: integer
     description: "Virtual circuit"
   virtual_circuit_id__n:
     required: false
-    type: array
+    type: integer
     description: "Virtual_circuit_id not equal to"
   save_in_key_store:
     type: boolean

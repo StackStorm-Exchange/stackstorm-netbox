@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of device objects."
 enabled: true
 entry_point: run.py
@@ -33,9 +33,57 @@ parameters:
 * `top-to-bottom` - Top to bottom
 * `passive` - Passive
 * `mixed` - Mixed"
+  airflow__empty:
+    required: false
+    type: boolean
+    description: "Airflow is empty/null (boolean)"
+  airflow__ic:
+    required: false
+    type: string
+    description: "Airflow contains (case-insensitive)"
+  airflow__ie:
+    required: false
+    type: string
+    description: "Airflow exact match (case-insensitive)"
+  airflow__iew:
+    required: false
+    type: string
+    description: "Airflow ends with (case-insensitive)"
+  airflow__iregex:
+    required: false
+    type: string
+    description: "Airflow"
+  airflow__isw:
+    required: false
+    type: string
+    description: "Airflow starts with (case-sensitive)"
+  airflow__n:
+    required: false
+    type: string
+    description: "Airflow not equal to"
+  airflow__nic:
+    required: false
+    type: string
+    description: "Airflow does not contain (case-insensitive)"
+  airflow__nie:
+    required: false
+    type: string
+    description: "Airflow inverse exact match (case-insensitive)"
+  airflow__niew:
+    required: false
+    type: string
+    description: "Airflow does not end with (case-insensitive)"
+  airflow__nisw:
+    required: false
+    type: string
+    description: "Airflow does not start with (case-sensitive)"
+  airflow__regex:
+    required: false
+    type: string
+    description: "Airflow"
   asset_tag:
     required: false
-    type: array
+    type: string
     description: "Asset_tag"
   asset_tag__empty:
     required: false
@@ -43,75 +91,83 @@ parameters:
     description: "Asset_tag is empty/null (boolean)"
   asset_tag__ic:
     required: false
-    type: array
+    type: string
     description: "Asset_tag contains (case-insensitive)"
   asset_tag__ie:
     required: false
-    type: array
+    type: string
     description: "Asset_tag exact match (case-insensitive)"
   asset_tag__iew:
     required: false
-    type: array
+    type: string
     description: "Asset_tag ends with (case-insensitive)"
+  asset_tag__iregex:
+    required: false
+    type: string
+    description: "Asset_tag"
   asset_tag__isw:
     required: false
-    type: array
+    type: string
     description: "Asset_tag starts with (case-sensitive)"
   asset_tag__n:
     required: false
-    type: array
+    type: string
     description: "Asset_tag not equal to"
   asset_tag__nic:
     required: false
-    type: array
+    type: string
     description: "Asset_tag does not contain (case-insensitive)"
   asset_tag__nie:
     required: false
-    type: array
+    type: string
     description: "Asset_tag inverse exact match (case-insensitive)"
   asset_tag__niew:
     required: false
-    type: array
+    type: string
     description: "Asset_tag does not end with (case-insensitive)"
   asset_tag__nisw:
     required: false
-    type: array
+    type: string
     description: "Asset_tag does not start with (case-sensitive)"
+  asset_tag__regex:
+    required: false
+    type: string
+    description: "Asset_tag"
   cluster_group:
     required: false
-    type: array
+    type: string
     description: "Cluster group (slug)"
   cluster_group__n:
     required: false
-    type: array
+    type: string
     description: "Cluster_group not equal to"
   cluster_group_id:
     required: false
-    type: array
+    type: integer
     description: "Cluster group (ID)"
   cluster_group_id__n:
     required: false
-    type: array
+    type: integer
     description: "Cluster_group_id not equal to"
   cluster_id:
     required: false
-    type: array
+    type: integer
     description: "VM cluster (ID)"
   cluster_id__n:
     required: false
-    type: array
+    type: integer
     description: "Cluster_id not equal to"
   config_template_id:
     required: false
-    type: array
+    type: integer
     description: "Config template (ID)"
   config_template_id__n:
     required: false
-    type: array
+    type: integer
     description: "Config_template_id not equal to"
   console_port_count:
     required: false
-    type: array
+    type: integer
     description: "Console_port_count"
   console_port_count__empty:
     required: false
@@ -119,23 +175,23 @@ parameters:
     description: "Console_port_count is empty/null (boolean)"
   console_port_count__gt:
     required: false
-    type: array
+    type: integer
     description: "Console_port_count greater than"
   console_port_count__gte:
     required: false
-    type: array
+    type: integer
     description: "Console_port_count greater than or equal to"
   console_port_count__lt:
     required: false
-    type: array
+    type: integer
     description: "Console_port_count less than"
   console_port_count__lte:
     required: false
-    type: array
+    type: integer
     description: "Console_port_count less than or equal to"
   console_port_count__n:
     required: false
-    type: array
+    type: integer
     description: "Console_port_count not equal to"
   console_ports:
     required: false
@@ -143,7 +199,7 @@ parameters:
     description: "Has console ports"
   console_server_port_count:
     required: false
-    type: array
+    type: integer
     description: "Console_server_port_count"
   console_server_port_count__empty:
     required: false
@@ -151,23 +207,23 @@ parameters:
     description: "Console_server_port_count is empty/null (boolean)"
   console_server_port_count__gt:
     required: false
-    type: array
+    type: integer
     description: "Console_server_port_count greater than"
   console_server_port_count__gte:
     required: false
-    type: array
+    type: integer
     description: "Console_server_port_count greater than or equal to"
   console_server_port_count__lt:
     required: false
-    type: array
+    type: integer
     description: "Console_server_port_count less than"
   console_server_port_count__lte:
     required: false
-    type: array
+    type: integer
     description: "Console_server_port_count less than or equal to"
   console_server_port_count__n:
     required: false
-    type: array
+    type: integer
     description: "Console_server_port_count not equal to"
   console_server_ports:
     required: false
@@ -175,55 +231,55 @@ parameters:
     description: "Has console server ports"
   contact:
     required: false
-    type: array
+    type: integer
     description: "Contact"
   contact__n:
     required: false
-    type: array
+    type: integer
     description: "Contact not equal to"
   contact_group:
     required: false
-    type: array
+    type: string
     description: "Contact_group"
   contact_group__n:
     required: false
-    type: array
+    type: string
     description: "Contact_group not equal to"
   contact_role:
     required: false
-    type: array
+    type: integer
     description: "Contact Role"
   contact_role__n:
     required: false
-    type: array
+    type: integer
     description: "Contact_role not equal to"
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -231,7 +287,7 @@ parameters:
     description: "Created_by_request"
   description:
     required: false
-    type: array
+    type: string
     description: "Description"
   description__empty:
     required: false
@@ -239,43 +295,51 @@ parameters:
     description: "Description is empty/null (boolean)"
   description__ic:
     required: false
-    type: array
+    type: string
     description: "Description contains (case-insensitive)"
   description__ie:
     required: false
-    type: array
+    type: string
     description: "Description exact match (case-insensitive)"
   description__iew:
     required: false
-    type: array
+    type: string
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
   description__isw:
     required: false
-    type: array
+    type: string
     description: "Description starts with (case-sensitive)"
   description__n:
     required: false
-    type: array
+    type: string
     description: "Description not equal to"
   description__nic:
     required: false
-    type: array
+    type: string
     description: "Description does not contain (case-insensitive)"
   description__nie:
     required: false
-    type: array
+    type: string
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: false
-    type: array
+    type: string
     description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: false
-    type: array
+    type: string
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
   device_bay_count:
     required: false
-    type: array
+    type: integer
     description: "Device_bay_count"
   device_bay_count__empty:
     required: false
@@ -283,23 +347,23 @@ parameters:
     description: "Device_bay_count is empty/null (boolean)"
   device_bay_count__gt:
     required: false
-    type: array
+    type: integer
     description: "Device_bay_count greater than"
   device_bay_count__gte:
     required: false
-    type: array
+    type: integer
     description: "Device_bay_count greater than or equal to"
   device_bay_count__lt:
     required: false
-    type: array
+    type: integer
     description: "Device_bay_count less than"
   device_bay_count__lte:
     required: false
-    type: array
+    type: integer
     description: "Device_bay_count less than or equal to"
   device_bay_count__n:
     required: false
-    type: array
+    type: integer
     description: "Device_bay_count not equal to"
   device_bays:
     required: false
@@ -307,28 +371,76 @@ parameters:
     description: "Has device bays"
   device_type:
     required: false
-    type: array
+    type: string
     description: "Device type (slug)"
   device_type__n:
     required: false
-    type: array
+    type: string
     description: "Device_type not equal to"
   device_type_id:
     required: false
-    type: array
+    type: integer
     description: "Device type (ID)"
   device_type_id__n:
     required: false
-    type: array
+    type: integer
     description: "Device_type_id not equal to"
   face:
     required: false
     type: string
     description: "* `front` - Front
 * `rear` - Rear"
+  face__empty:
+    required: false
+    type: boolean
+    description: "Face is empty/null (boolean)"
+  face__ic:
+    required: false
+    type: string
+    description: "Face contains (case-insensitive)"
+  face__ie:
+    required: false
+    type: string
+    description: "Face exact match (case-insensitive)"
+  face__iew:
+    required: false
+    type: string
+    description: "Face ends with (case-insensitive)"
+  face__iregex:
+    required: false
+    type: string
+    description: "Face"
+  face__isw:
+    required: false
+    type: string
+    description: "Face starts with (case-sensitive)"
+  face__n:
+    required: false
+    type: string
+    description: "Face not equal to"
+  face__nic:
+    required: false
+    type: string
+    description: "Face does not contain (case-insensitive)"
+  face__nie:
+    required: false
+    type: string
+    description: "Face inverse exact match (case-insensitive)"
+  face__niew:
+    required: false
+    type: string
+    description: "Face does not end with (case-insensitive)"
+  face__nisw:
+    required: false
+    type: string
+    description: "Face does not start with (case-sensitive)"
+  face__regex:
+    required: false
+    type: string
+    description: "Face"
   front_port_count:
     required: false
-    type: array
+    type: integer
     description: "Front_port_count"
   front_port_count__empty:
     required: false
@@ -336,23 +448,23 @@ parameters:
     description: "Front_port_count is empty/null (boolean)"
   front_port_count__gt:
     required: false
-    type: array
+    type: integer
     description: "Front_port_count greater than"
   front_port_count__gte:
     required: false
-    type: array
+    type: integer
     description: "Front_port_count greater than or equal to"
   front_port_count__lt:
     required: false
-    type: array
+    type: integer
     description: "Front_port_count less than"
   front_port_count__lte:
     required: false
-    type: array
+    type: integer
     description: "Front_port_count less than or equal to"
   front_port_count__n:
     required: false
-    type: array
+    type: integer
     description: "Front_port_count not equal to"
   has_oob_ip:
     required: false
@@ -368,7 +480,7 @@ parameters:
     description: "Has virtual device context"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -376,27 +488,27 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   interface_count:
     required: false
-    type: array
+    type: integer
     description: "Interface_count"
   interface_count__empty:
     required: false
@@ -404,23 +516,23 @@ parameters:
     description: "Interface_count is empty/null (boolean)"
   interface_count__gt:
     required: false
-    type: array
+    type: integer
     description: "Interface_count greater than"
   interface_count__gte:
     required: false
-    type: array
+    type: integer
     description: "Interface_count greater than or equal to"
   interface_count__lt:
     required: false
-    type: array
+    type: integer
     description: "Interface_count less than"
   interface_count__lte:
     required: false
-    type: array
+    type: integer
     description: "Interface_count less than or equal to"
   interface_count__n:
     required: false
-    type: array
+    type: integer
     description: "Interface_count not equal to"
   interfaces:
     required: false
@@ -428,7 +540,7 @@ parameters:
     description: "Has interfaces"
   inventory_item_count:
     required: false
-    type: array
+    type: integer
     description: "Inventory_item_count"
   inventory_item_count__empty:
     required: false
@@ -436,23 +548,23 @@ parameters:
     description: "Inventory_item_count is empty/null (boolean)"
   inventory_item_count__gt:
     required: false
-    type: array
+    type: integer
     description: "Inventory_item_count greater than"
   inventory_item_count__gte:
     required: false
-    type: array
+    type: integer
     description: "Inventory_item_count greater than or equal to"
   inventory_item_count__lt:
     required: false
-    type: array
+    type: integer
     description: "Inventory_item_count less than"
   inventory_item_count__lte:
     required: false
-    type: array
+    type: integer
     description: "Inventory_item_count less than or equal to"
   inventory_item_count__n:
     required: false
-    type: array
+    type: integer
     description: "Inventory_item_count not equal to"
   is_full_depth:
     required: false
@@ -460,35 +572,35 @@ parameters:
     description: "Is full depth"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   latitude:
     required: false
-    type: array
+    type: integer
     description: "Latitude"
   latitude__empty:
     required: false
@@ -496,23 +608,23 @@ parameters:
     description: "Latitude is empty/null (boolean)"
   latitude__gt:
     required: false
-    type: array
+    type: integer
     description: "Latitude greater than"
   latitude__gte:
     required: false
-    type: array
+    type: integer
     description: "Latitude greater than or equal to"
   latitude__lt:
     required: false
-    type: array
+    type: integer
     description: "Latitude less than"
   latitude__lte:
     required: false
-    type: array
+    type: integer
     description: "Latitude less than or equal to"
   latitude__n:
     required: false
-    type: array
+    type: integer
     description: "Latitude not equal to"
   limit:
     required: false
@@ -524,23 +636,23 @@ parameters:
     description: "Has local config context data"
   location:
     required: false
-    type: array
+    type: string
     description: "Location"
   location__n:
     required: false
-    type: array
+    type: string
     description: "Location not equal to"
   location_id:
     required: false
-    type: array
+    type: string
     description: "Location_id"
   location_id__n:
     required: false
-    type: array
+    type: string
     description: "Location_id not equal to"
   longitude:
     required: false
-    type: array
+    type: integer
     description: "Longitude"
   longitude__empty:
     required: false
@@ -548,87 +660,95 @@ parameters:
     description: "Longitude is empty/null (boolean)"
   longitude__gt:
     required: false
-    type: array
+    type: integer
     description: "Longitude greater than"
   longitude__gte:
     required: false
-    type: array
+    type: integer
     description: "Longitude greater than or equal to"
   longitude__lt:
     required: false
-    type: array
+    type: integer
     description: "Longitude less than"
   longitude__lte:
     required: false
-    type: array
+    type: integer
     description: "Longitude less than or equal to"
   longitude__n:
     required: false
-    type: array
+    type: integer
     description: "Longitude not equal to"
   mac_address:
     required: false
-    type: array
+    type: string
     description: "Mac_address"
   mac_address__ic:
     required: false
-    type: array
+    type: string
     description: "Mac_address contains (case-insensitive)"
   mac_address__ie:
     required: false
-    type: array
+    type: string
     description: "Mac_address exact match (case-insensitive)"
   mac_address__iew:
     required: false
-    type: array
+    type: string
     description: "Mac_address ends with (case-insensitive)"
+  mac_address__iregex:
+    required: false
+    type: string
+    description: "Mac_address"
   mac_address__isw:
     required: false
-    type: array
+    type: string
     description: "Mac_address starts with (case-sensitive)"
   mac_address__n:
     required: false
-    type: array
+    type: string
     description: "Mac_address not equal to"
   mac_address__nic:
     required: false
-    type: array
+    type: string
     description: "Mac_address does not contain (case-insensitive)"
   mac_address__nie:
     required: false
-    type: array
+    type: string
     description: "Mac_address inverse exact match (case-insensitive)"
   mac_address__niew:
     required: false
-    type: array
+    type: string
     description: "Mac_address does not end with (case-insensitive)"
   mac_address__nisw:
     required: false
-    type: array
+    type: string
     description: "Mac_address does not start with (case-sensitive)"
+  mac_address__regex:
+    required: false
+    type: string
+    description: "Mac_address"
   manufacturer:
     required: false
-    type: array
+    type: string
     description: "Manufacturer (slug)"
   manufacturer__n:
     required: false
-    type: array
+    type: string
     description: "Manufacturer not equal to"
   manufacturer_id:
     required: false
-    type: array
+    type: integer
     description: "Manufacturer (ID)"
   manufacturer_id__n:
     required: false
-    type: array
+    type: integer
     description: "Manufacturer_id not equal to"
   model:
     required: false
-    type: array
+    type: string
     description: "Device model (slug)"
   model__n:
     required: false
-    type: array
+    type: string
     description: "Model not equal to"
   modified_by_request:
     required: false
@@ -636,7 +756,7 @@ parameters:
     description: "Modified_by_request"
   module_bay_count:
     required: false
-    type: array
+    type: integer
     description: "Module_bay_count"
   module_bay_count__empty:
     required: false
@@ -644,23 +764,23 @@ parameters:
     description: "Module_bay_count is empty/null (boolean)"
   module_bay_count__gt:
     required: false
-    type: array
+    type: integer
     description: "Module_bay_count greater than"
   module_bay_count__gte:
     required: false
-    type: array
+    type: integer
     description: "Module_bay_count greater than or equal to"
   module_bay_count__lt:
     required: false
-    type: array
+    type: integer
     description: "Module_bay_count less than"
   module_bay_count__lte:
     required: false
-    type: array
+    type: integer
     description: "Module_bay_count less than or equal to"
   module_bay_count__n:
     required: false
-    type: array
+    type: integer
     description: "Module_bay_count not equal to"
   module_bays:
     required: false
@@ -668,7 +788,7 @@ parameters:
     description: "Has module bays"
   name:
     required: false
-    type: array
+    type: string
     description: "Name"
   name__empty:
     required: false
@@ -676,71 +796,111 @@ parameters:
     description: "Name is empty/null (boolean)"
   name__ic:
     required: false
-    type: array
+    type: string
     description: "Name contains (case-insensitive)"
   name__ie:
     required: false
-    type: array
+    type: string
     description: "Name exact match (case-insensitive)"
   name__iew:
     required: false
-    type: array
+    type: string
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: string
+    description: "Name"
   name__isw:
     required: false
-    type: array
+    type: string
     description: "Name starts with (case-sensitive)"
   name__n:
     required: false
-    type: array
+    type: string
     description: "Name not equal to"
   name__nic:
     required: false
-    type: array
+    type: string
     description: "Name does not contain (case-insensitive)"
   name__nie:
     required: false
-    type: array
+    type: string
     description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: false
-    type: array
+    type: string
     description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: false
-    type: array
+    type: string
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: string
+    description: "Name"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
   oob_ip_id:
     required: false
-    type: array
+    type: integer
     description: "OOB IP (ID)"
   oob_ip_id__n:
     required: false
-    type: array
+    type: integer
     description: "Oob_ip_id not equal to"
   ordering:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: string
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: string
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: string
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: string
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: integer
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: integer
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: integer
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: integer
+    description: "Owner_id not equal to"
   parent_bay_id:
     required: false
-    type: array
+    type: integer
     description: "Parent bay (ID)"
   parent_bay_id__n:
     required: false
-    type: array
+    type: integer
     description: "Parent_bay_id not equal to"
   parent_device_id:
     required: false
-    type: array
+    type: integer
     description: "Parent Device (ID)"
   parent_device_id__n:
     required: false
-    type: array
+    type: integer
     description: "Parent_device_id not equal to"
   pass_through_ports:
     required: false
@@ -748,23 +908,23 @@ parameters:
     description: "Has pass-through ports"
   platform:
     required: false
-    type: array
-    description: "Platform (slug)"
+    type: string
+    description: "Platform"
   platform__n:
     required: false
-    type: array
+    type: string
     description: "Platform not equal to"
   platform_id:
     required: false
-    type: array
-    description: "Platform (ID)"
+    type: string
+    description: "Platform_id"
   platform_id__n:
     required: false
-    type: array
+    type: string
     description: "Platform_id not equal to"
   position:
     required: false
-    type: array
+    type: integer
     description: "Position"
   position__empty:
     required: false
@@ -772,27 +932,27 @@ parameters:
     description: "Position is empty/null (boolean)"
   position__gt:
     required: false
-    type: array
+    type: integer
     description: "Position greater than"
   position__gte:
     required: false
-    type: array
+    type: integer
     description: "Position greater than or equal to"
   position__lt:
     required: false
-    type: array
+    type: integer
     description: "Position less than"
   position__lte:
     required: false
-    type: array
+    type: integer
     description: "Position less than or equal to"
   position__n:
     required: false
-    type: array
+    type: integer
     description: "Position not equal to"
   power_outlet_count:
     required: false
-    type: array
+    type: integer
     description: "Power_outlet_count"
   power_outlet_count__empty:
     required: false
@@ -800,23 +960,23 @@ parameters:
     description: "Power_outlet_count is empty/null (boolean)"
   power_outlet_count__gt:
     required: false
-    type: array
+    type: integer
     description: "Power_outlet_count greater than"
   power_outlet_count__gte:
     required: false
-    type: array
+    type: integer
     description: "Power_outlet_count greater than or equal to"
   power_outlet_count__lt:
     required: false
-    type: array
+    type: integer
     description: "Power_outlet_count less than"
   power_outlet_count__lte:
     required: false
-    type: array
+    type: integer
     description: "Power_outlet_count less than or equal to"
   power_outlet_count__n:
     required: false
-    type: array
+    type: integer
     description: "Power_outlet_count not equal to"
   power_outlets:
     required: false
@@ -824,7 +984,7 @@ parameters:
     description: "Has power outlets"
   power_port_count:
     required: false
-    type: array
+    type: integer
     description: "Power_port_count"
   power_port_count__empty:
     required: false
@@ -832,23 +992,23 @@ parameters:
     description: "Power_port_count is empty/null (boolean)"
   power_port_count__gt:
     required: false
-    type: array
+    type: integer
     description: "Power_port_count greater than"
   power_port_count__gte:
     required: false
-    type: array
+    type: integer
     description: "Power_port_count greater than or equal to"
   power_port_count__lt:
     required: false
-    type: array
+    type: integer
     description: "Power_port_count less than"
   power_port_count__lte:
     required: false
-    type: array
+    type: integer
     description: "Power_port_count less than or equal to"
   power_port_count__n:
     required: false
-    type: array
+    type: integer
     description: "Power_port_count not equal to"
   power_ports:
     required: false
@@ -856,35 +1016,35 @@ parameters:
     description: "Has power ports"
   primary_ip4:
     required: false
-    type: array
+    type: string
     description: "Primary IPv4 (address)"
   primary_ip4__n:
     required: false
-    type: array
+    type: string
     description: "Primary_ip4 not equal to"
   primary_ip4_id:
     required: false
-    type: array
+    type: integer
     description: "Primary IPv4 (ID)"
   primary_ip4_id__n:
     required: false
-    type: array
+    type: integer
     description: "Primary_ip4_id not equal to"
   primary_ip6:
     required: false
-    type: array
+    type: string
     description: "Primary IPv6 (address)"
   primary_ip6__n:
     required: false
-    type: array
+    type: string
     description: "Primary_ip6 not equal to"
   primary_ip6_id:
     required: false
-    type: array
+    type: integer
     description: "Primary IPv6 (ID)"
   primary_ip6_id__n:
     required: false
-    type: array
+    type: integer
     description: "Primary_ip6_id not equal to"
   q:
     required: false
@@ -892,15 +1052,15 @@ parameters:
     description: "Search"
   rack_id:
     required: false
-    type: array
+    type: integer
     description: "Rack (ID)"
   rack_id__n:
     required: false
-    type: array
+    type: integer
     description: "Rack_id not equal to"
   rear_port_count:
     required: false
-    type: array
+    type: integer
     description: "Rear_port_count"
   rear_port_count__empty:
     required: false
@@ -908,59 +1068,59 @@ parameters:
     description: "Rear_port_count is empty/null (boolean)"
   rear_port_count__gt:
     required: false
-    type: array
+    type: integer
     description: "Rear_port_count greater than"
   rear_port_count__gte:
     required: false
-    type: array
+    type: integer
     description: "Rear_port_count greater than or equal to"
   rear_port_count__lt:
     required: false
-    type: array
+    type: integer
     description: "Rear_port_count less than"
   rear_port_count__lte:
     required: false
-    type: array
+    type: integer
     description: "Rear_port_count less than or equal to"
   rear_port_count__n:
     required: false
-    type: array
+    type: integer
     description: "Rear_port_count not equal to"
   region:
     required: false
-    type: array
+    type: string
     description: "Region"
   region__n:
     required: false
-    type: array
+    type: string
     description: "Region not equal to"
   region_id:
     required: false
-    type: array
+    type: string
     description: "Region_id"
   region_id__n:
     required: false
-    type: array
+    type: string
     description: "Region_id not equal to"
   role:
     required: false
-    type: array
+    type: string
     description: "Role"
   role__n:
     required: false
-    type: array
+    type: string
     description: "Role not equal to"
   role_id:
     required: false
-    type: array
+    type: string
     description: "Role_id"
   role_id__n:
     required: false
-    type: array
+    type: string
     description: "Role_id not equal to"
   serial:
     required: false
-    type: array
+    type: string
     description: "Serial"
   serial__empty:
     required: false
@@ -968,75 +1128,87 @@ parameters:
     description: "Serial is empty/null (boolean)"
   serial__ic:
     required: false
-    type: array
+    type: string
     description: "Serial contains (case-insensitive)"
   serial__ie:
     required: false
-    type: array
+    type: string
     description: "Serial exact match (case-insensitive)"
   serial__iew:
     required: false
-    type: array
+    type: string
     description: "Serial ends with (case-insensitive)"
+  serial__iregex:
+    required: false
+    type: string
+    description: "Serial"
   serial__isw:
     required: false
-    type: array
+    type: string
     description: "Serial starts with (case-sensitive)"
   serial__n:
     required: false
-    type: array
+    type: string
     description: "Serial not equal to"
   serial__nic:
     required: false
-    type: array
+    type: string
     description: "Serial does not contain (case-insensitive)"
   serial__nie:
     required: false
-    type: array
+    type: string
     description: "Serial inverse exact match (case-insensitive)"
   serial__niew:
     required: false
-    type: array
+    type: string
     description: "Serial does not end with (case-insensitive)"
   serial__nisw:
     required: false
-    type: array
+    type: string
     description: "Serial does not start with (case-sensitive)"
+  serial__regex:
+    required: false
+    type: string
+    description: "Serial"
   site:
     required: false
-    type: array
+    type: string
     description: "Site name (slug)"
   site__n:
     required: false
-    type: array
+    type: string
     description: "Site not equal to"
   site_group:
     required: false
-    type: array
+    type: string
     description: "Site_group"
   site_group__n:
     required: false
-    type: array
+    type: string
     description: "Site_group not equal to"
   site_group_id:
     required: false
-    type: array
+    type: string
     description: "Site_group_id"
   site_group_id__n:
     required: false
-    type: array
+    type: string
     description: "Site_group_id not equal to"
   site_id:
     required: false
-    type: array
+    type: integer
     description: "Site (ID)"
   site_id__n:
     required: false
-    type: array
+    type: integer
     description: "Site_id not equal to"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   status:
     required: false
-    type: array
+    type: string
     description: "Status"
   status__empty:
     required: false
@@ -1044,87 +1216,95 @@ parameters:
     description: "Status is empty/null (boolean)"
   status__ic:
     required: false
-    type: array
+    type: string
     description: "Status contains (case-insensitive)"
   status__ie:
     required: false
-    type: array
+    type: string
     description: "Status exact match (case-insensitive)"
   status__iew:
     required: false
-    type: array
+    type: string
     description: "Status ends with (case-insensitive)"
+  status__iregex:
+    required: false
+    type: string
+    description: "Status"
   status__isw:
     required: false
-    type: array
+    type: string
     description: "Status starts with (case-sensitive)"
   status__n:
     required: false
-    type: array
+    type: string
     description: "Status not equal to"
   status__nic:
     required: false
-    type: array
+    type: string
     description: "Status does not contain (case-insensitive)"
   status__nie:
     required: false
-    type: array
+    type: string
     description: "Status inverse exact match (case-insensitive)"
   status__niew:
     required: false
-    type: array
+    type: string
     description: "Status does not end with (case-insensitive)"
   status__nisw:
     required: false
-    type: array
+    type: string
     description: "Status does not start with (case-sensitive)"
+  status__regex:
+    required: false
+    type: string
+    description: "Status"
   tag:
     required: false
-    type: array
+    type: string
     description: "Tag"
   tag__n:
     required: false
-    type: array
+    type: string
     description: "Tag not equal to"
   tag_id:
     required: false
-    type: array
+    type: integer
     description: "Tag_id"
   tag_id__n:
     required: false
-    type: array
+    type: integer
     description: "Tag_id not equal to"
   tenant:
     required: false
-    type: array
+    type: string
     description: "Tenant (slug)"
   tenant__n:
     required: false
-    type: array
+    type: string
     description: "Tenant not equal to"
   tenant_group:
     required: false
-    type: array
+    type: string
     description: "Tenant_group"
   tenant_group__n:
     required: false
-    type: array
+    type: string
     description: "Tenant_group not equal to"
   tenant_group_id:
     required: false
-    type: array
+    type: string
     description: "Tenant_group_id"
   tenant_group_id__n:
     required: false
-    type: array
+    type: string
     description: "Tenant_group_id not equal to"
   tenant_id:
     required: false
-    type: array
+    type: integer
     description: "Tenant (ID)"
   tenant_id__n:
     required: false
-    type: array
+    type: integer
     description: "Tenant_id not equal to"
   updated_by_request:
     required: false
@@ -1132,7 +1312,7 @@ parameters:
     description: "Updated_by_request"
   vc_position:
     required: false
-    type: array
+    type: integer
     description: "Vc_position"
   vc_position__empty:
     required: false
@@ -1140,27 +1320,27 @@ parameters:
     description: "Vc_position is empty/null (boolean)"
   vc_position__gt:
     required: false
-    type: array
+    type: integer
     description: "Vc_position greater than"
   vc_position__gte:
     required: false
-    type: array
+    type: integer
     description: "Vc_position greater than or equal to"
   vc_position__lt:
     required: false
-    type: array
+    type: integer
     description: "Vc_position less than"
   vc_position__lte:
     required: false
-    type: array
+    type: integer
     description: "Vc_position less than or equal to"
   vc_position__n:
     required: false
-    type: array
+    type: integer
     description: "Vc_position not equal to"
   vc_priority:
     required: false
-    type: array
+    type: integer
     description: "Vc_priority"
   vc_priority__empty:
     required: false
@@ -1168,31 +1348,31 @@ parameters:
     description: "Vc_priority is empty/null (boolean)"
   vc_priority__gt:
     required: false
-    type: array
+    type: integer
     description: "Vc_priority greater than"
   vc_priority__gte:
     required: false
-    type: array
+    type: integer
     description: "Vc_priority greater than or equal to"
   vc_priority__lt:
     required: false
-    type: array
+    type: integer
     description: "Vc_priority less than"
   vc_priority__lte:
     required: false
-    type: array
+    type: integer
     description: "Vc_priority less than or equal to"
   vc_priority__n:
     required: false
-    type: array
+    type: integer
     description: "Vc_priority not equal to"
   virtual_chassis_id:
     required: false
-    type: array
+    type: integer
     description: "Virtual chassis (ID)"
   virtual_chassis_id__n:
     required: false
-    type: array
+    type: integer
     description: "Virtual_chassis_id not equal to"
   virtual_chassis_member:
     required: false

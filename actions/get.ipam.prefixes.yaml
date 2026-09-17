@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of prefix objects."
 enabled: true
 entry_point: run.py
@@ -22,55 +22,55 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   children:
     required: false
-    type: array
+    type: integer
     description: "Children"
   children__empty:
     required: false
-    type: array
+    type: integer
     description: "Children is empty/null (boolean)"
   children__gt:
     required: false
-    type: array
+    type: integer
     description: "Children greater than"
   children__gte:
     required: false
-    type: array
+    type: integer
     description: "Children greater than or equal to"
   children__lt:
     required: false
-    type: array
+    type: integer
     description: "Children less than"
   children__lte:
     required: false
-    type: array
+    type: integer
     description: "Children less than or equal to"
   children__n:
     required: false
-    type: array
+    type: integer
     description: "Children not equal to"
   contact:
     required: false
-    type: array
+    type: integer
     description: "Contact"
   contact__n:
     required: false
-    type: array
+    type: integer
     description: "Contact not equal to"
   contact_group:
     required: false
-    type: array
+    type: string
     description: "Contact_group"
   contact_group__n:
     required: false
-    type: array
+    type: string
     description: "Contact_group not equal to"
   contact_role:
     required: false
-    type: array
+    type: integer
     description: "Contact Role"
   contact_role__n:
     required: false
-    type: array
+    type: integer
     description: "Contact_role not equal to"
   contains:
     required: false
@@ -78,31 +78,31 @@ parameters:
     description: "Prefixes which contain this prefix or IP"
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -110,35 +110,35 @@ parameters:
     description: "Created_by_request"
   depth:
     required: false
-    type: array
+    type: integer
     description: "Depth"
   depth__empty:
     required: false
-    type: array
+    type: integer
     description: "Depth is empty/null (boolean)"
   depth__gt:
     required: false
-    type: array
+    type: integer
     description: "Depth greater than"
   depth__gte:
     required: false
-    type: array
+    type: integer
     description: "Depth greater than or equal to"
   depth__lt:
     required: false
-    type: array
+    type: integer
     description: "Depth less than"
   depth__lte:
     required: false
-    type: array
+    type: integer
     description: "Depth less than or equal to"
   depth__n:
     required: false
-    type: array
+    type: integer
     description: "Depth not equal to"
   description:
     required: false
-    type: array
+    type: string
     description: "Description"
   description__empty:
     required: false
@@ -146,47 +146,55 @@ parameters:
     description: "Description is empty/null (boolean)"
   description__ic:
     required: false
-    type: array
+    type: string
     description: "Description contains (case-insensitive)"
   description__ie:
     required: false
-    type: array
+    type: string
     description: "Description exact match (case-insensitive)"
   description__iew:
     required: false
-    type: array
+    type: string
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
   description__isw:
     required: false
-    type: array
+    type: string
     description: "Description starts with (case-sensitive)"
   description__n:
     required: false
-    type: array
+    type: string
     description: "Description not equal to"
   description__nic:
     required: false
-    type: array
+    type: string
     description: "Description does not contain (case-insensitive)"
   description__nie:
     required: false
-    type: array
+    type: string
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: false
-    type: array
+    type: string
     description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: false
-    type: array
+    type: string
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
   family:
     required: false
     type: integer
     description: "Family"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -194,23 +202,23 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   is_pool:
     required: false
@@ -218,31 +226,31 @@ parameters:
     description: "Is_pool"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -250,19 +258,19 @@ parameters:
     description: "Number of results to return per page."
   location:
     required: false
-    type: array
+    type: string
     description: "Location"
   location__n:
     required: false
-    type: array
+    type: string
     description: "Location not equal to"
   location_id:
     required: false
-    type: array
+    type: string
     description: "Location_id"
   location_id__n:
     required: false
-    type: array
+    type: string
     description: "Location_id not equal to"
   mark_utilized:
     required: false
@@ -270,7 +278,7 @@ parameters:
     description: "Mark_utilized"
   mask_length:
     required: false
-    type: array
+    type: integer
     description: "Mask_length"
   mask_length__gte:
     required: false
@@ -292,9 +300,41 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: string
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: string
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: string
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: string
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: integer
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: integer
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: integer
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: integer
+    description: "Owner_id not equal to"
   prefix:
     required: false
-    type: array
+    type: string
     description: "Prefix"
   present_in_vrf:
     required: false
@@ -310,39 +350,39 @@ parameters:
     description: "Search"
   region:
     required: false
-    type: array
+    type: string
     description: "Region"
   region__n:
     required: false
-    type: array
+    type: string
     description: "Region not equal to"
   region_id:
     required: false
-    type: array
+    type: string
     description: "Region_id"
   region_id__n:
     required: false
-    type: array
+    type: string
     description: "Region_id not equal to"
   role:
     required: false
-    type: array
+    type: string
     description: "Role (slug)"
   role__n:
     required: false
-    type: array
+    type: string
     description: "Role not equal to"
   role_id:
     required: false
-    type: array
+    type: integer
     description: "Role (ID)"
   role_id__n:
     required: false
-    type: array
+    type: integer
     description: "Role_id not equal to"
   scope_id:
     required: false
-    type: array
+    type: integer
     description: "Scope_id"
   scope_id__empty:
     required: false
@@ -350,23 +390,23 @@ parameters:
     description: "Scope_id is empty/null (boolean)"
   scope_id__gt:
     required: false
-    type: array
+    type: integer
     description: "Scope_id greater than"
   scope_id__gte:
     required: false
-    type: array
+    type: integer
     description: "Scope_id greater than or equal to"
   scope_id__lt:
     required: false
-    type: array
+    type: integer
     description: "Scope_id less than"
   scope_id__lte:
     required: false
-    type: array
+    type: integer
     description: "Scope_id less than or equal to"
   scope_id__n:
     required: false
-    type: array
+    type: integer
     description: "Scope_id not equal to"
   scope_type:
     required: false
@@ -378,39 +418,43 @@ parameters:
     description: "Scope_type not equal to"
   site:
     required: false
-    type: array
+    type: string
     description: "Site (slug)"
   site__n:
     required: false
-    type: array
+    type: string
     description: "Site not equal to"
   site_group:
     required: false
-    type: array
+    type: string
     description: "Site_group"
   site_group__n:
     required: false
-    type: array
+    type: string
     description: "Site_group not equal to"
   site_group_id:
     required: false
-    type: array
+    type: string
     description: "Site_group_id"
   site_group_id__n:
     required: false
-    type: array
+    type: string
     description: "Site_group_id not equal to"
   site_id:
     required: false
-    type: array
+    type: integer
     description: "Site (ID)"
   site_id__n:
     required: false
-    type: array
+    type: integer
     description: "Site_id not equal to"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   status:
     required: false
-    type: array
+    type: string
     description: "Operational status of this prefix"
   status__empty:
     required: false
@@ -418,87 +462,95 @@ parameters:
     description: "Status is empty/null (boolean)"
   status__ic:
     required: false
-    type: array
+    type: string
     description: "Status contains (case-insensitive)"
   status__ie:
     required: false
-    type: array
+    type: string
     description: "Status exact match (case-insensitive)"
   status__iew:
     required: false
-    type: array
+    type: string
     description: "Status ends with (case-insensitive)"
+  status__iregex:
+    required: false
+    type: string
+    description: "Operational status of this prefix"
   status__isw:
     required: false
-    type: array
+    type: string
     description: "Status starts with (case-sensitive)"
   status__n:
     required: false
-    type: array
+    type: string
     description: "Status not equal to"
   status__nic:
     required: false
-    type: array
+    type: string
     description: "Status does not contain (case-insensitive)"
   status__nie:
     required: false
-    type: array
+    type: string
     description: "Status inverse exact match (case-insensitive)"
   status__niew:
     required: false
-    type: array
+    type: string
     description: "Status does not end with (case-insensitive)"
   status__nisw:
     required: false
-    type: array
+    type: string
     description: "Status does not start with (case-sensitive)"
+  status__regex:
+    required: false
+    type: string
+    description: "Operational status of this prefix"
   tag:
     required: false
-    type: array
+    type: string
     description: "Tag"
   tag__n:
     required: false
-    type: array
+    type: string
     description: "Tag not equal to"
   tag_id:
     required: false
-    type: array
+    type: integer
     description: "Tag_id"
   tag_id__n:
     required: false
-    type: array
+    type: integer
     description: "Tag_id not equal to"
   tenant:
     required: false
-    type: array
+    type: string
     description: "Tenant (slug)"
   tenant__n:
     required: false
-    type: array
+    type: string
     description: "Tenant not equal to"
   tenant_group:
     required: false
-    type: array
+    type: string
     description: "Tenant_group"
   tenant_group__n:
     required: false
-    type: array
+    type: string
     description: "Tenant_group not equal to"
   tenant_group_id:
     required: false
-    type: array
+    type: string
     description: "Tenant_group_id"
   tenant_group_id__n:
     required: false
-    type: array
+    type: string
     description: "Tenant_group_id not equal to"
   tenant_id:
     required: false
-    type: array
+    type: integer
     description: "Tenant (ID)"
   tenant_id__n:
     required: false
-    type: array
+    type: integer
     description: "Tenant_id not equal to"
   updated_by_request:
     required: false
@@ -506,27 +558,27 @@ parameters:
     description: "Updated_by_request"
   vlan_group:
     required: false
-    type: array
+    type: string
     description: "VLAN Group (slug)"
   vlan_group__n:
     required: false
-    type: array
+    type: string
     description: "Vlan_group not equal to"
   vlan_group_id:
     required: false
-    type: array
+    type: integer
     description: "VLAN Group (ID)"
   vlan_group_id__n:
     required: false
-    type: array
+    type: integer
     description: "Vlan_group_id not equal to"
   vlan_id:
     required: false
-    type: array
+    type: integer
     description: "VLAN (ID)"
   vlan_id__n:
     required: false
-    type: array
+    type: integer
     description: "Vlan_id not equal to"
   vlan_vid:
     required: false
@@ -558,19 +610,19 @@ parameters:
     description: "Vlan_vid not equal to"
   vrf:
     required: false
-    type: array
+    type: string
     description: "VRF (RD)"
   vrf__n:
     required: false
-    type: array
+    type: string
     description: "Vrf not equal to"
   vrf_id:
     required: false
-    type: array
+    type: integer
     description: "VRF"
   vrf_id__n:
     required: false
-    type: array
+    type: integer
     description: "Vrf_id not equal to"
   within:
     required: false

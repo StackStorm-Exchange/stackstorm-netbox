@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of FHRP group assignment objects."
 enabled: true
 entry_point: run.py
@@ -22,31 +22,31 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -54,23 +54,23 @@ parameters:
     description: "Created_by_request"
   device:
     required: false
-    type: array
+    type: string
     description: "Device"
   device_id:
     required: false
-    type: array
+    type: integer
     description: "Device_id"
   group_id:
     required: false
-    type: array
+    type: integer
     description: "Group (ID)"
   group_id__n:
     required: false
-    type: array
+    type: integer
     description: "Group_id not equal to"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -78,27 +78,27 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   interface_id:
     required: false
-    type: array
+    type: integer
     description: "Interface_id"
   interface_id__empty:
     required: false
@@ -106,23 +106,23 @@ parameters:
     description: "Interface_id is empty/null (boolean)"
   interface_id__gt:
     required: false
-    type: array
+    type: integer
     description: "Interface_id greater than"
   interface_id__gte:
     required: false
-    type: array
+    type: integer
     description: "Interface_id greater than or equal to"
   interface_id__lt:
     required: false
-    type: array
+    type: integer
     description: "Interface_id less than"
   interface_id__lte:
     required: false
-    type: array
+    type: integer
     description: "Interface_id less than or equal to"
   interface_id__n:
     required: false
-    type: array
+    type: integer
     description: "Interface_id not equal to"
   interface_type:
     required: false
@@ -134,31 +134,31 @@ parameters:
     description: "Interface_type not equal to"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -178,7 +178,7 @@ parameters:
     description: "Which field to use when ordering the results."
   priority:
     required: false
-    type: array
+    type: integer
     description: "Priority"
   priority__empty:
     required: false
@@ -186,35 +186,39 @@ parameters:
     description: "Priority is empty/null (boolean)"
   priority__gt:
     required: false
-    type: array
+    type: integer
     description: "Priority greater than"
   priority__gte:
     required: false
-    type: array
+    type: integer
     description: "Priority greater than or equal to"
   priority__lt:
     required: false
-    type: array
+    type: integer
     description: "Priority less than"
   priority__lte:
     required: false
-    type: array
+    type: integer
     description: "Priority less than or equal to"
   priority__n:
     required: false
-    type: array
+    type: integer
     description: "Priority not equal to"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   updated_by_request:
     required: false
     type: string
     description: "Updated_by_request"
   virtual_machine:
     required: false
-    type: array
+    type: string
     description: "Virtual_machine"
   virtual_machine_id:
     required: false
-    type: array
+    type: integer
     description: "Virtual_machine_id"
   save_in_key_store:
     type: boolean

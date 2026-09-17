@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
-description: "Delete a service template object."
+# NetBox API version: 4.6
+description: "Delete a application service template object."
 enabled: true
 entry_point: run.py
 name: delete.ipam.service_templates

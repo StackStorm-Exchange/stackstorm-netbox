@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Post a list of custom field objects."
 enabled: true
 entry_point: run.py
@@ -126,10 +126,18 @@ parameters:
     required: false
     type: string
     description: "Regular expression to enforce on text field values. Use ^ and $ to force matching of entire string. For example, &lt;code&gt;^[A-Z]{3}$&lt;/code&gt; will limit values to exactly three uppercase letters."
-  choice_set:
+  validation_schema:
     required: false
     type: object
+    description: "A JSON schema definition for validating the custom field value"
+  choice_set:
+    required: false
+    type: integer
     description: "Choice set"
+  owner:
+    required: false
+    type: integer
+    description: "Owner"
   comments:
     required: false
     type: string

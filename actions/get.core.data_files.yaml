@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of data file objects."
 enabled: true
 entry_point: run.py
@@ -22,31 +22,31 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -54,7 +54,7 @@ parameters:
     description: "Created_by_request"
   hash:
     required: false
-    type: array
+    type: string
     description: "Hash"
   hash__empty:
     required: false
@@ -62,43 +62,51 @@ parameters:
     description: "Hash is empty/null (boolean)"
   hash__ic:
     required: false
-    type: array
+    type: string
     description: "Hash contains (case-insensitive)"
   hash__ie:
     required: false
-    type: array
+    type: string
     description: "Hash exact match (case-insensitive)"
   hash__iew:
     required: false
-    type: array
+    type: string
     description: "Hash ends with (case-insensitive)"
+  hash__iregex:
+    required: false
+    type: string
+    description: "Hash"
   hash__isw:
     required: false
-    type: array
+    type: string
     description: "Hash starts with (case-sensitive)"
   hash__n:
     required: false
-    type: array
+    type: string
     description: "Hash not equal to"
   hash__nic:
     required: false
-    type: array
+    type: string
     description: "Hash does not contain (case-insensitive)"
   hash__nie:
     required: false
-    type: array
+    type: string
     description: "Hash inverse exact match (case-insensitive)"
   hash__niew:
     required: false
-    type: array
+    type: string
     description: "Hash does not end with (case-insensitive)"
   hash__nisw:
     required: false
-    type: array
+    type: string
     description: "Hash does not start with (case-sensitive)"
+  hash__regex:
+    required: false
+    type: string
+    description: "Hash"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -106,51 +114,51 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -170,7 +178,7 @@ parameters:
     description: "Which field to use when ordering the results."
   path:
     required: false
-    type: array
+    type: string
     description: "Path"
   path__empty:
     required: false
@@ -178,47 +186,55 @@ parameters:
     description: "Path is empty/null (boolean)"
   path__ic:
     required: false
-    type: array
+    type: string
     description: "Path contains (case-insensitive)"
   path__ie:
     required: false
-    type: array
+    type: string
     description: "Path exact match (case-insensitive)"
   path__iew:
     required: false
-    type: array
+    type: string
     description: "Path ends with (case-insensitive)"
+  path__iregex:
+    required: false
+    type: string
+    description: "Path"
   path__isw:
     required: false
-    type: array
+    type: string
     description: "Path starts with (case-sensitive)"
   path__n:
     required: false
-    type: array
+    type: string
     description: "Path not equal to"
   path__nic:
     required: false
-    type: array
+    type: string
     description: "Path does not contain (case-insensitive)"
   path__nie:
     required: false
-    type: array
+    type: string
     description: "Path inverse exact match (case-insensitive)"
   path__niew:
     required: false
-    type: array
+    type: string
     description: "Path does not end with (case-insensitive)"
   path__nisw:
     required: false
-    type: array
+    type: string
     description: "Path does not start with (case-sensitive)"
+  path__regex:
+    required: false
+    type: string
+    description: "Path"
   q:
     required: false
     type: string
     description: "Q"
   size:
     required: false
-    type: array
+    type: integer
     description: "Size"
   size__empty:
     required: false
@@ -226,40 +242,44 @@ parameters:
     description: "Size is empty/null (boolean)"
   size__gt:
     required: false
-    type: array
+    type: integer
     description: "Size greater than"
   size__gte:
     required: false
-    type: array
+    type: integer
     description: "Size greater than or equal to"
   size__lt:
     required: false
-    type: array
+    type: integer
     description: "Size less than"
   size__lte:
     required: false
-    type: array
+    type: integer
     description: "Size less than or equal to"
   size__n:
     required: false
-    type: array
+    type: integer
     description: "Size not equal to"
   source:
     required: false
-    type: array
+    type: string
     description: "Data source (name)"
   source__n:
     required: false
-    type: array
+    type: string
     description: "Source not equal to"
   source_id:
     required: false
-    type: array
+    type: integer
     description: "Data source (ID)"
   source_id__n:
     required: false
-    type: array
+    type: integer
     description: "Source_id not equal to"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   updated_by_request:
     required: false
     type: string

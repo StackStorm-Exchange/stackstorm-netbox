@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of table config objects."
 enabled: true
 entry_point: run.py
@@ -22,31 +22,31 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -54,7 +54,7 @@ parameters:
     description: "Created_by_request"
   description:
     required: false
-    type: array
+    type: string
     description: "Description"
   description__empty:
     required: false
@@ -62,47 +62,55 @@ parameters:
     description: "Description is empty/null (boolean)"
   description__ic:
     required: false
-    type: array
+    type: string
     description: "Description contains (case-insensitive)"
   description__ie:
     required: false
-    type: array
+    type: string
     description: "Description exact match (case-insensitive)"
   description__iew:
     required: false
-    type: array
+    type: string
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
   description__isw:
     required: false
-    type: array
+    type: string
     description: "Description starts with (case-sensitive)"
   description__n:
     required: false
-    type: array
+    type: string
     description: "Description not equal to"
   description__nic:
     required: false
-    type: array
+    type: string
     description: "Description does not contain (case-insensitive)"
   description__nie:
     required: false
-    type: array
+    type: string
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: false
-    type: array
+    type: string
     description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: false
-    type: array
+    type: string
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
   enabled:
     required: false
     type: boolean
     description: "Enabled"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -110,51 +118,51 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -166,7 +174,7 @@ parameters:
     description: "Modified_by_request"
   name:
     required: false
-    type: array
+    type: string
     description: "Name"
   name__empty:
     required: false
@@ -174,40 +182,48 @@ parameters:
     description: "Name is empty/null (boolean)"
   name__ic:
     required: false
-    type: array
+    type: string
     description: "Name contains (case-insensitive)"
   name__ie:
     required: false
-    type: array
+    type: string
     description: "Name exact match (case-insensitive)"
   name__iew:
     required: false
-    type: array
+    type: string
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: string
+    description: "Name"
   name__isw:
     required: false
-    type: array
+    type: string
     description: "Name starts with (case-sensitive)"
   name__n:
     required: false
-    type: array
+    type: string
     description: "Name not equal to"
   name__nic:
     required: false
-    type: array
+    type: string
     description: "Name does not contain (case-insensitive)"
   name__nie:
     required: false
-    type: array
+    type: string
     description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: false
-    type: array
+    type: string
     description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: false
-    type: array
+    type: string
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: string
+    description: "Name"
   object_type:
     required: false
     type: string
@@ -218,11 +234,11 @@ parameters:
     description: "Object_type not equal to"
   object_type_id:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id"
   object_type_id__n:
     required: false
-    type: array
+    type: integer
     description: "Object_type_id not equal to"
   offset:
     required: false
@@ -240,9 +256,13 @@ parameters:
     required: false
     type: boolean
     description: "Shared"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   table:
     required: false
-    type: array
+    type: string
     description: "Table"
   table__empty:
     required: false
@@ -250,40 +270,48 @@ parameters:
     description: "Table is empty/null (boolean)"
   table__ic:
     required: false
-    type: array
+    type: string
     description: "Table contains (case-insensitive)"
   table__ie:
     required: false
-    type: array
+    type: string
     description: "Table exact match (case-insensitive)"
   table__iew:
     required: false
-    type: array
+    type: string
     description: "Table ends with (case-insensitive)"
+  table__iregex:
+    required: false
+    type: string
+    description: "Table"
   table__isw:
     required: false
-    type: array
+    type: string
     description: "Table starts with (case-sensitive)"
   table__n:
     required: false
-    type: array
+    type: string
     description: "Table not equal to"
   table__nic:
     required: false
-    type: array
+    type: string
     description: "Table does not contain (case-insensitive)"
   table__nie:
     required: false
-    type: array
+    type: string
     description: "Table inverse exact match (case-insensitive)"
   table__niew:
     required: false
-    type: array
+    type: string
     description: "Table does not end with (case-insensitive)"
   table__nisw:
     required: false
-    type: array
+    type: string
     description: "Table does not start with (case-sensitive)"
+  table__regex:
+    required: false
+    type: string
+    description: "Table"
   updated_by_request:
     required: false
     type: string
@@ -294,23 +322,23 @@ parameters:
     description: "Usable"
   user:
     required: false
-    type: array
+    type: string
     description: "User (name)"
   user__n:
     required: false
-    type: array
+    type: string
     description: "User not equal to"
   user_id:
     required: false
-    type: array
+    type: integer
     description: "User (ID)"
   user_id__n:
     required: false
-    type: array
+    type: integer
     description: "User_id not equal to"
   weight:
     required: false
-    type: array
+    type: integer
     description: "Weight"
   weight__empty:
     required: false
@@ -318,23 +346,23 @@ parameters:
     description: "Weight is empty/null (boolean)"
   weight__gt:
     required: false
-    type: array
+    type: integer
     description: "Weight greater than"
   weight__gte:
     required: false
-    type: array
+    type: integer
     description: "Weight greater than or equal to"
   weight__lt:
     required: false
-    type: array
+    type: integer
     description: "Weight less than"
   weight__lte:
     required: false
-    type: array
+    type: integer
     description: "Weight less than or equal to"
   weight__n:
     required: false
-    type: array
+    type: integer
     description: "Weight not equal to"
   save_in_key_store:
     type: boolean

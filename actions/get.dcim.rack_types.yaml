@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of rack type objects."
 enabled: true
 entry_point: run.py
@@ -22,31 +22,31 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -58,7 +58,7 @@ parameters:
     description: "Desc_units"
   description:
     required: false
-    type: array
+    type: string
     description: "Description"
   description__empty:
     required: false
@@ -66,43 +66,51 @@ parameters:
     description: "Description is empty/null (boolean)"
   description__ic:
     required: false
-    type: array
+    type: string
     description: "Description contains (case-insensitive)"
   description__ie:
     required: false
-    type: array
+    type: string
     description: "Description exact match (case-insensitive)"
   description__iew:
     required: false
-    type: array
+    type: string
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
   description__isw:
     required: false
-    type: array
+    type: string
     description: "Description starts with (case-sensitive)"
   description__n:
     required: false
-    type: array
+    type: string
     description: "Description not equal to"
   description__nic:
     required: false
-    type: array
+    type: string
     description: "Description does not contain (case-insensitive)"
   description__nie:
     required: false
-    type: array
+    type: string
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: false
-    type: array
+    type: string
     description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: false
-    type: array
+    type: string
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
   form_factor:
     required: false
-    type: array
+    type: string
     description: "Form_factor"
   form_factor__empty:
     required: false
@@ -110,43 +118,51 @@ parameters:
     description: "Form_factor is empty/null (boolean)"
   form_factor__ic:
     required: false
-    type: array
+    type: string
     description: "Form_factor contains (case-insensitive)"
   form_factor__ie:
     required: false
-    type: array
+    type: string
     description: "Form_factor exact match (case-insensitive)"
   form_factor__iew:
     required: false
-    type: array
+    type: string
     description: "Form_factor ends with (case-insensitive)"
+  form_factor__iregex:
+    required: false
+    type: string
+    description: "Form_factor"
   form_factor__isw:
     required: false
-    type: array
+    type: string
     description: "Form_factor starts with (case-sensitive)"
   form_factor__n:
     required: false
-    type: array
+    type: string
     description: "Form_factor not equal to"
   form_factor__nic:
     required: false
-    type: array
+    type: string
     description: "Form_factor does not contain (case-insensitive)"
   form_factor__nie:
     required: false
-    type: array
+    type: string
     description: "Form_factor inverse exact match (case-insensitive)"
   form_factor__niew:
     required: false
-    type: array
+    type: string
     description: "Form_factor does not end with (case-insensitive)"
   form_factor__nisw:
     required: false
-    type: array
+    type: string
     description: "Form_factor does not start with (case-sensitive)"
+  form_factor__regex:
+    required: false
+    type: string
+    description: "Form_factor"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -154,51 +170,51 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -206,23 +222,23 @@ parameters:
     description: "Number of results to return per page."
   manufacturer:
     required: false
-    type: array
+    type: string
     description: "Manufacturer (slug)"
   manufacturer__n:
     required: false
-    type: array
+    type: string
     description: "Manufacturer not equal to"
   manufacturer_id:
     required: false
-    type: array
+    type: integer
     description: "Manufacturer (ID)"
   manufacturer_id__n:
     required: false
-    type: array
+    type: integer
     description: "Manufacturer_id not equal to"
   max_weight:
     required: false
-    type: array
+    type: integer
     description: "Max_weight"
   max_weight__empty:
     required: false
@@ -230,27 +246,27 @@ parameters:
     description: "Max_weight is empty/null (boolean)"
   max_weight__gt:
     required: false
-    type: array
+    type: integer
     description: "Max_weight greater than"
   max_weight__gte:
     required: false
-    type: array
+    type: integer
     description: "Max_weight greater than or equal to"
   max_weight__lt:
     required: false
-    type: array
+    type: integer
     description: "Max_weight less than"
   max_weight__lte:
     required: false
-    type: array
+    type: integer
     description: "Max_weight less than or equal to"
   max_weight__n:
     required: false
-    type: array
+    type: integer
     description: "Max_weight not equal to"
   model:
     required: false
-    type: array
+    type: string
     description: "Model"
   model__empty:
     required: false
@@ -258,47 +274,55 @@ parameters:
     description: "Model is empty/null (boolean)"
   model__ic:
     required: false
-    type: array
+    type: string
     description: "Model contains (case-insensitive)"
   model__ie:
     required: false
-    type: array
+    type: string
     description: "Model exact match (case-insensitive)"
   model__iew:
     required: false
-    type: array
+    type: string
     description: "Model ends with (case-insensitive)"
+  model__iregex:
+    required: false
+    type: string
+    description: "Model"
   model__isw:
     required: false
-    type: array
+    type: string
     description: "Model starts with (case-sensitive)"
   model__n:
     required: false
-    type: array
+    type: string
     description: "Model not equal to"
   model__nic:
     required: false
-    type: array
+    type: string
     description: "Model does not contain (case-insensitive)"
   model__nie:
     required: false
-    type: array
+    type: string
     description: "Model inverse exact match (case-insensitive)"
   model__niew:
     required: false
-    type: array
+    type: string
     description: "Model does not end with (case-insensitive)"
   model__nisw:
     required: false
-    type: array
+    type: string
     description: "Model does not start with (case-sensitive)"
+  model__regex:
+    required: false
+    type: string
+    description: "Model"
   modified_by_request:
     required: false
     type: string
     description: "Modified_by_request"
   mounting_depth:
     required: false
-    type: array
+    type: integer
     description: "Mounting_depth"
   mounting_depth__empty:
     required: false
@@ -306,23 +330,23 @@ parameters:
     description: "Mounting_depth is empty/null (boolean)"
   mounting_depth__gt:
     required: false
-    type: array
+    type: integer
     description: "Mounting_depth greater than"
   mounting_depth__gte:
     required: false
-    type: array
+    type: integer
     description: "Mounting_depth greater than or equal to"
   mounting_depth__lt:
     required: false
-    type: array
+    type: integer
     description: "Mounting_depth less than"
   mounting_depth__lte:
     required: false
-    type: array
+    type: integer
     description: "Mounting_depth less than or equal to"
   mounting_depth__n:
     required: false
-    type: array
+    type: integer
     description: "Mounting_depth not equal to"
   offset:
     required: false
@@ -334,7 +358,7 @@ parameters:
     description: "Which field to use when ordering the results."
   outer_depth:
     required: false
-    type: array
+    type: integer
     description: "Outer_depth"
   outer_depth__empty:
     required: false
@@ -342,27 +366,27 @@ parameters:
     description: "Outer_depth is empty/null (boolean)"
   outer_depth__gt:
     required: false
-    type: array
+    type: integer
     description: "Outer_depth greater than"
   outer_depth__gte:
     required: false
-    type: array
+    type: integer
     description: "Outer_depth greater than or equal to"
   outer_depth__lt:
     required: false
-    type: array
+    type: integer
     description: "Outer_depth less than"
   outer_depth__lte:
     required: false
-    type: array
+    type: integer
     description: "Outer_depth less than or equal to"
   outer_depth__n:
     required: false
-    type: array
+    type: integer
     description: "Outer_depth not equal to"
   outer_height:
     required: false
-    type: array
+    type: integer
     description: "Outer_height"
   outer_height__empty:
     required: false
@@ -370,32 +394,80 @@ parameters:
     description: "Outer_height is empty/null (boolean)"
   outer_height__gt:
     required: false
-    type: array
+    type: integer
     description: "Outer_height greater than"
   outer_height__gte:
     required: false
-    type: array
+    type: integer
     description: "Outer_height greater than or equal to"
   outer_height__lt:
     required: false
-    type: array
+    type: integer
     description: "Outer_height less than"
   outer_height__lte:
     required: false
-    type: array
+    type: integer
     description: "Outer_height less than or equal to"
   outer_height__n:
     required: false
-    type: array
+    type: integer
     description: "Outer_height not equal to"
   outer_unit:
     required: false
     type: string
     description: "* `mm` - Millimeters
 * `in` - Inches"
+  outer_unit__empty:
+    required: false
+    type: boolean
+    description: "Outer_unit is empty/null (boolean)"
+  outer_unit__ic:
+    required: false
+    type: string
+    description: "Outer_unit contains (case-insensitive)"
+  outer_unit__ie:
+    required: false
+    type: string
+    description: "Outer_unit exact match (case-insensitive)"
+  outer_unit__iew:
+    required: false
+    type: string
+    description: "Outer_unit ends with (case-insensitive)"
+  outer_unit__iregex:
+    required: false
+    type: string
+    description: "Outer_unit"
+  outer_unit__isw:
+    required: false
+    type: string
+    description: "Outer_unit starts with (case-sensitive)"
+  outer_unit__n:
+    required: false
+    type: string
+    description: "Outer_unit not equal to"
+  outer_unit__nic:
+    required: false
+    type: string
+    description: "Outer_unit does not contain (case-insensitive)"
+  outer_unit__nie:
+    required: false
+    type: string
+    description: "Outer_unit inverse exact match (case-insensitive)"
+  outer_unit__niew:
+    required: false
+    type: string
+    description: "Outer_unit does not end with (case-insensitive)"
+  outer_unit__nisw:
+    required: false
+    type: string
+    description: "Outer_unit does not start with (case-sensitive)"
+  outer_unit__regex:
+    required: false
+    type: string
+    description: "Outer_unit"
   outer_width:
     required: false
-    type: array
+    type: integer
     description: "Outer_width"
   outer_width__empty:
     required: false
@@ -403,31 +475,91 @@ parameters:
     description: "Outer_width is empty/null (boolean)"
   outer_width__gt:
     required: false
-    type: array
+    type: integer
     description: "Outer_width greater than"
   outer_width__gte:
     required: false
-    type: array
+    type: integer
     description: "Outer_width greater than or equal to"
   outer_width__lt:
     required: false
-    type: array
+    type: integer
     description: "Outer_width less than"
   outer_width__lte:
     required: false
-    type: array
+    type: integer
     description: "Outer_width less than or equal to"
   outer_width__n:
     required: false
-    type: array
+    type: integer
     description: "Outer_width not equal to"
+  owner:
+    required: false
+    type: string
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: string
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: string
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: string
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: integer
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: integer
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: integer
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: integer
+    description: "Owner_id not equal to"
   q:
     required: false
     type: string
     description: "Search"
+  rack_count:
+    required: false
+    type: integer
+    description: "Rack_count"
+  rack_count__empty:
+    required: false
+    type: boolean
+    description: "Rack_count is empty/null (boolean)"
+  rack_count__gt:
+    required: false
+    type: integer
+    description: "Rack_count greater than"
+  rack_count__gte:
+    required: false
+    type: integer
+    description: "Rack_count greater than or equal to"
+  rack_count__lt:
+    required: false
+    type: integer
+    description: "Rack_count less than"
+  rack_count__lte:
+    required: false
+    type: integer
+    description: "Rack_count less than or equal to"
+  rack_count__n:
+    required: false
+    type: integer
+    description: "Rack_count not equal to"
   slug:
     required: false
-    type: array
+    type: string
     description: "Slug"
   slug__empty:
     required: false
@@ -435,43 +567,55 @@ parameters:
     description: "Slug is empty/null (boolean)"
   slug__ic:
     required: false
-    type: array
+    type: string
     description: "Slug contains (case-insensitive)"
   slug__ie:
     required: false
-    type: array
+    type: string
     description: "Slug exact match (case-insensitive)"
   slug__iew:
     required: false
-    type: array
+    type: string
     description: "Slug ends with (case-insensitive)"
+  slug__iregex:
+    required: false
+    type: string
+    description: "Slug"
   slug__isw:
     required: false
-    type: array
+    type: string
     description: "Slug starts with (case-sensitive)"
   slug__n:
     required: false
-    type: array
+    type: string
     description: "Slug not equal to"
   slug__nic:
     required: false
-    type: array
+    type: string
     description: "Slug does not contain (case-insensitive)"
   slug__nie:
     required: false
-    type: array
+    type: string
     description: "Slug inverse exact match (case-insensitive)"
   slug__niew:
     required: false
-    type: array
+    type: string
     description: "Slug does not end with (case-insensitive)"
   slug__nisw:
     required: false
-    type: array
+    type: string
     description: "Slug does not start with (case-sensitive)"
+  slug__regex:
+    required: false
+    type: string
+    description: "Slug"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   starting_unit:
     required: false
-    type: array
+    type: integer
     description: "Starting_unit"
   starting_unit__empty:
     required: false
@@ -479,43 +623,43 @@ parameters:
     description: "Starting_unit is empty/null (boolean)"
   starting_unit__gt:
     required: false
-    type: array
+    type: integer
     description: "Starting_unit greater than"
   starting_unit__gte:
     required: false
-    type: array
+    type: integer
     description: "Starting_unit greater than or equal to"
   starting_unit__lt:
     required: false
-    type: array
+    type: integer
     description: "Starting_unit less than"
   starting_unit__lte:
     required: false
-    type: array
+    type: integer
     description: "Starting_unit less than or equal to"
   starting_unit__n:
     required: false
-    type: array
+    type: integer
     description: "Starting_unit not equal to"
   tag:
     required: false
-    type: array
+    type: string
     description: "Tag"
   tag__n:
     required: false
-    type: array
+    type: string
     description: "Tag not equal to"
   tag_id:
     required: false
-    type: array
+    type: integer
     description: "Tag_id"
   tag_id__n:
     required: false
-    type: array
+    type: integer
     description: "Tag_id not equal to"
   u_height:
     required: false
-    type: array
+    type: integer
     description: "U_height"
   u_height__empty:
     required: false
@@ -523,23 +667,23 @@ parameters:
     description: "U_height is empty/null (boolean)"
   u_height__gt:
     required: false
-    type: array
+    type: integer
     description: "U_height greater than"
   u_height__gte:
     required: false
-    type: array
+    type: integer
     description: "U_height greater than or equal to"
   u_height__lt:
     required: false
-    type: array
+    type: integer
     description: "U_height less than"
   u_height__lte:
     required: false
-    type: array
+    type: integer
     description: "U_height less than or equal to"
   u_height__n:
     required: false
-    type: array
+    type: integer
     description: "U_height not equal to"
   updated_by_request:
     required: false
@@ -547,7 +691,7 @@ parameters:
     description: "Updated_by_request"
   weight:
     required: false
-    type: array
+    type: integer
     description: "Weight"
   weight__empty:
     required: false
@@ -555,23 +699,23 @@ parameters:
     description: "Weight is empty/null (boolean)"
   weight__gt:
     required: false
-    type: array
+    type: integer
     description: "Weight greater than"
   weight__gte:
     required: false
-    type: array
+    type: integer
     description: "Weight greater than or equal to"
   weight__lt:
     required: false
-    type: array
+    type: integer
     description: "Weight less than"
   weight__lte:
     required: false
-    type: array
+    type: integer
     description: "Weight less than or equal to"
   weight__n:
     required: false
-    type: array
+    type: integer
     description: "Weight not equal to"
   weight_unit:
     required: false
@@ -580,46 +724,102 @@ parameters:
 * `g` - Grams
 * `lb` - Pounds
 * `oz` - Ounces"
+  weight_unit__empty:
+    required: false
+    type: boolean
+    description: "Weight_unit is empty/null (boolean)"
+  weight_unit__ic:
+    required: false
+    type: string
+    description: "Weight_unit contains (case-insensitive)"
+  weight_unit__ie:
+    required: false
+    type: string
+    description: "Weight_unit exact match (case-insensitive)"
+  weight_unit__iew:
+    required: false
+    type: string
+    description: "Weight_unit ends with (case-insensitive)"
+  weight_unit__iregex:
+    required: false
+    type: string
+    description: "Weight_unit"
+  weight_unit__isw:
+    required: false
+    type: string
+    description: "Weight_unit starts with (case-sensitive)"
+  weight_unit__n:
+    required: false
+    type: string
+    description: "Weight_unit not equal to"
+  weight_unit__nic:
+    required: false
+    type: string
+    description: "Weight_unit does not contain (case-insensitive)"
+  weight_unit__nie:
+    required: false
+    type: string
+    description: "Weight_unit inverse exact match (case-insensitive)"
+  weight_unit__niew:
+    required: false
+    type: string
+    description: "Weight_unit does not end with (case-insensitive)"
+  weight_unit__nisw:
+    required: false
+    type: string
+    description: "Weight_unit does not start with (case-sensitive)"
+  weight_unit__regex:
+    required: false
+    type: string
+    description: "Weight_unit"
   width:
     required: false
-    type: array
+    type: integer
     description: "Rail-to-rail width"
   width__ic:
     required: false
-    type: array
+    type: integer
     description: "Width contains (case-insensitive)"
   width__ie:
     required: false
-    type: array
+    type: integer
     description: "Width exact match (case-insensitive)"
   width__iew:
     required: false
-    type: array
+    type: integer
     description: "Width ends with (case-insensitive)"
+  width__iregex:
+    required: false
+    type: integer
+    description: "Rail-to-rail width"
   width__isw:
     required: false
-    type: array
+    type: integer
     description: "Width starts with (case-sensitive)"
   width__n:
     required: false
-    type: array
+    type: integer
     description: "Width not equal to"
   width__nic:
     required: false
-    type: array
+    type: integer
     description: "Width does not contain (case-insensitive)"
   width__nie:
     required: false
-    type: array
+    type: integer
     description: "Width inverse exact match (case-insensitive)"
   width__niew:
     required: false
-    type: array
+    type: integer
     description: "Width does not end with (case-insensitive)"
   width__nisw:
     required: false
-    type: array
+    type: integer
     description: "Width does not start with (case-sensitive)"
+  width__regex:
+    required: false
+    type: integer
+    description: "Rail-to-rail width"
   save_in_key_store:
     type: boolean
     default: false

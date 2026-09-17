@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of module bay objects."
 enabled: true
 entry_point: run.py
@@ -22,31 +22,31 @@ parameters:
     description: Set action as failed when http return reponse status isn't 2xx.
   created:
     required: false
-    type: array
+    type: string
     description: "Created"
   created__empty:
     required: false
-    type: array
+    type: string
     description: "Created is empty/null (boolean)"
   created__gt:
     required: false
-    type: array
+    type: string
     description: "Created greater than"
   created__gte:
     required: false
-    type: array
+    type: string
     description: "Created greater than or equal to"
   created__lt:
     required: false
-    type: array
+    type: string
     description: "Created less than"
   created__lte:
     required: false
-    type: array
+    type: string
     description: "Created less than or equal to"
   created__n:
     required: false
-    type: array
+    type: string
     description: "Created not equal to"
   created_by_request:
     required: false
@@ -54,7 +54,7 @@ parameters:
     description: "Created_by_request"
   description:
     required: false
-    type: array
+    type: string
     description: "Description"
   description__empty:
     required: false
@@ -62,75 +62,83 @@ parameters:
     description: "Description is empty/null (boolean)"
   description__ic:
     required: false
-    type: array
+    type: string
     description: "Description contains (case-insensitive)"
   description__ie:
     required: false
-    type: array
+    type: string
     description: "Description exact match (case-insensitive)"
   description__iew:
     required: false
-    type: array
+    type: string
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
   description__isw:
     required: false
-    type: array
+    type: string
     description: "Description starts with (case-sensitive)"
   description__n:
     required: false
-    type: array
+    type: string
     description: "Description not equal to"
   description__nic:
     required: false
-    type: array
+    type: string
     description: "Description does not contain (case-insensitive)"
   description__nie:
     required: false
-    type: array
+    type: string
     description: "Description inverse exact match (case-insensitive)"
   description__niew:
     required: false
-    type: array
+    type: string
     description: "Description does not end with (case-insensitive)"
   description__nisw:
     required: false
-    type: array
+    type: string
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
   device:
     required: false
-    type: array
+    type: string
     description: "Device (name)"
   device__n:
     required: false
-    type: array
+    type: string
     description: "Device not equal to"
   device_id:
     required: false
-    type: array
+    type: integer
     description: "Device (ID)"
   device_id__n:
     required: false
-    type: array
+    type: integer
     description: "Device_id not equal to"
   device_role:
     required: false
-    type: array
+    type: string
     description: "Device role (slug)"
   device_role__n:
     required: false
-    type: array
+    type: string
     description: "Device_role not equal to"
   device_role_id:
     required: false
-    type: array
+    type: integer
     description: "Device role (ID)"
   device_role_id__n:
     required: false
-    type: array
+    type: integer
     description: "Device_role_id not equal to"
   device_status:
     required: false
-    type: array
+    type: string
     description: "Device_status"
   device_status__empty:
     required: false
@@ -138,59 +146,71 @@ parameters:
     description: "Device_status is empty/null (boolean)"
   device_status__ic:
     required: false
-    type: array
+    type: string
     description: "Device_status contains (case-insensitive)"
   device_status__ie:
     required: false
-    type: array
+    type: string
     description: "Device_status exact match (case-insensitive)"
   device_status__iew:
     required: false
-    type: array
+    type: string
     description: "Device_status ends with (case-insensitive)"
+  device_status__iregex:
+    required: false
+    type: string
+    description: "Device_status"
   device_status__isw:
     required: false
-    type: array
+    type: string
     description: "Device_status starts with (case-sensitive)"
   device_status__n:
     required: false
-    type: array
+    type: string
     description: "Device_status not equal to"
   device_status__nic:
     required: false
-    type: array
+    type: string
     description: "Device_status does not contain (case-insensitive)"
   device_status__nie:
     required: false
-    type: array
+    type: string
     description: "Device_status inverse exact match (case-insensitive)"
   device_status__niew:
     required: false
-    type: array
+    type: string
     description: "Device_status does not end with (case-insensitive)"
   device_status__nisw:
     required: false
-    type: array
+    type: string
     description: "Device_status does not start with (case-sensitive)"
+  device_status__regex:
+    required: false
+    type: string
+    description: "Device_status"
   device_type:
     required: false
-    type: array
+    type: string
     description: "Device type (model)"
   device_type__n:
     required: false
-    type: array
+    type: string
     description: "Device_type not equal to"
   device_type_id:
     required: false
-    type: array
+    type: integer
     description: "Device type (ID)"
   device_type_id__n:
     required: false
-    type: array
+    type: integer
     description: "Device_type_id not equal to"
+  enabled:
+    required: false
+    type: boolean
+    description: "Enabled"
   id:
     required: false
-    type: array
+    type: integer
     description: "Id"
   id__empty:
     required: false
@@ -198,35 +218,35 @@ parameters:
     description: "Id is empty/null (boolean)"
   id__gt:
     required: false
-    type: array
+    type: integer
     description: "Id greater than"
   id__gte:
     required: false
-    type: array
+    type: integer
     description: "Id greater than or equal to"
   id__lt:
     required: false
-    type: array
+    type: integer
     description: "Id less than"
   id__lte:
     required: false
-    type: array
+    type: integer
     description: "Id less than or equal to"
   id__n:
     required: false
-    type: array
+    type: integer
     description: "Id not equal to"
   installed_module_id:
     required: false
-    type: array
+    type: integer
     description: "Installed module (ID)"
   installed_module_id__n:
     required: false
-    type: array
+    type: integer
     description: "Installed_module_id not equal to"
   label:
     required: false
-    type: array
+    type: string
     description: "Label"
   label__empty:
     required: false
@@ -234,67 +254,75 @@ parameters:
     description: "Label is empty/null (boolean)"
   label__ic:
     required: false
-    type: array
+    type: string
     description: "Label contains (case-insensitive)"
   label__ie:
     required: false
-    type: array
+    type: string
     description: "Label exact match (case-insensitive)"
   label__iew:
     required: false
-    type: array
+    type: string
     description: "Label ends with (case-insensitive)"
+  label__iregex:
+    required: false
+    type: string
+    description: "Label"
   label__isw:
     required: false
-    type: array
+    type: string
     description: "Label starts with (case-sensitive)"
   label__n:
     required: false
-    type: array
+    type: string
     description: "Label not equal to"
   label__nic:
     required: false
-    type: array
+    type: string
     description: "Label does not contain (case-insensitive)"
   label__nie:
     required: false
-    type: array
+    type: string
     description: "Label inverse exact match (case-insensitive)"
   label__niew:
     required: false
-    type: array
+    type: string
     description: "Label does not end with (case-insensitive)"
   label__nisw:
     required: false
-    type: array
+    type: string
     description: "Label does not start with (case-sensitive)"
+  label__regex:
+    required: false
+    type: string
+    description: "Label"
   last_updated:
     required: false
-    type: array
+    type: string
     description: "Last_updated"
   last_updated__empty:
     required: false
-    type: array
+    type: string
     description: "Last_updated is empty/null (boolean)"
   last_updated__gt:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than"
   last_updated__gte:
     required: false
-    type: array
+    type: string
     description: "Last_updated greater than or equal to"
   last_updated__lt:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than"
   last_updated__lte:
     required: false
-    type: array
+    type: string
     description: "Last_updated less than or equal to"
   last_updated__n:
     required: false
-    type: array
+    type: string
     description: "Last_updated not equal to"
   limit:
     required: false
@@ -302,19 +330,19 @@ parameters:
     description: "Number of results to return per page."
   location:
     required: false
-    type: array
+    type: string
     description: "Location (slug)"
   location__n:
     required: false
-    type: array
+    type: string
     description: "Location not equal to"
   location_id:
     required: false
-    type: array
+    type: integer
     description: "Location (ID)"
   location_id__n:
     required: false
-    type: array
+    type: integer
     description: "Location_id not equal to"
   modified_by_request:
     required: false
@@ -322,15 +350,15 @@ parameters:
     description: "Modified_by_request"
   module_id:
     required: false
-    type: array
+    type: integer
     description: "Module (ID)"
   module_id__n:
     required: false
-    type: array
+    type: integer
     description: "Module_id not equal to"
   name:
     required: false
-    type: array
+    type: string
     description: "Name"
   name__empty:
     required: false
@@ -338,40 +366,48 @@ parameters:
     description: "Name is empty/null (boolean)"
   name__ic:
     required: false
-    type: array
+    type: string
     description: "Name contains (case-insensitive)"
   name__ie:
     required: false
-    type: array
+    type: string
     description: "Name exact match (case-insensitive)"
   name__iew:
     required: false
-    type: array
+    type: string
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: string
+    description: "Name"
   name__isw:
     required: false
-    type: array
+    type: string
     description: "Name starts with (case-sensitive)"
   name__n:
     required: false
-    type: array
+    type: string
     description: "Name not equal to"
   name__nic:
     required: false
-    type: array
+    type: string
     description: "Name does not contain (case-insensitive)"
   name__nie:
     required: false
-    type: array
+    type: string
     description: "Name inverse exact match (case-insensitive)"
   name__niew:
     required: false
-    type: array
+    type: string
     description: "Name does not end with (case-insensitive)"
   name__nisw:
     required: false
-    type: array
+    type: string
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: string
+    description: "Name"
   offset:
     required: false
     type: integer
@@ -380,17 +416,49 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: string
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: string
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: string
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: string
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: integer
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: integer
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: integer
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: integer
+    description: "Owner_id not equal to"
   parent_id:
     required: false
-    type: array
+    type: integer
     description: "Parent module bay (ID)"
   parent_id__n:
     required: false
-    type: array
+    type: integer
     description: "Parent_id not equal to"
   position:
     required: false
-    type: array
+    type: string
     description: "Position"
   position__empty:
     required: false
@@ -398,143 +466,171 @@ parameters:
     description: "Position is empty/null (boolean)"
   position__ic:
     required: false
-    type: array
+    type: string
     description: "Position contains (case-insensitive)"
   position__ie:
     required: false
-    type: array
+    type: string
     description: "Position exact match (case-insensitive)"
   position__iew:
     required: false
-    type: array
+    type: string
     description: "Position ends with (case-insensitive)"
+  position__iregex:
+    required: false
+    type: string
+    description: "Position"
   position__isw:
     required: false
-    type: array
+    type: string
     description: "Position starts with (case-sensitive)"
   position__n:
     required: false
-    type: array
+    type: string
     description: "Position not equal to"
   position__nic:
     required: false
-    type: array
+    type: string
     description: "Position does not contain (case-insensitive)"
   position__nie:
     required: false
-    type: array
+    type: string
     description: "Position inverse exact match (case-insensitive)"
   position__niew:
     required: false
-    type: array
+    type: string
     description: "Position does not end with (case-insensitive)"
   position__nisw:
     required: false
-    type: array
+    type: string
     description: "Position does not start with (case-sensitive)"
+  position__regex:
+    required: false
+    type: string
+    description: "Position"
   q:
     required: false
     type: string
     description: "Search"
   rack:
     required: false
-    type: array
+    type: string
     description: "Rack (name)"
   rack__n:
     required: false
-    type: array
+    type: string
     description: "Rack not equal to"
   rack_id:
     required: false
-    type: array
+    type: integer
     description: "Rack (ID)"
   rack_id__n:
     required: false
-    type: array
+    type: integer
     description: "Rack_id not equal to"
   region:
     required: false
-    type: array
+    type: string
     description: "Region"
   region__n:
     required: false
-    type: array
+    type: string
     description: "Region not equal to"
   region_id:
     required: false
-    type: array
+    type: string
     description: "Region_id"
   region_id__n:
     required: false
-    type: array
+    type: string
     description: "Region_id not equal to"
   site:
     required: false
-    type: array
+    type: string
     description: "Site name (slug)"
   site__n:
     required: false
-    type: array
+    type: string
     description: "Site not equal to"
   site_group:
     required: false
-    type: array
+    type: string
     description: "Site_group"
   site_group__n:
     required: false
-    type: array
+    type: string
     description: "Site_group not equal to"
   site_group_id:
     required: false
-    type: array
+    type: string
     description: "Site_group_id"
   site_group_id__n:
     required: false
-    type: array
+    type: string
     description: "Site_group_id not equal to"
   site_id:
     required: false
-    type: array
+    type: integer
     description: "Site (ID)"
   site_id__n:
     required: false
-    type: array
+    type: integer
     description: "Site_id not equal to"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   tag:
     required: false
-    type: array
+    type: string
     description: "Tag"
   tag__n:
     required: false
-    type: array
+    type: string
     description: "Tag not equal to"
   tag_id:
     required: false
-    type: array
+    type: integer
     description: "Tag_id"
   tag_id__n:
     required: false
-    type: array
+    type: integer
     description: "Tag_id not equal to"
+  tenant:
+    required: false
+    type: string
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: string
+    description: "Tenant not equal to"
+  tenant_id:
+    required: false
+    type: integer
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: integer
+    description: "Tenant_id not equal to"
   updated_by_request:
     required: false
     type: string
     description: "Updated_by_request"
   virtual_chassis:
     required: false
-    type: array
+    type: string
     description: "Virtual Chassis"
   virtual_chassis__n:
     required: false
-    type: array
+    type: string
     description: "Virtual_chassis not equal to"
   virtual_chassis_id:
     required: false
-    type: array
+    type: integer
     description: "Virtual Chassis (ID)"
   virtual_chassis_id__n:
     required: false
-    type: array
+    type: integer
     description: "Virtual_chassis_id not equal to"
   save_in_key_store:
     type: boolean

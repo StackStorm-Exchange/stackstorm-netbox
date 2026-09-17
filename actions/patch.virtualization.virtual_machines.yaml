@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Patch a virtual machine object."
 enabled: true
 entry_point: run.py
@@ -24,6 +24,14 @@ parameters:
     required: false
     type: string
     description: "Name"
+  virtual_machine_type:
+    required: false
+    type: integer
+    description: "Virtual machine type"
+  role:
+    required: false
+    type: integer
+    description: "Role"
   status:
     required: false
     type: string
@@ -34,41 +42,35 @@ parameters:
 * `failed` - Failed
 * `decommissioning` - Decommissioning
 * `paused` - Paused"
+  start_on_boot:
+    required: false
+    type: string
+    description: "* `on` - On
+* `off` - Off
+* `laststate` - Last State"
   site:
     required: false
-    type: object
+    type: integer
     description: "Site"
   cluster:
     required: false
-    type: object
+    type: integer
     description: "Cluster"
   device:
     required: false
-    type: object
+    type: integer
     description: "Device"
-  serial:
-    required: false
-    type: string
-    description: "Serial number"
-  role:
-    required: false
-    type: object
-    description: "Role"
-  tenant:
-    required: false
-    type: object
-    description: "Tenant"
   platform:
     required: false
-    type: object
+    type: integer
     description: "Platform"
   primary_ip4:
     required: false
-    type: object
+    type: integer
     description: "Primary ip4"
   primary_ip6:
     required: false
-    type: object
+    type: integer
     description: "Primary ip6"
   vcpus:
     required: false
@@ -77,31 +79,43 @@ parameters:
   memory:
     required: false
     type: integer
-    description: "Memory (MB)"
+    description: "Memory"
   disk:
     required: false
     type: integer
-    description: "Disk (MB)"
+    description: "Disk"
   description:
     required: false
     type: string
     description: "Description"
+  serial:
+    required: false
+    type: string
+    description: "Serial number"
+  tenant:
+    required: false
+    type: integer
+    description: "Tenant"
+  owner:
+    required: false
+    type: integer
+    description: "Owner"
   comments:
     required: false
     type: string
     description: "Comments"
-  config_template:
-    required: false
-    type: object
-    description: "Config template"
-  local_context_data:
-    required: false
-    type: object
-    description: "Local config context data takes precedence over source contexts in the final rendered config context"
   tags:
     required: false
     type: array
     description: "Array of tag strings"
+  local_context_data:
+    required: false
+    type: object
+    description: "Local config context data takes precedence over source contexts in the final rendered config context"
+  config_template:
+    required: false
+    type: integer
+    description: "Config template"
   custom_fields:
     required: false
     type: object
